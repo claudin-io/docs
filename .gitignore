@@ -1,0 +1,6 @@
+# MkDocs build output
+site/
+
+# Python venv (if created here for local preview)
+.venv/
+__pycache__/

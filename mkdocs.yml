@@ -1,0 +1,137 @@
+site_name: Claudin.io Docs
+site_url: https://docs.claudin.io
+site_description: How to use Claudin.io — the unlimited AI proxy with a fixed monthly subscription. Set up your favorite coding agent in minutes.
+site_author: Claudin.io
+copyright: Copyright &copy; Claudin.io
+
+repo_url: https://github.com/claudinio/claudinio
+repo_name: claudinio/claudinio
+edit_uri: edit/main/docs/docs/
+
+theme:
+  name: material
+  language: en
+  font:
+    text: Inter
+    code: JetBrains Mono
+  favicon: assets/favicon.ico
+  logo: assets/icon.png
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    # navigation.instant is intentionally omitted: it's incompatible with the
+    # i18n language switcher (the contextual per-page language link breaks).
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+extra_css:
+  - stylesheets/extra.css
+
+# Post-build hook: emit raw .md per page (e.g. /plans.md) + llms.txt / llms-full.txt
+hooks:
+  - hooks/llms.py
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys
+
+plugins:
+  - search
+  # Localization. `suffix` structure: foo.md is the default (en), foo.pt.md is
+  # the Portuguese version. Untranslated pages fall back to the default
+  # language automatically, so you can translate incrementally.
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: pt
+          name: Português (BR)
+          build: true
+          site_name: Claudin.io Docs
+          nav_translations:
+            Home: Início
+            Getting started: Primeiros passos
+            Create your account: Crie sua conta
+            Set your API key: Configure sua chave
+            Your first call: Sua primeira chamada
+            Connect your tool: Conecte sua ferramenta
+            Any OpenAI client: Qualquer cliente OpenAI
+            Plans & limits: Planos e limites
+            API reference: Referência da API
+            FAQ: Perguntas frequentes
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/claudinio/claudinio
+  generator: false
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - Create your account: getting-started/account.md
+      - Set your API key: getting-started/set-your-key.md
+      - Your first call: getting-started/first-call.md
+  - Connect your tool:
+      - OpenCode: clients/opencode.md
+      - Claude Code: clients/claude-code.md
+      - Kilo Code: clients/kilo.md
+      - Zed: clients/zed.md
+      - Codex: clients/codex.md
+      - pi: clients/pi.md
+      - Cursor: clients/cursor.md
+      - Any OpenAI client: clients/openai-compatible.md
+  - Plans & limits: plans.md
+  - API reference: api-reference.md
+  - FAQ: faq.md

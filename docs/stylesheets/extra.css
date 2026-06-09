@@ -1,0 +1,256 @@
+/* ─── Claudin.io brand theme for MkDocs Material ───
+ * Maps the Claudinio design system (dashboard/static/css/design-system.css)
+ * onto Material's tokens, for both light and dark schemes.
+ * Editorial neutrals · indigo accent · quiet code surfaces.
+ * ──────────────────────────────────────────────────── */
+
+:root {
+  /* Brand source-of-truth (oklch, matches the app's design tokens) */
+  --cl-indigo:        oklch(0.45 0.12 270);
+  --cl-indigo-bright: oklch(0.52 0.15 270);
+  --cl-indigo-hover:  oklch(0.40 0.13 270);
+  --cl-indigo-soft:   oklch(0.92 0.025 270);
+  --cl-indigo-dark:   oklch(0.72 0.14 272); /* lifted for dark mode contrast */
+
+  --cl-success: oklch(0.55 0.14 150);
+  --cl-warning: oklch(0.65 0.14 80);
+  --cl-danger:  oklch(0.55 0.16 25);
+
+  --md-text-font: "Inter";
+  --md-code-font: "JetBrains Mono";
+}
+
+/* ─── Light scheme ─── */
+[data-md-color-scheme="default"] {
+  --md-hue: 260;
+
+  /* Header bg is near-white so the colored brackets logo stays crisp and the
+     top bar reads with maximum contrast (dark text on white). */
+  --md-primary-fg-color:        oklch(0.99 0 0);
+  --md-primary-fg-color--light: oklch(0.97 0.003 260);
+  --md-primary-fg-color--dark:  oklch(0.95 0.005 260);
+  --md-primary-bg-color:        oklch(0.17 0.015 260);
+  --md-primary-bg-color--light: oklch(0.17 0.015 260 / 0.6);
+
+  --md-accent-fg-color:         var(--cl-indigo-bright);
+  --md-accent-fg-color--transparent: oklch(0.52 0.15 270 / 0.1);
+
+  --md-default-bg-color:        oklch(0.99 0 0);
+  --md-default-fg-color:        oklch(0.15 0.015 260);
+  --md-default-fg-color--light: oklch(0.15 0.015 260 / 0.62);
+  --md-default-fg-color--lighter: oklch(0.15 0.015 260 / 0.32);
+  --md-default-fg-color--lightest: oklch(0.15 0.015 260 / 0.07);
+
+  --md-typeset-color:      oklch(0.18 0.015 260);
+  --md-typeset-a-color:    var(--cl-indigo);
+
+  --md-code-bg-color:      oklch(0.965 0.004 260);
+  --md-code-fg-color:      oklch(0.26 0.02 260);
+
+  --md-footer-bg-color:        oklch(0.16 0.012 260);
+  --md-footer-bg-color--dark:  oklch(0.12 0.01 260);
+}
+
+/* ─── Dark scheme (slate) ─── */
+[data-md-color-scheme="slate"] {
+  --md-hue: 262;
+
+  --md-primary-fg-color:        oklch(0.17 0.012 262); /* near-black header */
+  --md-primary-fg-color--light: oklch(0.24 0.015 262);
+  --md-primary-fg-color--dark:  oklch(0.13 0.01 262);
+
+  --md-accent-fg-color:         var(--cl-indigo-dark);
+
+  --md-default-bg-color:        oklch(0.165 0.012 262);
+  --md-default-fg-color:        oklch(0.96 0.004 262);
+  --md-default-fg-color--light: oklch(0.96 0.004 262 / 0.66);
+  --md-default-fg-color--lighter: oklch(0.96 0.004 262 / 0.34);
+  --md-default-fg-color--lightest: oklch(0.96 0.004 262 / 0.1);
+
+  --md-typeset-color:      oklch(0.92 0.005 262);
+  --md-typeset-a-color:    var(--cl-indigo-dark);
+
+  --md-code-bg-color:      oklch(0.21 0.014 262);
+  --md-code-fg-color:      oklch(0.9 0.01 262);
+
+  --md-footer-bg-color:        oklch(0.12 0.01 262);
+  --md-footer-bg-color--dark:  oklch(0.1 0.008 262);
+}
+
+/* ─── Header ─── */
+.md-header {
+  box-shadow: none;
+}
+
+/* Hairline separator instead of a heavy shadow, per scheme. */
+[data-md-color-scheme="default"] .md-header,
+[data-md-color-scheme="default"] .md-tabs {
+  border-bottom: 1px solid oklch(0.9 0.008 260);
+}
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  border-bottom: 1px solid oklch(1 0 0 / 0.07);
+}
+
+/* Logo: textless brackets icon, sized for presence without dominating. */
+.md-header__button.md-logo {
+  padding: 0;
+  margin-right: 0.4rem;
+}
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 1.5rem;
+  width: auto;
+}
+
+/* Site title weight to pair with the icon. */
+.md-header__title .md-header__topic > .md-ellipsis {
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+/* Brighten nav tabs in dark mode so the top bar doesn't read as muted grey. */
+[data-md-color-scheme="slate"] .md-tabs__link {
+  opacity: 0.9;
+}
+[data-md-color-scheme="slate"] .md-tabs__link:hover,
+[data-md-color-scheme="slate"] .md-tabs__link--active {
+  opacity: 1;
+  color: var(--cl-indigo-dark);
+}
+[data-md-color-scheme="default"] .md-tabs__link--active,
+[data-md-color-scheme="default"] .md-tabs__link:hover {
+  color: var(--cl-indigo);
+}
+
+/* ─── Typography ─── */
+.md-typeset {
+  font-feature-settings: "kern", "liga", "cv11";
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+
+.md-typeset h2 {
+  margin-top: 2.2em;
+}
+
+/* Code: subtle, precise, quiet surface */
+.md-typeset pre > code {
+  font-size: 0.78rem;
+}
+
+.md-typeset code {
+  border-radius: 0.3rem;
+}
+
+.md-typeset :not(pre) > code {
+  color: var(--cl-indigo-hover);
+}
+[data-md-color-scheme="slate"] .md-typeset :not(pre) > code {
+  color: var(--cl-indigo-dark);
+}
+
+/* ─── Hero on the home page ─── */
+.cl-hero {
+  text-align: center;
+  padding: 2.5rem 0 1.5rem;
+}
+
+.cl-hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(120deg, var(--cl-indigo) 0%, var(--cl-indigo-bright) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+[data-md-color-scheme="slate"] .cl-hero h1 {
+  background: linear-gradient(120deg, oklch(0.82 0.1 272) 0%, var(--cl-indigo-dark) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cl-hero p {
+  font-size: 1.05rem;
+  opacity: 0.82;
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+/* ─── Primary buttons (hero CTAs) ─── */
+.md-typeset .md-button--primary {
+  background-color: var(--cl-indigo);
+  border-color: var(--cl-indigo);
+  color: oklch(1 0 0);
+  transition: background-color 120ms, border-color 120ms, transform 120ms;
+}
+.md-typeset .md-button--primary:hover {
+  background-color: var(--cl-indigo-hover);
+  border-color: var(--cl-indigo-hover);
+  transform: translateY(-1px);
+}
+
+/* ─── Card grid (Material's built-in .grid.cards) ─── */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 0.6rem;
+  transition: border-color 120ms, box-shadow 120ms, transform 120ms;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--cl-indigo);
+  box-shadow: 0 2px 14px oklch(0.45 0.12 270 / 0.16);
+  transform: translateY(-2px);
+}
+
+/* ─── Tables: branded header row ─── */
+.md-typeset table:not([class]) th {
+  background: var(--cl-indigo-soft);
+  color: oklch(0.28 0.06 270);
+  font-weight: 600;
+}
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: oklch(0.45 0.12 270 / 0.18);
+  color: oklch(0.92 0.02 270);
+}
+
+/* ─── Admonitions: semantic tints from the brand palette ─── */
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: var(--cl-indigo);
+}
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background-color: oklch(0.45 0.12 270 / 0.1);
+}
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before {
+  background-color: var(--cl-indigo);
+}
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip { border-color: var(--cl-success); }
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary { background-color: oklch(0.55 0.14 150 / 0.1); }
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning { border-color: var(--cl-warning); }
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary { background-color: oklch(0.65 0.14 80 / 0.12); }
+
+/* ─── Text selection ─── */
+::selection {
+  background: oklch(0.45 0.12 270 / 0.2);
+}
+
+/* ─── Active nav / TOC accent ─── */
+.md-nav__link--active,
+.md-nav__link:focus,
+.md-nav__link:hover {
+  color: var(--md-accent-fg-color);
+}
