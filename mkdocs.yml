@@ -114,7 +114,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/claudinio/claudinio
+      link: https://github.com/claudin-io
   generator: false
 
 nav:
