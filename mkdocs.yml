@@ -488,6 +488,9 @@ plugins:
             FAQ: FAQ
 
 extra:
+  analytics:
+    provider: google
+    property: G-J9KKRN7SQG
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/claudin-io
