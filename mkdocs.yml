@@ -10,6 +10,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
   font:
     text: Inter
@@ -26,7 +27,7 @@ theme:
       accent: deep purple
       toggle:
         icon: material/weather-night
-        name: Switch to dark mode
+        name: "Switch to dark mode"
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -34,7 +35,7 @@ theme:
       accent: deep purple
       toggle:
         icon: material/weather-sunny
-        name: Switch to light mode
+        name: "Switch to light mode"
   features:
     # navigation.instant is intentionally omitted: it's incompatible with the
     # i18n language switcher (the contextual per-page language link breaks).
@@ -91,12 +92,12 @@ plugins:
       reconfigure_search: true
       languages:
         - locale: en
-          name: English
+          name: "🇺🇸 English"
           build: true
           default: true
 
         - locale: pt-BR
-          name: Português (BR)
+          name: "🇧🇷 Português (BR)"
           build: true
           site_name: Documentação Claudin.io
           nav_translations:
@@ -119,7 +120,7 @@ plugins:
             FAQ: FAQ
 
         - locale: pt
-          name: Português (PT)
+          name: "🇵🇹 Português (PT)"
           build: true
           site_name: Documentação Claudin.io
           nav_translations:
@@ -142,7 +143,7 @@ plugins:
             FAQ: FAQ
 
         - locale: es
-          name: Español
+          name: "🇪🇸 Español"
           build: true
           site_name: Documentación de Claudin.io
           nav_translations:
@@ -165,7 +166,7 @@ plugins:
             FAQ: Preguntas frecuentes
 
         - locale: fr
-          name: Français
+          name: "🇫🇷 Français"
           build: true
           site_name: Documentation Claudin.io
           nav_translations:
@@ -188,7 +189,7 @@ plugins:
             FAQ: FAQ
 
         - locale: de
-          name: Deutsch
+          name: "🇩🇪 Deutsch"
           build: true
           site_name: Claudin.io Dokumentation
           nav_translations:
@@ -211,7 +212,7 @@ plugins:
             FAQ: FAQ
 
         - locale: it
-          name: Italiano
+          name: "🇮🇹 Italiano"
           build: true
           site_name: Documentazione Claudin.io
           nav_translations:
@@ -234,7 +235,7 @@ plugins:
             FAQ: FAQ
 
         - locale: ru
-          name: Русский
+          name: "🇷🇺 Русский"
           build: true
           site_name: Документация Claudin.io
           nav_translations:
@@ -257,7 +258,7 @@ plugins:
             FAQ: Часто задаваемые вопросы
 
         - locale: tr
-          name: Türkçe
+          name: "🇹🇷 Türkçe"
           build: true
           site_name: Claudin.io Belgeleri
           nav_translations:
@@ -280,7 +281,7 @@ plugins:
             FAQ: SSS
 
         - locale: ar
-          name: العربية
+          name: "🇸🇦 العربية"
           build: true
           site_name: وثائق Claudin.io
           nav_translations:
@@ -303,7 +304,7 @@ plugins:
             FAQ: الأسئلة الشائعة
 
         - locale: hi
-          name: हिन्दी
+          name: "🇮🇳 हिन्दी"
           build: true
           site_name: Claudin.io दस्तावेज़
           nav_translations:
@@ -326,7 +327,7 @@ plugins:
             FAQ: सामान्य प्रश्न
 
         - locale: bn
-          name: বাংলা
+          name: "🇧🇩 বাংলা"
           build: true
           site_name: Claudin.io ডকুমেন্টেশন
           nav_translations:
@@ -349,7 +350,7 @@ plugins:
             FAQ: FAQ
 
         - locale: ur
-          name: اردو
+          name: "🇵🇰 اردو"
           build: true
           site_name: Claudin.io دستاویزات
           nav_translations:
@@ -372,7 +373,7 @@ plugins:
             FAQ: عمومی سوالات
 
         - locale: zh
-          name: 中文
+          name: "🇨🇳 中文"
           build: true
           site_name: Claudin.io 文档
           nav_translations:
@@ -395,7 +396,7 @@ plugins:
             FAQ: 常见问题
 
         - locale: ja
-          name: 日本語
+          name: "🇯🇵 日本語"
           build: true
           site_name: Claudin.io ドキュメント
           nav_translations:
@@ -418,7 +419,7 @@ plugins:
             FAQ: FAQ
 
         - locale: ko
-          name: 한국어
+          name: "🇰🇷 한국어"
           build: true
           site_name: Claudin.io 문서
           nav_translations:
@@ -441,7 +442,7 @@ plugins:
             FAQ: FAQ
 
         - locale: vi
-          name: Tiếng Việt
+          name: "🇻🇳 Tiếng Việt"
           build: true
           site_name: Tài liệu Claudin.io
           nav_translations:
@@ -464,7 +465,7 @@ plugins:
             FAQ: Câu hỏi thường gặp
 
         - locale: id
-          name: Bahasa Indonesia
+          name: "🇮🇩 Bahasa Indonesia"
           build: true
           site_name: Dokumentasi Claudin.io
           nav_translations:

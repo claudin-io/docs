@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+<script>
+(function() {
+  var m = window.location.pathname.match(/^(\/[^\/]+)\//);
+  if (!m) return;
+  var base = m[1];
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[hreflang]').forEach(function(a) {
+      var h = a.getAttribute('href');
+      if (h && !h.startsWith(base)) {
+        a.setAttribute('href', base + h);
+      }
+    });
+  });
+})();
+</script>
+{% endblock %}
