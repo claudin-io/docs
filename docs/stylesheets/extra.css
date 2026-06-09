@@ -103,10 +103,10 @@
   width: auto;
 }
 
-/* Site title weight to pair with the icon. */
-.md-header__title .md-header__topic > .md-ellipsis {
-  font-weight: 650;
-  letter-spacing: -0.01em;
+/* Icon-only header: hide the site-name text, keep just the brackets logo.
+   The on-scroll page title (second topic) is preserved for orientation. */
+.md-header__title .md-header__topic:first-child {
+  display: none;
 }
 
 /* Brighten nav tabs in dark mode so the top bar doesn't read as muted grey. */
