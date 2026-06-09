@@ -4,9 +4,9 @@ site_description: How to use Claudin.io — the unlimited AI proxy with a fixed 
 site_author: Claudin.io
 copyright: Copyright &copy; Claudin.io
 
-repo_url: https://github.com/claudinio/claudinio
-repo_name: claudinio/claudinio
-edit_uri: edit/main/docs/docs/
+repo_url: https://github.com/claudin-io/docs
+repo_name: claudin-io/docs
+edit_uri: edit/main/docs/
 
 theme:
   name: material
