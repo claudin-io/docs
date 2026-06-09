@@ -1,0 +1,19 @@
+{
+  "Home": "Главная",
+  "Getting started": "Начало работы",
+  "Create your account": "Создать аккаунт",
+  "Set your API key": "Установить ключ API",
+  "Your first call": "Первый запрос",
+  "Connect your tool": "Подключить инструмент",
+  "OpenCode": "OpenCode",
+  "Claude Code": "Claude Code",
+  "Kilo Code": "Kilo Code",
+  "Zed": "Zed",
+  "Codex": "Codex",
+  "pi": "pi",
+  "Cursor": "Cursor",
+  "Any OpenAI client": "Любой клиент OpenAI",
+  "Plans & limits": "Тарифы и лимиты",
+  "API reference": "Справочник API",
+  "FAQ": "Часто задаваемые вопросы"
+}

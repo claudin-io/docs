@@ -1,0 +1,19 @@
+{
+  "Home": "홈",
+  "Getting started": "시작하기",
+  "Create your account": "계정 만들기",
+  "Set your API key": "API 키 설정",
+  "Your first call": "첫 번째 호출",
+  "Connect your tool": "도구 연결",
+  "OpenCode": "OpenCode",
+  "Claude Code": "Claude Code",
+  "Kilo Code": "Kilo Code",
+  "Zed": "Zed",
+  "Codex": "Codex",
+  "pi": "pi",
+  "Cursor": "Cursor",
+  "Any OpenAI client": "Any OpenAI client",
+  "Plans & limits": "요금제 및 제한",
+  "API reference": "API 참조",
+  "FAQ": "FAQ"
+}

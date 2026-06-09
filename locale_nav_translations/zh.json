@@ -1,0 +1,19 @@
+{
+  "Home": "首页",
+  "Getting started": "入门指南",
+  "Create your account": "创建账户",
+  "Set your API key": "设置API密钥",
+  "Your first call": "首次调用",
+  "Connect your tool": "连接你的工具",
+  "OpenCode": "OpenCode",
+  "Claude Code": "Claude Code",
+  "Kilo Code": "Kilo Code",
+  "Zed": "Zed",
+  "Codex": "Codex",
+  "pi": "pi",
+  "Cursor": "Cursor",
+  "Any OpenAI client": "任何OpenAI客户端",
+  "Plans & limits": "套餐与限制",
+  "API reference": "API参考",
+  "FAQ": "常见问题"
+}

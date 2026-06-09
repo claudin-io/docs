@@ -1,6 +1,6 @@
 site_name: Claudin.io Docs
 site_url: https://docs.claudin.io
-site_description: How to use Claudin.io — the unlimited AI proxy with a fixed monthly subscription. Set up your favorite coding agent in minutes.
+site_description: How to use Claudin.io - the unlimited AI proxy with a fixed monthly subscription. Set up your favorite coding agent in minutes.
 site_author: Claudin.io
 copyright: Copyright &copy; Claudin.io
 
@@ -52,7 +52,6 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
-
 # Post-build hook: emit raw .md per page (e.g. /plans.md) + llms.txt / llms-full.txt
 hooks:
   - hooks/llms.py
@@ -92,24 +91,400 @@ plugins:
       reconfigure_search: true
       languages:
         - locale: en
-          default: true
           name: English
           build: true
-        - locale: pt
+          default: true
+
+        - locale: pt-BR
           name: Português (BR)
           build: true
-          site_name: Claudin.io Docs
+          site_name: Documentação Claudin.io
           nav_translations:
             Home: Início
             Getting started: Primeiros passos
             Create your account: Crie sua conta
-            Set your API key: Configure sua chave
+            Set your API key: Defina sua chave de API
             Your first call: Sua primeira chamada
             Connect your tool: Conecte sua ferramenta
+            OpenCode: OpenCode
+            Claude Code: Claude Code
+            Kilo Code: Kilo Code
+            Zed: Zed
+            Codex: Codex
+            pi: pi
+            Cursor: Cursor
             Any OpenAI client: Qualquer cliente OpenAI
             Plans & limits: Planos e limites
             API reference: Referência da API
-            FAQ: Perguntas frequentes
+            FAQ: FAQ
+
+        - locale: pt
+          name: Português (PT)
+          build: true
+          site_name: Documentação Claudin.io
+          nav_translations:
+            Home: Início
+            Getting started: Primeiros passos
+            Create your account: Criar conta
+            Set your API key: Configurar chave API
+            Your first call: A sua primeira chamada
+            Connect your tool: Ligar a sua ferramenta
+            OpenCode: OpenCode
+            Claude Code: Claude Code
+            Kilo Code: Kilo Code
+            Zed: Zed
+            Codex: Codex
+            pi: pi
+            Cursor: Cursor
+            Any OpenAI client: Qualquer cliente OpenAI
+            Plans & limits: Planos e limites
+            API reference: Referência da API
+            FAQ: FAQ
+
+        - locale: es
+          name: Español
+          build: true
+          site_name: Documentación de Claudin.io
+          nav_translations:
+            Home: Inicio
+            Getting started: Primeros pasos
+            Create your account: Crear tu cuenta
+            Set your API key: Configurar tu clave API
+            Your first call: Tu primera llamada
+            Connect your tool: Conectar tu herramienta
+            OpenCode: OpenCode
+            Claude Code: Claude Code
+            Kilo Code: Kilo Code
+            Zed: Zed
+            Codex: Codex
+            pi: pi
+            Cursor: Cursor
+            Any OpenAI client: Cualquier cliente de OpenAI
+            Plans & limits: Planes y límites
+            API reference: Referencia de API
+            FAQ: Preguntas frecuentes
+
+        - locale: fr
+          name: Français
+          build: true
+          site_name: Documentation Claudin.io
+          nav_translations:
+            Home: Accueil
+            Getting started: Premiers pas
+            Create your account: Créer votre compte
+            Set your API key: Définir votre clé API
+            Your first call: Votre premier appel
+            Connect your tool: Connecter votre outil
+            OpenCode: OpenCode
+            Claude Code: Claude Code
+            Kilo Code: Kilo Code
+            Zed: Zed
+            Codex: Codex
+            pi: pi
+            Cursor: Cursor
+            Any OpenAI client: Tout client OpenAI
+            Plans & limits: Plans et limites
+            API reference: Référence API
+            FAQ: FAQ
+
+        - locale: de
+          name: Deutsch
+          build: true
+          site_name: Claudin.io Dokumentation
+          nav_translations:
+            Home: Startseite
+            Getting started: Erste Schritte
+            Create your account: Konto erstellen
+            Set your API key: API-Schlüssel festlegen
+            Your first call: Erster API-Aufruf
+            Connect your tool: Tool verbinden
+            OpenCode: OpenCode
+            Claude Code: Claude Code
+            Kilo Code: Kilo Code
+            Zed: Zed
+            Codex: Codex
+            pi: pi
+            Cursor: Cursor
+            Any OpenAI client: Jeder OpenAI-Client
+            Plans & limits: Pläne & Limits
+            API reference: API-Referenz
+            FAQ: FAQ
+
+        - locale: it
+          name: Italiano
+          build: true
+          site_name: Documentazione Claudin.io
+          nav_translations:
+            Home: Home
+            Getting started: Per iniziare
+            Create your account: Crea il tuo account
+            Set your API key: Imposta la tua chiave API
+            Your first call: La tua prima chiamata
+            Connect your tool: Connetti il tuo strumento
+            OpenCode: OpenCode
+            Claude Code: Claude Code
+            Kilo Code: Kilo Code
+            Zed: Zed
+            Codex: Codex
+            pi: pi
+            Cursor: Cursor
+            Any OpenAI client: Qualsiasi client OpenAI
+            Plans & limits: Piani e limiti
+            API reference: Riferimento API
+            FAQ: FAQ
+
+        - locale: ru
+          name: Русский
+          build: true
+          site_name: Документация Claudin.io
+          nav_translations:
+            Home: Главная
+            Getting started: Начало работы
+            Create your account: Создать аккаунт
+            Set your API key: Установить ключ API
+            Your first call: Первый запрос
+            Connect your tool: Подключить инструмент
+            OpenCode: OpenCode
+            Claude Code: Claude Code
+            Kilo Code: Kilo Code
+            Zed: Zed
+            Codex: Codex
+            pi: pi
+            Cursor: Cursor
+            Any OpenAI client: Любой клиент OpenAI
+            Plans & limits: Тарифы и лимиты
+            API reference: Справочник API
+            FAQ: Часто задаваемые вопросы
+
+        - locale: tr
+          name: Türkçe
+          build: true
+          site_name: Claudin.io Belgeleri
+          nav_translations:
+            Home: Ana Sayfa
+            Getting started: Başlarken
+            Create your account: Hesap oluşturun
+            Set your API key: API anahtarınızı ayarlayın
+            Your first call: İlk çağrınız
+            Connect your tool: Aracınızı bağlayın
+            OpenCode: OpenCode
+            Claude Code: Claude Code
+            Kilo Code: Kilo Code
+            Zed: Zed
+            Codex: Codex
+            pi: pi
+            Cursor: Cursor
+            Any OpenAI client: Herhangi bir OpenAI istemcisi
+            Plans & limits: Planlar ve limitler
+            API reference: API referansı
+            FAQ: SSS
+
+        - locale: ar
+          name: العربية
+          build: true
+          site_name: وثائق Claudin.io
+          nav_translations:
+            Home: الرئيسية
+            Getting started: بدء الاستخدام
+            Create your account: إنشاء حسابك
+            Set your API key: تعيين مفتاح API الخاص بك
+            Your first call: مكالمتك الأولى
+            Connect your tool: ربط أداتك
+            OpenCode: OpenCode
+            Claude Code: Claude Code
+            Kilo Code: Kilo Code
+            Zed: Zed
+            Codex: Codex
+            pi: pi
+            Cursor: Cursor
+            Any OpenAI client: Any OpenAI client
+            Plans & limits: الخطط والحدود
+            API reference: مرجع API
+            FAQ: الأسئلة الشائعة
+
+        - locale: hi
+          name: हिन्दी
+          build: true
+          site_name: Claudin.io दस्तावेज़
+          nav_translations:
+            Home: होम
+            Getting started: शुरू करें
+            Create your account: अपना खाता बनाएं
+            Set your API key: अपनी API कुंजी सेट करें
+            Your first call: आपकी पहली कॉल
+            Connect your tool: अपना टूल कनेक्ट करें
+            OpenCode: OpenCode
+            Claude Code: Claude Code
+            Kilo Code: Kilo Code
+            Zed: Zed
+            Codex: Codex
+            pi: pi
+            Cursor: Cursor
+            Any OpenAI client: Any OpenAI client
+            Plans & limits: योजनाएं और सीमाएं
+            API reference: API संदर्भ
+            FAQ: सामान्य प्रश्न
+
+        - locale: bn
+          name: বাংলা
+          build: true
+          site_name: Claudin.io ডকুমেন্টেশন
+          nav_translations:
+            Home: হোম
+            Getting started: শুরু করা
+            Create your account: আপনার অ্যাকাউন্ট তৈরি করুন
+            Set your API key: আপনার API কী সেট করুন
+            Your first call: আপনার প্রথম কল
+            Connect your tool: আপনার টুল সংযুক্ত করুন
+            OpenCode: OpenCode
+            Claude Code: Claude Code
+            Kilo Code: Kilo Code
+            Zed: Zed
+            Codex: Codex
+            pi: pi
+            Cursor: Cursor
+            Any OpenAI client: Any OpenAI client
+            Plans & limits: পরিকল্পনা ও সীমা
+            API reference: API রেফারেন্স
+            FAQ: FAQ
+
+        - locale: ur
+          name: اردو
+          build: true
+          site_name: Claudin.io دستاویزات
+          nav_translations:
+            Home: ہوم
+            Getting started: شروع کریں
+            Create your account: اپنا اکاؤنٹ بنائیں
+            Set your API key: اپنی API کلید سیٹ کریں
+            Your first call: آپ کی پہلی کال
+            Connect your tool: اپنا ٹول جوڑیں
+            OpenCode: OpenCode
+            Claude Code: Claude Code
+            Kilo Code: Kilo Code
+            Zed: Zed
+            Codex: Codex
+            pi: pi
+            Cursor: Cursor
+            Any OpenAI client: کوئی بھی OpenAI کلائنٹ
+            Plans & limits: منصوبے اور حدود
+            API reference: API حوالہ
+            FAQ: عمومی سوالات
+
+        - locale: zh
+          name: 中文
+          build: true
+          site_name: Claudin.io 文档
+          nav_translations:
+            Home: 首页
+            Getting started: 入门指南
+            Create your account: 创建账户
+            Set your API key: 设置API密钥
+            Your first call: 首次调用
+            Connect your tool: 连接你的工具
+            OpenCode: OpenCode
+            Claude Code: Claude Code
+            Kilo Code: Kilo Code
+            Zed: Zed
+            Codex: Codex
+            pi: pi
+            Cursor: Cursor
+            Any OpenAI client: 任何OpenAI客户端
+            Plans & limits: 套餐与限制
+            API reference: API参考
+            FAQ: 常见问题
+
+        - locale: ja
+          name: 日本語
+          build: true
+          site_name: Claudin.io ドキュメント
+          nav_translations:
+            Home: ホーム
+            Getting started: はじめに
+            Create your account: アカウント作成
+            Set your API key: APIキーの設定
+            Your first call: 初めての呼び出し
+            Connect your tool: ツールの接続
+            OpenCode: OpenCode
+            Claude Code: Claude Code
+            Kilo Code: Kilo Code
+            Zed: ゼッド
+            Codex: コーデックス
+            pi: pi
+            Cursor: カーソル
+            Any OpenAI client: 任意のOpenAIクライアント
+            Plans & limits: プランと制限
+            API reference: APIリファレンス
+            FAQ: FAQ
+
+        - locale: ko
+          name: 한국어
+          build: true
+          site_name: Claudin.io 문서
+          nav_translations:
+            Home: 홈
+            Getting started: 시작하기
+            Create your account: 계정 만들기
+            Set your API key: API 키 설정
+            Your first call: 첫 번째 호출
+            Connect your tool: 도구 연결
+            OpenCode: OpenCode
+            Claude Code: Claude Code
+            Kilo Code: Kilo Code
+            Zed: Zed
+            Codex: Codex
+            pi: pi
+            Cursor: Cursor
+            Any OpenAI client: Any OpenAI client
+            Plans & limits: 요금제 및 제한
+            API reference: API 참조
+            FAQ: FAQ
+
+        - locale: vi
+          name: Tiếng Việt
+          build: true
+          site_name: Tài liệu Claudin.io
+          nav_translations:
+            Home: Trang chủ
+            Getting started: Bắt đầu
+            Create your account: Tạo tài khoản
+            Set your API key: Thiết lập khóa API
+            Your first call: Lệnh gọi đầu tiên
+            Connect your tool: Kết nối công cụ
+            OpenCode: OpenCode
+            Claude Code: Claude Code
+            Kilo Code: Kilo Code
+            Zed: Zed
+            Codex: Codex
+            pi: pi
+            Cursor: Cursor
+            Any OpenAI client: Bất kỳ ứng dụng OpenAI nào
+            Plans & limits: Gói & giới hạn
+            API reference: Tài liệu tham khảo API
+            FAQ: Câu hỏi thường gặp
+
+        - locale: id
+          name: Bahasa Indonesia
+          build: true
+          site_name: Dokumentasi Claudin.io
+          nav_translations:
+            Home: Beranda
+            Getting started: Memulai
+            Create your account: Buat akun Anda
+            Set your API key: Atur kunci API Anda
+            Your first call: Panggilan pertama Anda
+            Connect your tool: Hubungkan alat Anda
+            OpenCode: OpenCode
+            Claude Code: Claude Code
+            Kilo Code: Kilo Code
+            Zed: Zed
+            Codex: Codex
+            pi: pi
+            Cursor: Cursor
+            Any OpenAI client: Klien OpenAI apa pun
+            Plans & limits: Paket & batasan
+            API reference: Referensi API
+            FAQ: FAQ
 
 extra:
   social:
