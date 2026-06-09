@@ -1,0 +1,7 @@
+<a href="https://claudin.io" title="{{ config.site_name }}" class="md-header__button md-logo">
+  {% if config.theme.logo.icon %}
+    {% include ".icons/" ~ config.theme.logo.icon %}
+  {% else %}
+    <img src="{{ config.theme.logo | url }}" alt="{{ config.site_name }}" height="28" width="28">
+  {% endif %}
+</a>
