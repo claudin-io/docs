@@ -510,6 +510,7 @@ nav:
       - Codex: clients/codex.md
       - pi: clients/pi.md
       - Cursor: clients/cursor.md
+      - Hermes Agent: clients/hermes.md
       - Any OpenAI client: clients/openai-compatible.md
   - Plans & limits: plans.md
   - API reference: api-reference.md
