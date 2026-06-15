@@ -9,7 +9,6 @@ usa livremente. O limite existe apenas para impedir que um agente descontrolado
 
 | Plano | Preço | Proteção de gastos | Melhor para |
 | --- | --- | --- | --- |
-| **Grátis** | $0 | $0,45 / dia | Experimentar, uso leve |
 | **Lite** | $9 / mês | $0,80 / hora | Projetos de hobby, codificação ocasional |
 | **Essential** | $25 / mês ou $180 / ano | $2,00 / hora | Codificação diária — a escolha popular |
 | **Pro** ★ | $59 / mês ou $566,40 / ano | $4,00 / hora | Fluxos de trabalho agentivos pesados |
@@ -25,7 +24,7 @@ usa livremente. O limite existe apenas para impedir que um agente descontrolado
 Cada plano define uma **janela** de orçamento — um período contínuo e um gasto máximo
 dentro dele:
 
-- **Grátis** usa uma janela de **24 horas** (`$0.45/dia`).
+
 - **Lite / Essential / Pro** usam uma janela de **1 hora**.
 
 Dentro da janela, o seu uso acumula um pequeno custo interno. Quando esse
@@ -41,8 +40,7 @@ teto de proteção, não o que paga. A sua fatura real é apenas a subscrição 
 - **Atualize** a qualquer momento a partir do [painel de controlo](https://claudin.io/dashboard).
   O pagamento é tratado através da Stripe e os novos limites são aplicados imediatamente.
 - **Rebaixe ou cancele** no mesmo local. Se cancelar, mantém o seu plano pago
-  até ao final do período que já pagou, depois desce automaticamente para
-  **Grátis** — a sua conta e chaves são preservadas.
+  até ao final do período que já pagou — a sua conta e chaves são preservadas.
 
 ## O que conta contra o limite
 

@@ -9,23 +9,22 @@ lo usas libremente. El tope existe solo para evitar que un agente descontrolado
 
 | Plan | Precio | Protección de gasto | Ideal para |
 | --- | --- | --- | --- |
-| **Free** | $0 | $0.45 / día | Para probarlo, uso ligero |
 | **Lite** | $9 / mes | $0.80 / hora | Proyectos de hobby, codificación ocasional |
 | **Essential** | $25 / mes o $180 / año | $2.00 / hora | Codificación diaria — la opción popular |
 | **Pro** ★ | $59 / mes o $566.40 / año | $4.00 / hora | Flujos de trabajo agentivos intensivos |
 | **Ultra** | $99 / mes o $1,069.20 / año | $10.00 / hora | Máximo poder, equipos y producción |
 
 !!! tip "La mayoría nunca alcanza el tope"
-    El tope por hora es generoso para el trabajo interactivo normal. Normalmente solo
-    lo rozas si un agente entra en un bucle cerrado — que es exactamente cuando
-    *quieres* un freno.
+ El tope por hora es generoso para el trabajo interactivo normal. Normalmente solo
+ lo rozas si un agente entra en un bucle cerrado — que es exactamente cuando
+ *quieres* un freno.
 
 ## Cómo funciona la protección de gasto
 
 Cada plan define una **ventana** de presupuesto — un período continuo y un gasto máximo
 dentro de ella:
 
-- **Free** usa una ventana de **24 horas** (`$0.45/day`).
+
 - **Lite / Essential / Pro / Ultra** usan una ventana de **1 hora**.
 
 Dentro de la ventana, tu uso acumula un pequeño costo interno. Cuando ese costo
@@ -41,10 +40,10 @@ mensual fija.
 ## Actualizar y degradar
 
 - **Actualiza** en cualquier momento desde el [panel](https://claudin.io/dashboard).
-  El pago se gestiona a través de Stripe y los nuevos límites se aplican de inmediato.
+ El pago se gestiona a través de Stripe y los nuevos límites se aplican de inmediato.
 - **Degrada o cancela** desde el mismo lugar. Si cancelas, conservas tu plan de pago
-  hasta el final del período que ya pagaste, luego bajas automáticamente a **Free** —
-  tu cuenta y claves se conservan.
+ hasta el final del período que ya pagaste —
+ tu cuenta y claves se conservan.
 
 ## Qué cuenta contra el tope
 

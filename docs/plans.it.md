@@ -8,7 +8,6 @@ lo usi liberamente. Il tetto esiste solo per impedire a un agente fuori controll
 
 | Piano | Prezzo | Protezione dalla spesa | Ideale per |
 | --- | --- | --- | --- |
-| **Gratuito** | $0 | $0.45 / giorno | Per provare, uso leggero |
 | **Lite** | $9 / mese | $0.80 / ora | Progetti hobby, codifica occasionale |
 | **Essential** | $25 / mese o $180 / anno | $2.00 / ora | Codifica quotidiana — la scelta popolare |
 | **Pro** ★ | $59 / mese o $566.40 / anno | $4.00 / ora | Flussi di lavoro agentici pesanti |
@@ -21,7 +20,6 @@ lo usi liberamente. Il tetto esiste solo per impedire a un agente fuori controll
 
 Ogni piano definisce una **finestra** di budget — un periodo scorrevole e una spesa massima al suo interno:
 
-- **Gratuito** utilizza una finestra **24 ore** (`$0.45/giorno`).
 - **Lite / Essential / Pro / Ultra** utilizzano una finestra **1 ora**.
 
 All'interno della finestra, il tuo utilizzo accumula un piccolo costo interno. Quando quel costo interno raggiunge il tetto della finestra, le richieste vengono messe in pausa fino al ripristino della finestra. La finestra si ripristina secondo una pianificazione fissa (all'inizio di ogni ora, UTC, per i piani orari), e il tuo budget rimanente viene mostrato **in tempo reale nella tua dashboard**.
@@ -31,7 +29,7 @@ Questo è *spend protection* (protezione dalla spesa), non fatturazione a consum
 ## Aggiornamento e downgrade
 
 - **Aggiorna** in qualsiasi momento dalla [dashboard](https://claudin.io/dashboard). Il pagamento è gestito tramite Stripe e i nuovi limiti si applicano immediatamente.
-- **Downgrade o annulla** dallo stesso posto. Se annulli, mantieni il piano a pagamento fino alla fine del periodo già pagato, poi scendi automaticamente al **Gratuito** — il tuo account e le tue chiavi sono preservati.
+- **Downgrade o annulla** dallo stesso posto. Se annulli, mantieni il piano a pagamento fino alla fine del periodo già pagato — il tuo account e le tue chiavi sono preservati.
 
 ## Cosa conta ai fini del tetto
 

@@ -9,7 +9,6 @@ l'utilisez librement. Le plafond existe uniquement pour empêcher un agent incon
 
 | Plan | Prix | Protection des dépenses | Idéal pour |
 | --- | --- | --- | --- |
-| **Gratuit** | $0 | $0.45 / jour | Pour essayer, utilisation légère |
 | **Lite** | $9 / mois | $0.80 / heure | Projets hobby, codage occasionnel |
 | **Essentiel** | $25 / mois ou $180 / an | $2.00 / heure | Codage quotidien — le choix populaire |
 | **Pro** ★ | $59 / mois ou $566.40 / an | $4.00 / heure | Workflows agentic intensifs |
@@ -25,8 +24,7 @@ l'utilisez librement. Le plafond existe uniquement pour empêcher un agent incon
 Chaque plan définit une **fenêtre** budgétaire — une période glissante et un montant
 maximum de dépenses à l'intérieur de celle-ci :
 
-- **Gratuit** utilise une fenêtre de **24 heures** (`$0.45 / jour`).
-- **Lite / Essentiel / Pro / Ultra** utilisent une fenêtre de **1 heure**.
+- **Lite**, **Essentiel**, **Pro** et **Ultra** utilisent une fenêtre d'**1 heure**.
 
 Dans cette fenêtre, votre utilisation accumule un minuscule coût interne. Lorsque ce
 coût interne atteint le plafond de la fenêtre, les requêtes sont mises en pause jusqu'à
@@ -43,8 +41,7 @@ réelle est simplement l'abonnement mensuel fixe.
 - **Mettez à niveau** à tout moment depuis le [tableau de bord](https://claudin.io/dashboard).
   Le paiement est traité via Stripe et les nouvelles limites s'appliquent immédiatement.
 - **Rétrogradez ou annulez** depuis le même endroit. Si vous annulez, vous conservez votre
-  plan payant jusqu'à la fin de la période déjà payée, puis passez automatiquement au plan
-  **Gratuit** — votre compte et vos clés sont conservés.
+  plan payant jusqu'à la fin de la période déjà payée — votre compte et vos clés sont conservés.
 
 ## Qu'est-ce qui compte dans le plafond
 

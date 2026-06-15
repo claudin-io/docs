@@ -6,7 +6,6 @@ Her Claudin.io planı, **harcama koruma sınırı** ile **sınırsız kullanım*
 
 | Plan | Fiyat | Harcama koruması | En uygun |
 | --- | --- | --- | --- |
-| **Ücretsiz** | $0 | $0.45 / gün | Denemek, hafif kullanım |
 | **Lite** | $9 / ay | $0.80 / saat | Hobi projeleri, ara sıra kodlama |
 | **Essential** | $25 / ay veya $180 / yıl | $2.00 / saat | Günlük kodlama — popüler seçim |
 | **Pro** ★ | $59 / ay veya $566.40 / yıl | $4.00 / saat | Yoğun ajan iş akışları |

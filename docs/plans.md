@@ -9,7 +9,6 @@ loop, for example) from draining your plan.
 
 | Plan | Price | Spend protection | Best for |
 | --- | --- | --- | --- |
-| **Free** | $0 | $0.45 / day | Trying it out, light use |
 | **Lite** | $9 / mo | $0.80 / hour | Hobby projects, occasional coding |
 | **Essential** | $25 / mo or $180 / yr | $2.00 / hour | Daily coding — the popular pick |
 | **Pro** ★ | $59 / mo or $566.40 / yr | $4.00 / hour | Heavy agentic workflows |
@@ -25,8 +24,7 @@ loop, for example) from draining your plan.
 Each plan defines a budget **window** — a rolling period and a maximum spend
 inside it:
 
-- **Free** uses a **24-hour** window (`$0.45/day`).
-- **Lite / Essential / Pro / Ultra** use a **1-hour** window.
+- **Lite**, **Essential**, **Pro**, and **Ultra** use a **1-hour** window.
 
 Within the window, your usage accumulates a tiny internal cost. When that
 internal cost reaches the window's cap, requests pause until the window resets.
@@ -42,8 +40,7 @@ subscription.
 - **Upgrade** any time from the [dashboard](https://claudin.io/dashboard).
   Payment is handled through Stripe and the new limits apply immediately.
 - **Downgrade or cancel** from the same place. If you cancel, you keep your paid
-  plan until the end of the period you already paid for, then automatically drop
-  to **Free** — your account and keys are preserved.
+  plan until the end of the period you already paid for — your account and keys are preserved.
 
 ## What counts against the cap
 

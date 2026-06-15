@@ -9,7 +9,6 @@ sử dụng thoải mái. Giới hạn chỉ tồn tại để ngăn một tác 
 
 | Gói | Giá | Bảo vệ chi tiêu | Phù hợp nhất |
 | --- | --- | --- | --- |
-| **Miễn phí** | $0 | $0.45 / ngày | Dùng thử, sử dụng nhẹ |
 | **Lite** | $9 / tháng | $0.80 / giờ | Dự án sở thích, thỉnh thoảng code |
 | **Essential** | $25 / tháng hoặc $180 / năm | $2.00 / giờ | Code hàng ngày — lựa chọn phổ biến |
 | **Pro** ★ | $59 / tháng hoặc $566.40 / năm | $4.00 / giờ | Quy trình tác nhân nặng |

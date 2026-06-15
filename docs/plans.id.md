@@ -8,23 +8,21 @@ menggunakannya secara bebas. Batas ini hanya ada untuk menghentikan agen yang le
 
 | Paket | Harga | Batas perlindungan biaya | Cocok untuk |
 | --- | --- | --- | --- |
-| **Gratis** | $0 | $0.45 / hari | Mencoba, penggunaan ringan |
 | **Lite** | $9 / bln | $0.80 / jam | Proyek hobi, coding sesekali |
 | **Essential** | $25 / bln atau $180 / thn | $2.00 / jam | Coding harian — pilihan populer |
 | **Pro** ★ | $59 / bln atau $566.40 / thn | $4.00 / jam | Alur kerja agen berat |
 | **Ultra** | $99 / bln atau $1,069.20 / thn | $10.00 / jam | Kekuatan maksimal, tim dan produksi |
 
 !!! tip "Kebanyakan orang tidak pernah mencapai batas"
-    Batas per jam sudah cukup longgar untuk pekerjaan interaktif normal. Anda biasanya hanya
-    mendekatinya jika agen masuk ke dalam perulangan ketat — yang justru saat Anda
-    *ingin* ada rem.
+ Batas per jam sudah cukup longgar untuk pekerjaan interaktif normal. Anda biasanya hanya
+ mendekatinya jika agen masuk ke dalam perulangan ketat — yang justru saat Anda
+ *ingin* ada rem.
 
 ## Cara kerja perlindungan biaya
 
 Setiap paket menentukan **jendela** anggaran — periode bergulir dan batas pengeluaran maksimum
 di dalamnya:
 
-- **Free** menggunakan jendela **24 jam** (`$0.45/hari`).
 - **Lite / Essential / Pro / Ultra** menggunakan jendela **1 jam**.
 
 Dalam jendela tersebut, pemakaian Anda mengakumulasi biaya internal yang sangat kecil. Ketika
@@ -38,10 +36,10 @@ bukan yang Anda bayar. Tagihan Anda sebenarnya hanyalah langganan bulanan tetap.
 ## Menaikkan & Menurunkan Paket
 
 - **Naikkan** kapan saja dari [dasbor](https://claudin.io/dashboard).
-  Pembayaran ditangani melalui Stripe dan batas baru berlaku segera.
+ Pembayaran ditangani melalui Stripe dan batas baru berlaku segera.
 - **Turunkan atau batalkan** dari tempat yang sama. Jika Anda membatalkan, Anda tetap mendapat paket
-  berbayar hingga akhir periode yang sudah Anda bayar, lalu secara otomatis turun ke **Free** —
-  akun dan kunci Anda tetap tersimpan.
+ berbayar hingga akhir periode yang sudah Anda bayar —
+ akun dan kunci Anda tetap tersimpan.
 
 ## Apa yang termasuk dalam batas
 

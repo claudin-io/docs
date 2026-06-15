@@ -6,7 +6,6 @@ Todo plano do Claudin.io é de **uso ilimitado** com um **limite de proteção d
 
 | Plano | Preço | Proteção de gastos | Melhor para |
 | --- | --- | --- | --- |
-| **Gratuito** | $0 | $0,45 / dia | Experimentar, uso leve |
 | **Lite** | $9 / mês | $0,80 / hora | Projetos de hobby, codificação ocasional |
 | **Essencial** | $25 / mês ou $180 / ano | $2,00 / hora | Codificação diária — a escolha popular |
 | **Pro** ★ | $59 / mês ou $566,40 / ano | $4,00 / hora | Fluxos de trabalho agentivos pesados |
@@ -22,7 +21,6 @@ Todo plano do Claudin.io é de **uso ilimitado** com um **limite de proteção d
 Cada plano define uma **janela** de orçamento — um período contínuo e um gasto máximo
 dentro dela:
 
-- **Gratuito** usa uma janela de **24 horas** (`$0,45/dia`).
 - **Lite / Essencial / Pro / Ultra** usam uma janela de **1 hora**.
 
 Dentro da janela, seu uso acumula um pequeno custo interno. Quando esse
@@ -38,8 +36,7 @@ teto de proteção, não o que você paga. Sua fatura real é apenas a assinatur
 - **Atualize** a qualquer momento pelo [painel](https://claudin.io/dashboard).
   O pagamento é processado pelo Stripe e os novos limites se aplicam imediatamente.
 - **Rebaixe ou cancele** no mesmo local. Se você cancelar, mantém seu plano
-  pago até o final do período que já pagou, depois cai automaticamente
-  para **Gratuito** — sua conta e chaves são preservadas.
+  pago até o final do período que já pagou — sua conta e chaves são preservadas.
 
 ## O que conta contra o limite
 

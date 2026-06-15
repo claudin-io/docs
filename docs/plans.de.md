@@ -9,7 +9,6 @@ Tool-Schleife) davon abzuhalten, Ihren Plan zu leeren.
 
 | Plan | Preis | Ausgabenschutz | Am besten geeignet für |
 | --- | --- | --- | --- |
-| **Kostenlos** | $0 | $0.45 / Tag | Zum Ausprobieren, leichte Nutzung |
 | **Lite** | $9 / Monat | $0.80 / Stunde | Hobbyprojekte, gelegentliches Programmieren |
 | **Essential** | $25 / Monat oder $180 / Jahr | $2.00 / Stunde | Tägliches Programmieren — die beliebte Wahl |
 | **Pro** ★ | $59 / Monat oder $566.40 / Jahr | $4.00 / Stunde | Schwere agentische Arbeitsabläufe |
