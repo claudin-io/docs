@@ -6,7 +6,7 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Sınırsız AI, tek sabit fiyat
+# Fatura endişesi olmadan kod. Sabit aylık fiyat, sınırsız kullanım.
 
 Claudin.io, AI kodlama ajanları için bir API proxy'sidir. **Sabit aylık
 abonelik** ödeyin ve istediğiniz kadar kullanın — token başına ücretlendirme yok,

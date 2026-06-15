@@ -8,10 +8,11 @@ menggunakannya secara bebas. Batas ini hanya ada untuk menghentikan agen yang le
 
 | Paket | Harga | Batas perlindungan biaya | Cocok untuk |
 | --- | --- | --- | --- |
-| **Free** | $0 | $0.45 / hari | Mencoba, penggunaan ringan |
-| **Lite** | $5 / bln | $0.60 / jam | Proyek hobi, coding sesekali |
-| **Essential** | $10 / bln | $1.50 / jam | Coding harian — pilihan populer |
-| **Pro** | $29 / bln | $4.00 / jam | Alur kerja agentik berat |
+| **Gratis** | $0 | $0.45 / hari | Mencoba, penggunaan ringan |
+| **Lite** | $9 / bln | $0.80 / jam | Proyek hobi, coding sesekali |
+| **Essential** | $25 / bln atau $180 / thn | $2.00 / jam | Coding harian — pilihan populer |
+| **Pro** ★ | $59 / bln atau $566.40 / thn | $4.00 / jam | Alur kerja agen berat |
+| **Ultra** | $99 / bln atau $1,069.20 / thn | $10.00 / jam | Kekuatan maksimal, tim dan produksi |
 
 !!! tip "Kebanyakan orang tidak pernah mencapai batas"
     Batas per jam sudah cukup longgar untuk pekerjaan interaktif normal. Anda biasanya hanya
@@ -24,7 +25,7 @@ Setiap paket menentukan **jendela** anggaran — periode bergulir dan batas peng
 di dalamnya:
 
 - **Free** menggunakan jendela **24 jam** (`$0.45/hari`).
-- **Lite / Essential / Pro** menggunakan jendela **1 jam**.
+- **Lite / Essential / Pro / Ultra** menggunakan jendela **1 jam**.
 
 Dalam jendela tersebut, pemakaian Anda mengakumulasi biaya internal yang sangat kecil. Ketika
 biaya internal tersebut mencapai batas jendela, permintaan dijeda sampai jendela disetel ulang.

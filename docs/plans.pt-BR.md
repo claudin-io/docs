@@ -7,9 +7,10 @@ Todo plano do Claudin.io é de **uso ilimitado** com um **limite de proteção d
 | Plano | Preço | Proteção de gastos | Melhor para |
 | --- | --- | --- | --- |
 | **Gratuito** | $0 | $0,45 / dia | Experimentar, uso leve |
-| **Lite** | $5 / mês | $0,60 / hora | Projetos de hobby, codificação ocasional |
-| **Essencial** | $10 / mês | $1,50 / hora | Codificação diária — a escolha popular |
-| **Pro** | $29 / mês | $4,00 / hora | Fluxos de trabalho agentivos pesados |
+| **Lite** | $9 / mês | $0,80 / hora | Projetos de hobby, codificação ocasional |
+| **Essencial** | $25 / mês ou $180 / ano | $2,00 / hora | Codificação diária — a escolha popular |
+| **Pro** ★ | $59 / mês ou $566,40 / ano | $4,00 / hora | Fluxos de trabalho agentivos pesados |
+| **Ultra** | $99 / mês ou $1.069,20 / ano | $10,00 / hora | Máximo poder, equipes e produção |
 
 !!! tip "A maioria das pessoas nunca atinge o limite"
     O limite por hora é generoso para trabalho interativo normal. Você geralmente só
@@ -22,7 +23,7 @@ Cada plano define uma **janela** de orçamento — um período contínuo e um ga
 dentro dela:
 
 - **Gratuito** usa uma janela de **24 horas** (`$0,45/dia`).
-- **Lite / Essencial / Pro** usam uma janela de **1 hora**.
+- **Lite / Essencial / Pro / Ultra** usam uma janela de **1 hora**.
 
 Dentro da janela, seu uso acumula um pequeno custo interno. Quando esse
 custo interno atinge o limite da janela, as requisições são pausadas até que a janela seja reiniciada.
@@ -30,7 +31,7 @@ A janela reinicia em um cronograma fixo (no início de cada hora, UTC, para os
 planos por hora), e seu orçamento restante é mostrado **ao vivo no seu painel**.
 
 Isso é *proteção de gastos*, não faturamento medido — os valores em dólar são o
-teto de proteção, não o que você paga. Sua fatura real é apenas a assinatura mensal fixa.
+teto de proteção, não o que você paga. Sua fatura real é apenas a assinatura fixa — mensal ou anual.
 
 ## Atualização e rebaixamento
 

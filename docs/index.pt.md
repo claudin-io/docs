@@ -6,7 +6,7 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# IA Ilimitada, um preço fixo
+# Código sem ansiedade de fatura. Preço mensal fixo, uso ilimitado.
 
 Claudin.io é um proxy de API para agentes de codificação com IA. Paga uma **subscrição mensal fixa** e usa-o tanto quanto quiser — sem faturação por token, sem contadores de pedidos, sem créditos que expiram.
 

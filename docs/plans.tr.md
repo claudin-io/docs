@@ -7,9 +7,10 @@ Her Claudin.io planı, **harcama koruma sınırı** ile **sınırsız kullanım*
 | Plan | Fiyat | Harcama koruması | En uygun |
 | --- | --- | --- | --- |
 | **Ücretsiz** | $0 | $0.45 / gün | Denemek, hafif kullanım |
-| **Hafif** | $5 / ay | $0.60 / saat | Hobi projeleri, ara sıra kodlama |
-| **Temel** | $10 / ay | $1.50 / saat | Günlük kodlama — popüler seçim |
-| **Pro** | $29 / ay | $4.00 / saat | Yoğun aracılı iş akışları |
+| **Lite** | $9 / ay | $0.80 / saat | Hobi projeleri, ara sıra kodlama |
+| **Essential** | $25 / ay veya $180 / yıl | $2.00 / saat | Günlük kodlama — popüler seçim |
+| **Pro** ★ | $59 / ay veya $566.40 / yıl | $4.00 / saat | Yoğun ajan iş akışları |
+| **Ultra** | $99 / ay veya $1,069.20 / yıl | $10.00 / saat | Maksimum güç, ekipler ve üretim |
 
 !!! tip "Çoğu kişi sınıra asla ulaşmaz"
     Saatlik sınır, normal etkileşimli çalışma için cömerttir. Genellikle yalnızca bir aracı sıkı bir döngüye girdiğinde buna yaklaşırsınız — ki bu tam da bir fren istediğiniz andır.

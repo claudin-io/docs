@@ -10,9 +10,10 @@ lo usas libremente. El tope existe solo para evitar que un agente descontrolado
 | Plan | Precio | Protección de gasto | Ideal para |
 | --- | --- | --- | --- |
 | **Free** | $0 | $0.45 / día | Para probarlo, uso ligero |
-| **Lite** | $5 / mes | $0.60 / hora | Proyectos de hobby, codificación ocasional |
-| **Essential** | $10 / mes | $1.50 / hora | Codificación diaria — la opción popular |
-| **Pro** | $29 / mes | $4.00 / hora | Flujos de trabajo agentivos intensivos |
+| **Lite** | $9 / mes | $0.80 / hora | Proyectos de hobby, codificación ocasional |
+| **Essential** | $25 / mes o $180 / año | $2.00 / hora | Codificación diaria — la opción popular |
+| **Pro** ★ | $59 / mes o $566.40 / año | $4.00 / hora | Flujos de trabajo agentivos intensivos |
+| **Ultra** | $99 / mes o $1,069.20 / año | $10.00 / hora | Máximo poder, equipos y producción |
 
 !!! tip "La mayoría nunca alcanza el tope"
     El tope por hora es generoso para el trabajo interactivo normal. Normalmente solo
@@ -25,7 +26,7 @@ Cada plan define una **ventana** de presupuesto — un período continuo y un ga
 dentro de ella:
 
 - **Free** usa una ventana de **24 horas** (`$0.45/day`).
-- **Lite / Essential / Pro** usan una ventana de **1 hora**.
+- **Lite / Essential / Pro / Ultra** usan una ventana de **1 hora**.
 
 Dentro de la ventana, tu uso acumula un pequeño costo interno. Cuando ese costo
 interno alcanza el tope de la ventana, las solicitudes se pausan hasta que la

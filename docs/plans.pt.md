@@ -9,10 +9,11 @@ usa livremente. O limite existe apenas para impedir que um agente descontrolado
 
 | Plano | Preço | Proteção de gastos | Melhor para |
 | --- | --- | --- | --- |
-| **Grátis** | $0 | $0.45 / dia | Experimentar, uso leve |
-| **Lite** | $5 / mês | $0.60 / hora | Projetos de hobby, codificação ocasional |
-| **Essential** | $10 / mês | $1.50 / hora | Codificação diária — a escolha popular |
-| **Pro** | $29 / mês | $4.00 / hora | Fluxos de trabalho agentivos pesados |
+| **Grátis** | $0 | $0,45 / dia | Experimentar, uso leve |
+| **Lite** | $9 / mês | $0,80 / hora | Projetos de hobby, codificação ocasional |
+| **Essential** | $25 / mês ou $180 / ano | $2,00 / hora | Codificação diária — a escolha popular |
+| **Pro** ★ | $59 / mês ou $566,40 / ano | $4,00 / hora | Fluxos de trabalho agentivos pesados |
+| **Ultra** | $99 / mês ou $1.069,20 / ano | $10,00 / hora | Máximo poder, equipas e produção |
 
 !!! tip "A maioria das pessoas nunca atinge o limite"
     O limite horário é generoso para trabalho interativo normal. Normalmente, você

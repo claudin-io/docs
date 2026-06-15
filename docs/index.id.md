@@ -6,7 +6,7 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# AI Tak Terbatas, Satu Harga Tetap
+# Kode tanpa cemas tagihan. Harga bulanan tetap, penggunaan tak terbatas.
 
 Claudin.io adalah proxy API untuk agen coding AI. Bayar **langganan bulanan tetap** dan gunakan sebanyak yang Anda mau — tanpa tagihan per-token, tanpa penghitung permintaan, tanpa kredit yang kedaluwarsa.
 

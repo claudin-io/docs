@@ -10,9 +10,10 @@ Tool-Schleife) davon abzuhalten, Ihren Plan zu leeren.
 | Plan | Preis | Ausgabenschutz | Am besten geeignet für |
 | --- | --- | --- | --- |
 | **Kostenlos** | $0 | $0.45 / Tag | Zum Ausprobieren, leichte Nutzung |
-| **Lite** | $5 / Monat | $0.60 / Stunde | Hobbyprojekte, gelegentliches Programmieren |
-| **Essential** | $10 / Monat | $1.50 / Stunde | Tägliches Programmieren – die beliebte Wahl |
-| **Pro** | $29 / Monat | $4.00 / Stunde | Schwere agentische Arbeitsabläufe |
+| **Lite** | $9 / Monat | $0.80 / Stunde | Hobbyprojekte, gelegentliches Programmieren |
+| **Essential** | $25 / Monat oder $180 / Jahr | $2.00 / Stunde | Tägliches Programmieren — die beliebte Wahl |
+| **Pro** ★ | $59 / Monat oder $566.40 / Jahr | $4.00 / Stunde | Schwere agentische Arbeitsabläufe |
+| **Ultra** | $99 / Monat oder $1,069.20 / Jahr | $10.00 / Stunde | Maximale Leistung, Teams & Produktion |
 
 !!! tip "Die meisten Leute erreichen nie die Grenze"
     Die stündliche Grenze ist für normale interaktive Arbeit großzügig. Sie stoßen normalerweise nur dann
@@ -23,7 +24,7 @@ Tool-Schleife) davon abzuhalten, Ihren Plan zu leeren.
 Jeder Plan definiert ein Budget **Fenster** – einen rollierenden Zeitraum und eine maximale Ausgabe darin:
 
 - **Kostenlos** verwendet ein **24-Stunden**-Fenster (`$0.45/day`).
-- **Lite / Essential / Pro** verwenden ein **1-Stunden**-Fenster.
+- **Lite / Essential / Pro / Ultra** verwenden ein **1-Stunden**-Fenster.
 
 Innerhalb des Fensters sammelt Ihre Nutzung winzige interne Kosten an. Wenn diese internen Kosten die Grenze
 des Fensters erreichen, werden Anfragen pausiert, bis das Fenster zurückgesetzt wird. Das Fenster wird nach

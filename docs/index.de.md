@@ -6,7 +6,7 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Unbegrenzte KI, ein Festpreis
+# Coden ohne Rechnungsangst. Fester monatlicher Preis, unbegrenzte Nutzung.
 
 Claudin.io ist ein API-Proxy für KI-Codierungsagenten. Zahlen Sie ein **pauschales monatliches Abonnement** und nutzen Sie es so viel Sie wollen – keine token-basierte Abrechnung, keine Anfragenzähler, keine Guthaben, die verfallen.
 

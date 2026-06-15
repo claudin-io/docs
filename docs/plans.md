@@ -10,9 +10,10 @@ loop, for example) from draining your plan.
 | Plan | Price | Spend protection | Best for |
 | --- | --- | --- | --- |
 | **Free** | $0 | $0.45 / day | Trying it out, light use |
-| **Lite** | $5 / mo | $0.60 / hour | Hobby projects, occasional coding |
-| **Essential** | $10 / mo | $1.50 / hour | Daily coding — the popular pick |
-| **Pro** | $29 / mo | $4.00 / hour | Heavy agentic workflows |
+| **Lite** | $9 / mo | $0.80 / hour | Hobby projects, occasional coding |
+| **Essential** | $25 / mo or $180 / yr | $2.00 / hour | Daily coding — the popular pick |
+| **Pro** ★ | $59 / mo or $566.40 / yr | $4.00 / hour | Heavy agentic workflows |
+| **Ultra** | $99 / mo or $1,069.20 / yr | $10.00 / hour | Maximum power, teams & production |
 
 !!! tip "Most people never hit the cap"
     The hourly cap is generous for normal interactive work. You typically only
@@ -25,7 +26,7 @@ Each plan defines a budget **window** — a rolling period and a maximum spend
 inside it:
 
 - **Free** uses a **24-hour** window (`$0.45/day`).
-- **Lite / Essential / Pro** use a **1-hour** window.
+- **Lite / Essential / Pro / Ultra** use a **1-hour** window.
 
 Within the window, your usage accumulates a tiny internal cost. When that
 internal cost reaches the window's cap, requests pause until the window resets.

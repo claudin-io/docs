@@ -10,9 +10,10 @@ sử dụng thoải mái. Giới hạn chỉ tồn tại để ngăn một tác 
 | Gói | Giá | Bảo vệ chi tiêu | Phù hợp nhất |
 | --- | --- | --- | --- |
 | **Miễn phí** | $0 | $0.45 / ngày | Dùng thử, sử dụng nhẹ |
-| **Lite** | $5 / tháng | $0.60 / giờ | Dự án sở thích, thỉnh thoảng lập trình |
-| **Essential** | $10 / tháng | $1.50 / giờ | Lập trình hàng ngày — lựa chọn phổ biến |
-| **Pro** | $29 / tháng | $4.00 / giờ | Quy trình tác nhân nặng |
+| **Lite** | $9 / tháng | $0.80 / giờ | Dự án sở thích, thỉnh thoảng code |
+| **Essential** | $25 / tháng hoặc $180 / năm | $2.00 / giờ | Code hàng ngày — lựa chọn phổ biến |
+| **Pro** ★ | $59 / tháng hoặc $566.40 / năm | $4.00 / giờ | Quy trình tác nhân nặng |
+| **Ultra** | $99 / tháng hoặc $1,069.20 / năm | $10.00 / giờ | Sức mạnh tối đa, nhóm và sản xuất |
 
 !!! tip "Hầu hết mọi người không bao giờ chạm giới hạn"
     Giới hạn hàng giờ rất hào phóng cho công việc tương tác bình thường. Bạn thường chỉ
@@ -25,7 +26,7 @@ Mỗi gói xác định một **cửa sổ** ngân sách — một khoảng th�
 trong đó:
 
 - **Miễn phí** sử dụng cửa sổ **24 giờ** (`$0.45/ngày`).
-- **Lite / Essential / Pro** sử dụng cửa sổ **1 giờ**.
+- **Lite / Essential / Pro / Ultra** sử dụng cửa sổ **1 giờ**.
 
 Trong cửa sổ, việc sử dụng của bạn tích lũy một chi phí nội bộ nhỏ. Khi chi phí nội bộ đó
 đạt đến giới hạn của cửa sổ, các yêu cầu sẽ tạm dừng cho đến khi cửa sổ được đặt lại.

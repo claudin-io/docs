@@ -6,7 +6,7 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# AI không giới hạn, một mức giá cố định
+# Code không lo hóa đơn. Giá tháng cố định, sử dụng không giới hạn.
 
 Claudin.io là proxy API cho các tác nhân lập trình AI. Trả **gói đăng ký hàng tháng cố định** và sử dụng không giới hạn — không tính phí theo token, không đếm số lượng yêu cầu, không có tín dụng hết hạn.
 

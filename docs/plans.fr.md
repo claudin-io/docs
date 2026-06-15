@@ -10,9 +10,10 @@ l'utilisez librement. Le plafond existe uniquement pour empêcher un agent incon
 | Plan | Prix | Protection des dépenses | Idéal pour |
 | --- | --- | --- | --- |
 | **Gratuit** | $0 | $0.45 / jour | Pour essayer, utilisation légère |
-| **Lite** | $5 / mois | $0.60 / heure | Projets hobby, codage occasionnel |
-| **Essentiel** | $10 / mois | $1.50 / heure | Codage quotidien — le choix populaire |
-| **Pro** | $29 / mois | $4.00 / heure | Workflows agentic intensifs |
+| **Lite** | $9 / mois | $0.80 / heure | Projets hobby, codage occasionnel |
+| **Essentiel** | $25 / mois ou $180 / an | $2.00 / heure | Codage quotidien — le choix populaire |
+| **Pro** ★ | $59 / mois ou $566.40 / an | $4.00 / heure | Workflows agentic intensifs |
+| **Ultra** | $99 / mois ou $1,069.20 / an | $10.00 / heure | Puissance maximale, équipes & production |
 
 !!! tip "La plupart des gens n'atteignent jamais le plafond"
     Le plafond horaire est généreux pour un travail interactif normal. Vous ne le
@@ -25,7 +26,7 @@ Chaque plan définit une **fenêtre** budgétaire — une période glissante et 
 maximum de dépenses à l'intérieur de celle-ci :
 
 - **Gratuit** utilise une fenêtre de **24 heures** (`$0.45 / jour`).
-- **Lite / Essentiel / Pro** utilisent une fenêtre de **1 heure**.
+- **Lite / Essentiel / Pro / Ultra** utilisent une fenêtre de **1 heure**.
 
 Dans cette fenêtre, votre utilisation accumule un minuscule coût interne. Lorsque ce
 coût interne atteint le plafond de la fenêtre, les requêtes sont mises en pause jusqu'à

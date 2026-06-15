@@ -6,7 +6,7 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Unlimited AI, one fixed price
+# Code without bill anxiety. Flat monthly price, unlimited usage.
 
 Claudin.io is an API proxy for AI coding agents. Pay a **flat monthly
 subscription** and use it as much as you want — no per-token billing, no request

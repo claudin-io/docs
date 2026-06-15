@@ -6,7 +6,7 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Unlimited AI，one fixed price
+# 摆脱账单焦虑的编程。固定月费，无限使用。
 
 Claudin.io 是一个面向 AI 编码代理的 API 代理。支付 **固定月费**，随心使用——没有按 token 计费，没有请求计数，没有过期积分。
 
