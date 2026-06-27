@@ -1,42 +1,40 @@
-# Planlar ve sınırlar
+# Planlar ve limitler
 
-Her Claudin.io planı, **harcama koruma sınırı** ile **sınırsız kullanım** sunar. Token başına veya istek başına fatura edilmezsiniz — sabit bir aylık ücret öder ve özgürce kullanırsınız. Sınır yalnızca kontrolden çıkmış bir aracının (örneğin sonsuz araç döngüsü) planınızı tüketmesini durdurmak için vardır.
+Her Claudin.io planı, **harcama koruma sınırı** olan **sınırsız kullanımdır**.
+Token veya istek başına faturalandırılmazsınız — sabit bir aylık ücret öder ve
+özgürce kullanırsınız. Sınır, yalnızca kontrolden çıkmış bir aracın (örneğin sonsuz
+bir araç döngüsü) planınızı tüketmesini durdurmak için vardır.
 
 ## Planlar
 
-| Plan | Fiyat | Harcama koruması | En uygun |
+| Plan | Fiyat | Harcama koruması | En iyi için |
 | --- | --- | --- | --- |
-| **Lite** | $9 / ay | $0.80 / saat | Hobi projeleri, ara sıra kodlama |
-| **Essential** | $25 / ay veya $180 / yıl | $2.00 / saat | Günlük kodlama — popüler seçim |
-| **Pro** ★ | $59 / ay veya $566.40 / yıl | $4.00 / saat | Yoğun ajan iş akışları |
-| **Ultra** | $99 / ay veya $1,069.20 / yıl | $10.00 / saat | Maksimum güç, ekipler ve üretim |
+| **Başlangıç** | $5 / ay | $0.50 / saat | Denemek — düşük taahhüt |
+| **Hafif** | $9 / ay | $1.00 / saat | Hobi projeleri, ara sıra kodlama |
+| **Temel** | $19 / ay veya $189 / yıl | $2.00 / saat | Günlük kodlama — popüler seçim |
+| **Pro** ★ | $39 / ay veya $389 / yıl | $4.00 / saat | Ağır ajan iş akışları |
+| **Güçlü** | $59 / ay veya $589 / yıl | $6.00 / saat | Ekipler, çoklu projeler |
+| **Ultra** | $99 / ay veya $989 / yıl | $10.00 / saat | Maksimum güç, ekipler ve üretim |
 
-!!! tip "Çoğu kişi sınıra asla ulaşmaz"
-    Saatlik sınır, normal etkileşimli çalışma için cömerttir. Genellikle yalnızca bir aracı sıkı bir döngüye girdiğinde buna yaklaşırsınız — ki bu tam da bir fren istediğiniz andır.
+!!! ipucu "Çoğu insan asla sınıra ulaşmaz"
+    Saatlik sınır normal etkileşimli çalışma için cömerttir. Genellikle yalnızca bir
+    ajan dar bir döngüye girdiğinde takılırsınız — tam da bir fren *istediğiniz* zaman.
 
 ## Harcama koruması nasıl çalışır
 
-Her plan, bir bütçe **penceresi** tanımlar — hareketli bir dönem ve içinde maksimum harcama:
+Her plan bir bütçe **penceresi** tanımlar — kayan bir süre ve içinde maksimum harcama:
 
-- **Ücretsiz** bir **24 saatlik** pencere kullanır (`$0.45/gün`).
-- **Hafif / Temel / Pro** bir **1 saatlik** pencere kullanır.
+- **Başlangıç**, **Hafif**, **Temel**, **Pro**, **Güçlü** ve **Ultra** bir **1 saatlik** pencere kullanır.
 
-Pencere içinde, kullanımınız küçük bir dahili maliyet biriktirir. Bu dahili maliyet pencerenin sınırına ulaştığında, pencere sıfırlanana kadar istekler durdurulur. Pencere sabit bir programla sıfırlanır (saatlik planlar için her saatin başında UTC) ve kalan bütçeniz **panonuzda canlı olarak** gösterilir.
+Pencere içinde, kullanımınız küçük bir iç maliyet biriktirir. Bu iç maliyet pencerenin
+sınırına ulaştığında, pencere sıfırlanana kadar istekler duraklatılır.
 
-Bu *harcama koruması*dır, ölçülen fatura değil — dolar rakamları koruma tavanıdır, ödediğiniz şey değil. Gerçek faturanız yalnızca sabit aylık aboneliktir.
+Yalnızca model çağrılarınız proxy üzerinden geçer. Her istek, kullanılan tokenlara
+dayanarak mevcut pencerenin toplamına eklenir. Pencere sıfırlandığında, toplam da sıfırlanır.
 
-## Yükseltme ve düşürme
+Sınıra ulaşıp bütçe hatası alırsanız, iki seçeneğiniz vardır:
 
-- [Panodan](https://claudin.io/dashboard) istediğiniz zaman **yükseltebilirsiniz**. Ödeme Stripe üzerinden yapılır ve yeni limitler hemen uygulanır.
-- Aynı yerden **düşürebilir veya iptal edebilirsiniz**. İptal ederseniz, önceden ödediğiniz dönemin sonuna kadar ücretli planınızı korur, ardından otomatik olarak **Ücretsiz**'e düşersiniz — hesabınız ve anahtarlarınız korunur.
+1. Pencerenin sıfırlanmasını bekleyin (panelinizde gösterilir).
+2. Daha büyük bir sınır için üst plana yükseltin.
 
-## Sınırı ne etkiler?
-
-Yalnızca proxy aracılığıyla yaptığınız model çağrıları. Her istek, kullandığı token'lara göre mevcut pencerenin devam eden toplamına eklenir. Pencere sıfırlandığında, toplam da onunla birlikte sıfırlanır.
-
-Sınıra ulaşır ve bir bütçe hatası alırsanız, iki seçeneğiniz vardır:
-
-1. Pencerenin sıfırlanmasını bekleyin (panonuzda gösterilir).
-2. Daha büyük bir sınır için daha yüksek bir plana yükseltin.
-
-Bütçe hatasının nasıl göründüğü için [Planlarla ilgili hatalar](api-reference.md#errors) bölümüne bakın.
+Bütçe hatasının nasıl göründüğü için [Planla ilgili hatalar](api-reference.md#errors) bölümüne bakın.

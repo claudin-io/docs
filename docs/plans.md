@@ -9,40 +9,51 @@ loop, for example) from draining your plan.
 
 | Plan | Price | Spend protection | Best for |
 | --- | --- | --- | --- |
-| **Lite** | $9 / mo | $0.80 / hour | Hobby projects, occasional coding |
-| **Essential** | $25 / mo or $180 / yr | $2.00 / hour | Daily coding — the popular pick |
-| **Pro** ★ | $59 / mo or $566.40 / yr | $4.00 / hour | Heavy agentic workflows |
-| **Ultra** | $99 / mo or $1,069.20 / yr | $10.00 / hour | Maximum power, teams & production |
+| **Starter** | $5 / mo | $0.50 / hour | Trying out — low commitment |
+| **Lite** | $9 / mo | $1.00 / hour | Hobby projects, occasional coding |
+| **Essential** | $19 / mo or $189 / yr | $2.00 / hour | Quality for everyday use |
+| **Pro** ★ | $39 / mo or $389 / yr | $4.00 / hour | Heavy agentic workflows |
+| **Power** | $59 / mo or $589 / yr | $6.00 / hour | Teams, multiple projects |
+| **Ultra** | $99 / mo or $989 / yr | $10.00 / hour | Maximum power, teams & production |
 
 !!! tip "Most people never hit the cap"
     The hourly cap is generous for normal interactive work. You typically only
     brush against it if an agent goes into a tight loop — which is exactly when
     you *want* a brake.
 
+## Which model should you choose? Claudinio vs Claudius
+
+We offer two main models for your coding agent:
+
+| Model | Backend | Use case | Recommended for |
+| --- | --- | --- | --- |
+| **claudinio** 🏆 | Fast, balanced, cost-effective | Everyday coding, hobby projects, general code | **All plans** (Starter to Ultra) |
+| **claudius** ★ | Premium, deep reasoning | Complex tasks, deep reasoning, heavy agentic workflows | Essential+ (Pro, Power, Ultra) |
+
+### Straight talk
+
+If you're on **Starter** ($5) or **Lite** ($9) — **use `claudinio` and don't look back.** 🎯
+
+Here's the reality: `claudinio` delivers quality comparable to Claude Sonnet for everyday coding at a **fraction of the internal cost**. On the Lite plan, you can get **hundreds of requests per hour** with `claudinio` — while `claudius` would burn through your hourly budget much faster.
+
+| Metric | claudinio | claudius |
+| --- | --- | --- |
+| Impact on hourly budget | Low — stretches much further | High — burns faster |
+| Use case | Daily coding, personal projects | Heavy reasoning, complex agents |
+
+**Golden rule:** Configure your agent (Claude Code, Cursor, Continue, etc.) with `claudinio` as the default model. Only switch to `claudius` when you explicitly need more reasoning power — and if your plan allows it (Essential+). For hobby projects, `claudinio` is **all you need** and probably **more than you expect**.
+
+> 💡 Tip: Both models work with all major coding agents. Just set `model=claudinio` or `model=claudius` in your agent config. `claudinio` also automatically resolves aliases like `claude-sonnet-4`, `gpt-4o`, `o3-mini` and dozens more — no need to change your agent's configuration.
+
 ## How spend protection works
 
 Each plan defines a budget **window** — a rolling period and a maximum spend
 inside it:
 
-- **Lite**, **Essential**, **Pro**, and **Ultra** use a **1-hour** window.
+- **Starter**, **Lite**, **Essential**, **Pro**, **Power**, and **Ultra** use a **1-hour** window.
 
 Within the window, your usage accumulates a tiny internal cost. When that
 internal cost reaches the window's cap, requests pause until the window resets.
-The window resets on a fixed schedule (the top of each hour, UTC, for the
-hourly plans), and your remaining budget is shown **live in your dashboard**.
-
-This is *spend protection*, not metered billing — the dollar figures are the
-protection ceiling, not what you pay. Your actual bill is just the flat monthly
-subscription.
-
-## Upgrading & downgrading
-
-- **Upgrade** any time from the [dashboard](https://claudin.io/dashboard).
-  Payment is handled through Stripe and the new limits apply immediately.
-- **Downgrade or cancel** from the same place. If you cancel, you keep your paid
-  plan until the end of the period you already paid for — your account and keys are preserved.
-
-## What counts against the cap
 
 Only your model calls through the proxy. Each request adds to the current
 window's running total based on the tokens it used. When the window resets, the

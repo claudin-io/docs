@@ -1,54 +1,41 @@
-# Paket & Batasan
+# Paket dan batasan
 
-Setiap paket Claudin.io adalah **pemakaian tak terbatas** dengan **batas perlindungan biaya**.
+Setiap paket Claudin.io adalah **penggunaan tak terbatas** dengan **batas perlindungan pengeluaran**.
 Anda tidak ditagih per token atau per permintaan — Anda membayar harga bulanan tetap dan
-menggunakannya secara bebas. Batas ini hanya ada untuk menghentikan agen yang lepas kendali (misalnya, perulangan alat yang tak terbatas) agar tidak menguras paket Anda.
+menggunakannya secara bebas. Batas ini hanya ada untuk menghentikan agen yang tak terkendali
+(misalnya, lingkaran alat tak terbatas) dari menghabiskan paket Anda.
 
 ## Paket-paket
 
-| Paket | Harga | Batas perlindungan biaya | Cocok untuk |
+| Paket | Harga | Perlindungan pengeluaran | Terbaik untuk |
 | --- | --- | --- | --- |
-| **Lite** | $9 / bln | $0.80 / jam | Proyek hobi, coding sesekali |
-| **Essential** | $25 / bln atau $180 / thn | $2.00 / jam | Coding harian — pilihan populer |
-| **Pro** ★ | $59 / bln atau $566.40 / thn | $4.00 / jam | Alur kerja agen berat |
-| **Ultra** | $99 / bln atau $1,069.20 / thn | $10.00 / jam | Kekuatan maksimal, tim dan produksi |
+| **Pemula** | $5 / bln | $0.50 / jam | Mencoba — komitmen rendah |
+| **Ringan** | $9 / bln | $1.00 / jam | Proyek hobi, coding sesekali |
+| **Esensial** | $19 / bln atau $189 / thn | $2.00 / jam | Coding harian — pilihan populer |
+| **Pro** ★ | $39 / bln atau $389 / thn | $4.00 / jam | Alur kerja agen berat |
+| **Kuat** | $59 / bln atau $589 / thn | $6.00 / jam | Tim, banyak proyek |
+| **Ultra** | $99 / bln atau $989 / thn | $10.00 / jam | Kekuatan maksimal, tim & produksi |
 
 !!! tip "Kebanyakan orang tidak pernah mencapai batas"
- Batas per jam sudah cukup longgar untuk pekerjaan interaktif normal. Anda biasanya hanya
- mendekatinya jika agen masuk ke dalam perulangan ketat — yang justru saat Anda
- *ingin* ada rem.
+    Batas per jam cukup besar untuk pekerjaan interaktif normal. Anda biasanya hanya
+    menyentuhnya jika agen masuk ke lingkaran ketat — persis saat Anda *ingin* rem.
 
-## Cara kerja perlindungan biaya
+## Cara kerja perlindungan pengeluaran
 
-Setiap paket menentukan **jendela** anggaran — periode bergulir dan batas pengeluaran maksimum
-di dalamnya:
+Setiap paket mendefinisikan **jendela** anggaran — periode bergulir dan pengeluaran maksimum di dalamnya:
 
-- **Lite / Essential / Pro / Ultra** menggunakan jendela **1 jam**.
+- **Pemula**, **Ringan**, **Esensial**, **Pro**, **Kuat**, dan **Ultra** menggunakan jendela **1 jam**.
 
-Dalam jendela tersebut, pemakaian Anda mengakumulasi biaya internal yang sangat kecil. Ketika
-biaya internal tersebut mencapai batas jendela, permintaan dijeda sampai jendela disetel ulang.
-Jendela disetel ulang sesuai jadwal tetap (setiap jam tepat, UTC, untuk paket per jam), dan sisa
-anggaran Anda ditampilkan **langsung di dasbor Anda**.
+Di dalam jendela, penggunaan Anda mengakumulasi biaya internal kecil. Ketika biaya
+internal itu mencapai batas jendela, permintaan berhenti sampai jendela direset.
 
-Ini adalah *perlindungan biaya*, bukan penagihan terukur — angka dolar adalah plafon perlindungan,
-bukan yang Anda bayar. Tagihan Anda sebenarnya hanyalah langganan bulanan tetap.
+Hanya panggilan model Anda melalui proxy. Setiap permintaan menambah total berjalan
+jendela saat ini berdasarkan token yang digunakan. Ketika jendela direset,
+totalnya juga direset.
 
-## Menaikkan & Menurunkan Paket
+Jika Anda mencapai batas dan mendapatkan error anggaran, Anda memiliki dua opsi:
 
-- **Naikkan** kapan saja dari [dasbor](https://claudin.io/dashboard).
- Pembayaran ditangani melalui Stripe dan batas baru berlaku segera.
-- **Turunkan atau batalkan** dari tempat yang sama. Jika Anda membatalkan, Anda tetap mendapat paket
- berbayar hingga akhir periode yang sudah Anda bayar —
- akun dan kunci Anda tetap tersimpan.
+1. Tunggu jendela direset (ditunjukkan di dasbor Anda).
+2. Upgrade ke paket yang lebih tinggi untuk batas yang lebih besar.
 
-## Apa yang termasuk dalam batas
-
-Hanya panggilan model Anda melalui proxy. Setiap permintaan menambah total berjalan jendela saat ini
-berdasarkan token yang digunakan. Ketika jendela disetel ulang, totalnya ikut disetel ulang.
-
-Jika Anda mencapai batas dan mendapatkan kesalahan anggaran, Anda memiliki dua opsi:
-
-1. Tunggu hingga jendela disetel ulang (ditampilkan di dasbor Anda).
-2. Naikkan ke paket yang lebih tinggi untuk batas yang lebih besar.
-
-Lihat [Kesalahan terkait Paket](api-reference.md#errors) untuk seperti apa tampilan kesalahan anggaran.
+Lihat [Error terkait paket](api-reference.md#errors) untuk melihat seperti apa error anggaran.

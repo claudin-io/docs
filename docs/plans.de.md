@@ -1,56 +1,41 @@
-# Pläne & Grenzen
+# Pläne & Limits
 
-Jeder Claudin.io Plan bietet **unbegrenzte Nutzung** mit einer **Ausgabenschutzgrenze**.
-Sie werden nicht pro Token oder pro Anfrage abgerechnet – Sie zahlen einen festen monatlichen Preis und
-nutzen es frei. Die Grenze dient nur dazu, einen außer Kontrolle geratenen Agenten (z. B. eine unendliche
-Tool-Schleife) davon abzuhalten, Ihren Plan zu leeren.
+Jeder Claudin.io-Plan ist **unbegrenzte Nutzung** mit einer **Ausgaben-Schutzgrenze**.
+Sie werden nicht pro Token oder Anfrage abgerechnet — Sie zahlen einen festen monatlichen Preis und
+nutzen es frei. Die Grenze dient nur dazu, einen außer Kontrolle geratenen Agenten
+(z. B. eine Endlos-Tool-Schleife) daran zu hindern, Ihren Plan zu leeren.
 
 ## Die Pläne
 
-| Plan | Preis | Ausgabenschutz | Am besten geeignet für |
+| Plan | Preis | Ausgabenschutz | Am besten für |
 | --- | --- | --- | --- |
-| **Lite** | $9 / Monat | $0.80 / Stunde | Hobbyprojekte, gelegentliches Programmieren |
-| **Essential** | $25 / Monat oder $180 / Jahr | $2.00 / Stunde | Tägliches Programmieren — die beliebte Wahl |
-| **Pro** ★ | $59 / Monat oder $566.40 / Jahr | $4.00 / Stunde | Schwere agentische Arbeitsabläufe |
-| **Ultra** | $99 / Monat oder $1,069.20 / Jahr | $10.00 / Stunde | Maximale Leistung, Teams & Produktion |
+| **Starter** | $5 / Monat | $0.50 / Stunde | Ausprobieren — geringes Engagement |
+| **Lite** | $9 / Monat | $1.00 / Stunde | Hobbyprojekte, gelegentliches Coden |
+| **Essential** | $19 / Monat oder $189 / Jahr | $2.00 / Stunde | Tägliches Coden — der beliebte Favorit |
+| **Pro** ★ | $39 / Monat oder $389 / Jahr | $4.00 / Stunde | Schwere agentische Workflows |
+| **Power** | $59 / Monat oder $589 / Jahr | $6.00 / Stunde | Teams, mehrere Projekte |
+| **Ultra** | $99 / Monat oder $989 / Jahr | $10.00 / Stunde | Maximale Leistung, Teams & Produktion |
 
-!!! tip "Die meisten Leute erreichen nie die Grenze"
-    Die stündliche Grenze ist für normale interaktive Arbeit großzügig. Sie stoßen normalerweise nur dann
-    daran, wenn ein Agent in eine enge Schleife gerät – genau dann, wenn Sie eine *Bremse* wünschen.
+!!! tipp "Die meisten erreichen die Grenze nie"
+    Die stündliche Grenze ist für normale interaktive Arbeit großzügig. Sie stoßen nur
+    daran, wenn ein Agent in eine enge Schleife gerät — genau dann, wenn Sie eine Bremse *wollen*.
 
 ## Wie der Ausgabenschutz funktioniert
 
-Jeder Plan definiert ein Budget **Fenster** – einen rollierenden Zeitraum und eine maximale Ausgabe darin:
+Jeder Plan definiert ein Budget **Fenster** — einen gleitenden Zeitraum und eine maximale Ausgabe darin:
 
-- **Kostenlos** verwendet ein **24-Stunden**-Fenster (`$0.45/day`).
-- **Lite / Essential / Pro / Ultra** verwenden ein **1-Stunden**-Fenster.
+- **Starter**, **Lite**, **Essential**, **Pro**, **Power** und **Ultra** verwenden ein **1-Stunden**-Fenster.
 
-Innerhalb des Fensters sammelt Ihre Nutzung winzige interne Kosten an. Wenn diese internen Kosten die Grenze
-des Fensters erreichen, werden Anfragen pausiert, bis das Fenster zurückgesetzt wird. Das Fenster wird nach
-einem festen Zeitplan zurückgesetzt (zu jeder vollen Stunde, UTC, für die stündlichen Pläne), und Ihr
-verbleibendes Budget wird **live in Ihrem Dashboard** angezeigt.
+Innerhalb des Fensters sammelt Ihre Nutzung winzige interne Kosten an. Wenn diese internen
+Kosten die Fenstergrenze erreichen, werden Anfragen pausiert, bis das Fenster zurückgesetzt wird.
 
-Dies ist *Ausgabenschutz*, keine verbrauchsabhängige Abrechnung – die Dollarbeträge sind die
-Schutzobergrenze, nicht das, was Sie zahlen. Ihre tatsächliche Rechnung ist nur das feste monatliche
-Abonnement.
-
-## Höherstufung & Herabstufung
-
-- **Höherstufung** jederzeit über das [Dashboard](https://claudin.io/dashboard). Die Zahlung erfolgt über
-  Stripe und die neuen Grenzen gelten sofort.
-- **Herabstufung oder Kündigung** an derselben Stelle. Wenn Sie kündigen, behalten Sie Ihren bezahlten Plan
-  bis zum Ende des bereits bezahlten Zeitraums und fallen dann automatisch auf **Kostenlos** zurück – Ihr
-  Konto und Ihre Schlüssel bleiben erhalten.
-
-## Was gegen die Grenze zählt
-
-Nur Ihre Modellaufrufe über den Proxy. Jede Anfrage erhöht die laufende Summe des aktuellen Fensters
-basierend auf den verwendeten Tokens. Wenn das Fenster zurückgesetzt wird, wird auch die Summe
-zurückgesetzt.
+Nur Ihre Modellaufrufe durch den Proxy. Jede Anfrage erhöht den laufenden Gesamtwert
+des aktuellen Fensters basierend auf den verwendeten Token. Wenn das Fenster zurückgesetzt wird,
+wird auch der Gesamtwert zurückgesetzt.
 
 Wenn Sie die Grenze erreichen und einen Budgetfehler erhalten, haben Sie zwei Optionen:
 
-1. Warten Sie, bis das Fenster zurückgesetzt wird (angezeigt in Ihrem Dashboard).
-2. Führen Sie ein Upgrade auf einen höheren Plan durch, um eine größere Grenze zu erhalten.
+1. Warten Sie, bis das Fenster zurückgesetzt wird (in Ihrem Dashboard angezeigt).
+2. Upgraden Sie auf einen höheren Plan für eine größere Grenze.
 
-Siehe [Pläne-bezogene Fehler](api-reference.md#errors) für die Darstellung des Budgetfehlers.
+Siehe [Planbezogene Fehler](api-reference.md#errors) für das Aussehen des Budgetfehlers.

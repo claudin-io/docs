@@ -1,59 +1,41 @@
 # Planes y límites
 
-Cada plan de Claudin.io es de **uso ilimitado** con un **tope de protección de gasto**.
-No se te cobra por token ni por solicitud — pagas un precio mensual fijo y
-lo usas libremente. El tope existe solo para evitar que un agente descontrolado
-(un bucle infinito de herramientas, por ejemplo) agote tu plan.
+Cada plan de Claudin.io es **uso ilimitado** con un **límite de protección de gastos**.
+No se le cobra por token o por solicitud — paga un precio mensual fijo y lo
+usa libremente. El límite solo existe para evitar que un agente descontrolado
+(un bucle infinito de herramientas, por ejemplo) agote su plan.
 
 ## Los planes
 
-| Plan | Precio | Protección de gasto | Ideal para |
+| Plan | Precio | Protección de gasto | Mejor para |
 | --- | --- | --- | --- |
-| **Lite** | $9 / mes | $0.80 / hora | Proyectos de hobby, codificación ocasional |
-| **Essential** | $25 / mes o $180 / año | $2.00 / hora | Codificación diaria — la opción popular |
-| **Pro** ★ | $59 / mes o $566.40 / año | $4.00 / hora | Flujos de trabajo agentivos intensivos |
-| **Ultra** | $99 / mes o $1,069.20 / año | $10.00 / hora | Máximo poder, equipos y producción |
+| **Inicial** | $5 / mes | $0.50 / hora | Probando — bajo compromiso |
+| **Ligero** | $9 / mes | $1.00 / hora | Proyectos de hobby, programación ocasional |
+| **Esencial** | $19 / mes o $189 / año | $2.00 / hora | Programación diaria — la elección popular |
+| **Pro** ★ | $39 / mes o $389 / año | $4.00 / hora | Flujos de trabajo agénticos pesados |
+| **Potente** | $59 / mes o $589 / año | $6.00 / hora | Equipos, múltiples proyectos |
+| **Ultra** | $99 / mes o $989 / año | $10.00 / hora | Máxima potencia, equipos y producción |
 
-!!! tip "La mayoría nunca alcanza el tope"
- El tope por hora es generoso para el trabajo interactivo normal. Normalmente solo
- lo rozas si un agente entra en un bucle cerrado — que es exactamente cuando
- *quieres* un freno.
+!!! consejo "La mayoría nunca alcanza el límite"
+    El límite por hora es generoso para el trabajo interactivo normal. Solo lo roza
+    si un agente entra en un bucle cerrado — que es exactamente cuando *quiere* un freno.
 
-## Cómo funciona la protección de gasto
+## Cómo funciona la protección de gastos
 
-Cada plan define una **ventana** de presupuesto — un período continuo y un gasto máximo
-dentro de ella:
+Cada plan define una **ventana** de presupuesto — un período móvil y un gasto máximo dentro de ella:
 
+- **Inicial**, **Ligero**, **Esencial**, **Pro**, **Potente** y **Ultra** usan una ventana de **1 hora**.
 
-- **Lite / Essential / Pro / Ultra** usan una ventana de **1 hora**.
+Dentro de la ventana, su uso acumula un pequeño costo interno. Cuando ese costo
+interno alcanza el límite de la ventana, las solicitudes se pausan hasta que la ventana se restablece.
 
-Dentro de la ventana, tu uso acumula un pequeño costo interno. Cuando ese costo
-interno alcanza el tope de la ventana, las solicitudes se pausan hasta que la
-ventana se restablece. La ventana se restablece en un horario fijo (al inicio de
-cada hora, UTC, para los planes por hora), y tu presupuesto restante se muestra
-**en vivo en tu panel**.
+Solo sus llamadas de modelo a través del proxy. Cada solicitud se suma al total
+actual de la ventana según los tokens utilizados. Cuando la ventana se restablece,
+el total se restablece con ella.
 
-Esto es *protección de gasto*, no facturación medida — las cifras en dólares son
-el techo de protección, no lo que pagas. Tu factura real es solo la suscripción
-mensual fija.
+Si alcanza el límite y recibe un error de presupuesto, tiene dos opciones:
 
-## Actualizar y degradar
+1. Espere a que la ventana se restablezca (se muestra en su panel).
+2. Actualice a un plan superior para un límite mayor.
 
-- **Actualiza** en cualquier momento desde el [panel](https://claudin.io/dashboard).
- El pago se gestiona a través de Stripe y los nuevos límites se aplican de inmediato.
-- **Degrada o cancela** desde el mismo lugar. Si cancelas, conservas tu plan de pago
- hasta el final del período que ya pagaste —
- tu cuenta y claves se conservan.
-
-## Qué cuenta contra el tope
-
-Solo las llamadas a tu modelo a través del proxy. Cada solicitud añade al total
-acumulado de la ventana actual según los tokens que usó. Cuando la ventana se
-restablece, el total se restablece con ella.
-
-Si alcanzas el tope y obtienes un error de presupuesto, tienes dos opciones:
-
-1. Esperar a que la ventana se restablezca (se muestra en tu panel).
-2. Actualizar a un plan superior para un tope más grande.
-
-Consulta [Errores relacionados con planes](api-reference.md#errors) para ver cómo se ve el error de presupuesto.
+Consulte [Errores relacionados con planes](api-reference.md#errors) para ver cómo es el error de presupuesto.

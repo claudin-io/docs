@@ -7,52 +7,36 @@ l'utilisez librement. Le plafond existe uniquement pour empêcher un agent incon
 
 ## Les plans
 
-| Plan | Prix | Protection des dépenses | Idéal pour |
+| Plan | Prix | Protection des dépenses | Meilleur pour |
 | --- | --- | --- | --- |
-| **Lite** | $9 / mois | $0.80 / heure | Projets hobby, codage occasionnel |
-| **Essentiel** | $25 / mois ou $180 / an | $2.00 / heure | Codage quotidien — le choix populaire |
-| **Pro** ★ | $59 / mois ou $566.40 / an | $4.00 / heure | Workflows agentic intensifs |
-| **Ultra** | $99 / mois ou $1,069.20 / an | $10.00 / heure | Puissance maximale, équipes & production |
+| **Débutant** | $5 / mois | $0.50 / heure | Essai — engagement faible |
+| **Léger** | $9 / mois | $1.00 / heure | Projets loisirs, codage occasionnel |
+| **Essentiel** | $19 / mois ou $189 / an | $2.00 / heure | Codage quotidien — le choix populaire |
+| **Pro** ★ | $39 / mois ou $389 / an | $4.00 / heure | Flux de travail agentiques lourds |
+| **Puissant** | $59 / mois ou $589 / an | $6.00 / heure | Équipes, projets multiples |
+| **Ultra** | $99 / mois ou $989 / an | $10.00 / heure | Puissance maximale, équipes et production |
 
-!!! tip "La plupart des gens n'atteignent jamais le plafond"
-    Le plafond horaire est généreux pour un travail interactif normal. Vous ne le
-    touchez généralement que si un agent entre dans une boucle serrée — c'est exactement
+!!! astuce "La plupart des gens n'atteignent jamais le plafond"
+    Le plafond horaire est généreux pour le travail interactif normal. Vous ne le
+    rencontrez généralement que si un agent entre dans une boucle serrée — c'est exactement
     le moment où vous *voulez* un frein.
 
 ## Comment fonctionne la protection des dépenses
 
-Chaque plan définit une **fenêtre** budgétaire — une période glissante et un montant
-maximum de dépenses à l'intérieur de celle-ci :
+Chaque plan définit une **fenêtre** budgétaire — une période glissante et un maximum de dépenses à l'intérieur :
 
-- **Lite**, **Essentiel**, **Pro** et **Ultra** utilisent une fenêtre d'**1 heure**.
+- **Débutant**, **Léger**, **Essentiel**, **Pro**, **Puissant** et **Ultra** utilisent une fenêtre de **1 heure**.
 
-Dans cette fenêtre, votre utilisation accumule un minuscule coût interne. Lorsque ce
-coût interne atteint le plafond de la fenêtre, les requêtes sont mises en pause jusqu'à
-la réinitialisation de la fenêtre. La fenêtre se réinitialise selon un calendrier fixe
-(au début de chaque heure, UTC, pour les plans horaires), et votre budget restant est
-affiché **en direct dans votre tableau de bord**.
+Dans la fenêtre, votre utilisation accumule un petit coût interne. Lorsque ce coût
+interne atteint le plafond de la fenêtre, les requêtes sont mises en pause jusqu'à la réinitialisation de la fenêtre.
 
-Il s'agit d'une *protection des dépenses*, pas d'une facturation à l'utilisation — les
-montants en dollars sont le plafond de protection, pas ce que vous payez. Votre facture
-réelle est simplement l'abonnement mensuel fixe.
-
-## Mise à niveau et rétrogradation
-
-- **Mettez à niveau** à tout moment depuis le [tableau de bord](https://claudin.io/dashboard).
-  Le paiement est traité via Stripe et les nouvelles limites s'appliquent immédiatement.
-- **Rétrogradez ou annulez** depuis le même endroit. Si vous annulez, vous conservez votre
-  plan payant jusqu'à la fin de la période déjà payée — votre compte et vos clés sont conservés.
-
-## Qu'est-ce qui compte dans le plafond
-
-Seuls vos appels de modèle via le proxy. Chaque requête s'ajoute au total courant de la
-fenêtre actuelle en fonction des tokens utilisés. Lorsque la fenêtre se réinitialise, le
-total se réinitialise avec elle.
+Seuls vos appels de modèle passent par le proxy. Chaque requête s'ajoute au total
+courant de la fenêtre en fonction des tokens utilisés. Lorsque la fenêtre se réinitialise,
+le total se réinitialise avec elle.
 
 Si vous atteignez le plafond et obtenez une erreur de budget, vous avez deux options :
 
-1. Attendre que la fenêtre se réinitialise (indiqué dans votre tableau de bord).
-2. Passer à un plan supérieur pour un plafond plus élevé.
+1. Attendez la réinitialisation de la fenêtre (indiquée dans votre tableau de bord).
+2. Passez à un plan supérieur pour un plafond plus grand.
 
-Consultez [Erreurs liées aux plans](api-reference.md#errors) pour voir à quoi ressemble
-l'erreur de budget.
+Voir [Erreurs liées aux plans](api-reference.md#errors) pour l'apparence de l'erreur de budget.
