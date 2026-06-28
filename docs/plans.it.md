@@ -20,7 +20,36 @@ usi liberamente. Il tetto esiste solo per impedire a un agente fuori controllo
     Il tetto orario è generoso per il lavoro interattivo normale. Di solito lo sfiori
     solo se un agente entra in un ciclo stretto — che è esattamente quando *vuoi* un freno.
 
-## Come funziona la protezione della spesa
+## claudinio vs Claudius
+
+|                      | claudinio 🏆         | claudius ★           |
+| -------------------- | -------------------- | -------------------- |
+| **Starter**          | ✅                   |                      |
+| **Lite**             | ✅                   |                      |
+| **Essential**        | ✅                   | ✅                   |
+| **Pro**              | ✅                   | ✅                   |
+| **Power**            | ✅                   | ✅                   |
+| **Ultra**            | ✅                   | ✅                   |
+
+> **Il miglior rapporto qualità-prezzo.**
+
+### Per Starter / Lite: usa claudinio
+
+Se hai Starter o Lite, claudinio è il modello che utilizzerai. E onestamente? Non dovrai guardarti indietro. claudinio regge il confronto con i modelli frontier costando una frazione del prezzo — perfetto per coding quotidiano, apprendimento e progetti personali.
+
+### Per Essential e superiori: il mondo è tuo
+
+Essential e piani superiori ti danno accesso sia a claudinio che a claudius. Usa claudinio per le attività quotidiane e conserva claudius per quando serve quella scintilla in più — architettura complessa, ragionamento approfondito o sessioni di debugging difficili.
+
+### Ma hey, la regola d'oro
+
+Indipendentemente dal tuo piano, ti consigliamo di impostare claudinio come modello predefinito. È il nostro modello di punta, e ci crediamo. Puoi sempre passare a claudius quando il compito lo richiede.
+
+### Alias dei modelli
+
+Tutti i piani supportano alias per modelli popolari come: `claude-sonnet-4`, `gpt-4o`, `gemini-2.5-pro`, `llama-4`, `deepseek-v4`. Consulta la nostra [API Reference](/api-reference/) per l'elenco completo.
+
+## Come funziona la protezione delle spese
 
 Ogni piano definisce una **finestra** di budget — un periodo scorrevole e una spesa massima al suo interno:
 

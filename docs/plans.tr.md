@@ -20,6 +20,35 @@ bir araç döngüsü) planınızı tüketmesini durdurmak için vardır.
     Saatlik sınır normal etkileşimli çalışma için cömerttir. Genellikle yalnızca bir
     ajan dar bir döngüye girdiğinde takılırsınız — tam da bir fren *istediğiniz* zaman.
 
+## claudinio vs Claudius
+
+|                      | claudinio 🏆         | claudius ★           |
+| -------------------- | -------------------- | -------------------- |
+| **Starter**          | ✅                   |                      |
+| **Lite**             | ✅                   |                      |
+| **Essential**        | ✅                   | ✅                   |
+| **Pro**              | ✅                   | ✅                   |
+| **Power**            | ✅                   | ✅                   |
+| **Ultra**            | ✅                   | ✅                   |
+
+> ** Paranızın karşılığını en iyi veren seçenek.**
+
+### Starter / Lite için: claudinio kullanın
+
+Starter veya Lite kullanıyorsanız, kullanacağınız model claudinio'dur. Ve dürüst olmak gerekirse? Geriye bakmanıza gerek yok. claudinio, öncü modellerle rekabet ederken fiyatının çok küçük bir kısmına mal oluyor — günlük kodlama, öğrenme ve hobi projeleri için mükemmel.
+
+### Essential ve üzeri için: dünya sizin
+
+Essential ve üzeri planlar size hem claudinio hem de claudius'a erişim sağlar. Günlük görevleriniz için claudinio'yu kullanın ve claudius'u ekstra kıvılcıma ihtiyacınız olduğunda saklayın — karmaşık mimari, derin mantıksal akıl yürütme veya zor hata ayıklama oturumları.
+
+### Ama işte altın kural
+
+Hangi planda olursanız olun, claudinio'yu varsayılan modeliniz yapmanızı öneririz. Bu bizim amiral gemimiz ve ona inanıyoruz. Görev gerektirdiğinde her zaman claudius'a geçebilirsiniz.
+
+### Model takma adları
+
+Tüm planlar popüler modeller için takma adları destekler: `claude-sonnet-4`, `gpt-4o`, `gemini-2.5-pro`, `llama-4`, `deepseek-v4`. Tam liste için [API Reference](/api-reference/) sayfamıza bakın.
+
 ## Harcama koruması nasıl çalışır
 
 Her plan bir bütçe **penceresi** tanımlar — kayan bir süre ve içinde maksimum harcama:

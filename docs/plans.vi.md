@@ -20,6 +20,35 @@ sử dụng tự do. Giới hạn chỉ tồn tại để ngăn một tác nhân
     Giới hạn theo giờ rất hào phóng cho công việc tương tác thông thường. Bạn thường chỉ
     chạm phải nó khi tác nhân rơi vào vòng lặp chặt — chính xác là lúc bạn *muốn* phanh.
 
+## claudinio vs Claudius
+
+|                      | claudinio 🏆         | claudius ★           |
+| -------------------- | -------------------- | -------------------- |
+| **Starter**          | ✅                   |                      |
+| **Lite**             | ✅                   |                      |
+| **Essential**        | ✅                   | ✅                   |
+| **Pro**              | ✅                   | ✅                   |
+| **Power**            | ✅                   | ✅                   |
+| **Ultra**            | ✅                   | ✅                   |
+
+> **Giá trị tốt nhất cho đồng tiền của bạn.**
+
+### Dành cho Starter / Lite: sử dụng claudinio
+
+Nếu bạn đang dùng Starter hoặc Lite, claudinio là mô hình bạn sẽ sử dụng. Và thành thật mà nói? Bạn sẽ không cần nhìn lại phía sau. claudinio sánh ngang với các mô hình hàng đầu trong khi chỉ có chi phí bằng một phần nhỏ — hoàn hảo cho việc coding hàng ngày, học tập và các dự án sở thích.
+
+### Dành cho Essential trở lên: cả thế giới là của bạn
+
+Essential trở lên cho bạn quyền truy cập cả claudinio và claudius. Sử dụng claudinio cho các tác vụ hàng ngày và dành claudius cho những lúc bạn cần thêm sức mạnh — kiến trúc phức tạp, suy luận sâu sắc, hoặc các phiên gỡ lỗi khó khăn.
+
+### Nhưng này, nguyên tắc vàng
+
+Bất kể gói của bạn là gì, chúng tôi khuyên bạn nên đặt claudinio làm mô hình mặc định. Đây là mô hình hàng đầu của chúng tôi, và chúng tôi tin tưởng vào nó. Bạn luôn có thể chuyển sang claudius khi công việc yêu cầu.
+
+### Bí danh mô hình
+
+Tất cả các gói đều hỗ trợ bí danh mô hình cho các mô hình phổ biến như: `claude-sonnet-4`, `gpt-4o`, `gemini-2.5-pro`, `llama-4`, `deepseek-v4`. Xem [API Reference](/api-reference/) của chúng tôi để biết danh sách đầy đủ.
+
 ## Bảo vệ chi tiêu hoạt động như thế nào
 
 Mỗi gói xác định một **cửa sổ** ngân sách — một khoảng thời gian luân phiên và chi tiêu tối đa trong đó:

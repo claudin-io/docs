@@ -20,6 +20,35 @@ nutzen es frei. Die Grenze dient nur dazu, einen außer Kontrolle geratenen Agen
     Die stündliche Grenze ist für normale interaktive Arbeit großzügig. Sie stoßen nur
     daran, wenn ein Agent in eine enge Schleife gerät — genau dann, wenn Sie eine Bremse *wollen*.
 
+## claudinio vs Claudius
+
+|                      | claudinio 🏆         | claudius ★           |
+| -------------------- | -------------------- | -------------------- |
+| **Starter**          | ✅                   |                      |
+| **Lite**             | ✅                   |                      |
+| **Essential**        | ✅                   | ✅                   |
+| **Pro**              | ✅                   | ✅                   |
+| **Power**            | ✅                   | ✅                   |
+| **Ultra**            | ✅                   | ✅                   |
+
+> **Das beste Preis-Leistungs-Verhältnis.**
+
+### Für Starter / Lite: claudinio verwenden
+
+Wenn Sie Starter oder Lite nutzen, ist claudinio das Modell, das Sie verwenden werden. Und ehrlich? Sie werden nicht zurückblicken müssen. claudinio kann mit den Top-Modellen mithalten, kostet aber nur einen Bruchteil des Preises — perfekt für alltägliches Codieren, Lernen und Hobby-Projekte.
+
+### Für Essential und höher: die Welt steht Ihnen offen
+
+Essential und höhere Tarife geben Ihnen Zugang zu beiden Modellen — claudinio und claudius. Nutzen Sie claudinio für Ihre täglichen Aufgaben und heben Sie sich claudius für die Momente auf, die einen zusätzlichen Funken brauchen — komplexe Architektur, tiefgehendes Reasoning oder anspruchsvolle Debugging-Sessions.
+
+### Aber hey, die goldene Regel
+
+Unabhängig von Ihrem Tarif empfehlen wir, claudinio als Ihr Standardmodell zu verwenden. Es ist unser Flaggschiff, und wir glauben daran. Sie können jederzeit zu claudius wechseln, wenn die Aufgabe es erfordert.
+
+### Modell-Aliase
+
+Alle Tarife unterstützen Modell-Aliase für gängige Modelle wie: `claude-sonnet-4`, `gpt-4o`, `gemini-2.5-pro`, `llama-4`, `deepseek-v4`. Die vollständige Liste finden Sie in unserer [API Reference](/api-reference/).
+
 ## Wie der Ausgabenschutz funktioniert
 
 Jeder Plan definiert ein Budget **Fenster** — einen gleitenden Zeitraum und eine maximale Ausgabe darin:

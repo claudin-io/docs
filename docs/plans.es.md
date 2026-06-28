@@ -20,6 +20,30 @@ usa libremente. El límite solo existe para evitar que un agente descontrolado
     El límite por hora es generoso para el trabajo interactivo normal. Solo lo roza
     si un agente entra en un bucle cerrado — que es exactamente cuando *quiere* un freno.
 
+## ¿Qué modelo elegir? Claudinio vs Claudius
+
+Ofrecemos dos modelos principales para tu agente de codificación:
+
+| Modelo | Backend | Caso de uso | Recomendado para |
+| --- | --- | --- | --- |
+| **claudinio** 🏆 | Rápido, equilibrado, rentable | Codificación diaria, proyectos de hobby, código general | **Todos los planes** (Inicial a Ultra) |
+| **claudius** ★ | Premium, razonamiento profundo | Tareas complejas, razonamiento profundo, flujos agénticos pesados | Essential+ (Pro, Potente, Ultra) |
+
+### Sin rodeos
+
+Si estás en **Inicial** ($5) o **Ligero** ($9) — **usa `claudinio` y no mires atrás.** 🎯
+
+Esta es la realidad: `claudinio` ofrece una calidad comparable a Claude Sonnet para la codificación diaria a una **fracción del costo interno**. En el plan Ligero, puedes obtener **cientos de solicitudes por hora** con `claudinio` — mientras que `claudius` quemaría tu presupuesto por hora mucho más rápido.
+
+| Métrica | claudinio | claudius |
+| --- | --- | --- |
+| Impacto en el presupuesto por hora | Bajo — rinde mucho más | Alto — se consume rápido |
+| Caso de uso | Codificación diaria, proyectos personales | Razonamiento pesado, agentes complejos |
+
+**Regla de oro:** Configura tu agente (Claude Code, Cursor, Continue, etc.) con `claudinio` como modelo predeterminado. Solo cambia a `claudius` cuando necesites explícitamente más capacidad de razonamiento — y si tu plan lo permite (Essential+). Para proyectos de hobby, `claudinio` es **todo lo que necesitas** y probablemente **más de lo que esperas**.
+
+> 💡 Consejo: Ambos modelos funcionan con todos los agentes de codificación principales. Solo configura `model=claudinio` o `model=claudius` en la configuración de tu agente. `claudinio` también resuelve automáticamente alias como `claude-sonnet-4`, `gpt-4o`, `o3-mini` y docenas más — no necesitas cambiar la configuración de tu agente.
+
 ## Cómo funciona la protección de gastos
 
 Cada plan define una **ventana** de presupuesto — un período móvil y un gasto máximo dentro de ella:

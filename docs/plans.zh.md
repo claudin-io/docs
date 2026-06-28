@@ -19,6 +19,35 @@
     每小时上限对于正常交互式工作来说非常慷慨。您通常只有在代理进入紧密循环时
     才会触及它 — 而这正是您*想要*刹车的时候。
 
+## claudinio vs Claudius
+
+|                      | claudinio 🏆         | claudius ★           |
+| -------------------- | -------------------- | -------------------- |
+| **Starter**          | ✅                   |                      |
+| **Lite**             | ✅                   |                      |
+| **Essential**        | ✅                   | ✅                   |
+| **Pro**              | ✅                   | ✅                   |
+| **Power**            | ✅                   | ✅                   |
+| **Ultra**            | ✅                   | ✅                   |
+
+> **物超所值。**
+
+### 对于 Starter / Lite：使用 claudinio
+
+如果你使用 Starter 或 Lite 套餐，claudinio 将是你使用的模型。说实话？你无需回头。claudinio 能够与前沿模型一较高下，而成本仅为它们的一小部分 — 非常适合日常编码、学习和个人项目。
+
+### 对于 Essential 及以上：世界尽在掌握
+
+Essential 及以上套餐让你可以同时使用 claudinio 和 claudius。在日常任务中使用 claudinio，把 claudius 留到需要额外火花的时刻 — 复杂架构、深度推理或棘手的调试会话。
+
+### 但记住，黄金法则
+
+无论你使用什么套餐，我们建议将 claudinio 设为默认模型。它是我们的旗舰产品，我们对此充满信心。当任务需要时，你随时可以切换到 claudius。
+
+### 模型别名
+
+所有套餐都支持热门模型的别名，例如：`claude-sonnet-4`、`gpt-4o`、`gemini-2.5-pro`、`llama-4`、`deepseek-v4`。查看我们的 [API Reference](/api-reference/) 获取完整列表。
+
 ## 支出保护的工作原理
 
 每个套餐定义一个预算**窗口** — 一个滚动周期和其中的最大支出：

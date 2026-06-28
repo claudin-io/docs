@@ -20,7 +20,36 @@ menggunakannya secara bebas. Batas ini hanya ada untuk menghentikan agen yang ta
     Batas per jam cukup besar untuk pekerjaan interaktif normal. Anda biasanya hanya
     menyentuhnya jika agen masuk ke lingkaran ketat — persis saat Anda *ingin* rem.
 
-## Cara kerja perlindungan pengeluaran
+## claudinio vs Claudius
+
+|                      | claudinio 🏆         | claudius ★           |
+| -------------------- | -------------------- | -------------------- |
+| **Starter**          | ✅                   |                      |
+| **Lite**             | ✅                   |                      |
+| **Essential**        | ✅                   | ✅                   |
+| **Pro**              | ✅                   | ✅                   |
+| **Power**            | ✅                   | ✅                   |
+| **Ultra**            | ✅                   | ✅                   |
+
+> **Nilai terbaik untuk uang Anda.**
+
+### Untuk Starter / Lite: gunakan claudinio
+
+Jika Anda menggunakan Starter atau Lite, claudinio adalah model yang akan Anda gunakan. Dan jujur? Anda tidak perlu melihat ke belakang. claudinio mampu bersaing dengan model-model frontier sementara harganya hanya sebagian kecil — menjadikannya sempurna untuk coding sehari-hari, belajar, dan proyek hobi.
+
+### Untuk Essential ke atas: dunia adalah milik Anda
+
+Essential ke atas memberi Anda akses ke claudinio dan claudius. Gunakan claudinio untuk tugas sehari-hari dan simpan claudius untuk saat Anda membutuhkan percikan ekstra — arsitektur kompleks, penalaran mendalam, atau sesi debugging yang sulit.
+
+### Tapi ingat, aturan emasnya
+
+Terlepas dari paket Anda, kami merekomendasikan menjadikan claudinio sebagai model default Anda. Ini adalah model unggulan kami, dan kami percaya padanya. Anda selalu dapat beralih ke claudius ketika tugas membutuhkannya.
+
+### Alias Model
+
+Semua paket mendukung alias model untuk model populer seperti: `claude-sonnet-4`, `gpt-4o`, `gemini-2.5-pro`, `llama-4`, `deepseek-v4`. Lihat [API Reference](/api-reference/) kami untuk daftar lengkap.
+
+## Bagaimana cara kerja perlindungan pengeluaran
 
 Setiap paket mendefinisikan **jendela** anggaran — periode bergulir dan pengeluaran maksimum di dalamnya:
 
