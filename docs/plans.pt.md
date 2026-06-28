@@ -34,7 +34,7 @@ Oferecemos dois modelos principais para você usar no seu agente de código:
 
 Se você está nos planos **Iniciante** ($5) ou **Leve** ($9) — **use `claudinio` e não olhe para trás.** 🎯
 
-A verdade é simples: o `claudinio` entrega qualidade comparável ao Claude Sonnet para tarefas de codificação do dia a dia por uma **fração do custo interno**. No plano Leve, por exemplo, você consegue **centenas de requisições por hora** com `claudinio` — enquanto o `claudius` consumiria seu orçamento horário muito mais rápido.
+A verdade é simples: o `claudinio` entrega qualidade de alto nível para tarefas de codificação do dia a dia por uma **fração do custo interno**. No plano Leve, por exemplo, você consegue **centenas de requisições por hora** com `claudinio` — enquanto o `claudius` consumiria seu orçamento horário muito mais rápido.
 
 | Métrica | claudinio | claudius |
 | --- | --- | --- |

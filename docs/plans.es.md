@@ -20,29 +20,34 @@ usa libremente. El límite solo existe para evitar que un agente descontrolado
     El límite por hora es generoso para el trabajo interactivo normal. Solo lo roza
     si un agente entra en un bucle cerrado — que es exactamente cuando *quiere* un freno.
 
-## ¿Qué modelo elegir? Claudinio vs Claudius
+## claudinio vs Claudius
 
-Ofrecemos dos modelos principales para tu agente de codificación:
+|                      | claudinio 🏆         | claudius ★           |
+| -------------------- | -------------------- | -------------------- |
+| **Starter**          | ✅                   |                      |
+| **Lite**             | ✅                   |                      |
+| **Essential**        | ✅                   | ✅                   |
+| **Pro**              | ✅                   | ✅                   |
+| **Power**            | ✅                   | ✅                   |
+| **Ultra**            | ✅                   | ✅                   |
 
-| Modelo | Backend | Caso de uso | Recomendado para |
-| --- | --- | --- | --- |
-| **claudinio** 🏆 | Rápido, equilibrado, rentable | Codificación diaria, proyectos de hobby, código general | **Todos los planes** (Inicial a Ultra) |
-| **claudius** ★ | Premium, razonamiento profundo | Tareas complejas, razonamiento profundo, flujos agénticos pesados | Essential+ (Pro, Potente, Ultra) |
+> **El mejor valor para tu dinero.**
 
-### Sin rodeos
+### Para Starter / Lite: usa claudinio
 
-Si estás en **Inicial** ($5) o **Ligero** ($9) — **usa `claudinio` y no mires atrás.** 🎯
+Si estás en Starter o Lite, claudinio es el modelo que usarás. ¿Y sinceramente? No necesitas mirar atrás. claudinio rinde al mismo nivel que modelos mucho más costosos, siendo perfecto para codificación diaria, aprendizaje y proyectos personales.
 
-Esta es la realidad: `claudinio` ofrece una calidad comparable a Claude Sonnet para la codificación diaria a una **fracción del costo interno**. En el plan Ligero, puedes obtener **cientos de solicitudes por hora** con `claudinio` — mientras que `claudius` quemaría tu presupuesto por hora mucho más rápido.
+### Para Essential y superiores: el mundo es tuyo
 
-| Métrica | claudinio | claudius |
-| --- | --- | --- |
-| Impacto en el presupuesto por hora | Bajo — rinde mucho más | Alto — se consume rápido |
-| Caso de uso | Codificación diaria, proyectos personales | Razonamiento pesado, agentes complejos |
+Essential y superiores te dan acceso a claudinio y claudius. Usa claudinio para tus tareas diarias y guarda claudius para cuando necesites ese plus extra — arquitectura compleja, razonamiento profundo o sesiones de depuración difíciles.
 
-**Regla de oro:** Configura tu agente (Claude Code, Cursor, Continue, etc.) con `claudinio` como modelo predeterminado. Solo cambia a `claudius` cuando necesites explícitamente más capacidad de razonamiento — y si tu plan lo permite (Essential+). Para proyectos de hobby, `claudinio` es **todo lo que necesitas** y probablemente **más de lo que esperas**.
+### Pero ojo, la regla de oro
 
-> 💡 Consejo: Ambos modelos funcionan con todos los agentes de codificación principales. Solo configura `model=claudinio` o `model=claudius` en la configuración de tu agente. `claudinio` también resuelve automáticamente alias como `claude-sonnet-4`, `gpt-4o`, `o3-mini` y docenas más — no necesitas cambiar la configuración de tu agente.
+Independientemente de tu plan, te recomendamos hacer de claudinio tu modelo predeterminado. Es nuestro modelo insignia, y creemos en él. Siempre puedes cambiar a claudius cuando la tarea lo requiera.
+
+### Alias de modelos
+
+Todos los planes admiten alias para modelos populares como: `claude-sonnet-4`, `gpt-4o`, `gemini-2.5-pro`, `llama-4`, `deepseek-v4`. Consulta nuestra [API Reference](/api-reference/) para la lista completa.
 
 ## Cómo funciona la protección de gastos
 
