@@ -1,13 +1,13 @@
 # Codex
 
-[Codex](https://github.com/openai/codex)は、`~/.codex/config.toml`内のカスタムモデルプロバイダーを介して接続します。Claudin.ioは、Codexが期待する`responses`ワイヤーAPIを公開しています。
+[Codex](https://github.com/openai/codex) は `~/.codex/config.toml` 内のカスタムモデルプロバイダーを介して接続します。Claudin.io は Codex が期待する `responses` ワイヤーAPIを公開しています。
 
-!!! warning "Codex CLIを使用する"
-    これらの設定は**Codex CLI**に適用されます。ホストされているCodexアプリでは、カスタムベースURLを指定できない場合があります。
+!!! warning "Codex CLI を使用してください"
+    これらの設定は **Codex CLI** に適用されます。ホストされている Codex アプリではカスタムベースURLを指定できない場合があります。
 
 ## 手動セットアップ
 
-これを`~/.codex/config.toml`に追加します：
+これを `~/.codex/config.toml` に追加します:
 
 ```toml
 model = "claudinio"
@@ -20,7 +20,7 @@ env_key = "CLAUDINIO_API_KEY"
 wire_api = "responses"
 ```
 
-次に、キーをエクスポートします（名前は上記の`env_key`と一致する必要があります）。最も簡単な方法は、[シェルプロファイルに一度設定する](../getting-started/set-your-key.md)ことです：
+次に、キーをエクスポートします（名前は上記の `env_key` と一致する必要があります）。最も簡単な方法は、[シェルプロファイルに一度設定する](../getting-started/set-your-key.md)ことです:
 
 ```bash
 export CLAUDINIO_API_KEY="sk-..."

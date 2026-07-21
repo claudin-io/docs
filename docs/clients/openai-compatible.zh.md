@@ -1,6 +1,6 @@
-# 任何 OpenAI 兼容客户端
+# 任何兼容 OpenAI 的客户端
 
-Claudin.io 实现了 OpenAI API 接口，因此**任何**允许设置自定义基础 URL 的工具、SDK 或库都可以工作。如果你的编辑器未在本节列出，请使用这些通用设置。
+Claudin.io 实现了 OpenAI 的 API 接口，因此**任何**允许设置自定义基础 URL 的工具、SDK 或库都可以使用。如果你的编辑器未在本节中列出，请使用这些通用设置。
 
 ## 三个值
 
@@ -10,11 +10,11 @@ Claudin.io 实现了 OpenAI API 接口，因此**任何**允许设置自定义�
 | 模型 | `claudinio` |
 | API 密钥 | 你的 `sk-...` 密钥 |
 
-大多数工具将“基础 URL”字段称为：*基础 URL*、*API 基础*、*OpenAI 基础 URL*、*端点*或*自定义提供商 URL*。请始终包含 `/v1` 后缀。
+大多数工具将此基础 URL 字段称作：*基础 URL*、*API 基础地址*、*OpenAI 基础 URL*、*端点*或*自定义提供商 URL*。请务必包含 `/v1` 后缀。
 
 ## 环境变量
 
-许多 CLI 和 SDK 会读取标准的 OpenAI 环境变量——设置以下变量即可。如果你已经[导出了密钥](../getting-started/set-your-key.md)，可复用 `$CLAUDINIO_API_KEY`：
+许多 CLI 和 SDK 会读取标准的 OpenAI 变量——设置好这些就可以了。如果你已经[导出了你的密钥](../getting-started/set-your-key.md)，可以直接复用 `$CLAUDINIO_API_KEY`：
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
@@ -29,9 +29,9 @@ Claudin.io 路由以下 OpenAI 风格的路径：
 | --- | --- |
 | `POST /v1/chat/completions` | 聊天补全（主要接口） |
 | `POST /v1/completions` | 传统文本补全 |
-| `POST /v1/messages` | Anthropic Messages 格式 |
-| `POST /v1/responses` | Responses API（由 Codex 使用） |
-| `POST /v1/embeddings` | 嵌入向量 |
+| `POST /v1/messages` | Anthropic 消息格式 |
+| `POST /v1/responses` | 响应 API（Codex 使用） |
+| `POST /v1/embeddings` | 嵌入 |
 | `GET /v1/models` | 列出可用模型 |
 
 ## 身份验证
@@ -48,8 +48,8 @@ Authorization: Bearer YOUR_API_KEY
 x-api-key: YOUR_API_KEY
 ```
 
-两种方式均被接受——选择你的客户端支持的格式即可。
+两种方式都支持——选择你的客户端采用的那种即可。
 
 ---
 
-关于请求/响应详情和错误处理，请参阅完整的 [API 参考文档](../api-reference.md)。
+关于请求/响应详情和错误处理，请参阅完整的[API 参考文档](../api-reference.md)。

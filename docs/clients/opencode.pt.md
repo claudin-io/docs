@@ -1,6 +1,6 @@
 # OpenCode
 
-O [OpenCode](https://opencode.ai) conecta-se ao Claudin.io como um fornecedor compatível com OpenAI. O caminho mais rápido é o seu fluxo de autenticação integrado.
+[OpenCode](https://opencode.ai) conecta-se ao Claudin.io como um provedor compatível com OpenAI. O caminho mais rápido é o fluxo de autenticação integrado.
 
 ## Configuração rápida
 
@@ -10,12 +10,12 @@ O [OpenCode](https://opencode.ai) conecta-se ao Claudin.io como um fornecedor co
     opencode auth login
     ```
 
-2. Selecione **Claudinio** como o fornecedor.
-3. Cole a sua chave API quando solicitado — copie-a do seu [painel de controlo](https://claudin.io/dashboard).
+2. Selecione **Claudinio** como provedor.
+3. Cole a sua chave de API quando solicitado — copie-a do seu [painel de controlo](https://claudin.io/dashboard).
 
-Depois, inicie o OpenCode e escolha o modelo **claudinio**.
+Em seguida, inicie o OpenCode e selecione o modelo **claudinio**.
 
-## Alternativa de variável de ambiente
+## Alternativa com variáveis de ambiente
 
 Se já [exportou a sua chave](../getting-started/set-your-key.md), o OpenCode deteta as variáveis padrão da OpenAI — não é necessário colar nada:
 
@@ -26,10 +26,10 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 
 | Definição | Valor |
 | --- | --- |
-| URL Base | `https://api.claudin.io/v1` |
+| URL base | `https://api.claudin.io/v1` |
 | Modelo | `claudinio` |
-| Fornecedor | Compatível com OpenAI |
+| Provedor | Compatível com OpenAI |
 
 ---
 
-Problemas? Consulte [erros comuns](../api-reference.md#errors) ou as [FAQ](../faq.md).
+Problemas? Consulte [erros comuns](../api-reference.md#errors) ou a [FAQ](../faq.md).

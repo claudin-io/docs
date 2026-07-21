@@ -1,10 +1,10 @@
 # Kilo Code
 
-[Kilo Code](https://kilo.ai)는 OpenAI 호환 제공자 블록을 사용합니다. 모델 ID는 `claudinio/claudinio`입니다(제공자/모델).
+[Kilo Code](https://kilo.ai)는 OpenAI 호환 제공자 블록을 사용합니다. 모델 ID는 `claudinio/claudinio` (제공자/모델)입니다.
 
 ## 빠른 설정 (스크립트)
 
-먼저 [키를 내보내고](../getting-started/set-your-key.md) `$CLAUDINIO_API_KEY`가 설정되었는지 확인하세요. 이 스크립트는 `~/.config/kilo/kilo.jsonc`를 생성하며, 기존 파일이 있으면 백업합니다:
+먼저 [키를 내보내세요](../getting-started/set-your-key.md) 그러면 `$CLAUDINIO_API_KEY`가 설정됩니다. 이 작업은 기존 파일을 백업한 후 `~/.config/kilo/kilo.jsonc`를 작성합니다:
 
 ```bash
 kilo_config_install() {
@@ -54,7 +54,7 @@ unset kilo_config_install
 
 ## 수동 설정
 
-다음 내용을 `~/.config/kilo/kilo.jsonc`에 넣으세요:
+이 내용을 `~/.config/kilo/kilo.jsonc`에 넣으세요:
 
 ```jsonc
 {
@@ -81,7 +81,7 @@ unset kilo_config_install
 
 ## 환경 변수 대안
 
-Kilo는 또한 표준 OpenAI 환경 변수를 읽습니다:
+Kilo는 표준 OpenAI 환경 변수도 읽습니다:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
@@ -90,6 +90,6 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 
 | 설정 | 값 |
 | --- | --- |
-| Base URL | `https://api.claudin.io/v1` |
-| Model | `claudinio/claudinio` |
-| Tool calls | 활성화됨 |
+| 기본 URL | `https://api.claudin.io/v1` |
+| 모델 | `claudinio/claudinio` |
+| 도구 호출 | 활성화됨 |

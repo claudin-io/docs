@@ -1,14 +1,10 @@
 # Claude Code
 
-O [Claude Code](https://claude.com/claude-code) se conecta ao Claudin.io através do seu
-endpoint compatível com Anthropic. Aponte a URL base dele para o Claudin.io e use sua chave
-como token de autenticação.
+[Claude Code](https://claude.com/claude-code) se conecta ao Claudin.io por meio de seu endpoint compatível com Anthropic. Aponte sua URL base para Claudin.io e use sua chave como token de autenticação.
 
 ## Configuração rápida (script)
 
-Primeiro [exporte sua chave](../getting-started/set-your-key.md) para que
-`$CLAUDINIO_API_KEY` esteja definida, então execute isto. Ele cria `~/.claude/settings.json`
-(fazendo backup de qualquer arquivo existente primeiro):
+Primeiro, [exporte sua chave](../getting-started/set-your-key.md) para que `$CLAUDINIO_API_KEY` esteja definida, então execute este comando. Ele escreve `~/.claude/settings.json` (fazendo backup de qualquer arquivo existente primeiro):
 
 ```bash
 claude_settings_install() {
@@ -42,11 +38,11 @@ claude_settings_install "$CLAUDINIO_API_KEY"
 unset claude_settings_install
 ```
 
-Depois é só executar `claude`.
+Em seguida, execute `claude`.
 
 ## Configuração manual
 
-Edite o `~/.claude/settings.json` você mesmo(a):
+Edite `~/.claude/settings.json` você mesmo:
 
 ```json
 {
@@ -60,10 +56,8 @@ Edite o `~/.claude/settings.json` você mesmo(a):
 }
 ```
 
-!!! note "Por que `ANTHROPIC_API_KEY` está vazia"
-    O Claude Code prefere `ANTHROPIC_API_KEY` se ela estiver definida. Deixá-la vazia
-    força o uso de `ANTHROPIC_AUTH_TOKEN` (sua chave do Claudin.io) contra a
-    URL base do Claudin.io.
+!!! note "Por que `ANTHROPIC_API_KEY` está vazio"
+    Claude Code prefere `ANTHROPIC_API_KEY` se estiver definida. Deixá-la vazia força o uso de `ANTHROPIC_AUTH_TOKEN` (sua chave Claudin.io) contra a URL base do Claudin.io.
 
 ## Valores utilizados
 
@@ -76,4 +70,4 @@ Edite o `~/.claude/settings.json` você mesmo(a):
 
 ---
 
-Problemas? Consulte [erros comuns](../api-reference.md#errors) ou o [FAQ](../faq.md).
+Problemas? Veja [erros comuns](../api-reference.md#errors) ou o [FAQ](../faq.md).

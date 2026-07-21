@@ -1,69 +1,63 @@
 # Planlar ve limitler
 
-Her Claudin.io planı, **harcama koruma sınırı** olan **sınırsız kullanımdır**.
+Her Claudin.io planı, **harcama koruma limiti** ile birlikte **sınırsız kullanım** sunar.
 Token veya istek başına faturalandırılmazsınız — sabit bir aylık ücret öder ve
-özgürce kullanırsınız. Sınır, yalnızca kontrolden çıkmış bir aracın (örneğin sonsuz
-bir araç döngüsü) planınızı tüketmesini durdurmak için vardır.
+özgürce kullanırsınız. Limit yalnızca kontrolden çıkmış bir ajanın (örneğin sonsuz araç döngüsü)
+planınızı tüketmesini önlemek için vardır.
 
 ## Planlar
 
-| Plan | Fiyat | Harcama koruması | En iyi için |
+| Plan | Fiyat | Harcama koruması | En uygun |
 | --- | --- | --- | --- |
-| **Başlangıç** | $5 / ay | $0.50 / saat | Denemek — düşük taahhüt |
-| **Hafif** | $9 / ay | $1.00 / saat | Hobi projeleri, ara sıra kodlama |
-| **Temel** | $19 / ay veya $189 / yıl | $2.00 / saat | Günlük kodlama — popüler seçim |
-| **Pro** ★ | $39 / ay veya $389 / yıl | $4.00 / saat | Ağır ajan iş akışları |
-| **Güçlü** | $59 / ay veya $589 / yıl | $6.00 / saat | Ekipler, çoklu projeler |
+| **Starter** | $5 / ay | $0.50 / saat | Deneme amaçlı — düşük taahhüt |
+| **Lite** | $9 / ay | $1.00 / saat | Hobi projeleri, ara sıra kodlama |
+| **Essential** | $19 / ay veya $189 / yıl | $2.00 / saat | Günlük kullanım için kaliteli |
+| **Pro** ★ | $39 / ay veya $389 / yıl | $4.00 / saat | Yoğun ajan iş akışları |
+| **Power** | $59 / ay veya $589 / yıl | $6.00 / saat | Ekipler, birden çok proje |
 | **Ultra** | $99 / ay veya $989 / yıl | $10.00 / saat | Maksimum güç, ekipler ve üretim |
 
-!!! ipucu "Çoğu insan asla sınıra ulaşmaz"
-    Saatlik sınır normal etkileşimli çalışma için cömerttir. Genellikle yalnızca bir
-    ajan dar bir döngüye girdiğinde takılırsınız — tam da bir fren *istediğiniz* zaman.
+!!! tip "Çoğu kişi asla limite ulaşmaz"
+    Saatlik limit, normal etkileşimli çalışma için cömerttir. Genellikle yalnızca
+    bir ajan sıkı bir döngüye girdiğinde buna yaklaşırsınız — ki bu tam da bir
+    fren istediğiniz andır.
 
-## claudinio vs Claudius
+## Hangi modeli seçmelisiniz? Claudinio vs Claudius
 
-|                      | claudinio 🏆         | claudius ★           |
-| -------------------- | -------------------- | -------------------- |
-| **Starter**          | ✅                   |                      |
-| **Lite**             | ✅                   |                      |
-| **Essential**        | ✅                   | ✅                   |
-| **Pro**              | ✅                   | ✅                   |
-| **Power**            | ✅                   | ✅                   |
-| **Ultra**            | ✅                   | ✅                   |
+Kodlama ajanınız için iki ana model sunuyoruz:
 
-> ** Paranızın karşılığını en iyi veren seçenek.**
+| Model | Arka uç | Kullanım alanı | Önerilen |
+| --- | --- | --- | --- |
+| **claudinio** 🏆 | Hızlı, dengeli, uygun maliyetli | Günlük kodlama, hobi projeleri, genel kod | **Tüm planlar** (Starter'dan Ultra'ya) |
+| **claudius** ★ | Premium, derin muhakeme | Karmaşık görevler, derin muhakeme, yoğun ajan iş akışları | Essential+ (Pro, Power, Ultra) |
 
-### Starter / Lite için: claudinio kullanın
+### Açık konuşma
 
-Starter veya Lite kullanıyorsanız, kullanacağınız model claudinio'dur. Ve dürüst olmak gerekirse? Geriye bakmanıza gerek yok. claudinio, öncü modellerle rekabet ederken fiyatının çok küçük bir kısmına mal oluyor — günlük kodlama, öğrenme ve hobi projeleri için mükemmel.
+Eğer **Starter** ($5) veya **Lite** ($9) planındaysanız — **`claudinio` kullanın ve arkanıza bakmayın.** 🎯
 
-### Essential ve üzeri için: dünya sizin
+İşte gerçek: `claudinio`, günlük kodlama için Claude Sonnet'e benzer kaliteyi **iç maliyetin çok daha azıyla** sunar. Lite planında, `claudinio` ile **saatte yüzlerce istek** alabilirsiniz — oysa `claudius` saatlik bütçenizi çok daha hızlı tüketir.
 
-Essential ve üzeri planlar size hem claudinio hem de claudius'a erişim sağlar. Günlük görevleriniz için claudinio'yu kullanın ve claudius'u ekstra kıvılcıma ihtiyacınız olduğunda saklayın — karmaşık mimari, derin mantıksal akıl yürütme veya zor hata ayıklama oturumları.
+| Metrik | claudinio | claudius |
+| --- | --- | --- |
+| Saatlik bütçeye etkisi | Düşük — çok daha uzun süre dayanır | Yüksek — daha hızlı tüketir |
+| Kullanım alanı | Günlük kodlama, kişisel projeler | Yoğun muhakeme, karmaşık ajanlar |
 
-### Ama işte altın kural
+**Altın kural:** Ajanınızı (Claude Code, Cursor, Continue, vb.) varsayılan model olarak `claudinio` ile yapılandırın. Yalnızca daha fazla muhakeme gücüne açıkça ihtiyacınız olduğunda — ve planınız buna izin veriyorsa (Essential+) — `claudius`'a geçin. Hobi projeleri için `claudinio` **ihtiyacınız olan her şey** ve muhtemelen **beklediğinizden fazlasıdır**.
 
-Hangi planda olursanız olun, claudinio'yu varsayılan modeliniz yapmanızı öneririz. Bu bizim amiral gemimiz ve ona inanıyoruz. Görev gerektirdiğinde her zaman claudius'a geçebilirsiniz.
-
-### Model takma adları
-
-Tüm planlar popüler modeller için takma adları destekler: `claude-sonnet-4`, `gpt-4o`, `gemini-2.5-pro`, `llama-4`, `deepseek-v4`. Tam liste için [API Reference](/api-reference/) sayfamıza bakın.
+> 💡 İpucu: Her iki model de tüm büyük kodlama ajanlarıyla çalışır. Ajan yapılandırmanızda `model=claudinio` veya `model=claudius` ayarını yapmanız yeterlidir. `claudinio` ayrıca `claude-sonnet-4`, `gpt-4o`, `o3-mini` ve düzinelerce takma adı otomatik olarak çözümler — ajan yapılandırmanızı değiştirmenize gerek yoktur.
 
 ## Harcama koruması nasıl çalışır
 
-Her plan bir bütçe **penceresi** tanımlar — kayan bir süre ve içinde maksimum harcama:
+Her plan bir bütçe **penceresi** tanımlar — kayan bir dönem ve bu dönem içindeki maksimum harcama:
 
-- **Başlangıç**, **Hafif**, **Temel**, **Pro**, **Güçlü** ve **Ultra** bir **1 saatlik** pencere kullanır.
+- **Starter**, **Lite**, **Essential**, **Pro**, **Power** ve **Ultra** **1 saatlik** bir pencere kullanır.
 
-Pencere içinde, kullanımınız küçük bir iç maliyet biriktirir. Bu iç maliyet pencerenin
-sınırına ulaştığında, pencere sıfırlanana kadar istekler duraklatılır.
+Pencere içinde kullanımınız küçük bir iç maliyet biriktirir. Bu iç maliyet pencerenin limitine ulaştığında, pencere sıfırlanana kadar istekler duraklatılır.
 
-Yalnızca model çağrılarınız proxy üzerinden geçer. Her istek, kullanılan tokenlara
-dayanarak mevcut pencerenin toplamına eklenir. Pencere sıfırlandığında, toplam da sıfırlanır.
+Proxy üzerinden yalnızca model çağrılarınız yapılır. Her istek, kullandığı tokenlara göre mevcut pencerenin devam eden toplamına eklenir. Pencere sıfırlandığında, toplam da onunla birlikte sıfırlanır.
 
-Sınıra ulaşıp bütçe hatası alırsanız, iki seçeneğiniz vardır:
+Limite ulaşıp bir bütçe hatası alırsanız, iki seçeneğiniz vardır:
 
-1. Pencerenin sıfırlanmasını bekleyin (panelinizde gösterilir).
-2. Daha büyük bir sınır için üst plana yükseltin.
+1. Pencerenin sıfırlanmasını bekleyin (panonuzda gösterilir).
+2. Daha büyük bir limit için daha yüksek bir plana yükseltin.
 
-Bütçe hatasının nasıl göründüğü için [Planla ilgili hatalar](api-reference.md#errors) bölümüne bakın.
+Bütçe hatasının nasıl göründüğü için [Planlarla ilgili hatalar](api-reference.md#errors) bölümüne bakın.

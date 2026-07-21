@@ -1,10 +1,10 @@
 # Claude Code
 
-[Claude Code](https://claude.com/claude-code) se connecte à Claudin.io via son endpoint compatible avec Anthropic. Pointez son URL de base vers Claudin.io et utilisez votre clé comme jeton d'authentification.
+[Claude Code](https://claude.com/claude-code) se connecte à Claudin.io via son endpoint compatible Anthropic. Pointez son URL de base vers Claudin.io et utilisez votre clé comme jeton d'authentification.
 
 ## Configuration rapide (script)
 
-Commencez par [exporter votre clé](../getting-started/set-your-key.md) pour que `$CLAUDINIO_API_KEY` soit définie, puis exécutez ceci. Il écrit `~/.claude/settings.json` (en sauvegardant d'abord tout fichier existant) :
+D'abord, [exportez votre clé](../getting-started/set-your-key.md) pour que `$CLAUDINIO_API_KEY` soit définie, puis exécutez ceci. Cela écrit `~/.claude/settings.json` (en sauvegardant d'abord tout fichier existant) :
 
 ```bash
 claude_settings_install() {
@@ -42,7 +42,7 @@ Ensuite, exécutez simplement `claude`.
 
 ## Configuration manuelle
 
-Modifiez `~/.claude/settings.json` vous-même :
+Modifiez vous-même `~/.claude/settings.json` :
 
 ```json
 {
@@ -57,7 +57,7 @@ Modifiez `~/.claude/settings.json` vous-même :
 ```
 
 !!! note "Pourquoi `ANTHROPIC_API_KEY` est vide"
-    Claude Code préfère `ANTHROPIC_API_KEY` si elle est définie. La laisser vide le force à utiliser `ANTHROPIC_AUTH_TOKEN` (votre clé Claudin.io) avec l'URL de base de Claudin.io.
+    Claude Code préfère `ANTHROPIC_API_KEY` si elle est définie. La laisser vide l'oblige à utiliser `ANTHROPIC_AUTH_TOKEN` (votre clé Claudin.io) avec l'URL de base Claudin.io.
 
 ## Valeurs utilisées
 
@@ -65,7 +65,7 @@ Modifiez `~/.claude/settings.json` vous-même :
 | --- | --- |
 | URL de base | `https://api.claudin.io` |
 | Modèle | `claudinio` |
-| Modèle du sous-agent | `claudinio` |
+| Modèle sous-agent | `claudinio` |
 | Authentification | `ANTHROPIC_AUTH_TOKEN` = votre clé |
 
 ---

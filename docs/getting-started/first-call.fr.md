@@ -1,8 +1,8 @@
 # Votre premier appel
 
-Avant de connecter un éditeur, il est utile de vérifier que votre clé fonctionne avec une seule requête. Claudin.io parle le format **OpenAI Chat Completions** (et aussi le format Anthropic Messages).
+Avant de connecter un éditeur, il est utile de confirmer que votre clé fonctionne avec une seule requête. Claudin.io parle le format **OpenAI Chat Completions** (et le format Anthropic Messages aussi).
 
-Ces exemples lisent votre clé depuis `$CLAUDINIO_API_KEY` — définissez-la une fois en [exportant votre clé](set-your-key.md). (Dans les extraits SDK, remplacez `YOUR_API_KEY` par la clé de votre [tableau de bord](account.md), ou lisez-la depuis la même variable d'environnement.)
+Ces exemples lisent votre clé depuis `$CLAUDINIO_API_KEY` — définissez-la une fois en [exportant votre clé](set-your-key.md). (Dans les extraits SDK, remplacez `YOUR_API_KEY` par la clé depuis votre [tableau de bord](account.md), ou lisez-la depuis la même variable d'environnement.)
 
 ## Avec cURL
 
@@ -18,12 +18,13 @@ curl https://api.claudin.io/v1/chat/completions \
   }'
 ```
 
-Vous devriez obtenir une réponse JSON normale de style OpenAI avec un tableau `choices`.
+Vous devriez recevoir une réponse JSON normale de style OpenAI avec un tableau `choices`.
 
-!!! tip "x-api-key fonctionne aussi"
-    Claudin.io accepte la clé soit comme `Authorization: Bearer YOUR_API_KEY` **ou** comme un en-tête `x-api-key: YOUR_API_KEY`. Utilisez celui que votre client envoie.
+!!! tip "`x-api-key` fonctionne aussi"
+    Claudin.io accepte la clé soit comme `Authorization: Bearer YOUR_API_KEY`
+    **ou** comme un en-tête `x-api-key: YOUR_API_KEY`. Utilisez celui que votre client envoie.
 
-## Avec le SDK OpenAI Python
+## Avec le SDK Python OpenAI
 
 ```python
 from openai import OpenAI
@@ -41,7 +42,7 @@ resp = client.chat.completions.create(
 print(resp.choices[0].message.content)
 ```
 
-## Avec le SDK OpenAI Node
+## Avec le SDK Node OpenAI
 
 ```javascript
 import OpenAI from "openai";
@@ -56,7 +57,7 @@ const resp = await client.chat.completions.create({
   messages: [{ role: "user", content: "Say hello in one short sentence." }],
 });
 
-console.log(resp.choices[0].message.content);
+console.log(resp.choices[0].message.content)
 ```
 
 ## Streaming
@@ -76,4 +77,4 @@ curl https://api.claudin.io/v1/chat/completions \
 
 ---
 
-Vous avez une réponse valide ? Super — maintenant [connectez votre outil préféré](../clients/claude-code.md). Si quelque chose a échoué, consultez la [référence API](../api-reference.md#errors) pour les erreurs courantes.
+Vous avez reçu une réponse valide ? Super — maintenant [connectez votre outil favori](../clients/claude-code.md). Si quelque chose a échoué, consultez la [référence API](../api-reference.md#errors) pour les erreurs courantes.

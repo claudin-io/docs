@@ -1,6 +1,6 @@
-# Herhangi bir OpenAI uyumlu istemci
+# OpenAI uyumlu herhangi bir istemci
 
-Claudin.io, OpenAI API yüzeyini uygular, bu nedenle özel bir temel URL ayarlamanıza izin veren **herhangi** bir araç, SDK veya kütüphane çalışır. Eğer editörünüz bu bölümde listelenmemişse, bu genel ayarları kullanın.
+Claudin.io, OpenAI API yüzeyini uygular, bu nedenle özel bir temel URL ayarlamanıza izin veren **herhangi bir** araç, SDK veya kitaplık çalışır. Editörünüz bu bölümde listelenmemişse, bu genel ayarları kullanın.
 
 ## Üç değer
 
@@ -8,13 +8,13 @@ Claudin.io, OpenAI API yüzeyini uygular, bu nedenle özel bir temel URL ayarlam
 | --- | --- |
 | Temel URL | `https://api.claudin.io/v1` |
 | Model | `claudinio` |
-| API anahtarı | sizin `sk-...` anahtarınız |
+| API anahtarı | `sk-...` anahtarınız |
 
-Çoğu araç temel URL alanını şunlardan biri olarak adlandırır: *Temel URL*, *API Tabanı*, *OpenAI Temel URL'si*, *Uç Nokta* veya *Özel sağlayıcı URL'si*. Her zaman `/v1` son ekini ekleyin.
+Çoğu araç, temel URL alanını şunlardan biri olarak adlandırır: *Base URL*, *API Base*, *OpenAI Base URL*, *Endpoint* veya *Custom provider URL*. Her zaman `/v1` sonekini ekleyin.
 
 ## Ortam değişkenleri
 
-Birçok CLI ve SDK standart OpenAI değişkenlerini okur — bunları ayarlayın ve işiniz biter. Eğer [anahtarınızı dışa aktardıysanız](../getting-started/set-your-key.md), `$CLAUDINIO_API_KEY`'i yeniden kullanın:
+Birçok CLI ve SDK, standart OpenAI değişkenlerini okur — bunları ayarlayın ve işiniz biter. [Anahtarınızı dışa aktardıysanız](../getting-started/set-your-key.md), `$CLAUDINIO_API_KEY`'i yeniden kullanın:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
@@ -23,18 +23,18 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 
 ## Desteklenen uç noktalar
 
-Claudin.io şu OpenAI tarzı yolları yönlendirir:
+Claudin.io, bu OpenAI tarzı yolları yönlendirir:
 
-| Uç Nokta | Amaç |
+| Uç nokta | Amaç |
 | --- | --- |
 | `POST /v1/chat/completions` | Sohbet tamamlama (ana olan) |
 | `POST /v1/completions` | Eski metin tamamlama |
-| `POST /v1/messages` | Anthropic Mesaj formatı |
-| `POST /v1/responses` | Yanıtlar API'si (Codex tarafından kullanılır) |
-| `POST /v1/embeddings` | Gömmeler |
+| `POST /v1/messages` | Anthropic Messages formatı |
+| `POST /v1/responses` | Responses API (Codex tarafından kullanılır) |
+| `POST /v1/embeddings` | Gömme |
 | `GET /v1/models` | Mevcut modelleri listele |
 
-## Kimlik doğrulama
+## Kimlik Doğrulama
 
 Anahtarınızı **aşağıdakilerden biri** olarak gönderin:
 
@@ -52,4 +52,4 @@ Her ikisi de kabul edilir — istemcinizin gönderdiğini seçin.
 
 ---
 
-İstek/yanıt detayları ve hata işleme için tam [API referansına](../api-reference.md) bakın.
+İstek/yanıt ayrıntıları ve hata yönetimi için tam [API referansına](../api-reference.md) bakın.

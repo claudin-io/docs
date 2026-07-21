@@ -1,8 +1,9 @@
 # A sua primeira chamada
 
-Antes de configurar um editor, vale a pena confirmar que a sua chave funciona com um único pedido. Claudin.io fala o formato **OpenAI Chat Completions** (e também o formato Anthropic Messages).
+Antes de configurar um editor, vale a pena confirmar que a sua chave funciona com um único pedido.
+O Claudin.io fala o formato **OpenAI Chat Completions** (e também o formato Anthropic Messages).
 
-Estes exemplos leem a sua chave de `$CLAUDINIO_API_KEY` — defina-a uma vez [exportando a sua chave](set-your-key.md). (Nos trechos de SDK, substitua `YOUR_API_KEY` pela chave do seu [painel](account.md), ou leia-a da mesma variável de ambiente.)
+Estes exemplos leem a sua chave a partir de `$CLAUDINIO_API_KEY` — defina-a uma vez [exportando a sua chave](set-your-key.md). (Nos excertos de SDK, substitua `YOUR_API_KEY` pela chave do seu [painel de controlo](account.md), ou leia-a da mesma variável de ambiente.)
 
 ## Com cURL
 
@@ -21,9 +22,11 @@ curl https://api.claudin.io/v1/chat/completions \
 Deverá receber uma resposta JSON normal no estilo OpenAI com um array `choices`.
 
 !!! tip "`x-api-key` também funciona"
-    Claudin.io aceita a chave como `Authorization: Bearer YOUR_API_KEY` **ou** como um cabeçalho `x-api-key: YOUR_API_KEY`. Use aquele que o seu cliente enviar.
+    O Claudin.io aceita a chave como `Authorization: Bearer YOUR_API_KEY`
+    **ou** como cabeçalho `x-api-key: YOUR_API_KEY`. Use o que o seu cliente
+    enviar.
 
-## Com o SDK Python da OpenAI
+## Com o SDK OpenAI Python
 
 ```python
 from openai import OpenAI
@@ -41,7 +44,7 @@ resp = client.chat.completions.create(
 print(resp.choices[0].message.content)
 ```
 
-## Com o SDK Node da OpenAI
+## Com o SDK OpenAI Node
 
 ```javascript
 import OpenAI from "openai";
@@ -61,7 +64,7 @@ console.log(resp.choices[0].message.content);
 
 ## Streaming
 
-Defina `stream: true` e leia eventos enviados pelo servidor, exatamente como a API OpenAI:
+Defina `stream: true` e leia eventos enviados pelo servidor, exatamente como na API OpenAI:
 
 ```bash
 curl https://api.claudin.io/v1/chat/completions \
@@ -76,4 +79,5 @@ curl https://api.claudin.io/v1/chat/completions \
 
 ---
 
-Obteve uma resposta válida? Ótimo — agora [ligue a sua ferramenta favorita](../clients/claude-code.md). Se algo falhou, consulte a [referência da API](../api-reference.md#errors) para erros comuns.
+Obteve uma resposta válida? Ótimo — agora [ligue a sua ferramenta favorita](../clients/claude-code.md).
+Se algo falhou, consulte a [referência da API](../api-reference.md#errors) para erros comuns.

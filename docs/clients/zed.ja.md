@@ -1,10 +1,10 @@
 # Zed
 
-[Zed](https://zed.dev) は `language_models.openai_compatible` の下で OpenAI 互換プロバイダーをネイティブにサポートしています。
+[Zed](https://zed.dev) は、OpenAI 互換プロバイダーを `language_models.openai_compatible` でネイティブにサポートしています。
 
 ## クイックセットアップ（スクリプト）
 
-まず [キーをエクスポート](../getting-started/set-your-key.md) して `$CLAUDINIO_API_KEY` が設定されていることを確認します。これにより `~/.config/zed/settings.json` が書き込まれ、既存のファイルはバックアップされます：
+まず、[キーをエクスポート](../getting-started/set-your-key.md) して `$CLAUDINIO_API_KEY` を設定します。これにより `~/.config/zed/settings.json` に書き込まれ、既存のファイルはバックアップされます。
 
 ```bash
 zed_settings_install() {
@@ -47,7 +47,7 @@ unset zed_settings_install
 
 ## 手動セットアップ
 
-1. プロバイダーを `~/.config/zed/settings.json` に追加します：
+1. `~/.config/zed/settings.json` にプロバイダーを追加します：
 
     ```json
     {
@@ -68,11 +68,11 @@ unset zed_settings_install
     }
     ```
 
-2. ZedのAgentパネルを開き、プロンプトが表示されたらAPIキーを貼り付けるか、**Claudinio**プロバイダーのAPIキーとして設定します。
-3. エージェントパネルのモデルピッカーで **Claudinio** を選択します。
+2. Zed の Agent パネルを開き、プロンプトが表示されたら API キーを貼り付けるか、**Claudinio** プロバイダーの API キーとして設定します。
+3. Agent パネルのモデルピッカーで **Claudinio** を選択します。
 
 | 設定 | 値 |
 | --- | --- |
 | API URL | `https://api.claudin.io/v1` |
 | モデル | `claudinio` |
-| 最大トークン | `256000` |
+| 最大トークン数 | `256000` |

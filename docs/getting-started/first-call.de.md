@@ -1,8 +1,8 @@
 # Ihr erster Aufruf
 
-Bevor Sie einen Editor einrichten, sollten Sie bestätigen, dass Ihr Schlüssel mit einer einzelnen Anfrage funktioniert. Claudin.io spricht das **OpenAI Chat Completions**-Format (und auch das Anthropic Messages-Format).
+Bevor Sie einen Editor einrichten, lohnt es sich zu bestätigen, dass Ihr Schlüssel mit einer einzelnen Anfrage funktioniert. Claudin.io spricht das **OpenAI Chat Completions**-Format (und auch das Anthropic Messages-Format).
 
-Diese Beispiele lesen Ihren Schlüssel aus `$CLAUDINIO_API_KEY` – setzen Sie ihn einmal, indem Sie [Ihren Schlüssel exportieren](set-your-key.md). (Ersetzen Sie in den SDK-Ausschnitten `YOUR_API_KEY` durch den Schlüssel aus Ihrem [Dashboard](account.md), oder lesen Sie ihn aus derselben Umgebungsvariable.)
+Diese Beispiele lesen Ihren Schlüssel aus `$CLAUDINIO_API_KEY` – setzen Sie ihn einmal, indem Sie [Ihren Schlüssel exportieren](set-your-key.md). (Ersetzen Sie in den SDK-Ausschnitten `YOUR_API_KEY` durch den Schlüssel aus Ihrem [Dashboard](account.md) oder lesen Sie ihn aus derselben Umgebungsvariable.)
 
 ## Mit cURL
 
@@ -18,11 +18,11 @@ curl https://api.claudin.io/v1/chat/completions \
   }'
 ```
 
-Sie sollten eine normale OpenAI-kompatible JSON-Antwort mit einem `choices`-Array erhalten.
+Sie sollten eine normale OpenAI-ähnliche JSON-Antwort mit einem `choices`-Array erhalten.
 
 !!! tip "`x-api-key` funktioniert auch"
     Claudin.io akzeptiert den Schlüssel entweder als `Authorization: Bearer YOUR_API_KEY`
-    **oder** als `x-api-key: YOUR_API_KEY`-Header. Verwenden Sie den, den Ihr Client sendet.
+    **oder** als `x-api-key: YOUR_API_KEY`-Header. Verwenden Sie, was Ihr Client sendet.
 
 ## Mit dem OpenAI Python SDK
 
@@ -62,7 +62,7 @@ console.log(resp.choices[0].message.content);
 
 ## Streaming
 
-Setzen Sie `stream: true` und lesen Sie Server-sent Events, genau wie bei der OpenAI-API:
+Setzen Sie `stream: true` und lesen Sie Server-sent Events, genau wie bei der OpenAI API:
 
 ```bash
 curl https://api.claudin.io/v1/chat/completions \
@@ -77,5 +77,4 @@ curl https://api.claudin.io/v1/chat/completions \
 
 ---
 
-Haben Sie eine gültige Antwort erhalten? Großartig – jetzt [verbinden Sie Ihr bevorzugtes Werkzeug](../clients/claude-code.md).
-Wenn etwas fehlgeschlagen ist, überprüfen Sie die [API-Referenz](../api-reference.md#errors) auf häufige Fehler.
+Haben Sie eine gültige Antwort erhalten? Großartig – jetzt [verbinden Sie Ihr Lieblingswerkzeug](../clients/claude-code.md). Wenn etwas fehlgeschlagen ist, lesen Sie die [API-Referenz](../api-reference.md#errors) für häufige Fehler.

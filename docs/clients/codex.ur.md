@@ -1,11 +1,11 @@
-# Codex
+# کوڈیکس
 
-[Codex](https://github.com/openai/codex) ایک حسب ضرورت ماڈل فراہم کنندہ کے ذریعے `~/.codex/config.toml` میں منسلک ہوتا ہے۔ Claudin.io `responses` وائر API کو ظاہر کرتا ہے جس کی Codex توقع کرتا ہے۔
+[کوڈیکس](https://github.com/openai/codex) ایک حسب ضرورت ماڈل فراہم کنندہ کے ذریعے `~/.codex/config.toml` میں جڑتا ہے۔ Claudin.io وائر API `responses` کو ظاہر کرتا ہے جس کی توقع کوڈیکس کرتا ہے۔
 
-!!! warning "Codex CLI استعمال کریں"
-    یہ ترتیبات **Codex CLI** پر لاگو ہوتی ہیں۔ میزبان Codex ایپ آپ کو ایک حسب ضرورت بنیادی URL کی طرف اشارہ کرنے کی اجازت نہیں دے سکتی ہے۔
+!!! warning "کوڈیکس CLI استعمال کریں"
+    یہ ترتیبات **کوڈیکس CLI** پر لاگو ہوتی ہیں۔ میزبان کوڈیکس ایپ آپ کو کسٹم بیس URL کی طرف اشارہ کرنے کی اجازت نہیں دے سکتی۔
 
-## دستی ترتیب
+## دستی سیٹ اپ
 
 اسے `~/.codex/config.toml` میں شامل کریں:
 
@@ -20,13 +20,13 @@ env_key = "CLAUDINIO_API_KEY"
 wire_api = "responses"
 ```
 
-پھر اپنی کلید کو ایکسپورٹ کریں (نام اوپر `env_key` سے مماثل ہونا چاہیے)۔ سب سے آسان طریقہ یہ ہے کہ [اسے اپنے شیل پروفائل میں ایک بار سیٹ کریں](../getting-started/set-your-key.md):
+پھر اپنی کلید ایکسپورٹ کریں (نام اوپر `env_key` سے مماثل ہونا چاہیے)۔ سب سے آسان طریقہ یہ ہے کہ [اسے ایک بار اپنے شیل پروفائل میں سیٹ کریں](../getting-started/set-your-key.md):
 
 ```bash
 export CLAUDINIO_API_KEY="sk-..."
 ```
 
-## فوری ترتیب (اسکرپٹ)
+## فوری سیٹ اپ (اسکرپٹ)
 
 ```bash
 codex_config_install() {
@@ -62,7 +62,7 @@ unset codex_config_install
 
 | ترتیب | قدر |
 | --- | --- |
-| بنیادی URL | `https://api.claudin.io/v1` |
+| بیس URL | `https://api.claudin.io/v1` |
 | ماڈل | `claudinio` |
 | وائر API | `responses` |
-| کلیدی ماحولیاتی متغیر | `CLAUDINIO_API_KEY` |
+| کلیدی ماحولی متغیر | `CLAUDINIO_API_KEY` |

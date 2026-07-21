@@ -1,10 +1,14 @@
 # pi
 
-[pi](https://github.com/parallel-web/pi) `~/.pi/agent/models.json` سے فراہم کنندگان پڑھتا ہے۔ Claudin.io کو ایک `openai-completions` فراہم کنندہ کے طور پر رجسٹر کیا گیا ہے۔
+[pi](https://github.com/parallel-web/pi) فراہم کنندگان پڑھتا ہے
+`~/.pi/agent/models.json` سے۔ Claudin.io بطور ایک
+`openai-completions` فراہم کنندہ رجسٹر ہے۔
 
-## فوری سیٹ اپ (اسکرپٹ)
+## فوری ترتیب (اسکرپٹ)
 
-پہلے [اپنی کلید برآمد کریں](../getting-started/set-your-key.md) تاکہ `$CLAUDINIO_API_KEY` سیٹ ہو جائے۔ یہ `~/.pi/agent/models.json` لکھتا ہے اور کسی بھی موجودہ فائل کا بیک اپ لیتا ہے:
+پہلے [اپنی کلید برآمد کریں](../getting-started/set-your-key.md) تاکہ
+`$CLAUDINIO_API_KEY` سیٹ ہو۔ یہ `~/.pi/agent/models.json` لکھتا ہے، کسی بھی
+موجودہ فائل کا بیک اپ لے کر:
 
 ```bash
 pi_models_install() {
@@ -49,9 +53,9 @@ unset pi_models_install
 pi --provider claudinio --model claudinio
 ```
 
-## دستی سیٹ اپ
+## دستی ترتیب
 
-اسے `~/.pi/agent/models.json` میں رکھیں:
+یہ `~/.pi/agent/models.json` میں رکھیں:
 
 ```json
 {
@@ -79,4 +83,4 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 | --- | --- |
 | بنیادی URL | `https://api.claudin.io/v1` |
 | ماڈل | `claudinio` |
-| API کی قسم | `openai-completions` |
+| API قسم | `openai-completions` |

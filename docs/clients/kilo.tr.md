@@ -1,13 +1,12 @@
 # Kilo Code
 
-[Kilo Code](https://kilo.ai), OpenAI uyumlu bir sağlayıcı bloğu kullanır. Model
-kimliği `claudinio/claudinio` (sağlayıcı/model) şeklindedir.
+[Kilo Code](https://kilo.ai), OpenAI uyumlu bir sağlayıcı bloğu kullanır. Model kimliği
+`claudinio/claudinio` (sağlayıcı/model) şeklindedir.
 
-## Hızlı kurulum (komut dosyası)
+## Hızlı kurulum (script)
 
 Önce [anahtarınızı dışa aktarın](../getting-started/set-your-key.md) böylece
-`$CLAUDINIO_API_KEY` ayarlanmış olur. Bu, `~/.config/kilo/kilo.jsonc` dosyasını
-yazar ve varsa mevcut dosyayı yedekler:
+`$CLAUDINIO_API_KEY` ayarlanmış olur. Bu işlem `~/.config/kilo/kilo.jsonc` dosyasını yazar ve varsa mevcut dosyayı yedekler:
 
 ```bash
 kilo_config_install() {
@@ -19,7 +18,7 @@ kilo_config_install() {
 
   if [ -f "$file" ]; then
     cp "$file" "$file.claudinio.bak"
-    echo "[ok] Yedek: $file.claudinio.bak"
+    echo "[ok] Backup: $file.claudinio.bak"
   fi
 
   cat > "$file" <<'JSONCEOF'
@@ -46,7 +45,7 @@ kilo_config_install() {
 JSONCEOF
 
   sed -i.bak "s/__CL_KEY__/${key}/g" "$file" && rm -f "$file.bak"
-  echo "[ok] Yapılandırıldı: $file"
+  echo "[ok] Configured: $file"
 }
 
 kilo_config_install "$CLAUDINIO_API_KEY"
@@ -57,7 +56,7 @@ Ardından `kilo` komutunu çalıştırın.
 
 ## Manuel kurulum
 
-`~/.config/kilo/kilo.jsonc` dosyasına aşağıdakini ekleyin:
+Bunu `~/.config/kilo/kilo.jsonc` dosyasına ekleyin:
 
 ```jsonc
 {
@@ -68,7 +67,7 @@ Ardından `kilo` komutunu çalıştırın.
       "name": "Claudinio",
       "options": {
         "baseURL": "https://api.claudin.io/v1",
-        "apiKey": "API_ANAHTARINIZ"
+        "apiKey": "YOUR_API_KEY"
       },
       "models": {
         "claudinio": {

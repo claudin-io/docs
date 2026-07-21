@@ -1,10 +1,14 @@
 # pi
 
-[pi](https://github.com/parallel-web/pi) يقرأ المزودين من `~/.pi/agent/models.json`. تم تسجيل Claudin.io كمزود من نوع `openai-completions`.
+[pi](https://github.com/parallel-web/pi) يقرأ المزوّدين من
+`~/.pi/agent/models.json`. Claudin.io مسجّل كمزوّد
+`openai-completions`.
 
 ## الإعداد السريع (سكريبت)
 
-أولاً [قم بتصدير مفتاحك](../getting-started/set-your-key.md) ليتم تعيين `$CLAUDINIO_API_KEY`. يقوم هذا بكتابة `~/.pi/agent/models.json` مع عمل نسخة احتياطية لأي ملف موجود:
+أوّلاً [صدّر مفتاحك](../getting-started/set-your-key.md) ليتم
+تعيين `$CLAUDINIO_API_KEY`. يقوم هذا بكتابة `~/.pi/agent/models.json` مع أخذ
+نسخة احتياطية من أي ملف موجود:
 
 ```bash
 pi_models_install() {
@@ -43,7 +47,7 @@ pi_models_install "$CLAUDINIO_API_KEY"
 unset pi_models_install
 ```
 
-ثم قم بتشغيل:
+ثم شغّل:
 
 ```bash
 pi --provider claudinio --model claudinio
@@ -68,7 +72,7 @@ pi --provider claudinio --model claudinio
 }
 ```
 
-## بديل متغير البيئة
+## بديل متغيرات البيئة
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
@@ -77,6 +81,6 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 
 | الإعداد | القيمة |
 | --- | --- |
-| عنوان URL الأساسي | `https://api.claudin.io/v1` |
-| النموذج | `claudinio` |
+| الرابط الأساسي (Base URL) | `https://api.claudin.io/v1` |
+| النموذج (Model) | `claudinio` |
 | نوع API | `openai-completions` |

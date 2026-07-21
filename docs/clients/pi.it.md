@@ -7,7 +7,7 @@
 ## Configurazione rapida (script)
 
 Prima [esporta la tua chiave](../getting-started/set-your-key.md) in modo che
-`$CLAUDINIO_API_KEY` sia impostata. Questo scrive `~/.pi/agent/models.json`, creando un backup
+`$CLAUDINIO_API_KEY` sia impostata. Questo scrive `~/.pi/agent/models.json`, facendo il backup
 di qualsiasi file esistente:
 
 ```bash
@@ -39,15 +39,15 @@ pi_models_install() {
 JSONEOF
 
   sed -i.bak "s/__CL_KEY__/${key}/g" "$file" && rm -f "$file.bak"
-  echo "[ok] Configurato: $file"
-  echo "[ok] Esegui: pi --provider claudinio --model claudinio"
+  echo "[ok] Configured: $file"
+  echo "[ok] Run: pi --provider claudinio --model claudinio"
 }
 
 pi_models_install "$CLAUDINIO_API_KEY"
 unset pi_models_install
 ```
 
-Quindi esegui:
+Poi esegui:
 
 ```bash
 pi --provider claudinio --model claudinio
@@ -55,7 +55,7 @@ pi --provider claudinio --model claudinio
 
 ## Configurazione manuale
 
-Inserisci questo in `~/.pi/agent/models.json`:
+Metti questo in `~/.pi/agent/models.json`:
 
 ```json
 {
@@ -72,7 +72,7 @@ Inserisci questo in `~/.pi/agent/models.json`:
 }
 ```
 
-## Alternativa tramite variabili d'ambiente
+## Alternativa con variabili d'ambiente
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
@@ -81,6 +81,6 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 
 | Impostazione | Valore |
 | --- | --- |
-| Base URL | `https://api.claudin.io/v1` |
+| URL base | `https://api.claudin.io/v1` |
 | Modello | `claudinio` |
-| Tipo API | `openai-completions` |
+| Tipo di API | `openai-completions` |

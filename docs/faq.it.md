@@ -2,41 +2,41 @@
 
 ## Cos'è esattamente Claudin.io?
 
-Un proxy API per agenti di codifica AI. Paghi un abbonamento mensile fisso e ottieni
-una chiave API compatibile con OpenAI/Anthropic che puoi inserire in Claude Code, Kilo, Zed,
-Codex, Cursor o qualsiasi client OpenAI. Nessuna fatturazione per token.
+Un proxy API per agenti di coding AI. Paghi un abbonamento mensile fisso e ricevi
+una chiave API compatibile con OpenAI/Anthropic che puoi usare in Claude Code, Kilo, Zed,
+Codex, Cursor o qualsiasi client OpenAI. Nessun addebito per token.
 
 ## È davvero illimitato?
 
-L'uso è illimitato — non c'è contatore di richieste o misuratore di token. L'unico limite
-è un **limite di protezione della spesa** per finestra temporale che impedisce a un agente
-fuori controllo di prosciugare il tuo piano. Nel normale lavoro interattivo lo raggiungi raramente. Vedi
+L'utilizzo è illimitato — non c'è alcun contatore di richieste o misuratore di token. L'unico limite
+è un **limite di protezione dalla spesa** per intervallo di tempo che impedisce a un agente fuori controllo
+di prosciugare il tuo piano. Nel normale lavoro interattivo lo raggiungi raramente. Vedi
 [Piani e limiti](plans.md).
 
-## Quale modello uso?
+## Che modello uso?
 
-Usa sempre **`claudinio`** (o `claudinio/claudinio` per client che vogliono
-il formato `provider/modello`). L'URL di base è `https://api.claudin.io`.
+Sempre **`claudinio`** (o `claudinio/claudinio` per i client che richiedono il formato
+`provider/modello`). L'URL base è `https://api.claudin.io`.
 
-## Mi autentico con `Authorization` o `x-api-key`?
+## Devo autenticarmi con `Authorization` o `x-api-key`?
 
-Entrambi funzionano. `Authorization: Bearer YOUR_API_KEY` o `x-api-key: YOUR_API_KEY`.
+Entrambi funzionano. `Authorization: Bearer LA_TUA_CHIAVE_API` oppure `x-api-key: LA_TUA_CHIAVE_API`.
 
 ## Posso usarlo con uno strumento non elencato?
 
-Sì — qualsiasi strumento che permetta di impostare un URL di base OpenAI personalizzato funziona. Usa la
+Sì — qualsiasi strumento che ti permetta di impostare un URL base OpenAI personalizzato funziona. Usa la
 [configurazione generica per OpenAI](clients/openai-compatible.md).
 
-## Supporta tool / function calling?
+## Supporta la chiamata a strumenti/funzioni?
 
-Sì. Ecco perché funziona all'interno di editor agentici. Passa `tools` e leggi
+Sì. È per questo che funziona all'interno di editor agentici. Passa `tools` e leggi
 `tool_calls` come con l'API OpenAI.
 
 ## Può gestire immagini, audio o video?
 
-Sì, in modo trasparente. Invia blocchi di contenuto standard OpenAI; il proxy converte
-immagini/audio/video in descrizioni testuali o trascrizioni prima che il modello le veda.
-Niente di speciale da configurare.
+Sì, in modo trasparente. Invia i normali blocchi di contenuto OpenAI; il proxy converte
+immagini/audio/video in descrizioni testuali o trascrizioni prima che il modello li veda.
+Nulla da configurare di speciale.
 
 ## Qual è la finestra di contesto?
 
@@ -44,27 +44,27 @@ Niente di speciale da configurare.
 
 ## Come faccio a fare upgrade o cancellare?
 
-Dal tuo [pannello di controllo](https://claudin.io/dashboard). Gli upgrade si applicano immediatamente
+Dalla tua [dashboard](https://claudin.io/dashboard). Gli upgrade vengono applicati immediatamente
 (tramite Stripe). Se cancelli, mantieni il tuo piano a pagamento fino alla fine del periodo
-che hai già pagato, poi passi automaticamente a Free.
+che hai già pagato, poi passi automaticamente al piano Free.
 
 ## Ho ricevuto un errore di budget. Cosa faccio ora?
 
-Hai raggiunto il limite di protezione della spesa della finestra corrente. O aspetti che la
-finestra si azzeri (il tuo pannello mostra quando) oppure [fai upgrade](plans.md) per un limite
-più grande.
+Hai raggiunto il limite di protezione dalla spesa dell'intervallo corrente. Aspetta che
+l'intervallo si azzeri (la tua dashboard mostra quando) oppure [fai upgrade](plans.md) per un
+limite più alto.
 
 ## Una richiesta è fallita con 401.
 
-La tua chiave è mancante o errata. Ricopiala dal pannello di controllo e assicurati che
-non ci siano spazi bianchi extra e che l'header di autenticazione sia impostato.
+La tua chiave manca o è errata. Ricopiala dalla dashboard e assicurati che non ci siano
+spazi bianchi extra e che l'header di autenticazione sia impostato.
 
 ## La mia chiave è stata compromessa. Cosa devo fare?
 
-Revocala dal pannello di controllo e generane una nuova immediatamente. Tratta le chiavi come
-password — non inserirle mai in commit o condividerle pubblicamente.
+Revocala dalla dashboard e generane immediatamente una nuova. Tratta le chiavi come
+password — non commetterle mai né condividerle pubblicamente.
 
-## Dove posso ottenere aiuto?
+## Dove trovo assistenza?
 
-Apri un ticket dalla scheda **Support** nel tuo
-[pannello di controllo](https://claudin.io/dashboard), o invia un'email al supporto. Ti risponderemo.
+Apri un ticket dalla scheda **Supporto** nella tua
+[dashboard](https://claudin.io/dashboard), o scrivi al supporto. Ti risponderemo.

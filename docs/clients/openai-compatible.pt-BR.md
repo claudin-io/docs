@@ -1,6 +1,6 @@
 # Qualquer cliente compatível com OpenAI
 
-Claudin.io implementa a superfície da API OpenAI, portanto **qualquer** ferramenta, SDK ou biblioteca que permita definir uma URL base personalizada funciona. Se o seu editor não estiver listado nesta seção, use estas configurações genéricas.
+Claudin.io implementa a superfície da API da OpenAI, portanto **qualquer** ferramenta, SDK ou biblioteca que permita definir uma URL base personalizada funciona. Se seu editor não estiver listado nesta seção, use estas configurações genéricas.
 
 ## Os três valores
 
@@ -10,11 +10,11 @@ Claudin.io implementa a superfície da API OpenAI, portanto **qualquer** ferrame
 | Modelo | `claudinio` |
 | Chave da API | sua chave `sk-...` |
 
-A maioria das ferramentas chama o campo de URL base de uma das seguintes formas: *Base URL*, *API Base*, *OpenAI Base URL*, *Endpoint*, ou *Custom provider URL*. Sempre inclua o sufixo `/v1`.
+A maioria das ferramentas chama o campo de URL base de uma das seguintes formas: *URL Base*, *Base da API*, *URL Base da OpenAI*, *Endpoint* ou *URL do provedor personalizado*. Sempre inclua o sufixo `/v1`.
 
 ## Variáveis de ambiente
 
-Muitos CLIs e SDKs leem as variáveis padrão da OpenAI — defina-as e pronto. Se você [exportou sua chave](../getting-started/set-your-key.md), reutilize `$CLAUDINIO_API_KEY`:
+Muitas CLIs e SDKs leem as variáveis padrão da OpenAI — defina-as e pronto. Se você [exportou sua chave](../getting-started/set-your-key.md), reutilize `$CLAUDINIO_API_KEY`:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
@@ -29,14 +29,14 @@ Claudin.io roteia estes caminhos no estilo OpenAI:
 | --- | --- |
 | `POST /v1/chat/completions` | Completions de chat (o principal) |
 | `POST /v1/completions` | Completions de texto legado |
-| `POST /v1/messages` | Formato Anthropic Messages |
-| `POST /v1/responses` | API Responses (usada pelo Codex) |
+| `POST /v1/messages` | Formato de mensagens Anthropic |
+| `POST /v1/responses` | API de respostas (usada pelo Codex) |
 | `POST /v1/embeddings` | Embeddings |
 | `GET /v1/models` | Listar modelos disponíveis |
 
 ## Autenticação
 
-Envie sua chave de **uma das seguintes formas**:
+Envie sua chave como **uma das seguintes opções**:
 
 ```http
 Authorization: Bearer YOUR_API_KEY
@@ -48,7 +48,7 @@ ou
 x-api-key: YOUR_API_KEY
 ```
 
-Ambas são aceitas — escolha o que seu cliente utilizar.
+Ambas são aceitas — escolha o que seu cliente emitir.
 
 ---
 

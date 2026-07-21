@@ -1,8 +1,8 @@
-# Panggilan pertama Anda
+# Panggilan pertamamu
 
 Sebelum menghubungkan editor, ada baiknya memastikan kunci Anda berfungsi dengan satu permintaan. Claudin.io menggunakan format **OpenAI Chat Completions** (dan juga format Anthropic Messages).
 
-Contoh-contoh ini membaca kunci Anda dari `$CLAUDINIO_API_KEY` — atur sekali dengan [mengekspor kunci Anda](set-your-key.md). (Dalam potongan SDK, ganti `YOUR_API_KEY` dengan kunci dari [dasbor](account.md) Anda, atau bacalah dari env var yang sama.)
+Contoh-contoh ini membaca kunci Anda dari `$CLAUDINIO_API_KEY` — atur sekali dengan [mengekspor kunci Anda](set-your-key.md). (Pada cuplikan SDK, ganti `YOUR_API_KEY` dengan kunci dari [dasbor](account.md) Anda, atau bacalah dari env var yang sama.)
 
 ## Dengan cURL
 
@@ -62,7 +62,7 @@ console.log(resp.choices[0].message.content);
 
 ## Streaming
 
-Atur `stream: true` dan baca server-sent events, persis seperti OpenAI API:
+Atur `stream: true` dan baca server-sent events, persis seperti API OpenAI:
 
 ```bash
 curl https://api.claudin.io/v1/chat/completions \

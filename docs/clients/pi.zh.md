@@ -1,10 +1,14 @@
 # pi
 
-[pi](https://github.com/parallel-web/pi) 从 `~/.pi/agent/models.json` 读取提供商。Claudin.io 已注册为一个 `openai-completions` 提供商。
+[pi](https://github.com/parallel-web/pi) 从
+`~/.pi/agent/models.json` 读取提供商。Claudin.io 注册为一个
+`openai-completions` 提供商。
 
 ## 快速设置（脚本）
 
-首先[导出你的密钥](../getting-started/set-your-key.md)从而设置 `$CLAUDINIO_API_KEY`。这将写入 `~/.pi/agent/models.json`，并备份任何已存在的文件：
+首先[导出你的密钥](../getting-started/set-your-key.md)，确保
+`$CLAUDINIO_API_KEY` 已设置。该脚本会写入 `~/.pi/agent/models.json`，并备份
+任何现有文件：
 
 ```bash
 pi_models_install() {
@@ -51,7 +55,7 @@ pi --provider claudinio --model claudinio
 
 ## 手动设置
 
-将以下内容放入 `~/.pi/agent/models.json` 中：
+将以下内容放入 `~/.pi/agent/models.json`：
 
 ```json
 {

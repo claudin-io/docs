@@ -64,6 +64,28 @@ Standard OpenAI parameters are supported: `messages`, `temperature`, `top_p`,
 `max_tokens`, `stream`, `stop`, `tools` / `tool_choice` (function calling),
 `response_format`, and so on.
 
+### `max_tokens` and reasoning
+
+Claudinio models reason before they answer, and **reasoning tokens count against
+`max_tokens`** — the same budget covers the internal chain-of-thought and the
+visible reply. A small `max_tokens` can therefore be spent almost entirely on
+reasoning, leaving the answer truncated mid-sentence.
+
+To prevent that, values below **4000** are automatically raised to 4000. Larger
+values are passed through untouched, and omitting the parameter is always fine.
+
+If you parse structured output (JSON, XML, a strict format), check
+`finish_reason` before parsing — `"length"` means the response hit the token
+limit and is incomplete, so a parse failure is expected rather than a
+malformed-model problem:
+
+```python
+choice = response.choices[0]
+if choice.finish_reason == "length":
+    ...  # truncated — retry with a larger max_tokens
+data = json.loads(choice.message.content)
+```
+
 ### Streaming
 
 Set `"stream": true` to receive server-sent events in the OpenAI streaming

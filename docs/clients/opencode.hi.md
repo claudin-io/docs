@@ -11,13 +11,13 @@
     ```
 
 2. प्रदाता के रूप में **Claudinio** चुनें।
-3. संकेत मिलने पर अपनी API कुंजी चिपकाएँ — इसे अपने [डैशबोर्ड](https://claudin.io/dashboard) से कॉपी करें।
+3. संकेत मिलने पर अपनी API कुंजी चिपकाएँ — इसे अपने [dashboard](https://claudin.io/dashboard) से कॉपी करें।
 
 फिर OpenCode शुरू करें और **claudinio** मॉडल चुनें।
 
-## पर्यावरण-चर विकल्प
+## वातावरण-चर विकल्प
 
-यदि आपने पहले ही [अपनी कुंजी निर्यात](../getting-started/set-your-key.md) कर ली है, तो OpenCode मानक OpenAI चर उठा लेता है — कुछ भी चिपकाने की आवश्यकता नहीं:
+यदि आपने पहले ही [अपनी कुंजी निर्यात](../getting-started/set-your-key.md) कर ली है, तो OpenCode मानक OpenAI चर उठा लेता है — कुछ भी चिपकाने की आवश्यकता नहीं है:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
@@ -32,4 +32,4 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 
 ---
 
-परेशानी? देखें [सामान्य त्रुटियाँ](../api-reference.md#errors) या [FAQ](../faq.md)।
+समस्या हो रही है? [सामान्य त्रुटियाँ](../api-reference.md#errors) या [FAQ](../faq.md) देखें।

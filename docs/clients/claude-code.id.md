@@ -4,7 +4,7 @@
 
 ## Pengaturan cepat (skrip)
 
-Pertama [ekspor kunci Anda](../getting-started/set-your-key.md) sehingga `$CLAUDINIO_API_KEY` diatur, lalu jalankan ini. Ini menulis `~/.claude/settings.json` (mencadangkan file yang sudah ada terlebih dahulu):
+Pertama [ekspor kunci Anda](../getting-started/set-your-key.md) sehingga `$CLAUDINIO_API_KEY` sudah diatur, lalu jalankan ini. Skrip ini akan menulis `~/.claude/settings.json` (mencadangkan file yang sudah ada terlebih dahulu):
 
 ```bash
 claude_settings_install() {
@@ -38,7 +38,7 @@ claude_settings_install "$CLAUDINIO_API_KEY"
 unset claude_settings_install
 ```
 
-Kemudian cukup jalankan `claude`.
+Kemudian jalankan saja `claude`.
 
 ## Pengaturan manual
 
@@ -57,15 +57,15 @@ Edit sendiri `~/.claude/settings.json`:
 ```
 
 !!! note "Mengapa `ANTHROPIC_API_KEY` kosong"
-    Claude Code lebih suka `ANTHROPIC_API_KEY` jika diatur. Membiarkannya kosong memaksa untuk menggunakan `ANTHROPIC_AUTH_TOKEN` (kunci Claudin.io Anda) terhadap base URL Claudin.io.
+    Claude Code lebih memilih `ANTHROPIC_API_KEY` jika sudah diatur. Membiarkannya kosong memaksanya untuk menggunakan `ANTHROPIC_AUTH_TOKEN` (kunci Claudin.io Anda) terhadap base URL Claudin.io.
 
 ## Nilai yang digunakan
 
 | Pengaturan | Nilai |
 | --- | --- |
-| Base URL | `https://api.claudin.io` |
+| URL Dasar | `https://api.claudin.io` |
 | Model | `claudinio` |
-| Model subagent | `claudinio` |
+| Model subagen | `claudinio` |
 | Autentikasi | `ANTHROPIC_AUTH_TOKEN` = kunci Anda |
 
 ---

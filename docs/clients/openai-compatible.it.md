@@ -1,20 +1,20 @@
 # Qualsiasi client compatibile con OpenAI
 
-Claudin.io implementa la superficie API di OpenAI, quindi **qualsiasi** strumento, SDK o libreria che ti permetta di impostare un URL di base personalizzato funziona. Se il tuo editor non è elencato in questa sezione, usa queste impostazioni generiche.
+Claudin.io implementa la superficie API di OpenAI, quindi **qualsiasi** strumento, SDK o libreria che permette di impostare un URL base personalizzato funziona. Se il tuo editor non è elencato in questa sezione, usa queste impostazioni generiche.
 
 ## I tre valori
 
 | Impostazione | Valore |
 | --- | --- |
-| URL di base | `https://api.claudin.io/v1` |
+| Base URL | `https://api.claudin.io/v1` |
 | Modello | `claudinio` |
 | Chiave API | la tua chiave `sk-...` |
 
-La maggior parte degli strumenti chiama il campo URL di base con uno di questi nomi: *URL di base*, *API Base*, *URL di base di OpenAI*, *Endpoint* o *URL del provider personalizzato*. Includi sempre il suffisso `/v1`.
+La maggior parte degli strumenti chiama il campo URL base in uno di questi modi: *Base URL*, *API Base*, *OpenAI Base URL*, *Endpoint*, o *Custom provider URL*. Includi sempre il suffisso `/v1`.
 
 ## Variabili d'ambiente
 
-Molti CLI e SDK leggono le variabili standard di OpenAI — impostale e il gioco è fatto. Se hai [esportato la tua chiave](../getting-started/set-your-key.md), riutilizza `$CLAUDINIO_API_KEY`:
+Molti CLI e SDK leggono le variabili standard di OpenAI — impostale e hai finito. Se hai [esportato la tua chiave](../getting-started/set-your-key.md), riutilizza `$CLAUDINIO_API_KEY`:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
@@ -23,20 +23,20 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 
 ## Endpoint supportati
 
-Claudin.io instrada questi percorsi in stile OpenAI:
+Claudin.io indirizza questi percorsi in stile OpenAI:
 
 | Endpoint | Scopo |
 | --- | --- |
 | `POST /v1/chat/completions` | Completamenti chat (il principale) |
 | `POST /v1/completions` | Completamenti di testo legacy |
-| `POST /v1/messages` | Formato Anthropic Messages |
+| `POST /v1/messages` | Formato Messaggi Anthropic |
 | `POST /v1/responses` | API Responses (usata da Codex) |
 | `POST /v1/embeddings` | Embeddings |
 | `GET /v1/models` | Elenca i modelli disponibili |
 
 ## Autenticazione
 
-Invia la tua chiave **in uno** dei seguenti modi:
+Invia la tua chiave **con uno dei seguenti**:
 
 ```http
 Authorization: Bearer YOUR_API_KEY
@@ -52,4 +52,4 @@ Entrambi sono accettati — scegli quello che il tuo client invia.
 
 ---
 
-Consulta la [documentazione API](../api-reference.md) completa per i dettagli su richiesta/risposta e gestione degli errori.
+Vedi il [riferimento API](../api-reference.md) completo per i dettagli di richiesta/risposta e la gestione degli errori.

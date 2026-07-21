@@ -1,12 +1,10 @@
 # Claude Code
 
-[Claude Code](https://claude.com/claude-code), Claudin.io'ya Anthropic uyumlu uç noktası üzerinden bağlanır. Temel URL'sini Claudin.io'ya yönlendirin ve kimlik doğrulama token'ı olarak anahtarınızı kullanın.
+[Claude Code](https://claude.com/claude-code), Anthropic uyumlu uç noktası üzerinden Claudin.io'ya bağlanır. Taban URL'sini Claudin.io'ya yönlendirin ve kimlik doğrulama token'ı olarak anahtarınızı kullanın.
 
-## Hızlı kurulum (script)
+## Hızlı kurulum (komut dosyası)
 
-İlk olarak [anahtarınızı dışa aktarın](../getting-started/set-your-key.md) böylece
-`$CLAUDINIO_API_KEY` ayarlanır, ardından bunu çalıştırın. Bu, `~/.claude/settings.json` dosyasını yazar
-(önce mevcut dosyayı yedekleyerek):
+Öncelikle [anahtarınızı dışa aktarın](../getting-started/set-your-key.md) böylece `$CLAUDINIO_API_KEY` ayarlanır, ardından bunu çalıştırın. `~/.claude/settings.json` dosyasını oluşturur (önce varsa mevcut dosyayı yedekler):
 
 ```bash
 claude_settings_install() {
@@ -58,20 +56,18 @@ Ardından sadece `claude` komutunu çalıştırın.
 }
 ```
 
-!!! note "Neden `ANTHROPIC_API_KEY` boş?"
-    Claude Code, eğer ayarlanmışsa `ANTHROPIC_API_KEY`'i tercih eder. Onu boş bırakmak,
-    Claudin.io temel URL'sine karşı `ANTHROPIC_AUTH_TOKEN` (sizin Claudin.io anahtarınız)
-    kullanmaya zorlar.
+!!! note "Neden `ANTHROPIC_API_KEY` boş"
+    Claude Code, ayarlanmışsa `ANTHROPIC_API_KEY`'i tercih eder. Boş bırakmak, Claudin.io taban URL'sine karşı `ANTHROPIC_AUTH_TOKEN`'ı (Claudin.io anahtarınız) kullanmaya zorlar.
 
 ## Kullanılan değerler
 
 | Ayar | Değer |
 | --- | --- |
-| Temel URL | `https://api.claudin.io` |
+| Taban URL | `https://api.claudin.io` |
 | Model | `claudinio` |
-| Alt aracı modeli | `claudinio` |
+| Alt ajan modeli | `claudinio` |
 | Kimlik doğrulama | `ANTHROPIC_AUTH_TOKEN` = anahtarınız |
 
 ---
 
-Sorun mu var? [Sık karşılaşılan hatalar](../api-reference.md#errors) veya [FAQ](../faq.md) bölümüne bakın.
+Sorun mu var? [Sık karşılaşılan hatalar](../api-reference.md#errors) veya [FAQ](../faq.md) sayfasına bakın.

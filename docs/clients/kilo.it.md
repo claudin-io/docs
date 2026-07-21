@@ -4,7 +4,7 @@
 
 ## Configurazione rapida (script)
 
-Prima [esporta la tua chiave](../getting-started/set-your-key.md) in modo che `$CLAUDINIO_API_KEY` sia impostata. Questo scrive `~/.config/kilo/kilo.jsonc`, facendo il backup di qualsiasi file esistente:
+Per prima cosa [esporta la tua chiave](../getting-started/set-your-key.md) in modo che `$CLAUDINIO_API_KEY` sia impostata. Questo scrive `~/.config/kilo/kilo.jsonc`, eseguendo il backup di eventuali file esistenti:
 
 ```bash
 kilo_config_install() {
@@ -50,11 +50,11 @@ kilo_config_install "$CLAUDINIO_API_KEY"
 unset kilo_config_install
 ```
 
-Poi esegui `kilo`.
+Quindi esegui `kilo`.
 
 ## Configurazione manuale
 
-Metti questo in `~/.config/kilo/kilo.jsonc`:
+Inserisci questo in `~/.config/kilo/kilo.jsonc`:
 
 ```jsonc
 {
@@ -79,7 +79,7 @@ Metti questo in `~/.config/kilo/kilo.jsonc`:
 }
 ```
 
-## Alternativa con variabili d'ambiente
+## Alternativa tramite variabili d'ambiente
 
 Kilo legge anche le variabili d'ambiente standard di OpenAI:
 
@@ -92,4 +92,4 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 | --- | --- |
 | URL di base | `https://api.claudin.io/v1` |
 | Modello | `claudinio/claudinio` |
-| Chiamate agli strumenti | abilitato |
+| Chiamate strumenti | abilitate |

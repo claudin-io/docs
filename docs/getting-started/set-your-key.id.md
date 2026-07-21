@@ -1,12 +1,12 @@
 # Atur kunci API Anda
 
-Atur kunci Claudin.io Anda **sekali** sebagai variabel lingkungan dan setiap alat dalam panduan ini dapat menggunakannya kembali — tidak perlu menempelkannya secara manual ke setiap klien.
+Atur kunci Claudin.io Anda **sekali** sebagai variabel lingkungan dan setiap alat dalam panduan ini dapat menggunakannya kembali — tidak perlu menempelkannya ke setiap klien secara manual.
 
-Ambil kunci `sk-...` Anda dari [dashboard](https://claudin.io/dashboard) (lihat [Buat akun Anda](account.md)), lalu tambahkan ke profil shell Anda sehingga tersedia di setiap terminal baru.
+Ambil kunci `sk-...` Anda dari [dasbor](https://claudin.io/dashboard) (lihat [Buat akun Anda](account.md)), lalu tambahkan ke profil shell Anda agar tersedia di setiap terminal baru.
 
 ## macOS / Linux
 
-=== "zsh (bawaan di macOS)"
+=== "zsh (default di macOS)"
 
     ```bash
     echo 'export CLAUDINIO_API_KEY="sk-..."' >> ~/.zshrc
@@ -20,7 +20,7 @@ Ambil kunci `sk-...` Anda dari [dashboard](https://claudin.io/dashboard) (lihat 
     source ~/.bashrc
     ```
 
-Ganti `sk-...` dengan kunci asli Anda. Tidak yakin shell mana yang Anda gunakan? Jalankan `echo $SHELL`.
+Ganti `sk-...` dengan kunci asli Anda. Tidak yakin shell yang Anda gunakan? Jalankan `echo $SHELL`.
 
 ## Verifikasi
 
@@ -32,11 +32,11 @@ Anda akan melihat kunci Anda tercetak kembali. Jika kosong, buka terminal baru a
 
 ## Mengapa ini membantu
 
-Setiap skrip **Penyiapan cepat** di bagian [Hubungkan alat Anda](../clients/opencode.md) membaca `$CLAUDINIO_API_KEY`, sehingga setelah diekspor Anda dapat menjalankan salah satunya apa adanya — tidak ada `YOUR_API_KEY` yang perlu diganti. Alat yang membaca variabel lingkungan secara langsung (`env_key` milik Codex, CLI yang kompatibel dengan OpenAI) juga akan mendeteksinya secara otomatis.
+Setiap skrip **Pengaturan cepat** di bagian [Hubungkan alat Anda](../clients/opencode.md) membaca `$CLAUDINIO_API_KEY`, jadi setelah diekspor Anda dapat menjalankan salah satunya apa adanya — tidak ada `YOUR_API_KEY` yang perlu diganti. Alat yang membaca variabel lingkungan secara langsung (`env_key` milik Codex, CLI yang kompatibel dengan OpenAI) juga akan mengambilnya secara otomatis.
 
 !!! warning "Perlakukan kunci Anda seperti kata sandi"
-    Siapa pun yang memiliki kunci ini dapat menghabiskan anggaran paket Anda. Jangan unggah `~/.zshrc` / `~/.bashrc` Anda ke repositori publik. Jika kunci bocor, cabut kunci tersebut di dashboard dan ekspor kunci baru.
+    Siapa pun yang memiliki kunci ini dapat menghabiskan anggaran paket Anda. Jangan commit `~/.zshrc` / `~/.bashrc` Anda ke repositori publik. Jika kunci bocor, cabut di dasbor dan ekspor yang baru.
 
 ---
 
-Kunci sudah diekspor? Sekarang [lakukan panggilan pertama Anda](first-call.md) atau langsung lompat ke [menghubungkan alat Anda](../clients/opencode.md).
+Kunci sudah diekspor? Sekarang [lakukan panggilan pertama Anda](first-call.md) atau langsung ke [menghubungkan alat Anda](../clients/opencode.md).

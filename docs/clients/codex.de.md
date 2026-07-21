@@ -1,14 +1,15 @@
 # Codex
 
 [Codex](https://github.com/openai/codex) verbindet sich über einen benutzerdefinierten Modellanbieter in
-`~/.codex/config.toml`. Claudin.io macht die `responses`-Wire-API verfügbar, die Codex erwartet.
+`~/.codex/config.toml`. Claudin.io stellt die `responses`-Draht-API bereit, die Codex erwartet.
 
-!!! warning "Codex CLI verwenden"
-    Diese Einstellungen gelten für die **Codex CLI**. Die gehostete Codex-App erlaubt möglicherweise nicht, eine benutzerdefinierte Basis-URL anzugeben.
+!!! warning "Verwende die Codex CLI"
+    Diese Einstellungen gelten für die **Codex CLI**. Die gehostete Codex-App ermöglicht es möglicherweise nicht,
+    eine benutzerdefinierte Basis-URL anzugeben.
 
 ## Manuelle Einrichtung
 
-Fügen Sie dies zu `~/.codex/config.toml` hinzu:
+Füge dies zu `~/.codex/config.toml` hinzu:
 
 ```toml
 model = "claudinio"
@@ -21,14 +22,14 @@ env_key = "CLAUDINIO_API_KEY"
 wire_api = "responses"
 ```
 
-Exportieren Sie dann Ihren Schlüssel (der Name muss mit dem obigen `env_key` übereinstimmen). Der einfachste Weg ist,
-ihn [einmal in Ihrem Shell-Profil zu setzen](../getting-started/set-your-key.md):
+Exportiere dann deinen Schlüssel (der Name muss mit `env_key` oben übereinstimmen). Der einfachste Weg ist,
+ihn [einmal in deinem Shell-Profil zu setzen](../getting-started/set-your-key.md):
 
 ```bash
 export CLAUDINIO_API_KEY="sk-..."
 ```
 
-## Schnelle Einrichtung (Skript)
+## Schnelleinrichtung (Skript)
 
 ```bash
 codex_config_install() {
@@ -66,5 +67,5 @@ unset codex_config_install
 | --- | --- |
 | Basis-URL | `https://api.claudin.io/v1` |
 | Modell | `claudinio` |
-| Wire-API | `responses` |
-| Umgebungsvariable für den Schlüssel | `CLAUDINIO_API_KEY` |
+| Wire API | `responses` |
+| Schlüssel-Umgebungsvariable | `CLAUDINIO_API_KEY` |

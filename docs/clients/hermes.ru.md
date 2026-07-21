@@ -1,11 +1,10 @@
-[Hermes Agent](https://github.com/NousResearch/hermes-agent) — это
-терминальный агент с открытым исходным кодом от Nous Research. Он поддерживает
-любые совместимые с OpenAI конечные точки, что делает его идеальным выбором для
-Claudin.io.
+# Агент Hermes
+
+[Hermes Agent](https://github.com/NousResearch/hermes-agent) — это терминальный ИИ-агент с открытым исходным кодом от Nous Research. Он поддерживает любые совместимые с OpenAI конечные точки, что делает его идеальным выбором для Claudin.io.
 
 ## Быстрый старт с мастером
 
-Выйдите из активной сессии Hermes (`Ctrl + C` или `/quit`), затем выполните:
+Завершите активную сессию Hermes (`Ctrl + C` или `/quit`), затем выполните:
 
 ```bash
 hermes model
@@ -35,11 +34,11 @@ hermes
 model:
   provider: custom
   base_url: "https://api.claudin.io/v1"
-  api_key: "sk-vash-klyuch"
+  api_key: "sk-sua-chave-aqui"
   default: "claudinio"
 ```
 
-Или установите значения напрямую:
+Или задайте значения напрямую:
 
 ```bash
 hermes config set model.base_url "https://api.claudin.io/v1"
@@ -47,30 +46,19 @@ hermes config set model.default "claudinio"
 hermes config set model.provider custom
 ```
 
-Проверьте:
+Проверка:
 
 ```bash
 hermes config check
 hermes config show
 ```
 
-> **Совет:** Для сложных задач с вызовом инструментов убедитесь, что ваш
-> Hermes Agent использует модель с контекстом минимум 64K токенов
-> (Claudinio это поддерживает).
+> **Совет:** Для сложных задач с вызовом инструментов убедитесь, что ваш Hermes Agent использует модель с контекстом не менее 64K токенов (Claudinio поддерживает это).
 
 ## Устранение неполадок
 
 | Проблема | Решение |
 | --- | --- |
-| Ошибка аутентификации | Проверьте ключ API с помощью `hermes doctor` |
-| Модель не найдена | Убедитесь, что имя модели точно `claudinio` |
-| Соединение отклонено | Проверьте доступность `https://api.claudin.io/v1` |
-
-## Полезные команды
-
-| Команда | Описание |
-| --- | --- |
-| `hermes config show` | Просмотр текущей конфигурации |
-| `hermes config edit` | Интерактивное редактирование |
-| `hermes doctor` | Диагностика проблем |
-| `hermes model` | Смена провайдера |
+| Ошибка аутентификации | Перепроверьте ваш API-ключ с помощью `hermes doctor` |
+| Модель не найдена | Убедитесь, что имя модели — именно `claudinio` |
+| Отказ в соединении | Проверьте, доступен ли `https://api.claudin.io/v1` из вашей сети |

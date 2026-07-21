@@ -10,14 +10,14 @@
     opencode auth login
     ```
 
-2. Wählen Sie **Claudinio** als Anbieter.
+2. Wählen Sie **Claudinio** als Anbieter aus.
 3. Fügen Sie Ihren API-Schlüssel ein, wenn Sie dazu aufgefordert werden — kopieren Sie ihn von Ihrem [Dashboard](https://claudin.io/dashboard).
 
-Dann starten Sie OpenCode und wählen Sie das **claudinio** Modell.
+Starten Sie dann OpenCode und wählen Sie das Modell **claudinio** aus.
 
 ## Umgebungsvariable-Alternative
 
-Wenn Sie Ihren Schlüssel bereits [exportiert](../getting-started/set-your-key.md) haben, übernimmt OpenCode die standardmäßigen OpenAI-Variablen — Sie müssen nichts einfügen:
+Wenn Sie Ihren [Schlüssel bereits exportiert haben](../getting-started/set-your-key.md), übernimmt OpenCode die standardmäßigen OpenAI-Variablen — kein Einfügen erforderlich:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1

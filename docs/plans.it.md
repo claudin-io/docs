@@ -1,70 +1,58 @@
 # Piani e limiti
 
-Ogni piano Claudin.io è **utilizzo illimitato** con un **tetto di protezione della spesa**.
-Non vieni fatturato per token o per richiesta — paghi un prezzo mensile fisso e lo
-usi liberamente. Il tetto esiste solo per impedire a un agente fuori controllo
-(un ciclo infinito di strumenti, per esempio) di prosciugare il tuo piano.
+Ogni piano Claudin.io prevede **utilizzo illimitato** con un **tetto di protezione dalla spesa**. Non vieni fatturato per token o per richiesta — paghi un prezzo mensile fisso e lo usi liberamente. Il tetto esiste solo per impedire a un agente fuori controllo (ad esempio un ciclo infinito di strumenti) di prosciugare il tuo piano.
 
 ## I piani
 
 | Piano | Prezzo | Protezione spesa | Ideale per |
 | --- | --- | --- | --- |
-| **Principiante** | $5 / mese | $0.50 / ora | Prova — impegno ridotto |
-| **Leggero** | $9 / mese | $1.00 / ora | Progetti hobby, codifica occasionale |
-| **Essenziale** | $19 / mese o $189 / anno | $2.00 / ora | Codifica quotidiana — la scelta popolare |
-| **Pro** ★ | $39 / mese o $389 / anno | $4.00 / ora | Flussi di lavoro agentici pesanti |
-| **Potente** | $59 / mese o $589 / anno | $6.00 / ora | Team, progetti multipli |
-| **Ultra** | $99 / mese o $989 / anno | $10.00 / ora | Massima potenza, team e produzione |
+| **Starter** | $5 / mese | $0,50 / ora | Prova — impegno ridotto |
+| **Lite** | $9 / mese | $1,00 / ora | Progetti hobby, coding occasionale |
+| **Essential** | $19 / mese o $189 / anno | $2,00 / ora | Qualità per l'uso quotidiano |
+| **Pro** ★ | $39 / mese o $389 / anno | $4,00 / ora | Flussi di lavoro agentici pesanti |
+| **Power** | $59 / mese o $589 / anno | $6,00 / ora | Team, progetti multipli |
+| **Ultra** | $99 / mese o $989 / anno | $10,00 / ora | Massima potenza, team e produzione |
 
-!!! consiglio "La maggior parte non raggiunge mai il tetto"
-    Il tetto orario è generoso per il lavoro interattivo normale. Di solito lo sfiori
-    solo se un agente entra in un ciclo stretto — che è esattamente quando *vuoi* un freno.
+!!! tip "La maggior parte delle persone non raggiunge mai il limite"
+    Il tetto orario è generoso per il normale lavoro interattivo. Di solito lo sfiori solo se un agente entra in un ciclo stretto — che è esattamente quando *vuoi* un freno.
 
-## claudinio vs Claudius
+## Quale modello scegliere? Claudinio vs Claudius
 
-|                      | claudinio 🏆         | claudius ★           |
-| -------------------- | -------------------- | -------------------- |
-| **Starter**          | ✅                   |                      |
-| **Lite**             | ✅                   |                      |
-| **Essential**        | ✅                   | ✅                   |
-| **Pro**              | ✅                   | ✅                   |
-| **Power**            | ✅                   | ✅                   |
-| **Ultra**            | ✅                   | ✅                   |
+Offriamo due modelli principali per il tuo agente di coding:
 
-> **Il miglior rapporto qualità-prezzo.**
+| Modello | Backend | Caso d'uso | Consigliato per |
+| --- | --- | --- | --- |
+| **claudinio** 🏆 | Veloce, bilanciato, conveniente | Coding quotidiano, progetti hobby, codice generico | **Tutti i piani** (Starter a Ultra) |
+| **claudius** ★ | Premium, ragionamento profondo | Compiti complessi, ragionamento profondo, flussi di lavoro agentici pesanti | Essential+ (Pro, Power, Ultra) |
 
-### Per Starter / Lite: usa claudinio
+### Parlando chiaramente
 
-Se hai Starter o Lite, claudinio è il modello che utilizzerai. E onestamente? Non dovrai guardarti indietro. claudinio regge il confronto con i modelli frontier costando una frazione del prezzo — perfetto per coding quotidiano, apprendimento e progetti personali.
+Se sei su **Starter** ($5) o **Lite** ($9) — **usa `claudinio` e non guardare indietro.** 🎯
 
-### Per Essential e superiori: il mondo è tuo
+Ecco la realtà: `claudinio` offre una qualità paragonabile a Claude Sonnet per il coding quotidiano a **una frazione del costo interno**. Con il piano Lite, puoi ottenere **centinaia di richieste all'ora** con `claudinio` — mentre `claudius` consumerebbe il tuo budget orario molto più velocemente.
 
-Essential e piani superiori ti danno accesso sia a claudinio che a claudius. Usa claudinio per le attività quotidiane e conserva claudius per quando serve quella scintilla in più — architettura complessa, ragionamento approfondito o sessioni di debugging difficili.
+| Metrica | claudinio | claudius |
+| --- | --- | --- |
+| Impatto sul budget orario | Basso — dura molto di più | Alto — consuma più velocemente |
+| Caso d'uso | Coding quotidiano, progetti personali | Ragionamento pesante, agenti complessi |
 
-### Ma hey, la regola d'oro
+**Regola d'oro:** Configura il tuo agente (Claude Code, Cursor, Continue, ecc.) con `claudinio` come modello predefinito. Passa a `claudius` solo quando hai esplicitamente bisogno di più potenza di ragionamento — e se il tuo piano lo consente (Essential+). Per progetti hobby, `claudinio` è **tutto ciò di cui hai bisogno** e probabilmente **più di quanto ti aspetti**.
 
-Indipendentemente dal tuo piano, ti consigliamo di impostare claudinio come modello predefinito. È il nostro modello di punta, e ci crediamo. Puoi sempre passare a claudius quando il compito lo richiede.
+> 💡 Suggerimento: Entrambi i modelli funzionano con tutti i principali agenti di coding. Basta impostare `model=claudinio` o `model=claudius` nella configurazione del tuo agente. `claudinio` risolve automaticamente anche alias come `claude-sonnet-4`, `gpt-4o`, `o3-mini` e decine di altri — non c'è bisogno di modificare la configurazione del tuo agente.
 
-### Alias dei modelli
-
-Tutti i piani supportano alias per modelli popolari come: `claude-sonnet-4`, `gpt-4o`, `gemini-2.5-pro`, `llama-4`, `deepseek-v4`. Consulta la nostra [API Reference](/api-reference/) per l'elenco completo.
-
-## Come funziona la protezione delle spese
+## Come funziona la protezione della spesa
 
 Ogni piano definisce una **finestra** di budget — un periodo scorrevole e una spesa massima al suo interno:
 
-- **Principiante**, **Leggero**, **Essenziale**, **Pro**, **Potente** e **Ultra** usano una finestra di **1 ora**.
+- **Starter**, **Lite**, **Essential**, **Pro**, **Power** e **Ultra** utilizzano una finestra di **1 ora**.
 
-All'interno della finestra, il tuo utilizzo accumula un piccolo costo interno. Quando quel costo
-interno raggiunge il tetto della finestra, le richieste si mettono in pausa fino al reset della finestra.
+All'interno della finestra, il tuo utilizzo accumula un piccolo costo interno. Quando quel costo interno raggiunge il limite della finestra, le richieste vengono messe in pausa finché la finestra non si resetta.
 
-Solo le tue chiamate al modello passano attraverso il proxy. Ogni richiesta si aggiunge al totale
-corrente della finestra in base ai token utilizzati. Quando la finestra viene resettata,
-anche il totale viene resettato.
+Solo le chiamate al modello passano attraverso il proxy. Ogni richiesta si aggiunge al totale corrente della finestra in base ai token utilizzati. Quando la finestra si resetta, il totale si azzera con essa.
 
-Se raggiungi il tetto e ricevi un errore di budget, hai due opzioni:
+Se raggiungi il limite e ottieni un errore di budget, hai due opzioni:
 
-1. Aspetta che la finestra si resetti (mostrato nella tua dashboard).
-2. Passa a un piano superiore per un tetto più grande.
+1. Attendere che la finestra si resetti (mostrato nella tua dashboard).
+2. Passare a un piano superiore per un limite più grande.
 
-Vedi [Errori relativi ai piani](api-reference.md#errors) per l'aspetto dell'errore di budget.
+Vedi [Errori relativi ai piani](api-reference.md#errors) per vedere com'è un errore di budget.

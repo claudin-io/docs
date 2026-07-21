@@ -1,12 +1,10 @@
 # Kilo Code
 
-[Kilo Code](https://kilo.ai) использует блок провайдера, совместимый с OpenAI.
-Идентификатор модели: `claudinio/claudinio` (провайдер/модель).
+[Kilo Code](https://kilo.ai) использует блок провайдера, совместимый с OpenAI. Идентификатор модели: `claudinio/claudinio` (провайдер/модель).
 
 ## Быстрая настройка (скрипт)
 
-Сначала [экспортируйте ваш ключ](../getting-started/set-your-key.md), чтобы была
-установлена `$CLAUDINIO_API_KEY`. Этот скрипт записывает файл `~/.config/kilo/kilo.jsonc`, создавая резервную копию любого существующего файла:
+Сначала [экспортируйте ваш ключ](../getting-started/set-your-key.md), чтобы `$CLAUDINIO_API_KEY` был установлен. Это создаст файл `~/.config/kilo/kilo.jsonc`, создав резервную копию существующего файла:
 
 ```bash
 kilo_config_install() {
@@ -83,7 +81,7 @@ unset kilo_config_install
 
 ## Альтернатива с переменными окружения
 
-Kilo также использует стандартные переменные окружения OpenAI:
+Kilo также считывает стандартные переменные окружения OpenAI:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
@@ -94,4 +92,4 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 | --- | --- |
 | Базовый URL | `https://api.claudin.io/v1` |
 | Модель | `claudinio/claudinio` |
-| Вызовы инструментов | включены |
+| Вызовы инструментов | включено |

@@ -1,10 +1,10 @@
 # Zed
 
-[Zed](https://zed.dev), `language_models.openai_compatible` altında yerel olarak OpenAI uyumlu sağlayıcıları destekler.
+[Zed](https://zed.dev), `language_models.openai_compatible` altında OpenAI uyumlu sağlayıcıları yerel olarak destekler.
 
 ## Hızlı kurulum (betik)
 
-Öncelikle `$CLAUDINIO_API_KEY`'in ayarlanması için [anahtarınızı dışa aktarın](../getting-started/set-your-key.md). Bu, `~/.config/zed/settings.json` dosyasını yazar ve varsa mevcut dosyayı yedekler:
+Önce [anahtarınızı dışa aktarın](../getting-started/set-your-key.md) böylece `$CLAUDINIO_API_KEY` ayarlanır. Bu, `~/.config/zed/settings.json` dosyasını yazar ve var olan dosyayı yedekler:
 
 ```bash
 zed_settings_install() {
@@ -68,11 +68,11 @@ unset zed_settings_install
     }
     ```
 
-2. Zed'in Agent panelini açın ve istendiğinde API anahtarınızı yapıştırın veya **Claudinio** sağlayıcısı için API anahtarı olarak ayarlayın.
-3. Ajan panelinin model seçicisinde **Claudinio**'yu seçin.
+2. Zed'in Ajan panelini açın ve istendiğinde API anahtarınızı yapıştırın veya **Claudinio** sağlayıcısı için API anahtarı olarak ayarlayın.
+3. Ajan panelindeki model seçiciden **Claudinio**'yu seçin.
 
 | Ayar | Değer |
 | --- | --- |
 | API URL | `https://api.claudin.io/v1` |
 | Model | `claudinio` |
-| Max tokens | `256000` |
+| Maks. token | `256000` |

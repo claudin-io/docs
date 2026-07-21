@@ -1,13 +1,10 @@
 # Zed
 
-[Zed](https://zed.dev) hỗ trợ các nhà cung cấp tương thích OpenAI một cách tự nhiên trong
-`language_models.openai_compatible`.
+[Zed](https://zed.dev) hỗ trợ các nhà cung cấp tương thích OpenAI một cách tự nhiên dưới `language_models.openai_compatible`.
 
 ## Thiết lập nhanh (script)
 
-Đầu tiên [xuất khóa của bạn](../getting-started/set-your-key.md) để
-`$CLAUDINIO_API_KEY` được thiết lập. Điều này ghi `~/.config/zed/settings.json`, sao lưu
-bất kỳ tệp hiện có nào:
+Đầu tiên [xuất key của bạn](../getting-started/set-your-key.md) để `$CLAUDINIO_API_KEY` được thiết lập. Thao tác này sẽ ghi vào `~/.config/zed/settings.json`, sao lưu bất kỳ tệp hiện có nào:
 
 ```bash
 zed_settings_install() {
@@ -71,12 +68,11 @@ unset zed_settings_install
     }
     ```
 
-2. Mở bảng điều khiển Agent của Zed và dán khóa API của bạn khi được nhắc, hoặc đặt nó làm
-   khóa API cho nhà cung cấp **Claudinio**.
-3. Chọn **Claudinio** trong bộ chọn mô hình của bảng điều khiển agent.
+2. Mở bảng Agent của Zed và dán API key của bạn khi được yêu cầu, hoặc đặt nó làm API key cho nhà cung cấp **Claudinio**.
+3. Chọn **Claudinio** trong bộ chọn mô hình của bảng Agent.
 
 | Cài đặt | Giá trị |
 | --- | --- |
 | API URL | `https://api.claudin.io/v1` |
-| Model | `claudinio` |
-| Max tokens | `256000` |
+| Mô hình | `claudinio` |
+| Token tối đa | `256000` |

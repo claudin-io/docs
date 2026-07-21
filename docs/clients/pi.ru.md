@@ -1,13 +1,13 @@
 # pi
 
-[pi](https://github.com/parallel-web/pi) считывает провайдеров из
+[pi](https://github.com/parallel-web/pi) читает провайдеров из
 `~/.pi/agent/models.json`. Claudin.io зарегистрирован как провайдер
 `openai-completions`.
 
 ## Быстрая настройка (скрипт)
 
-Сначала [экспортируйте ключ](../getting-started/set-your-key.md), чтобы
-`$CLAUDINIO_API_KEY` был установлен. Скрипт запишет `~/.pi/agent/models.json`, создав резервную копию существующего файла:
+Сначала [экспортируйте ваш ключ](../getting-started/set-your-key.md), чтобы
+`$CLAUDINIO_API_KEY` был установлен. Этот скрипт записывает `~/.pi/agent/models.json`, создавая резервную копию существующего файла:
 
 ```bash
 pi_models_install() {
@@ -71,15 +71,15 @@ pi --provider claudinio --model claudinio
 }
 ```
 
-## Альтернатива через переменные окружения
+## Альтернатива с переменными окружения
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
 export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 ```
 
-| Параметр | Значение |
+| Настройка | Значение |
 | --- | --- |
-| Base URL | `https://api.claudin.io/v1` |
+| Базовый URL | `https://api.claudin.io/v1` |
 | Модель | `claudinio` |
 | Тип API | `openai-completions` |

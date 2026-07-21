@@ -1,10 +1,10 @@
 # Claude Code
 
-يتصل [Claude Code](https://claude.com/claude-code) بـ Claudin.io من خلال نقطة النهاية المتوافقة مع Anthropic. وجّه عنوان URL الأساسي الخاص بك إلى Claudin.io واستخدم مفتاحك كرمز المصادقة.
+[Claude Code](https://claude.com/claude-code) يتصل بـ Claudin.io من خلال نقطة نهاية متوافقة مع Anthropic. وجّه عنوان URL الأساسي الخاص به إلى Claudin.io واستخدم مفتاحك كرمز المصادقة.
 
-## الإعداد السريع (البرنامج النصي)
+## الإعداد السريع (نص برمجي)
 
-أولاً، صدّر [مفتاحك](../getting-started/set-your-key.md) ليتم تعيين `$CLAUDINIO_API_KEY`، ثم شغّل هذا. سيقوم بكتابة `~/.claude/settings.json` (مع أخذ نسخة احتياطية من أي ملف موجود أولاً):
+أولاً [صدّر مفتاحك](../getting-started/set-your-key.md) بحيث يتم تعيين `$CLAUDINIO_API_KEY`، ثم شغّل هذا. يكتب `~/.claude/settings.json` (مع عمل نسخة احتياطية لأي ملف موجود مسبقاً):
 
 ```bash
 claude_settings_install() {
@@ -38,11 +38,11 @@ claude_settings_install "$CLAUDINIO_API_KEY"
 unset claude_settings_install
 ```
 
-ثم قم فقط بتشغيل `claude`.
+ثم شغّل فقط `claude`.
 
 ## الإعداد اليدوي
 
-قم بتعديل `~/.claude/settings.json` بنفسك:
+قم بتحرير `~/.claude/settings.json` بنفسك:
 
 ```json
 {
@@ -57,7 +57,7 @@ unset claude_settings_install
 ```
 
 !!! note "لماذا `ANTHROPIC_API_KEY` فارغ"
-    يفضّل Claude Code استخدام `ANTHROPIC_API_KEY` إذا كان مضبوطاً. تركه فارغاً يُجبره على استخدام `ANTHROPIC_AUTH_TOKEN` (مفتاح Claudin.io الخاص بك) مع عنوان URL الأساسي لـ Claudin.io.
+    Claude Code يفضّل `ANTHROPIC_API_KEY` إذا تم تعيينه. تركه فارغاً يجبره على استخدام `ANTHROPIC_AUTH_TOKEN` (مفتاح Claudin.io الخاص بك) مقابل عنوان URL الأساسي لـ Claudin.io.
 
 ## القيم المستخدمة
 
@@ -70,4 +70,4 @@ unset claude_settings_install
 
 ---
 
-مشكلة؟ انظر [الأخطاء الشائعة](../api-reference.md#errors) أو [FAQ](../faq.md).
+هل تواجه مشكلة؟ اطلع على [الأخطاء الشائعة](../api-reference.md#errors) أو [FAQ](../faq.md).

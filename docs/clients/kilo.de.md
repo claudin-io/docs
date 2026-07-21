@@ -1,10 +1,10 @@
 # Kilo Code
 
-[Kilo Code](https://kilo.ai) verwendet einen OpenAI-kompatiblen Provider-Block. Die Modell-ID ist `claudinio/claudinio` (Provider/Modell).
+[Kilo Code](https://kilo.ai) verwendet einen OpenAI-kompatiblen Anbieterblock. Die Modell-ID ist `claudinio/claudinio` (Anbieter/Modell).
 
 ## Schnelleinrichtung (Skript)
 
-Exportieren Sie zuerst [Ihren Schlüssel](../getting-started/set-your-key.md), damit `$CLAUDINIO_API_KEY` gesetzt ist. Dies schreibt `~/.config/kilo/kilo.jsonc` und sichert eine vorhandene Datei:
+Exportieren Sie zuerst [Ihren Schlüssel](../getting-started/set-your-key.md), damit `$CLAUDINIO_API_KEY` gesetzt ist. Dies schreibt `~/.config/kilo/kilo.jsonc` und sichert dabei eine vorhandene Datei:
 
 ```bash
 kilo_config_install() {
@@ -79,9 +79,9 @@ Fügen Sie dies in `~/.config/kilo/kilo.jsonc` ein:
 }
 ```
 
-## Alternativ: Umgebungsvariablen
+## Alternative mit Umgebungsvariablen
 
-Kilo liest auch die Standard-OpenAI-Umgebungsvariablen:
+Kilo liest auch die standardmäßigen OpenAI-Umgebungsvariablen:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1

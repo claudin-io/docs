@@ -1,10 +1,11 @@
 # Zed
 
-[Zed](https://zed.dev) unterstützt OpenAI-kompatible Anbieter nativ unter `language_models.openai_compatible`.
+[Zed](https://zed.dev) unterstützt nativ OpenAI-kompatible Anbieter unter
+`language_models.openai_compatible`.
 
 ## Schnelleinrichtung (Skript)
 
-Exportieren Sie zuerst [Ihren Schlüssel](../getting-started/set-your-key.md), damit `$CLAUDINIO_API_KEY` gesetzt ist. Dies schreibt `~/.config/zed/settings.json` und erstellt eine Sicherungskopie einer vorhandenen Datei:
+Exportieren Sie zunächst [Ihren Schlüssel](../getting-started/set-your-key.md), damit `$CLAUDINIO_API_KEY` gesetzt ist. Dies schreibt `~/.config/zed/settings.json` und sichert vorhandene Dateien:
 
 ```bash
 zed_settings_install() {
@@ -68,11 +69,11 @@ unset zed_settings_install
     }
     ```
 
-2. Öffnen Sie das Agent-Panel von Zed und fügen Sie Ihren API-Schlüssel ein, wenn Sie dazu aufgefordert werden, oder setzen Sie ihn als API-Schlüssel für den **Claudinio**-Anbieter.
+2. Öffnen Sie das Zed-Agent-Panel und fügen Sie Ihren API-Schlüssel ein, wenn Sie dazu aufgefordert werden, oder legen Sie ihn als API-Schlüssel für den Anbieter **Claudinio** fest.
 3. Wählen Sie **Claudinio** im Modellauswahl des Agent-Panels aus.
 
 | Einstellung | Wert |
 | --- | --- |
-| API-URL | `https://api.claudin.io/v1` |
+| API URL | `https://api.claudin.io/v1` |
 | Modell | `claudinio` |
-| Maximale Tokens | `256000` |
+| Maximale Token | `256000` |

@@ -1,10 +1,10 @@
 # Claude Code
 
-[Claude Code](https://claude.com/claude-code) अपने Anthropic-संगत एंडपॉइंट के माध्यम से Claudin.io से जुड़ता है। इसके base URL को Claudin.io पर इंगित करें और अपनी कुंजी को प्रमाणीकरण टोकन के रूप में उपयोग करें।
+[Claude Code](https://claude.com/claude-code) क्लाउडिन.आईओ से इसके एंथ्रोपिक-संगत एंडपॉइंट के माध्यम से जुड़ता है। इसका बेस यूआरएल क्लाउडिन.आईओ पर पॉइंट करें और अपनी कुंजी को प्रमाणीकरण टोकन के रूप में उपयोग करें।
 
 ## त्वरित सेटअप (स्क्रिप्ट)
 
-पहले [अपनी कुंजी निर्यात करें](../getting-started/set-your-key.md) ताकि `$CLAUDINIO_API_KEY` सेट हो, फिर इसे चलाएं। यह `~/.claude/settings.json` लिखता है (पहले किसी भी मौजूदा फ़ाइल का बैकअप लेता है):
+पहले [अपनी कुंजी निर्यात करें](../getting-started/set-your-key.md) ताकि `$CLAUDINIO_API_KEY` सेट हो जाए, फिर यह चलाएँ। यह `~/.claude/settings.json` लिखता है (पहले किसी भी मौजूदा फ़ाइल का बैकअप लेकर):
 
 ```bash
 claude_settings_install() {
@@ -38,11 +38,11 @@ claude_settings_install "$CLAUDINIO_API_KEY"
 unset claude_settings_install
 ```
 
-फिर बस `claude` चलाएं।
+फिर बस `claude` चलाएँ।
 
 ## मैन्युअल सेटअप
 
-`~/.claude/settings.json` को स्वयं संपादित करें:
+`~/.claude/settings.json` स्वयं संपादित करें:
 
 ```json
 {
@@ -57,17 +57,17 @@ unset claude_settings_install
 ```
 
 !!! note "क्यों `ANTHROPIC_API_KEY` खाली है"
-    Claude Code `ANTHROPIC_API_KEY` को प्राथमिकता देता है यदि वह सेट है। इसे खाली छोड़ने पर यह Claudin.io base URL के विरुद्ध `ANTHROPIC_AUTH_TOKEN` (आपकी Claudin.io कुंजी) का उपयोग करने के लिए मजबूर होता है।
+    क्लॉड कोड `ANTHROPIC_API_KEY` को प्राथमिकता देता है यदि वह सेट है। इसे खाली छोड़ने पर यह क्लाउडिन.आईओ बेस यूआरएल के विरुद्ध `ANTHROPIC_AUTH_TOKEN` (आपकी क्लाउडिन.आईओ कुंजी) का उपयोग करने के लिए बाध्य होता है।
 
 ## उपयोग किए गए मान
 
 | सेटिंग | मान |
 | --- | --- |
-| बेस URL | `https://api.claudin.io` |
+| बेस यूआरएल | `https://api.claudin.io` |
 | मॉडल | `claudinio` |
-| सबएजेंट मॉडल | `claudinio` |
+| उप-एजेंट मॉडल | `claudinio` |
 | प्रमाणीकरण | `ANTHROPIC_AUTH_TOKEN` = आपकी कुंजी |
 
 ---
 
-समस्या? [सामान्य त्रुटिय
+परेशानी? देखें [सामान्य त्रुटियाँ](../api-reference.md#errors) या [FAQ](../faq.md)।

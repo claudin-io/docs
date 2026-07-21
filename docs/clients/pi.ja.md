@@ -1,10 +1,13 @@
 # pi
 
-[pi](https://github.com/parallel-web/pi) は `~/.pi/agent/models.json` からプロバイダを読み込みます。Claudin.io は `openai-completions` プロバイダとして登録されています。
+[pi](https://github.com/parallel-web/pi) はプロバイダーを
+`~/.pi/agent/models.json` から読み取ります。Claudin.io は
+`openai-completions` プロバイダーとして登録されています。
 
 ## クイックセットアップ（スクリプト）
 
-最初に[キーをエクスポート](../getting-started/set-your-key.md)して、`$CLAUDINIO_API_KEY` が設定されていることを確認してください。これにより `~/.pi/agent/models.json` が書き込まれ、既存のファイルはバックアップされます：
+まず[キーをエクスポートして](../getting-started/set-your-key.md) `$CLAUDINIO_API_KEY` が設定されていることを確認してください。
+これにより `~/.pi/agent/models.json` が書き込まれ、既存のファイルはバックアップされます。
 
 ```bash
 pi_models_install() {
@@ -51,7 +54,7 @@ pi --provider claudinio --model claudinio
 
 ## 手動セットアップ
 
-以下を `~/.pi/agent/models.json` に配置します：
+以下を `~/.pi/agent/models.json` に記述します：
 
 ```json
 {
@@ -68,7 +71,7 @@ pi --provider claudinio --model claudinio
 }
 ```
 
-## 環境変数による代替方法
+## 環境変数による代替設定
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1

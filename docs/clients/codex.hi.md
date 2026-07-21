@@ -1,9 +1,9 @@
-# कोडेक्स
+# Codex
 
-[कोडेक्स](https://github.com/openai/codex) एक कस्टम मॉडल प्रदाता के माध्यम से `~/.codex/config.toml` में जुड़ता है। Claudin.io `responses` वायर API को उजागर करता है जिसकी कोडेक्स को अपेक्षा होती है।
+[Codex](https://github.com/openai/codex) एक कस्टम मॉडल प्रदाता के माध्यम से `~/.codex/config.toml` में जुड़ता है। Claudin.io `responses` वायर API को उजागर करता है जिसकी Codex अपेक्षा करता है।
 
 !!! warning "Codex CLI का उपयोग करें"
-    ये सेटिंग्स **Codex CLI** पर लागू होती हैं। होस्ट किया गया Codex ऐप आपको कस्टम बेस URL की ओर इंगित करने की अनुमति नहीं दे सकता है।
+    ये सेटिंग्स **Codex CLI** पर लागू होती हैं। होस्ट किया गया Codex ऐप आपको कस्टम बेस URL पर इंगित करने की अनुमति नहीं दे सकता है।
 
 ## मैन्युअल सेटअप
 
@@ -20,13 +20,13 @@ env_key = "CLAUDINIO_API_KEY"
 wire_api = "responses"
 ```
 
-फिर अपनी कुंजी निर्यात करें (नाम ऊपर `env_key` से मेल खाना चाहिए)। सबसे आसान तरीका है [इसे अपने शेल प्रोफ़ाइल में एक बार सेट करना](../getting-started/set-your-key.md):
+फिर अपनी कुंजी निर्यात करें (नाम ऊपर दिए गए `env_key` से मेल खाना चाहिए)। सबसे आसान तरीका है [इसे अपने शेल प्रोफ़ाइल में एक बार सेट करें](../getting-started/set-your-key.md):
 
 ```bash
 export CLAUDINIO_API_KEY="sk-..."
 ```
 
-## त्वरित सेटअप (स्क्रिप्ट)
+## त्वरित सेटअप (script)
 
 ```bash
 codex_config_install() {

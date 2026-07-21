@@ -1,10 +1,10 @@
 # pi
 
-[pi](https://github.com/parallel-web/pi), sağlayıcıları `~/.pi/agent/models.json` dosyasından okur. Claudin.io, bir `openai-completions` sağlayıcısı olarak kayıtlıdır.
+[pi](https://github.com/parallel-web/pi), sağlayıcılarını `~/.pi/agent/models.json` dosyasından okur. Claudin.io, bir `openai-completions` sağlayıcısı olarak kayıtlıdır.
 
 ## Hızlı kurulum (script)
 
-Öncelikle `$CLAUDINIO_API_KEY`'in ayarlanması için [anahtarınızı dışa aktarın](../getting-started/set-your-key.md). Bu, `~/.pi/agent/models.json` dosyasını yazar ve varsa mevcut dosyayı yedekler:
+Öncelikle [anahtarınızı dışa aktarın](../getting-started/set-your-key.md) ki `$CLAUDINIO_API_KEY` ayarlanmış olsun. Bu komut, `~/.pi/agent/models.json` dosyasını oluşturur ve varsa mevcut dosyayı yedekler:
 
 ```bash
 pi_models_install() {
@@ -59,7 +59,7 @@ Bunu `~/.pi/agent/models.json` dosyasına koyun:
     "claudinio": {
       "baseUrl": "https://api.claudin.io/v1",
       "api": "openai-completions",
-      "apiKey": "API_ANAHTARINIZ",
+      "apiKey": "YOUR_API_KEY",
       "models": [
         { "id": "claudinio", "name": "Claudinio", "contextWindow": 256000 }
       ]
@@ -77,6 +77,6 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 
 | Ayar | Değer |
 | --- | --- |
-| Temel URL | `https://api.claudin.io/v1` |
+| Base URL | `https://api.claudin.io/v1` |
 | Model | `claudinio` |
 | API türü | `openai-completions` |

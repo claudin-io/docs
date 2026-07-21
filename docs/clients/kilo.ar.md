@@ -1,10 +1,10 @@
-# كود كيلو
+# Kilo Code
 
-يستخدم [كود كيلو](https://kilo.ai) كتلة مزود متوافقة مع OpenAI. معرف النموذج هو `claudinio/claudinio` (مزود/نموذج).
+[Kilo Code](https://kilo.ai) يستخدم كتلة مزود متوافقة مع OpenAI. معرف النموذج هو `claudinio/claudinio` (مزود/نموذج).
 
 ## الإعداد السريع (سكريبت)
 
-أولاً، [قم بتصدير مفتاحك](../getting-started/set-your-key.md) حتى يتم تعيين `$CLAUDINIO_API_KEY`. هذا يكتب `~/.config/kilo/kilo.jsonc` مع عمل نسخة احتياطية من أي ملف موجود:
+أولاً [قم بتصدير مفتاحك](../getting-started/set-your-key.md) حتى يتم تعيين `$CLAUDINIO_API_KEY`. يكتب هذا الملف `~/.config/kilo/kilo.jsonc`، مع عمل نسخة احتياطية لأي ملف موجود:
 
 ```bash
 kilo_config_install() {
@@ -81,7 +81,7 @@ unset kilo_config_install
 
 ## بديل متغيرات البيئة
 
-كما يقرأ Kilo متغيرات البيئة القياسية من OpenAI:
+يقرأ Kilo أيضًا متغيرات البيئة القياسية لـ OpenAI:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
@@ -90,6 +90,6 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 
 | الإعداد | القيمة |
 | --- | --- |
-| عنوان URL الأساسي | `https://api.claudin.io/v1` |
+| Base URL | `https://api.claudin.io/v1` |
 | النموذج | `claudinio/claudinio` |
 | استدعاءات الأدوات | مفعل |

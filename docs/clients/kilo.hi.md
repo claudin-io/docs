@@ -54,7 +54,7 @@ unset kilo_config_install
 
 ## मैन्युअल सेटअप
 
-इसे `~/.config/kilo/kilo.jsonc` में डालें:
+इसे `~/.config/kilo/kilo.jsonc` में रखें:
 
 ```jsonc
 {
@@ -81,7 +81,7 @@ unset kilo_config_install
 
 ## पर्यावरण-चर विकल्प
 
-किलो मानक OpenAI पर्यावरण चर भी पढ़ता है:
+Kilo मानक OpenAI env vars भी पढ़ता है:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
@@ -92,4 +92,4 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 | --- | --- |
 | आधार URL | `https://api.claudin.io/v1` |
 | मॉडल | `claudinio/claudinio` |
-| टूल कॉल्स | सक्षम |
+| टूल कॉल | सक्षम |

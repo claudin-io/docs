@@ -1,8 +1,8 @@
 # مكالمتك الأولى
 
-قبل توصيل محرر، من الجيد التأكد من أن مفتاحك يعمل مع طلب واحد. يتحدث Claudin.io بصيغة **OpenAI Chat Completions** (وصيغة Anthropic Messages أيضًا).
+قبل توصيل محرر، من الجيد التأكد من أن مفتاحك يعمل مع طلب واحد. يتحدث Claudin.io تنسيق **OpenAI Chat Completions** (وتنسيق Anthropic Messages أيضًا).
 
-تقرأ هذه الأمثلة مفتاحك من `$CLAUDINIO_API_KEY` — قم بتعيينه مرة واحدة عن طريق [تصدير مفتاحك](set-your-key.md). (في مقتطفات SDK، استبدل `YOUR_API_KEY` بالمفتاح من [لوحة التحكم](account.md)، أو اقرأه من نفس المتغير البيئي.)
+تقرأ هذه الأمثلة مفتاحك من `$CLAUDINIO_API_KEY` — قم بتعيينه مرة واحدة عن طريق [تصدير مفتاحك](set-your-key.md). (في مقتطفات SDK، استبدل `YOUR_API_KEY` بالمفتاح من [لوحة التحكم](account.md)، أو اقرأه من نفس متغير البيئة).
 
 ## باستخدام cURL
 
@@ -18,10 +18,10 @@ curl https://api.claudin.io/v1/chat/completions \
   }'
 ```
 
-يجب أن تحصل على استجابة JSON عادية على نمط OpenAI مع مصفوفة `choices`.
+يجب أن تحصل على استجابة JSON عادية على غرار OpenAI مع مصفوفة `choices`.
 
 !!! tip "`x-api-key` يعمل أيضًا"
-    يقبل Claudin.io المفتاح إما كـ `Authorization: Bearer YOUR_API_KEY` **أو** كرأس `x-api-key: YOUR_API_KEY`. استخدم أيهما يرسله عميلك.
+    يقبل Claudin.io المفتاح إما كـ `Authorization: Bearer YOUR_API_KEY` **أو** كرأس `x-api-key: YOUR_API_KEY`. استخدم أيًا كان ما يرسله عميلك.
 
 ## باستخدام OpenAI Python SDK
 
@@ -76,4 +76,4 @@ curl https://api.claudin.io/v1/chat/completions \
 
 ---
 
-هل حصلت على رد صالح؟ رائع — الآن [قم بتوصيل أداتك المفضلة](../clients/claude-code.md). إذا فشل شيء ما، تحقق من [مرجع API](../api-reference.md#errors) للأخطاء الشائعة.
+هل حصلت على رد صحيح؟ رائع — الآن [قم بتوصيل أداتك المفضلة](../clients/claude-code.md). إذا فشل شيء ما، تحقق من [مرجع API](../api-reference.md#errors) للأخطاء الشائعة.

@@ -1,9 +1,9 @@
 # Codex
 
-[Codex](https://github.com/openai/codex) подключается через собственного провайдера модели в `~/.codex/config.toml`. Claudin.io предоставляет wire-интерфейс `responses`, который ожидает Codex.
+[Codex](https://github.com/openai/codex) подключается через пользовательского провайдера модели в `~/.codex/config.toml`. Claudin.io предоставляет wire API `responses`, который ожидает Codex.
 
 !!! warning "Используйте Codex CLI"
-    Эти настройки применяются к **Codex CLI**. Хостируемое приложение Codex может не позволить указать собственный базовый URL.
+    Эти настройки применимы к **Codex CLI**. Хостированное приложение Codex может не позволять указать пользовательский базовый URL.
 
 ## Ручная настройка
 
@@ -20,7 +20,7 @@ env_key = "CLAUDINIO_API_KEY"
 wire_api = "responses"
 ```
 
-Затем экспортируйте ваш ключ (имя должно совпадать с `env_key` выше). Самый простой способ — [установить его один раз в вашем профиле оболочки](../getting-started/set-your-key.md):
+Затем экспортируйте ваш ключ (имя должно совпадать с `env_key` выше). Самый простой способ — [установить его один раз в вашем shell профиле](../getting-started/set-your-key.md):
 
 ```bash
 export CLAUDINIO_API_KEY="sk-..."
@@ -38,7 +38,7 @@ codex_config_install() {
 
   if [ -f "$file" ]; then
     cp "$file" "$file.claudinio.bak"
-    echo "[ok] Backup: $file.claudinio.bak"
+    echo "[ok] Резервная копия: $file.claudinio.bak"
   fi
 
   cat > "$file" <<TOMLEOF
@@ -52,17 +52,17 @@ env_key = "CLAUDINIO_API_KEY"
 wire_api = "responses"
 TOMLEOF
 
-  echo "[ok] Configured: $file"
-  echo "[ok] Make sure CLAUDINIO_API_KEY is exported in your shell"
+  echo "[ok] Настроен: $file"
+  echo "[ok] Убедитесь, что CLAUDINIO_API_KEY экспортирован в вашем shell"
 }
 
 codex_config_install
 unset codex_config_install
 ```
 
-| Настройка | Значение |
+| Параметр | Значение |
 | --- | --- |
-| Базовый URL | `https://api.claudin.io/v1` |
+| Base URL | `https://api.claudin.io/v1` |
 | Модель | `claudinio` |
 | Wire API | `responses` |
-| Переменная окружения ключа | `CLAUDINIO_API_KEY` |
+| Переменная окружения для ключа | `CLAUDINIO_API_KEY` |

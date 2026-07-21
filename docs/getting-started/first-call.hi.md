@@ -1,9 +1,8 @@
 # आपकी पहली कॉल
 
-किसी एडिटर को जोड़ने से पहले, यह पुष्टि करना उपयोगी है कि आपकी कुंजी एकल अनुरोध के साथ काम करती है।
-Claudin.io **OpenAI Chat Completions** फ़ॉर्मेट (और Anthropic Messages फ़ॉर्मेट भी) बोलता है।
+एडिटर को जोड़ने से पहले, यह सुनिश्चित करना उचित है कि आपकी कुंजी एक ही अनुरोध के साथ काम करती है। Claudin.io **OpenAI Chat Completions** प्रारूप (और Anthropic Messages प्रारूप भी) बोलता है।
 
-ये उदाहरण `$CLAUDINIO_API_KEY` से आपकी कुंजी पढ़ते हैं — इसे एक बार [अपनी कुंजी निर्यात करके](set-your-key.md) सेट करें। (SDK स्निपेट में, `YOUR_API_KEY` को अपने [डैशबोर्ड](account.md) से प्राप्त कुंजी से बदलें, या इसे उसी env var से पढ़ें।)
+ये उदाहरण आपकी कुंजी `$CLAUDINIO_API_KEY` से पढ़ते हैं — इसे एक बार [अपनी कुंजी निर्यात करके](set-your-key.md) सेट करें। (SDK स्निपेट में, `YOUR_API_KEY` को अपने [डैशबोर्ड](account.md) से प्राप्त कुंजी से बदलें, या उसी env var से पढ़ें।)
 
 ## cURL के साथ
 
@@ -19,11 +18,10 @@ curl https://api.claudin.io/v1/chat/completions \
   }'
 ```
 
-आपको सामान्य OpenAI-शैली का JSON प्रतिक्रिया मिलनी चाहिए जिसमें `choices` ऐरे हो।
+आपको एक सामान्य OpenAI-शैली JSON प्रतिक्रिया मिलनी चाहिए जिसमें `choices` सरणी हो।
 
-!!! टिप "`x-api-key` भी काम करता है"
-    Claudin.io कुंजी को या तो `Authorization: Bearer YOUR_API_KEY` के रूप में
-    **या** `x-api-key: YOUR_API_KEY` हेडर के रूप में स्वीकार करता है। जो भी आपका क्लाइंट भेजता है, उसका उपयोग करें।
+!!! tip "`x-api-key` भी काम करता है"
+    Claudin.io कुंजी को `Authorization: Bearer YOUR_API_KEY` **या** `x-api-key: YOUR_API_KEY` हेडर के रूप में स्वीकार करता है। आपका क्लाइंट जो भी भेजे, उसका उपयोग करें।
 
 ## OpenAI Python SDK के साथ
 
@@ -63,7 +61,7 @@ console.log(resp.choices[0].message.content);
 
 ## स्ट्रीमिंग
 
-`stream: true` सेट करें और सर्वर-भेजी गई घटनाएँ पढ़ें, बिल्कुल OpenAI API की तरह:
+`stream: true` सेट करें और सर्वर-भेजी गई घटनाओं को पढ़ें, बिल्कुल OpenAI API की तरह:
 
 ```bash
 curl https://api.claudin.io/v1/chat/completions \
@@ -78,5 +76,4 @@ curl https://api.claudin.io/v1/chat/completions \
 
 ---
 
-मान्य प्रतिक्रिया मिली? बढ़िया — अब [अपना पसंदीदा टूल कनेक्ट करें](../clients/claude-code.md)।
-यदि कुछ विफल हुआ, तो सामान्य त्रुटियों के लिए [API संदर्भ](../api-reference.md#errors) देखें।
+एक मान्य प्रतिक्रिया मिली? बढ़िया — अब [अपने पसंदीदा टूल को कनेक्ट करें](../clients/claude-code.md)। अगर कुछ विफल हुआ, तो सामान्य त्रुटियों के लिए [API संदर्भ](../api-reference.md#errors) देखें।

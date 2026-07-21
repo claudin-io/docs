@@ -1,10 +1,10 @@
 # Kilo Code
 
-O [Kilo Code](https://kilo.ai) utiliza um bloco de fornecedor compatível com OpenAI. O identificador do modelo é `claudinio/claudinio` (fornecedor/modelo).
+[Kilo Code](https://kilo.ai) usa um bloco de provedor compatível com OpenAI. O id do modelo é `claudinio/claudinio` (provedor/modelo).
 
 ## Configuração rápida (script)
 
-Primeiro [exporte a sua chave](../getting-started/set-your-key.md) para que `$CLAUDINIO_API_KEY` seja definida. Isto escreve `~/.config/kilo/kilo.jsonc`, fazendo uma cópia de segurança de qualquer ficheiro existente:
+Primeiro, [exporte a sua chave](../getting-started/set-your-key.md) para que `$CLAUDINIO_API_KEY` esteja definida. Isto escreve `~/.config/kilo/kilo.jsonc`, criando uma cópia de segurança de qualquer ficheiro existente:
 
 ```bash
 kilo_config_install() {
@@ -81,7 +81,7 @@ Coloque isto em `~/.config/kilo/kilo.jsonc`:
 
 ## Alternativa com variável de ambiente
 
-O Kilo também lê as variáveis de ambiente padrão da OpenAI:
+Kilo também lê as variáveis de ambiente padrão da OpenAI:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
@@ -90,6 +90,6 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 
 | Definição | Valor |
 | --- | --- |
-| URL base | `https://api.claudin.io/v1` |
+| Base URL | `https://api.claudin.io/v1` |
 | Modelo | `claudinio/claudinio` |
-| Chamadas de ferramentas | ativado |
+| Chamadas de ferramenta | ativadas |

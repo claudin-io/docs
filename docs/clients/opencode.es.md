@@ -1,6 +1,6 @@
 # OpenCode
 
-[OpenCode](https://opencode.ai) se conecta a Claudin.io como un proveedor compatible con OpenAI. La ruta más rápida es su flujo de autenticación integrado.
+[OpenCode](https://opencode.ai) se conecta con Claudin.io como un proveedor compatible con OpenAI. La ruta más rápida es su flujo de autenticación integrado.
 
 ## Configuración rápida
 
@@ -15,9 +15,10 @@
 
 Luego inicia OpenCode y selecciona el modelo **claudinio**.
 
-## Alternativa de variable de entorno
+## Alternativa con variables de entorno
 
-Si ya has [exportado tu clave](../getting-started/set-your-key.md), OpenCode detecta las variables estándar de OpenAI — no es necesario pegar nada:
+Si ya has [exportado tu clave](../getting-started/set-your-key.md),
+OpenCode recoge las variables estándar de OpenAI — no necesitas pegar nada:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
@@ -26,9 +27,9 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 
 | Configuración | Valor |
 | --- | --- |
-| Base URL | `https://api.claudin.io/v1` |
+| URL base | `https://api.claudin.io/v1` |
 | Modelo | `claudinio` |
-| Proveedor | OpenAI-compatible |
+| Proveedor | Compatible con OpenAI |
 
 ---
 

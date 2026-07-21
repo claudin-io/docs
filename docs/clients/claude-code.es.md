@@ -1,6 +1,6 @@
 # Claude Code
 
-[Claude Code](https://claude.com/claude-code) se conecta a Claudin.io a través de su endpoint compatible con Anthropic. Apunte su URL base a Claudin.io y use su clave como token de autenticación.
+[Claude Code](https://claude.com/claude-code) se conecta a Claudin.io a través de su punto de conexión compatible con Anthropic. Apunte su URL base hacia Claudin.io y use su clave como token de autenticación.
 
 ## Configuración rápida (script)
 
@@ -57,7 +57,7 @@ Edite `~/.claude/settings.json` usted mismo:
 ```
 
 !!! note "Por qué `ANTHROPIC_API_KEY` está vacío"
-    Claude Code prefiere `ANTHROPIC_API_KEY` si está configurada. Dejarlo vacío lo obliga a usar `ANTHROPIC_AUTH_TOKEN` (su clave de Claudin.io) contra la URL base de Claudin.io.
+    Cluade Code prefiere `ANTHROPIC_API_KEY` si está configurada. Dejarla vacía lo obliga a usar `ANTHROPIC_AUTH_TOKEN` (su clave de Claudin.io) contra la URL base de Claudin.io.
 
 ## Valores utilizados
 
@@ -65,7 +65,7 @@ Edite `~/.claude/settings.json` usted mismo:
 | --- | --- |
 | URL base | `https://api.claudin.io` |
 | Modelo | `claudinio` |
-| Modelo de subagente | `claudinio` |
+| Modelo del subagente | `claudinio` |
 | Autenticación | `ANTHROPIC_AUTH_TOKEN` = su clave |
 
 ---

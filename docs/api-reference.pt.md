@@ -1,6 +1,6 @@
 # Referência da API
 
-Claudin.io é uma API **compatível com OpenAI**. Se já usou a API OpenAI,
+Claudin.io é uma **API compatível com OpenAI**. Se já usou a API OpenAI,
 tudo aqui é familiar — basta apontar para o URL base do Claudin.io e usar o
 modelo `claudinio`.
 
@@ -10,11 +10,11 @@ modelo `claudinio`.
 https://api.claudin.io
 ```
 
-As rotas no estilo OpenAI estão sob `/v1`.
+As rotas no estilo OpenAI estão em `/v1`.
 
 ## Autenticação
 
-Envie a sua chave de API com cada pedido, como cabeçalho:
+Envie a sua chave API em cada pedido, como um dos cabeçalhos:
 
 ```http
 Authorization: Bearer YOUR_API_KEY
@@ -26,7 +26,7 @@ x-api-key: YOUR_API_KEY
 
 ## Modelo
 
-| Id do modelo | Janela de contexto |
+| ID do modelo | Janela de contexto |
 | --- | --- |
 | `claudinio` | 256K tokens |
 
@@ -38,8 +38,8 @@ Use `claudinio` em todo o lado. (Alguns clientes esperam o formato `provider/mod
 | --- | --- |
 | `POST /v1/chat/completions` | Completions de chat — o endpoint principal |
 | `POST /v1/completions` | Completions de texto legado |
-| `POST /v1/messages` | Formato Messages da Anthropic |
-| `POST /v1/responses` | API Responses (Codex) |
+| `POST /v1/messages` | Formato de Mensagens Anthropic |
+| `POST /v1/responses` | API de Respostas (Codex) |
 | `POST /v1/embeddings` | Embeddings de texto |
 | `GET /v1/models` | Listar modelos disponíveis |
 
@@ -63,27 +63,50 @@ Os parâmetros padrão da OpenAI são suportados: `messages`, `temperature`, `to
 `max_tokens`, `stream`, `stop`, `tools` / `tool_choice` (function calling),
 `response_format`, e assim por diante.
 
+### `max_tokens` e raciocínio
+
+Os modelos Claudinio raciocinam antes de responder, e **os tokens de raciocínio
+contam para o `max_tokens`** — o mesmo orçamento cobre a cadeia de pensamento
+interna e a resposta visível. Um `max_tokens` pequeno pode, portanto, ser gasto
+quase inteiramente em raciocínio, deixando a resposta truncada a meio da frase.
+
+Para evitar isso, valores abaixo de **4000** são automaticamente elevados para
+4000. Valores maiores são passados sem alteração, e omitir o parâmetro é sempre
+seguro.
+
+Se analisar saída estruturada (JSON, XML, um formato rigoroso), verifique
+`finish_reason` antes de analisar — `"length"` significa que a resposta atingiu
+o limite de tokens e está incompleta, pelo que uma falha de análise é esperada,
+em vez de um problema de modelo malformado:
+
+```python
+choice = response.choices[0]
+if choice.finish_reason == "length":
+    ...  # truncated — retry with a larger max_tokens
+data = json.loads(choice.message.content)
+```
+
 ### Streaming
 
 Defina `"stream": true` para receber eventos enviados pelo servidor no formato
 de streaming da OpenAI (blocos `data: {...}` terminados por `data: [DONE]`).
 
-### Chamada de ferramenta / função
+### Chamada de ferramentas / funções
 
-O `claudinio` suporta chamadas de ferramenta. Passe `tools` e leia `tool_calls`
-de volta da resposta, exatamente como na API OpenAI. É isto que o faz funcionar
-dentro de editores agentes como o Claude Code, Kilo e Cursor.
+`claudinio` suporta chamadas de ferramentas. Passe `tools` e leia `tool_calls`
+da resposta, exatamente como na API OpenAI. Isto é o que o faz funcionar em
+editores agentes como Claude Code, Kilo e Cursor.
 
 ### Entrada multimodal
 
-O `claudinio` é um modelo de texto, mas o Claudin.io **lida de forma transparente**
-com blocos de imagem, áudio e vídeo: se os enviar, o proxy converte-os em
+`claudinio` é um modelo de texto, mas o Claudin.io **lida transparentemente**
+com blocos de imagens, áudio e vídeo: se os enviar, o proxy converte-os em
 descrições/transcrições de texto antes de o modelo os ver. Não precisa de fazer
 nada de especial — envie blocos de conteúdo padrão da OpenAI e funciona.
 
 ## Erros {#errors}
 
-Os erros seguem a forma de erro da OpenAI:
+Os erros seguem a forma dos erros da OpenAI:
 
 ```json
 { "error": { "message": "…", "type": "…", "code": "…" } }
@@ -91,9 +114,9 @@ Os erros seguem a forma de erro da OpenAI:
 
 | Estado | Significado | O que fazer |
 | --- | --- | --- |
-| `401` | Chave de API inválida ou em falta | Verifique a chave e o cabeçalho de autenticação |
+| `401` | Chave API inválida ou em falta | Verifique a chave e o cabeçalho de autenticação |
 | `403` | Endpoint não permitido | Use um dos caminhos `/v1/*` suportados |
-| `429` | Limite de orçamento atingido ou limitação de taxa | Aguarde pela redefinição da janela ou [atualize](plans.md) |
+| `429` | Limite de orçamento atingido ou limitado por taxa | Aguarde o reinício da janela ou [faça upgrade](plans.md) |
 | `400` | Pedido malformado | Verifique o seu JSON / parâmetros |
 | `5xx` | Problema no upstream/fornecedor | Tente novamente com backoff |
 
@@ -103,14 +126,14 @@ Os erros seguem a forma de erro da OpenAI:
 
 ### Atingir o limite de orçamento
 
-Quando esgotar a proteção de gastos da janela atual, os pedidos devolvem um
-erro de orçamento (tipicamente `429`). O seu painel mostra o tempo exato de
-redefinição e o orçamento restante. Consulte [Planos e limites](plans.md) para
-saber como funcionam as janelas.
+Quando esgota a proteção de gastos da janela atual, os pedidos devolvem um erro
+de orçamento (tipicamente `429`). O seu painel mostra o tempo exato de reinício
+e o orçamento restante. Consulte [Planos e limites](plans.md) para saber como
+funcionam as janelas.
 
 ## Limitação de taxa
 
-O Claudin.io não bloqueia o uso normal de forma agressiva. Taxas de pedido
-abusivas são *abrandadas* (um acelerador transparente) em vez de rejeitadas,
-por isso os clientes bem comportados nunca são penalizados. Na prática, não
-precisa de fazer nada — basta tentar novamente no raro `429`.
+O Claudin.io não bloqueia totalmente o uso normal. Taxas de pedidos abusivas são
+*abrandadas* (uma limitação transparente) em vez de rejeitadas, pelo que os
+clientes bem-comportados nunca são penalizados. Na prática, não precisa de fazer
+nada — apenas tente novamente no raro `429`.

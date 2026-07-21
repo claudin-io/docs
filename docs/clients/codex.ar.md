@@ -1,9 +1,10 @@
 # Codex
 
-يتصل [Codex](https://github.com/openai/codex) عبر مزود نموذج مخصص في `~/.codex/config.toml`. يعرض Claudin.io واجهة برمجة التطبيقات السلكية `responses` التي يتوقعها Codex.
+[Codex](https://github.com/openai/codex) يتصل عبر موفر نموذج مخصص في
+`~/.codex/config.toml`. يعرض Claudin.io واجهة الأسلاك `responses` التي يتوقعها Codex.
 
-!!! warning "استخدم سطر أوامر Codex"
-    تنطبق هذه الإعدادات على **سطر أوامر Codex**. قد لا يسمح لك تطبيق Codex المستضاف بتوجيه عنوان URL أساسي مخصص.
+!!! warning "استخدم Codex CLI"
+    تنطبق هذه الإعدادات على **Codex CLI**. قد لا يسمح لك تطبيق Codex المستضاف بتوجيهه إلى عنوان URL أساسي مخصص.
 
 ## الإعداد اليدوي
 
@@ -20,7 +21,8 @@ env_key = "CLAUDINIO_API_KEY"
 wire_api = "responses"
 ```
 
-ثم قم بتصدير مفتاحك (يجب أن يتطابق الاسم مع `env_key` أعلاه). أسهل طريقة هي [تعيينه مرة واحدة في ملف شيل الخاص بك](../getting-started/set-your-key.md):
+ثم صدّر مفتاحك (يجب أن يتطابق الاسم مع `env_key` أعلاه). الطريقة الأسهل هي
+[تعيينه مرة واحدة في ملف شيل الخاص بك](../getting-started/set-your-key.md):
 
 ```bash
 export CLAUDINIO_API_KEY="sk-..."
@@ -64,5 +66,5 @@ unset codex_config_install
 | --- | --- |
 | عنوان URL الأساسي | `https://api.claudin.io/v1` |
 | النموذج | `claudinio` |
-| واجهة برمجة التطبيقات السلكية | `responses` |
-| متغير البيئة للمفتاح | `CLAUDINIO_API_KEY` |
+| API الوصلة | `responses` |
+| متغير بيئة المفتاح | `CLAUDINIO_API_KEY` |

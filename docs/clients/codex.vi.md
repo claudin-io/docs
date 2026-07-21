@@ -1,11 +1,11 @@
 # Codex
 
 [Codex](https://github.com/openai/codex) kết nối thông qua một nhà cung cấp mô hình tùy chỉnh trong
-`~/.codex/config.toml`. Claudin.io hiển thị `responses` wire API mà Codex mong đợi.
+`~/.codex/config.toml`. Claudin.io cung cấp `responses` wire API mà Codex yêu cầu.
 
 !!! warning "Sử dụng Codex CLI"
-    Các cài đặt này áp dụng cho **Codex CLI**. Ứng dụng Codex được lưu trữ có thể không cho phép
-    bạn trỏ đến một base URL tùy chỉnh.
+    Các cài đặt này áp dụng cho **Codex CLI**. Ứng dụng Codex được lưu trữ có thể không
+    cho phép bạn trỏ đến một base URL tùy chỉnh.
 
 ## Thiết lập thủ công
 
@@ -22,8 +22,8 @@ env_key = "CLAUDINIO_API_KEY"
 wire_api = "responses"
 ```
 
-Sau đó export key của bạn (tên phải khớp với `env_key` ở trên). Cách dễ nhất là
-[thiết lập nó một lần trong hồ sơ shell của bạn](../getting-started/set-your-key.md):
+Sau đó xuất key của bạn (tên phải khớp với `env_key` ở trên). Cách dễ nhất là
+[thiết lập một lần trong profile shell của bạn](../getting-started/set-your-key.md):
 
 ```bash
 export CLAUDINIO_API_KEY="sk-..."

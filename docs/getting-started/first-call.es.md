@@ -2,7 +2,7 @@
 
 Antes de conectar un editor, vale la pena confirmar que tu clave funciona con una sola solicitud. Claudin.io habla el formato **OpenAI Chat Completions** (y también el formato Anthropic Messages).
 
-Estos ejemplos leen tu clave de `$CLAUDINIO_API_KEY` — configúrala una vez [exportando tu clave](set-your-key.md). (En los fragmentos de SDK, reemplaza `YOUR_API_KEY` con la clave de tu [panel de control](account.md), o léela de la misma variable de entorno.)
+Estos ejemplos leen tu clave de `$CLAUDINIO_API_KEY` — establécela una vez [exportando tu clave](set-your-key.md). (En los fragmentos del SDK, reemplaza `YOUR_API_KEY` con la clave de tu [panel de control](account.md), o léela de la misma variable de entorno).
 
 ## Con cURL
 
@@ -18,10 +18,11 @@ curl https://api.claudin.io/v1/chat/completions \
   }'
 ```
 
-Deberías recibir una respuesta JSON normal al estilo OpenAI con un arreglo `choices`.
+Deberías recibir una respuesta JSON normal al estilo de OpenAI con un arreglo `choices`.
 
 !!! tip "`x-api-key` también funciona"
-    Claudin.io acepta la clave ya sea como `Authorization: Bearer YOUR_API_KEY` **o** como un encabezado `x-api-key: YOUR_API_KEY`. Usa el que tu cliente envíe.
+    Claudin.io acepta la clave ya sea como `Authorization: Bearer YOUR_API_KEY`
+    **o** como un encabezado `x-api-key: YOUR_API_KEY`. Usa el que envíe tu cliente.
 
 ## Con el SDK de OpenAI para Python
 
@@ -61,7 +62,7 @@ console.log(resp.choices[0].message.content);
 
 ## Streaming
 
-Establece `stream: true` y lee eventos enviados por el servidor, exactamente como la API de OpenAI:
+Configura `stream: true` y lee eventos enviados por el servidor, exactamente como la API de OpenAI:
 
 ```bash
 curl https://api.claudin.io/v1/chat/completions \

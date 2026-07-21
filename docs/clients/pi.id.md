@@ -7,8 +7,8 @@
 ## Pengaturan cepat (skrip)
 
 Pertama [ekspor kunci Anda](../getting-started/set-your-key.md) sehingga
-`$CLAUDINIO_API_KEY` diatur. Ini menulis `~/.pi/agent/models.json`, mencadangkan
-file yang ada:
+`$CLAUDINIO_API_KEY` sudah diatur. Ini akan menulis `~/.pi/agent/models.json`, dengan mencadangkan
+file yang sudah ada jika ada:
 
 ```bash
 pi_models_install() {

@@ -1,10 +1,10 @@
 # Kilo Code
 
-[Kilo Code](https://kilo.ai) menggunakan blok penyedia yang kompatibel dengan OpenAI. Id model adalah `claudinio/claudinio` (penyedia/model).
+[Kilo Code](https://kilo.ai) menggunakan blok penyedia yang kompatibel dengan OpenAI. ID modelnya adalah `claudinio/claudinio` (penyedia/model).
 
 ## Pengaturan cepat (skrip)
 
-Pertama [ekspor kunci Anda](../getting-started/set-your-key.md) sehingga `$CLAUDINIO_API_KEY` telah diatur. Ini menulis `~/.config/kilo/kilo.jsonc`, mencadangkan file yang sudah ada:
+Pertama [ekspor kunci Anda](../getting-started/set-your-key.md) sehingga `$CLAUDINIO_API_KEY` diatur. Ini menulis `~/.config/kilo/kilo.jsonc`, membuat cadangan file yang ada:
 
 ```bash
 kilo_config_install() {
@@ -54,7 +54,7 @@ Kemudian jalankan `kilo`.
 
 ## Pengaturan manual
 
-Tempatkan ini di `~/.config/kilo/kilo.jsonc`:
+Taruh ini di `~/.config/kilo/kilo.jsonc`:
 
 ```jsonc
 {
@@ -81,7 +81,7 @@ Tempatkan ini di `~/.config/kilo/kilo.jsonc`:
 
 ## Alternatif variabel lingkungan
 
-Kilo juga membaca variabel lingkungan OpenAI standar:
+Kilo juga membaca variabel lingkungan standar OpenAI:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1

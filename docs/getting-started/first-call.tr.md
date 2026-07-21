@@ -1,8 +1,8 @@
 # İlk çağrınız
 
-Bir düzenleyici bağlamadan önce, anahtarınızın tek bir istekle çalıştığını onaylamakta fayda var. Claudin.io, **OpenAI Chat Completions** formatını (ve ayrıca Anthropic Messages formatını) konuşur.
+Bir düzenleyiciye bağlamadan önce, anahtarınızın tek bir istekle çalıştığını doğrulamaya değer. Claudin.io, **OpenAI Chat Completions** formatını (ve ayrıca Anthropic Messages formatını) konuşur.
 
-Bu örnekler anahtarınızı `$CLAUDINIO_API_KEY` ortam değişkeninden okur — [anahtarınızı dışa aktararak](set-your-key.md) bir kez ayarlayın. (SDK kod parçacıklarında, `YOUR_API_KEY` yerine [panel](account.md) sayfanızdaki anahtarı yazın veya aynı ortam değişkeninden okuyun.)
+Bu örnekler anahtarınızı `$CLAUDINIO_API_KEY` ortam değişkeninden okur — [anahtarınızı dışa aktararak](set-your-key.md) bir kez ayarlayın. (SDK parçacıklarında, `YOUR_API_KEY` değerini [kontrol panelinizden](account.md) aldığınız anahtarla değiştirin veya aynı ortam değişkeninden okuyun.)
 
 ## cURL ile
 
@@ -18,10 +18,10 @@ curl https://api.claudin.io/v1/chat/completions \
   }'
 ```
 
-Normal bir OpenAI tarzı JSON yanıtı ve bir `choices` dizisi almalısınız.
+Geriye, bir `choices` dizisi içeren normal OpenAI tarzı bir JSON yanıtı almalısınız.
 
-!!! tip "`x-api-key` da çalışır"
-    Claudin.io, anahtarı `Authorization: Bearer YOUR_API_KEY` olarak **veya** `x-api-key: YOUR_API_KEY` başlığı olarak kabul eder. İstemcinizin gönderdiği hangisi ise onu kullanın.
+!!! tip "`x-api-key` de çalışır"
+    Claudin.io, anahtarı ya `Authorization: Bearer YOUR_API_KEY` **ya da** bir `x-api-key: YOUR_API_KEY` başlığı olarak kabul eder. İstemcinizin hangisini gönderiyorsa onu kullanın.
 
 ## OpenAI Python SDK ile
 
@@ -61,7 +61,7 @@ console.log(resp.choices[0].message.content);
 
 ## Akış
 
-`stream: true` olarak ayarlayın ve sunucu tarafından gönderilen olayları okuyun, tıpkı OpenAI API'deki gibi:
+`stream: true` olarak ayarlayın ve sunucu tarafından gönderilen olayları okuyun, tıpkı OpenAI API gibi:
 
 ```bash
 curl https://api.claudin.io/v1/chat/completions \

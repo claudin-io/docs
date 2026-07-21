@@ -4,44 +4,38 @@
 
 ## 1. GitHub ile oturum açın
 
-**[claudin.io](https://claudin.io)** adresine gidin ve **GitHub ile oturum aç** seçeneğine tıklayın.
-Claudin.io, giriş için GitHub'ı kullanır — ayrı bir şifre yönetmeniz gerekmez.
+**[claudin.io](https://claudin.io)** adresine gidin ve **GitHub ile oturum açın**'a tıklayın.
+Claudin.io, giriş için GitHub'ı kullanır — ayrı bir parola yönetmeniz gerekmez.
 
-İlk kez oturum açtığınızda, hesabınız otomatik olarak **Ücretsiz** planda oluşturulur,
-böylece herhangi bir ödeme yapmadan deneyebilirsiniz.
+İlk kez oturum açtığınızda, hesabınız otomatik olarak **Ücretsiz** planda oluşturulur, böylece hiçbir şey ödemeden deneyebilirsiniz.
 
 ## 2. API anahtarınızı oluşturun
 
-[Panele](https://claudin.io/dashboard) giriş yaptıktan sonra:
+[Dashboard](https://claudin.io/dashboard) sayfasına girdikten sonra:
 
 1. **API Anahtarları** kartını bulun.
 2. **Anahtar oluştur** (veya **Yeni anahtar oluştur**) seçeneğine tıklayın.
-3. Anahtarı kopyalayın — `sk-...` şeklinde görünecektir.
+3. Anahtarı kopyalayın — `sk-...` şeklinde görünür.
 
-!!! warning "Anahtarınızı bir parola gibi koruyun"
-    API anahtarınız, planınızın bütçesine erişim sağlar. Bunu bir depoya göndermeyin,
-    halka açık bir sohbette yapıştırmayın veya paylaşmayın. Bir anahtar sızarsa,
-    panel üzerinden iptal edin ve yeni bir tane oluşturun.
+!!! uyarı "Anahtarınıza bir parola gibi davranın"
+    API anahtarınız, planınızın bütçesine erişim sağlar. Bunu bir depoya eklemeyin, herkese açık bir sohbette yapıştırmayın veya paylaşmayın. Bir anahtar sızarsa, kontrol panelinden iptal edin ve yeni bir tane oluşturun.
 
 ## 3. İhtiyacınız olacak iki değeri not edin
 
 Her entegrasyon aynı iki şeye ihtiyaç duyar:
 
-| Değer | Açıklama |
+| Değer | Ne olduğu |
 | --- | --- |
 | **Temel URL** | `https://api.claudin.io` |
 | **Model** | `claudinio` |
 | **API anahtarı** | az önce kopyaladığınız `sk-...` |
 
-Bu kadar. Ardından, çalıştığını doğrulamak için [ham bir API çağrısı yapabilir](first-call.md)
-veya doğrudan [aracınızı bağlamaya](../clients/claude-code.md) geçebilirsiniz.
+Bu kadar. Şimdi, çalıştığını doğrulamak için [ham bir API çağrısı yapın](first-call.md) veya doğrudan [aracınızı bağlama](../clients/claude-code.md) bölümüne geçin.
 
 ---
 
-## Plan seçme
+## Bir plan seçme
 
-Denemek için **Ücretsiz** planda kalabilirsiniz. Daha fazla alana hazır
-olduğunuzda, panel üzerinden yükseltme yapın — ayrıntılı döküm için [Planlar & limitler](../plans.md)
-sayfasına bakın.
+Denemek için **Ücretsiz** planda kalabilirsiniz. Daha fazla alana hazır olduğunuzda, kontrol panelinden yükseltme yapın — tam döküm için [Planlar ve limitler](../plans.md) bölümüne bakın.
 
-Yükseltmeler Stripe üzerinden gerçekleştirilir ve anında etkili olur.
+Yükseltmeler Stripe üzerinden yapılır ve hemen etkili olur.

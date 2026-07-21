@@ -6,9 +6,9 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Código sem ansiedade de conta. Preço mensal fixo, uso ilimitado.
+# Código sem ansiedade com a conta. Preço mensal fixo, uso ilimitado.
 
-Claudin.io é um proxy de API para agentes de codificação de IA. Pague uma **assinatura mensal fixa** e use o quanto quiser — sem cobrança por token, sem contadores de requisições, sem créditos que expiram.
+Claudin.io é um proxy de API para agentes de codificação de IA. Pague uma **assinatura mensal fixa** e use quanto quiser — sem cobrança por token, sem contadores de requisição, sem créditos que expiram.
 
 </div>
 
@@ -25,38 +25,38 @@ Claudin.io é um proxy de API para agentes de codificação de IA. Pague uma **a
 
     ---
 
-    Sem contagem de requisições, sem medição de tokens. A única proteção é um limite de **proteção de gastos** por período que impede um agente descontrolado — você quase nunca atinge esse limite no trabalho normal.
+    Sem contagens de requisição, sem medição de tokens. A única proteção é um limite de **proteção de gastos** por período que interrompe um agente descontrolado — você quase nunca atinge isso no trabalho normal.
 
 -   :material-power-plug:{ .lg .middle } __Funciona com suas ferramentas__
 
     ---
 
-    Endpoints compatíveis com OpenAI e Anthropic. Integre com OpenCode, Claude Code, Kilo Code, Zed, Codex, Cursor ou qualquer cliente OpenAI em minutos.
+    Endpoints compatíveis com OpenAI e Anthropic. Integre em minutos com OpenCode, Claude Code, Kilo Code, Zed, Codex, Cursor ou qualquer cliente OpenAI.
 
 -   :material-cash-multiple:{ .lg .middle } __Custo previsível__
 
     ---
 
-    Uma assinatura fixa. Sem surpresas na conta no final do mês, sem ansiedade do tipo "quanto vai custar essa refatoração?".
+    Uma assinatura fixa. Sem surpresas na conta no final do mês, sem ansiedade de "quanto vai custar essa refatoração?".
 
 -   :material-shield-check:{ .lg .middle } __Proteção de gastos embutida__
 
     ---
 
-    Um limite de orçamento em cascata por período protege você de agentes em loop infinito queimando seu plano. Transparente e exibido ao vivo em seu painel.
+    Um limite de orçamento em cascata por período protege você de agentes em loop infinito que queimam seu plano. Transparente e exibido ao vivo no seu painel.
 
 </div>
 
 ## Comece em 4 passos
 
 1. **[Crie uma conta](getting-started/account.md)** e copie sua chave de API.
-2. **[Defina sua chave de API](getting-started/set-your-key.md)** uma vez em seu terminal.
+2. **[Defina sua chave de API](getting-started/set-your-key.md)** uma vez no seu shell.
 3. **[Conecte sua ferramenta](clients/opencode.md)** — escolha seu editor ou agente.
 4. **[Faça sua primeira chamada](getting-started/first-call.md)** e comece a construir.
 
 !!! tip "O nome do modelo é sempre `claudinio`"
-    Seja qual for o cliente que você usar, o id do modelo para o qual você aponta é **`claudinio`**. A URL base é **`https://api.claudin.io`**.
+    Qualquer cliente que você use, o ID do modelo que você aponta é **`claudinio`**. A URL base é **`https://api.claudin.io`**.
 
 ---
 
-<small>Precisa de ajuda? Consulte o [FAQ](faq.md) ou entre em contato pelo cartão de suporte em seu [painel](https://claudin.io/dashboard).</small>
+<small>Precisa de ajuda? Veja o [FAQ](faq.md) ou entre em contato pelo cartão de suporte no seu [painel](https://claudin.io/dashboard).</small>

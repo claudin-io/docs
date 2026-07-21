@@ -4,20 +4,20 @@
 
 ## Hızlı kurulum
 
-1. Oturum açma komutunu çalıştırın:
+1. Giriş komutunu çalıştırın:
 
     ```bash
     opencode auth login
     ```
 
 2. Sağlayıcı olarak **Claudinio**'yu seçin.
-3. İstendiğinde API anahtarınızı yapıştırın — bunu [kontrol panelinizden](https://claudin.io/dashboard) kopyalayın.
+3. İstendiğinde API anahtarınızı yapıştırın — [panonuzdan](https://claudin.io/dashboard) kopyalayın.
 
 Ardından OpenCode'u başlatın ve **claudinio** modelini seçin.
 
 ## Ortam değişkeni alternatifi
 
-Eğer anahtarınızı zaten [dışa aktardıysanız](../getting-started/set-your-key.md), OpenCode standart OpenAI değişkenlerini alır — hiçbir şey yapıştırmanıza gerek yoktur:
+Anahtarınızı zaten [dışa aktardıysanız](../getting-started/set-your-key.md), OpenCode standart OpenAI değişkenlerini alır — herhangi bir şey yapıştırmanız gerekmez:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
@@ -32,4 +32,4 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 
 ---
 
-Sorun mu var? [Yaygın hatalara](../api-reference.md#errors) veya [FAQ](../faq.md)'ye bakın.
+Sorun mu var? [Yaygın hatalara](../api-reference.md#errors) veya [FAQ](../faq.md)'e bakın.

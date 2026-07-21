@@ -1,6 +1,6 @@
 # Kilo Code
 
-[Kilo Code](https://kilo.ai) utiliza un bloque de proveedor compatible con OpenAI. El ID del modelo es `claudinio/claudinio` (proveedor/modelo).
+[Kilo Code](https://kilo.ai) utiliza un bloque de proveedor compatible con OpenAI. El id del modelo es `claudinio/claudinio` (proveedor/modelo).
 
 ## Configuración rápida (script)
 

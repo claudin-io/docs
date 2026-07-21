@@ -11,13 +11,13 @@
     ```
 
 2. Seleziona **Claudinio** come provider.
-3. Incolla la tua chiave API quando richiesto — copiala dalla tua [dashboard](https://claudin.io/dashboard).
+3. Incolla la tua chiave API quando richiesto — copiala dal tuo [pannello di controllo](https://claudin.io/dashboard).
 
-Quindi avvia OpenCode e seleziona il modello **claudinio**.
+Avvia quindi OpenCode e seleziona il modello **claudinio**.
 
-## Alternativa con variabili d'ambiente
+## Alternativa tramite variabili d'ambiente
 
-Se hai già [esportato la tua chiave](../getting-started/set-your-key.md), OpenCode rileva le variabili standard di OpenAI — non c'è bisogno di incollare nulla:
+Se hai già [esportato la tua chiave](../getting-started/set-your-key.md), OpenCode utilizza le variabili standard di OpenAI — non c'è bisogno di incollare nulla:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
@@ -28,8 +28,8 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 | --- | --- |
 | URL di base | `https://api.claudin.io/v1` |
 | Modello | `claudinio` |
-| Provider | Compatibile con OpenAI |
+| Fornitore | Compatibile con OpenAI |
 
 ---
 
-Problemi? Vedi [errori comuni](../api-reference.md#errors) o le [FAQ](../faq.md).
+Problemi? Consulta gli [errori comuni](../api-reference.md#errors) o le [FAQ](../faq.md).

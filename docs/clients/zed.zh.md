@@ -1,10 +1,10 @@
 # Zed
 
-[Zed](https://zed.dev) 原生支持 OpenAI 兼容的提供商，位于 `language_models.openai_compatible` 下。
+[Zed](https://zed.dev) 在 `language_models.openai_compatible` 下原生支持 OpenAI 兼容的提供商。
 
 ## 快速设置（脚本）
 
-首先[导出你的密钥](../getting-started/set-your-key.md)以确保设置了 `$CLAUDINIO_API_KEY`。这会将配置写入 `~/.config/zed/settings.json`，并备份已有文件：
+首先，[导出你的密钥](../getting-started/set-your-key.md) 以便设置 `$CLAUDINIO_API_KEY`。这将写入 `~/.config/zed/settings.json`，并备份任何现有文件：
 
 ```bash
 zed_settings_install() {
@@ -68,7 +68,7 @@ unset zed_settings_install
     }
     ```
 
-2. 打开 Zed 的 Agent 面板，在提示时粘贴你的 API 密钥，或者将其设置为 **Claudinio** 提供商的 API 密钥。
+2. 打开 Zed 的 Agent 面板，在提示时粘贴你的 API 密钥，或将其设置为 **Claudinio** 提供商的 API 密钥。
 3. 在 Agent 面板的模型选择器中选择 **Claudinio**。
 
 | 设置 | 值 |

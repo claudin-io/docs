@@ -1,8 +1,8 @@
 # Cuộc gọi đầu tiên của bạn
 
-Trước khi kết nối trình soạn thảo, bạn nên xác nhận khóa của mình hoạt động với một yêu cầu duy nhất. Claudin.io sử dụng định dạng **OpenAI Chat Completions** (và cả định dạng Anthropic Messages nữa).
+Trước khi kết nối một editor, bạn nên xác nhận key của mình hoạt động với một yêu cầu duy nhất. Claudin.io hỗ trợ định dạng **OpenAI Chat Completions** (và cả định dạng Anthropic Messages nữa).
 
-Các ví dụ này đọc khóa của bạn từ `$CLAUDINIO_API_KEY` — hãy đặt nó một lần bằng cách [xuất khóa của bạn](set-your-key.md). (Trong các đoạn mã SDK, thay thế `YOUR_API_KEY` bằng khóa từ [bảng điều khiển](account.md) của bạn, hoặc đọc từ cùng biến môi trường đó.)
+Các ví dụ này đọc key của bạn từ `$CLAUDINIO_API_KEY` — hãy thiết lập nó một lần bằng cách [xuất key của bạn](set-your-key.md). (Trong các đoạn SDK, hãy thay thế `YOUR_API_KEY` bằng key từ [bảng điều khiển](account.md) của bạn, hoặc đọc nó từ cùng biến môi trường.)
 
 ## Với cURL
 
@@ -21,7 +21,7 @@ curl https://api.claudin.io/v1/chat/completions \
 Bạn sẽ nhận được phản hồi JSON kiểu OpenAI thông thường với một mảng `choices`.
 
 !!! tip "`x-api-key` cũng hoạt động"
-    Claudin.io chấp nhận khóa dưới dạng `Authorization: Bearer YOUR_API_KEY` **hoặc** dưới dạng tiêu đề `x-api-key: YOUR_API_KEY`. Sử dụng cái nào mà máy khách của bạn gửi.
+    Claudin.io chấp nhận key dưới dạng `Authorization: Bearer YOUR_API_KEY` **hoặc** dưới dạng header `x-api-key: YOUR_API_KEY`. Sử dụng tùy chọn nào mà client của bạn gửi.
 
 ## Với OpenAI Python SDK
 
@@ -61,7 +61,7 @@ console.log(resp.choices[0].message.content);
 
 ## Streaming
 
-Đặt `stream: true` và đọc các sự kiện do máy chủ gửi (server-sent events), giống hệt như OpenAI API:
+Đặt `stream: true` và đọc các sự kiện từ server, giống hệt như OpenAI API:
 
 ```bash
 curl https://api.claudin.io/v1/chat/completions \
@@ -76,4 +76,4 @@ curl https://api.claudin.io/v1/chat/completions \
 
 ---
 
-Nhận được phản hồi hợp lệ? Tuyệt vời — bây giờ hãy [kết nối công cụ yêu thích của bạn](../clients/claude-code.md). Nếu có lỗi, hãy kiểm tra [tài liệu tham khảo API](../api-reference.md#errors) để biết các lỗi phổ biến.
+Nhận được phản hồi hợp lệ? Tuyệt vời — bây giờ hãy [kết nối công cụ yêu thích của bạn](../clients/claude-code.md). Nếu có lỗi xảy ra, hãy kiểm tra [tài liệu tham khảo API](../api-reference.md#errors) để biết các lỗi phổ biến.

@@ -1,10 +1,10 @@
 # Claude Code
 
-[Claude Code](https://claude.com/claude-code) verbindet sich über seinen Anthropic-kompatiblen Endpunkt mit Claudin.io. Richten Sie die Basis-URL auf Claudin.io und verwenden Sie Ihren Schlüssel als Authentifizierungstoken.
+[Claude Code](https://claude.com/claude-code) verbindet sich über seinen Anthropic-kompatiblen Endpunkt mit Claudin.io. Richten Sie seine Basis-URL auf Claudin.io und verwenden Sie Ihren Schlüssel als Authentifizierungstoken.
 
-## Schnelle Einrichtung (Skript)
+## Schnelleinrichtung (Skript)
 
-Exportieren Sie zuerst Ihren Schlüssel, sodass `$CLAUDINIO_API_KEY` gesetzt ist, und führen Sie dann dies aus. Es schreibt `~/.claude/settings.json` (sichert zuerst eine eventuell vorhandene Datei):
+Exportieren Sie zuerst [Ihren Schlüssel](../getting-started/set-your-key.md), damit `$CLAUDINIO_API_KEY` gesetzt ist, und führen Sie dann dies aus. Es schreibt `~/.claude/settings.json` (und erstellt zuerst eine Sicherungskopie einer vorhandenen Datei):
 
 ```bash
 claude_settings_install() {
@@ -57,7 +57,7 @@ Bearbeiten Sie `~/.claude/settings.json` selbst:
 ```
 
 !!! note "Warum `ANTHROPIC_API_KEY` leer ist"
-    Claude Code bevorzugt `ANTHROPIC_API_KEY`, falls gesetzt. Wenn Sie es leer lassen, wird gezwungenermaßen `ANTHROPIC_AUTH_TOKEN` (Ihr Claudin.io-Schlüssel) gegenüber der Claudin.io-Basis-URL verwendet.
+    Claude Code bevorzugt `ANTHROPIC_API_KEY`, falls gesetzt. Ein leerer Wert zwingt es, `ANTHROPIC_AUTH_TOKEN` (Ihren Claudin.io-Schlüssel) gegen die Claudin.io-Basis-URL zu verwenden.
 
 ## Verwendete Werte
 
@@ -70,4 +70,4 @@ Bearbeiten Sie `~/.claude/settings.json` selbst:
 
 ---
 
-Probleme? Siehe [häufige Fehler](../api-reference.md#errors) oder [die FAQ](../faq.md).
+Probleme? Siehe [häufige Fehler](../api-reference.md#errors) oder das [FAQ](../faq.md).

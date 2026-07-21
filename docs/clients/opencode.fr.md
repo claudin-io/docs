@@ -11,11 +11,11 @@
     ```
 
 2. Sélectionnez **Claudinio** comme fournisseur.
-3. Collez votre clé API lorsqu'on vous le demande — copiez-la depuis votre [tableau de bord](https://claudin.io/dashboard).
+3. Collez votre clé API lorsque vous y êtes invité — copiez-la depuis votre [tableau de bord](https://claudin.io/dashboard).
 
 Ensuite, démarrez OpenCode et sélectionnez le modèle **claudinio**.
 
-## Alternative par variables d'environnement
+## Alternative avec les variables d'environnement
 
 Si vous avez déjà [exporté votre clé](../getting-started/set-your-key.md), OpenCode récupère les variables OpenAI standard — pas besoin de coller quoi que ce soit :
 
@@ -28,7 +28,7 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 | --- | --- |
 | URL de base | `https://api.claudin.io/v1` |
 | Modèle | `claudinio` |
-| Fournisseur | OpenAI-compatible |
+| Fournisseur | compatible OpenAI |
 
 ---
 

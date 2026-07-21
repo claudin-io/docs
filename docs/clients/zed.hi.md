@@ -1,10 +1,10 @@
 # Zed
 
-[Zed](https://zed.dev) मूल रूप से `language_models.openai_compatible` के तहत OpenAI-संगत प्रदाताओं का समर्थन करता है।
+[Zed](https://zed.dev) OpenAI-संगत प्रदाताओं का मूल रूप से `language_models.openai_compatible` के अंतर्गत समर्थन करता है।
 
 ## त्वरित सेटअप (स्क्रिप्ट)
 
-पहले [अपनी कुंजी निर्यात करें](../getting-started/set-your-key.md) ताकि `$CLAUDINIO_API_KEY` सेट हो जाए। यह किसी भी मौजूदा फ़ाइल का बैकअप लेते हुए `~/.config/zed/settings.json` लिखता है:
+पहले [अपनी कुंजी निर्यात करें](../getting-started/set-your-key.md) ताकि `$CLAUDINIO_API_KEY` सेट हो जाए। यह `~/.config/zed/settings.json` लिखता है, और किसी भी मौजूदा फ़ाइल का बैकअप लेता है:
 
 ```bash
 zed_settings_install() {
@@ -68,8 +68,8 @@ unset zed_settings_install
     }
     ```
 
-2. Zed का एजेंट पैनल खोलें और संकेत मिलने पर अपनी API कुंजी पेस्ट करें, या इसे **Claudinio** प्रदाता के लिए API कुंजी के रूप में सेट करें।
-3. एजेंट पैनल के मॉडल पिकर में **Claudinio** चुनें।
+2. Zed का Agent पैनल खोलें और संकेत मिलने पर अपनी API कुंजी पेस्ट करें, या इसे **Claudinio** प्रदाता के लिए API कुंजी के रूप में सेट करें।
+3. Agent पैनल के मॉडल पिकर में **Claudinio** चुनें।
 
 | सेटिंग | मान |
 | --- | --- |

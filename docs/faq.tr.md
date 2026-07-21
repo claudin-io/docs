@@ -1,53 +1,53 @@
 # FAQ
 
-## What is Claudin.io, exactly?
+## Claudin.io tam olarak nedir?
 
-Yapay zeka kodlama aracıları için bir API proxy'si. Sabit bir aylık abonelik ödersiniz ve OpenAI/Anthropic uyumlu bir API anahtarı alırsınız; bunu Claude Code, Kilo, Zed, Codex, Cursor veya herhangi bir OpenAI istemcisine ekleyebilirsiniz. Token başına ücretlendirme yok.
+AI kodlama ajanları için bir API proxy'si. Sabit bir aylık abonelik ödersiniz ve Claude Code, Kilo, Zed, Codex, Cursor veya herhangi bir OpenAI istemcisine ekleyebileceğiniz OpenAI/Anthropic uyumlu bir API anahtarı alırsınız. Token başına ücretlendirme yok.
 
-## Is it really unlimited?
+## Gerçekten sınırsız mı?
 
-Kullanım sınırsızdır — hiçbir istek sayacı veya token ölçer yoktur. Tek sınır, zaman penceresi başına bir **harcama koruma sınırı**dır; bu, kontrolden çıkmış bir aracının planınızı tüketmesini engeller. Normal etkileşimli çalışmada nadiren bu sınıra ulaşırsınız. [Planlar ve limitler](plans.md) bölümüne bakın.
+Kullanım sınırsızdır — istek sayacı veya token ölçer yoktur. Tek sınır, kontrolden çıkan bir ajanın planınızı tüketmesini önleyen zaman dilimi başına bir **harcama koruma limitidir**. Normal etkileşimli çalışmada nadiren bu limite ulaşırsınız. Bkz. [Planlar ve limitler](plans.md).
 
-## What model do I use?
+## Hangi modeli kullanmalıyım?
 
-Her zaman **`claudinio`** (veya `provider/model` biçimini isteyen istemciler için `claudinio/claudinio`) kullanın. Temel URL `https://api.claudin.io` şeklindedir.
+Her zaman **`claudinio`** (veya `provider/model` formunu isteyen istemciler için `claudinio/claudinio`). Temel URL `https://api.claudin.io` şeklindedir.
 
-## Do I authenticate with `Authorization` or `x-api-key`?
+## `Authorization` veya `x-api-key` ile mi kimlik doğrulaması yapıyorum?
 
-İkisi de çalışır. `Authorization: Bearer YOUR_API_KEY` veya `x-api-key: YOUR_API_KEY`.
+Her ikisi de çalışır. `Authorization: Bearer API_ANAHTARINIZ` veya `x-api-key: API_ANAHTARINIZ`.
 
-## Can I use it with a tool that isn't listed?
+## Listede olmayan bir araçla kullanabilir miyim?
 
-Evet — özel bir OpenAI temel URL'si ayarlamanıza izin veren herhangi bir araç çalışır. [Genel OpenAI kurulumu](clients/openai-compatible.md)nu kullanın.
+Evet — özel bir OpenAI temel URL'si ayarlamanıza izin veren herhangi bir araç çalışır. [Genel OpenAI kurulumunu](clients/openai-compatible.md) kullanın.
 
-## Does it support tool / function calling?
+## Araç / fonksiyon çağrısını destekliyor mu?
 
-Evet. Bu yüzden aracı düzenleyicilerin içinde çalışır. OpenAI API'sinde olduğu gibi `tools` parametresini geçirin ve `tool_calls` okuyun.
+Evet. Bu nedenle ajan editörlerin içinde çalışır. OpenAI API'sinde olduğu gibi `tools` parametresini geçirin ve `tool_calls` okuyun.
 
-## Can it handle images, audio, or video?
+## Görselleri, sesi veya videoyu işleyebilir mi?
 
-Evet, şeffaf bir şekilde. Standart OpenAI içerik blokları gönderin; proxy, model görmeden önce görselleri/sesi/videoyu metin açıklamalarına veya transkripsiyonlara dönüştürür. Yapılandırmanız gereken özel bir şey yok.
+Evet, şeffaf bir şekilde. Standart OpenAI içerik blokları gönderin; proxy, model bunları görmeden önce görselleri/sesi/videoyu metin açıklamalarına veya transkripsiyonlara dönüştürür. Yapılandırmanız gereken özel bir şey yok.
 
-## What's the context window?
+## Bağlam penceresi nedir?
 
 256K token.
 
-## How do I upgrade or cancel?
+## Nasıl yükseltebilir veya iptal edebilirim?
 
-Panonuzdan ([dashboard](https://claudin.io/dashboard)). Yükseltmeler anında uygulanır (Stripe aracılığıyla). İptal ederseniz, zaten ödediğiniz dönemin sonuna kadar ücretli planınızı kullanmaya devam edersiniz, ardından otomatik olarak Ücretsiz plana düşersiniz.
+[Panelinizden](https://claudin.io/dashboard). Yükseltmeler (Stripe üzerinden) anında uygulanır. İptal ederseniz, zaten ödediğiniz dönemin sonuna kadar ücretli planınızda kalırsınız, ardından otomatik olarak Ücretsiz plana düşersiniz.
 
-## I hit a budget error. What now?
+## Bir bütçe hatasıyla karşılaştım. Şimdi ne yapmalıyım?
 
-Geçerli pencerenin harcama koruma sınırına ulaştınız. Pencerenin sıfırlanmasını bekleyin (panonuz ne zaman olduğunu gösterir) veya daha büyük bir sınır için [yükseltme](plans.md) yapın.
+Mevcut zaman diliminin harcama koruma limitine ulaştınız. Dilimin sıfırlanmasını bekleyin (paneliniz ne zaman sıfırlanacağını gösterir) veya daha büyük bir limit için [yükseltin](plans.md).
 
-## A request failed with 401.
+## Bir istek 401 hatasıyla başarısız oldu.
 
-Anahtarınız eksik veya yanlış. Panodan yeniden kopyalayın ve fazladan boşluk olmadığından ve kimlik doğrulama başlığının ayarlandığından emin olun.
+Anahtarınız eksik veya yanlış. Panelden yeniden kopyalayın ve fazladan boşluk olmadığından ve kimlik doğrulama başlığının ayarlandığından emin olun.
 
-## My key leaked. What do I do?
+## Anahtarım sızdı. Ne yapmalıyım?
 
-Panodan iptal edin ve hemen yeni bir tane oluşturun. Anahtarlara şifre gibi davranın — asla kaydetmeyin veya herkese açık olarak paylaşmayın.
+Panelden iptal edin ve hemen yeni bir tane oluşturun. Anahtarlara şifreler gibi davranın — asla depoya göndermeyin veya herkese açık olarak paylaşmayın.
 
-## Where do I get help?
+## Nereden yardım alabilirim?
 
-Panonuzdaki **Destek** kartından bir bilet açın veya desteğe e-posta gönderin. Size geri döneceğiz.
+[Panelinizdeki](https://claudin.io/dashboard) **Destek** kartından bir talep açın veya desteğe e-posta gönderin. Size geri döneceğiz.

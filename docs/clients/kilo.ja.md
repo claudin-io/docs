@@ -1,10 +1,10 @@
 # Kilo Code
 
-[Kilo Code](https://kilo.ai) は OpenAI 互換のプロバイダーブロックを使用します。モデル ID は `claudinio/claudinio`（プロバイダー/モデル）です。
+[Kilo Code](https://kilo.ai) は OpenAI 互換のプロバイダブロックを使用します。モデルIDは `claudinio/claudinio` (プロバイダ/モデル) です。
 
-## クイックセットアップ（スクリプト）
+## クイックセットアップ (スクリプト)
 
-最初に[キーをエクスポート](../getting-started/set-your-key.md)して、`$CLAUDINIO_API_KEY` が設定されていることを確認します。これにより、`~/.config/kilo/kilo.jsonc` が書き込まれ、既存のファイルはバックアップされます。
+まず [キーをエクスポートする](../getting-started/set-your-key.md) を実行して `$CLAUDINIO_API_KEY` が設定されるようにします。これにより、既存のファイルをバックアップして `~/.config/kilo/kilo.jsonc` が書き込まれます。
 
 ```bash
 kilo_config_install() {
@@ -50,11 +50,11 @@ kilo_config_install "$CLAUDINIO_API_KEY"
 unset kilo_config_install
 ```
 
-その後、`kilo` を実行します。
+次に `kilo` を実行します。
 
-## 手動設定
+## 手動セットアップ
 
-以下を `~/.config/kilo/kilo.jsonc` に記述します：
+これを `~/.config/kilo/kilo.jsonc` に配置します：
 
 ```jsonc
 {
@@ -79,7 +79,7 @@ unset kilo_config_install
 }
 ```
 
-## 環境変数の代替方法
+## 環境変数による代替方法
 
 Kilo は標準の OpenAI 環境変数も読み取ります：
 

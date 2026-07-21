@@ -1,13 +1,13 @@
 # Codex
 
-[Codex](https://github.com/openai/codex) একটি কাস্টম মডেল প্রদানকারীর মাধ্যমে `~/.codex/config.toml`-এ সংযোগ করে। Claudin.io `responses` ওয়্যার API উন্মুক্ত করে যা Codex প্রত্যাশা করে।
+[Codex](https://github.com/openai/codex) `~/.codex/config.toml`-এ একটি কাস্টম মডেল প্রোভাইডারের মাধ্যমে সংযোগ করে। Claudin.io Codex যে `responses` ওয়্যার API আশা করে তা উন্মুক্ত করে।
 
 !!! warning "Codex CLI ব্যবহার করুন"
-    এই সেটিংসগুলি **Codex CLI**-তে প্রযোজ্য। হোস্টেড Codex অ্যাপ আপনাকে একটি কাস্টম বেস URL নির্দেশ করতে দিতে পারে না।
+    এই সেটিংস **Codex CLI**-তে প্রযোজ্য। হোস্টেড Codex অ্যাপ আপনাকে একটি কাস্টম বেস URL নির্দেশ করতে নাও দিতে পারে।
 
 ## ম্যানুয়াল সেটআপ
 
-এটি `~/.codex/config.toml`-এ যোগ করুন:
+`~/.codex/config.toml`-এ এটি যোগ করুন:
 
 ```toml
 model = "claudinio"
@@ -20,7 +20,7 @@ env_key = "CLAUDINIO_API_KEY"
 wire_api = "responses"
 ```
 
-তারপর আপনার কী এক্সপোর্ট করুন (নামটি উপরের `env_key`-এর সাথে মিলতে হবে)। সবচেয়ে সহজ উপায় হল [এটি আপনার শেল প্রোফাইলে একবার সেট করুন](../getting-started/set-your-key.md):
+তারপর আপনার কী এক্সপোর্ট করুন (নামটি অবশ্যই উপরের `env_key`-এর সাথে মিলতে হবে)। সবচেয়ে সহজ উপায় হল [আপনার শেল প্রোফাইলে এটি একবার সেট করা](../getting-started/set-your-key.md):
 
 ```bash
 export CLAUDINIO_API_KEY="sk-..."
@@ -65,4 +65,4 @@ unset codex_config_install
 | বেস URL | `https://api.claudin.io/v1` |
 | মডেল | `claudinio` |
 | ওয়্যার API | `responses` |
-| কী এনভ ভেরিয়েবল | `CLAUDINIO_API_KEY` |
+| কী এনভি ভেরিয়েবল | `CLAUDINIO_API_KEY` |

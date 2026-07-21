@@ -1,8 +1,8 @@
 # Sua primeira chamada
 
-Antes de configurar um editor, vale a pena confirmar que sua chave funciona com uma única requisição. Claudin.io fala o formato **OpenAI Chat Completions** (e também o formato Anthropic Messages).
+Antes de configurar um editor, vale a pena confirmar que sua chave funciona com uma única solicitação. Claudin.io fala o formato **OpenAI Chat Completions** (e também o formato Anthropic Messages).
 
-Estes exemplos leem sua chave de `$CLAUDINIO_API_KEY` — defina-a uma vez [exportando sua chave](set-your-key.md). (Nos trechos de SDK, substitua `YOUR_API_KEY` pela chave do seu [painel de controle](account.md), ou leia-a da mesma variável de ambiente.)
+Estes exemplos leem sua chave de `$CLAUDINIO_API_KEY` — defina-a uma vez [exportando sua chave](set-your-key.md). (Nos trechos de SDK, substitua `YOUR_API_KEY` pela chave do seu [painel](account.md), ou leia-a da mesma variável de ambiente.)
 
 ## Com cURL
 
@@ -22,8 +22,7 @@ Você deve receber uma resposta JSON normal no estilo OpenAI com um array `choic
 
 !!! tip "`x-api-key` também funciona"
     Claudin.io aceita a chave tanto como `Authorization: Bearer YOUR_API_KEY`
-    **ou** como um cabeçalho `x-api-key: YOUR_API_KEY`. Use o que seu cliente
-    enviar.
+    **ou** como um cabeçalho `x-api-key: YOUR_API_KEY`. Use o que seu cliente enviar.
 
 ## Com o SDK Python da OpenAI
 

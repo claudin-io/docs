@@ -1,10 +1,10 @@
 # আপনার প্রথম কল
 
-একটি এডিটর সংযোগ করার আগে, একটি একক অনুরোধের মাধ্যমে আপনার কী কাজ করে তা নিশ্চিত করা ভাল। Claudin.io **OpenAI Chat Completions** ফর্ম্যাট (এবং Anthropic Messages ফর্ম্যাটও) বোঝে।
+কোনো এডিটর সংযোগ করার আগে, একটি একক অনুরোধ দিয়ে আপনার কী কাজ করে তা নিশ্চিত করা ভালো। Claudin.io **OpenAI Chat Completions** ফরম্যাট (এবং Anthropic Messages ফরম্যাটও) সমর্থন করে।
 
-এই উদাহরণগুলি আপনার কী `$CLAUDINIO_API_KEY` থেকে পড়ে — এটি একবার সেট করুন [আপনার কী এক্সপোর্ট করে](set-your-key.md)। (SDK স্নিপেটগুলিতে, `YOUR_API_KEY` প্রতিস্থাপন করুন আপনার [ড্যাশবোর্ড](account.md) থেকে পাওয়া কী দিয়ে, অথবা একই এনভ ভেরিয়েবল থেকে পড়ুন।)
+এই উদাহরণগুলি `$CLAUDINIO_API_KEY` থেকে আপনার কী পড়ে — এটি একবার [আপনার কী এক্সপোর্ট করে](set-your-key.md) সেট করুন। (SDK স্নিপেটগুলিতে, `YOUR_API_KEY` আপনার [ড্যাশবোর্ড](account.md) থেকে পাওয়া কী দিয়ে প্রতিস্থাপন করুন, অথবা একই env var থেকে পড়ুন।)
 
-## cURL এর মাধ্যমে
+## cURL দিয়ে
 
 ```bash
 curl https://api.claudin.io/v1/chat/completions \
@@ -18,12 +18,12 @@ curl https://api.claudin.io/v1/chat/completions \
   }'
 ```
 
-আপনার একটি সাধারণ OpenAI-স্টাইলের JSON প্রতিক্রিয়া `choices` অ্যারে সহ ফিরে পাওয়া উচিত।
+আপনার একটি সাধারণ OpenAI-স্টাইল JSON প্রতিক্রিয়া ফিরে পাওয়া উচিত যেখানে একটি `choices` অ্যারে থাকবে।
 
 !!! tip "`x-api-key` ও কাজ করে"
-    Claudin.io কী গ্রহণ করে হয় `Authorization: Bearer YOUR_API_KEY` হিসাবে **অথবা** একটি `x-api-key: YOUR_API_KEY` হেডার হিসাবে। আপনার ক্লায়েন্ট যা পাঠায় তা ব্যবহার করুন।
+    Claudin.io কীটি `Authorization: Bearer YOUR_API_KEY` **অথবা** একটি `x-api-key: YOUR_API_KEY` হেডার হিসেবে গ্রহণ করে। আপনার ক্লায়েন্ট যেটি পাঠায় সেটি ব্যবহার করুন।
 
-## OpenAI Python SDK এর মাধ্যমে
+## OpenAI Python SDK দিয়ে
 
 ```python
 from openai import OpenAI
@@ -41,7 +41,7 @@ resp = client.chat.completions.create(
 print(resp.choices[0].message.content)
 ```
 
-## OpenAI Node SDK এর মাধ্যমে
+## OpenAI Node SDK দিয়ে
 
 ```javascript
 import OpenAI from "openai";
@@ -61,7 +61,7 @@ console.log(resp.choices[0].message.content);
 
 ## স্ট্রিমিং
 
-`stream: true` সেট করুন এবং সার্ভার-প্রেরিত ইভেন্ট পড়ুন, ঠিক OpenAI API এর মতো:
+`stream: true` সেট করুন এবং সার্ভার-প্রেরিত ইভেন্ট পড়ুন, ঠিক OpenAI API-র মতো:
 
 ```bash
 curl https://api.claudin.io/v1/chat/completions \

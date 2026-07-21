@@ -2,7 +2,7 @@
 
 Prima di collegare un editor, vale la pena confermare che la tua chiave funzioni con una singola richiesta. Claudin.io parla il formato **OpenAI Chat Completions** (e anche il formato Anthropic Messages).
 
-Questi esempi leggono la tua chiave da `$CLAUDINIO_API_KEY` — impostala una volta [esportando la tua chiave](set-your-key.md). (Negli snippet SDK, sostituisci `YOUR_API_KEY` con la chiave dalla tua [dashboard](account.md), o leggila dalla stessa variabile d'ambiente.)
+Questi esempi leggono la tua chiave da `$CLAUDINIO_API_KEY` — impostala una volta [esportando la tua chiave](set-your-key.md). (Negli snippet degli SDK, sostituisci `YOUR_API_KEY` con la chiave della tua [dashboard](account.md), o leggila dalla stessa variabile d'ambiente.)
 
 ## Con cURL
 
@@ -22,7 +22,7 @@ Dovresti ricevere una normale risposta JSON in stile OpenAI con un array `choice
 
 !!! tip "`x-api-key` funziona anche"
     Claudin.io accetta la chiave sia come `Authorization: Bearer YOUR_API_KEY`
-    **oppure** come header `x-api-key: YOUR_API_KEY`. Usa quello che invia il tuo client.
+    **oppure** come header `x-api-key: YOUR_API_KEY`. Usa quello che il tuo client invia.
 
 ## Con l'SDK Python di OpenAI
 
@@ -77,5 +77,4 @@ curl https://api.claudin.io/v1/chat/completions \
 
 ---
 
-Hai ottenuto una risposta valida? Ottimo — ora [connetti il tuo strumento preferito](../clients/claude-code.md).
-Se qualcosa non ha funzionato, controlla il [riferimento API](../api-reference.md#errors) per gli errori comuni.
+Ricevuto una risposta valida? Ottimo — ora [collega il tuo strumento preferito](../clients/claude-code.md). Se qualcosa è fallito, controlla il [riferimento API](../api-reference.md#errors) per gli errori comuni.

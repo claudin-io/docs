@@ -1,10 +1,10 @@
 # Zed
 
-[Zed](https://zed.dev) OpenAI-সামঞ্জস্যপূর্ণ প্রদানকারীকে নেটিভভাবে সমর্থন করে `language_models.openai_compatible` এর অধীনে।
+[Zed](https://zed.dev) সাপোর্ট করে OpenAI-সামঞ্জস্যপূর্ণ প্রদানকারী নেটিভলি `language_models.openai_compatible` এর অধীনে।
 
 ## দ্রুত সেটআপ (স্ক্রিপ্ট)
 
-প্রথমে [আপনার কী এক্সপোর্ট করুন](../getting-started/set-your-key.md) যাতে `$CLAUDINIO_API_KEY` সেট হয়। এটি `~/.config/zed/settings.json` লেখে, কোনো বিদ্যমান ফাইল ব্যাকআপ করে:
+প্রথমে [আপনার কী এক্সপোর্ট করুন](../getting-started/set-your-key.md) যাতে `$CLAUDINIO_API_KEY` সেট থাকে। এটি `~/.config/zed/settings.json` ফাইলটি লেখে, কোনো বিদ্যমান ফাইলের ব্যাকআপ নিয়ে:
 
 ```bash
 zed_settings_install() {
@@ -68,8 +68,8 @@ unset zed_settings_install
     }
     ```
 
-2. Zed-এর Agent প্যানেল খুলুন এবং অনুরোধ করা হলে আপনার API কী পেস্ট করুন, অথবা **Claudinio** প্রদানকারীর জন্য API কী হিসাবে সেট করুন।
-3. Agent প্যানেলের মডেল পিকার থেকে **Claudinio** নির্বাচন করুন।
+2. Zed এর Agent প্যানেল খুলুন এবং যখন প্রম্পট দেওয়া হয় তখন আপনার API কী পেস্ট করুন, অথবা এটি **Claudinio** প্রদানকারীর জন্য API কী হিসেবে সেট করুন।
+3. এজেন্ট প্যানেলের মডেল নির্বাচক থেকে **Claudinio** নির্বাচন করুন।
 
 | সেটিং | মান |
 | --- | --- |

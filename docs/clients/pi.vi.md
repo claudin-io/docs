@@ -1,10 +1,14 @@
 # pi
 
-[pi](https://github.com/parallel-web/pi) đọc các nhà cung cấp từ `~/.pi/agent/models.json`. Claudin.io được đăng ký dưới dạng nhà cung cấp `openai-completions`.
+[pi](https://github.com/parallel-web/pi) đọc các provider từ
+`~/.pi/agent/models.json`. Claudin.io được đăng ký như một provider
+`openai-completions`.
 
 ## Thiết lập nhanh (script)
 
-Trước tiên, [export key của bạn](../getting-started/set-your-key.md) để `$CLAUDINIO_API_KEY` được thiết lập. Lệnh này sẽ ghi vào `~/.pi/agent/models.json`, sao lưu file hiện có (nếu có):
+Đầu tiên [xuất key của bạn](../getting-started/set-your-key.md) để
+`$CLAUDINIO_API_KEY` được thiết lập. Lệnh này ghi `~/.pi/agent/models.json`, sao lưu
+bất kỳ tập tin nào hiện có:
 
 ```bash
 pi_models_install() {
@@ -75,7 +79,7 @@ export OPENAI_BASE_URL=https://api.claudin.io/v1
 export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 ```
 
-| Cài đặt | Giá trị |
+| Thiết lập | Giá trị |
 | --- | --- |
 | URL cơ sở | `https://api.claudin.io/v1` |
 | Mô hình | `claudinio` |

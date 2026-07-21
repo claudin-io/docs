@@ -1,24 +1,24 @@
-[Hermes Agent](https://github.com/NousResearch/hermes-agent) هو وكيل طرفية
-مفتوح المصدر من Nous Research. يدعم أي نقطة نهاية متوافقة مع OpenAI، مما يجعله
-خياراً مثالياً لـ Claudin.io.
+# Hermes Agent
+
+[Hermes Agent](https://github.com/NousResearch/hermes-agent) هو وكيل ذكاء اصطناعي طرفي مفتوح المصدر من Nous Research. يدعم أي نقطة نهاية متوافقة مع OpenAI، مما يجعله مناسبًا تمامًا لـ Claudin.io.
 
 ## بداية سريعة باستخدام المعالج
 
-اخرج من أي جلسة Hermes نشطة (`Ctrl + C` أو `/quit`)، ثم شغّل:
+اخرج من أي جلسة Hermes نشطة (`Ctrl + C` أو `/quit`)، ثم قم بتشغيل:
 
 ```bash
 hermes model
 ```
 
-اختر **Custom endpoint** من القائمة وأدخل:
+اختر **نقطة نهاية مخصصة** من القائمة واملأ:
 
 | الحقل | القيمة |
 | --- | --- |
-| Base URL | `https://api.claudin.io/v1` |
-| API Key | مفتاحك `sk-...` |
-| Model name | `claudinio``
+| عنوان URL الأساسي | `https://api.claudin.io/v1` |
+| مفتاح API | المفتاح `sk-...` الخاص بك |
+| اسم النموذج | `claudinio` |
 
-يقوم Hermes بحفظ الإعدادات تلقائياً في `~/.hermes/config.yaml`.
+يحفظ Hermes التكوين تلقائيًا إلى `~/.hermes/config.yaml`.
 
 جربه:
 
@@ -26,19 +26,19 @@ hermes model
 hermes
 ```
 
-## الإعداد اليدوي
+## التكوين اليدوي
 
-حرّر `~/.hermes/config.yaml`:
+قم بتحرير `~/.hermes/config.yaml`:
 
 ```yaml
 model:
   provider: custom
   base_url: "https://api.claudin.io/v1"
-  api_key: "sk-miftahuka-huna"
+  api_key: "sk-sua-chave-aqui"
   default: "claudinio"
 ```
 
-أو عيّن القيم مباشرة:
+أو قم بتعيين القيم مباشرة:
 
 ```bash
 hermes config set model.base_url "https://api.claudin.io/v1"
@@ -53,22 +53,12 @@ hermes config check
 hermes config show
 ```
 
-> **نصيحة:** للمهام المعقدة مع استدعاء الأدوات، تأكد من أن وكيل Hermes
-> يستخدم نموذجاً بذاكرة سياق لا تقل عن 64 ألف رمز (Claudinio يدعم ذلك).
+> **نصيحة:** بالنسبة للمهام المعقدة التي تتضمن استدعاء الأدوات، تأكد من أن وكيل Hermes الخاص بك يستخدم نموذجًا بسعة سياق لا تقل عن 64 ألف رمز (يدعم Claudinio ذلك).
 
-## استكشاف الأخطاء
+## استكشاف الأخطاء وإصلاحها
 
 | المشكلة | الحل |
 | --- | --- |
-| خطأ في المصادقة | تحقق من مفتاح API باستخدام `hermes doctor` |
+| خطأ في المصادقة | تأكد مرة أخرى من مفتاح API الخاص بك باستخدام `hermes doctor` |
 | النموذج غير موجود | تأكد من أن اسم النموذج هو بالضبط `claudinio` |
-| رفض الاتصال | تحقق من أن `https://api.claudin.io/v1` يمكن الوصول إليه |
-
-## أوامر مفيدة
-
-| الأمر | الوصف |
-| --- | --- |
-| `hermes config show` | عرض الإعدادات الحالية |
-| `hermes config edit` | تحرير تفاعلي |
-| `hermes doctor` | تشخيص المشاكل |
-| `hermes model` | تبديل المزوّدين |
+| رفض الاتصال | تحقق من أن `https://api.claudin.io/v1` يمكن الوصول إليه من شبكتك |

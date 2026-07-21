@@ -1,10 +1,10 @@
 # Kilo Code
 
-[Kilo Code](https://kilo.ai) 使用兼容 OpenAI 的 provider 块。模型 ID 为 `claudinio/claudinio`（provider/模型）。
+[Kilo Code](https://kilo.ai) 使用兼容OpenAI的提供者模块。模型ID是 `claudinio/claudinio` (提供者/模型)。
 
-## 快速配置（脚本）
+## 快速设置（脚本）
 
-首先[导出你的密钥](../getting-started/set-your-key.md)，确保 `$CLAUDINIO_API_KEY` 已设置。此脚本会写入 `~/.config/kilo/kilo.jsonc`，并备份已有的文件：
+首先[导出你的密钥](../getting-started/set-your-key.md)，以便设置 `$CLAUDINIO_API_KEY`。这会写入 `~/.config/kilo/kilo.jsonc`，备份任何现有文件：
 
 ```bash
 kilo_config_install() {
@@ -52,9 +52,9 @@ unset kilo_config_install
 
 然后运行 `kilo`。
 
-## 手动配置
+## 手动设置
 
-将以下内容放入 `~/.config/kilo/kilo.jsonc`：
+将此内容放入 `~/.config/kilo/kilo.jsonc`：
 
 ```jsonc
 {
@@ -81,15 +81,15 @@ unset kilo_config_install
 
 ## 环境变量替代方案
 
-Kilo 也支持读取标准的 OpenAI 环境变量：
+Kilo 也会读取标准的OpenAI环境变量：
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
 export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 ```
 
-| 设置项 | 值 |
+| 设置 | 值 |
 | --- | --- |
-| 基础 URL | `https://api.claudin.io/v1` |
+| Base URL | `https://api.claudin.io/v1` |
 | 模型 | `claudinio/claudinio` |
 | 工具调用 | 已启用 |

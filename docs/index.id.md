@@ -6,9 +6,9 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Kode tanpa cemas tagihan. Harga bulanan tetap, penggunaan tak terbatas.
+# Kode tanpa kecemasan tagihan. Harga bulanan tetap, penggunaan tidak terbatas.
 
-Claudin.io adalah proxy API untuk agen coding AI. Bayar **langganan bulanan tetap** dan gunakan sebanyak yang Anda mau — tanpa tagihan per-token, tanpa penghitung permintaan, tanpa kredit yang kedaluwarsa.
+Claudin.io adalah proksi API untuk agen kode AI. Bayar **langganan bulanan tetap** dan gunakan sebanyak yang Anda mau — tanpa tagihan per token, tanpa penghitung permintaan, tanpa kredit yang kedaluwarsa.
 
 </div>
 
@@ -21,11 +21,11 @@ Claudin.io adalah proxy API untuk agen coding AI. Bayar **langganan bulanan teta
 
 <div class="grid cards" markdown>
 
--   :material-infinity:{ .lg .middle } __Penggunaan tak terbatas__
+-   :material-infinity:{ .lg .middle } __Penggunaan tidak terbatas__
 
     ---
 
-    Tanpa penghitungan permintaan, tanpa pengukuran token. Satu-satunya batasan adalah batas **perlindungan pengeluaran** per-periode yang menghentikan agen yang lepas kendali — Anda hampir tidak pernah menyentuhnya dalam pekerjaan normal.
+    Tidak ada penghitungan permintaan, tidak ada pengukuran token. Satu-satunya pagar pengaman adalah batas **perlindungan pengeluaran** per periode yang menghentikan agen yang lepas kendali — Anda hampir tidak pernah mencapainya dalam pekerjaan normal.
 
 -   :material-power-plug:{ .lg .middle } __Bekerja dengan alat Anda__
 
@@ -37,13 +37,13 @@ Claudin.io adalah proxy API untuk agen coding AI. Bayar **langganan bulanan teta
 
     ---
 
-    Langganan tetap. Tidak ada tagihan mengejutkan di akhir bulan, tidak ada kecemasan "berapa biaya refactor ini?"
+    Langganan tetap. Tidak ada tagihan kejutan di akhir bulan, tidak ada kecemasan 'berapa biaya refaktor ini?'
 
 -   :material-shield-check:{ .lg .middle } __Perlindungan pengeluaran bawaan__
 
     ---
 
-    Batas anggaran per-periode berjenjang melindungi Anda dari agen loop tak terbatas yang menghabiskan paket Anda. Transparan dan ditampilkan langsung di dasbor Anda.
+    Batas anggaran per periode yang berjenjang melindungi Anda dari agen loop tak terbatas yang menghabiskan paket Anda. Transparan dan ditampilkan secara langsung di dasbor Anda.
 
 </div>
 
@@ -55,10 +55,9 @@ Claudin.io adalah proxy API untuk agen coding AI. Bayar **langganan bulanan teta
 4. **[Lakukan panggilan pertama Anda](getting-started/first-call.md)** dan mulai membangun.
 
 !!! tip "Nama model selalu `claudinio`"
-    Klien apa pun yang Anda gunakan, id model yang Anda arahkan adalah **`claudinio`**.
+    Klien apa pun yang Anda gunakan, id model yang Anda tuju adalah **`claudinio`**.
     URL dasarnya adalah **`https://api.claudin.io`**.
 
 ---
 
-<small>Butuh bantuan? Lihat [FAQ](faq.md) atau hubungi kami melalui kartu dukungan di
-[dashboard](https://claudin.io/dashboard) Anda.</small>
+<small>Butuh bantuan? Lihat [FAQ](faq.md) atau hubungi dari kartu dukungan di [dasbor](https://claudin.io/dashboard) Anda.</small>

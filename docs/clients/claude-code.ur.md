@@ -1,10 +1,10 @@
 # Claude Code
 
-[Claude Code](https://claude.com/claude-code) Claudin.io سے اپنے Anthropic-compatible endpoint کے ذریعے جڑتا ہے۔ اس کا base URL Claudin.io پر سیٹ کریں اور اپنی کلید کو توثیقی ٹوکن کے طور پر استعمال کریں۔
+[Claude Code](https://claude.com/claude-code) Claudin.io سے اپنے Anthropic-مطابق اختتامی نقطے کے ذریعے جڑتا ہے۔ اس کی بنیادی URL Claudin.io پر رکھیں اور اپنی کلید کو تصدیقی ٹوکن کے طور پر استعمال کریں۔
 
 ## فوری سیٹ اپ (اسکرپٹ)
 
-پہلے [اپنی کلید برآمد کریں](../getting-started/set-your-key.md) تاکہ `$CLAUDINIO_API_KEY` سیٹ ہو جائے، پھر اسے چلائیں۔ یہ `~/.claude/settings.json` لکھتا ہے (پہلے کسی بھی موجودہ فائل کا بیک اپ لے کر):
+پہلے [اپنی کلید برآمد کریں](../getting-started/set-your-key.md) تاکہ `$CLAUDINIO_API_KEY` سیٹ ہو، پھر یہ چلائیں۔ یہ `~/.claude/settings.json` لکھتا ہے (پہلے کسی موجودہ فائل کا بیک اپ لے کر):
 
 ```bash
 claude_settings_install() {
@@ -56,18 +56,18 @@ unset claude_settings_install
 }
 ```
 
-!!! note "کیوں `ANTHROPIC_API_KEY` خالی ہے؟"
-    Claude Code اگر `ANTHROPIC_API_KEY` سیٹ ہو تو اسے ترجیح دیتا ہے۔ اسے خالی چھوڑنے سے یہ `ANTHROPIC_AUTH_TOKEN` (آپ کی Claudin.io کلید) کو Claudin.io base URL کے خلاف استعمال کرنے پر مجبور ہو جاتا ہے۔
+!!! note "کیوں `ANTHROPIC_API_KEY` خالی ہے"
+    Claude Code اگر `ANTHROPIC_API_KEY` سیٹ ہو تو اسے ترجیح دیتا ہے۔ اسے خالی چھوڑنے سے یہ Claudin.io کے بنیادی URL کے خلاف `ANTHROPIC_AUTH_TOKEN` (آپ کی Claudinio کلید) استعمال کرنے پر مجبور ہوتا ہے۔
 
-## استعمال کردہ ویلیوز
+## استعمال کردہ اقدار
 
-| سیٹنگ | ویلیو |
+| ترتیب | قدر |
 | --- | --- |
-| Base URL | `https://api.claudin.io` |
+| بنیادی URL | `https://api.claudin.io` |
 | ماڈل | `claudinio` |
 | سب ایجنٹ ماڈل | `claudinio` |
-| توثیق | `ANTHROPIC_AUTH_TOKEN` = آپ کی کلید |
+| تصدیق | `ANTHROPIC_AUTH_TOKEN` = آپ کی کلید |
 
 ---
 
-مسئلہ؟ [عام خرابیاں](../api-reference.md#errors) یا [FAQ](../faq.md) دیکھیں۔
+پریشانی؟ [عام غلطیاں](../api-reference.md#errors) یا [FAQ](../faq.md) دیکھیں۔

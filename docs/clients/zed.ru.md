@@ -1,10 +1,10 @@
 # Zed
 
-[Zed](https://zed.dev) поддерживает провайдеров, совместимых с OpenAI, нативно под `language_models.openai_compatible`.
+[Zed](https://zed.dev) поддерживает провайдеров, совместимых с OpenAI, нативно в разделе `language_models.openai_compatible`.
 
 ## Быстрая настройка (скрипт)
 
-Сначала [экспортируйте ваш ключ](../getting-started/set-your-key.md), чтобы была установлена переменная `$CLAUDINIO_API_KEY`. Это запишет `~/.config/zed/settings.json`, создав резервную копию существующего файла:
+Сначала [экспортируйте ваш ключ](../getting-started/set-your-key.md), чтобы была установлена переменная `$CLAUDINIO_API_KEY`. Этот скрипт запишет `~/.config/zed/settings.json`, создав резервную копию существующего файла:
 
 ```bash
 zed_settings_install() {
@@ -68,11 +68,11 @@ unset zed_settings_install
     }
     ```
 
-2. Откройте панель Agent в Zed и вставьте ваш API-ключ по запросу, или установите его как API-ключ для провайдера **Claudinio**.
-3. Выберите **Claudinio** в выборе модели панели Agent.
+2. Откройте панель Agent в Zed и вставьте ваш API-ключ, когда будет предложено, или установите его как API-ключ для провайдера **Claudinio**.
+3. Выберите **Claudinio** в выборе модели на панели Agent.
 
 | Настройка | Значение |
 | --- | --- |
 | API URL | `https://api.claudin.io/v1` |
-| Model | `claudinio` |
-| Max tokens | `256000` |
+| Модель | `claudinio` |
+| Макс. токенов | `256000` |

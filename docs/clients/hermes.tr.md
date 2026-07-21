@@ -1,6 +1,6 @@
-[Hermes Agent](https://github.com/NousResearch/hermes-agent), Nous Research
-tarafından geliştirilmiş açık kaynak bir terminal ajanıdır. OpenAI uyumlu tüm
-uç noktaları destekler, bu da onu Claudin.io için mükemmel bir seçenek yapar.
+# Hermes Agent
+
+[Hermes Agent](https://github.com/NousResearch/hermes-agent), Nous Research tarafından geliştirilen açık kaynaklı bir terminal AI ajanıdır. Herhangi bir OpenAI uyumlu uç noktayı destekler ve Claudin.io için mükemmel bir uyum sağlar.
 
 ## Sihirbazla hızlı başlangıç
 
@@ -10,13 +10,13 @@ Aktif bir Hermes oturumundan çıkın (`Ctrl + C` veya `/quit`), ardından çal�
 hermes model
 ```
 
-Menüden **Custom endpoint** seçin ve doldurun:
+Menüden **Özel uç nokta** seçin ve aşağıdakileri doldurun:
 
 | Alan | Değer |
 | --- | --- |
 | Base URL | `https://api.claudin.io/v1` |
 | API Key | `sk-...` anahtarınız |
-| Model name | `claudinio` |
+| Model adı | `claudinio` |
 
 Hermes yapılandırmayı otomatik olarak `~/.hermes/config.yaml` dosyasına kaydeder.
 
@@ -34,7 +34,7 @@ hermes
 model:
   provider: custom
   base_url: "https://api.claudin.io/v1"
-  api_key: "sk-anahtariniz"
+  api_key: "sk-sua-chave-aqui"
   default: "claudinio"
 ```
 
@@ -53,22 +53,12 @@ hermes config check
 hermes config show
 ```
 
-> **İpucu:** Karmaşık araç çağrısı görevleri için Hermes Agent'ınızın en az
-> 64K token bağlamlı bir model kullandığından emin olun (Claudinio bunu destekler).
+> **İpucu:** Araç çağrısı içeren karmaşık görevler için Hermes Agent'ınızın en az 64K token bağlamına sahip bir model kullandığından emin olun (Claudinio bunu destekler).
 
-## Sorun giderme
+## Sorun Giderme
 
 | Sorun | Çözüm |
 | --- | --- |
-| Kimlik doğrulama hatası | `hermes doctor` ile API anahtarını kontrol edin |
+| Kimlik doğrulama hatası | `hermes doctor` ile API anahtarınızı tekrar kontrol edin |
 | Model bulunamadı | Model adının tam olarak `claudinio` olduğundan emin olun |
-| Bağlantı reddedildi | `https://api.claudin.io/v1` adresine erişilebildiğini doğrulayın |
-
-## Kullanışlı komutlar
-
-| Komut | Açıklama |
-| --- | --- |
-| `hermes config show` | Mevcut yapılandırmayı görüntüle |
-| `hermes config edit` | Etkileşimli düzenleme |
-| `hermes doctor` | Sorunları teşhis et |
-| `hermes model` | Sağlayıcı değiştir |
+| Bağlantı reddedildi | `https://api.claudin.io/v1` adresine ağınızdan erişilebildiğini doğrulayın |

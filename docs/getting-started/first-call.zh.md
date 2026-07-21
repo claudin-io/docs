@@ -1,8 +1,8 @@
-# 您的第一次调用
+# 首次调用
 
-在连接编辑器之前，最好先通过单个请求确认您的密钥是否有效。Claudin.io 使用 **OpenAI Chat Completions** 格式（也支持 Anthropic Messages 格式）。
+在配置编辑器之前，值得先通过一次请求确认你的密钥是否有效。Claudin.io 支持 **OpenAI Chat Completions** 格式（也支持 Anthropic Messages 格式）。
 
-这些示例从 `$CLAUDINIO_API_KEY` 读取您的密钥——通过[导出您的密钥](set-your-key.md)设置一次。（在 SDK 代码片段中，将 `YOUR_API_KEY` 替换为您[仪表盘](account.md)中的密钥，或从同一环境变量读取。）
+这些示例会从 `$CLAUDINIO_API_KEY` 读取你的密钥——通过[导出密钥](set-your-key.md)设置一次。（在 SDK 代码片段中，将 `YOUR_API_KEY` 替换为从[仪表板](account.md)获取的密钥，或从同一个环境变量读取。）
 
 ## 使用 cURL
 
@@ -18,10 +18,10 @@ curl https://api.claudin.io/v1/chat/completions \
   }'
 ```
 
-您应该会收到一个正常的 OpenAI 风格的 JSON 响应，其中包含 `choices` 数组。
+你应该会收到一个普通的 OpenAI 风格的 JSON 响应，其中包含一个 `choices` 数组。
 
-!!! tip "`x-api-key` 也有效"
-    Claudin.io 接受密钥作为 `Authorization: Bearer YOUR_API_KEY` **或**作为 `x-api-key: YOUR_API_KEY` 标头。使用您的客户端发送的任何一种。
+!!! tip "`x-api-key` 同样有效"
+    Claudin.io 接受密钥的方式可以是 `Authorization: Bearer YOUR_API_KEY` **或** `x-api-key: YOUR_API_KEY` 标头。请使用你的客户端发送的任意一种方式。
 
 ## 使用 OpenAI Python SDK
 
@@ -61,7 +61,7 @@ console.log(resp.choices[0].message.content);
 
 ## 流式传输
 
-设置 `stream: true` 并读取服务器发送的事件，与 OpenAI API 完全相同：
+设置 `stream: true` 并读取服务器发送的事件，与 OpenAI API 完全一致：
 
 ```bash
 curl https://api.claudin.io/v1/chat/completions \
@@ -76,4 +76,4 @@ curl https://api.claudin.io/v1/chat/completions \
 
 ---
 
-收到有效响应了吗？很好——现在[连接您喜欢的工具](../clients/claude-code.md)。如果失败了，请查看[API 参考](../api-reference.md#errors)中的常见错误。
+得到了有效的响应？太好了——现在[连接你最喜欢的工具](../clients/claude-code.md)。如果出了问题，请查看[API 参考](../api-reference.md#errors)了解常见错误。

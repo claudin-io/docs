@@ -1,14 +1,10 @@
 # pi
 
-[pi](https://github.com/parallel-web/pi) lê fornecedores de
-`~/.pi/agent/models.json`. Claudin.io está registado como um
-fornecedor `openai-completions`.
+O [pi](https://github.com/parallel-web/pi) lê os fornecedores a partir de `~/.pi/agent/models.json`. O Claudin.io está registado como um fornecedor `openai-completions`.
 
 ## Configuração rápida (script)
 
-Primeiro [exporte a sua chave](../getting-started/set-your-key.md) para que
-`$CLAUDINIO_API_KEY` esteja definida. Isto escreve `~/.pi/agent/models.json`,
-fazendo backup de qualquer ficheiro existente:
+Primeiro, [exporte a sua chave](../getting-started/set-your-key.md) para que `$CLAUDINIO_API_KEY` esteja definida. Isto escreve `~/.pi/agent/models.json`, fazendo uma cópia de segurança de qualquer ficheiro existente:
 
 ```bash
 pi_models_install() {

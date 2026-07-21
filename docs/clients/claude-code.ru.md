@@ -1,14 +1,10 @@
 # Claude Code
 
-[Claude Code](https://claude.com/claude-code) подключается к Claudin.io через свой
-совместимый с Anthropic endpoint. Укажите его базовый URL на Claudin.io и используйте ваш ключ
-в качестве токена аутентификации.
+[Claude Code](https://claude.com/claude-code) подключается к Claudin.io через его совместимый с Anthropic эндпоинт. Укажите его базовый URL на Claudin.io и используйте ваш ключ в качестве токена аутентификации.
 
 ## Быстрая настройка (скрипт)
 
-Сначала [экспортируйте ваш ключ](../getting-started/set-your-key.md), чтобы
-`$CLAUDINIO_API_KEY` был установлен, затем выполните это. Он записывает `~/.claude/settings.json`
-(предварительно создав резервную копию существующего файла):
+Сначала [экспортируйте ваш ключ](../getting-started/set-your-key.md), чтобы была установлена переменная `$CLAUDINIO_API_KEY`, затем запустите это. Он записывает `~/.claude/settings.json` (сначала создав резервную копию существующего файла):
 
 ```bash
 claude_settings_install() {
@@ -61,9 +57,7 @@ unset claude_settings_install
 ```
 
 !!! note "Почему `ANTHROPIC_API_KEY` пуст"
-    Claude Code предпочитает `ANTHROPIC_API_KEY`, если он установлен. Оставив его пустым,
-    вы заставляете его использовать `ANTHROPIC_AUTH_TOKEN` (ваш ключ Claudin.io) по отношению к
-    базовому URL Claudin.io.
+    Claude Code предпочитает `ANTHROPIC_API_KEY`, если он установлен. Если оставить его пустым, это заставит использовать `ANTHROPIC_AUTH_TOKEN` (ваш ключ Claudin.io) с базовым URL Claudin.io.
 
 ## Используемые значения
 

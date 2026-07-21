@@ -2,7 +2,7 @@
 
 [OpenCode](https://opencode.ai) terhubung ke Claudin.io sebagai penyedia yang kompatibel dengan OpenAI. Jalur tercepat adalah alur autentikasi bawaannya.
 
-## Pengaturan Cepat
+## Penyiapan Cepat
 
 1. Jalankan perintah login:
 
@@ -11,9 +11,9 @@
     ```
 
 2. Pilih **Claudinio** sebagai penyedia.
-3. Tempel kunci API Anda saat diminta — salin dari [dasbor](https://claudin.io/dashboard) Anda.
+3. Tempelkan kunci API Anda saat diminta — salin dari [dasbor](https://claudin.io/dashboard) Anda.
 
-Kemudian mulai OpenCode dan pilih model **claudinio**.
+Kemudian jalankan OpenCode dan pilih model **claudinio**.
 
 ## Alternatif Variabel Lingkungan
 

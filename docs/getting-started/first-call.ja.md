@@ -1,10 +1,10 @@
-# 初めてのコール
+# 最初のコール
 
-エディタを接続する前に、キーが正常に動作することを1回のリクエストで確認する価値があります。Claudin.ioは**OpenAI Chat Completions**形式（およびAnthropic Messages形式も）をサポートしています。
+エディターを接続する前に、キーが単一のリクエストで動作することを確認しておくと良いでしょう。Claudin.ioは**OpenAI Chat Completions**形式（およびAnthropic Messages形式も）に対応しています。
 
-これらの例は`$CLAUDINIO_API_KEY`からキーを読み取ります。[キーをエクスポート](set-your-key.md)して一度設定してください。（SDKスニペットでは、`YOUR_API_KEY`を[ダッシュボード](account.md)のキーに置き換えるか、同じ環境変数から読み取ってください。）
+これらの例は、`$CLAUDINIO_API_KEY` からキーを読み取ります。一度、[キーをエクスポート](set-your-key.md)して設定してください。（SDKスニペットでは、`YOUR_API_KEY` を[ダッシュボード](account.md)のキーに置き換えるか、同じ環境変数から読み取ってください。）
 
-## cURLを使用する
+## cURL を使用する
 
 ```bash
 curl https://api.claudin.io/v1/chat/completions \
@@ -18,12 +18,12 @@ curl https://api.claudin.io/v1/chat/completions \
   }'
 ```
 
-通常のOpenAIスタイルのJSONレスポンスが`choices`配列とともに返ってくるはずです。
+通常のOpenAIスタイルのJSONレスポンスが返り、`choices` 配列が含まれているはずです。
 
-!!! tip "`x-api-key`も使用可能"
-    Claudin.ioは、キーを`Authorization: Bearer YOUR_API_KEY`として受け付けるか、**または**`x-api-key: YOUR_API_KEY`ヘッダーとして受け付けます。クライアントが送信する方を使用してください。
+!!! tip "`x-api-key` も使用可能"
+    Claudin.ioはキーを `Authorization: Bearer YOUR_API_KEY` **または** `x-api-key: YOUR_API_KEY` ヘッダーとして受け付けます。クライアントが送信する方を使用してください。
 
-## OpenAI Python SDKを使用する
+## OpenAI Python SDK を使用する
 
 ```python
 from openai import OpenAI
@@ -41,7 +41,7 @@ resp = client.chat.completions.create(
 print(resp.choices[0].message.content)
 ```
 
-## OpenAI Node SDKを使用する
+## OpenAI Node SDK を使用する
 
 ```javascript
 import OpenAI from "openai";
@@ -61,7 +61,7 @@ console.log(resp.choices[0].message.content);
 
 ## ストリーミング
 
-`stream: true`を設定し、サーバー送信イベントを読み取ります。OpenAI APIとまったく同じです。
+`stream: true` を設定し、サーバー送信イベントを読み取ります（OpenAI APIとまったく同じです）。
 
 ```bash
 curl https://api.claudin.io/v1/chat/completions \
@@ -76,4 +76,4 @@ curl https://api.claudin.io/v1/chat/completions \
 
 ---
 
-有効なレスポンスが返ってきましたか？素晴らしい—次に[お気に入りのツールを接続](../clients/claude-code.md)しましょう。失敗した場合は、[APIリファレンス](../api-reference.md#errors)で一般的なエラーを確認してください。
+有効な応答が得られましたか？素晴らしい — 次に[お気に入りのツールを接続](../clients/claude-code.md)してください。失敗した場合は、[APIリファレンス](../api-reference.md#errors)で一般的なエラーを確認してください。

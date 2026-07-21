@@ -4,7 +4,7 @@
 
 ## Pengaturan cepat (skrip)
 
-Pertama [ekspor kunci Anda](../getting-started/set-your-key.md) sehingga `$CLAUDINIO_API_KEY` diatur. Ini menulis `~/.config/zed/settings.json`, mencadangkan file yang ada:
+Pertama [ekspor kunci Anda](../getting-started/set-your-key.md) sehingga `$CLAUDINIO_API_KEY` diatur. Ini akan menulis `~/.config/zed/settings.json`, dengan membuat cadangan file yang sudah ada (jika ada):
 
 ```bash
 zed_settings_install() {
@@ -68,11 +68,11 @@ unset zed_settings_install
     }
     ```
 
-2. Buka panel Agen Zed dan tempelkan kunci API Anda saat diminta, atau atur sebagai kunci API untuk penyedia **Claudinio**.
+2. Buka panel Agen Zed dan tempel kunci API Anda saat diminta, atau atur sebagai kunci API untuk penyedia **Claudinio**.
 3. Pilih **Claudinio** di pemilih model panel agen.
 
 | Pengaturan | Nilai |
 | --- | --- |
 | API URL | `https://api.claudin.io/v1` |
 | Model | `claudinio` |
-| Max tokens | `256000` |
+| Token maksimum | `256000` |

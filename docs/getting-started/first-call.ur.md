@@ -1,8 +1,8 @@
 # آپ کی پہلی کال
 
-ایڈیٹر جوڑنے سے پہلے، یہ تصدیق کرنا اچھا ہے کہ آپ کی کلید ایک درخواست کے ساتھ کام کرتی ہے۔ Claudin.io **OpenAI Chat Completions** فارمیٹ (اور Anthropic Messages فارمیٹ بھی) بولتا ہے۔
+کسی ایڈیٹر کو جوڑنے سے پہلے، یہ تصدیق کرنا مفید ہے کہ آپ کی کلید ایک ہی درخواست کے ساتھ کام کرتی ہے۔ Claudin.io **OpenAI Chat Completions** فارمیٹ (اور Anthropic Messages فارمیٹ بھی) بولتا ہے۔
 
-یہ مثالیں آپ کی کلید کو `$CLAUDINIO_API_KEY` سے پڑھتی ہیں — اسے ایک بار [اپنی کلید ایکسپورٹ کرکے](set-your-key.md) سیٹ کریں۔ (SDK سنیپٹس میں، `YOUR_API_KEY` کو اپنے [ڈیش بورڈ](account.md) سے کلید سے تبدیل کریں، یا اسی env var سے پڑھیں۔)
+یہ مثالیں آپ کی کلید کو `$CLAUDINIO_API_KEY` سے پڑھتی ہیں — اسے ایک بار [اپنی کلید ایکسپورٹ کرکے](set-your-key.md) سیٹ کریں۔ (SDK کے ٹکڑوں میں، `YOUR_API_KEY` کو اپنے [ڈیش بورڈ](account.md) سے کلید سے بدلیں، یا اسی ماحولیاتی متغیر سے پڑھیں۔)
 
 ## cURL کے ساتھ
 
@@ -18,10 +18,10 @@ curl https://api.claudin.io/v1/chat/completions \
   }'
 ```
 
-آپ کو ایک عام OpenAI طرز کا JSON جواب `choices` صف کے ساتھ ملنا چاہیے۔
+آپ کو عام OpenAI طرز کا JSON جواب واپس ملنا چاہیے جس میں `choices` کی ایک صف ہو۔
 
-!!! tip "`x-api-key` بھی کام کرتا ہے"
-    Claudin.io کلید کو یا تو `Authorization: Bearer YOUR_API_KEY` کے طور پر **یا** `x-api-key: YOUR_API_KEY` ہیڈر کے طور پر قبول کرتا ہے۔ جو بھی آپ کا کلائنٹ بھیجتا ہے استعمال کریں۔
+!!! tip "x-api-key بھی کام کرتا ہے"
+    Claudin.io کلید کو `Authorization: Bearer YOUR_API_KEY` **یا** `x-api-key: YOUR_API_KEY` ہیڈر کے طور پر قبول کرتا ہے۔ اپنے کلائنٹ کے مطابق استعمال کریں۔
 
 ## OpenAI Python SDK کے ساتھ
 
@@ -59,9 +59,9 @@ const resp = await client.chat.completions.create({
 console.log(resp.choices[0].message.content);
 ```
 
-## سٹریمنگ
+## اسٹریمنگ
 
-`stream: true` سیٹ کریں اور سرور بھیجے گئے واقعات کو پڑھیں، بالکل OpenAI API کی طرح:
+`stream: true` سیٹ کریں اور سرور سے بھیجے گئے ایونٹس پڑھیں، بالکل OpenAI API کی طرح:
 
 ```bash
 curl https://api.claudin.io/v1/chat/completions \
@@ -76,4 +76,4 @@ curl https://api.claudin.io/v1/chat/completions \
 
 ---
 
-ایک درست جواب ملا؟ بہت اچھا — اب [اپنا پسندیدہ ٹول جوڑیں](../clients/claude-code.md)۔ اگر کچھ ناکام ہوا تو، عام غلطیوں کے لیے [API حوالہ](../api-reference.md#errors) دیکھیں۔
+ایک درست جواب ملا؟ بہت اچھا — اب [اپنا پسندیدہ ٹول جوڑیں](../clients/claude-code.md)۔ اگر کچھ ناکام ہوا تو عام غلطیوں کے لیے [API حوالہ](../api-reference.md#errors) دیکھیں۔

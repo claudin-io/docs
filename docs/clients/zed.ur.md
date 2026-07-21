@@ -1,12 +1,12 @@
 # Zed
 
-[Zed](https://zed.dev) مقامی طور پر OpenAI کے ساتھ مطابقت رکھنے والے فراہم کنندگان کو
-`language_models.openai_compatible` کے تحت سپورٹ کرتا ہے۔
+[Zed](https://zed.dev) OpenAI-compatible فراہم کنندگان کو `language_models.openai_compatible` کے تحت مقامی طور پر سپورٹ کرتا ہے۔
 
 ## فوری سیٹ اپ (اسکرپٹ)
 
-پہلے [اپنی کلید ایکسپورٹ کریں](../getting-started/set-your-key.md) تاکہ
-`$CLAUDINIO_API_KEY` سیٹ ہو جائے۔ یہ `~/.config/zed/settings.json` لکھتا ہے، کسی بھی موجودہ فائل کا بیک اپ لے کر:
+پہلے [اپنی کلید برآمد کریں](../getting-started/set-your-key.md) تاکہ
+`$CLAUDINIO_API_KEY` سیٹ ہو جائے۔ یہ `~/.config/zed/settings.json` لکھتا ہے، اور
+موجودہ فائل کا بیک اپ لیتا ہے:
 
 ```bash
 zed_settings_install() {
@@ -70,11 +70,12 @@ unset zed_settings_install
     }
     ```
 
-2. Zed کا ایجنٹ پینل کھولیں اور جب اشارہ کیا جائے تو اپنی API کلید پیسٹ کریں، یا اسے **Claudinio** فراہم کنندہ کے لیے API کلید کے طور پر سیٹ کریں۔
-3. ایجنٹ پینل کے ماڈل چناؤ میں **Claudinio** منتخب کریں۔
+2. Zed کا Agent پینل کھولیں اور جب اشارہ کیا جائے تو اپنی API کلید پیسٹ کریں، یا اسے
+   **Claudinio** فراہم کنندہ کے لیے API کلید کے طور پر سیٹ کریں۔
+3. Agent پینل کے ماڈل چننے والے میں **Claudinio** منتخب کریں۔
 
-| سیٹنگ | قدر |
+| سیٹنگ | ویلیو |
 | --- | --- |
 | API URL | `https://api.claudin.io/v1` |
 | ماڈل | `claudinio` |
-| زیادہ سے زیادہ ٹوکن | `256000` |
+| زیادہ سے زیادہ ٹوکنز | `256000` |

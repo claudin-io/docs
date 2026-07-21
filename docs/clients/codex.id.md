@@ -1,9 +1,12 @@
 # Codex
 
-[Codex](https://github.com/openai/codex) terhubung melalui penyedia model kustom di `~/.codex/config.toml`. Claudin.io mengekspos wire API `responses` yang diharapkan Codex.
+[Codex](https://github.com/openai/codex) terhubung melalui penyedia model kustom di
+`~/.codex/config.toml`. Claudin.io mengekspos API wire `responses` yang diharapkan
+Codex.
 
-!!! warning "Gunakan Codex CLI"
-    Pengaturan ini berlaku untuk **Codex CLI**. Aplikasi Codex yang di-host mungkin tidak mengizinkan Anda menunjuk ke URL dasar kustom.
+!!! warning "Gunakan CLI Codex"
+    Pengaturan ini berlaku untuk **CLI Codex**. Aplikasi Codex yang dihosting mungkin
+    tidak mengizinkan Anda mengarahkan ke URL dasar kustom.
 
 ## Pengaturan manual
 
@@ -20,7 +23,8 @@ env_key = "CLAUDINIO_API_KEY"
 wire_api = "responses"
 ```
 
-Kemudian ekspor kunci Anda (nama harus cocok dengan `env_key` di atas). Cara termudah adalah dengan [mengaturnya sekali di profil shell Anda](../getting-started/set-your-key.md):
+Kemudian ekspor kunci Anda (nama harus cocok dengan `env_key` di atas). Cara
+termudah adalah dengan [mengaturnya sekali di profil shell Anda](../getting-started/set-your-key.md):
 
 ```bash
 export CLAUDINIO_API_KEY="sk-..."
@@ -64,5 +68,5 @@ unset codex_config_install
 | --- | --- |
 | URL Dasar | `https://api.claudin.io/v1` |
 | Model | `claudinio` |
-| Wire API | `responses` |
-| Variabel kunci lingkungan | `CLAUDINIO_API_KEY` |
+| API Wire | `responses` |
+| Variabel env kunci | `CLAUDINIO_API_KEY` |

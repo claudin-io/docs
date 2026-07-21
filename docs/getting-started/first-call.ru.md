@@ -1,10 +1,10 @@
-# Ваш первый вызов
+# Ваш первый запрос
 
-Перед подключением редактора стоит убедиться, что ваш ключ работает с одним запросом. Claudin.io поддерживает формат **OpenAI Chat Completions** (а также формат Anthropic Messages).
+Прежде чем подключать редактор, стоит убедиться, что ваш ключ работает, отправив один запрос. Claudin.io поддерживает формат **OpenAI Chat Completions** (а также формат Anthropic Messages).
 
-Эти примеры читают ваш ключ из `$CLAUDINIO_API_KEY` — установите его один раз, [экспортировав ключ](set-your-key.md). (В примерах SDK замените `YOUR_API_KEY` на ключ из [панели управления](account.md) или прочитайте из той же переменной окружения.)
+Эти примеры читают ваш ключ из `$CLAUDINIO_API_KEY` — установите его один раз, [экспортировав ключ](set-your-key.md). (В примерах SDK замените `YOUR_API_KEY` на ключ из [панели управления](account.md) или читайте его из той же переменной окружения.)
 
-## С помощью cURL
+## Через cURL
 
 ```bash
 curl https://api.claudin.io/v1/chat/completions \
@@ -20,10 +20,10 @@ curl https://api.claudin.io/v1/chat/completions \
 
 Вы должны получить обычный JSON-ответ в стиле OpenAI с массивом `choices`.
 
-!!! tip "`x-api-key` также работает"
-    Claudin.io принимает ключ либо как заголовок `Authorization: Bearer YOUR_API_KEY`, **либо** как заголовок `x-api-key: YOUR_API_KEY`. Используйте тот, который отправляет ваш клиент.
+!!! tip "`x-api-key` тоже работает"
+    Claudin.io принимает ключ либо как `Authorization: Bearer YOUR_API_KEY` **либо** как заголовок `x-api-key: YOUR_API_KEY`. Используйте тот, который отправляет ваш клиент.
 
-## С помощью OpenAI Python SDK
+## Через OpenAI Python SDK
 
 ```python
 from openai import OpenAI
@@ -41,7 +41,7 @@ resp = client.chat.completions.create(
 print(resp.choices[0].message.content)
 ```
 
-## С помощью OpenAI Node SDK
+## Через OpenAI Node SDK
 
 ```javascript
 import OpenAI from "openai";
@@ -61,7 +61,7 @@ console.log(resp.choices[0].message.content);
 
 ## Потоковая передача
 
-Установите `stream: true` и читайте server-sent events, точно как в OpenAI API:
+Установите `stream: true` и читайте события, отправляемые сервером, точно как в API OpenAI:
 
 ```bash
 curl https://api.claudin.io/v1/chat/completions \
@@ -76,4 +76,4 @@ curl https://api.claudin.io/v1/chat/completions \
 
 ---
 
-Получили корректный ответ? Отлично — теперь [подключите ваш любимый инструмент](../clients/claude-code.md). Если что-то не сработало, ознакомьтесь со [справочником API](../api-reference.md#errors) для типичных ошибок.
+Получили успешный ответ? Отлично — теперь [подключите ваш любимый инструмент](../clients/claude-code.md). Если что-то не сработало, проверьте [справочник API](../api-reference.md#errors) на предмет распространённых ошибок.

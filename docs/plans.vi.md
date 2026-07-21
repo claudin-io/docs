@@ -1,69 +1,62 @@
-# Gói và giới hạn
+# Gói dịch vụ & giới hạn
 
-Mọi gói Claudin.io đều là **sử dụng không giới hạn** với **giới hạn bảo vệ chi tiêu**.
-Bạn không bị tính phí theo token hay yêu cầu — bạn trả một mức giá cố định hàng tháng và
-sử dụng tự do. Giới hạn chỉ tồn tại để ngăn một tác nhân mất kiểm soát
-(ví dụ: vòng lặp công cụ vô hạn) làm cạn kiệt gói của bạn.
+Mọi gói dịch vụ của Claudin.io đều có **sử dụng không giới hạn** với **mức bảo vệ chi tiêu**.
+Bạn sẽ không bị tính phí theo token hay theo yêu cầu — bạn trả một mức giá cố định hàng tháng và
+sử dụng thoải mái. Mức giới hạn chỉ tồn tại để ngăn một agent chạy mất kiểm soát (ví dụ: một vòng lặp công cụ vô tận) làm cạn kiệt gói dịch vụ của bạn.
 
-## Các gói
+## Các gói dịch vụ
 
-| Gói | Giá | Bảo vệ chi tiêu | Tốt nhất cho |
+| Gói dịch vụ | Giá | Bảo vệ chi tiêu | Phù hợp nhất |
 | --- | --- | --- | --- |
-| **Khởi đầu** | $5 / tháng | $0.50 / giờ | Dùng thử — cam kết thấp |
-| **Nhẹ** | $9 / tháng | $1.00 / giờ | Dự án sở thích, thỉnh thoảng code |
-| **Cơ bản** | $19 / tháng hoặc $189 / năm | $2.00 / giờ | Code hàng ngày — lựa chọn phổ biến |
-| **Pro** ★ | $39 / tháng hoặc $389 / năm | $4.00 / giờ | Quy trình làm việc tác nhân nặng |
-| **Mạnh mẽ** | $59 / tháng hoặc $589 / năm | $6.00 / giờ | Nhóm, nhiều dự án |
-| **Siêu** | $99 / tháng hoặc $989 / năm | $10.00 / giờ | Sức mạnh tối đa, nhóm và sản xuất |
+| **Starter** | $5 / tháng | $0,50 / giờ | Dùng thử — cam kết thấp |
+| **Lite** | $9 / tháng | $1,00 / giờ | Dự án cá nhân, thỉnh thoảng code |
+| **Essential** | $19 / tháng hoặc $189 / năm | $2,00 / giờ | Chất lượng cho sử dụng hàng ngày |
+| **Pro** ★ | $39 / tháng hoặc $389 / năm | $4,00 / giờ | Quy trình làm việc agent chuyên sâu |
+| **Power** | $59 / tháng hoặc $589 / năm | $6,00 / giờ | Nhóm, nhiều dự án |
+| **Ultra** | $99 / tháng hoặc $989 / năm | $10,00 / giờ | Sức mạnh tối đa, nhóm & sản xuất |
 
-!!! mẹo "Hầu hết mọi người không bao giờ chạm giới hạn"
-    Giới hạn theo giờ rất hào phóng cho công việc tương tác thông thường. Bạn thường chỉ
-    chạm phải nó khi tác nhân rơi vào vòng lặp chặt — chính xác là lúc bạn *muốn* phanh.
+!!! tip "Hầu hết mọi người không bao giờ chạm tới mức giới hạn"
+    Mức giới hạn theo giờ khá hào phóng cho công việc tương tác thông thường. Bạn thường chỉ
+    chạm tới nó nếu một agent rơi vào vòng lặp chặt — đó chính xác là lúc bạn *muốn* có một cái phanh.
 
-## claudinio vs Claudius
+## Nên chọn mô hình nào? Claudinio vs Claudius
 
-|                      | claudinio 🏆         | claudius ★           |
-| -------------------- | -------------------- | -------------------- |
-| **Starter**          | ✅                   |                      |
-| **Lite**             | ✅                   |                      |
-| **Essential**        | ✅                   | ✅                   |
-| **Pro**              | ✅                   | ✅                   |
-| **Power**            | ✅                   | ✅                   |
-| **Ultra**            | ✅                   | ✅                   |
+Chúng tôi cung cấp hai mô hình chính cho coding agent của bạn:
 
-> **Giá trị tốt nhất cho đồng tiền của bạn.**
+| Mô hình | Backend | Trường hợp sử dụng | Khuyến nghị cho |
+| --- | --- | --- | --- |
+| **claudinio** 🏆 | Nhanh, cân bằng, tiết kiệm | Code hàng ngày, dự án cá nhân, code tổng quát | **Tất cả gói dịch vụ** (Starter đến Ultra) |
+| **claudius** ★ | Cao cấp, suy luận sâu | Tác vụ phức tạp, suy luận sâu, quy trình agent chuyên sâu | Essential+ (Pro, Power, Ultra) |
 
-### Dành cho Starter / Lite: sử dụng claudinio
+### Nói thẳng
 
-Nếu bạn đang dùng Starter hoặc Lite, claudinio là mô hình bạn sẽ sử dụng. Và thành thật mà nói? Bạn sẽ không cần nhìn lại phía sau. claudinio sánh ngang với các mô hình hàng đầu trong khi chỉ có chi phí bằng một phần nhỏ — hoàn hảo cho việc coding hàng ngày, học tập và các dự án sở thích.
+Nếu bạn đang dùng **Starter** ($5) hoặc **Lite** ($9) — **hãy dùng `claudinio` và đừng ngoái lại nhìn.** 🎯
 
-### Dành cho Essential trở lên: cả thế giới là của bạn
+Sự thật là: `claudinio` mang lại chất lượng tương đương Claude Sonnet cho code hàng ngày với **một phần nhỏ chi phí nội bộ**. Với gói Lite, bạn có thể nhận được **hàng trăm yêu cầu mỗi giờ** với `claudinio` — trong khi `claudius` sẽ đốt ngân sách theo giờ của bạn nhanh hơn nhiều.
 
-Essential trở lên cho bạn quyền truy cập cả claudinio và claudius. Sử dụng claudinio cho các tác vụ hàng ngày và dành claudius cho những lúc bạn cần thêm sức mạnh — kiến trúc phức tạp, suy luận sâu sắc, hoặc các phiên gỡ lỗi khó khăn.
+| Chỉ số | claudinio | claudius |
+| --- | --- | --- |
+| Tác động đến ngân sách theo giờ | Thấp — kéo dài hơn nhiều | Cao — đốt nhanh hơn |
+| Trường hợp sử dụng | Code hàng ngày, dự án cá nhân | Suy luận nặng, agent phức tạp |
 
-### Nhưng này, nguyên tắc vàng
+**Nguyên tắc vàng:** Cấu hình agent của bạn (Claude Code, Cursor, Continue, v.v.) với `claudinio` làm mô hình mặc định. Chỉ chuyển sang `claudius` khi bạn thực sự cần thêm sức mạnh suy luận — và nếu gói dịch vụ của bạn cho phép (Essential+). Đối với các dự án cá nhân, `claudinio` là **tất cả những gì bạn cần** và có lẽ **còn hơn cả bạn mong đợi**.
 
-Bất kể gói của bạn là gì, chúng tôi khuyên bạn nên đặt claudinio làm mô hình mặc định. Đây là mô hình hàng đầu của chúng tôi, và chúng tôi tin tưởng vào nó. Bạn luôn có thể chuyển sang claudius khi công việc yêu cầu.
+> 💡 Mẹo: Cả hai mô hình đều hoạt động với tất cả các coding agent chính. Chỉ cần đặt `model=claudinio` hoặc `model=claudius` trong cấu hình agent của bạn. `claudinio` cũng tự động phân giải các bí danh như `claude-sonnet-4`, `gpt-4o`, `o3-mini` và hàng chục mô hình khác — không cần thay đổi cấu hình agent của bạn.
 
-### Bí danh mô hình
+## Cơ chế bảo vệ chi tiêu hoạt động như thế nào
 
-Tất cả các gói đều hỗ trợ bí danh mô hình cho các mô hình phổ biến như: `claude-sonnet-4`, `gpt-4o`, `gemini-2.5-pro`, `llama-4`, `deepseek-v4`. Xem [API Reference](/api-reference/) của chúng tôi để biết danh sách đầy đủ.
+Mỗi gói dịch vụ xác định một **cửa sổ** ngân sách — một khoảng thời gian luân chuyển và mức chi tiêu tối đa
+trong đó:
 
-## Bảo vệ chi tiêu hoạt động như thế nào
+- **Starter**, **Lite**, **Essential**, **Pro**, **Power** và **Ultra** sử dụng cửa sổ **1 giờ**.
 
-Mỗi gói xác định một **cửa sổ** ngân sách — một khoảng thời gian luân phiên và chi tiêu tối đa trong đó:
+Trong cửa sổ, mức sử dụng của bạn tích lũy một chi phí nội bộ nhỏ. Khi chi phí nội bộ đó đạt đến mức giới hạn của cửa sổ, các yêu cầu sẽ tạm dừng cho đến khi cửa sổ được đặt lại.
 
-- **Khởi đầu**, **Nhẹ**, **Cơ bản**, **Pro**, **Mạnh mẽ** và **Siêu** sử dụng cửa sổ **1 giờ**.
+Chỉ các lệnh gọi mô hình thông qua proxy mới được tính. Mỗi yêu cầu sẽ cộng vào tổng đang chạy của cửa sổ hiện tại dựa trên các token đã sử dụng. Khi cửa sổ được đặt lại, tổng cũng được đặt lại theo.
 
-Trong cửa sổ, việc sử dụng của bạn tích lũy một chi phí nội bộ nhỏ. Khi chi phí nội bộ
-đó đạt đến giới hạn của cửa sổ, các yêu cầu sẽ tạm dừng cho đến khi cửa sổ được đặt lại.
+Nếu bạn chạm tới mức giới hạn và nhận được lỗi ngân sách, bạn có hai tùy chọn:
 
-Chỉ các cuộc gọi mô hình của bạn đi qua proxy. Mỗi yêu cầu thêm vào tổng số hiện tại
-của cửa sổ dựa trên các token đã sử dụng. Khi cửa sổ được đặt lại, tổng số cũng được đặt lại.
+1. Chờ cửa sổ đặt lại (hiển thị trong dashboard của bạn).
+2. Nâng cấp lên gói dịch vụ cao hơn để có mức giới hạn lớn hơn.
 
-Nếu bạn chạm giới hạn và nhận được lỗi ngân sách, bạn có hai lựa chọn:
-
-1. Đợi cửa sổ đặt lại (hiển thị trong bảng điều khiển của bạn).
-2. Nâng cấp lên gói cao hơn để có giới hạn lớn hơn.
-
-Xem [Lỗi liên quan đến gói](api-reference.md#errors) để biết lỗi ngân sách trông như thế nào.
+Xem [Lỗi liên quan đến gói dịch vụ](api-reference.md#errors) để biết lỗi ngân sách trông như thế nào.

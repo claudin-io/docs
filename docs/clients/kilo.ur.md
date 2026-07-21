@@ -1,8 +1,8 @@
 # Kilo Code
 
-[Kilo Code](https://kilo.ai) ایک OpenAI-مطابق فراہم کنندہ بلاک استعمال کرتا ہے۔ ماڈل آئی ڈی `claudinio/claudinio` (فراہم کنندہ/ماڈل) ہے۔
+[Kilo Code](https://kilo.ai) ایک OpenAI-مطابق پرووائیڈر بلاک استعمال کرتا ہے۔ ماڈل آئی ڈی `claudinio/claudinio` (پرووائیڈر/ماڈل) ہے۔
 
-## فوری سیٹ اپ (اسکرپٹ)
+## فوری ترتیب (اسکرپٹ)
 
 پہلے [اپنی کلید برآمد کریں](../getting-started/set-your-key.md) تاکہ `$CLAUDINIO_API_KEY` سیٹ ہو جائے۔ یہ `~/.config/kilo/kilo.jsonc` لکھتا ہے، کسی بھی موجودہ فائل کا بیک اپ لے کر:
 
@@ -52,9 +52,9 @@ unset kilo_config_install
 
 پھر `kilo` چلائیں۔
 
-## دستی سیٹ اپ
+## دستی ترتیب
 
-اسے `~/.config/kilo/kilo.jsonc` میں رکھیں:
+یہ `~/.config/kilo/kilo.jsonc` میں ڈالیں:
 
 ```jsonc
 {
@@ -79,16 +79,16 @@ unset kilo_config_install
 }
 ```
 
-## ماحولیاتی متغیر کا متبادل
+## ماحولی متغیر کا متبادل
 
-Kilo معیاری OpenAI ماحولیاتی متغیرات بھی پڑھتا ہے:
+Kilo معیاری OpenAI ماحولی متغیرات بھی پڑھتا ہے:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
 export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 ```
 
-| سیٹنگ | ویلیو |
+| ترتیب | قدر |
 | --- | --- |
 | بنیادی URL | `https://api.claudin.io/v1` |
 | ماڈل | `claudinio/claudinio` |

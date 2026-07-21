@@ -1,9 +1,11 @@
 # Codex
 
-O [Codex](https://github.com/openai/codex) liga-se através de um fornecedor de modelo personalizado em `~/.codex/config.toml`. O Claudin.io expõe a API wire `responses` que o Codex espera.
+O [Codex](https://github.com/openai/codex) conecta-se através de um provedor de modelo personalizado em
+`~/.codex/config.toml`. A Claudin.io expõe a API wire `responses` que o Codex espera.
 
-!!! warning "Use a CLI do Codex"
-    Estas definições aplicam-se à **CLI do Codex**. A aplicação Codex hospedada pode não permitir que aponte para um URL base personalizado.
+!!! warning "Use a Codex CLI"
+    Estas definições aplicam-se à **Codex CLI**. A aplicação Codex hospedada pode não permitir
+    que aponte para um URL base personalizado.
 
 ## Configuração manual
 
@@ -20,7 +22,8 @@ env_key = "CLAUDINIO_API_KEY"
 wire_api = "responses"
 ```
 
-Em seguida, exporte a sua chave (o nome deve corresponder a `env_key` acima). A forma mais fácil é [defini-la uma vez no seu perfil de shell](../getting-started/set-your-key.md):
+Em seguida, exporte a sua chave (o nome deve corresponder a `env_key` acima). A forma mais fácil é
+[defini-la uma vez no seu perfil de shell](../getting-started/set-your-key.md):
 
 ```bash
 export CLAUDINIO_API_KEY="sk-..."

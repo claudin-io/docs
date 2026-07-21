@@ -1,70 +1,60 @@
-# Pläne & Limits
+# Pläne & Grenzen
 
-Jeder Claudin.io-Plan ist **unbegrenzte Nutzung** mit einer **Ausgaben-Schutzgrenze**.
-Sie werden nicht pro Token oder Anfrage abgerechnet — Sie zahlen einen festen monatlichen Preis und
-nutzen es frei. Die Grenze dient nur dazu, einen außer Kontrolle geratenen Agenten
-(z. B. eine Endlos-Tool-Schleife) daran zu hindern, Ihren Plan zu leeren.
+Jeder Claudin.io-Plan bietet **unbegrenzte Nutzung** mit einer **Ausgabenschutzgrenze**.
+Sie werden nicht pro Token oder pro Anfrage abgerechnet – Sie zahlen einen festen monatlichen Preis und
+nutzen es frei. Die Grenze dient nur dazu, einen außer Kontrolle geratenen Agenten (z.B. eine Endlosschleife von Tools) davon abzuhalten, Ihren Plan zu erschöpfen.
 
 ## Die Pläne
 
-| Plan | Preis | Ausgabenschutz | Am besten für |
+| Plan | Preis | Ausgabenschutz | Ideal für |
 | --- | --- | --- | --- |
-| **Starter** | $5 / Monat | $0.50 / Stunde | Ausprobieren — geringes Engagement |
-| **Lite** | $9 / Monat | $1.00 / Stunde | Hobbyprojekte, gelegentliches Coden |
-| **Essential** | $19 / Monat oder $189 / Jahr | $2.00 / Stunde | Tägliches Coden — der beliebte Favorit |
-| **Pro** ★ | $39 / Monat oder $389 / Jahr | $4.00 / Stunde | Schwere agentische Workflows |
-| **Power** | $59 / Monat oder $589 / Jahr | $6.00 / Stunde | Teams, mehrere Projekte |
-| **Ultra** | $99 / Monat oder $989 / Jahr | $10.00 / Stunde | Maximale Leistung, Teams & Produktion |
+| **Starter** | $5 / Monat | $0,50 / Stunde | Zum Ausprobieren – geringes Engagement |
+| **Lite** | $9 / Monat | $1,00 / Stunde | Hobbyprojekte, gelegentliches Programmieren |
+| **Essential** | $19 / Monat oder $189 / Jahr | $2,00 / Stunde | Qualität für den täglichen Gebrauch |
+| **Pro** ★ | $39 / Monat oder $389 / Jahr | $4,00 / Stunde | Intensive agentenbasierte Arbeitsabläufe |
+| **Power** | $59 / Monat oder $589 / Jahr | $6,00 / Stunde | Teams, mehrere Projekte |
+| **Ultra** | $99 / Monat oder $989 / Jahr | $10,00 / Stunde | Maximale Leistung, Teams & Produktion |
 
-!!! tipp "Die meisten erreichen die Grenze nie"
-    Die stündliche Grenze ist für normale interaktive Arbeit großzügig. Sie stoßen nur
-    daran, wenn ein Agent in eine enge Schleife gerät — genau dann, wenn Sie eine Bremse *wollen*.
+!!! tip "Die meisten erreichen die Grenze nie"
+    Die stündliche Grenze ist für normale interaktive Arbeit großzügig bemessen. Sie stoßen normalerweise nur dann daran, wenn ein Agent in eine enge Schleife gerät – genau dann, wenn Sie *eine Bremse* wollen.
 
-## claudinio vs Claudius
+## Welches Modell sollten Sie wählen? Claudinio vs. Claudius
 
-|                      | claudinio 🏆         | claudius ★           |
-| -------------------- | -------------------- | -------------------- |
-| **Starter**          | ✅                   |                      |
-| **Lite**             | ✅                   |                      |
-| **Essential**        | ✅                   | ✅                   |
-| **Pro**              | ✅                   | ✅                   |
-| **Power**            | ✅                   | ✅                   |
-| **Ultra**            | ✅                   | ✅                   |
+Wir bieten zwei Hauptmodelle für Ihren Coding-Agenten:
 
-> **Das beste Preis-Leistungs-Verhältnis.**
+| Modell | Backend | Anwendungsfall | Empfohlen für |
+| --- | --- | --- | --- |
+| **claudinio** 🏆 | Schnell, ausgewogen, kosteneffizient | Alltägliches Programmieren, Hobbyprojekte, allgemeiner Code | **Alle Pläne** (Starter bis Ultra) |
+| **claudius** ★ | Premium, tiefgehendes Denken | Komplexe Aufgaben, tiefgehendes Denken, intensive agentenbasierte Arbeitsabläufe | Essential+ (Pro, Power, Ultra) |
 
-### Für Starter / Lite: claudinio verwenden
+### Klartext
 
-Wenn Sie Starter oder Lite nutzen, ist claudinio das Modell, das Sie verwenden werden. Und ehrlich? Sie werden nicht zurückblicken müssen. claudinio kann mit den Top-Modellen mithalten, kostet aber nur einen Bruchteil des Preises — perfekt für alltägliches Codieren, Lernen und Hobby-Projekte.
+Wenn Sie den **Starter**-Plan ($5) oder den **Lite**-Plan ($9) haben – **verwenden Sie `claudinio` und schauen Sie nicht zurück.** 🎯
 
-### Für Essential und höher: die Welt steht Ihnen offen
+Hier ist die Realität: `claudinio` liefert eine Qualität, die mit Claude Sonnet für alltägliches Programmieren vergleichbar ist, zu einem **Bruchteil der internen Kosten**. Mit dem Lite-Plan können Sie mit `claudinio` **Hunderte von Anfragen pro Stunde** erhalten – während `claudius` Ihr Stundenbudget viel schneller aufbrauchen würde.
 
-Essential und höhere Tarife geben Ihnen Zugang zu beiden Modellen — claudinio und claudius. Nutzen Sie claudinio für Ihre täglichen Aufgaben und heben Sie sich claudius für die Momente auf, die einen zusätzlichen Funken brauchen — komplexe Architektur, tiefgehendes Reasoning oder anspruchsvolle Debugging-Sessions.
+| Metrik | claudinio | claudius |
+| --- | --- | --- |
+| Auswirkung auf das Stundenbudget | Niedrig – reicht viel weiter | Hoch – verbraucht schneller |
+| Anwendungsfall | Tägliches Programmieren, persönliche Projekte | Intensives Denken, komplexe Agenten |
 
-### Aber hey, die goldene Regel
+**Goldene Regel:** Konfigurieren Sie Ihren Agenten (Claude Code, Cursor, Continue usw.) mit `claudinio` als Standardmodell. Wechseln Sie nur dann zu `claudius`, wenn Sie explizit mehr Denkfähigkeit benötigen – und wenn Ihr Plan es erlaubt (Essential+). Für Hobbyprojekte ist `claudinio` **alles, was Sie brauchen**, und wahrscheinlich **mehr, als Sie erwarten**.
 
-Unabhängig von Ihrem Tarif empfehlen wir, claudinio als Ihr Standardmodell zu verwenden. Es ist unser Flaggschiff, und wir glauben daran. Sie können jederzeit zu claudius wechseln, wenn die Aufgabe es erfordert.
-
-### Modell-Aliase
-
-Alle Tarife unterstützen Modell-Aliase für gängige Modelle wie: `claude-sonnet-4`, `gpt-4o`, `gemini-2.5-pro`, `llama-4`, `deepseek-v4`. Die vollständige Liste finden Sie in unserer [API Reference](/api-reference/).
+> 💡 Tipp: Beide Modelle funktionieren mit allen großen Coding-Agenten. Stellen Sie einfach `model=claudinio` oder `model=claudius` in Ihrer Agentenkonfiguration ein. `claudinio` löst auch automatisch Aliase wie `claude-sonnet-4`, `gpt-4o`, `o3-mini` und Dutzende weitere auf – Sie müssen die Konfiguration Ihres Agenten nicht ändern.
 
 ## Wie der Ausgabenschutz funktioniert
 
-Jeder Plan definiert ein Budget **Fenster** — einen gleitenden Zeitraum und eine maximale Ausgabe darin:
+Jeder Plan definiert ein Budget-**Fenster** – einen gleitenden Zeitraum und eine maximale Ausgabe innerhalb dieses Fensters:
 
 - **Starter**, **Lite**, **Essential**, **Pro**, **Power** und **Ultra** verwenden ein **1-Stunden**-Fenster.
 
-Innerhalb des Fensters sammelt Ihre Nutzung winzige interne Kosten an. Wenn diese internen
-Kosten die Fenstergrenze erreichen, werden Anfragen pausiert, bis das Fenster zurückgesetzt wird.
+Innerhalb des Fensters sammelt Ihre Nutzung einen winzigen internen Kostenbetrag an. Wenn dieser interne Kostenbetrag die Obergrenze des Fensters erreicht, werden Anfragen angehalten, bis das Fenster zurückgesetzt wird.
 
-Nur Ihre Modellaufrufe durch den Proxy. Jede Anfrage erhöht den laufenden Gesamtwert
-des aktuellen Fensters basierend auf den verwendeten Token. Wenn das Fenster zurückgesetzt wird,
-wird auch der Gesamtwert zurückgesetzt.
+Nur Ihre Modellaufrufe über den Proxy. Jede Anfrage erhöht die laufende Summe des aktuellen Fensters basierend auf den verwendeten Token. Wenn das Fenster zurückgesetzt wird, wird die Summe mit zurückgesetzt.
 
-Wenn Sie die Grenze erreichen und einen Budgetfehler erhalten, haben Sie zwei Optionen:
+Wenn Sie die Obergrenze erreichen und einen Budgetfehler erhalten, haben Sie zwei Optionen:
 
-1. Warten Sie, bis das Fenster zurückgesetzt wird (in Ihrem Dashboard angezeigt).
-2. Upgraden Sie auf einen höheren Plan für eine größere Grenze.
+1. Warten Sie, bis das Fenster zurückgesetzt wird (wird in Ihrem Dashboard angezeigt).
+2. Upgraden Sie auf einen höheren Plan für eine größere Obergrenze.
 
-Siehe [Planbezogene Fehler](api-reference.md#errors) für das Aussehen des Budgetfehlers.
+Weitere Informationen zum Budgetfehler finden Sie unter [Pläne-bezogene Fehler](api-reference.md#errors).

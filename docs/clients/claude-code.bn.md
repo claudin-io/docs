@@ -1,10 +1,12 @@
 # Claude Code
 
-[Claude Code](https://claude.com/claude-code) Claudin.io-এর সাথে তার Anthropic-সামঞ্জস্যপূর্ণ এন্ডপয়েন্টের মাধ্যমে সংযুক্ত হয়। এর বেস URL Claudin.io-তে নির্দেশ করুন এবং অথ টোকেন হিসেবে আপনার কী ব্যবহার করুন।
+[Claude Code](https://claude.com/claude-code) Claudin.io-এর মাধ্যমে তার Anthropic-সামঞ্জস্যপূর্ণ এন্ডপয়েন্টের সাথে সংযুক্ত হয়। এর বেস URL Claudin.io-তে নির্দেশ করুন এবং আপনার কী অথ টোকেন হিসেবে ব্যবহার করুন।
 
 ## দ্রুত সেটআপ (স্ক্রিপ্ট)
 
-প্রথমে [আপনার কী এক্সপোর্ট করুন](../getting-started/set-your-key.md) যাতে `$CLAUDINIO_API_KEY` সেট থাকে, তারপর এটি চালান। এটি `~/.claude/settings.json` লিখে (প্রথমে বিদ্যমান যেকোনো ফাইল ব্যাকআপ করে):
+প্রথমে [আপনার কী এক্সপোর্ট করুন](../getting-started/set-your-key.md) যাতে
+`$CLAUDINIO_API_KEY` সেট থাকে, তারপর এটি চালান। এটি `~/.claude/settings.json` লেখে
+(প্রথমে কোনো বিদ্যমান ফাইল ব্যাকআপ করে):
 
 ```bash
 claude_settings_install() {
@@ -57,13 +59,14 @@ unset claude_settings_install
 ```
 
 !!! note "কেন `ANTHROPIC_API_KEY` খালি"
-    Claude Code `ANTHROPIC_API_KEY` পছন্দ করে যদি এটি সেট থাকে। এটি খালি রাখলে এটি Claudin.io বেস URL-এর বিপরীতে `ANTHROPIC_AUTH_TOKEN` (আপনার Claudin.io কী) ব্যবহার করতে বাধ্য করে।
+    Claude Code `ANTHROPIC_API_KEY` পছন্দ করে যদি এটি সেট থাকে। এটি খালি রেখে
+    Claudin.io বেস URL-এর বিরুদ্ধে `ANTHROPIC_AUTH_TOKEN` (আপনার Claudin.io কী) ব্যবহার করতে বাধ্য করা হয়।
 
 ## ব্যবহৃত মান
 
 | সেটিং | মান |
 | --- | --- |
-| বেস URL | `https://api.claudin.io` |
+| Base URL | `https://api.claudin.io` |
 | মডেল | `claudinio` |
 | সাবএজেন্ট মডেল | `claudinio` |
 | অথ | `ANTHROPIC_AUTH_TOKEN` = আপনার কী |

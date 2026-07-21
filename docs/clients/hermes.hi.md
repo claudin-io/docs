@@ -1,8 +1,8 @@
-[Hermes Agent](https://github.com/NousResearch/hermes-agent) Nous Research
-द्वारा बनाया गया एक ओपन सोर्स टर्मिनल एजेंट है। यह किसी भी OpenAI-संगत
-एंडपॉइंट को सपोर्ट करता है, जो इसे Claudin.io के लिए एकदम सही बनाता है।
+# हर्मीस एजेंट
 
-## विज़ार्ड के साथ त्वरित शुरुआत
+[हर्मीस एजेंट](https://github.com/NousResearch/hermes-agent) Nous अनुसंधान द्वारा एक ओपन-सोर्स टर्मिनल AI एजेंट है। यह किसी भी OpenAI-संगत एंडपॉइंट का समर्थन करता है, जो इसे Claudin.io के लिए एक आदर्श विकल्प बनाता है।
+
+## विज़ार्ड के साथ त्वरित आरंभ
 
 किसी भी सक्रिय Hermes सत्र से बाहर निकलें (`Ctrl + C` या `/quit`), फिर चलाएँ:
 
@@ -34,7 +34,7 @@ hermes
 model:
   provider: custom
   base_url: "https://api.claudin.io/v1"
-  api_key: "sk-aapki-key"
+  api_key: "sk-sua-chave-aqui"
   default: "claudinio"
 ```
 
@@ -46,29 +46,19 @@ hermes config set model.default "claudinio"
 hermes config set model.provider custom
 ```
 
-जाँच करें:
+सत्यापित करें:
 
 ```bash
 hermes config check
 hermes config show
 ```
 
-> **सुझाव:** जटिल कार्यों के लिए सुनिश्चित करें कि आपका Hermes Agent
-> कम से कम 64K टोकन कॉन्टेक्स्ट वाला मॉडल उपयोग कर रहा है (Claudinio इसे सपोर्ट करता है)।
+> **टिप:** टूल कॉलिंग वाले जटिल कार्यों के लिए, सुनिश्चित करें कि आपका Hermes एजेंट कम से कम 64K टोकन संदर्भ वाले मॉडल का उपयोग कर रहा है (Claudinio इसका समर्थन करता है)।
 
 ## समस्या निवारण
 
 | समस्या | समाधान |
 | --- | --- |
-| प्रमाणीकरण त्रुटि | `hermes doctor` से API कुंजी जाँचें |
+| प्रमाणीकरण त्रुटि | `hermes doctor` के साथ अपनी API कुंजी की दोबारा जाँच करें |
 | मॉडल नहीं मिला | सुनिश्चित करें कि मॉडल का नाम बिल्कुल `claudinio` है |
-| कनेक्शन अस्वीकृत | जाँचें कि `https://api.claudin.io/v1` पहुँच योग्य है |
-
-## उपयोगी कमांड
-
-| कमांड | विवरण |
-| --- | --- |
-| `hermes config show` | वर्तमान कॉन्फ़िगरेशन देखें |
-| `hermes config edit` | इंटरैक्टिव रूप से संपादित करें |
-| `hermes doctor` | समस्याओं का निदान करें |
-| `hermes model` | प्रदाता बदलें |
+| कनेक्शन अस्वीकार | सत्यापित करें कि `https://api.claudin.io/v1` आपके नेटवर्क से पहुँच योग्य है |

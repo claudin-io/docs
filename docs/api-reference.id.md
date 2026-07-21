@@ -12,7 +12,7 @@ Rute bergaya OpenAI berada di bawah `/v1`.
 
 ## Autentikasi
 
-Kirim kunci API Anda dengan setiap permintaan, sebagai salah satu header:
+Kirimkan kunci API Anda dengan setiap permintaan, sebagai salah satu header berikut:
 
 ```http
 Authorization: Bearer YOUR_API_KEY
@@ -24,24 +24,24 @@ x-api-key: YOUR_API_KEY
 
 ## Model
 
-| Model id | Jendela konteks |
+| ID Model | Jendela konteks |
 | --- | --- |
 | `claudinio` | 256K token |
 
 Gunakan `claudinio` di mana saja. (Beberapa klien mengharapkan bentuk `provider/model` — untuk itu, gunakan `claudinio/claudinio`.)
 
-## Endpoints
+## Endpoint
 
 | Metode & jalur | Deskripsi |
 | --- | --- |
-| `POST /v1/chat/completions` | Chat completions — titik akhir utama |
-| `POST /v1/completions` | Teks completions lawas |
-| `POST /v1/messages` | Format pesan Anthropic |
-| `POST /v1/responses` | Responses API (Codex) |
-| `POST /v1/embeddings` | Teks embeddings |
+| `POST /v1/chat/completions` | Penyelesaian chat — endpoint utama |
+| `POST /v1/completions` | Penyelesaian teks warisan |
+| `POST /v1/messages` | Format Pesan Anthropic |
+| `POST /v1/responses` | API Responses (Codex) |
+| `POST /v1/embeddings` | Embedding teks |
 | `GET /v1/models` | Daftar model yang tersedia |
 
-### Chat completions
+### Penyelesaian chat
 
 ```bash
 curl https://api.claudin.io/v1/chat/completions \
@@ -57,43 +57,58 @@ curl https://api.claudin.io/v1/chat/completions \
   }'
 ```
 
-Parameter OpenAI standar didukung: `messages`, `temperature`, `top_p`, `max_tokens`, `stream`, `stop`, `tools` / `tool_choice` (pemanggilan fungsi), `response_format`, dan seterusnya.
+Parameter OpenAI standar didukung: `messages`, `temperature`, `top_p`, `max_tokens`, `stream`, `stop`, `tools` / `tool_choice` (function calling), `response_format`, dan seterusnya.
+
+### `max_tokens` dan penalaran
+
+Model Claudinio bernalar sebelum menjawab, dan **token penalaran diperhitungkan dalam `max_tokens`** — anggaran yang sama mencakup rantai pemikiran internal dan balasan yang terlihat. Oleh karena itu, `max_tokens` yang kecil dapat hampir seluruhnya digunakan untuk penalaran, sehingga jawaban terpotong di tengah kalimat.
+
+Untuk mencegah hal itu, nilai di bawah **4000** secara otomatis dinaikkan menjadi 4000. Nilai yang lebih besar dilewatkan tanpa perubahan, dan menghilangkan parameter selalu diperbolehkan.
+
+Jika Anda mengurai keluaran terstruktur (JSON, XML, format ketat), periksa `finish_reason` sebelum mengurai — `"length"` berarti respons mencapai batas token dan tidak lengkap, sehingga kegagalan penguraian diharapkan daripada masalah model yang salah format:
+
+```python
+choice = response.choices[0]
+if choice.finish_reason == "length":
+    ...  # truncated — retry with a larger max_tokens
+data = json.loads(choice.message.content)
+```
 
 ### Streaming
 
-Atur `"stream": true` untuk menerima kejadian yang dikirim server dalam format streaming OpenAI (`data: {...}` potongan yang diakhiri dengan `data: [DONE]`).
+Setel `"stream": true` untuk menerima server-sent events dalam format streaming OpenAI (potongan `data: {...}` yang diakhiri dengan `data: [DONE]`).
 
 ### Tool / function calling
 
-`claudinio` mendukung panggilan alat. Kirim `tools` dan baca `tool_calls` kembali dari respons, persis seperti dengan OpenAI API. Inilah yang membuatnya berfungsi di dalam editor agen seperti Claude Code, Kilo, dan Cursor.
+`claudinio` mendukung panggilan tool. Kirimkan `tools` dan baca `tool_calls` kembali dari respons, persis seperti pada OpenAI API. Inilah yang membuatnya berfungsi di dalam editor agen seperti Claude Code, Kilo, dan Cursor.
 
 ### Input multimodal
 
-`claudinio` adalah model teks, tetapi Claudin.io **secara transparan menangani** blok gambar, audio, dan video: jika Anda mengirimnya, proxy mengubahnya menjadi deskripsi/transkripsi teks sebelum model melihatnya. Anda tidak perlu melakukan sesuatu yang khusus — kirim blok konten OpenAI standar dan semuanya berfungsi.
+`claudinio` adalah model teks, tetapi Claudin.io **secara transparan menangani** blok gambar, audio, dan video: jika Anda mengirimkannya, proxy mengubahnya menjadi deskripsi/transkripsi teks sebelum model melihatnya. Anda tidak perlu melakukan sesuatu yang khusus — kirimkan blok konten OpenAI standar dan semuanya akan berfungsi.
 
-## Kesalahan {#errors}
+## Error {#errors}
 
-Kesalahan mengikuti bentuk kesalahan OpenAI:
+Error mengikuti bentuk error OpenAI:
 
 ```json
 { "error": { "message": "…", "type": "…", "code": "…" } }
 ```
 
-| Status | Arti | Apa yang harus dilakukan |
+| Status | Arti | Yang harus dilakukan |
 | --- | --- | --- |
 | `401` | Kunci API tidak valid atau hilang | Periksa kunci dan header auth |
 | `403` | Endpoint tidak diizinkan | Gunakan salah satu jalur `/v1/*` yang didukung |
-| `429` | Batas anggaran tercapai atau dibatasi kecepatan | Tunggu reset jendela atau [tingkatkan](plans.md) |
-| `400` | Permintaan salah bentuk | Periksa JSON / parameter Anda |
-| `5xx` | Gangguan upstream/penyedia | Coba lagi dengan backoff |
+| `429` | Batas anggaran tercapai atau dibatasi rate | Tunggu reset jendela atau [tingkatkan](plans.md) |
+| `400` | Permintaan salah format | Periksa JSON / parameter Anda |
+| `5xx` | Gangguan upstream/provider | Coba lagi dengan backoff |
 
-!!! info "Detail penyedia disembunyikan secara desain"
-    Pesan kesalahan dibersihkan sehingga tidak membocorkan penyedia model yang mendasarinya. Anda akan selalu melihat kesalahan bermerek Claudin.io, berbentuk OpenAI.
+!!! info "Detail penyedia disembunyikan sesuai desain"
+    Pesan error dibersihkan agar tidak membocorkan penyedia model yang mendasarinya. Anda akan selalu melihat error bermerek Claudin.io, berbentuk OpenAI.
 
-### Mengenai batas anggaran
+### Mencapai batas anggaran
 
-Saat Anda menghabiskan perlindungan pengeluaran jendela saat ini, permintaan akan mengembalikan kesalahan anggaran (biasanya `429`). Dasbor Anda menunjukkan waktu reset yang tepat dan sisa anggaran. Lihat [Paket & batasan](plans.md) untuk cara kerja jendela.
+Ketika Anda menghabiskan perlindungan pengeluaran jendela saat ini, permintaan akan mengembalikan error anggaran (biasanya `429`). Dasbor Anda menunjukkan waktu reset yang tepat dan sisa anggaran. Lihat [Paket & batasan](plans.md) untuk cara kerja jendela.
 
-## Pembatasan laju
+## Pembatasan rate
 
-Claudin.io tidak memblokir penggunaan normal secara keras. Tingkat permintaan yang kasar akan *diperlambat* (throttle transparan) daripada ditolak, sehingga klien yang berperilaku baik tidak pernah dihukum. Dalam praktiknya Anda tidak perlu melakukan apa pun — cukup coba lagi pada `429` yang jarang terjadi.
+Claudin.io tidak memblokir penggunaan normal secara keras. Tingkat permintaan yang abusive *diperlambat* (throttle transparan) daripada ditolak, sehingga klien yang berperilaku baik tidak pernah dihukum. Dalam praktiknya, Anda tidak perlu melakukan apa pun — cukup coba lagi pada `429` yang jarang terjadi.

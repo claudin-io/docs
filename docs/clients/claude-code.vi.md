@@ -1,10 +1,12 @@
 # Claude Code
 
-[Claude Code](https://claude.com/claude-code) kết nối với Claudin.io thông qua endpoint tương thích với Anthropic. Trỏ URL gốc của nó về Claudin.io và sử dụng key của bạn làm mã thông báo xác thực.
+[Claude Code](https://claude.com/claude-code) kết nối với Claudin.io thông qua điểm cuối tương thích Anthropic. Trỏ base URL của nó tới Claudin.io và sử dụng key của bạn làm token xác thực.
 
 ## Thiết lập nhanh (script)
 
-Đầu tiên, [export key của bạn](../getting-started/set-your-key.md) để `$CLAUDINIO_API_KEY` được thiết lập, sau đó chạy lệnh sau. Nó sẽ ghi vào `~/.claude/settings.json` (sao lưu bất kỳ tệp nào hiện có trước đó):
+Đầu tiên [export key của bạn](../getting-started/set-your-key.md) để
+`$CLAUDINIO_API_KEY` được thiết lập, sau đó chạy đoạn này. Nó ghi `~/.claude/settings.json`
+(sao lưu mọi file hiện có trước):
 
 ```bash
 claude_settings_install() {
@@ -56,16 +58,18 @@ Tự chỉnh sửa `~/.claude/settings.json`:
 }
 ```
 
-!!! note "Tại sao `ANTHROPIC_API_KEY` lại trống"
-    Claude Code ưu tiên sử dụng `ANTHROPIC_API_KEY` nếu nó được thiết lập. Để trống nó sẽ buộc Claude Code sử dụng `ANTHROPIC_AUTH_TOKEN` (key Claudin.io của bạn) với URL gốc Claudin.io.
+!!! note "Tại sao `ANTHROPIC_API_KEY` trống"
+    Claude Code ưu tiên `ANTHROPIC_API_KEY` nếu nó được thiết lập. Để trống nó
+    buộc phải sử dụng `ANTHROPIC_AUTH_TOKEN` (key Claudin.io của bạn) với
+    base URL Claudin.io.
 
 ## Các giá trị được sử dụng
 
 | Thiết lập | Giá trị |
 | --- | --- |
 | Base URL | `https://api.claudin.io` |
-| Model | `claudinio` |
-| Subagent model | `claudinio` |
+| Mô hình | `claudinio` |
+| Mô hình tác nhân phụ | `claudinio` |
 | Xác thực | `ANTHROPIC_AUTH_TOKEN` = key của bạn |
 
 ---

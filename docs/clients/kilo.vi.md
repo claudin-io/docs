@@ -1,10 +1,10 @@
 # Kilo Code
 
-[Kilo Code](https://kilo.ai) sử dụng khối nhà cung cấp tương thích OpenAI. ID mô hình là `claudinio/claudinio` (nhà cung cấp/mô hình).
+[Kilo Code](https://kilo.ai) sử dụng một khối provider tương thích với OpenAI. Model id là `claudinio/claudinio` (provider/model).
 
-## Thiết lập nhanh (script)
+## Cài đặt nhanh (script)
 
-Đầu tiên [xuất khóa của bạn](../getting-started/set-your-key.md) để `$CLAUDINIO_API_KEY` được thiết lập. Điều này ghi `~/.config/kilo/kilo.jsonc`, sao lưu bất kỳ tệp hiện có nào:
+Đầu tiên [xuất key của bạn](../getting-started/set-your-key.md) để `$CLAUDINIO_API_KEY` được thiết lập. Thao tác này ghi `~/.config/kilo/kilo.jsonc`, sao lưu mọi tệp hiện có:
 
 ```bash
 kilo_config_install() {
@@ -79,7 +79,7 @@ Sau đó chạy `kilo`.
 }
 ```
 
-## Thay thế bằng biến môi trường
+## Phương án thay thế bằng biến môi trường
 
 Kilo cũng đọc các biến môi trường OpenAI tiêu chuẩn:
 
@@ -92,4 +92,4 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 | --- | --- |
 | URL cơ sở | `https://api.claudin.io/v1` |
 | Mô hình | `claudinio/claudinio` |
-| Gọi công cụ | được bật |
+| Gọi công cụ | đã bật |

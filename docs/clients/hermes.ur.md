@@ -1,16 +1,18 @@
-[Hermes Agent](https://github.com/NousResearch/hermes-agent) Nous Research
-کا ایک اوپن سورس ٹرمینل ایجنٹ ہے۔ یہ OpenAI کے مطابق کسی بھی اینڈپوائنٹ کو
-سپورٹ کرتا ہے، جو اسے Claudin.io کے لیے بہترین بناتا ہے۔
+# ہرمیس ایجنٹ
+
+[ہرمیس ایجنٹ](https://github.com/NousResearch/hermes-agent) ایک اوپن سورس
+ٹرمینل AI ایجنٹ ہے جو Nous Research نے بنایا ہے۔ یہ کسی بھی OpenAI-مطابق
+اینڈپوائنٹ کو سپورٹ کرتا ہے، جو اسے Claudin.io کے لیے ایک بہترین فٹ بناتا ہے۔
 
 ## وزرڈ کے ساتھ فوری آغاز
 
-کسی بھی فعال Hermes سیشن سے باہر نکلیں (`Ctrl + C` یا `/quit`)، پھر چلائیں:
+کسی بھی فعال ہرمیس سیشن سے باہر نکلیں (`Ctrl + C` یا `/quit`)، پھر چلائیں:
 
 ```bash
 hermes model
 ```
 
-مینو سے **Custom endpoint** منتخب کریں اور پُر کریں:
+مینو سے **Custom endpoint** منتخب کریں اور درج کریں:
 
 | فیلڈ | قدر |
 | --- | --- |
@@ -18,7 +20,7 @@ hermes model
 | API Key | آپ کی `sk-...` کلید |
 | Model name | `claudinio` |
 
-Hermes ترتیبات خود بخود `~/.hermes/config.yaml` میں محفوظ کرتا ہے۔
+ہرمیس کنفیگریشن خود بخود `~/.hermes/config.yaml` میں محفوظ کر لیتا ہے۔
 
 آزمائیں:
 
@@ -26,7 +28,7 @@ Hermes ترتیبات خود بخود `~/.hermes/config.yaml` میں محفوظ 
 hermes
 ```
 
-## دستی ترتیب
+## دستی کنفیگریشن
 
 `~/.hermes/config.yaml` میں ترمیم کریں:
 
@@ -34,11 +36,11 @@ hermes
 model:
   provider: custom
   base_url: "https://api.claudin.io/v1"
-  api_key: "sk-aapki-key"
+  api_key: "sk-sua-chave-aqui"
   default: "claudinio"
 ```
 
-یا براہ راست اقدار مقرر کریں:
+یا براہ راست اقدار سیٹ کریں:
 
 ```bash
 hermes config set model.base_url "https://api.claudin.io/v1"
@@ -53,22 +55,14 @@ hermes config check
 hermes config show
 ```
 
-> **نوٹ:** پیچیدہ کاموں کے لیے یقینی بنائیں کہ آپ کا Hermes Agent
-> کم از کم 64K ٹوکن سیاق و سباق والا ماڈل استعمال کر رہا ہے (Claudinio اسے سپورٹ کرتا ہے)۔
+> **ٹپ:** مشکل کاموں کے لیے جو ٹول کالنگ استعمال کرتے ہیں، یقینی بنائیں کہ آپ کا
+> ہرمیس ایجنٹ کم از کم 64K ٹوکن سیاق کے ساتھ ایک ماڈل استعمال کر رہا ہے
+> (Claudinio اس کو سپورٹ کرتا ہے)۔
 
-## مسائل کا حل
+## خرابیوں کا ازالہ
 
 | مسئلہ | حل |
 | --- | --- |
-| تصدیقی غلطی | `hermes doctor` سے API کلید چیک کریں |
+| توثیقی غلطی | `hermes doctor` سے اپنی API کلید کو دوبارہ چیک کریں |
 | ماڈل نہیں ملا | یقینی بنائیں کہ ماڈل کا نام بالکل `claudinio` ہے |
-| کنکشن مسترد | تصدیق کریں کہ `https://api.claudin.io/v1` قابل رسائی ہے |
-
-## مفید کمانڈز
-
-| کمانڈ | وضاحت |
-| --- | --- |
-| `hermes config show` | موجودہ ترتیبات دیکھیں |
-| `hermes config edit` | انٹرایکٹو ترمیم |
-| `hermes doctor` | مسائل کی تشخیص |
-| `hermes model` | فراہم کنندہ تبدیل کریں |
+| کنکشن مسترد کیا گیا | تصدیق کریں کہ `https://api.claudin.io/v1` آپ کے نیٹ ورک سے قابل رسائی ہے |

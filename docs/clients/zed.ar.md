@@ -1,11 +1,12 @@
-# زيد
+# Zed
 
-[زيد](https://zed.dev) يدعم مزودات متوافقة مع **OpenAI** بشكل أصلي تحت
+[Zed](https://zed.dev) يدعم بشكل أصلي مزودات متوافقة مع OpenAI تحت
 `language_models.openai_compatible`.
 
-## الإعداد السريع (سكريبت)
+## الإعداد السريع (نص برمجي)
 
-أولاً [صدّر مفتاحك](../getting-started/set-your-key.md) حتى يتم تعيين `$CLAUDINIO_API_KEY`. هذا يكتب `~/.config/zed/settings.json` مع أخذ نسخة احتياطية من أي ملف موجود:
+أولاً، [قم بتصدير مفتاحك](../getting-started/set-your-key.md) حتى يتم تعيين
+`$CLAUDINIO_API_KEY`. هذا يكتب `~/.config/zed/settings.json`، ويأخذ نسخة احتياطية من أي ملف موجود مسبقاً:
 
 ```bash
 zed_settings_install() {
@@ -69,7 +70,7 @@ unset zed_settings_install
     }
     ```
 
-2. افتح لوحة الوكيل في زيد وألصق مفتاح **API** الخاص بك عندما يُطلب منك، أو قم بتعيينه كمفتاح **API** لمزود **Claudinio**.
+2. افتح لوحة الوكيل في Zed والصق مفتاح API الخاص بك عندما يُطلب منك، أو قم بتعيينه كمفتاح API لمزود **Claudinio**.
 3. اختر **Claudinio** في منتقي النماذج في لوحة الوكيل.
 
 | الإعداد | القيمة |

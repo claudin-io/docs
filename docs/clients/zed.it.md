@@ -1,10 +1,13 @@
 # Zed
 
-[Zed](https://zed.dev) supporta provider compatibili con OpenAI nativamente sotto `language_models.openai_compatible`.
+[Zed](https://zed.dev) supporta nativamente i provider compatibili con OpenAI sotto
+`language_models.openai_compatible`.
 
 ## Configurazione rapida (script)
 
-Prima [esporta la tua chiave](../getting-started/set-your-key.md) in modo che `$CLAUDINIO_API_KEY` sia impostata. Questo scrive `~/.config/zed/settings.json`, creando un backup di eventuali file esistenti:
+Prima [esporta la tua chiave](../getting-started/set-your-key.md) in modo che
+`$CLAUDINIO_API_KEY` sia impostata. Questo scrive `~/.config/zed/settings.json`, facendo
+il backup di eventuali file esistenti:
 
 ```bash
 zed_settings_install() {
@@ -68,8 +71,9 @@ unset zed_settings_install
     }
     ```
 
-2. Apri il pannello Agent di Zed e incolla la tua chiave API quando richiesto, oppure impostala come chiave API per il provider **Claudinio**.
-3. Seleziona **Claudinio** nel selettore del modello del pannello Agent.
+2. Apri il pannello Agent di Zed e incolla la tua chiave API quando richiesto, oppure impostala come
+   chiave API per il provider **Claudinio**.
+3. Seleziona **Claudinio** nel selettore del modello del pannello agent.
 
 | Impostazione | Valore |
 | --- | --- |

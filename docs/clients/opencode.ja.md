@@ -1,23 +1,23 @@
 # OpenCode
 
-[OpenCode](https://opencode.ai) は、OpenAI 互換のプロバイダとして Claudin.io に接続します。最も簡単な方法は、組み込みの認証フローを使用することです。
+[OpenCode](https://opencode.ai)は、OpenAI互換プロバイダーとしてClaudin.ioに接続します。最も簡単な方法は、組み込みの認証フローを使用することです。
 
 ## クイックセットアップ
 
-1. 以下のコマンドでログインします：
+1. ログインコマンドを実行します:
 
     ```bash
     opencode auth login
     ```
 
-2. プロバイダとして **Claudinio** を選択します。
-3. プロンプトが表示されたら、APIキーを貼り付けます。APIキーは[ダッシュボード](https://claudin.io/dashboard)からコピーできます。
+2. プロバイダーとして **Claudinio** を選択します。
+3. プロンプトが表示されたらAPIキーを貼り付けます — [ダッシュボード](https://claudin.io/dashboard)からコピーしてください。
 
-その後、OpenCode を起動し、**claudinio** モデルを選択します。
+その後、OpenCodeを起動し、**claudinio**モデルを選択します。
 
 ## 環境変数による代替方法
 
-すでに[キーをエクスポート](../getting-started/set-your-key.md)している場合、OpenCode は標準の OpenAI 変数を自動で認識します。何も貼り付ける必要はありません。
+すでに[キーをエクスポート](../getting-started/set-your-key.md)している場合、OpenCodeは標準のOpenAI変数を自動で認識します — 何も貼り付ける必要はありません:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
@@ -28,8 +28,8 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 | --- | --- |
 | ベースURL | `https://api.claudin.io/v1` |
 | モデル | `claudinio` |
-| プロバイダ | OpenAI互換 |
+| プロバイダー | OpenAI互換 |
 
 ---
 
-問題が発生しましたか？[よくあるエラー](../api-reference.md#errors)または[FAQ](../faq.md)を参照してください。
+問題がありますか？ [一般的なエラー](../api-reference.md#errors) または [FAQ](../faq.md) を参照してください。

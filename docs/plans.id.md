@@ -1,70 +1,66 @@
-# Paket dan batasan
+# Rencana & batasan
 
-Setiap paket Claudin.io adalah **penggunaan tak terbatas** dengan **batas perlindungan pengeluaran**.
+Setiap paket Claudin.io adalah **penggunaan tanpa batas** dengan **batas perlindungan pengeluaran**.
 Anda tidak ditagih per token atau per permintaan — Anda membayar harga bulanan tetap dan
-menggunakannya secara bebas. Batas ini hanya ada untuk menghentikan agen yang tak terkendali
-(misalnya, lingkaran alat tak terbatas) dari menghabiskan paket Anda.
+menggunakannya secara bebas. Batas tersebut hanya ada untuk menghentikan agen yang lepas kendali (misalnya, perulangan alat tak terbatas) agar tidak menguras paket Anda.
 
-## Paket-paket
+## Paket yang tersedia
 
 | Paket | Harga | Perlindungan pengeluaran | Terbaik untuk |
 | --- | --- | --- | --- |
-| **Pemula** | $5 / bln | $0.50 / jam | Mencoba — komitmen rendah |
-| **Ringan** | $9 / bln | $1.00 / jam | Proyek hobi, coding sesekali |
-| **Esensial** | $19 / bln atau $189 / thn | $2.00 / jam | Coding harian — pilihan populer |
-| **Pro** ★ | $39 / bln atau $389 / thn | $4.00 / jam | Alur kerja agen berat |
-| **Kuat** | $59 / bln atau $589 / thn | $6.00 / jam | Tim, banyak proyek |
-| **Ultra** | $99 / bln atau $989 / thn | $10.00 / jam | Kekuatan maksimal, tim & produksi |
+| **Starter** | $5 / bln | $0,50 / jam | Mencoba — komitmen rendah |
+| **Lite** | $9 / bln | $1,00 / jam | Proyek hobi, coding sesekali |
+| **Essential** | $19 / bln atau $189 / thn | $2,00 / jam | Kualitas untuk penggunaan sehari-hari |
+| **Pro** ★ | $39 / bln atau $389 / thn | $4,00 / jam | Alur kerja agentic berat |
+| **Power** | $59 / bln atau $589 / thn | $6,00 / jam | Tim, banyak proyek |
+| **Ultra** | $99 / bln atau $989 / thn | $10,00 / jam | Kekuatan maksimal, tim & produksi |
 
 !!! tip "Kebanyakan orang tidak pernah mencapai batas"
-    Batas per jam cukup besar untuk pekerjaan interaktif normal. Anda biasanya hanya
-    menyentuhnya jika agen masuk ke lingkaran ketat — persis saat Anda *ingin* rem.
+    Batas per jam cukup longgar untuk pekerjaan interaktif normal. Anda biasanya hanya
+    mendekati batas jika agen masuk ke dalam perulangan ketat — yang justru saat Anda
+    *ingin* rem.
 
-## claudinio vs Claudius
+## Model mana yang harus Anda pilih? Claudinio vs Claudius
 
-|                      | claudinio 🏆         | claudius ★           |
-| -------------------- | -------------------- | -------------------- |
-| **Starter**          | ✅                   |                      |
-| **Lite**             | ✅                   |                      |
-| **Essential**        | ✅                   | ✅                   |
-| **Pro**              | ✅                   | ✅                   |
-| **Power**            | ✅                   | ✅                   |
-| **Ultra**            | ✅                   | ✅                   |
+Kami menawarkan dua model utama untuk agen coding Anda:
 
-> **Nilai terbaik untuk uang Anda.**
+| Model | Backend | Kasus penggunaan | Direkomendasikan untuk |
+| --- | --- | --- | --- |
+| **claudinio** 🏆 | Cepat, seimbang, hemat biaya | Coding sehari-hari, proyek hobi, kode umum | **Semua paket** (Starter hingga Ultra) |
+| **claudius** ★ | Premium, penalaran mendalam | Tugas kompleks, penalaran mendalam, alur kerja agentic berat | Essential+ (Pro, Power, Ultra) |
 
-### Untuk Starter / Lite: gunakan claudinio
+### Bicara terus terang
 
-Jika Anda menggunakan Starter atau Lite, claudinio adalah model yang akan Anda gunakan. Dan jujur? Anda tidak perlu melihat ke belakang. claudinio mampu bersaing dengan model-model frontier sementara harganya hanya sebagian kecil — menjadikannya sempurna untuk coding sehari-hari, belajar, dan proyek hobi.
+Jika Anda di **Starter** ($5) atau **Lite** ($9) — **gunakan `claudinio` dan jangan berpikir dua kali.** 🎯
 
-### Untuk Essential ke atas: dunia adalah milik Anda
+Inilah kenyataannya: `claudinio` memberikan kualitas yang sebanding dengan Claude Sonnet untuk coding sehari-hari dengan **sebagian kecil dari biaya internal**. Pada paket Lite, Anda bisa mendapatkan **ratusan permintaan per jam** dengan `claudinio` — sementara `claudius` akan menghabiskan anggaran per jam Anda jauh lebih cepat.
 
-Essential ke atas memberi Anda akses ke claudinio dan claudius. Gunakan claudinio untuk tugas sehari-hari dan simpan claudius untuk saat Anda membutuhkan percikan ekstra — arsitektur kompleks, penalaran mendalam, atau sesi debugging yang sulit.
+| Metrik | claudinio | claudius |
+| --- | --- | --- |
+| Dampak pada anggaran per jam | Rendah — bertahan lebih lama | Tinggi — habis lebih cepat |
+| Kasus penggunaan | Coding harian, proyek pribadi | Penalaran berat, agen kompleks |
 
-### Tapi ingat, aturan emasnya
+**Aturan emas:** Konfigurasikan agen Anda (Claude Code, Cursor, Continue, dll.) dengan `claudinio` sebagai model default. Hanya beralih ke `claudius` saat Anda benar-benar membutuhkan lebih banyak daya penalaran — dan jika paket Anda mengizinkannya (Essential+). Untuk proyek hobi, `claudinio` **adalah semua yang Anda butuhkan** dan kemungkinan **lebih dari yang Anda harapkan**.
 
-Terlepas dari paket Anda, kami merekomendasikan menjadikan claudinio sebagai model default Anda. Ini adalah model unggulan kami, dan kami percaya padanya. Anda selalu dapat beralih ke claudius ketika tugas membutuhkannya.
+> 💡 Tips: Kedua model bekerja dengan semua agen coding utama. Cukup atur `model=claudinio` atau `model=claudius` di konfigurasi agen Anda. `claudinio` juga secara otomatis menyelesaikan alias seperti `claude-sonnet-4`, `gpt-4o`, `o3-mini` dan puluhan lainnya — tidak perlu mengubah konfigurasi agen Anda.
 
-### Alias Model
+## Cara kerja perlindungan pengeluaran
 
-Semua paket mendukung alias model untuk model populer seperti: `claude-sonnet-4`, `gpt-4o`, `gemini-2.5-pro`, `llama-4`, `deepseek-v4`. Lihat [API Reference](/api-reference/) kami untuk daftar lengkap.
+Setiap paket menentukan **jendela** anggaran — periode bergulir dan pengeluaran maksimum
+di dalamnya:
 
-## Bagaimana cara kerja perlindungan pengeluaran
+- **Starter**, **Lite**, **Essential**, **Pro**, **Power**, dan **Ultra** menggunakan jendela **1 jam**.
 
-Setiap paket mendefinisikan **jendela** anggaran — periode bergulir dan pengeluaran maksimum di dalamnya:
-
-- **Pemula**, **Ringan**, **Esensial**, **Pro**, **Kuat**, dan **Ultra** menggunakan jendela **1 jam**.
-
-Di dalam jendela, penggunaan Anda mengakumulasi biaya internal kecil. Ketika biaya
-internal itu mencapai batas jendela, permintaan berhenti sampai jendela direset.
+Dalam jendela tersebut, penggunaan Anda mengakumulasi biaya internal yang sangat kecil. Ketika
+biaya internal itu mencapai batas jendela, permintaan berhenti hingga jendela direset.
 
 Hanya panggilan model Anda melalui proxy. Setiap permintaan menambah total berjalan
-jendela saat ini berdasarkan token yang digunakan. Ketika jendela direset,
-totalnya juga direset.
+jendela saat ini berdasarkan token yang digunakan. Saat jendela direset,
+totalnya juga ikut direset.
 
-Jika Anda mencapai batas dan mendapatkan error anggaran, Anda memiliki dua opsi:
+Jika Anda mencapai batas dan mendapatkan kesalahan anggaran, Anda memiliki dua opsi:
 
-1. Tunggu jendela direset (ditunjukkan di dasbor Anda).
-2. Upgrade ke paket yang lebih tinggi untuk batas yang lebih besar.
+1. Tunggu hingga jendela direset (ditampilkan di dasbor Anda).
+2. Tingkatkan ke paket yang lebih tinggi untuk batas yang lebih besar.
 
-Lihat [Error terkait paket](api-reference.md#errors) untuk melihat seperti apa error anggaran.
+Lihat [Kesalahan terkait rencana](api-reference.md#errors) untuk seperti apa tampilan kesalahan anggaran.

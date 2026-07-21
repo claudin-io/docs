@@ -1,10 +1,13 @@
 # Zed
 
-O [Zed](https://zed.dev) suporta provedores compatíveis com OpenAI nativamente em `language_models.openai_compatible`.
+O [Zed](https://zed.dev) suporta provedores compatíveis com OpenAI nativamente em
+`language_models.openai_compatible`.
 
 ## Configuração rápida (script)
 
-Primeiro [exporte sua chave](../getting-started/set-your-key.md) para que `$CLAUDINIO_API_KEY` esteja definida. Isso escreve em `~/.config/zed/settings.json`, fazendo backup de qualquer arquivo existente:
+Primeiro, [exporte sua chave](../getting-started/set-your-key.md) para que
+`$CLAUDINIO_API_KEY` esteja definida. Isso escreve o arquivo `~/.config/zed/settings.json`, fazendo
+backup de qualquer arquivo existente:
 
 ```bash
 zed_settings_install() {
@@ -47,7 +50,7 @@ unset zed_settings_install
 
 ## Configuração manual
 
-1. Adicione o provedor em `~/.config/zed/settings.json`:
+1. Adicione o provedor ao arquivo `~/.config/zed/settings.json`:
 
     ```json
     {
@@ -68,11 +71,12 @@ unset zed_settings_install
     }
     ```
 
-2. Abra o painel Agent do Zed e cole sua chave da API quando solicitado, ou defina-a como a chave da API para o provedor **Claudinio**.
-3. Selecione **Claudinio** no seletor de modelos do painel Agent.
+2. Abra o painel do Agent do Zed e cole sua chave de API quando solicitado, ou defina-a como
+   a chave de API para o provedor **Claudinio**.
+3. Selecione **Claudinio** no seletor de modelo do painel do agent.
 
 | Configuração | Valor |
 | --- | --- |
-| API URL | `https://api.claudin.io/v1` |
+| URL da API | `https://api.claudin.io/v1` |
 | Modelo | `claudinio` |
 | Máximo de tokens | `256000` |

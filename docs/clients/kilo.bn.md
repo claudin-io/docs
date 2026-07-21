@@ -1,10 +1,10 @@
-# Kilo Code
+# কিলো কোড
 
-[Kilo Code](https://kilo.ai) একটি OpenAI-সামঞ্জস্যপূর্ণ প্রদানকারী ব্লক ব্যবহার করে। মডেল আইডি হল `claudinio/claudinio` (প্রদানকারী/মডেল)।
+[কিলো কোড](https://kilo.ai) একটি OpenAI-সামঞ্জস্যপূর্ণ প্রদানকারী ব্লক ব্যবহার করে। মডেল আইডি হল `claudinio/claudinio` (প্রদানকারী/মডেল)।
 
 ## দ্রুত সেটআপ (স্ক্রিপ্ট)
 
-প্রথমে [আপনার কী এক্সপোর্ট করুন](../getting-started/set-your-key.md) যাতে `$CLAUDINIO_API_KEY` সেট থাকে। এটি `~/.config/kilo/kilo.jsonc` লেখে, বিদ্যমান কোনো ফাইল ব্যাকআপ করে:
+প্রথমে [আপনার কী এক্সপোর্ট করুন](../getting-started/set-your-key.md) যাতে `$CLAUDINIO_API_KEY` সেট থাকে। এটি `~/.config/kilo/kilo.jsonc` লিখবে, যেকোনো বিদ্যমান ফাইল ব্যাকআপ করে:
 
 ```bash
 kilo_config_install() {
@@ -79,9 +79,9 @@ unset kilo_config_install
 }
 ```
 
-## এনভায়রনমেন্ট-ভেরিয়েবল বিকল্প
+## এনভায়রনমেন্ট-ভেরিয়েবল বিকল্প
 
-Kilo স্ট্যান্ডার্ড OpenAI এনভায়রনমেন্ট ভেরিয়েবলও পড়ে:
+কিলো স্ট্যান্ডার্ড OpenAI এনভায়রনমেন্ট ভেরিয়েবলগুলিও পড়ে:
 
 ```bash
 export OPENAI_BASE_URL=https://api.claudin.io/v1
@@ -92,4 +92,4 @@ export OPENAI_API_KEY=$CLAUDINIO_API_KEY
 | --- | --- |
 | বেস URL | `https://api.claudin.io/v1` |
 | মডেল | `claudinio/claudinio` |
-| টুল কল | সক্রিয় |
+| টুল কল | সক্রিয় |

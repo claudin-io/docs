@@ -1,8 +1,10 @@
-[Hermes Agent](https://github.com/NousResearch/hermes-agent) é um agente de
-terminal open-source da Nous Research. Suporta qualquer endpoint compatível com
-OpenAI, sendo perfeito para usar com o Claudin.io.
+# Hermes Agent
 
-## Método mais fácil: wizard interativo
+[Hermes Agent](https://github.com/NousResearch/hermes-agent) é um agente de IA
+para terminal de código aberto desenvolvido pela Nous Research. Suporta qualquer
+endpoint compatível com OpenAI, tornando-o ideal para o Claudin.io.
+
+## Introdução rápida com o assistente
 
 Saia de qualquer sessão ativa do Hermes (`Ctrl + C` ou `/quit`) e execute:
 
@@ -10,17 +12,17 @@ Saia de qualquer sessão ativa do Hermes (`Ctrl + C` ou `/quit`) e execute:
 hermes model
 ```
 
-No menu, selecione **Custom endpoint** e informe:
+Selecione **Custom endpoint** no menu e preencha:
 
 | Campo | Valor |
 | --- | --- |
-| Base URL | `https://api.claudin.io/v1` |
-| API Key | a sua chave `sk-...` |
-| Model name | `claudinio` |
+| URL base | `https://api.claudin.io/v1` |
+| Chave da API | a sua chave `sk-...` |
+| Nome do modelo | `claudinio` |
 
 O Hermes guarda a configuração automaticamente em `~/.hermes/config.yaml`.
 
-Teste:
+Experimente:
 
 ```bash
 hermes
@@ -28,17 +30,17 @@ hermes
 
 ## Configuração manual
 
-Edite `~/.hermes/config.yaml`:
+Edite o ficheiro `~/.hermes/config.yaml`:
 
 ```yaml
 model:
   provider: custom
   base_url: "https://api.claudin.io/v1"
-  api_key: "sk-a-sua-chave"
+  api_key: "sk-sua-chave-aqui"
   default: "claudinio"
 ```
 
-Ou configure diretamente:
+Ou defina valores diretamente:
 
 ```bash
 hermes config set model.base_url "https://api.claudin.io/v1"
@@ -53,22 +55,13 @@ hermes config check
 hermes config show
 ```
 
-> **Dica:** Para tarefas complexas com tool calling, certifique-se de usar um
-> modelo com pelo menos 64K tokens de contexto (o Claudinio suporta).
+> **Dica:** Para tarefas complexas com chamadas de ferramentas, certifique-se de que o seu Hermes Agent
+> está a usar um modelo com pelo menos 64K tokens de contexto (o Claudinio suporta isto).
 
-## Comandos úteis
-
-| Comando | Descrição |
-| --- | --- |
-| `hermes config show` | Ver configuração atual |
-| `hermes config edit` | Editar interativamente |
-| `hermes doctor` | Diagnosticar problemas |
-| `hermes model` | Alternar provedores |
-
-## Problemas comuns
+## Resolução de problemas
 
 | Problema | Solução |
 | --- | --- |
-| Erro de autenticação | Verifique a chave com `hermes doctor` |
-| Modelo não encontrado | Confirme que o nome é exatamente `claudinio` |
-| Conexão recusada | Verifique se `https://api.claudin.io/v1` está acessível |
+| Erro de autenticação | Verifique novamente a sua chave de API com `hermes doctor` |
+| Modelo não encontrado | Confirme que o nome do modelo é exatamente `claudinio` |
+| Conexão recusada | Verifique se `https://api.claudin.io/v1` está acessível a partir da sua rede |
