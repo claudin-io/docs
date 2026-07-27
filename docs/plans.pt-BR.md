@@ -28,7 +28,7 @@ Oferecemos dois modelos principais para seu agente de codificação:
 | Modelo | Backend | Caso de uso | Recomendado para |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Rápido, equilibrado, econômico | Codificação diária, projetos de hobby, código em geral | **Todos os planos** (Starter a Ultra) |
-| **claudius** ★ | Premium, raciocínio profundo | Tarefas complexas, raciocínio profundo, fluxos de trabalho pesados com agentes | Essential+ (Pro, Power, Ultra) |
+| **claudius** ★ | Premium, raciocínio profundo | Tarefas complexas, raciocínio profundo, fluxos de trabalho pesados com agentes | **Todos os planos** (Starter a Ultra) |
 
 ### Conversa franca
 
@@ -38,10 +38,10 @@ A realidade é: `claudinio` entrega qualidade comparável ao Claude Sonnet para 
 
 | Métrica | claudinio | claudius |
 | --- | --- | --- |
-| Impacto no orçamento horário | Baixo — rende muito mais | Alto — consome mais rápido |
+| Impacto no orçamento horário | Baixo — rende muito mais | Alto — 6x por requisição |
 | Caso de uso | Codificação diária, projetos pessoais | Raciocínio pesado, agentes complexos |
 
-**Regra de ouro:** Configure seu agente (Claude Code, Cursor, Continue, etc.) com `claudinio` como modelo padrão. Só mude para `claudius` quando você precisar explicitamente de mais poder de raciocínio — e se seu plano permitir (Essential+). Para projetos de hobby, `claudinio` é **tudo que você precisa** e provavelmente **mais do que você espera**.
+**Regra de ouro:** Configure seu agente (Claude Code, Cursor, Continue, etc.) com `claudinio` como modelo padrão. Só mude para `claudius` quando você precisar explicitamente de mais poder de raciocínio. Para projetos de hobby, `claudinio` é **tudo que você precisa** e provavelmente **mais do que você espera**.
 
 > 💡 Dica: Ambos os modelos funcionam com todos os principais agentes de codificação. Basta definir `model=claudinio` ou `model=claudius` na configuração do seu agente. `claudinio` também resolve automaticamente aliases como `claude-sonnet-4`, `gpt-4o`, `o3-mini` e dezenas de outros — sem necessidade de alterar a configuração do seu agente.
 

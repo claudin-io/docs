@@ -25,7 +25,7 @@ Ofrecemos dos modelos principales para tu agente de codificación:
 | Modelo | Backend | Caso de uso | Recomendado para |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Rápido, equilibrado, rentable | Codificación diaria, proyectos de hobby, código general | **Todos los planes** (Starter a Ultra) |
-| **claudius** ★ | Premium, razonamiento profundo | Tareas complejas, razonamiento profundo, flujos de trabajo agentivos intensivos | Essential+ (Pro, Power, Ultra) |
+| **claudius** ★ | Premium, razonamiento profundo | Tareas complejas, razonamiento profundo, flujos de trabajo agentivos intensivos | **Todos los planes** (Starter a Ultra) |
 
 ### Sin rodeos
 
@@ -35,10 +35,10 @@ Esta es la realidad: `claudinio` ofrece una calidad comparable a Claude Sonnet p
 
 | Métrica | claudinio | claudius |
 | --- | --- | --- |
-| Impacto en el presupuesto por hora | Bajo — se estira mucho más | Alto — quema más rápido |
+| Impacto en el presupuesto por hora | Bajo — se estira mucho más | Alto — 6x por solicitud |
 | Caso de uso | Codificación diaria, proyectos personales | Razonamiento intensivo, agentes complejos |
 
-**Regla de oro:** Configura tu agente (Claude Code, Cursor, Continue, etc.) con `claudinio` como modelo predeterminado. Solo cambia a `claudius` cuando necesites explícitamente más poder de razonamiento — y si tu plan lo permite (Essential+). Para proyectos de hobby, `claudinio` es **todo lo que necesitas** y probablemente **más de lo que esperas**.
+**Regla de oro:** Configura tu agente (Claude Code, Cursor, Continue, etc.) con `claudinio` como modelo predeterminado. Solo cambia a `claudius` cuando necesites explícitamente más poder de razonamiento. Para proyectos de hobby, `claudinio` es **todo lo que necesitas** y probablemente **más de lo que esperas**.
 
 > 💡 Consejo: Ambos modelos funcionan con todos los agentes de codificación principales. Solo establece `model=claudinio` o `model=claudius` en la configuración de tu agente. `claudinio` también resuelve automáticamente alias como `claude-sonnet-4`, `gpt-4o`, `o3-mini` y docenas más — no es necesario cambiar la configuración de tu agente.
 

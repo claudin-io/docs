@@ -26,7 +26,7 @@ Chúng tôi cung cấp hai mô hình chính cho coding agent của bạn:
 | Mô hình | Backend | Trường hợp sử dụng | Khuyến nghị cho |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Nhanh, cân bằng, tiết kiệm | Code hàng ngày, dự án cá nhân, code tổng quát | **Tất cả gói dịch vụ** (Starter đến Ultra) |
-| **claudius** ★ | Cao cấp, suy luận sâu | Tác vụ phức tạp, suy luận sâu, quy trình agent chuyên sâu | Essential+ (Pro, Power, Ultra) |
+| **claudius** ★ | Cao cấp, suy luận sâu | Tác vụ phức tạp, suy luận sâu, quy trình agent chuyên sâu | **Tất cả gói dịch vụ** (Starter đến Ultra) |
 
 ### Nói thẳng
 
@@ -36,10 +36,10 @@ Sự thật là: `claudinio` mang lại chất lượng tương đương Claude 
 
 | Chỉ số | claudinio | claudius |
 | --- | --- | --- |
-| Tác động đến ngân sách theo giờ | Thấp — kéo dài hơn nhiều | Cao — đốt nhanh hơn |
+| Tác động đến ngân sách theo giờ | Thấp — kéo dài hơn nhiều | Cao — 6x mỗi yêu cầu |
 | Trường hợp sử dụng | Code hàng ngày, dự án cá nhân | Suy luận nặng, agent phức tạp |
 
-**Nguyên tắc vàng:** Cấu hình agent của bạn (Claude Code, Cursor, Continue, v.v.) với `claudinio` làm mô hình mặc định. Chỉ chuyển sang `claudius` khi bạn thực sự cần thêm sức mạnh suy luận — và nếu gói dịch vụ của bạn cho phép (Essential+). Đối với các dự án cá nhân, `claudinio` là **tất cả những gì bạn cần** và có lẽ **còn hơn cả bạn mong đợi**.
+**Nguyên tắc vàng:** Cấu hình agent của bạn (Claude Code, Cursor, Continue, v.v.) với `claudinio` làm mô hình mặc định. Chỉ chuyển sang `claudius` khi bạn thực sự cần thêm sức mạnh suy luận. Đối với các dự án cá nhân, `claudinio` là **tất cả những gì bạn cần** và có lẽ **còn hơn cả bạn mong đợi**.
 
 > 💡 Mẹo: Cả hai mô hình đều hoạt động với tất cả các coding agent chính. Chỉ cần đặt `model=claudinio` hoặc `model=claudius` trong cấu hình agent của bạn. `claudinio` cũng tự động phân giải các bí danh như `claude-sonnet-4`, `gpt-4o`, `o3-mini` và hàng chục mô hình khác — không cần thay đổi cấu hình agent của bạn.
 

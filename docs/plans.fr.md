@@ -27,7 +27,7 @@ Nous proposons deux modèles principaux pour votre agent de codage :
 | Modèle | Backend | Cas d'utilisation | Recommandé pour |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Rapide, équilibré, économique | Codage quotidien, projets personnels, code général | **Tous les plans** (Starter à Ultra) |
-| **claudius** ★ | Premium, raisonnement approfondi | Tâches complexes, raisonnement approfondi, flux agentiques intensifs | Essential+ (Pro, Power, Ultra) |
+| **claudius** ★ | Premium, raisonnement approfondi | Tâches complexes, raisonnement approfondi, flux agentiques intensifs | **Tous les plans** (Starter à Ultra) |
 
 ### Parlons franchement
 
@@ -37,10 +37,10 @@ Voici la réalité : `claudinio` offre une qualité comparable à Claude Sonnet 
 
 | Métrique | claudinio | claudius |
 | --- | --- | --- |
-| Impact sur le budget horaire | Faible — va beaucoup plus loin | Élevé — brûle plus vite |
+| Impact sur le budget horaire | Faible — va beaucoup plus loin | Élevé — 6x par requête |
 | Cas d'utilisation | Codage quotidien, projets personnels | Raisonnement intensif, agents complexes |
 
-**Règle d'or :** Configurez votre agent (Claude Code, Cursor, Continue, etc.) avec `claudinio` comme modèle par défaut. Passez à `claudius` uniquement lorsque vous avez explicitement besoin de plus de puissance de raisonnement — et si votre plan le permet (Essential+). Pour les projets personnels, `claudinio` est **tout ce dont vous avez besoin** et probablement **plus que ce que vous attendez**.
+**Règle d'or :** Configurez votre agent (Claude Code, Cursor, Continue, etc.) avec `claudinio` comme modèle par défaut. Passez à `claudius` uniquement lorsque vous avez explicitement besoin de plus de puissance de raisonnement. Pour les projets personnels, `claudinio` est **tout ce dont vous avez besoin** et probablement **plus que ce que vous attendez**.
 
 > 💡 Astuce : Les deux modèles fonctionnent avec tous les agents de codage majeurs. Il suffit de définir `model=claudinio` ou `model=claudius` dans la configuration de votre agent. `claudinio` résout également automatiquement les alias comme `claude-sonnet-4`, `gpt-4o`, `o3-mini` et des dizaines d'autres — pas besoin de modifier la configuration de votre agent.
 

@@ -27,7 +27,7 @@ Oferecemos dois modelos principais para o seu agente de programação:
 | Modelo | Backend | Caso de uso | Recomendado para |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Rápido, equilibrado, económico | Programação diária, projetos de hobby, código geral | **Todos os planos** (Starter a Ultra) |
-| **claudius** ★ | Premium, raciocínio profundo | Tarefas complexas, raciocínio profundo, fluxos de trabalho agentivos intensos | Essential+ (Pro, Power, Ultra) |
+| **claudius** ★ | Premium, raciocínio profundo | Tarefas complexas, raciocínio profundo, fluxos de trabalho agentivos intensos | **Todos os planos** (Starter a Ultra) |
 
 ### Conversa direta
 
@@ -37,10 +37,10 @@ A realidade: `claudinio` oferece qualidade comparável ao Claude Sonnet para pro
 
 | Métrica | claudinio | claudius |
 | --- | --- | --- |
-| Impacto no orçamento horário | Baixo — rende muito mais | Alto — consome mais rápido |
+| Impacto no orçamento horário | Baixo — rende muito mais | Alto — 6x por pedido |
 | Caso de uso | Programação diária, projetos pessoais | Raciocínio intenso, agentes complexos |
 
-**Regra de ouro:** Configure o seu agente (Claude Code, Cursor, Continue, etc.) com `claudinio` como modelo predefinido. Mude para `claudius` apenas quando precisar explicitamente de mais capacidade de raciocínio — e se o seu plano o permitir (Essential+). Para projetos de hobby, `claudinio` é **tudo o que precisa** e provavelmente **mais do que espera**.
+**Regra de ouro:** Configure o seu agente (Claude Code, Cursor, Continue, etc.) com `claudinio` como modelo predefinido. Mude para `claudius` apenas quando precisar explicitamente de mais capacidade de raciocínio. Para projetos de hobby, `claudinio` é **tudo o que precisa** e provavelmente **mais do que espera**.
 
 > 💡 Dica: Ambos os modelos funcionam com todos os principais agentes de programação. Basta definir `model=claudinio` ou `model=claudius` na configuração do seu agente. `claudinio` também resolve automaticamente aliases como `claude-sonnet-4`, `gpt-4o`, `o3-mini` e dezenas de outros — não precisa de alterar a configuração do seu agente.
 

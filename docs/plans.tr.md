@@ -28,7 +28,7 @@ Kodlama ajanınız için iki ana model sunuyoruz:
 | Model | Arka uç | Kullanım alanı | Önerilen |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Hızlı, dengeli, uygun maliyetli | Günlük kodlama, hobi projeleri, genel kod | **Tüm planlar** (Starter'dan Ultra'ya) |
-| **claudius** ★ | Premium, derin muhakeme | Karmaşık görevler, derin muhakeme, yoğun ajan iş akışları | Essential+ (Pro, Power, Ultra) |
+| **claudius** ★ | Premium, derin muhakeme | Karmaşık görevler, derin muhakeme, yoğun ajan iş akışları | **Tüm planlar** (Starter'dan Ultra'ya) |
 
 ### Açık konuşma
 
@@ -38,10 +38,10 @@ Eğer **Starter** ($5) veya **Lite** ($9) planındaysanız — **`claudinio` kul
 
 | Metrik | claudinio | claudius |
 | --- | --- | --- |
-| Saatlik bütçeye etkisi | Düşük — çok daha uzun süre dayanır | Yüksek — daha hızlı tüketir |
+| Saatlik bütçeye etkisi | Düşük — çok daha uzun süre dayanır | Yüksek — istek başına 6x |
 | Kullanım alanı | Günlük kodlama, kişisel projeler | Yoğun muhakeme, karmaşık ajanlar |
 
-**Altın kural:** Ajanınızı (Claude Code, Cursor, Continue, vb.) varsayılan model olarak `claudinio` ile yapılandırın. Yalnızca daha fazla muhakeme gücüne açıkça ihtiyacınız olduğunda — ve planınız buna izin veriyorsa (Essential+) — `claudius`'a geçin. Hobi projeleri için `claudinio` **ihtiyacınız olan her şey** ve muhtemelen **beklediğinizden fazlasıdır**.
+**Altın kural:** Ajanınızı (Claude Code, Cursor, Continue, vb.) varsayılan model olarak `claudinio` ile yapılandırın. Yalnızca daha fazla muhakeme gücüne açıkça ihtiyacınız olduğunda  `claudius`'a geçin. Hobi projeleri için `claudinio` **ihtiyacınız olan her şey** ve muhtemelen **beklediğinizden fazlasıdır**.
 
 > 💡 İpucu: Her iki model de tüm büyük kodlama ajanlarıyla çalışır. Ajan yapılandırmanızda `model=claudinio` veya `model=claudius` ayarını yapmanız yeterlidir. `claudinio` ayrıca `claude-sonnet-4`, `gpt-4o`, `o3-mini` ve düzinelerce takma adı otomatik olarak çözümler — ajan yapılandırmanızı değiştirmenize gerek yoktur.
 

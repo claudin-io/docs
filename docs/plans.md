@@ -28,7 +28,7 @@ We offer two main models for your coding agent:
 | Model | Backend | Use case | Recommended for |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Fast, balanced, cost-effective | Everyday coding, hobby projects, general code | **All plans** (Starter to Ultra) |
-| **claudius** ★ | Premium, deep reasoning | Complex tasks, deep reasoning, heavy agentic workflows | Essential+ (Pro, Power, Ultra) |
+| **claudius** ★ | Premium, deep reasoning | Complex tasks, deep reasoning, heavy agentic workflows | **All plans** (Starter to Ultra) |
 
 ### Straight talk
 
@@ -38,10 +38,10 @@ Here's the reality: `claudinio` delivers quality comparable to Claude Sonnet for
 
 | Metric | claudinio | claudius |
 | --- | --- | --- |
-| Impact on hourly budget | Low — stretches much further | High — burns faster |
+| Impact on hourly budget | Low — stretches much further | High — 6x per request |
 | Use case | Daily coding, personal projects | Heavy reasoning, complex agents |
 
-**Golden rule:** Configure your agent (Claude Code, Cursor, Continue, etc.) with `claudinio` as the default model. Only switch to `claudius` when you explicitly need more reasoning power — and if your plan allows it (Essential+). For hobby projects, `claudinio` is **all you need** and probably **more than you expect**.
+**Golden rule:** Configure your agent (Claude Code, Cursor, Continue, etc.) with `claudinio` as the default model. Only switch to `claudius` when you explicitly need more reasoning power. For hobby projects, `claudinio` is **all you need** and probably **more than you expect**.
 
 > 💡 Tip: Both models work with all major coding agents. Just set `model=claudinio` or `model=claudius` in your agent config. `claudinio` also automatically resolves aliases like `claude-sonnet-4`, `gpt-4o`, `o3-mini` and dozens more — no need to change your agent's configuration.
 

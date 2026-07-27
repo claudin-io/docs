@@ -25,7 +25,7 @@ Wir bieten zwei Hauptmodelle für Ihren Coding-Agenten:
 | Modell | Backend | Anwendungsfall | Empfohlen für |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Schnell, ausgewogen, kosteneffizient | Alltägliches Programmieren, Hobbyprojekte, allgemeiner Code | **Alle Pläne** (Starter bis Ultra) |
-| **claudius** ★ | Premium, tiefgehendes Denken | Komplexe Aufgaben, tiefgehendes Denken, intensive agentenbasierte Arbeitsabläufe | Essential+ (Pro, Power, Ultra) |
+| **claudius** ★ | Premium, tiefgehendes Denken | Komplexe Aufgaben, tiefgehendes Denken, intensive agentenbasierte Arbeitsabläufe | **Alle Pläne** (Starter bis Ultra) |
 
 ### Klartext
 
@@ -35,10 +35,10 @@ Hier ist die Realität: `claudinio` liefert eine Qualität, die mit Claude Sonne
 
 | Metrik | claudinio | claudius |
 | --- | --- | --- |
-| Auswirkung auf das Stundenbudget | Niedrig – reicht viel weiter | Hoch – verbraucht schneller |
+| Auswirkung auf das Stundenbudget | Niedrig – reicht viel weiter | Hoch – 6x pro Anfrage |
 | Anwendungsfall | Tägliches Programmieren, persönliche Projekte | Intensives Denken, komplexe Agenten |
 
-**Goldene Regel:** Konfigurieren Sie Ihren Agenten (Claude Code, Cursor, Continue usw.) mit `claudinio` als Standardmodell. Wechseln Sie nur dann zu `claudius`, wenn Sie explizit mehr Denkfähigkeit benötigen – und wenn Ihr Plan es erlaubt (Essential+). Für Hobbyprojekte ist `claudinio` **alles, was Sie brauchen**, und wahrscheinlich **mehr, als Sie erwarten**.
+**Goldene Regel:** Konfigurieren Sie Ihren Agenten (Claude Code, Cursor, Continue usw.) mit `claudinio` als Standardmodell. Wechseln Sie nur dann zu `claudius`, wenn Sie explizit mehr Denkfähigkeit benötigen. Für Hobbyprojekte ist `claudinio` **alles, was Sie brauchen**, und wahrscheinlich **mehr, als Sie erwarten**.
 
 > 💡 Tipp: Beide Modelle funktionieren mit allen großen Coding-Agenten. Stellen Sie einfach `model=claudinio` oder `model=claudius` in Ihrer Agentenkonfiguration ein. `claudinio` löst auch automatisch Aliase wie `claude-sonnet-4`, `gpt-4o`, `o3-mini` und Dutzende weitere auf – Sie müssen die Konfiguration Ihres Agenten nicht ändern.
 

@@ -27,7 +27,7 @@ Kami menawarkan dua model utama untuk agen coding Anda:
 | Model | Backend | Kasus penggunaan | Direkomendasikan untuk |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Cepat, seimbang, hemat biaya | Coding sehari-hari, proyek hobi, kode umum | **Semua paket** (Starter hingga Ultra) |
-| **claudius** ★ | Premium, penalaran mendalam | Tugas kompleks, penalaran mendalam, alur kerja agentic berat | Essential+ (Pro, Power, Ultra) |
+| **claudius** ★ | Premium, penalaran mendalam | Tugas kompleks, penalaran mendalam, alur kerja agentic berat | **Semua paket** (Starter hingga Ultra) |
 
 ### Bicara terus terang
 
@@ -37,10 +37,10 @@ Inilah kenyataannya: `claudinio` memberikan kualitas yang sebanding dengan Claud
 
 | Metrik | claudinio | claudius |
 | --- | --- | --- |
-| Dampak pada anggaran per jam | Rendah — bertahan lebih lama | Tinggi — habis lebih cepat |
+| Dampak pada anggaran per jam | Rendah — bertahan lebih lama | Tinggi — 6x per permintaan |
 | Kasus penggunaan | Coding harian, proyek pribadi | Penalaran berat, agen kompleks |
 
-**Aturan emas:** Konfigurasikan agen Anda (Claude Code, Cursor, Continue, dll.) dengan `claudinio` sebagai model default. Hanya beralih ke `claudius` saat Anda benar-benar membutuhkan lebih banyak daya penalaran — dan jika paket Anda mengizinkannya (Essential+). Untuk proyek hobi, `claudinio` **adalah semua yang Anda butuhkan** dan kemungkinan **lebih dari yang Anda harapkan**.
+**Aturan emas:** Konfigurasikan agen Anda (Claude Code, Cursor, Continue, dll.) dengan `claudinio` sebagai model default. Hanya beralih ke `claudius` saat Anda benar-benar membutuhkan lebih banyak daya penalaran. Untuk proyek hobi, `claudinio` **adalah semua yang Anda butuhkan** dan kemungkinan **lebih dari yang Anda harapkan**.
 
 > 💡 Tips: Kedua model bekerja dengan semua agen coding utama. Cukup atur `model=claudinio` atau `model=claudius` di konfigurasi agen Anda. `claudinio` juga secara otomatis menyelesaikan alias seperti `claude-sonnet-4`, `gpt-4o`, `o3-mini` dan puluhan lainnya — tidak perlu mengubah konfigurasi agen Anda.
 

@@ -23,7 +23,7 @@ Offriamo due modelli principali per il tuo agente di coding:
 | Modello | Backend | Caso d'uso | Consigliato per |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Veloce, bilanciato, conveniente | Coding quotidiano, progetti hobby, codice generico | **Tutti i piani** (Starter a Ultra) |
-| **claudius** ★ | Premium, ragionamento profondo | Compiti complessi, ragionamento profondo, flussi di lavoro agentici pesanti | Essential+ (Pro, Power, Ultra) |
+| **claudius** ★ | Premium, ragionamento profondo | Compiti complessi, ragionamento profondo, flussi di lavoro agentici pesanti | **Tutti i piani** (Starter a Ultra) |
 
 ### Parlando chiaramente
 
@@ -33,10 +33,10 @@ Ecco la realtà: `claudinio` offre una qualità paragonabile a Claude Sonnet per
 
 | Metrica | claudinio | claudius |
 | --- | --- | --- |
-| Impatto sul budget orario | Basso — dura molto di più | Alto — consuma più velocemente |
+| Impatto sul budget orario | Basso — dura molto di più | Alto — 6x per richiesta |
 | Caso d'uso | Coding quotidiano, progetti personali | Ragionamento pesante, agenti complessi |
 
-**Regola d'oro:** Configura il tuo agente (Claude Code, Cursor, Continue, ecc.) con `claudinio` come modello predefinito. Passa a `claudius` solo quando hai esplicitamente bisogno di più potenza di ragionamento — e se il tuo piano lo consente (Essential+). Per progetti hobby, `claudinio` è **tutto ciò di cui hai bisogno** e probabilmente **più di quanto ti aspetti**.
+**Regola d'oro:** Configura il tuo agente (Claude Code, Cursor, Continue, ecc.) con `claudinio` come modello predefinito. Passa a `claudius` solo quando hai esplicitamente bisogno di più potenza di ragionamento. Per progetti hobby, `claudinio` è **tutto ciò di cui hai bisogno** e probabilmente **più di quanto ti aspetti**.
 
 > 💡 Suggerimento: Entrambi i modelli funzionano con tutti i principali agenti di coding. Basta impostare `model=claudinio` o `model=claudius` nella configurazione del tuo agente. `claudinio` risolve automaticamente anche alias come `claude-sonnet-4`, `gpt-4o`, `o3-mini` e decine di altri — non c'è bisogno di modificare la configurazione del tuo agente.
 

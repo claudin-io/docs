@@ -25,7 +25,7 @@
 | 模型 | 后端 | 用例 | 推荐对象 |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | 快速、均衡、经济高效 | 日常编码、爱好项目、通用代码 | **所有套餐**（Starter到Ultra） |
-| **claudius** ★ | 高级、深度推理 | 复杂任务、深度推理、重代理工作流 | Essential+（Pro、Power、Ultra） |
+| **claudius** ★ | 高级、深度推理 | 复杂任务、深度推理、重代理工作流 | **所有套餐**（Starter到Ultra） |
 
 ### 坦率地说
 
@@ -35,10 +35,10 @@
 
 | 指标 | claudinio | claudius |
 | --- | --- | --- |
-| 对每小时预算的影响 | 低——能支持更长时间 | 高——消耗更快 |
+| 对每小时预算的影响 | 低——能支持更长时间 | 高——每次请求6x |
 | 用例 | 日常编码、个人项目 | 深度推理、复杂代理 |
 
-**黄金法则：** 将你的代理（Claude Code、Cursor、Continue等）配置为默认使用`claudinio`模型。只有当你明确需要更多推理能力时才切换到`claudius`——并且如果你的套餐允许（Essential+）。对于爱好项目，`claudinio`就是**你所需的一切**，而且很可能**超出你的预期**。
+**黄金法则：** 将你的代理（Claude Code、Cursor、Continue等）配置为默认使用`claudinio`模型。只有当你明确需要更多推理能力时才切换到`claudius`。对于爱好项目，`claudinio`就是**你所需的一切**，而且很可能**超出你的预期**。
 
 > 💡 提示：两种模型都适用于所有主流编码代理。只需在你的代理配置中设置`model=claudinio`或`model=claudius`。`claudinio`还会自动解析诸如`claude-sonnet-4`、`gpt-4o`、`o3-mini`等数十个别名——无需更改你的代理配置。
 
