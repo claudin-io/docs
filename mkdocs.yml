@@ -116,6 +116,7 @@ plugins:
             Cursor: Cursor
             Any OpenAI client: Qualquer cliente OpenAI
             Plans & limits: Planos e limites
+            Referrals: Indicações
             API reference: Referência da API
             FAQ: FAQ
 
@@ -139,6 +140,7 @@ plugins:
             Cursor: Cursor
             Any OpenAI client: Qualquer cliente OpenAI
             Plans & limits: Planos e limites
+            Referrals: Indicações
             API reference: Referência da API
             FAQ: FAQ
 
@@ -162,6 +164,7 @@ plugins:
             Cursor: Cursor
             Any OpenAI client: Cualquier cliente de OpenAI
             Plans & limits: Planes y límites
+            Referrals: Recomendaciones
             API reference: Referencia de API
             FAQ: Preguntas frecuentes
 
@@ -185,6 +188,7 @@ plugins:
             Cursor: Cursor
             Any OpenAI client: Tout client OpenAI
             Plans & limits: Plans et limites
+            Referrals: Parrainage
             API reference: Référence API
             FAQ: FAQ
 
@@ -208,6 +212,7 @@ plugins:
             Cursor: Cursor
             Any OpenAI client: Jeder OpenAI-Client
             Plans & limits: Pläne & Limits
+            Referrals: Empfehlungen
             API reference: API-Referenz
             FAQ: FAQ
 
@@ -231,6 +236,7 @@ plugins:
             Cursor: Cursor
             Any OpenAI client: Qualsiasi client OpenAI
             Plans & limits: Piani e limiti
+            Referrals: Inviti
             API reference: Riferimento API
             FAQ: FAQ
 
@@ -254,6 +260,7 @@ plugins:
             Cursor: Cursor
             Any OpenAI client: Любой клиент OpenAI
             Plans & limits: Тарифы и лимиты
+            Referrals: Рефералы
             API reference: Справочник API
             FAQ: Часто задаваемые вопросы
 
@@ -277,6 +284,7 @@ plugins:
             Cursor: Cursor
             Any OpenAI client: Herhangi bir OpenAI istemcisi
             Plans & limits: Planlar ve limitler
+            Referrals: Davetler
             API reference: API referansı
             FAQ: SSS
 
@@ -300,6 +308,7 @@ plugins:
             Cursor: Cursor
             Any OpenAI client: Any OpenAI client
             Plans & limits: الخطط والحدود
+            Referrals: الإحالات
             API reference: مرجع API
             FAQ: الأسئلة الشائعة
 
@@ -323,6 +332,7 @@ plugins:
             Cursor: Cursor
             Any OpenAI client: Any OpenAI client
             Plans & limits: योजनाएं और सीमाएं
+            Referrals: रेफ़रल
             API reference: API संदर्भ
             FAQ: सामान्य प्रश्न
 
@@ -346,6 +356,7 @@ plugins:
             Cursor: Cursor
             Any OpenAI client: Any OpenAI client
             Plans & limits: পরিকল্পনা ও সীমা
+            Referrals: রেফারেল
             API reference: API রেফারেন্স
             FAQ: FAQ
 
@@ -369,6 +380,7 @@ plugins:
             Cursor: Cursor
             Any OpenAI client: کوئی بھی OpenAI کلائنٹ
             Plans & limits: منصوبے اور حدود
+            Referrals: ریفرلز
             API reference: API حوالہ
             FAQ: عمومی سوالات
 
@@ -392,6 +404,7 @@ plugins:
             Cursor: Cursor
             Any OpenAI client: 任何OpenAI客户端
             Plans & limits: 套餐与限制
+            Referrals: 推荐
             API reference: API参考
             FAQ: 常见问题
 
@@ -415,6 +428,7 @@ plugins:
             Cursor: カーソル
             Any OpenAI client: 任意のOpenAIクライアント
             Plans & limits: プランと制限
+            Referrals: 紹介
             API reference: APIリファレンス
             FAQ: FAQ
 
@@ -438,6 +452,7 @@ plugins:
             Cursor: Cursor
             Any OpenAI client: Any OpenAI client
             Plans & limits: 요금제 및 제한
+            Referrals: 추천
             API reference: API 참조
             FAQ: FAQ
 
@@ -461,6 +476,7 @@ plugins:
             Cursor: Cursor
             Any OpenAI client: Bất kỳ ứng dụng OpenAI nào
             Plans & limits: Gói & giới hạn
+            Referrals: Giới thiệu
             API reference: Tài liệu tham khảo API
             FAQ: Câu hỏi thường gặp
 
@@ -484,6 +500,7 @@ plugins:
             Cursor: Cursor
             Any OpenAI client: Klien OpenAI apa pun
             Plans & limits: Paket & batasan
+            Referrals: Referral
             API reference: Referensi API
             FAQ: FAQ
 
@@ -513,5 +530,6 @@ nav:
       - Hermes Agent: clients/hermes.md
       - Any OpenAI client: clients/openai-compatible.md
   - Plans & limits: plans.md
+  - Referrals: referrals.md
   - API reference: api-reference.md
   - FAQ: faq.md
