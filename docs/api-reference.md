@@ -116,7 +116,8 @@ Errors follow the OpenAI error shape:
 | --- | --- | --- |
 | `401` | Invalid or missing API key | Check the key and the auth header |
 | `403` | Endpoint not allowed | Use one of the supported `/v1/*` paths |
-| `429` | Budget cap reached or rate-limited | Wait for the window reset or [upgrade](plans.md) |
+| `402` | No active subscription | [Subscribe](https://claudin.io/dashboard) — retrying will not help |
+| `429` | Budget cap reached or rate-limited | Wait for the window reset (see the `Retry-After` header) or [upgrade](plans.md) |
 | `400` | Malformed request | Check your JSON / parameters |
 | `5xx` | Upstream/provider hiccup | Retry with backoff |
 
@@ -126,9 +127,11 @@ Errors follow the OpenAI error shape:
 
 ### Hitting the budget cap
 
-When you exhaust the current window's spend protection, requests return a
-budget error (typically `429`). Your dashboard shows the exact reset time and
-remaining budget. See [Plans & limits](plans.md) for how the windows work.
+When you exhaust the current window's spend protection, requests return
+`429` with a `Retry-After` header giving the seconds until the window resets.
+Your dashboard shows the exact reset time and remaining budget. Back off on
+that header rather than retrying immediately. See [Plans & limits](plans.md)
+for how the windows work.
 
 ## Rate limiting
 
