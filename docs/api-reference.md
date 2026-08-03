@@ -62,17 +62,25 @@ curl https://api.claudin.io/v1/chat/completions \
 
 Standard OpenAI parameters are supported: `messages`, `temperature`, `top_p`,
 `max_tokens`, `stream`, `stop`, `tools` / `tool_choice` (function calling),
-`response_format`, and so on.
+`response_format`, and so on. Two have limits worth knowing before you send
+them: [`max_tokens`](#max_tokens-and-reasoning) is clamped to a floor and a
+ceiling, and [`n`](#multiple-completions-n) must be `1`.
 
-### `max_tokens` and reasoning
+### `max_tokens` and reasoning {#max_tokens-and-reasoning}
 
 Claudinio models reason before they answer, and **reasoning tokens count against
 `max_tokens`** — the same budget covers the internal chain-of-thought and the
 visible reply. A small `max_tokens` can therefore be spent almost entirely on
 reasoning, leaving the answer truncated mid-sentence.
 
-To prevent that, values below **4000** are automatically raised to 4000. Larger
-values are passed through untouched, and omitting the parameter is always fine.
+To prevent that, values below **4000** are automatically raised to 4000. At the
+other end, values above **393216** are lowered to 393216 — the maximum the
+models accept — because a larger number is rejected outright rather than
+treated as "as much as you like". Anything between the two is passed through
+untouched, and omitting the parameter is always fine.
+
+`max_tokens` is a ceiling, not a reservation: you are billed for the tokens
+actually generated, so a generous value costs nothing extra.
 
 If you parse structured output (JSON, XML, a strict format), check
 `finish_reason` before parsing — `"length"` means the response hit the token
@@ -85,6 +93,21 @@ if choice.finish_reason == "length":
     ...  # truncated — retry with a larger max_tokens
 data = json.loads(choice.message.content)
 ```
+
+### Multiple completions (`n`) {#multiple-completions-n}
+
+Only **`n = 1`** is supported. Sending `n` greater than 1 returns `400` with
+`"code": "unsupported_parameter"`; omitting the parameter is always safe.
+
+Claudinio models reason before they answer, and the reasoning pass produces a
+single line of thought — there is no cheap way to branch it into several
+independent candidates, so the upstreams don't offer one. If you want more than
+one candidate, send the request more than once (a higher `temperature` gives
+you variety), and note that each one is billed separately.
+
+We reject `n > 1` rather than quietly returning a single choice: a client that
+asked for four and receives one usually fails later, inside its own code, with
+no error from us to explain why.
 
 ### Streaming
 
@@ -118,7 +141,7 @@ Errors follow the OpenAI error shape:
 | `403` | Endpoint not allowed | Use one of the supported `/v1/*` paths |
 | `402` | No active subscription | [Subscribe](https://claudin.io/dashboard) — retrying will not help |
 | `429` | Budget cap reached or rate-limited | Wait for the window reset (see the `Retry-After` header) or [upgrade](plans.md) |
-| `400` | Malformed request | Check your JSON / parameters |
+| `400` | Malformed request | Check your JSON / parameters — see [`max_tokens`](#max_tokens-and-reasoning) and [`n`](#multiple-completions-n) |
 | `5xx` | Upstream/provider hiccup | Retry with backoff |
 
 !!! info "Provider details are hidden by design"
