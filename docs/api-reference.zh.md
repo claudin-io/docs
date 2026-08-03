@@ -1,6 +1,6 @@
 # API 参考
 
-Claudin.io 是一个 **OpenAI 兼容** 的 API。如果你用过 OpenAI API，这里的一切都很熟悉——只需指向 Claudin.io 基础 URL 并使用 `claudinio` 模型。
+Claudin.io 是一个 **OpenAI 兼容**的 API。如果你用过 OpenAI API，这里的一切都会很熟悉——只需指向 Claudin.io 的基础 URL 并使用 `claudinio` 模型。
 
 ## 基础 URL
 
@@ -10,9 +10,9 @@ https://api.claudin.io
 
 OpenAI 风格的路由位于 `/v1` 下。
 
-## 身份认证
+## 身份验证
 
-在每个请求中发送你的 API 密钥，可以使用以下任一请求头：
+在每个请求中发送你的 API key，可使用以下任一请求头：
 
 ```http
 Authorization: Bearer YOUR_API_KEY
@@ -26,18 +26,18 @@ x-api-key: YOUR_API_KEY
 
 | 模型 ID | 上下文窗口 |
 | --- | --- |
-| `claudinio` | 256K 个令牌 |
+| `claudinio` | 256K token |
 
-在所有地方使用 `claudinio`。（有些客户端需要 `provider/model` 格式——对于这些客户端，请使用 `claudinio/claudinio`。）
+在所有地方都使用 `claudinio`。（有些客户端期望 `provider/model` 形式——对于这些客户端，请使用 `claudinio/claudinio`。）
 
 ## 端点
 
-| 方法 & 路径 | 描述 |
+| 方法与路径 | 说明 |
 | --- | --- |
-| `POST /v1/chat/completions` | 聊天补全 — 主要端点 |
+| `POST /v1/chat/completions` | 聊天补全——主要端点 |
 | `POST /v1/completions` | 旧版文本补全 |
 | `POST /v1/messages` | Anthropic Messages 格式 |
-| `POST /v1/responses` | 响应 API (Codex) |
+| `POST /v1/responses` | Responses API（Codex） |
 | `POST /v1/embeddings` | 文本嵌入 |
 | `GET /v1/models` | 列出可用模型 |
 
@@ -57,15 +57,17 @@ curl https://api.claudin.io/v1/chat/completions \
   }'
 ```
 
-支持标准的 OpenAI 参数：`messages`、`temperature`、`top_p`、`max_tokens`、`stream`、`stop`、`tools` / `tool_choice`（函数调用）、`response_format` 等。
+支持标准的 OpenAI 参数：`messages`、`temperature`、`top_p`、`max_tokens`、`stream`、`stop`、`tools` / `tool_choice`（函数调用）、`response_format` 等等。其中有两个参数在发送前值得了解其限制：[`max_tokens`](#max_tokens-and-reasoning) 被限制在最低值和最高值之间，而 [`n`](#multiple-completions-n) 必须为 `1`。
 
-### `max_tokens` 与推理
+### `max_tokens` 与推理 {#max_tokens-and-reasoning}
 
-Claudinio 模型在回答前会进行推理，并且**推理令牌会计入 `max_tokens`** ——同一个预算覆盖了内部推理链和可见回复。因此，较小的 `max_tokens` 可能会几乎全部用于推理，导致答案在句子中间被截断。
+Claudinio 模型在回答之前会先进行推理，**推理 token 会计入 `max_tokens`**——同一个预算同时覆盖内部的思维链和可见的回复。因此，较小的 `max_tokens` 可能会几乎全部消耗在推理上，导致回答在句子中间被截断。
 
-为防止这种情况，低于 **4000** 的值会自动提升到 4000。较大的值会原样传递，省略该参数也没问题。
+为防止这种情况，低于 **4000** 的值会自动提升到 4000。在另一端，高于 **393216** 的值会被降低到 393216——这是模型接受的最大值——因为更大的数字会被直接拒绝，而不会被当作“想要多少都行”。介于两者之间的任何值都会原样传递，不传该参数也始终没问题。
 
-如果你要解析结构化输出（JSON、XML、严格格式），在解析前检查 `finish_reason`——`"length"` 表示响应达到了令牌限制并且不完整，因此解析失败是预期的，而不是模型格式错误：
+`max_tokens` 是上限，而不是预留：你只需为实际生成的 token 付费，因此设置一个宽松的值不会产生额外费用。
+
+如果你要解析结构化输出（JSON、XML 或严格格式），请在解析前检查 `finish_reason`——`"length"` 表示响应已达到 token 上限而不完整，因此解析失败是预期行为，而不是模型格式错误的问题：
 
 ```python
 choice = response.choices[0]
@@ -74,41 +76,50 @@ if choice.finish_reason == "length":
 data = json.loads(choice.message.content)
 ```
 
-### 流式传输
+### 多次补全（`n`） {#multiple-completions-n}
 
-设置 `"stream": true` 以接收 OpenAI 流式格式的 Server-Sent Events（由 `data: [DONE]` 终止的 `data: {...}` 块）。
+仅支持 **`n = 1`**。发送大于 1 的 `n` 会返回 `400`，并带有 `"code": "unsupported_parameter"`；省略该参数始终是安全的。
 
-### 工具/函数调用
+Claudinio 模型在回答之前会先进行推理，而推理过程只会产生一条思路——没有低成本的方式将其分支为多个独立的候选结果，因此上游也没有提供这样的能力。如果你需要多个候选结果，请多次发送请求（较高的 `temperature` 可以带来多样性），并注意每个请求都是单独计费的。
 
-`claudinio` 支持工具调用。传递 `tools` 并从响应中读取 `tool_calls`，与 OpenAI API 完全相同。这就是它能在 Claude Code、Kilo 和 Cursor 等代理编辑器内起作用的原因。
+我们直接拒绝 `n > 1`，而不是静默地返回单个结果：一个请求了四个结果却只收到一个的客户端，通常会在自己的代码中稍后失败，而我们不会返回任何错误来解释原因。
+
+### 流式输出
+
+设置 `"stream": true` 即可接收 OpenAI 流式格式的服务器发送事件（以 `data: {...}` 分块传输，并以 `data: [DONE]` 结束）。
+
+### 工具 / 函数调用
+
+`claudinio` 支持工具调用。像使用 OpenAI API 一样，传入 `tools` 并从响应中读回 `tool_calls`。这正是它能在 Claude Code、Kilo 和 Cursor 等智能体编辑器中工作的原因。
 
 ### 多模态输入
 
-`claudinio` 是一个文本模型，但 Claudin.io **透明处理** 图像、音频和视频块：如果你发送它们，代理会在模型看到它们之前将其转换为文本描述/转录。你不需要做任何特殊的事情——发送标准的 OpenAI 内容块，它就能正常工作。
+`claudinio` 是一个文本模型，但 Claudin.io 会**透明地处理**图像、音频和视频内容块：如果你发送这些内容，代理会在模型看到它们之前将其转换为文本描述/转写。你不需要做任何特殊操作——发送标准的 OpenAI 内容块即可正常工作。
 
 ## 错误 {#errors}
 
-错误遵循 OpenAI 错误格式：
+错误遵循 OpenAI 的错误格式：
 
 ```json
 { "error": { "message": "…", "type": "…", "code": "…" } }
 ```
 
-| 状态码 | 含义 | 操作建议 |
+| 状态 | 含义 | 处理方法 |
 | --- | --- | --- |
-| `401` | API 密钥无效或缺失 | 检查密钥和认证请求头 |
-| `403` | 不允许的端点 | 使用支持的 `/v1/*` 路径之一 |
-| `429` | 达到预算上限或触发限流 | 等待窗口重置或[升级](plans.md) |
-| `400` | 请求格式错误 | 检查 JSON / 参数 |
-| `5xx` | 上游/提供商问题 | 退避重试 |
+| `401` | API key 无效或缺失 | 检查 key 和认证请求头 |
+| `403` | 不允许访问该端点 | 使用受支持的 `/v1/*` 路径之一 |
+| `402` | 没有有效的订阅 | [订阅](https://claudin.io/dashboard)——重试也无济于事 |
+| `429` | 已达到预算上限或受到限流 | 等待窗口重置（参见 `Retry-After` 请求头）或[升级](plans.md) |
+| `400` | 请求格式错误 | 检查你的 JSON / 参数——参见 [`max_tokens`](#max_tokens-and-reasoning) 和 [`n`](#multiple-completions-n) |
+| `5xx` | 上游/提供商临时故障 | 退避重试 |
 
-!!! info "提供商详情被设计隐藏"
-    错误信息经过清理，不会泄露底层模型提供商。你始终会看到 Claudin.io 品牌的、OpenAI 格式的错误。
+!!! info "提供商细节被有意隐藏"
+    错误消息已经过脱敏处理，不会泄露底层模型提供商。你始终会看到 Claudin.io 品牌、OpenAI 格式的错误。
 
 ### 达到预算上限
 
-当你的当前窗口消费保护耗尽时，请求会返回预算错误（通常为 `429`）。你的仪表板会显示确切的重置时间和剩余预算。参见[套餐与限制](plans.md)了解窗口的工作方式。
+当你用尽当前窗口的支出保护额度时，请求会返回 `429`，并带有 `Retry-After` 请求头，其中给出了距离窗口重置的秒数。你的仪表盘会显示精确的重置时间和剩余预算。请根据该请求头进行退避，而不是立即重试。窗口机制的工作原理请参阅[计划与限制](plans.md)。
 
 ## 速率限制
 
-Claudin.io 不会硬性阻止正常使用。滥用请求速率会被*减慢*（透明节流）而不会拒绝，因此良好的客户端永远不会受到惩罚。实际上，你不需要做任何事情——只需在遇到罕见的 `429` 时重试即可。
+Claudin.io 不会硬性阻止正常使用。滥用级别的请求速率会被*减缓*（一种透明的节流），而不是被拒绝，因此行为良好的客户端永远不会受到惩罚。实际上你不需要做任何事——只需在偶尔出现的 `429` 时重试即可。
