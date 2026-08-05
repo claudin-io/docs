@@ -13,6 +13,14 @@ O uso é ilimitado — não há contador de requisições ou medidor de tokens. 
 esgotar seu plano. No trabalho interativo normal, você raramente o atinge. Veja
 [Planos e limites](plans.md).
 
+## Posso usar para coisas que não sejam programação?
+
+A API é compatível com OpenAI, então tecnicamente qualquer requisição funciona.
+Mas o serviço é feito para **programação com IA**: roteamento, prompts e cache
+são ajustados para agentes de código. Atividades que não sejam de programação
+— bots de chat genéricos, automação sem código — podem ter roteamento especial
+e ser atendidas por um modelo ou nível diferente do tráfego de programação.
+
 ## Qual modelo eu uso?
 
 Sempre **`claudinio`** (ou `claudinio/claudinio` para clientes que esperam o

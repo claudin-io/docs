@@ -8,6 +8,15 @@ Ein API-Proxy für KI-Coding-Agenten. Sie zahlen ein flaches monatliches Abonnem
 
 Die Nutzung ist unbegrenzt – es gibt keinen Anforderungszähler oder Tokenzähler. Die einzige Grenze ist eine **Ausgabenschutzobergrenze** pro Zeitfenster, die einen außer Kontrolle geratenen Agenten daran hindert, Ihren Plan zu leeren. Bei normaler interaktiver Arbeit erreichen Sie sie selten. Siehe [Pläne und Grenzen](plans.md).
 
+## Kann ich es für Dinge außerhalb des Programmierens nutzen?
+
+Die API ist OpenAI-kompatibel, technisch funktioniert also jede Anfrage. Aber
+der Dienst ist für **KI-Programmierung** gebaut: Routing, Prompts und Caching
+sind auf Coding-Agents abgestimmt. Aktivitäten ohne Programmierbezug —
+allgemeine Chatbots, Nicht-Coding-Automatisierung — können ein spezielles
+Routing erhalten und von einem anderen Modell oder einer anderen Stufe bedient
+werden als Programmier-Traffic.
+
 ## Welches Modell verwende ich?
 
 Immer **`claudinio`** (oder `claudinio/claudinio` für Clients, die die `provider/model`-Form wünschen). Die Basis-URL ist `https://api.claudin.io`.

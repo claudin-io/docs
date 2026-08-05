@@ -13,6 +13,14 @@ là một **ngưỡng bảo vệ chi tiêu** trong mỗi khung thời gian nhằ
 làm cạn kiệt gói của bạn. Trong công việc tương tác thông thường, bạn hiếm khi chạm tới giới hạn này. Xem
 [Gói & giới hạn](plans.md).
 
+## Tôi có thể dùng nó cho việc ngoài lập trình không?
+
+API tương thích OpenAI nên về mặt kỹ thuật mọi yêu cầu đều chạy. Nhưng dịch vụ
+được xây dựng cho **lập trình với AI**: định tuyến, prompt và bộ nhớ đệm đều
+được tinh chỉnh cho các agent viết mã. Hoạt động không liên quan đến lập trình
+— chatbot đa mục đích, tự động hóa không phải viết mã — có thể chịu định tuyến
+đặc biệt và được phục vụ bởi mô hình hoặc bậc khác với lưu lượng lập trình.
+
 ## Tôi sử dụng model nào?
 
 Luôn luôn là **`claudinio`** (hoặc `claudinio/claudinio` cho các client muốn

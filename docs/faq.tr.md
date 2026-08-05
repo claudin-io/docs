@@ -8,6 +8,14 @@ AI kodlama ajanları için bir API proxy'si. Sabit bir aylık abonelik ödersini
 
 Kullanım sınırsızdır — istek sayacı veya token ölçer yoktur. Tek sınır, kontrolden çıkan bir ajanın planınızı tüketmesini önleyen zaman dilimi başına bir **harcama koruma limitidir**. Normal etkileşimli çalışmada nadiren bu limite ulaşırsınız. Bkz. [Planlar ve limitler](plans.md).
 
+## Kodlama dışındaki işler için kullanabilir miyim?
+
+API, OpenAI uyumludur; teknik olarak her istek çalışır. Ancak hizmet **yapay
+zekâ ile programlama** için üretilmiştir: yönlendirme, prompt'lar ve önbellek
+kodlama ajanlarına göre ayarlanmıştır. Programlamayla ilgili olmayan etkinlikler
+— genel sohbet botları, kodlama dışı otomasyon — özel yönlendirme alabilir ve
+kodlama trafiğinden farklı bir model veya katmanla sunulabilir.
+
 ## Hangi modeli kullanmalıyım?
 
 Her zaman **`claudinio`** (veya `provider/model` formunu isteyen istemciler için `claudinio/claudinio`). Temel URL `https://api.claudin.io` şeklindedir.

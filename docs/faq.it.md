@@ -13,6 +13,15 @@ L'utilizzo è illimitato — non c'è alcun contatore di richieste o misuratore 
 di prosciugare il tuo piano. Nel normale lavoro interattivo lo raggiungi raramente. Vedi
 [Piani e limiti](plans.md).
 
+## Posso usarlo per cose che non sono programmazione?
+
+L'API è compatibile con OpenAI, quindi tecnicamente qualsiasi richiesta
+funziona. Ma il servizio è costruito per la **programmazione con IA**:
+instradamento, prompt e cache sono tarati per gli agenti di codice. Le attività
+non legate alla programmazione — chatbot generici, automazione non di codice —
+possono ricevere un instradamento speciale ed essere servite da un modello o
+livello diverso dal traffico di programmazione.
+
 ## Che modello uso?
 
 Sempre **`claudinio`** (o `claudinio/claudinio` per i client che richiedono il formato

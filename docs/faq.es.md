@@ -8,6 +8,15 @@ Un proxy de API para agentes de codificación de IA. Pagas una suscripción mens
 
 El uso es ilimitado: no hay contador de solicitudes ni medidor de tokens. El único límite es un **límite de protección de gasto** por ventana de tiempo que evita que un agente descontrolado agote tu plan. En el trabajo interactivo normal rara vez lo alcanzas. Consulta [Planes y límites](plans.md).
 
+## ¿Puedo usarlo para cosas que no sean programación?
+
+La API es compatible con OpenAI, así que técnicamente cualquier solicitud
+funciona. Pero el servicio está hecho para **programación con IA**: el
+enrutamiento, los prompts y la caché están ajustados para agentes de código.
+La actividad no relacionada con la programación — bots de chat genéricos,
+automatización sin código — puede recibir un enrutamiento especial y ser
+atendida por un modelo o nivel distinto del tráfico de programación.
+
 ## ¿Qué modelo uso?
 
 Siempre **`claudinio`** (o `claudinio/claudinio` para clientes que quieran el formato `provider/model`). La URL base es `https://api.claudin.io`.

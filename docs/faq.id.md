@@ -8,6 +8,14 @@ Proksi API untuk agen coding AI. Anda membayar langganan bulanan tetap dan menda
 
 Penggunaan tidak terbatas — tidak ada penghitung permintaan atau meter token. Satu-satunya batasan adalah **batas perlindungan pengeluaran** per periode waktu yang menghentikan agen yang lepas kendali agar tidak menghabiskan paket Anda. Dalam pekerjaan interaktif normal, Anda jarang mencapainya. Lihat [Paket & batasan](plans.md).
 
+## Bisakah saya memakainya untuk hal di luar koding?
+
+API ini kompatibel dengan OpenAI, jadi secara teknis semua permintaan berjalan.
+Namun layanan ini dibangun untuk **pemrograman dengan AI**: perutean, prompt,
+dan cache disetel untuk agen koding. Aktivitas yang tidak terkait pemrograman —
+bot obrolan umum, otomasi non-koding — dapat menerima perutean khusus dan
+dilayani oleh model atau tingkatan yang berbeda dari lalu lintas koding.
+
 ## Model apa yang saya gunakan?
 
 Selalu **`claudinio`** (atau `claudinio/claudinio` untuk klien yang menginginkan format `provider/model`). URL dasarnya adalah `https://api.claudin.io`.

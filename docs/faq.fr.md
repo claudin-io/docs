@@ -13,6 +13,15 @@ est un **plafond de protection des dépenses** par fenêtre de temps qui empêch
 vider votre plan. En travail interactif normal, vous l'atteignez rarement. Voir
 [Plans et limites](plans.md).
 
+## Puis-je l'utiliser pour autre chose que la programmation ?
+
+L'API est compatible OpenAI, donc techniquement toute requête fonctionne. Mais
+le service est conçu pour la **programmation avec IA** : le routage, les
+prompts et le cache sont réglés pour les agents de code. Les activités sans
+rapport avec la programmation — bots de chat généralistes, automatisation hors
+code — peuvent faire l'objet d'un routage spécial et être servies par un modèle
+ou un niveau différent du trafic de programmation.
+
 ## Quel modèle utiliser ?
 
 Toujours **`claudinio`** (ou `claudinio/claudinio` pour les clients qui veulent

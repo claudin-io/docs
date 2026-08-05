@@ -13,6 +13,14 @@ is a **spend-protection cap** per time window that stops a runaway agent from
 draining your plan. In normal interactive work you rarely hit it. See
 [Plans & limits](plans.md).
 
+## Can I use it for things that aren't coding?
+
+The API is OpenAI-compatible, so any request technically works. But the
+service is built for **AI programming**: routing, prompts and caching are all
+tuned for coding agents. Activity that isn't programming-related — general
+chat bots, non-coding automation — may get special routing and be served by a
+different model or tier than coding traffic.
+
 ## What model do I use?
 
 Always **`claudinio`** (or `claudinio/claudinio` for clients that want
