@@ -9,11 +9,9 @@ planınızı tüketmesini önlemek için vardır.
 
 | Plan | Fiyat | Harcama koruması | En uygun |
 | --- | --- | --- | --- |
-| **Starter** | $5 / ay | $0.50 / saat | Deneme amaçlı — düşük taahhüt |
 | **Lite** | $9 / ay | $1.00 / saat | Hobi projeleri, ara sıra kodlama |
 | **Essential** | $19 / ay veya $189 / yıl | $2.00 / saat | Günlük kullanım için kaliteli |
 | **Pro** ★ | $39 / ay veya $389 / yıl | $4.00 / saat | Yoğun ajan iş akışları |
-| **Power** | $59 / ay veya $589 / yıl | $6.00 / saat | Ekipler, birden çok proje |
 | **Ultra** | $99 / ay veya $989 / yıl | $10.00 / saat | Maksimum güç, ekipler ve üretim |
 
 !!! tip "Çoğu kişi asla limite ulaşmaz"
@@ -27,12 +25,12 @@ Kodlama ajanınız için iki ana model sunuyoruz:
 
 | Model | Arka uç | Kullanım alanı | Önerilen |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Hızlı, dengeli, uygun maliyetli | Günlük kodlama, hobi projeleri, genel kod | **Tüm planlar** (Starter'dan Ultra'ya) |
-| **claudius** ★ | Premium, derin muhakeme | Karmaşık görevler, derin muhakeme, yoğun ajan iş akışları | **Tüm planlar** (Starter'dan Ultra'ya) |
+| **claudinio** 🏆 | Hızlı, dengeli, uygun maliyetli | Günlük kodlama, hobi projeleri, genel kod | **Tüm planlar** (Lite'dan Ultra'ya) |
+| **claudius** ★ | Premium, derin muhakeme | Karmaşık görevler, derin muhakeme, yoğun ajan iş akışları | **Tüm planlar** (Lite'dan Ultra'ya) |
 
 ### Açık konuşma
 
-Eğer **Starter** ($5) veya **Lite** ($9) planındaysanız — **`claudinio` kullanın ve arkanıza bakmayın.** 🎯
+Eğer **Lite** ($9) planındaysanız — **`claudinio` kullanın ve arkanıza bakmayın.** 🎯
 
 İşte gerçek: `claudinio`, günlük kodlama için Claude Sonnet'e benzer kaliteyi **iç maliyetin çok daha azıyla** sunar. Lite planında, `claudinio` ile **saatte yüzlerce istek** alabilirsiniz — oysa `claudius` saatlik bütçenizi çok daha hızlı tüketir.
 
@@ -49,7 +47,7 @@ Eğer **Starter** ($5) veya **Lite** ($9) planındaysanız — **`claudinio` kul
 
 Her plan bir bütçe **penceresi** tanımlar — kayan bir dönem ve bu dönem içindeki maksimum harcama:
 
-- **Starter**, **Lite**, **Essential**, **Pro**, **Power** ve **Ultra** **1 saatlik** bir pencere kullanır.
+- **Lite**, **Essential**, **Pro** ve **Ultra** **1 saatlik** bir pencere kullanır.
 
 Pencere içinde kullanımınız küçük bir iç maliyet biriktirir. Bu iç maliyet pencerenin limitine ulaştığında, pencere sıfırlanana kadar istekler duraklatılır.
 

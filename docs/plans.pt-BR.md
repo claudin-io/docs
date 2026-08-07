@@ -9,11 +9,9 @@ loop infinito de ferramentas, por exemplo) consuma seu plano.
 
 | Plano | Preço | Proteção de gastos | Ideal para |
 | --- | --- | --- | --- |
-| **Starter** | $5 / mês | $0,50 / hora | Experimentar — baixo compromisso |
 | **Lite** | $9 / mês | $1,00 / hora | Projetos de hobby, codificação ocasional |
 | **Essential** | $19 / mês ou $189 / ano | $2,00 / hora | Qualidade para uso diário |
 | **Pro** ★ | $39 / mês ou $389 / ano | $4,00 / hora | Fluxos de trabalho pesados com agentes |
-| **Power** | $59 / mês ou $589 / ano | $6,00 / hora | Equipes, múltiplos projetos |
 | **Ultra** | $99 / mês ou $989 / ano | $10,00 / hora | Máximo poder, equipes e produção |
 
 !!! tip "A maioria nunca atinge o limite"
@@ -27,12 +25,12 @@ Oferecemos dois modelos principais para seu agente de codificação:
 
 | Modelo | Backend | Caso de uso | Recomendado para |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Rápido, equilibrado, econômico | Codificação diária, projetos de hobby, código em geral | **Todos os planos** (Starter a Ultra) |
-| **claudius** ★ | Premium, raciocínio profundo | Tarefas complexas, raciocínio profundo, fluxos de trabalho pesados com agentes | **Todos os planos** (Starter a Ultra) |
+| **claudinio** 🏆 | Rápido, equilibrado, econômico | Codificação diária, projetos de hobby, código em geral | **Todos os planos** (Lite a Ultra) |
+| **claudius** ★ | Premium, raciocínio profundo | Tarefas complexas, raciocínio profundo, fluxos de trabalho pesados com agentes | **Todos os planos** (Lite a Ultra) |
 
 ### Conversa franca
 
-Se você está no **Starter** ($5) ou **Lite** ($9) — **use `claudinio` e não olhe para trás.** 🎯
+Se você está no **Lite** ($9) — **use `claudinio` e não olhe para trás.** 🎯
 
 A realidade é: `claudinio` entrega qualidade comparável ao Claude Sonnet para codificação diária a uma **fração do custo interno**. No plano Lite, você pode fazer **centenas de requisições por hora** com `claudinio` — enquanto `claudius` consumiria seu orçamento horário muito mais rápido.
 
@@ -49,7 +47,7 @@ A realidade é: `claudinio` entrega qualidade comparável ao Claude Sonnet para 
 
 Cada plano define uma **janela** de orçamento — um período contínuo e um gasto máximo dentro dela:
 
-- **Starter**, **Lite**, **Essential**, **Pro**, **Power** e **Ultra** usam uma janela de **1 hora**.
+- **Lite**, **Essential**, **Pro** e **Ultra** usam uma janela de **1 hora**.
 
 Dentro da janela, seu uso acumula um pequeno custo interno. Quando esse custo interno atinge o limite da janela, as requisições são pausadas até que a janela seja reiniciada.
 

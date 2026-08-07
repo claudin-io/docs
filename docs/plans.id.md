@@ -8,11 +8,9 @@ menggunakannya secara bebas. Batas tersebut hanya ada untuk menghentikan agen ya
 
 | Paket | Harga | Perlindungan pengeluaran | Terbaik untuk |
 | --- | --- | --- | --- |
-| **Starter** | $5 / bln | $0,50 / jam | Mencoba — komitmen rendah |
 | **Lite** | $9 / bln | $1,00 / jam | Proyek hobi, coding sesekali |
 | **Essential** | $19 / bln atau $189 / thn | $2,00 / jam | Kualitas untuk penggunaan sehari-hari |
 | **Pro** ★ | $39 / bln atau $389 / thn | $4,00 / jam | Alur kerja agentic berat |
-| **Power** | $59 / bln atau $589 / thn | $6,00 / jam | Tim, banyak proyek |
 | **Ultra** | $99 / bln atau $989 / thn | $10,00 / jam | Kekuatan maksimal, tim & produksi |
 
 !!! tip "Kebanyakan orang tidak pernah mencapai batas"
@@ -26,12 +24,12 @@ Kami menawarkan dua model utama untuk agen coding Anda:
 
 | Model | Backend | Kasus penggunaan | Direkomendasikan untuk |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Cepat, seimbang, hemat biaya | Coding sehari-hari, proyek hobi, kode umum | **Semua paket** (Starter hingga Ultra) |
-| **claudius** ★ | Premium, penalaran mendalam | Tugas kompleks, penalaran mendalam, alur kerja agentic berat | **Semua paket** (Starter hingga Ultra) |
+| **claudinio** 🏆 | Cepat, seimbang, hemat biaya | Coding sehari-hari, proyek hobi, kode umum | **Semua paket** (Lite hingga Ultra) |
+| **claudius** ★ | Premium, penalaran mendalam | Tugas kompleks, penalaran mendalam, alur kerja agentic berat | **Semua paket** (Lite hingga Ultra) |
 
 ### Bicara terus terang
 
-Jika Anda di **Starter** ($5) atau **Lite** ($9) — **gunakan `claudinio` dan jangan berpikir dua kali.** 🎯
+Jika Anda di **Lite** ($9) — **gunakan `claudinio` dan jangan berpikir dua kali.** 🎯
 
 Inilah kenyataannya: `claudinio` memberikan kualitas yang sebanding dengan Claude Sonnet untuk coding sehari-hari dengan **sebagian kecil dari biaya internal**. Pada paket Lite, Anda bisa mendapatkan **ratusan permintaan per jam** dengan `claudinio` — sementara `claudius` akan menghabiskan anggaran per jam Anda jauh lebih cepat.
 
@@ -49,7 +47,7 @@ Inilah kenyataannya: `claudinio` memberikan kualitas yang sebanding dengan Claud
 Setiap paket menentukan **jendela** anggaran — periode bergulir dan pengeluaran maksimum
 di dalamnya:
 
-- **Starter**, **Lite**, **Essential**, **Pro**, **Power**, dan **Ultra** menggunakan jendela **1 jam**.
+- **Lite**, **Essential**, **Pro**, dan **Ultra** menggunakan jendela **1 jam**.
 
 Dalam jendela tersebut, penggunaan Anda mengakumulasi biaya internal yang sangat kecil. Ketika
 biaya internal itu mencapai batas jendela, permintaan berhenti hingga jendela direset.

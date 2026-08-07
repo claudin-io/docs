@@ -9,11 +9,9 @@ loop, for example) from draining your plan.
 
 | Plan | Price | Spend protection | Best for |
 | --- | --- | --- | --- |
-| **Starter** | $5 / mo | $0.50 / hour | Trying out — low commitment |
 | **Lite** | $9 / mo | $1.00 / hour | Hobby projects, occasional coding |
 | **Essential** | $19 / mo or $189 / yr | $2.00 / hour | Quality for everyday use |
 | **Pro** ★ | $39 / mo or $389 / yr | $4.00 / hour | Heavy agentic workflows |
-| **Power** | $59 / mo or $589 / yr | $6.00 / hour | Teams, multiple projects |
 | **Ultra** | $99 / mo or $989 / yr | $10.00 / hour | Maximum power, teams & production |
 
 !!! tip "Most people never hit the cap"
@@ -27,12 +25,12 @@ We offer two main models for your coding agent:
 
 | Model | Backend | Use case | Recommended for |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Fast, balanced, cost-effective | Everyday coding, hobby projects, general code | **All plans** (Starter to Ultra) |
-| **claudius** ★ | Premium, deep reasoning | Complex tasks, deep reasoning, heavy agentic workflows | **All plans** (Starter to Ultra) |
+| **claudinio** 🏆 | Fast, balanced, cost-effective | Everyday coding, hobby projects, general code | **All plans** (Lite to Ultra) |
+| **claudius** ★ | Premium, deep reasoning | Complex tasks, deep reasoning, heavy agentic workflows | **All plans** (Lite to Ultra) |
 
 ### Straight talk
 
-If you're on **Starter** ($5) or **Lite** ($9) — **use `claudinio` and don't look back.** 🎯
+If you're on **Lite** ($9) — **use `claudinio` and don't look back.** 🎯
 
 Here's the reality: `claudinio` delivers quality comparable to Claude Sonnet for everyday coding at a **fraction of the internal cost**. On the Lite plan, you can get **hundreds of requests per hour** with `claudinio` — while `claudius` would burn through your hourly budget much faster.
 
@@ -50,7 +48,7 @@ Here's the reality: `claudinio` delivers quality comparable to Claude Sonnet for
 Each plan defines a budget **window** — a rolling period and a maximum spend
 inside it:
 
-- **Starter**, **Lite**, **Essential**, **Pro**, **Power**, and **Ultra** use a **1-hour** window.
+- **Lite**, **Essential**, **Pro**, and **Ultra** use a **1-hour** window.
 
 Within the window, your usage accumulates a tiny internal cost. When that
 internal cost reaches the window's cap, requests pause until the window resets.

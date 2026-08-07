@@ -8,11 +8,9 @@ El límite existe solo para evitar que un agente descontrolado (un bucle infinit
 
 | Plan | Precio | Protección de gasto | Ideal para |
 | --- | --- | --- | --- |
-| **Starter** | $5 / mo | $0.50 / hour | Prueba — bajo compromiso |
 | **Lite** | $9 / mo | $1.00 / hour | Proyectos de hobby, codificación ocasional |
 | **Essential** | $19 / mo or $189 / yr | $2.00 / hour | Calidad para uso diario |
 | **Pro** ★ | $39 / mo or $389 / yr | $4.00 / hour | Flujos de trabajo agentivos intensivos |
-| **Power** | $59 / mo or $589 / yr | $6.00 / hour | Equipos, múltiples proyectos |
 | **Ultra** | $99 / mo or $989 / yr | $10.00 / hour | Máxima potencia, equipos y producción |
 
 !!! tip "La mayoría de las personas nunca alcanzan el límite"
@@ -24,12 +22,12 @@ Ofrecemos dos modelos principales para tu agente de codificación:
 
 | Modelo | Backend | Caso de uso | Recomendado para |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Rápido, equilibrado, rentable | Codificación diaria, proyectos de hobby, código general | **Todos los planes** (Starter a Ultra) |
-| **claudius** ★ | Premium, razonamiento profundo | Tareas complejas, razonamiento profundo, flujos de trabajo agentivos intensivos | **Todos los planes** (Starter a Ultra) |
+| **claudinio** 🏆 | Rápido, equilibrado, rentable | Codificación diaria, proyectos de hobby, código general | **Todos los planes** (Lite a Ultra) |
+| **claudius** ★ | Premium, razonamiento profundo | Tareas complejas, razonamiento profundo, flujos de trabajo agentivos intensivos | **Todos los planes** (Lite a Ultra) |
 
 ### Sin rodeos
 
-Si estás en **Starter** ($5) o **Lite** ($9) — **usa `claudinio` y no mires atrás.** 🎯
+Si estás en **Lite** ($9) — **usa `claudinio` y no mires atrás.** 🎯
 
 Esta es la realidad: `claudinio` ofrece una calidad comparable a Claude Sonnet para la codificación diaria a una **fracción del costo interno**. En el plan Lite, puedes obtener **cientos de solicitudes por hora** con `claudinio` — mientras que `claudius` quemaría tu presupuesto por hora mucho más rápido.
 
@@ -46,7 +44,7 @@ Esta es la realidad: `claudinio` ofrece una calidad comparable a Claude Sonnet p
 
 Cada plan define una **ventana** de presupuesto — un período móvil y un gasto máximo dentro de ella:
 
-- **Starter**, **Lite**, **Essential**, **Pro**, **Power** y **Ultra** usan una ventana de **1 hora**.
+- **Lite**, **Essential**, **Pro** y **Ultra** usan una ventana de **1 hora**.
 
 Dentro de la ventana, tu uso acumula un pequeño costo interno. Cuando ese costo interno alcanza el límite de la ventana, las solicitudes se pausan hasta que la ventana se reinicia.
 

@@ -6,11 +6,9 @@ Ogni piano Claudin.io prevede **utilizzo illimitato** con un **tetto di protezio
 
 | Piano | Prezzo | Protezione spesa | Ideale per |
 | --- | --- | --- | --- |
-| **Starter** | $5 / mese | $0,50 / ora | Prova — impegno ridotto |
 | **Lite** | $9 / mese | $1,00 / ora | Progetti hobby, coding occasionale |
 | **Essential** | $19 / mese o $189 / anno | $2,00 / ora | Qualità per l'uso quotidiano |
 | **Pro** ★ | $39 / mese o $389 / anno | $4,00 / ora | Flussi di lavoro agentici pesanti |
-| **Power** | $59 / mese o $589 / anno | $6,00 / ora | Team, progetti multipli |
 | **Ultra** | $99 / mese o $989 / anno | $10,00 / ora | Massima potenza, team e produzione |
 
 !!! tip "La maggior parte delle persone non raggiunge mai il limite"
@@ -22,12 +20,12 @@ Offriamo due modelli principali per il tuo agente di coding:
 
 | Modello | Backend | Caso d'uso | Consigliato per |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Veloce, bilanciato, conveniente | Coding quotidiano, progetti hobby, codice generico | **Tutti i piani** (Starter a Ultra) |
-| **claudius** ★ | Premium, ragionamento profondo | Compiti complessi, ragionamento profondo, flussi di lavoro agentici pesanti | **Tutti i piani** (Starter a Ultra) |
+| **claudinio** 🏆 | Veloce, bilanciato, conveniente | Coding quotidiano, progetti hobby, codice generico | **Tutti i piani** (Lite a Ultra) |
+| **claudius** ★ | Premium, ragionamento profondo | Compiti complessi, ragionamento profondo, flussi di lavoro agentici pesanti | **Tutti i piani** (Lite a Ultra) |
 
 ### Parlando chiaramente
 
-Se sei su **Starter** ($5) o **Lite** ($9) — **usa `claudinio` e non guardare indietro.** 🎯
+Se sei su **Lite** ($9) — **usa `claudinio` e non guardare indietro.** 🎯
 
 Ecco la realtà: `claudinio` offre una qualità paragonabile a Claude Sonnet per il coding quotidiano a **una frazione del costo interno**. Con il piano Lite, puoi ottenere **centinaia di richieste all'ora** con `claudinio` — mentre `claudius` consumerebbe il tuo budget orario molto più velocemente.
 
@@ -44,7 +42,7 @@ Ecco la realtà: `claudinio` offre una qualità paragonabile a Claude Sonnet per
 
 Ogni piano definisce una **finestra** di budget — un periodo scorrevole e una spesa massima al suo interno:
 
-- **Starter**, **Lite**, **Essential**, **Pro**, **Power** e **Ultra** utilizzano una finestra di **1 ora**.
+- **Lite**, **Essential**, **Pro** e **Ultra** utilizzano una finestra di **1 ora**.
 
 All'interno della finestra, il tuo utilizzo accumula un piccolo costo interno. Quando quel costo interno raggiunge il limite della finestra, le richieste vengono messe in pausa finché la finestra non si resetta.
 

@@ -8,11 +8,9 @@ l'utilisez librement. Le plafond existe uniquement pour empêcher un agent incon
 
 | Plan | Prix | Protection des dépenses | Idéal pour |
 | --- | --- | --- | --- |
-| **Starter** | 5 $ / mois | 0,50 $ / heure | Essayer — engagement faible |
 | **Lite** | 9 $ / mois | 1,00 $ / heure | Projets personnels, codage occasionnel |
 | **Essential** | 19 $ / mois ou 189 $ / an | 2,00 $ / heure | Qualité pour un usage quotidien |
 | **Pro** ★ | 39 $ / mois ou 389 $ / an | 4,00 $ / heure | Flux de travail agentiques intensifs |
-| **Power** | 59 $ / mois ou 589 $ / an | 6,00 $ / heure | Équipes, projets multiples |
 | **Ultra** | 99 $ / mois ou 989 $ / an | 10,00 $ / heure | Puissance maximale, équipes et production |
 
 !!! tip "La plupart des gens n'atteignent jamais le plafond"
@@ -26,12 +24,12 @@ Nous proposons deux modèles principaux pour votre agent de codage :
 
 | Modèle | Backend | Cas d'utilisation | Recommandé pour |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Rapide, équilibré, économique | Codage quotidien, projets personnels, code général | **Tous les plans** (Starter à Ultra) |
-| **claudius** ★ | Premium, raisonnement approfondi | Tâches complexes, raisonnement approfondi, flux agentiques intensifs | **Tous les plans** (Starter à Ultra) |
+| **claudinio** 🏆 | Rapide, équilibré, économique | Codage quotidien, projets personnels, code général | **Tous les plans** (Lite à Ultra) |
+| **claudius** ★ | Premium, raisonnement approfondi | Tâches complexes, raisonnement approfondi, flux agentiques intensifs | **Tous les plans** (Lite à Ultra) |
 
 ### Parlons franchement
 
-Si vous êtes sur **Starter** (5 $) ou **Lite** (9 $) — **utilisez `claudinio` sans hésiter.** 🎯
+Si vous êtes sur **Lite** (9 $) — **utilisez `claudinio` sans hésiter.** 🎯
 
 Voici la réalité : `claudinio` offre une qualité comparable à Claude Sonnet pour le codage quotidien à une **fraction du coût interne**. Avec le plan Lite, vous pouvez obtenir **des centaines de requêtes par heure** avec `claudinio` — alors que `claudius` brûlerait votre budget horaire beaucoup plus rapidement.
 
@@ -49,7 +47,7 @@ Voici la réalité : `claudinio` offre une qualité comparable à Claude Sonnet 
 Chaque plan définit une **fenêtre** de budget — une période glissante et un montant maximum de dépenses
 à l'intérieur de celle-ci :
 
-- **Starter**, **Lite**, **Essential**, **Pro**, **Power** et **Ultra** utilisent une fenêtre de **1 heure**.
+- **Lite**, **Essential**, **Pro** et **Ultra** utilisent une fenêtre de **1 heure**.
 
 Dans cette fenêtre, votre utilisation accumule un petit coût interne. Lorsque
 ce coût interne atteint le plafond de la fenêtre, les requêtes sont mises en pause jusqu'à la réinitialisation de la fenêtre.

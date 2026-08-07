@@ -8,11 +8,9 @@ sử dụng thoải mái. Mức giới hạn chỉ tồn tại để ngăn một
 
 | Gói dịch vụ | Giá | Bảo vệ chi tiêu | Phù hợp nhất |
 | --- | --- | --- | --- |
-| **Starter** | $5 / tháng | $0,50 / giờ | Dùng thử — cam kết thấp |
 | **Lite** | $9 / tháng | $1,00 / giờ | Dự án cá nhân, thỉnh thoảng code |
 | **Essential** | $19 / tháng hoặc $189 / năm | $2,00 / giờ | Chất lượng cho sử dụng hàng ngày |
 | **Pro** ★ | $39 / tháng hoặc $389 / năm | $4,00 / giờ | Quy trình làm việc agent chuyên sâu |
-| **Power** | $59 / tháng hoặc $589 / năm | $6,00 / giờ | Nhóm, nhiều dự án |
 | **Ultra** | $99 / tháng hoặc $989 / năm | $10,00 / giờ | Sức mạnh tối đa, nhóm & sản xuất |
 
 !!! tip "Hầu hết mọi người không bao giờ chạm tới mức giới hạn"
@@ -25,12 +23,12 @@ Chúng tôi cung cấp hai mô hình chính cho coding agent của bạn:
 
 | Mô hình | Backend | Trường hợp sử dụng | Khuyến nghị cho |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Nhanh, cân bằng, tiết kiệm | Code hàng ngày, dự án cá nhân, code tổng quát | **Tất cả gói dịch vụ** (Starter đến Ultra) |
-| **claudius** ★ | Cao cấp, suy luận sâu | Tác vụ phức tạp, suy luận sâu, quy trình agent chuyên sâu | **Tất cả gói dịch vụ** (Starter đến Ultra) |
+| **claudinio** 🏆 | Nhanh, cân bằng, tiết kiệm | Code hàng ngày, dự án cá nhân, code tổng quát | **Tất cả gói dịch vụ** (Lite đến Ultra) |
+| **claudius** ★ | Cao cấp, suy luận sâu | Tác vụ phức tạp, suy luận sâu, quy trình agent chuyên sâu | **Tất cả gói dịch vụ** (Lite đến Ultra) |
 
 ### Nói thẳng
 
-Nếu bạn đang dùng **Starter** ($5) hoặc **Lite** ($9) — **hãy dùng `claudinio` và đừng ngoái lại nhìn.** 🎯
+Nếu bạn đang dùng **Lite** ($9) — **hãy dùng `claudinio` và đừng ngoái lại nhìn.** 🎯
 
 Sự thật là: `claudinio` mang lại chất lượng tương đương Claude Sonnet cho code hàng ngày với **một phần nhỏ chi phí nội bộ**. Với gói Lite, bạn có thể nhận được **hàng trăm yêu cầu mỗi giờ** với `claudinio` — trong khi `claudius` sẽ đốt ngân sách theo giờ của bạn nhanh hơn nhiều.
 
@@ -48,7 +46,7 @@ Sự thật là: `claudinio` mang lại chất lượng tương đương Claude 
 Mỗi gói dịch vụ xác định một **cửa sổ** ngân sách — một khoảng thời gian luân chuyển và mức chi tiêu tối đa
 trong đó:
 
-- **Starter**, **Lite**, **Essential**, **Pro**, **Power** và **Ultra** sử dụng cửa sổ **1 giờ**.
+- **Lite**, **Essential**, **Pro** và **Ultra** sử dụng cửa sổ **1 giờ**.
 
 Trong cửa sổ, mức sử dụng của bạn tích lũy một chi phí nội bộ nhỏ. Khi chi phí nội bộ đó đạt đến mức giới hạn của cửa sổ, các yêu cầu sẽ tạm dừng cho đến khi cửa sổ được đặt lại.
 

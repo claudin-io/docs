@@ -8,11 +8,9 @@ nutzen es frei. Die Grenze dient nur dazu, einen außer Kontrolle geratenen Agen
 
 | Plan | Preis | Ausgabenschutz | Ideal für |
 | --- | --- | --- | --- |
-| **Starter** | $5 / Monat | $0,50 / Stunde | Zum Ausprobieren – geringes Engagement |
 | **Lite** | $9 / Monat | $1,00 / Stunde | Hobbyprojekte, gelegentliches Programmieren |
 | **Essential** | $19 / Monat oder $189 / Jahr | $2,00 / Stunde | Qualität für den täglichen Gebrauch |
 | **Pro** ★ | $39 / Monat oder $389 / Jahr | $4,00 / Stunde | Intensive agentenbasierte Arbeitsabläufe |
-| **Power** | $59 / Monat oder $589 / Jahr | $6,00 / Stunde | Teams, mehrere Projekte |
 | **Ultra** | $99 / Monat oder $989 / Jahr | $10,00 / Stunde | Maximale Leistung, Teams & Produktion |
 
 !!! tip "Die meisten erreichen die Grenze nie"
@@ -24,12 +22,12 @@ Wir bieten zwei Hauptmodelle für Ihren Coding-Agenten:
 
 | Modell | Backend | Anwendungsfall | Empfohlen für |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Schnell, ausgewogen, kosteneffizient | Alltägliches Programmieren, Hobbyprojekte, allgemeiner Code | **Alle Pläne** (Starter bis Ultra) |
-| **claudius** ★ | Premium, tiefgehendes Denken | Komplexe Aufgaben, tiefgehendes Denken, intensive agentenbasierte Arbeitsabläufe | **Alle Pläne** (Starter bis Ultra) |
+| **claudinio** 🏆 | Schnell, ausgewogen, kosteneffizient | Alltägliches Programmieren, Hobbyprojekte, allgemeiner Code | **Alle Pläne** (Lite bis Ultra) |
+| **claudius** ★ | Premium, tiefgehendes Denken | Komplexe Aufgaben, tiefgehendes Denken, intensive agentenbasierte Arbeitsabläufe | **Alle Pläne** (Lite bis Ultra) |
 
 ### Klartext
 
-Wenn Sie den **Starter**-Plan ($5) oder den **Lite**-Plan ($9) haben – **verwenden Sie `claudinio` und schauen Sie nicht zurück.** 🎯
+Wenn Sie den **Lite**-Plan ($9) haben – **verwenden Sie `claudinio` und schauen Sie nicht zurück.** 🎯
 
 Hier ist die Realität: `claudinio` liefert eine Qualität, die mit Claude Sonnet für alltägliches Programmieren vergleichbar ist, zu einem **Bruchteil der internen Kosten**. Mit dem Lite-Plan können Sie mit `claudinio` **Hunderte von Anfragen pro Stunde** erhalten – während `claudius` Ihr Stundenbudget viel schneller aufbrauchen würde.
 
@@ -46,7 +44,7 @@ Hier ist die Realität: `claudinio` liefert eine Qualität, die mit Claude Sonne
 
 Jeder Plan definiert ein Budget-**Fenster** – einen gleitenden Zeitraum und eine maximale Ausgabe innerhalb dieses Fensters:
 
-- **Starter**, **Lite**, **Essential**, **Pro**, **Power** und **Ultra** verwenden ein **1-Stunden**-Fenster.
+- **Lite**, **Essential**, **Pro** und **Ultra** verwenden ein **1-Stunden**-Fenster.
 
 Innerhalb des Fensters sammelt Ihre Nutzung einen winzigen internen Kostenbetrag an. Wenn dieser interne Kostenbetrag die Obergrenze des Fensters erreicht, werden Anfragen angehalten, bis das Fenster zurückgesetzt wird.
 
