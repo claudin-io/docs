@@ -27,10 +27,26 @@ We offer two main models for your coding agent:
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Fast, balanced, cost-effective | Everyday coding, hobby projects, general code | **All plans** (Lite to Ultra) |
 | **claudius** ★ | Premium, deep reasoning | Complex tasks, deep reasoning, heavy agentic workflows | **All plans** (Lite to Ultra) |
+!!! warning "`claudius` costs about 6x more per request than `claudinio`"
+    Your hourly cap is measured **in dollars, not requests**, so the same work
+    on `claudius` uses roughly six times as much of it. On Essential ($2/hour)
+    that is about 35 premium requests before the hour is gone. If you run
+    agent-heavy workflows, keep `claudinio` as your agent's default and reach
+    for `claudius` only when you need the reasoning.
+
+    On **Lite** ($9) the cap is $1/hour — roughly twenty `claudius` requests
+    before the hour is gone. It is available, but it is not what that plan is
+    for.
 
 ### Straight talk
 
 If you're on **Lite** ($9) — **use `claudinio` and don't look back.** 🎯
+
+If you're on **Essential** ($19) — `claudius` is available, but treat it as a
+tool you reach for deliberately, not your default. The most effective setup we
+see is **plan with `claudius`, implement with `claudinio`**: the reasoning is
+where the premium model earns its cost, and the implementation loop is where
+the volume lives.
 
 Here's the reality: `claudinio` delivers quality comparable to Claude Sonnet for everyday coding at a **fraction of the internal cost**. On the Lite plan, you can get **hundreds of requests per hour** with `claudinio` — while `claudius` would burn through your hourly budget much faster.
 
@@ -40,6 +56,11 @@ Here's the reality: `claudinio` delivers quality comparable to Claude Sonnet for
 | Use case | Daily coding, personal projects | Heavy reasoning, complex agents |
 
 **Golden rule:** Configure your agent (Claude Code, Cursor, Continue, etc.) with `claudinio` as the default model. Only switch to `claudius` when you explicitly need more reasoning power. For hobby projects, `claudinio` is **all you need** and probably **more than you expect**.
+
+**If you go over your hourly cap and you hold credit**, we don't block you — the
+request is served and the excess comes out of your credit balance. The dashboard
+meter says so while it is happening, and we email you the first time it happens
+in a day. Nothing is taken silently.
 
 > 💡 Tip: Both models work with all major coding agents. Just set `model=claudinio` or `model=claudius` in your agent config. `claudinio` also automatically resolves aliases like `claude-sonnet-4`, `gpt-4o`, `o3-mini` and dozens more — no need to change your agent's configuration.
 

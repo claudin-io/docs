@@ -24,6 +24,8 @@ Wir bieten zwei Hauptmodelle für Ihren Coding-Agenten:
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Schnell, ausgewogen, kosteneffizient | Alltägliches Programmieren, Hobbyprojekte, allgemeiner Code | **Alle Pläne** (Lite bis Ultra) |
 | **claudius** ★ | Premium, tiefgehendes Denken | Komplexe Aufgaben, tiefgehendes Denken, intensive agentenbasierte Arbeitsabläufe | **Alle Pläne** (Lite bis Ultra) |
+!!! warning "`claudius` kostet pro Anfrage etwa 6-mal mehr als `claudinio`"
+    Ihr Stundenlimit wird **in Dollar gemessen, nicht in Anfragen** — dieselbe Arbeit auf `claudius` verbraucht also rund sechsmal so viel davon. Bei Essential (2 $/Stunde) sind das etwa 35 Premium-Anfragen, bis die Stunde vorbei ist. Wenn Sie agentenintensiv arbeiten, lassen Sie `claudinio` als Standard und greifen Sie nur zu `claudius`, wenn Sie das Denkvermögen brauchen. Auf **Lite** (9 $) liegt das Limit bei 1 $/Stunde — rund zwanzig Anfragen; verfügbar, aber nicht wofür dieser Plan gedacht ist.
 
 ### Klartext
 

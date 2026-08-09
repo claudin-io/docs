@@ -25,6 +25,8 @@ Chúng tôi cung cấp hai mô hình chính cho coding agent của bạn:
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Nhanh, cân bằng, tiết kiệm | Code hàng ngày, dự án cá nhân, code tổng quát | **Tất cả gói dịch vụ** (Lite đến Ultra) |
 | **claudius** ★ | Cao cấp, suy luận sâu | Tác vụ phức tạp, suy luận sâu, quy trình agent chuyên sâu | **Tất cả gói dịch vụ** (Lite đến Ultra) |
+!!! warning "`claudius` tốn khoảng 6 lần mỗi yêu cầu so với `claudinio`"
+    Hạn mức mỗi giờ được tính **bằng đô la, không phải số yêu cầu**, nên cùng một khối lượng công việc trên `claudius` tiêu tốn khoảng sáu lần. Trên Essential ($2/giờ), đó là khoảng 35 yêu cầu premium trước khi hết giờ. Nếu bạn chạy các luồng agent nặng, hãy giữ `claudinio` làm mặc định và chỉ dùng `claudius` khi cần khả năng suy luận. Trên **Lite** ($9), hạn mức là $1/giờ — khoảng hai mươi yêu cầu; vẫn dùng được, nhưng không phải mục đích của gói đó.
 
 ### Nói thẳng
 

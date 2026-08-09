@@ -27,6 +27,8 @@ Kodlama ajanınız için iki ana model sunuyoruz:
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Hızlı, dengeli, uygun maliyetli | Günlük kodlama, hobi projeleri, genel kod | **Tüm planlar** (Lite'dan Ultra'ya) |
 | **claudius** ★ | Premium, derin muhakeme | Karmaşık görevler, derin muhakeme, yoğun ajan iş akışları | **Tüm planlar** (Lite'dan Ultra'ya) |
+!!! warning "`claudius` istek başına `claudinio`'dan yaklaşık 6 kat pahalıdır"
+    Saatlik limitiniz **istek sayısıyla değil, dolarla** ölçülür; aynı iş `claudius` üzerinde yaklaşık altı katını harcar. Essential'da (2 $/saat) bu, saat dolmadan yaklaşık 35 premium istek demektir. Ajan yoğun akışlar çalıştırıyorsanız varsayılanı `claudinio` bırakın ve `claudius`'a yalnızca akıl yürütme gerektiğinde geçin. **Lite**'ta (9 $) limit 1 $/saat — yaklaşık yirmi istek; kullanılabilir ama o plan bunun için değil.
 
 ### Açık konuşma
 

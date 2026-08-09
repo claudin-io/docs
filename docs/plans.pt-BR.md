@@ -27,6 +27,8 @@ Oferecemos dois modelos principais para seu agente de codificação:
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Rápido, equilibrado, econômico | Codificação diária, projetos de hobby, código em geral | **Todos os planos** (Lite a Ultra) |
 | **claudius** ★ | Premium, raciocínio profundo | Tarefas complexas, raciocínio profundo, fluxos de trabalho pesados com agentes | **Todos os planos** (Lite a Ultra) |
+!!! warning "O `claudius` custa cerca de 6x mais por requisição que o `claudinio`"
+    Seu teto por hora é medido **em dólares, não em requisições**, então o mesmo trabalho no `claudius` gasta cerca de seis vezes mais. No Essential ($2/hora) são cerca de 35 requisições premium até a hora acabar. Se você roda fluxos agênticos pesados, mantenha o `claudinio` como padrão e use o `claudius` só quando precisar do raciocínio. No **Lite** ($9) o teto é $1/hora — cerca de vinte requisições; está disponível, mas não é para isso que esse plano serve.
 
 ### Conversa franca
 

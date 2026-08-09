@@ -26,6 +26,8 @@ Nous proposons deux modèles principaux pour votre agent de codage :
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Rapide, équilibré, économique | Codage quotidien, projets personnels, code général | **Tous les plans** (Lite à Ultra) |
 | **claudius** ★ | Premium, raisonnement approfondi | Tâches complexes, raisonnement approfondi, flux agentiques intensifs | **Tous les plans** (Lite à Ultra) |
+!!! warning "`claudius` coûte environ 6 fois plus par requête que `claudinio`"
+    Votre plafond horaire se mesure **en dollars, pas en requêtes** : le même travail sur `claudius` en consomme donc environ six fois plus. Sur Essential (2 $/heure), cela représente environ 35 requêtes premium avant la fin de l'heure. Si vous utilisez des flux agentiques intensifs, gardez `claudinio` par défaut et ne passez à `claudius` que lorsque vous avez besoin du raisonnement. Sur **Lite** (9 $), le plafond est de 1 $/heure — une vingtaine de requêtes ; disponible, mais ce n'est pas la vocation de cette offre.
 
 ### Parlons franchement
 

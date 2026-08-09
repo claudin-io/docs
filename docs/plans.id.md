@@ -26,6 +26,8 @@ Kami menawarkan dua model utama untuk agen coding Anda:
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Cepat, seimbang, hemat biaya | Coding sehari-hari, proyek hobi, kode umum | **Semua paket** (Lite hingga Ultra) |
 | **claudius** ★ | Premium, penalaran mendalam | Tugas kompleks, penalaran mendalam, alur kerja agentic berat | **Semua paket** (Lite hingga Ultra) |
+!!! warning "`claudius` berbiaya sekitar 6x lebih mahal per permintaan daripada `claudinio`"
+    Batas per jam Anda dihitung **dalam dolar, bukan jumlah permintaan**, jadi pekerjaan yang sama di `claudius` memakai sekitar enam kali lipat. Di Essential ($2/jam) itu sekitar 35 permintaan premium sebelum jamnya habis. Jika Anda menjalankan alur agentik yang berat, biarkan `claudinio` sebagai default dan pakai `claudius` hanya saat Anda butuh penalarannya. Di **Lite** ($9) batasnya $1/jam — sekitar dua puluh permintaan; tersedia, tapi bukan untuk itu paket ini dibuat.
 
 ### Bicara terus terang
 

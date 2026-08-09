@@ -26,6 +26,8 @@ Oferecemos dois modelos principais para o seu agente de programação:
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Rápido, equilibrado, económico | Programação diária, projetos de hobby, código geral | **Todos os planos** (Lite a Ultra) |
 | **claudius** ★ | Premium, raciocínio profundo | Tarefas complexas, raciocínio profundo, fluxos de trabalho agentivos intensos | **Todos os planos** (Lite a Ultra) |
+!!! warning "O `claudius` custa cerca de 6x mais por pedido do que o `claudinio`"
+    O seu teto horário é medido **em dólares, não em pedidos**, por isso o mesmo trabalho no `claudius` gasta cerca de seis vezes mais. No Essential ($2/hora) são cerca de 35 pedidos premium até a hora acabar. Se corre fluxos agentic pesados, mantenha o `claudinio` como predefinição e use o `claudius` só quando precisar do raciocínio. No **Lite** ($9) o teto é $1/hora — cerca de vinte pedidos; está disponível, mas não é para isso que esse plano serve.
 
 ### Conversa direta
 
