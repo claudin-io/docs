@@ -26,29 +26,27 @@ We offer two main models for your coding agent:
 | Model | Backend | Use case | Recommended for |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Fast, balanced, cost-effective | Everyday coding, hobby projects, general code | **All plans** (Lite to Ultra) |
-| **claudius** ★ | Premium, deep reasoning | Complex tasks, deep reasoning, heavy agentic workflows | **All plans** (Lite to Ultra) |
-!!! warning "`claudius` costs about 6x more per request than `claudinio`"
-    Your hourly cap is measured **in dollars, not requests**, so the same work
-    on `claudius` uses roughly six times as much of it. On Essential ($2/hour)
-    that is about 35 premium requests before the hour is gone. If you run
-    agent-heavy workflows, keep `claudinio` as your agent's default and reach
-    for `claudius` only when you need the reasoning.
+| **claudius** ★ | Premium, deep reasoning | Complex tasks, deep reasoning, heavy agentic workflows | **Pro and Ultra** |
+!!! warning "`claudius` is included in Pro and Ultra"
+    On **Lite** and **Essential**, a request that names `claudius` is not rejected — it is served by `claudinio` and billed at `claudinio` rates. Your agent keeps working and you are never charged the premium rate on a plan that does not include it.
 
-    On **Lite** ($9) the cap is $1/hour — roughly twenty `claudius` requests
-    before the hour is gone. It is available, but it is not what that plan is
-    for.
+    On **Pro** and **Ultra**, remember the cap is measured **in dollars, not requests**: the same work on `claudius` uses roughly six times as much of it. On Pro ($4/hour) that is about 70 premium requests before the hour is gone; on Ultra ($10/hour), about 175. Keep `claudinio` as your agent's default and reach for `claudius` when you actually need the reasoning.
 
 ### Straight talk
 
 If you're on **Lite** ($9) — **use `claudinio` and don't look back.** 🎯
 
-If you're on **Essential** ($19) — `claudius` is available, but treat it as a
-tool you reach for deliberately, not your default. The most effective setup we
-see is **plan with `claudius`, implement with `claudinio`**: the reasoning is
-where the premium model earns its cost, and the implementation loop is where
-the volume lives.
+If you're on **Essential** ($19) — same answer, and you have twice the cap to
+spend on it. `claudius` is not part of this plan; if your agent asks for it,
+`claudinio` answers and you pay `claudinio` rates.
 
-Here's the reality: `claudinio` delivers quality comparable to Claude Sonnet for everyday coding at a **fraction of the internal cost**. On the Lite plan, you can get **hundreds of requests per hour** with `claudinio` — while `claudius` would burn through your hourly budget much faster.
+If you're on **Pro** ($39) or **Ultra** ($99) — `claudius` is yours, but treat
+it as a tool you reach for deliberately, not your default. The most effective
+setup we see is **plan with `claudius`, implement with `claudinio`**: the
+reasoning is where the premium model earns its cost, and the implementation
+loop is where the volume lives.
+
+Here's the reality: `claudinio` delivers quality comparable to Claude Sonnet for everyday coding at a **fraction of the internal cost**. On the Lite plan, you can get **hundreds of requests per hour** with it — which is why it is the model every plan is built around.
 
 | Metric | claudinio | claudius |
 | --- | --- | --- |
@@ -62,7 +60,7 @@ request is served and the excess comes out of your credit balance. The dashboard
 meter says so while it is happening, and we email you the first time it happens
 in a day. Nothing is taken silently.
 
-> 💡 Tip: Both models work with all major coding agents. Just set `model=claudinio` or `model=claudius` in your agent config. `claudinio` also automatically resolves aliases like `claude-sonnet-4`, `gpt-4o`, `o3-mini` and dozens more — no need to change your agent's configuration.
+> 💡 Tip: Both models work with all major coding agents. Set `model=claudinio` in your agent config — or `model=claudius` if you are on Pro or Ultra. `claudinio` also automatically resolves aliases like `claude-sonnet-4`, `gpt-4o`, `o3-mini` and dozens more — no need to change your agent's configuration.
 
 ## How spend protection works
 

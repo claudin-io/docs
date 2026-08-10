@@ -26,15 +26,17 @@ Oferecemos dois modelos principais para seu agente de codificação:
 | Modelo | Backend | Caso de uso | Recomendado para |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Rápido, equilibrado, econômico | Codificação diária, projetos de hobby, código em geral | **Todos os planos** (Lite a Ultra) |
-| **claudius** ★ | Premium, raciocínio profundo | Tarefas complexas, raciocínio profundo, fluxos de trabalho pesados com agentes | **Todos os planos** (Lite a Ultra) |
-!!! warning "O `claudius` custa cerca de 6x mais por requisição que o `claudinio`"
-    Seu teto por hora é medido **em dólares, não em requisições**, então o mesmo trabalho no `claudius` gasta cerca de seis vezes mais. No Essential ($2/hora) são cerca de 35 requisições premium até a hora acabar. Se você roda fluxos agênticos pesados, mantenha o `claudinio` como padrão e use o `claudius` só quando precisar do raciocínio. No **Lite** ($9) o teto é $1/hora — cerca de vinte requisições; está disponível, mas não é para isso que esse plano serve.
+| **claudius** ★ | Premium, raciocínio profundo | Tarefas complexas, raciocínio profundo, fluxos de trabalho pesados com agentes | **Pro e Ultra** |
+!!! warning "O `claudius` está incluído no Pro e no Ultra"
+    No **Lite** e no **Essential**, uma requisição que nomeie `claudius` não é recusada — é atendida pelo `claudinio` e cobrada pelas tarifas do `claudinio`. Seu agente continua funcionando e você nunca é cobrado pela tarifa premium num plano que não a inclui.
+
+    No **Pro** e no **Ultra**, lembre-se de que o teto é medido **em dólares, não em requisições**: o mesmo trabalho no `claudius` gasta cerca de seis vezes mais. No Pro ($4/hora) são cerca de 70 requisições premium até a hora acabar; no Ultra ($10/hora), cerca de 175. Mantenha o `claudinio` como padrão do seu agente e use o `claudius` quando precisar mesmo do raciocínio.
 
 ### Conversa franca
 
 Se você está no **Lite** ($9) — **use `claudinio` e não olhe para trás.** 🎯
 
-A realidade é: `claudinio` entrega qualidade comparável ao Claude Sonnet para codificação diária a uma **fração do custo interno**. No plano Lite, você pode fazer **centenas de requisições por hora** com `claudinio` — enquanto `claudius` consumiria seu orçamento horário muito mais rápido.
+A realidade é: `claudinio` entrega qualidade comparável ao Claude Sonnet para codificação diária a uma **fração do custo interno**. No plano Lite, você pode fazer **centenas de requisições por hora** com ele — e é por isso que é o modelo em torno do qual todos os planos são construídos.
 
 | Métrica | claudinio | claudius |
 | --- | --- | --- |
@@ -43,7 +45,7 @@ A realidade é: `claudinio` entrega qualidade comparável ao Claude Sonnet para 
 
 **Regra de ouro:** Configure seu agente (Claude Code, Cursor, Continue, etc.) com `claudinio` como modelo padrão. Só mude para `claudius` quando você precisar explicitamente de mais poder de raciocínio. Para projetos de hobby, `claudinio` é **tudo que você precisa** e provavelmente **mais do que você espera**.
 
-> 💡 Dica: Ambos os modelos funcionam com todos os principais agentes de codificação. Basta definir `model=claudinio` ou `model=claudius` na configuração do seu agente. `claudinio` também resolve automaticamente aliases como `claude-sonnet-4`, `gpt-4o`, `o3-mini` e dezenas de outros — sem necessidade de alterar a configuração do seu agente.
+> 💡 Dica: Ambos os modelos funcionam com todos os principais agentes de programação. Defina `model=claudinio` na configuração do seu agente — ou `model=claudius` se você estiver no Pro ou no Ultra. `claudinio` também resolve automaticamente aliases como `claude-sonnet-4`, `gpt-4o`, `o3-mini` e dezenas de outros — não precisa alterar a configuração do seu agente.
 
 ## Como funciona a proteção de gastos
 

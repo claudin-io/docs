@@ -25,15 +25,17 @@ Kami menawarkan dua model utama untuk agen coding Anda:
 | Model | Backend | Kasus penggunaan | Direkomendasikan untuk |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Cepat, seimbang, hemat biaya | Coding sehari-hari, proyek hobi, kode umum | **Semua paket** (Lite hingga Ultra) |
-| **claudius** ★ | Premium, penalaran mendalam | Tugas kompleks, penalaran mendalam, alur kerja agentic berat | **Semua paket** (Lite hingga Ultra) |
-!!! warning "`claudius` berbiaya sekitar 6x lebih mahal per permintaan daripada `claudinio`"
-    Batas per jam Anda dihitung **dalam dolar, bukan jumlah permintaan**, jadi pekerjaan yang sama di `claudius` memakai sekitar enam kali lipat. Di Essential ($2/jam) itu sekitar 35 permintaan premium sebelum jamnya habis. Jika Anda menjalankan alur agentik yang berat, biarkan `claudinio` sebagai default dan pakai `claudius` hanya saat Anda butuh penalarannya. Di **Lite** ($9) batasnya $1/jam — sekitar dua puluh permintaan; tersedia, tapi bukan untuk itu paket ini dibuat.
+| **claudius** ★ | Premium, penalaran mendalam | Tugas kompleks, penalaran mendalam, alur kerja agentic berat | **Pro dan Ultra** |
+!!! warning "`claudius` termasuk dalam Pro dan Ultra"
+    Di **Lite** dan **Essential**, permintaan yang menyebut `claudius` tidak ditolak — permintaan itu dilayani oleh `claudinio` dan ditagih dengan tarif `claudinio`. Agen Anda tetap berjalan, dan tarif premium tidak pernah dikenakan pada paket yang tidak memuatnya.
+
+    Di **Pro** dan **Ultra**, ingat bahwa batasnya dihitung **dalam dolar, bukan jumlah permintaan**: pekerjaan yang sama di `claudius` memakai sekitar enam kali lipat. Di Pro ($4/jam) itu sekitar 70 permintaan premium sebelum jamnya habis; di Ultra ($10/jam), sekitar 175. Biarkan `claudinio` sebagai default dan pakai `claudius` saat Anda memang butuh penalarannya.
 
 ### Bicara terus terang
 
 Jika Anda di **Lite** ($9) — **gunakan `claudinio` dan jangan berpikir dua kali.** 🎯
 
-Inilah kenyataannya: `claudinio` memberikan kualitas yang sebanding dengan Claude Sonnet untuk coding sehari-hari dengan **sebagian kecil dari biaya internal**. Pada paket Lite, Anda bisa mendapatkan **ratusan permintaan per jam** dengan `claudinio` — sementara `claudius` akan menghabiskan anggaran per jam Anda jauh lebih cepat.
+Inilah kenyataannya: `claudinio` memberikan kualitas yang sebanding dengan Claude Sonnet untuk coding sehari-hari dengan **sebagian kecil dari biaya internal**. Pada paket Lite, Anda bisa mendapatkan **ratusan permintaan per jam** dengannya — itulah sebabnya setiap paket dibangun di sekitar model ini.
 
 | Metrik | claudinio | claudius |
 | --- | --- | --- |
@@ -42,7 +44,7 @@ Inilah kenyataannya: `claudinio` memberikan kualitas yang sebanding dengan Claud
 
 **Aturan emas:** Konfigurasikan agen Anda (Claude Code, Cursor, Continue, dll.) dengan `claudinio` sebagai model default. Hanya beralih ke `claudius` saat Anda benar-benar membutuhkan lebih banyak daya penalaran. Untuk proyek hobi, `claudinio` **adalah semua yang Anda butuhkan** dan kemungkinan **lebih dari yang Anda harapkan**.
 
-> 💡 Tips: Kedua model bekerja dengan semua agen coding utama. Cukup atur `model=claudinio` atau `model=claudius` di konfigurasi agen Anda. `claudinio` juga secara otomatis menyelesaikan alias seperti `claude-sonnet-4`, `gpt-4o`, `o3-mini` dan puluhan lainnya — tidak perlu mengubah konfigurasi agen Anda.
+> 💡 Tips: Kedua model bekerja dengan semua agen coding utama. Setel `model=claudinio` di konfigurasi agen Anda — atau `model=claudius` jika Anda di Pro atau Ultra. `claudinio` juga otomatis menyelesaikan alias seperti `claude-sonnet-4`, `gpt-4o`, `o3-mini` dan puluhan lainnya — tidak perlu mengubah konfigurasi agen Anda.
 
 ## Cara kerja perlindungan pengeluaran
 

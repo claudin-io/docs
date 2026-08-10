@@ -26,15 +26,17 @@ Kodlama ajanınız için iki ana model sunuyoruz:
 | Model | Arka uç | Kullanım alanı | Önerilen |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Hızlı, dengeli, uygun maliyetli | Günlük kodlama, hobi projeleri, genel kod | **Tüm planlar** (Lite'dan Ultra'ya) |
-| **claudius** ★ | Premium, derin muhakeme | Karmaşık görevler, derin muhakeme, yoğun ajan iş akışları | **Tüm planlar** (Lite'dan Ultra'ya) |
-!!! warning "`claudius` istek başına `claudinio`'dan yaklaşık 6 kat pahalıdır"
-    Saatlik limitiniz **istek sayısıyla değil, dolarla** ölçülür; aynı iş `claudius` üzerinde yaklaşık altı katını harcar. Essential'da (2 $/saat) bu, saat dolmadan yaklaşık 35 premium istek demektir. Ajan yoğun akışlar çalıştırıyorsanız varsayılanı `claudinio` bırakın ve `claudius`'a yalnızca akıl yürütme gerektiğinde geçin. **Lite**'ta (9 $) limit 1 $/saat — yaklaşık yirmi istek; kullanılabilir ama o plan bunun için değil.
+| **claudius** ★ | Premium, derin muhakeme | Karmaşık görevler, derin muhakeme, yoğun ajan iş akışları | **Pro ve Ultra** |
+!!! warning "`claudius`, Pro ve Ultra'ya dahildir"
+    **Lite** ve **Essential**'da `claudius` adını taşıyan bir istek reddedilmez — `claudinio` tarafından karşılanır ve `claudinio` tarifesinden faturalandırılır. Ajanınız çalışmaya devam eder ve premium tarife, onu içermeyen bir planda size asla yansıtılmaz.
+
+    **Pro** ve **Ultra**'da şunu unutmayın: limit **istek sayısıyla değil, dolarla** ölçülür; aynı iş `claudius` üzerinde yaklaşık altı katını harcar. Pro'da (4 $/saat) bu, saat dolmadan yaklaşık 70 premium istek demektir; Ultra'da (10 $/saat) yaklaşık 175. Varsayılanı `claudinio` bırakın ve gerçekten akıl yürütme gerektiğinde `claudius`'a geçin.
 
 ### Açık konuşma
 
 Eğer **Lite** ($9) planındaysanız — **`claudinio` kullanın ve arkanıza bakmayın.** 🎯
 
-İşte gerçek: `claudinio`, günlük kodlama için Claude Sonnet'e benzer kaliteyi **iç maliyetin çok daha azıyla** sunar. Lite planında, `claudinio` ile **saatte yüzlerce istek** alabilirsiniz — oysa `claudius` saatlik bütçenizi çok daha hızlı tüketir.
+İşte gerçek: `claudinio`, günlük kodlamada Claude Sonnet ile karşılaştırılabilir kaliteyi **iç maliyetin çok küçük bir kısmına** sunar. Lite planında onunla **saatte yüzlerce istek** yapabilirsiniz — her planın etrafında kurulduğu model bu yüzden odur.
 
 | Metrik | claudinio | claudius |
 | --- | --- | --- |
@@ -43,7 +45,7 @@ Eğer **Lite** ($9) planındaysanız — **`claudinio` kullanın ve arkanıza ba
 
 **Altın kural:** Ajanınızı (Claude Code, Cursor, Continue, vb.) varsayılan model olarak `claudinio` ile yapılandırın. Yalnızca daha fazla muhakeme gücüne açıkça ihtiyacınız olduğunda  `claudius`'a geçin. Hobi projeleri için `claudinio` **ihtiyacınız olan her şey** ve muhtemelen **beklediğinizden fazlasıdır**.
 
-> 💡 İpucu: Her iki model de tüm büyük kodlama ajanlarıyla çalışır. Ajan yapılandırmanızda `model=claudinio` veya `model=claudius` ayarını yapmanız yeterlidir. `claudinio` ayrıca `claude-sonnet-4`, `gpt-4o`, `o3-mini` ve düzinelerce takma adı otomatik olarak çözümler — ajan yapılandırmanızı değiştirmenize gerek yoktur.
+> 💡 İpucu: Her iki model de tüm büyük kodlama ajanlarıyla çalışır. Ajan yapılandırmanızda `model=claudinio` ayarlayın — Pro ya da Ultra'daysanız `model=claudius`. `claudinio` ayrıca `claude-sonnet-4`, `gpt-4o`, `o3-mini` gibi onlarca takma adı otomatik çözer — ajanınızın yapılandırmasını değiştirmenize gerek yok.
 
 ## Harcama koruması nasıl çalışır
 

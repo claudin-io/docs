@@ -23,15 +23,17 @@
 | 模型 | 后端 | 用例 | 推荐对象 |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | 快速、均衡、经济高效 | 日常编码、爱好项目、通用代码 | **所有套餐**（Lite到Ultra） |
-| **claudius** ★ | 高级、深度推理 | 复杂任务、深度推理、重代理工作流 | **所有套餐**（Lite到Ultra） |
-!!! warning "`claudius` 每次请求的成本约为 `claudinio` 的 6 倍"
-    每小时上限按**金额计算，而非请求数**，因此同样的工作在 `claudius` 上大约消耗六倍。在 Essential（$2/小时）下，这大约是 35 次高级请求就会用完一小时。如果你运行重度智能体工作流，请把 `claudinio` 保持为默认，只在需要推理能力时才用 `claudius`。**Lite**（$9）的上限是 $1/小时 — 大约二十次请求；可以使用，但这不是该套餐的用途。
+| **claudius** ★ | 高级、深度推理 | 复杂任务、深度推理、重代理工作流 | **Pro 和 Ultra** |
+!!! warning "`claudius` 包含在 Pro 和 Ultra 中"
+    在 **Lite** 和 **Essential** 上，指定 `claudius` 的请求不会被拒绝——它由 `claudinio` 处理，并按 `claudinio` 的费率计费。你的智能体照常工作，也绝不会在不包含该模型的套餐上被收取高级费率。
+
+    在 **Pro** 和 **Ultra** 上，请记住上限按**金额计算，而非请求数**：同样的工作在 `claudius` 上大约消耗六倍。Pro（$4/小时）大约是 70 次高级请求就会用完一小时；Ultra（$10/小时）大约是 175 次。请把 `claudinio` 保持为默认，只在确实需要推理能力时才用 `claudius`。
 
 ### 坦率地说
 
 如果你使用的是**Lite**（$9）——**使用`claudinio`，不要回头。** 🎯
 
-现实是：`claudinio`在日常编码中提供了与Claude Sonnet相当的质量，但**内部成本仅为一部分**。在Lite套餐上，你可以使用`claudinio`获得**每小时数百次请求**——而`claudius`会更快地消耗你的每小时预算。
+现实是这样的：`claudinio` 在日常编码上提供可与 Claude Sonnet 相媲美的质量，而只需**内部成本的一小部分**。在 Lite 套餐上，你用它就能获得**每小时数百次请求**——这正是每个套餐都围绕它构建的原因。
 
 | 指标 | claudinio | claudius |
 | --- | --- | --- |
@@ -40,7 +42,7 @@
 
 **黄金法则：** 将你的代理（Claude Code、Cursor、Continue等）配置为默认使用`claudinio`模型。只有当你明确需要更多推理能力时才切换到`claudius`。对于爱好项目，`claudinio`就是**你所需的一切**，而且很可能**超出你的预期**。
 
-> 💡 提示：两种模型都适用于所有主流编码代理。只需在你的代理配置中设置`model=claudinio`或`model=claudius`。`claudinio`还会自动解析诸如`claude-sonnet-4`、`gpt-4o`、`o3-mini`等数十个别名——无需更改你的代理配置。
+> 💡 提示：两个模型都适用于所有主流编程智能体。在智能体配置中设置 `model=claudinio`——如果你在 Pro 或 Ultra 上，也可以设置 `model=claudius`。`claudinio` 还会自动解析 `claude-sonnet-4`、`gpt-4o`、`o3-mini` 等数十个别名——无需更改智能体的配置。
 
 ## 消费保护如何工作
 

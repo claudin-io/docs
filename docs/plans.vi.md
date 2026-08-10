@@ -24,15 +24,17 @@ Chúng tôi cung cấp hai mô hình chính cho coding agent của bạn:
 | Mô hình | Backend | Trường hợp sử dụng | Khuyến nghị cho |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Nhanh, cân bằng, tiết kiệm | Code hàng ngày, dự án cá nhân, code tổng quát | **Tất cả gói dịch vụ** (Lite đến Ultra) |
-| **claudius** ★ | Cao cấp, suy luận sâu | Tác vụ phức tạp, suy luận sâu, quy trình agent chuyên sâu | **Tất cả gói dịch vụ** (Lite đến Ultra) |
-!!! warning "`claudius` tốn khoảng 6 lần mỗi yêu cầu so với `claudinio`"
-    Hạn mức mỗi giờ được tính **bằng đô la, không phải số yêu cầu**, nên cùng một khối lượng công việc trên `claudius` tiêu tốn khoảng sáu lần. Trên Essential ($2/giờ), đó là khoảng 35 yêu cầu premium trước khi hết giờ. Nếu bạn chạy các luồng agent nặng, hãy giữ `claudinio` làm mặc định và chỉ dùng `claudius` khi cần khả năng suy luận. Trên **Lite** ($9), hạn mức là $1/giờ — khoảng hai mươi yêu cầu; vẫn dùng được, nhưng không phải mục đích của gói đó.
+| **claudius** ★ | Cao cấp, suy luận sâu | Tác vụ phức tạp, suy luận sâu, quy trình agent chuyên sâu | **Pro và Ultra** |
+!!! warning "`claudius` có trong Pro và Ultra"
+    Trên **Lite** và **Essential**, một yêu cầu gọi tên `claudius` không bị từ chối — nó được `claudinio` phục vụ và tính theo giá của `claudinio`. Tác nhân của bạn vẫn chạy, và bạn không bao giờ bị tính giá cao cấp trên gói không bao gồm nó.
+
+    Trên **Pro** và **Ultra**, hãy nhớ hạn mức được tính **bằng đô la, không phải số yêu cầu**: cùng khối lượng công việc trên `claudius` tiêu tốn khoảng sáu lần. Trên Pro ($4/giờ) là khoảng 70 yêu cầu premium trước khi hết giờ; trên Ultra ($10/giờ), khoảng 175. Hãy giữ `claudinio` làm mặc định và chỉ dùng `claudius` khi bạn thực sự cần khả năng suy luận.
 
 ### Nói thẳng
 
 Nếu bạn đang dùng **Lite** ($9) — **hãy dùng `claudinio` và đừng ngoái lại nhìn.** 🎯
 
-Sự thật là: `claudinio` mang lại chất lượng tương đương Claude Sonnet cho code hàng ngày với **một phần nhỏ chi phí nội bộ**. Với gói Lite, bạn có thể nhận được **hàng trăm yêu cầu mỗi giờ** với `claudinio` — trong khi `claudius` sẽ đốt ngân sách theo giờ của bạn nhanh hơn nhiều.
+Đây là thực tế: `claudinio` mang lại chất lượng tương đương Claude Sonnet cho việc lập trình hằng ngày với **một phần nhỏ chi phí nội bộ**. Trên gói Lite, bạn có thể thực hiện **hàng trăm yêu cầu mỗi giờ** với nó — đó là lý do mọi gói đều được xây dựng quanh mô hình này.
 
 | Chỉ số | claudinio | claudius |
 | --- | --- | --- |
@@ -41,7 +43,7 @@ Sự thật là: `claudinio` mang lại chất lượng tương đương Claude 
 
 **Nguyên tắc vàng:** Cấu hình agent của bạn (Claude Code, Cursor, Continue, v.v.) với `claudinio` làm mô hình mặc định. Chỉ chuyển sang `claudius` khi bạn thực sự cần thêm sức mạnh suy luận. Đối với các dự án cá nhân, `claudinio` là **tất cả những gì bạn cần** và có lẽ **còn hơn cả bạn mong đợi**.
 
-> 💡 Mẹo: Cả hai mô hình đều hoạt động với tất cả các coding agent chính. Chỉ cần đặt `model=claudinio` hoặc `model=claudius` trong cấu hình agent của bạn. `claudinio` cũng tự động phân giải các bí danh như `claude-sonnet-4`, `gpt-4o`, `o3-mini` và hàng chục mô hình khác — không cần thay đổi cấu hình agent của bạn.
+> 💡 Mẹo: Cả hai mô hình đều hoạt động với mọi tác nhân lập trình phổ biến. Đặt `model=claudinio` trong cấu hình tác nhân của bạn — hoặc `model=claudius` nếu bạn dùng Pro hay Ultra. `claudinio` cũng tự động phân giải các bí danh như `claude-sonnet-4`, `gpt-4o`, `o3-mini` và hàng chục tên khác — không cần đổi cấu hình tác nhân.
 
 ## Cơ chế bảo vệ chi tiêu hoạt động như thế nào
 
