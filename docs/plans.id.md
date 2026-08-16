@@ -8,7 +8,6 @@ menggunakannya secara bebas. Batas tersebut hanya ada untuk menghentikan agen ya
 
 | Paket | Harga | Perlindungan pengeluaran | Terbaik untuk |
 | --- | --- | --- | --- |
-| **Lite** | $9 / bln | $1,00 / jam | Proyek hobi, coding sesekali |
 | **Essential** | $19 / bln atau $189 / thn | $2,00 / jam | Kualitas untuk penggunaan sehari-hari |
 | **Pro** ★ | $39 / bln atau $389 / thn | $4,00 / jam | Alur kerja agentic berat |
 | **Ultra** | $99 / bln atau $989 / thn | $10,00 / jam | Kekuatan maksimal, tim & produksi |
@@ -24,18 +23,16 @@ Kami menawarkan dua model utama untuk agen coding Anda:
 
 | Model | Backend | Kasus penggunaan | Direkomendasikan untuk |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Cepat, seimbang, hemat biaya | Coding sehari-hari, proyek hobi, kode umum | **Semua paket** (Lite hingga Ultra) |
+| **claudinio** 🏆 | Cepat, seimbang, hemat biaya | Coding sehari-hari, proyek hobi, kode umum | **Semua paket** (Essential hingga Ultra) |
 | **claudius** ★ | Premium, penalaran mendalam | Tugas kompleks, penalaran mendalam, alur kerja agentic berat | **Pro dan Ultra** |
 !!! warning "`claudius` termasuk dalam Pro dan Ultra"
-    Di **Lite** dan **Essential**, permintaan yang menyebut `claudius` tidak ditolak — permintaan itu dilayani oleh `claudinio` dan ditagih dengan tarif `claudinio`. Agen Anda tetap berjalan, dan tarif premium tidak pernah dikenakan pada paket yang tidak memuatnya.
+    Di **Essential**, permintaan yang menyebut `claudius` tidak ditolak — permintaan itu dilayani oleh `claudinio` dan ditagih dengan tarif `claudinio`. Agen Anda tetap berjalan, dan tarif premium tidak pernah dikenakan pada paket yang tidak memuatnya.
 
     Di **Pro** dan **Ultra**, ingat bahwa batasnya dihitung **dalam dolar, bukan jumlah permintaan**: pekerjaan yang sama di `claudius` memakai sekitar enam kali lipat. Di Pro ($4/jam) itu sekitar 70 permintaan premium sebelum jamnya habis; di Ultra ($10/jam), sekitar 175. Biarkan `claudinio` sebagai default dan pakai `claudius` saat Anda memang butuh penalarannya.
 
 ### Bicara terus terang
 
-Jika Anda di **Lite** ($9) — **gunakan `claudinio` dan jangan berpikir dua kali.** 🎯
-
-Inilah kenyataannya: `claudinio` memberikan kualitas yang sebanding dengan Claude Sonnet untuk coding sehari-hari dengan **sebagian kecil dari biaya internal**. Pada paket Lite, Anda bisa mendapatkan **ratusan permintaan per jam** dengannya — itulah sebabnya setiap paket dibangun di sekitar model ini.
+Inilah kenyataannya: `claudinio` memberikan kualitas yang sebanding dengan Claude Sonnet untuk coding sehari-hari dengan **sebagian kecil dari biaya internal**. Pada paket Essential, Anda bisa mendapatkan **ratusan permintaan per jam** dengannya — itulah sebabnya setiap paket dibangun di sekitar model ini.
 
 | Metrik | claudinio | claudius |
 | --- | --- | --- |
@@ -51,7 +48,7 @@ Inilah kenyataannya: `claudinio` memberikan kualitas yang sebanding dengan Claud
 Setiap paket menentukan **jendela** anggaran — periode bergulir dan pengeluaran maksimum
 di dalamnya:
 
-- **Lite**, **Essential**, **Pro**, dan **Ultra** menggunakan jendela **1 jam**.
+- **Essential**, **Pro**, dan **Ultra** menggunakan jendela **1 jam**.
 
 Dalam jendela tersebut, penggunaan Anda mengakumulasi biaya internal yang sangat kecil. Ketika
 biaya internal itu mencapai batas jendela, permintaan berhenti hingga jendela direset.

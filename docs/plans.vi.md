@@ -8,7 +8,6 @@ sử dụng thoải mái. Mức giới hạn chỉ tồn tại để ngăn một
 
 | Gói dịch vụ | Giá | Bảo vệ chi tiêu | Phù hợp nhất |
 | --- | --- | --- | --- |
-| **Lite** | $9 / tháng | $1,00 / giờ | Dự án cá nhân, thỉnh thoảng code |
 | **Essential** | $19 / tháng hoặc $189 / năm | $2,00 / giờ | Chất lượng cho sử dụng hàng ngày |
 | **Pro** ★ | $39 / tháng hoặc $389 / năm | $4,00 / giờ | Quy trình làm việc agent chuyên sâu |
 | **Ultra** | $99 / tháng hoặc $989 / năm | $10,00 / giờ | Sức mạnh tối đa, nhóm & sản xuất |
@@ -23,18 +22,16 @@ Chúng tôi cung cấp hai mô hình chính cho coding agent của bạn:
 
 | Mô hình | Backend | Trường hợp sử dụng | Khuyến nghị cho |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Nhanh, cân bằng, tiết kiệm | Code hàng ngày, dự án cá nhân, code tổng quát | **Tất cả gói dịch vụ** (Lite đến Ultra) |
+| **claudinio** 🏆 | Nhanh, cân bằng, tiết kiệm | Code hàng ngày, dự án cá nhân, code tổng quát | **Tất cả gói dịch vụ** (Essential đến Ultra) |
 | **claudius** ★ | Cao cấp, suy luận sâu | Tác vụ phức tạp, suy luận sâu, quy trình agent chuyên sâu | **Pro và Ultra** |
 !!! warning "`claudius` có trong Pro và Ultra"
-    Trên **Lite** và **Essential**, một yêu cầu gọi tên `claudius` không bị từ chối — nó được `claudinio` phục vụ và tính theo giá của `claudinio`. Tác nhân của bạn vẫn chạy, và bạn không bao giờ bị tính giá cao cấp trên gói không bao gồm nó.
+    Trên **Essential**, một yêu cầu gọi tên `claudius` không bị từ chối — nó được `claudinio` phục vụ và tính theo giá của `claudinio`. Tác nhân của bạn vẫn chạy, và bạn không bao giờ bị tính giá cao cấp trên gói không bao gồm nó.
 
     Trên **Pro** và **Ultra**, hãy nhớ hạn mức được tính **bằng đô la, không phải số yêu cầu**: cùng khối lượng công việc trên `claudius` tiêu tốn khoảng sáu lần. Trên Pro ($4/giờ) là khoảng 70 yêu cầu premium trước khi hết giờ; trên Ultra ($10/giờ), khoảng 175. Hãy giữ `claudinio` làm mặc định và chỉ dùng `claudius` khi bạn thực sự cần khả năng suy luận.
 
 ### Nói thẳng
 
-Nếu bạn đang dùng **Lite** ($9) — **hãy dùng `claudinio` và đừng ngoái lại nhìn.** 🎯
-
-Đây là thực tế: `claudinio` mang lại chất lượng tương đương Claude Sonnet cho việc lập trình hằng ngày với **một phần nhỏ chi phí nội bộ**. Trên gói Lite, bạn có thể thực hiện **hàng trăm yêu cầu mỗi giờ** với nó — đó là lý do mọi gói đều được xây dựng quanh mô hình này.
+Đây là thực tế: `claudinio` mang lại chất lượng tương đương Claude Sonnet cho việc lập trình hằng ngày với **một phần nhỏ chi phí nội bộ**. Trên gói Essential, bạn có thể thực hiện **hàng trăm yêu cầu mỗi giờ** với nó — đó là lý do mọi gói đều được xây dựng quanh mô hình này.
 
 | Chỉ số | claudinio | claudius |
 | --- | --- | --- |
@@ -50,7 +47,7 @@ Nếu bạn đang dùng **Lite** ($9) — **hãy dùng `claudinio` và đừng n
 Mỗi gói dịch vụ xác định một **cửa sổ** ngân sách — một khoảng thời gian luân chuyển và mức chi tiêu tối đa
 trong đó:
 
-- **Lite**, **Essential**, **Pro** và **Ultra** sử dụng cửa sổ **1 giờ**.
+- **Essential**, **Pro** và **Ultra** sử dụng cửa sổ **1 giờ**.
 
 Trong cửa sổ, mức sử dụng của bạn tích lũy một chi phí nội bộ nhỏ. Khi chi phí nội bộ đó đạt đến mức giới hạn của cửa sổ, các yêu cầu sẽ tạm dừng cho đến khi cửa sổ được đặt lại.
 

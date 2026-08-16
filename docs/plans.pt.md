@@ -8,7 +8,6 @@ usa livremente. O limite existe apenas para impedir que um agente descontrolado 
 
 | Plano | Preço | Proteção de gastos | Melhor para |
 | --- | --- | --- | --- |
-| **Lite** | $9 / mês | $1,00 / hora | Projetos de hobby, programação ocasional |
 | **Essential** | $19 / mês ou $189 / ano | $2,00 / hora | Qualidade para uso diário |
 | **Pro** ★ | $39 / mês ou $389 / ano | $4,00 / hora | Fluxos de trabalho agentivos intensos |
 | **Ultra** | $99 / mês ou $989 / ano | $10,00 / hora | Máxima potência, equipas e produção |
@@ -24,18 +23,16 @@ Oferecemos dois modelos principais para o seu agente de programação:
 
 | Modelo | Backend | Caso de uso | Recomendado para |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Rápido, equilibrado, económico | Programação diária, projetos de hobby, código geral | **Todos os planos** (Lite a Ultra) |
+| **claudinio** 🏆 | Rápido, equilibrado, económico | Programação diária, projetos de hobby, código geral | **Todos os planos** (Essential a Ultra) |
 | **claudius** ★ | Premium, raciocínio profundo | Tarefas complexas, raciocínio profundo, fluxos de trabalho agentivos intensos | **Pro e Ultra** |
 !!! warning "O `claudius` está incluído no Pro e no Ultra"
-    No **Lite** e no **Essential**, um pedido que nomeie `claudius` não é recusado — é servido pelo `claudinio` e faturado às tarifas do `claudinio`. O seu agente continua a funcionar e nunca lhe é cobrada a tarifa premium num plano que não a inclui.
+    No **Essential**, um pedido que nomeie `claudius` não é recusado — é servido pelo `claudinio` e faturado às tarifas do `claudinio`. O seu agente continua a funcionar e nunca lhe é cobrada a tarifa premium num plano que não a inclui.
 
     No **Pro** e no **Ultra**, lembre-se de que o teto é medido **em dólares, não em pedidos**: o mesmo trabalho no `claudius` gasta cerca de seis vezes mais. No Pro ($4/hora) são cerca de 70 pedidos premium até a hora acabar; no Ultra ($10/hora), cerca de 175. Mantenha o `claudinio` como predefinição do seu agente e use o `claudius` quando precisar mesmo do raciocínio.
 
 ### Conversa direta
 
-Se estiver no **Lite** ($9) — **use `claudinio` e não olhe para trás.** 🎯
-
-A realidade: `claudinio` oferece qualidade comparável ao Claude Sonnet para programação diária a uma **fração do custo interno**. No plano Lite, pode obter **centenas de pedidos por hora** com ele — e é por isso que é o modelo à volta do qual todos os planos são construídos.
+A realidade: `claudinio` oferece qualidade comparável ao Claude Sonnet para programação diária a uma **fração do custo interno**. No plano Essential, pode obter **centenas de pedidos por hora** com ele — e é por isso que é o modelo à volta do qual todos os planos são construídos.
 
 | Métrica | claudinio | claudius |
 | --- | --- | --- |
@@ -50,7 +47,7 @@ A realidade: `claudinio` oferece qualidade comparável ao Claude Sonnet para pro
 
 Cada plano define uma **janela** de orçamento — um período contínuo e um gasto máximo dentro dela:
 
-- **Lite**, **Essential**, **Pro** e **Ultra** usam uma janela de **1 hora**.
+- **Essential**, **Pro** e **Ultra** usam uma janela de **1 hora**.
 
 Dentro da janela, o seu uso acumula um pequeno custo interno. Quando esse custo interno atinge o limite da janela, os pedidos param até a janela ser reiniciada.
 

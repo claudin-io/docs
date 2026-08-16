@@ -8,7 +8,6 @@ El límite existe solo para evitar que un agente descontrolado (un bucle infinit
 
 | Plan | Precio | Protección de gasto | Ideal para |
 | --- | --- | --- | --- |
-| **Lite** | $9 / mo | $1.00 / hour | Proyectos de hobby, codificación ocasional |
 | **Essential** | $19 / mo or $189 / yr | $2.00 / hour | Calidad para uso diario |
 | **Pro** ★ | $39 / mo or $389 / yr | $4.00 / hour | Flujos de trabajo agentivos intensivos |
 | **Ultra** | $99 / mo or $989 / yr | $10.00 / hour | Máxima potencia, equipos y producción |
@@ -22,18 +21,16 @@ Ofrecemos dos modelos principales para tu agente de codificación:
 
 | Modelo | Backend | Caso de uso | Recomendado para |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Rápido, equilibrado, rentable | Codificación diaria, proyectos de hobby, código general | **Todos los planes** (Lite a Ultra) |
+| **claudinio** 🏆 | Rápido, equilibrado, rentable | Codificación diaria, proyectos de hobby, código general | **Todos los planes** (Essential a Ultra) |
 | **claudius** ★ | Premium, razonamiento profundo | Tareas complejas, razonamiento profundo, flujos de trabajo agentivos intensivos | **Pro y Ultra** |
 !!! warning "`claudius` está incluido en Pro y Ultra"
-    En **Lite** y **Essential**, una petición que nombre `claudius` no se rechaza: la atiende `claudinio` y se factura a las tarifas de `claudinio`. Tu agente sigue funcionando y nunca se te cobra la tarifa premium en un plan que no la incluye.
+    En **Essential**, una petición que nombre `claudius` no se rechaza: la atiende `claudinio` y se factura a las tarifas de `claudinio`. Tu agente sigue funcionando y nunca se te cobra la tarifa premium en un plan que no la incluye.
 
     En **Pro** y **Ultra**, recuerda que el límite se mide **en dólares, no en peticiones**: el mismo trabajo en `claudius` consume unas seis veces más. En Pro (4 $/hora) son unas 70 peticiones premium antes de que se acabe la hora; en Ultra (10 $/hora), unas 175. Deja `claudinio` como predeterminado de tu agente y usa `claudius` cuando realmente necesites el razonamiento.
 
 ### Sin rodeos
 
-Si estás en **Lite** ($9) — **usa `claudinio` y no mires atrás.** 🎯
-
-Esta es la realidad: `claudinio` ofrece una calidad comparable a Claude Sonnet para la codificación diaria a una **fracción del costo interno**. En el plan Lite, puedes obtener **cientos de solicitudes por hora** con él — por eso es el modelo sobre el que se construyen todos los planes.
+Esta es la realidad: `claudinio` ofrece una calidad comparable a Claude Sonnet para la codificación diaria a una **fracción del costo interno**. En el plan Essential, puedes obtener **cientos de solicitudes por hora** con él — por eso es el modelo sobre el que se construyen todos los planes.
 
 | Métrica | claudinio | claudius |
 | --- | --- | --- |
@@ -48,7 +45,7 @@ Esta es la realidad: `claudinio` ofrece una calidad comparable a Claude Sonnet p
 
 Cada plan define una **ventana** de presupuesto — un período móvil y un gasto máximo dentro de ella:
 
-- **Lite**, **Essential**, **Pro** y **Ultra** usan una ventana de **1 hora**.
+- **Essential**, **Pro** y **Ultra** usan una ventana de **1 hora**.
 
 Dentro de la ventana, tu uso acumula un pequeño costo interno. Cuando ese costo interno alcanza el límite de la ventana, las solicitudes se pausan hasta que la ventana se reinicia.
 

@@ -8,7 +8,6 @@ l'utilisez librement. Le plafond existe uniquement pour empêcher un agent incon
 
 | Plan | Prix | Protection des dépenses | Idéal pour |
 | --- | --- | --- | --- |
-| **Lite** | 9 $ / mois | 1,00 $ / heure | Projets personnels, codage occasionnel |
 | **Essential** | 19 $ / mois ou 189 $ / an | 2,00 $ / heure | Qualité pour un usage quotidien |
 | **Pro** ★ | 39 $ / mois ou 389 $ / an | 4,00 $ / heure | Flux de travail agentiques intensifs |
 | **Ultra** | 99 $ / mois ou 989 $ / an | 10,00 $ / heure | Puissance maximale, équipes et production |
@@ -24,18 +23,16 @@ Nous proposons deux modèles principaux pour votre agent de codage :
 
 | Modèle | Backend | Cas d'utilisation | Recommandé pour |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Rapide, équilibré, économique | Codage quotidien, projets personnels, code général | **Tous les plans** (Lite à Ultra) |
+| **claudinio** 🏆 | Rapide, équilibré, économique | Codage quotidien, projets personnels, code général | **Tous les plans** (Essential à Ultra) |
 | **claudius** ★ | Premium, raisonnement approfondi | Tâches complexes, raisonnement approfondi, flux agentiques intensifs | **Pro et Ultra** |
 !!! warning "`claudius` est inclus dans Pro et Ultra"
-    Sur **Lite** et **Essential**, une requête qui nomme `claudius` n'est pas refusée : elle est servie par `claudinio` et facturée aux tarifs de `claudinio`. Votre agent continue de fonctionner et le tarif premium ne vous est jamais facturé sur une offre qui ne l'inclut pas.
+    Sur **Essential**, une requête qui nomme `claudius` n'est pas refusée : elle est servie par `claudinio` et facturée aux tarifs de `claudinio`. Votre agent continue de fonctionner et le tarif premium ne vous est jamais facturé sur une offre qui ne l'inclut pas.
 
     Sur **Pro** et **Ultra**, rappelez-vous que le plafond se mesure **en dollars, pas en requêtes** : le même travail sur `claudius` en consomme environ six fois plus. Sur Pro (4 $/heure), cela représente environ 70 requêtes premium avant la fin de l'heure ; sur Ultra (10 $/heure), environ 175. Gardez `claudinio` par défaut et passez à `claudius` quand vous avez vraiment besoin du raisonnement.
 
 ### Parlons franchement
 
-Si vous êtes sur **Lite** (9 $) — **utilisez `claudinio` sans hésiter.** 🎯
-
-Voici la réalité : `claudinio` offre une qualité comparable à Claude Sonnet pour le codage quotidien à une **fraction du coût interne**. Avec le plan Lite, vous pouvez obtenir **des centaines de requêtes par heure** avec lui — c'est pourquoi il est le modèle autour duquel toutes les offres sont construites.
+Voici la réalité : `claudinio` offre une qualité comparable à Claude Sonnet pour le codage quotidien à une **fraction du coût interne**. Avec le plan Essential, vous pouvez obtenir **des centaines de requêtes par heure** avec lui — c'est pourquoi il est le modèle autour duquel toutes les offres sont construites.
 
 | Métrique | claudinio | claudius |
 | --- | --- | --- |
@@ -51,7 +48,7 @@ Voici la réalité : `claudinio` offre une qualité comparable à Claude Sonnet 
 Chaque plan définit une **fenêtre** de budget — une période glissante et un montant maximum de dépenses
 à l'intérieur de celle-ci :
 
-- **Lite**, **Essential**, **Pro** et **Ultra** utilisent une fenêtre de **1 heure**.
+- **Essential**, **Pro** et **Ultra** utilisent une fenêtre de **1 heure**.
 
 Dans cette fenêtre, votre utilisation accumule un petit coût interne. Lorsque
 ce coût interne atteint le plafond de la fenêtre, les requêtes sont mises en pause jusqu'à la réinitialisation de la fenêtre.

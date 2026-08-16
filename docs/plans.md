@@ -9,7 +9,6 @@ loop, for example) from draining your plan.
 
 | Plan | Price | Spend protection | Best for |
 | --- | --- | --- | --- |
-| **Lite** | $9 / mo | $1.00 / hour | Hobby projects, occasional coding |
 | **Essential** | $19 / mo or $189 / yr | $2.00 / hour | Quality for everyday use |
 | **Pro** ★ | $39 / mo or $389 / yr | $4.00 / hour | Heavy agentic workflows |
 | **Ultra** | $99 / mo or $989 / yr | $10.00 / hour | Maximum power, teams & production |
@@ -25,16 +24,14 @@ We offer two main models for your coding agent:
 
 | Model | Backend | Use case | Recommended for |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Fast, balanced, cost-effective | Everyday coding, hobby projects, general code | **All plans** (Lite to Ultra) |
+| **claudinio** 🏆 | Fast, balanced, cost-effective | Everyday coding, hobby projects, general code | **All plans** (Essential to Ultra) |
 | **claudius** ★ | Premium, deep reasoning | Complex tasks, deep reasoning, heavy agentic workflows | **Pro and Ultra** |
 !!! warning "`claudius` is included in Pro and Ultra"
-    On **Lite** and **Essential**, a request that names `claudius` is not rejected — it is served by `claudinio` and billed at `claudinio` rates. Your agent keeps working and you are never charged the premium rate on a plan that does not include it.
+    On **Essential**, a request that names `claudius` is not rejected — it is served by `claudinio` and billed at `claudinio` rates. Your agent keeps working and you are never charged the premium rate on a plan that does not include it.
 
     On **Pro** and **Ultra**, remember the cap is measured **in dollars, not requests**: the same work on `claudius` uses roughly six times as much of it. On Pro ($4/hour) that is about 70 premium requests before the hour is gone; on Ultra ($10/hour), about 175. Keep `claudinio` as your agent's default and reach for `claudius` when you actually need the reasoning.
 
 ### Straight talk
-
-If you're on **Lite** ($9) — **use `claudinio` and don't look back.** 🎯
 
 If you're on **Essential** ($19) — same answer, and you have twice the cap to
 spend on it. `claudius` is not part of this plan; if your agent asks for it,
@@ -46,7 +43,7 @@ setup we see is **plan with `claudius`, implement with `claudinio`**: the
 reasoning is where the premium model earns its cost, and the implementation
 loop is where the volume lives.
 
-Here's the reality: `claudinio` delivers quality comparable to Claude Sonnet for everyday coding at a **fraction of the internal cost**. On the Lite plan, you can get **hundreds of requests per hour** with it — which is why it is the model every plan is built around.
+Here's the reality: `claudinio` delivers quality comparable to Claude Sonnet for everyday coding at a **fraction of the internal cost**. On the Essential plan, you can get **hundreds of requests per hour** with it — which is why it is the model every plan is built around.
 
 | Metric | claudinio | claudius |
 | --- | --- | --- |
@@ -67,7 +64,7 @@ in a day. Nothing is taken silently.
 Each plan defines a budget **window** — a rolling period and a maximum spend
 inside it:
 
-- **Lite**, **Essential**, **Pro**, and **Ultra** use a **1-hour** window.
+- **Essential**, **Pro**, and **Ultra** use a **1-hour** window.
 
 Within the window, your usage accumulates a tiny internal cost. When that
 internal cost reaches the window's cap, requests pause until the window resets.

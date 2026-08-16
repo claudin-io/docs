@@ -8,7 +8,6 @@ nutzen es frei. Die Grenze dient nur dazu, einen außer Kontrolle geratenen Agen
 
 | Plan | Preis | Ausgabenschutz | Ideal für |
 | --- | --- | --- | --- |
-| **Lite** | $9 / Monat | $1,00 / Stunde | Hobbyprojekte, gelegentliches Programmieren |
 | **Essential** | $19 / Monat oder $189 / Jahr | $2,00 / Stunde | Qualität für den täglichen Gebrauch |
 | **Pro** ★ | $39 / Monat oder $389 / Jahr | $4,00 / Stunde | Intensive agentenbasierte Arbeitsabläufe |
 | **Ultra** | $99 / Monat oder $989 / Jahr | $10,00 / Stunde | Maximale Leistung, Teams & Produktion |
@@ -22,18 +21,16 @@ Wir bieten zwei Hauptmodelle für Ihren Coding-Agenten:
 
 | Modell | Backend | Anwendungsfall | Empfohlen für |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Schnell, ausgewogen, kosteneffizient | Alltägliches Programmieren, Hobbyprojekte, allgemeiner Code | **Alle Pläne** (Lite bis Ultra) |
+| **claudinio** 🏆 | Schnell, ausgewogen, kosteneffizient | Alltägliches Programmieren, Hobbyprojekte, allgemeiner Code | **Alle Pläne** (Essential bis Ultra) |
 | **claudius** ★ | Premium, tiefgehendes Denken | Komplexe Aufgaben, tiefgehendes Denken, intensive agentenbasierte Arbeitsabläufe | **Pro und Ultra** |
 !!! warning "`claudius` ist in Pro und Ultra enthalten"
-    Bei **Lite** und **Essential** wird eine Anfrage, die `claudius` nennt, nicht abgelehnt — sie wird von `claudinio` bedient und zu `claudinio`-Tarifen abgerechnet. Ihr Agent läuft weiter, und der Premium-Tarif wird Ihnen in einem Plan, der ihn nicht enthält, nie berechnet.
+    Bei **Essential** wird eine Anfrage, die `claudius` nennt, nicht abgelehnt — sie wird von `claudinio` bedient und zu `claudinio`-Tarifen abgerechnet. Ihr Agent läuft weiter, und der Premium-Tarif wird Ihnen in einem Plan, der ihn nicht enthält, nie berechnet.
 
     Bei **Pro** und **Ultra** gilt: das Limit wird **in Dollar gemessen, nicht in Anfragen** — dieselbe Arbeit auf `claudius` verbraucht rund sechsmal so viel davon. Bei Pro (4 $/Stunde) sind das etwa 70 Premium-Anfragen, bis die Stunde vorbei ist; bei Ultra (10 $/Stunde) etwa 175. Lassen Sie `claudinio` als Standard und greifen Sie zu `claudius`, wenn Sie das Denkvermögen wirklich brauchen.
 
 ### Klartext
 
-Wenn Sie den **Lite**-Plan ($9) haben – **verwenden Sie `claudinio` und schauen Sie nicht zurück.** 🎯
-
-Hier ist die Realität: `claudinio` liefert eine Qualität, die mit Claude Sonnet für alltägliches Programmieren vergleichbar ist, zu einem **Bruchteil der internen Kosten**. Mit dem Lite-Plan erhalten Sie damit **Hunderte von Anfragen pro Stunde** – deshalb ist es das Modell, um das herum jeder Plan gebaut ist.
+Hier ist die Realität: `claudinio` liefert eine Qualität, die mit Claude Sonnet für alltägliches Programmieren vergleichbar ist, zu einem **Bruchteil der internen Kosten**. Mit dem Essential-Plan erhalten Sie damit **Hunderte von Anfragen pro Stunde** – deshalb ist es das Modell, um das herum jeder Plan gebaut ist.
 
 | Metrik | claudinio | claudius |
 | --- | --- | --- |
@@ -48,7 +45,7 @@ Hier ist die Realität: `claudinio` liefert eine Qualität, die mit Claude Sonne
 
 Jeder Plan definiert ein Budget-**Fenster** – einen gleitenden Zeitraum und eine maximale Ausgabe innerhalb dieses Fensters:
 
-- **Lite**, **Essential**, **Pro** und **Ultra** verwenden ein **1-Stunden**-Fenster.
+- **Essential**, **Pro** und **Ultra** verwenden ein **1-Stunden**-Fenster.
 
 Innerhalb des Fensters sammelt Ihre Nutzung einen winzigen internen Kostenbetrag an. Wenn dieser interne Kostenbetrag die Obergrenze des Fensters erreicht, werden Anfragen angehalten, bis das Fenster zurückgesetzt wird.
 
