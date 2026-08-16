@@ -156,6 +156,20 @@ O seu painel de controlo mostra o momento exato do reinício e o orçamento rest
 o intervalo indicado nesse cabeçalho em vez de voltar a tentar imediatamente. Consulte
 [Planos e limites](plans.md) para saber como funcionam as janelas.
 
+### Uma mensagem em vez de um `429` {#cap-alternative-response}
+
+Num pequeno número de contas estamos a experimentar uma resposta diferente para
+a mesma situação. Em vez do erro, o pedido é concluído e a própria resposta
+explica que o teto foi atingido e quando reinicia. Estamos a medir se assim a
+informação chega às pessoas de forma mais fiável do que um erro que o agente
+delas engole em silêncio — e se, dito com clareza, preferem mudar para um plano
+à medida.
+
+**Se está a construir automação, não leia um `2xx` como "o trabalho foi
+feito".** Trate uma resposta que diz que o teto foi atingido como o teto tendo
+sido atingido, e recue até a janela reiniciar. O `429` acima continua a ser o
+comportamento por omissão e é o que quase todas as contas recebem.
+
 ## Rate limiting
 
 A Claudin.io não bloqueia de forma rígida a utilização normal. Taxas de pedidos abusivas são

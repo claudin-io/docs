@@ -156,6 +156,20 @@ lại. Dashboard của bạn hiển thị thời điểm đặt lại chính xá
 Hãy giãn nhịp theo header đó thay vì thử lại ngay lập tức. Xem [Gói & giới hạn](plans.md)
 để biết cách hoạt động của các cửa sổ.
 
+### Một tin nhắn thay cho `429` {#cap-alternative-response}
+
+Trên một số ít tài khoản, chúng tôi đang thử một câu trả lời khác cho cùng tình
+huống. Thay vì lỗi, yêu cầu vẫn hoàn tất và chính nội dung trả lời sẽ giải thích
+rằng đã chạm trần và khi nào trần được đặt lại. Chúng tôi đang đo xem cách này
+có đưa thông tin đến người dùng đáng tin cậy hơn một lỗi bị tác nhân của họ nuốt
+đi lặng lẽ hay không — và liệu khi được nói rõ, họ có muốn chuyển sang gói vừa
+tầm hay không.
+
+**Nếu bạn xây dựng tự động hoá, đừng đọc `2xx` là "đã làm xong việc".** Hãy xem
+một phản hồi nói rằng đã chạm trần đúng là đã chạm trần, và chờ đến khi cửa sổ
+được đặt lại. `429` ở trên vẫn là hành vi mặc định và là thứ gần như mọi tài
+khoản nhận được.
+
 ## Giới hạn tốc độ
 
 Claudin.io không chặn cứng việc sử dụng bình thường. Tốc độ yêu cầu ở mức lạm dụng

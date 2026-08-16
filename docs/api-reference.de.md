@@ -120,6 +120,20 @@ Fehler folgen dem OpenAI-Fehlerformat:
 
 Wenn du den Ausgabenschutz des aktuellen Fensters ausgeschöpft hast, geben Anfragen `429` mit einem `Retry-After`-Header zurück, der die Sekunden bis zum Zurücksetzen des Fensters angibt. Dein Dashboard zeigt den genauen Zeitpunkt des Zurücksetzens und das verbleibende Budget. Warte die im Header angegebene Zeit ab, statt sofort erneut zu versuchen. Unter [Pläne & Limits](plans.md) erfährst du, wie die Fenster funktionieren.
 
+### Eine Nachricht statt eines `429` {#cap-alternative-response}
+
+Bei einer kleinen Zahl von Konten testen wir eine andere Antwort auf dieselbe
+Situation. Statt des Fehlers wird die Anfrage abgeschlossen, und die Antwort
+selbst erklärt, dass das Limit erreicht ist und wann es zurückgesetzt wird. Wir
+messen, ob die Information Menschen so zuverlässiger erreicht als ein Fehler,
+den ihr Agent stillschweigend schluckt — und ob sie, klar gesagt, lieber zu
+einem passenden Tarif wechseln.
+
+**Wenn du Automatisierung baust, lies ein `2xx` nicht als „Arbeit erledigt".**
+Behandle eine Antwort, die sagt, das Limit sei erreicht, als erreichtes Limit,
+und warte bis zum Zurücksetzen des Fensters. Der `429` oben bleibt das
+Standardverhalten und ist das, was fast jedes Konto erhält.
+
 ## Rate-Limiting
 
 Claudin.io blockiert normale Nutzung nicht hart. Missbräuchliche Anfrageraten werden *verlangsamt* (eine transparente Drosselung), statt abgelehnt zu werden, sodass Clients, die sich korrekt verhalten, nie bestraft werden. In der Praxis musst du nichts tun – wiederhole einfach die Anfrage im seltenen `429`-Fall.

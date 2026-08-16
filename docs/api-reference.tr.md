@@ -161,6 +161,19 @@ döndürür. Panonuz tam sıfırlanma zamanını ve kalan bütçeyi gösterir. H
 yeniden denemek yerine bu başlığa göre bekleyin. Pencerelerin nasıl çalıştığı
 için [Planlar ve limitler](plans.md) bölümüne bakın.
 
+### `429` yerine bir mesaj {#cap-alternative-response}
+
+Az sayıda hesapta aynı duruma farklı bir yanıt deniyoruz. Hata yerine istek
+tamamlanıyor ve yanıtın kendisi tavana ulaşıldığını ve ne zaman sıfırlanacağını
+açıklıyor. Bunun, ajanlarının sessizce yuttuğu bir hataya kıyasla bilgiyi
+insanlara daha güvenilir şekilde ulaştırıp ulaştırmadığını ölçüyoruz — ve açıkça
+söylendiğinde kendilerine uygun bir plana geçmeyi tercih edip etmediklerini.
+
+**Otomasyon geliştiriyorsan bir `2xx`'i "iş yapıldı" diye okuma.** Tavana
+ulaşıldığını söyleyen bir yanıtı tavana ulaşılmış say ve pencere sıfırlanana
+kadar bekle. Yukarıdaki `429` varsayılan davranış olmayı sürdürüyor ve hemen
+hemen her hesabın aldığı yanıt bu.
+
 ## Hız sınırlama
 
 Claudin.io normal kullanımı kesin olarak engellemez. Kötüye kullanılan istek

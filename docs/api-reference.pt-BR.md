@@ -156,6 +156,20 @@ Seu dashboard mostra o horário exato de redefinição e o orçamento restante. 
 intervalo indicado nesse header em vez de tentar imediatamente de novo. Veja
 [Planos e limites](plans.md) para saber como as janelas funcionam.
 
+### Uma mensagem em vez de um `429` {#cap-alternative-response}
+
+Em um pequeno número de contas estamos testando uma resposta diferente para a
+mesma situação. Em vez do erro, a requisição é concluída e a própria resposta
+explica que o teto foi atingido e quando ele reinicia. Estamos medindo se assim
+a informação chega às pessoas de forma mais confiável do que um erro que o
+agente delas engole em silêncio — e se, dito com clareza, elas prefeririam
+mudar para um plano do tamanho certo.
+
+**Se você constrói automação, não leia um `2xx` como "o trabalho foi
+feito".** Trate uma resposta que diz que o teto foi atingido como o teto tendo
+sido atingido, e recue até a janela reiniciar. O `429` acima continua sendo o
+comportamento padrão e é o que quase todas as contas recebem.
+
 ## Limitação de taxa
 
 O Claudin.io não bloqueia o uso normal de forma rígida. Taxas de requisição abusivas são

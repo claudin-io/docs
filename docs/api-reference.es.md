@@ -120,6 +120,20 @@ Los errores siguen la forma de error de OpenAI:
 
 Cuando agotas la protección de gasto de la ventana actual, las solicitudes devuelven `429` con una cabecera `Retry-After` que indica los segundos que faltan para que la ventana se reinicie. Tu panel de control muestra la hora exacta de reinicio y el presupuesto restante. Respeta esa cabecera en lugar de reintentar de inmediato. Consulta [Planes y límites](plans.md) para saber cómo funcionan las ventanas.
 
+### Un mensaje en lugar de un `429` {#cap-alternative-response}
+
+En un pequeño número de cuentas estamos probando una respuesta distinta para la
+misma situación. En vez del error, la solicitud se completa y la propia
+respuesta explica que se alcanzó el límite y cuándo se reinicia. Estamos
+midiendo si así la información llega a las personas de forma más fiable que un
+error que su agente se traga en silencio — y si, dicho claramente, prefieren
+pasar a un plan que les quede bien.
+
+**Si construyes automatización, no leas un `2xx` como "el trabajo se hizo".**
+Trata una respuesta que dice que se alcanzó el límite como el límite alcanzado,
+y retrocede hasta que la ventana se reinicie. El `429` de arriba sigue siendo
+el comportamiento por defecto y es lo que recibe casi cualquier cuenta.
+
 ## Limitación de velocidad
 
 Claudin.io no bloquea de forma estricta el uso normal. Las tasas de solicitudes abusivas se *ralentizan* (una limitación transparente) en lugar de rechazarse, así que los clientes con buen comportamiento nunca se ven penalizados. En la práctica no necesitas hacer nada: solo reintentar ante el ocasional `429`.

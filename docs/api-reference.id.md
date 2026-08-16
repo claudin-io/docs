@@ -122,6 +122,20 @@ Error mengikuti bentuk error OpenAI:
 
 Saat Anda menghabiskan perlindungan pengeluaran pada jendela saat ini, permintaan akan mengembalikan `429` dengan header `Retry-After` yang menunjukkan detik hingga jendela direset. Dasbor Anda menampilkan waktu reset yang tepat dan sisa anggaran. Tunggulah sesuai header tersebut alih-alih mencoba lagi segera. Lihat [Paket & batasan](plans.md) untuk mengetahui cara kerja jendela tersebut.
 
+### Sebuah pesan alih-alih `429` {#cap-alternative-response}
+
+Pada sejumlah kecil akun kami sedang mencoba jawaban berbeda untuk situasi yang
+sama. Alih-alih galat, permintaan diselesaikan dan balasannya sendiri
+menjelaskan bahwa batas sudah tercapai dan kapan batas itu disetel ulang. Kami
+mengukur apakah dengan cara ini informasinya sampai ke orangnya lebih andal
+daripada galat yang ditelan diam-diam oleh agen mereka — dan apakah, kalau
+dikatakan terus terang, mereka lebih memilih pindah ke paket yang pas.
+
+**Kalau kamu membangun otomasi, jangan membaca `2xx` sebagai "pekerjaan
+selesai".** Perlakukan balasan yang menyatakan batas tercapai sebagai batas yang
+memang tercapai, dan tunggu sampai jendelanya disetel ulang. `429` di atas tetap
+perilaku bawaan dan itulah yang diterima hampir semua akun.
+
 ## Rate limiting
 
 Claudin.io tidak memblokir total penggunaan normal. Laju permintaan yang abusif *diperlambat* (throttle yang transparan) alih-alih ditolak, sehingga klien yang berperilaku baik tidak akan pernah dirugikan. Dalam praktiknya, Anda tidak perlu melakukan apa pun — cukup coba lagi pada `429` yang jarang terjadi.

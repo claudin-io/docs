@@ -167,6 +167,21 @@ l'heure exacte de réinitialisation et le budget restant. Respectez cet en-tête
 plutôt que de réessayer immédiatement. Voir [Plans et limites](plans.md) pour
 comprendre le fonctionnement des fenêtres.
 
+### Un message au lieu d'un `429` {#cap-alternative-response}
+
+Sur un petit nombre de comptes, nous testons une réponse différente à la même
+situation. Au lieu de l'erreur, la requête aboutit et la réponse elle-même
+explique que le plafond est atteint et quand il se réinitialise. Nous mesurons
+si l'information atteint ainsi les personnes plus sûrement qu'une erreur que
+leur agent avale en silence — et si, dit clairement, elles préfèrent passer à
+une offre à leur taille.
+
+**Si vous construisez de l'automatisation, ne lisez pas un `2xx` comme « le
+travail a été fait ».** Traitez une réponse qui dit que le plafond est atteint
+comme le plafond atteint, et attendez la réinitialisation de la fenêtre. Le
+`429` ci-dessus reste le comportement par défaut et c'est ce que reçoit presque
+tous les comptes.
+
 ## Limitation de débit
 
 Claudin.io n'impose pas de blocage strict à l'utilisation normale. Les cadences

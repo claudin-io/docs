@@ -156,6 +156,20 @@ Your dashboard shows the exact reset time and remaining budget. Back off on
 that header rather than retrying immediately. See [Plans & limits](plans.md)
 for how the windows work.
 
+### A message instead of a `429` {#cap-alternative-response}
+
+On a small number of accounts we are trialling a different answer to the same
+situation. Instead of the error, the request completes and the reply itself
+explains that the ceiling is reached and when it resets. We are measuring
+whether that reaches people more reliably than an error their agent quietly
+swallows — and whether, told plainly, they would rather move to a plan that
+fits.
+
+**If you build automation, do not read a `2xx` as "work was done".** Treat a
+reply that says the ceiling is reached as the ceiling being reached, and back
+off until the window resets. The `429` above remains the default and is what
+almost every account receives.
+
 ## Rate limiting
 
 Claudin.io doesn't hard-block normal usage. Abusive request rates are *slowed*

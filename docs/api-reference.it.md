@@ -161,6 +161,20 @@ e il budget rimanente. Rispetta il tempo indicato da quell'header invece di
 riprovare subito. Vedi [Piani e limiti](plans.md) per come funzionano le
 finestre.
 
+### Un messaggio invece di un `429` {#cap-alternative-response}
+
+Su un piccolo numero di account stiamo provando una risposta diversa alla stessa
+situazione. Invece dell'errore, la richiesta va a buon fine e la risposta stessa
+spiega che il limite è stato raggiunto e quando si azzera. Stiamo misurando se
+così l'informazione arriva alle persone in modo più affidabile di un errore che
+il loro agente si beve in silenzio — e se, detto chiaramente, preferiscono
+passare a un piano della misura giusta.
+
+**Se costruisci automazioni, non leggere un `2xx` come "il lavoro è stato
+fatto".** Tratta una risposta che dice che il limite è stato raggiunto come il
+limite raggiunto, e attendi l'azzeramento della finestra. Il `429` qui sopra
+resta il comportamento predefinito ed è ciò che riceve quasi ogni account.
+
 ## Limitazione della frequenza
 
 Claudin.io non blocca in modo rigido l'uso normale. I tassi di richiesta
