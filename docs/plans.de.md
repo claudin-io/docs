@@ -34,7 +34,7 @@ Hier ist die Realität: `claudinio` liefert eine Qualität, die mit Claude Sonne
 
 | Metrik | claudinio | claudius |
 | --- | --- | --- |
-| Auswirkung auf das Stundenbudget | Niedrig – reicht viel weiter | Hoch – 6x pro Anfrage |
+| Auswirkung auf das Stundenbudget | Niedrig – reicht viel weiter | Hoch – bis zu 6x pro Anfrage |
 | Anwendungsfall | Tägliches Programmieren, persönliche Projekte | Intensives Denken, komplexe Agenten |
 
 **Goldene Regel:** Konfigurieren Sie Ihren Agenten (Claude Code, Cursor, Continue usw.) mit `claudinio` als Standardmodell. Wechseln Sie nur dann zu `claudius`, wenn Sie explizit mehr Denkfähigkeit benötigen. Für Hobbyprojekte ist `claudinio` **alles, was Sie brauchen**, und wahrscheinlich **mehr, als Sie erwarten**.

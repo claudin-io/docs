@@ -47,7 +47,7 @@ Here's the reality: `claudinio` delivers quality comparable to Claude Sonnet for
 
 | Metric | claudinio | claudius |
 | --- | --- | --- |
-| Impact on hourly budget | Low — stretches much further | High — 6x per request |
+| Impact on hourly budget | Low — stretches much further | High — up to 6x per request |
 | Use case | Daily coding, personal projects | Heavy reasoning, complex agents |
 
 **Golden rule:** Configure your agent (Claude Code, Cursor, Continue, etc.) with `claudinio` as the default model. Only switch to `claudius` when you explicitly need more reasoning power. For hobby projects, `claudinio` is **all you need** and probably **more than you expect**.

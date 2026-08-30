@@ -37,7 +37,7 @@ Kodlama ajanınız için iki ana model sunuyoruz:
 
 | Metrik | claudinio | claudius |
 | --- | --- | --- |
-| Saatlik bütçeye etkisi | Düşük — çok daha uzun süre dayanır | Yüksek — istek başına 6x |
+| Saatlik bütçeye etkisi | Düşük — çok daha uzun süre dayanır | Yüksek — istek başına 6x'e kadar |
 | Kullanım alanı | Günlük kodlama, kişisel projeler | Yoğun muhakeme, karmaşık ajanlar |
 
 **Altın kural:** Ajanınızı (Claude Code, Cursor, Continue, vb.) varsayılan model olarak `claudinio` ile yapılandırın. Yalnızca daha fazla muhakeme gücüne açıkça ihtiyacınız olduğunda  `claudius`'a geçin. Hobi projeleri için `claudinio` **ihtiyacınız olan her şey** ve muhtemelen **beklediğinizden fazlasıdır**.

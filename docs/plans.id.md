@@ -36,7 +36,7 @@ Inilah kenyataannya: `claudinio` memberikan kualitas yang sebanding dengan Claud
 
 | Metrik | claudinio | claudius |
 | --- | --- | --- |
-| Dampak pada anggaran per jam | Rendah — bertahan lebih lama | Tinggi — 6x per permintaan |
+| Dampak pada anggaran per jam | Rendah — bertahan lebih lama | Tinggi — hingga 6x per permintaan |
 | Kasus penggunaan | Coding harian, proyek pribadi | Penalaran berat, agen kompleks |
 
 **Aturan emas:** Konfigurasikan agen Anda (Claude Code, Cursor, Continue, dll.) dengan `claudinio` sebagai model default. Hanya beralih ke `claudius` saat Anda benar-benar membutuhkan lebih banyak daya penalaran. Untuk proyek hobi, `claudinio` **adalah semua yang Anda butuhkan** dan kemungkinan **lebih dari yang Anda harapkan**.
