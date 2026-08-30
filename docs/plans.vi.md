@@ -35,7 +35,7 @@ Chúng tôi cung cấp hai mô hình chính cho coding agent của bạn:
 
 | Chỉ số | claudinio | claudius |
 | --- | --- | --- |
-| Tác động đến ngân sách theo giờ | Thấp — kéo dài hơn nhiều | Cao — 6x mỗi yêu cầu |
+| Tác động đến ngân sách theo giờ | Thấp — kéo dài hơn nhiều | Cao — tối đa 6x mỗi yêu cầu |
 | Trường hợp sử dụng | Code hàng ngày, dự án cá nhân | Suy luận nặng, agent phức tạp |
 
 **Nguyên tắc vàng:** Cấu hình agent của bạn (Claude Code, Cursor, Continue, v.v.) với `claudinio` làm mô hình mặc định. Chỉ chuyển sang `claudius` khi bạn thực sự cần thêm sức mạnh suy luận. Đối với các dự án cá nhân, `claudinio` là **tất cả những gì bạn cần** và có lẽ **còn hơn cả bạn mong đợi**.

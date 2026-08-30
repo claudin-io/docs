@@ -36,7 +36,7 @@ Voici la réalité : `claudinio` offre une qualité comparable à Claude Sonnet 
 
 | Métrique | claudinio | claudius |
 | --- | --- | --- |
-| Impact sur le budget horaire | Faible — va beaucoup plus loin | Élevé — 6x par requête |
+| Impact sur le budget horaire | Faible — va beaucoup plus loin | Élevé — jusqu'à 6x par requête |
 | Cas d'utilisation | Codage quotidien, projets personnels | Raisonnement intensif, agents complexes |
 
 **Règle d'or :** Configurez votre agent (Claude Code, Cursor, Continue, etc.) avec `claudinio` comme modèle par défaut. Passez à `claudius` uniquement lorsque vous avez explicitement besoin de plus de puissance de raisonnement. Pour les projets personnels, `claudinio` est **tout ce dont vous avez besoin** et probablement **plus que ce que vous attendez**.
