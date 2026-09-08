@@ -73,7 +73,7 @@ Claudinio modelleri yanıtlamadan önce akıl yürütür ve **akıl yürütme to
 kapsar. Bu nedenle küçük bir `max_tokens` neredeyse tamamen akıl yürütmeye
 harcanabilir ve yanıt cümlenin ortasında kesilebilir.
 
-Bunu önlemek için **4000**'in altındaki değerler otomatik olarak 4000'e
+Bunu önlemek için **32000**'in altındaki değerler otomatik olarak 32000'e
 yükseltilir. Diğer uçta, **393216**'nın üzerindeki değerler 393216'ya —
 modellerin kabul ettiği maksimuma — düşürülür; çünkü daha büyük bir sayı "ne
 kadar istersen o kadar" olarak değil, doğrudan reddedilir. İkisi arasındaki her

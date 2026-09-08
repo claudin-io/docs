@@ -63,7 +63,7 @@ Standardmäßige OpenAI-Parameter werden unterstützt: `messages`, `temperature`
 
 Claudinio-Modelle denken nach, bevor sie antworten, und **Reasoning-Tokens werden auf `max_tokens` angerechnet** – dasselbe Budget deckt die interne Gedankenkette (Chain-of-Thought) und die sichtbare Antwort ab. Ein kleines `max_tokens` kann daher fast vollständig für das Reasoning verbraucht werden, sodass die Antwort mitten im Satz abgeschnitten wird.
 
-Um das zu verhindern, werden Werte unter **4000** automatisch auf 4000 angehoben. Am anderen Ende werden Werte über **393216** auf 393216 gesenkt – das Maximum, das die Modelle akzeptieren –, weil eine größere Zahl rundweg abgelehnt statt als „so viel du möchtest" behandelt wird. Alles dazwischen wird unverändert durchgereicht, und den Parameter wegzulassen ist immer in Ordnung.
+Um das zu verhindern, werden Werte unter **32000** automatisch auf 32000 angehoben. Am anderen Ende werden Werte über **393216** auf 393216 gesenkt – das Maximum, das die Modelle akzeptieren –, weil eine größere Zahl rundweg abgelehnt statt als „so viel du möchtest" behandelt wird. Alles dazwischen wird unverändert durchgereicht, und den Parameter wegzulassen ist immer in Ordnung.
 
 `max_tokens` ist eine Obergrenze, keine Reservierung: Abgerechnet werden die tatsächlich generierten Tokens, ein großzügiger Wert kostet also nichts extra.
 

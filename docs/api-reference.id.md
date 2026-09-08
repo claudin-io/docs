@@ -63,7 +63,7 @@ Parameter OpenAI standar didukung: `messages`, `temperature`, `top_p`, `max_toke
 
 Model Claudinio bernalar sebelum menjawab, dan **token penalaran diperhitungkan dalam `max_tokens`** — anggaran yang sama mencakup rantai pemikiran internal dan balasan yang terlihat. Oleh karena itu, `max_tokens` yang kecil bisa habis hampir seluruhnya untuk penalaran, sehingga jawaban terpotong di tengah kalimat.
 
-Untuk mencegah hal itu, nilai di bawah **4000** otomatis dinaikkan menjadi 4000. Di sisi lain, nilai di atas **393216** diturunkan menjadi 393216 — maksimum yang dapat diterima model — karena angka yang lebih besar ditolak mentah-mentah, bukan dianggap sebagai "sebanyak yang Anda mau". Nilai apa pun di antara keduanya diteruskan tanpa perubahan, dan tidak menyertakan parameter ini selalu aman.
+Untuk mencegah hal itu, nilai di bawah **32000** otomatis dinaikkan menjadi 32000. Di sisi lain, nilai di atas **393216** diturunkan menjadi 393216 — maksimum yang dapat diterima model — karena angka yang lebih besar ditolak mentah-mentah, bukan dianggap sebagai "sebanyak yang Anda mau". Nilai apa pun di antara keduanya diteruskan tanpa perubahan, dan tidak menyertakan parameter ini selalu aman.
 
 `max_tokens` adalah batas atas, bukan reservasi: Anda ditagih untuk token yang benar-benar dihasilkan, jadi nilai yang besar tidak memerlukan biaya tambahan.
 

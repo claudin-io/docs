@@ -76,8 +76,8 @@ de pensée interne et la réponse visible. Un `max_tokens` faible peut donc êtr
 presque entièrement consommé par le raisonnement, laissant la réponse tronquée
 en pleine phrase.
 
-Pour éviter cela, les valeurs inférieures à **4000** sont automatiquement
-remontées à 4000. À l'autre extrémité, les valeurs supérieures à **393216** sont
+Pour éviter cela, les valeurs inférieures à **32000** sont automatiquement
+remontées à 32000. À l'autre extrémité, les valeurs supérieures à **393216** sont
 abaissées à 393216 — le maximum accepté par les modèles — car un nombre plus
 grand est rejeté d'emblée plutôt que traité comme « autant que vous voulez ».
 Tout ce qui se situe entre les deux est transmis tel quel, et omettre ce

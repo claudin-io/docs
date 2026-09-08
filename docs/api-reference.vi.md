@@ -73,7 +73,7 @@ vào `max_tokens`** — cùng một ngân sách bao gồm cả chuỗi suy nghĩ
 trả lời hiển thị. Do đó, một giá trị `max_tokens` nhỏ có thể bị tiêu gần như toàn
 bộ vào suy luận, khiến câu trả lời bị cắt cụt giữa chừng.
 
-Để ngăn điều đó, các giá trị dưới **4000** sẽ tự động được nâng lên 4000. Ở đầu
+Để ngăn điều đó, các giá trị dưới **32000** sẽ tự động được nâng lên 32000. Ở đầu
 còn lại, các giá trị trên **393216** sẽ bị hạ xuống 393216 — mức tối đa mà các
 model chấp nhận — bởi vì một con số lớn hơn sẽ bị từ chối thẳng thừng thay vì được
 coi là "càng nhiều càng tốt". Mọi giá trị nằm giữa hai mốc này đều được truyền qua

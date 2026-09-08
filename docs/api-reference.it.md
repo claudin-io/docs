@@ -74,8 +74,8 @@ interna e la risposta visibile. Un `max_tokens` piccolo può quindi essere speso
 quasi interamente nel ragionamento, lasciando la risposta troncata a metà
 frase.
 
-Per evitarlo, i valori inferiori a **4000** vengono automaticamente portati a
-4000. All'altro estremo, i valori superiori a **393216** vengono abbassati a
+Per evitarlo, i valori inferiori a **32000** vengono automaticamente portati a
+32000. All'altro estremo, i valori superiori a **393216** vengono abbassati a
 393216 — il massimo che i modelli accettano — perché un numero più grande viene
 rifiutato del tutto anziché essere trattato come «quanto ne vuoi». Qualsiasi
 valore intermedio viene passato inalterato, e omettere il parametro è sempre

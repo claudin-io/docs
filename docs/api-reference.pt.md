@@ -73,7 +73,7 @@ o `max_tokens`** — o mesmo orçamento cobre o raciocínio interno (chain-of-th
 resposta visível. Um `max_tokens` pequeno pode, portanto, ser gasto quase inteiramente em
 raciocínio, deixando a resposta truncada a meio da frase.
 
-Para evitar isso, os valores abaixo de **4000** são automaticamente elevados para 4000. No
+Para evitar isso, os valores abaixo de **32000** são automaticamente elevados para 32000. No
 outro extremo, os valores acima de **393216** são reduzidos para 393216 — o máximo que os
 modelos aceitam — porque um número maior é rejeitado de imediato em vez de ser
 tratado como "tanto quanto quiser". Qualquer valor entre os dois é passado

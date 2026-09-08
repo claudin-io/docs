@@ -73,7 +73,7 @@ Claudinio models reason before they answer, and **reasoning tokens count against
 visible reply. A small `max_tokens` can therefore be spent almost entirely on
 reasoning, leaving the answer truncated mid-sentence.
 
-To prevent that, values below **4000** are automatically raised to 4000. At the
+To prevent that, values below **32000** are automatically raised to 32000. At the
 other end, values above **393216** are lowered to 393216 — the maximum the
 models accept — because a larger number is rejected outright rather than
 treated as "as much as you like". Anything between the two is passed through
