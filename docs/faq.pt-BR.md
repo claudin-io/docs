@@ -56,6 +56,17 @@ Pelo seu [painel de controle](https://claudin.io/dashboard). Upgrades são aplic
 (através do Stripe). Se você cancelar, mantém seu plano pago até o final do período
 que já pagou, e então cai para o Plano Gratuito automaticamente.
 
+## Posso pedir reembolso?
+
+Em até **48 horas após o seu primeiro pagamento**, sim — escreva para
+[support@claudin.io](mailto:support@claudin.io) a partir do e-mail da conta. A
+assinatura é encerrada imediatamente e você recebe de volta o que pagou menos uma
+taxa de uso e processamento que cobre o custo do uso de modelos feito pela sua
+conta nesse período (nunca mais do que você pagou). Testou por um dia e não era
+para você? Recebe quase tudo. Rodou no teto horário por dois dias? Espere pouco
+ou nada. Após 48 horas não há reembolsos; cancelar mantém o plano até o fim do
+período pago. Texto completo nos [Termos](https://claudin.io/terms).
+
 ## Encontrei um erro de orçamento. E agora?
 
 Você atingiu o teto de proteção de gastos da janela atual. Ou aguarde a

@@ -56,6 +56,18 @@ From your [dashboard](https://claudin.io/dashboard). Upgrades apply immediately
 (via Stripe). If you cancel, you keep your paid plan until the end of the period
 you already paid for, then drop to Free automatically.
 
+## Can I get a refund?
+
+Within **48 hours of your first payment**, yes — write to
+[support@claudin.io](mailto:support@claudin.io) from your account's email. The
+subscription ends immediately, and you get back what you paid minus a
+usage and handling fee that covers the cost of the model usage your account
+made in that time (never more than you paid). Tried it for a day and it wasn't for
+you? You get almost everything back. Ran it at the hourly ceiling for two
+days? Expect little or nothing. After 48 hours there are no refunds; cancelling
+keeps your plan until the end of the paid period. Full wording in the
+[Terms](https://claudin.io/terms).
+
 ## I hit a budget error. What now?
 
 You reached the current window's spend-protection cap. Either wait for the

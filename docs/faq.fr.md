@@ -57,6 +57,18 @@ Depuis votre [tableau de bord](https://claudin.io/dashboard). Les mises à nivea
 (via Stripe). Si vous annulez, vous conservez votre plan payant jusqu'à la fin de la période
 que vous avez déjà payée, puis vous passez automatiquement à Free.
 
+## Puis-je obtenir un remboursement ?
+
+Dans les **48 heures suivant votre premier paiement**, oui — écrivez à
+[support@claudin.io](mailto:support@claudin.io) depuis l'e-mail de votre compte.
+L'abonnement prend fin immédiatement et vous récupérez ce que vous avez payé,
+moins des frais d'utilisation et de traitement couvrant le coût de l'utilisation
+des modèles par votre compte pendant cette période (jamais plus que ce que vous
+avez payé). Essayé un jour, pas convaincu ? Vous récupérez presque tout. Utilisé
+au plafond horaire pendant deux jours ? Attendez-vous à peu ou rien. Passé 48
+heures, aucun remboursement ; la résiliation maintient votre forfait jusqu'à la
+fin de la période payée. Texte complet dans les [Conditions](https://claudin.io/terms).
+
 ## J'ai rencontré une erreur de budget. Que faire ?
 
 Vous avez atteint le plafond de protection des dépenses de la fenêtre actuelle. Soit attendez que la

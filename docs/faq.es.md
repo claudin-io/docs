@@ -45,6 +45,17 @@ Sí, de forma transparente. Envía bloques de contenido estándar de OpenAI; el 
 
 Desde tu [panel de control](https://claudin.io/dashboard). Las actualizaciones se aplican de inmediato (a través de Stripe). Si cancelas, mantienes tu plan pago hasta el final del período que ya pagaste, luego pasas a Gratuito automáticamente.
 
+## ¿Puedo pedir un reembolso?
+
+Dentro de las **48 horas siguientes a tu primer pago**, sí — escribe a
+[support@claudin.io](mailto:support@claudin.io) desde el correo de tu cuenta. La
+suscripción finaliza de inmediato y recuperas lo que pagaste menos una tarifa de
+uso y gestión que cubre el coste del uso de modelos que hizo tu cuenta en ese
+tiempo (nunca más de lo que pagaste). ¿Lo probaste un día y no era para ti?
+Recuperas casi todo. ¿Lo usaste al tope horario durante dos días? Espera poco o
+nada. Pasadas 48 horas no hay reembolsos; cancelar mantiene tu plan hasta el
+final del periodo pagado. Texto completo en los [Términos](https://claudin.io/terms).
+
 ## Recibí un error de presupuesto. ¿Y ahora?
 
 Alcanzaste el límite de protección de gasto de la ventana actual. Espera a que la ventana se reinicie (tu panel muestra cuándo) o [actualiza](plans.md) para obtener un límite mayor.

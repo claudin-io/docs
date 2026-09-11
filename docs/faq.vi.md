@@ -56,6 +56,17 @@ Từ [dashboard](https://claudin.io/dashboard) của bạn. Việc nâng cấp c
 (qua Stripe). Nếu bạn hủy, bạn vẫn giữ gói đã trả tiền cho đến cuối kỳ
 mà bạn đã thanh toán, sau đó tự động chuyển xuống Free.
 
+## Tôi có thể được hoàn tiền không?
+
+Trong vòng **48 giờ kể từ khoản thanh toán đầu tiên**, có — hãy gửi email đến
+[support@claudin.io](mailto:support@claudin.io) từ địa chỉ email của tài khoản.
+Gói đăng ký kết thúc ngay lập tức và bạn nhận lại số tiền đã trả trừ đi khoản phí
+sử dụng và xử lý bằng chi phí sử dụng mô hình mà tài khoản của bạn đã dùng trong
+thời gian đó (không bao giờ nhiều hơn số bạn đã trả). Dùng thử một ngày và không
+hợp? Bạn nhận lại gần như toàn bộ. Chạy ở mức trần theo giờ suốt hai ngày? Hãy
+chuẩn bị nhận lại rất ít hoặc không có. Sau 48 giờ không hoàn tiền; hủy đăng ký
+giữ gói đến hết kỳ đã thanh toán. Toàn văn tại [Điều khoản](https://claudin.io/terms).
+
 ## Tôi gặp lỗi ngân sách. Làm sao đây?
 
 Bạn đã đạt đến ngưỡng bảo vệ chi tiêu của khung thời gian hiện tại. Hoặc đợi cho đến khi

@@ -57,6 +57,18 @@ Dalla tua [dashboard](https://claudin.io/dashboard). Gli upgrade vengono applica
 (tramite Stripe). Se cancelli, mantieni il tuo piano a pagamento fino alla fine del periodo
 che hai già pagato, poi passi automaticamente al piano Free.
 
+## Posso ottenere un rimborso?
+
+Entro **48 ore dal tuo primo pagamento**, sì — scrivi a
+[support@claudin.io](mailto:support@claudin.io) dall'e-mail del tuo account.
+L'abbonamento termina immediatamente e ricevi indietro quanto pagato meno una
+commissione di utilizzo e gestione che copre il costo dell'utilizzo dei modelli
+fatto dal tuo account in quel periodo (mai più di quanto hai pagato). Provato un
+giorno e non faceva per te? Ricevi quasi tutto. Usato al tetto orario per due
+giorni? Aspettati poco o nulla. Dopo 48 ore non ci sono rimborsi; annullare
+mantiene il piano fino alla fine del periodo pagato. Testo completo nei
+[Termini](https://claudin.io/terms).
+
 ## Ho ricevuto un errore di budget. Cosa faccio ora?
 
 Hai raggiunto il limite di protezione dalla spesa dell'intervallo corrente. Aspetta che

@@ -44,6 +44,18 @@ Evet, şeffaf bir şekilde. Standart OpenAI içerik blokları gönderin; proxy, 
 
 [Panelinizden](https://claudin.io/dashboard). Yükseltmeler (Stripe üzerinden) anında uygulanır. İptal ederseniz, zaten ödediğiniz dönemin sonuna kadar ücretli planınızda kalırsınız, ardından otomatik olarak Ücretsiz plana düşersiniz.
 
+## İade alabilir miyim?
+
+**İlk ödemenizden itibaren 48 saat içinde**, evet — hesabınızın e-posta
+adresinden [support@claudin.io](mailto:support@claudin.io) adresine yazın.
+Abonelik derhal sona erer ve ödediğiniz tutarı, bu süre içinde hesabınızın
+yaptığı model kullanımının maliyetini karşılayan bir kullanım ve işlem ücreti
+düşülerek geri alırsınız (asla ödediğinizden fazla değil). Bir gün denediniz ve
+size göre değil miydi? Neredeyse tamamını geri alırsınız. İki gün boyunca saatlik
+tavanda mı çalıştırdınız? Az ya da hiç bekleyin. 48 saat sonra iade yoktur; iptal
+etmek planınızı ödenmiş dönemin sonuna kadar korur. Tam metin
+[Şartlar](https://claudin.io/terms) sayfasında.
+
 ## Bir bütçe hatasıyla karşılaştım. Şimdi ne yapmalıyım?
 
 Mevcut zaman diliminin harcama koruma limitine ulaştınız. Dilimin sıfırlanmasını bekleyin (paneliniz ne zaman sıfırlanacağını gösterir) veya daha büyük bir limit için [yükseltin](plans.md).

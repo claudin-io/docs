@@ -44,6 +44,18 @@ Ya, secara transparan. Kirim blok konten OpenAI standar; proksi mengonversi gamb
 
 Dari [dasbor](https://claudin.io/dashboard) Anda. Peningkatan berlaku segera (melalui Stripe). Jika Anda membatalkan, Anda tetap mendapatkan paket berbayar hingga akhir periode yang sudah Anda bayar, kemudian turun ke Gratis secara otomatis.
 
+## Bisakah saya mendapatkan pengembalian dana?
+
+Dalam **48 jam setelah pembayaran pertama Anda**, bisa — tulis ke
+[support@claudin.io](mailto:support@claudin.io) dari email akun Anda. Langganan
+berakhir segera dan Anda menerima kembali yang Anda bayar dikurangi biaya
+penggunaan dan penanganan yang menutup biaya penggunaan model oleh akun Anda
+selama waktu itu (tidak pernah lebih dari yang Anda bayar). Mencoba sehari dan
+tidak cocok? Hampir semuanya kembali. Menjalankannya di batas per jam selama dua
+hari? Harapkan sedikit atau tidak sama sekali. Setelah 48 jam tidak ada
+pengembalian dana; membatalkan tetap mempertahankan paket hingga akhir periode
+yang dibayar. Teks lengkap di [Ketentuan](https://claudin.io/terms).
+
 ## Saya mendapatkan error anggaran. Apa yang harus dilakukan?
 
 Anda telah mencapai batas perlindungan pengeluaran untuk periode saat ini. Tunggu hingga periode direset (dasbor Anda menunjukkan kapan) atau [tingkatkan](plans.md) untuk batas yang lebih besar.

@@ -45,6 +45,19 @@ Ja, transparent. Senden Sie standardmäßige OpenAI-Inhaltsblöcke; der Proxy ko
 
 Von Ihrem [Dashboard](https://claudin.io/dashboard). Upgrades werden sofort wirksam (über Stripe). Wenn Sie kündigen, behalten Sie Ihren bezahlten Plan bis zum Ende des bereits bezahlten Zeitraums und fallen dann automatisch auf den kostenlosen Plan zurück.
 
+## Kann ich eine Erstattung bekommen?
+
+Innerhalb von **48 Stunden nach Ihrer ersten Zahlung**, ja — schreiben Sie von
+der E-Mail-Adresse Ihres Kontos an [support@claudin.io](mailto:support@claudin.io).
+Das Abonnement endet sofort, und Sie erhalten den gezahlten Betrag zurück,
+abzüglich einer Nutzungs- und Bearbeitungsgebühr, die die Kosten der
+Modellnutzung Ihres Kontos in dieser Zeit deckt (nie mehr als Sie gezahlt haben).
+Einen Tag ausprobiert und nicht das Richtige? Sie bekommen fast alles zurück.
+Zwei Tage an der Stundenobergrenze gefahren? Rechnen Sie mit wenig oder nichts.
+Nach 48 Stunden gibt es keine Erstattungen; eine Kündigung behält den Plan bis
+zum Ende des bezahlten Zeitraums. Vollständiger Wortlaut in den
+[Bedingungen](https://claudin.io/terms).
+
 ## Ich habe einen Budgetfehler erhalten. Was nun?
 
 Sie haben die Ausgabenschutzobergrenze des aktuellen Zeitfensters erreicht. Warten Sie entweder, bis das Fenster zurückgesetzt wird (Ihr Dashboard zeigt an, wann), oder [aktualisieren Sie](plans.md) für eine größere Obergrenze.
