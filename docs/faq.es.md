@@ -2,72 +2,124 @@
 
 ## ¿Qué es Claudin.io exactamente?
 
-Un proxy de API para agentes de codificación de IA. Pagas una suscripción mensual fija y obtienes una clave API compatible con OpenAI/Anthropic que puedes usar en Claude Code, Kilo, Zed, Codex, Cursor o cualquier cliente de OpenAI. Sin facturación por token.
+Un proxy de API para agentes de codificación de IA. Pagas un plan mensual,
+obtienes una cartera de créditos que se llena cada mes y una clave API
+compatible con OpenAI/Anthropic que puedes usar en Claude Code, Kilo, Zed,
+Codex, Cursor o cualquier cliente de OpenAI. Una solicitud típica de código
+cuesta alrededor de un crédito. Sin factura por token, sin límite por hora.
 
-## ¿Es realmente ilimitado?
+## ¿Hay algún límite?
 
-El uso es ilimitado: no hay contador de solicitudes ni medidor de tokens. El único límite es un **límite de protección de gasto** por ventana de tiempo que evita que un agente descontrolado agote tu plan. En el trabajo interactivo normal rara vez lo alcanzas. Consulta [Planes y límites](plans.md).
+Solo tu cartera. No hay límite por hora, ni límite de sesión, ni cuota semanal —
+lo único que detiene a tu agente es un saldo vacío, y una recarga lo arregla al
+instante. Los créditos que no usas se quedan en la cartera y nunca caducan. Ver
+[Planes y créditos](plans.md).
+
+## ¿Por qué créditos en lugar de un precio fijo?
+
+Porque medimos el límite por hora de los planes fijos con tráfico real y cortaba
+1 de cada 10 horas activas en Pro — gente en mitad de una tarea, no bucles
+descontrolados. Un plan que vende capacidad que no puedes usar cuando la
+necesitas tiene la forma equivocada. Los créditos son un número que puedes ver,
+una hora intensa pagada por las tranquilas y un mes intenso que está a una
+recarga de distancia en lugar de una espera.
 
 ## ¿Puedo usarlo para cosas que no sean programación?
 
 La API es compatible con OpenAI, así que técnicamente cualquier solicitud
-funciona. Pero el servicio está hecho para **programación con IA**: el
-enrutamiento, los prompts y la caché están ajustados para agentes de código.
-La actividad no relacionada con la programación — bots de chat genéricos,
-automatización sin código — puede recibir un enrutamiento especial y ser
-atendida por un modelo o nivel distinto del tráfico de programación.
+funciona. Pero el servicio está hecho para **programación con IA**: enrutado,
+prompts y caché están afinados para agentes de código. La actividad no
+relacionada con programación — chatbots genéricos, automatización sin código —
+puede recibir un enrutado especial y ser servida por un modelo o nivel distinto
+al del tráfico de código.
 
 ## ¿Qué modelo uso?
 
-Siempre **`claudinio`** (o `claudinio/claudinio` para clientes que quieran el formato `provider/model`). La URL base es `https://api.claudin.io`.
+**`claudinio`** por defecto (o `claudinio/claudinio` para clientes que quieren
+el formato `proveedor/modelo`). La URL base es `https://api.claudin.io`. Es el
+modelo que afinamos, medimos y cacheamos para código, y aquel en el que tus
+créditos rinden más.
 
-## ¿Autentico con `Authorization` o `x-api-key`?
+## ¿Puedo elegir otro modelo?
 
-Ambos funcionan. `Authorization: Bearer YOUR_API_KEY` o `x-api-key: YOUR_API_KEY`.
+Sí, por nombre. `claudius` es nuestra opción premium, a hasta 6× los créditos.
+El [catálogo](plans.md#el-catalogo-elige-un-modelo-por-nombre) añade ocho
+modelos de terceros — Claude Sonnet 5 y Haiku 4.5, Gemini 3.1 Pro, Kimi K3,
+GLM 5.3, MiniMax M3, Qwen3 Coder — cada uno con un precio de múltiplo fijo de
+los créditos de `claudinio`, de 3× a 22×. Pon el id en tu cliente y solo esa
+solicitud paga el múltiplo. Todos los modelos están en todos los planes;
+seguimos recomendando `claudinio`.
 
-## ¿Puedo usarlo con una herramienta que no esté listada?
+## ¿Me autentico con `Authorization` o `x-api-key`?
 
-Sí, cualquier herramienta que te permita establecer una URL base de OpenAI personalizada funciona. Usa la [configuración genérica de OpenAI](clients/openai-compatible.md).
+Cualquiera funciona. `Authorization: Bearer TU_CLAVE_API` o
+`x-api-key: TU_CLAVE_API`.
 
-## ¿Soporta llamadas a herramientas/funciones?
+## ¿Puedo usarlo con una herramienta que no está en la lista?
 
-Sí. Por eso funciona dentro de editores agentivos. Pasa `tools` y lee `tool_calls` como con la API de OpenAI.
+Sí — cualquier herramienta que permita configurar una URL base de OpenAI
+personalizada funciona. Usa la
+[configuración genérica de OpenAI](clients/openai-compatible.md).
 
-## ¿Puede manejar imágenes, audio o video?
+## ¿Soporta llamadas a herramientas / funciones?
 
-Sí, de forma transparente. Envía bloques de contenido estándar de OpenAI; el proxy convierte imágenes/audio/video en descripciones de texto o transcripciones antes de que el modelo los vea. No hay nada especial que configurar.
+Sí. Por eso funciona dentro de editores agénticos. Pasa `tools` y lee
+`tool_calls` como con la API de OpenAI.
+
+## ¿Puede manejar imágenes, audio o vídeo?
+
+Sí, de forma transparente. Envía bloques de contenido estándar de OpenAI; el
+proxy convierte imágenes/audio/vídeo en descripciones de texto o
+transcripciones antes de que el modelo los vea. Nada especial que configurar.
 
 ## ¿Cuál es la ventana de contexto?
 
 256K tokens.
 
-## ¿Cómo actualizo o cancelo?
+## ¿Cómo mejoro de plan o cancelo?
 
-Desde tu [panel de control](https://claudin.io/dashboard). Las actualizaciones se aplican de inmediato (a través de Stripe). Si cancelas, mantienes tu plan pago hasta el final del período que ya pagaste, luego pasas a Gratuito automáticamente.
+Desde tu [panel](https://claudin.io/dashboard). Las mejoras se aplican de
+inmediato (vía Stripe). Si cancelas, conservas tu plan pagado hasta el final del
+periodo que ya pagaste. Los créditos que ya están en la cartera siguen siendo
+tuyos y siguen funcionando cuando el plan termina.
 
 ## ¿Puedo pedir un reembolso?
 
-Dentro de las **48 horas siguientes a tu primer pago**, sí — escribe a
-[support@claudin.io](mailto:support@claudin.io) desde el correo de tu cuenta. La
-suscripción finaliza de inmediato y recuperas lo que pagaste menos una tarifa de
+Dentro de las **48 horas de tu primer pago**, sí — escribe a
+[support@claudin.io](mailto:support@claudin.io) desde el correo de tu cuenta.
+La suscripción termina de inmediato y recibes lo que pagaste menos una tarifa de
 uso y gestión que cubre el coste del uso de modelos que hizo tu cuenta en ese
 tiempo (nunca más de lo que pagaste). ¿Lo probaste un día y no era para ti?
-Recuperas casi todo. ¿Lo usaste al tope horario durante dos días? Espera poco o
-nada. Pasadas 48 horas no hay reembolsos; cancelar mantiene tu plan hasta el
-final del periodo pagado. Texto completo en los [Términos](https://claudin.io/terms).
+Recuperas casi todo. ¿Gastaste los créditos de todo el mes en dos días? Espera
+poco o nada. Pasadas 48 horas no hay reembolsos; cancelar mantiene tu plan hasta
+el final del periodo pagado. Texto completo en los
+[Términos](https://claudin.io/terms).
 
-## Recibí un error de presupuesto. ¿Y ahora?
+## Recibí un `402 insufficient_credits`. ¿Y ahora?
 
-Alcanzaste el límite de protección de gasto de la ventana actual. Espera a que la ventana se reinicie (tu panel muestra cuándo) o [actualiza](plans.md) para obtener un límite mayor.
+Tu cartera está vacía. Compra una [recarga](plans.md#top-ups) o pasa a un plan
+mayor desde el panel — ambos surten efecto de inmediato. Nada se encola y nada
+se cobró por la solicitud fallida.
+
+## ¿Qué pasa con mi plan antiguo Essential / Pro / Ultra?
+
+Sigue funcionando exactamente igual que antes, con su límite por hora, hasta el
+final del periodo que ya pagaste, y no se renueva después. Quienes tenían plan
+mensual recibieron una cortesía de créditos para probar el nuevo sistema; quienes
+tenían plan anual conservan el año completo y pasan a créditos cuando termine.
+Ver [Planes antiguos](plans.md#planes-antiguos-essential-pro-ultra-con-limite-por-hora).
 
 ## Una solicitud falló con 401.
 
-Tu clave falta o es incorrecta. Vuelve a copiarla desde el panel y asegúrate de que no haya espacios en blanco adicionales y de que el encabezado de autenticación esté configurado.
+Tu clave falta o es incorrecta. Vuelve a copiarla del panel y asegúrate de que no
+hay espacios de más y de que la cabecera de autenticación está configurada.
 
 ## Mi clave se filtró. ¿Qué hago?
 
-Revócala desde el panel y genera una nueva de inmediato. Trata las claves como contraseñas: nunca las confirmes en el repositorio ni las compartas públicamente.
+Revócala desde el panel y genera una nueva de inmediato. Trata las claves como
+contraseñas — nunca las subas a un repositorio ni las compartas públicamente.
 
 ## ¿Dónde obtengo ayuda?
 
-Abre un ticket desde la tarjeta de **Soporte** en tu [panel de control](https://claudin.io/dashboard), o envía un correo a soporte. Te responderemos.
+Abre un ticket desde la tarjeta **Soporte** de tu
+[panel](https://claudin.io/dashboard), o escribe a soporte. Te responderemos.

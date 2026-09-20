@@ -108,31 +108,39 @@ Fehler folgen dem OpenAI-Fehlerformat:
 | --- | --- | --- |
 | `401` | Ungültiger oder fehlender API-Schlüssel | Prüfe den Schlüssel und den Auth-Header |
 | `403` | Endpunkt nicht erlaubt | Verwende einen der unterstützten `/v1/*`-Pfade |
-| `402` | Kein aktives Abonnement | [Abonnieren](https://claudin.io/dashboard) – erneutes Versuchen hilft nicht |
-| `429` | Budgetgrenze erreicht oder Rate-Limit greift | Warte auf das Zurücksetzen des Fensters (siehe den `Retry-After`-Header) oder führe ein [Upgrade](plans.md) durch |
+| `402` | Kein aktiver Plan, oder das Wallet ist leer (`code: insufficient_credits`) | [Abonnieren, aufladen oder Plan wechseln](https://claudin.io/dashboard) — erneut versuchen hilft nicht |
+| `429` | Rate-limitiert, oder (nur alte Pläne) das Stundenlimit | Warte gemäß dem `Retry-After`-Header |
 | `400` | Fehlerhafte Anfrage | Prüfe dein JSON / deine Parameter – siehe [`max_tokens`](#max_tokens-and-reasoning) und [`n`](#multiple-completions-n) |
 | `5xx` | Aussetzer von Upstream/Provider | Wiederhole mit Backoff |
 
 !!! info "Providerdetails sind absichtlich verborgen"
     Fehlermeldungen werden bereinigt, damit sie den zugrunde liegenden Modellanbieter nicht preisgeben. Du siehst immer Claudin.io-gebrandete Fehler im OpenAI-Format.
 
-### Die Budgetgrenze erreichen
+### Leeres Wallet
 
-Wenn du den Ausgabenschutz des aktuellen Fensters ausgeschöpft hast, geben Anfragen `429` mit einem `Retry-After`-Header zurück, der die Sekunden bis zum Zurücksetzen des Fensters angibt. Dein Dashboard zeigt den genauen Zeitpunkt des Zurücksetzens und das verbleibende Budget. Warte die im Header angegebene Zeit ab, statt sofort erneut zu versuchen. Unter [Pläne & Limits](plans.md) erfährst du, wie die Fenster funktionieren.
+Wenn dein Credit-Kontostand null erreicht, geben Anfragen `402` mit
+`code: insufficient_credits` zurück:
 
-### Eine Nachricht statt eines `429` {#cap-alternative-response}
+```json
+{ "error": { "message": "Claudinio: Your credit balance is empty. Buy a top-up pack or change plan at https://claudin.io/dashboard — the next month's credits arrive with your next invoice.", "type": "insufficient_credits", "code": "insufficient_credits" } }
+```
 
-Bei einer kleinen Zahl von Konten testen wir eine andere Antwort auf dieselbe
-Situation. Statt des Fehlers wird die Anfrage abgeschlossen, und die Antwort
-selbst erklärt, dass das Limit erreicht ist und wann es zurückgesetzt wird. Wir
-messen, ob die Information Menschen so zuverlässiger erreicht als ein Fehler,
-den ihr Agent stillschweigend schluckt — und ob sie, klar gesagt, lieber zu
-einem passenden Tarif wechseln.
+Nichts wird eingereiht und nichts wird berechnet. Ein [Top-up](plans.md#top-ups)
+oder ein Planwechsel gilt sofort; ohne das hilft erneutes Versuchen nicht. Es
+gibt kein Zeitfenster, auf das man warten müsste — Credit-Pläne haben kein
+Stundenlimit.
 
-**Wenn du Automatisierung baust, lies ein `2xx` nicht als „Arbeit erledigt".**
-Behandle eine Antwort, die sagt, das Limit sei erreicht, als erreichtes Limit,
-und warte bis zum Zurücksetzen des Fensters. Der `429` oben bleibt das
-Standardverhalten und ist das, was fast jedes Konto erhält.
+### Alte Pläne: das Stundenlimit {#cap-alternative-response}
+
+Konten, die bis zum Ende des bezahlten Zeitraums noch auf einem früheren
+Festpreis-Plan sind (Essential, Pro, Ultra), behalten das Stundenlimit dieses
+Plans. Dort gibt das Erschöpfen des Limits `429` mit einem `Retry-After`-Header
+zurück, der die Sekunden bis zum Zurücksetzen des Fensters angibt; warte gemäß
+diesem Header, statt sofort erneut zu versuchen. Bei einer kleinen Zahl dieser
+Konten wird die Anfrage stattdessen mit einer Antwort abgeschlossen, die sagt,
+dass die Obergrenze erreicht ist — **wenn du Automatisierung baust, lies ein
+`2xx` nicht als „Arbeit erledigt“**; behandle diese Antwort als erreichtes
+Limit.
 
 ## Rate-Limiting
 

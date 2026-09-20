@@ -16,9 +16,9 @@ Bring someone to Claudin.io and you both get $5.
 | **Your friend** | $5 off their first plan, or off a credit purchase of $10 or more |
 | **You** | $5 in account credits, added when their payment goes through |
 
-Credits behave exactly like [purchased credits](plans.md): they cover usage above
-your hourly ceiling, at real cost. They are not cash and are not refundable or
-transferable.
+Credits behave exactly like [top-up credits](plans.md#top-ups): they land in
+the same wallet, every model spends them, and they never expire. They are not
+cash and are not refundable or transferable.
 
 ## Who can take part
 

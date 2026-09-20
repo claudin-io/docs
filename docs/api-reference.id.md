@@ -108,8 +108,8 @@ Error mengikuti bentuk error OpenAI:
 | --- | --- | --- |
 | `401` | Kunci API tidak valid atau tidak ada | Periksa kunci dan header autentikasi |
 | `403` | Endpoint tidak diizinkan | Gunakan salah satu jalur `/v1/*` yang didukung |
-| `402` | Tidak ada langganan aktif | [Berlangganan](https://claudin.io/dashboard) — mencoba lagi tidak akan membantu |
-| `429` | Batas anggaran tercapai atau terkena rate limit | Tunggu reset jendela (lihat header `Retry-After`) atau [tingkatkan paket](plans.md) |
+| `402` | Tidak ada paket aktif, atau dompet kosong (`code: insufficient_credits`) | [Berlangganan, top-up atau ganti paket](https://claudin.io/dashboard) — mencoba lagi tidak akan membantu |
+| `429` | Dibatasi laju, atau (hanya paket lama) batas per jam | Tunggu sesuai header `Retry-After` |
 | `400` | Permintaan rusak | Periksa JSON / parameter Anda — lihat [`max_tokens`](#max_tokens-and-reasoning) dan [`n`](#multiple-completions-n) |
 | `5xx` | Gangguan upstream/provider | Coba lagi dengan backoff |
 
@@ -118,23 +118,30 @@ Error mengikuti bentuk error OpenAI:
     mendasarinya. Anda akan selalu melihat error bermerek Claudin.io
     berbentuk OpenAI.
 
-### Mencapai batas anggaran
+### Dompet kosong
 
-Saat Anda menghabiskan perlindungan pengeluaran pada jendela saat ini, permintaan akan mengembalikan `429` dengan header `Retry-After` yang menunjukkan detik hingga jendela direset. Dasbor Anda menampilkan waktu reset yang tepat dan sisa anggaran. Tunggulah sesuai header tersebut alih-alih mencoba lagi segera. Lihat [Paket & batasan](plans.md) untuk mengetahui cara kerja jendela tersebut.
+Saat saldo kredit Anda mencapai nol, permintaan mengembalikan `402` dan
+`code: insufficient_credits`:
 
-### Sebuah pesan alih-alih `429` {#cap-alternative-response}
+```json
+{ "error": { "message": "Claudinio: Your credit balance is empty. Buy a top-up pack or change plan at https://claudin.io/dashboard — the next month's credits arrive with your next invoice.", "type": "insufficient_credits", "code": "insufficient_credits" } }
+```
 
-Pada sejumlah kecil akun kami sedang mencoba jawaban berbeda untuk situasi yang
-sama. Alih-alih galat, permintaan diselesaikan dan balasannya sendiri
-menjelaskan bahwa batas sudah tercapai dan kapan batas itu disetel ulang. Kami
-mengukur apakah dengan cara ini informasinya sampai ke orangnya lebih andal
-daripada galat yang ditelan diam-diam oleh agen mereka — dan apakah, kalau
-dikatakan terus terang, mereka lebih memilih pindah ke paket yang pas.
+Tidak ada yang mengantre, tidak ada yang ditagih. Sebuah
+[top-up](plans.md#top-ups) atau pergantian paket berlaku seketika; tanpa itu,
+mencoba lagi tidak akan membantu. Tidak ada jendela waktu untuk ditunggu —
+paket kredit tidak punya batas per jam.
 
-**Kalau kamu membangun otomasi, jangan membaca `2xx` sebagai "pekerjaan
-selesai".** Perlakukan balasan yang menyatakan batas tercapai sebagai batas yang
-memang tercapai, dan tunggu sampai jendelanya disetel ulang. `429` di atas tetap
-perilaku bawaan dan itulah yang diterima hampir semua akun.
+### Paket lama: batas per jam {#cap-alternative-response}
+
+Akun yang masih berada di paket harga tetap sebelumnya (Essential, Pro, Ultra)
+sampai akhir periode yang dibayar mempertahankan batas per jam paket itu. Di
+sana, batas yang habis mengembalikan `429` dengan header `Retry-After` yang
+menyebutkan detik sampai jendela disetel ulang; tunggu sesuai header itu
+daripada langsung mencoba lagi. Pada sebagian kecil akun tersebut, permintaan
+justru selesai dengan respons yang menyatakan batas telah tercapai — **jika
+Anda membangun otomasi, jangan membaca `2xx` sebagai "pekerjaan selesai"**;
+perlakukan respons itu sebagai batas tercapai.
 
 ## Rate limiting
 

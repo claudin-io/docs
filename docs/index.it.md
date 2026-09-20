@@ -6,9 +6,9 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Codice senza ansia da bolletta. Prezzo mensile fisso, utilizzo illimitato.
+# Programma senza ansia da bolletta. Crediti che non scadono mai, nessun limite orario.
 
-Claudin.io è un proxy API per agenti di codifica AI. Paga un **abbonamento mensile fisso** e usalo quanto vuoi — nessun addebito per token, nessun contatore di richieste, nessun credito che scade.
+Claudin.io è un proxy API per agenti di codifica AI. Scegli un **piano mensile**, ricevi un portafoglio di crediti che si riempie ogni mese e spendili a circa un credito per richiesta — nessuna fattura per token, nessun limite orario, e ciò che non usi resta tuo.
 
 </div>
 
@@ -21,43 +21,52 @@ Claudin.io è un proxy API per agenti di codifica AI. Paga un **abbonamento mens
 
 <div class="grid cards" markdown>
 
--   :material-infinity:{ .lg .middle } __Utilizzo illimitato__
+-   :material-wallet:{ .lg .middle } __Crediti, non un contatore__
 
     ---
 
-    Nessun conteggio delle richieste, nessuna misurazione dei token. L'unico limite è un tetto **di protezione della spesa** per periodo che ferma un agente fuori controllo — non lo raggiungi quasi mai nel lavoro normale.
+    Un piano è un numero di crediti al mese; una richiesta tipica ne costa
+    circa uno. Nessun limite orario, nessun limite di sessione — il portafoglio
+    è l'unico limite, e una ricarica lo riempie all'istante.
 
 -   :material-power-plug:{ .lg .middle } __Funziona con i tuoi strumenti__
 
     ---
 
-    Endpoint compatibili con OpenAI e Anthropic. Integralo in OpenCode, Claude Code, Kilo Code, Zed, Codex, Cursor o qualsiasi client OpenAI in pochi minuti.
+    Endpoint compatibili OpenAI e Anthropic. Usalo in OpenCode, Claude Code,
+    Kilo Code, Zed, Codex, Cursor o qualsiasi client OpenAI in pochi minuti.
 
 -   :material-cash-multiple:{ .lg .middle } __Costo prevedibile__
 
     ---
 
-    Un abbonamento fisso. Nessuna bolletta a sorpresa a fine mese, nessuna ansia del tipo "quanto costerà questo refactoring?".
+    Un prezzo mensile fisso per un numero noto di crediti. Nessuna sorpresa in
+    bolletta a fine mese, e i crediti non usati si accumulano — non scadono mai.
 
--   :material-shield-check:{ .lg .middle } __Protezione della spesa integrata__
+-   :material-format-list-bulleted:{ .lg .middle } __Un modello che ottimizziamo, un catalogo se vuoi scegliere__
 
     ---
 
-    Un tetto di budget a cascata per periodo ti protegge dagli agenti in loop infinito che consumano il tuo piano. Trasparente e mostrato in tempo reale nella tua dashboard.
+    `claudinio` è il default e la nostra raccomandazione — il modello con cui i
+    tuoi crediti vanno più lontano. Otto modelli con nome sono a
+    un'impostazione di distanza, ciascuno un multiplo fisso di un credito
+    `claudinio`.
 
 </div>
 
 ## Inizia in 4 passi
 
 1. **[Crea un account](getting-started/account.md)** e copia la tua chiave API.
-2. **[Imposta la tua chiave API](getting-started/set-your-key.md)** una volta nel tuo shell.
-3. **[Collega il tuo strumento](clients/opencode.md)** — scegli il tuo editor o agente.
-4. **[Effettua la tua prima chiamata](getting-started/first-call.md)** e inizia a costruire.
+2. **[Imposta la tua chiave API](getting-started/set-your-key.md)** una volta nella shell.
+3. **[Collega il tuo strumento](clients/opencode.md)** — scegli editor o agente.
+4. **[Fai la tua prima chiamata](getting-started/first-call.md)** e inizia a costruire.
 
-!!! tip "Il nome del modello è sempre `claudinio`"
-    Qualunque client tu usi, l'ID del modello a cui puntare è **`claudinio`**.
-    L'URL di base è **`https://api.claudin.io`**.
+!!! tip "Il nome del modello è `claudinio`"
+    Qualunque client tu usi, l'id modello a cui punti è **`claudinio`** — o un
+    [id del catalogo](plans.md#il-catalogo-scegli-un-modello-per-nome) quando
+    vuoi un modello specifico. L'URL base è **`https://api.claudin.io`**.
 
 ---
 
-<small>Hai bisogno di aiuto? Vedi le [FAQ](faq.md) o contattaci dalla scheda di supporto nella tua [dashboard](https://claudin.io/dashboard).</small>
+<small>Serve aiuto? Vedi le [FAQ](faq.md) o contattaci dalla scheda supporto
+nella tua [dashboard](https://claudin.io/dashboard).</small>

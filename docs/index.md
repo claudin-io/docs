@@ -6,11 +6,12 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Code without bill anxiety. Flat monthly price, unlimited usage.
+# Code without bill anxiety. Credits that never expire, no hourly cap.
 
-Claudin.io is an API proxy for AI coding agents. Pay a **flat monthly
-subscription** and use it as much as you want — no per-token billing, no request
-counters, no credits that expire.
+Claudin.io is an API proxy for AI coding agents. Pick a **monthly plan**, get
+a wallet of credits that fills every month, and spend them at about one credit
+per request — no per-token invoice, no hourly cap, and what you don't use stays
+yours.
 
 </div>
 
@@ -23,13 +24,13 @@ counters, no credits that expire.
 
 <div class="grid cards" markdown>
 
--   :material-infinity:{ .lg .middle } __Unlimited usage__
+-   :material-wallet:{ .lg .middle } __Credits, not a meter__
 
     ---
 
-    No request counts, no token metering. The only guardrail is a per-period
-    **spend protection** cap that stops a runaway agent — you almost never hit
-    it in normal work.
+    A plan is a number of credits a month; a typical request costs about one.
+    No hourly cap, no session limit — the wallet is the only limit, and a
+    top-up refills it instantly.
 
 -   :material-power-plug:{ .lg .middle } __Works with your tools__
 
@@ -42,15 +43,16 @@ counters, no credits that expire.
 
     ---
 
-    A fixed subscription. No surprise bills at the end of the month, no
-    "how much will this refactor cost?" anxiety.
+    A fixed monthly price for a known number of credits. No surprise bills
+    at the end of the month, and unused credits roll over — they never expire.
 
--   :material-shield-check:{ .lg .middle } __Spend protection built in__
+-   :material-format-list-bulleted:{ .lg .middle } __One model we tune, a catalogue if you want to choose__
 
     ---
 
-    A cascading per-period budget cap protects you from infinite-loop agents
-    burning your plan. Transparent and shown live in your dashboard.
+    `claudinio` is the default and our recommendation — the model your credits
+    go furthest on. Eight named models are one setting away, each a fixed
+    multiple of a `claudinio` credit.
 
 </div>
 
@@ -61,9 +63,10 @@ counters, no credits that expire.
 3. **[Connect your tool](clients/opencode.md)** — pick your editor or agent.
 4. **[Make your first call](getting-started/first-call.md)** and start building.
 
-!!! tip "The model name is always `claudinio`"
-    Whatever client you use, the model id you point it at is **`claudinio`**.
-    The base URL is **`https://api.claudin.io`**.
+!!! tip "The model name is `claudinio`"
+    Whatever client you use, the model id you point it at is **`claudinio`**
+    — or a [catalogue id](plans.md#the-catalogue-pick-a-model-by-name) when
+    you want a specific model. The base URL is **`https://api.claudin.io`**.
 
 ---
 

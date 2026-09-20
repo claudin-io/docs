@@ -108,28 +108,32 @@ Claudinio 模型在回答之前会先进行推理，而推理过程只会产生�
 | --- | --- | --- |
 | `401` | API key 无效或缺失 | 检查 key 和认证请求头 |
 | `403` | 不允许访问该端点 | 使用受支持的 `/v1/*` 路径之一 |
-| `402` | 没有有效的订阅 | [订阅](https://claudin.io/dashboard)——重试也无济于事 |
-| `429` | 已达到预算上限或受到限流 | 等待窗口重置（参见 `Retry-After` 请求头）或[升级](plans.md) |
+| `402` | 没有有效套餐，或钱包为空（`code: insufficient_credits`） | [订阅、充值或更换套餐](https://claudin.io/dashboard) — 重试无济于事 |
+| `429` | 触发速率限制，或（仅旧套餐）每小时上限 | 按 `Retry-After` 头等待 |
 | `400` | 请求格式错误 | 检查你的 JSON / 参数——参见 [`max_tokens`](#max_tokens-and-reasoning) 和 [`n`](#multiple-completions-n) |
 | `5xx` | 上游/提供商临时故障 | 退避重试 |
 
 !!! info "提供商细节被有意隐藏"
     错误消息已经过脱敏处理，不会泄露底层模型提供商。你始终会看到 Claudin.io 品牌、OpenAI 格式的错误。
 
-### 达到预算上限
+### 钱包为空
 
-当你用尽当前窗口的支出保护额度时，请求会返回 `429`，并带有 `Retry-After` 请求头，其中给出了距离窗口重置的秒数。你的仪表盘会显示精确的重置时间和剩余预算。请根据该请求头进行退避，而不是立即重试。窗口机制的工作原理请参阅[计划与限制](plans.md)。
+当你的积分余额归零时，请求返回 `402` 和 `code: insufficient_credits`：
 
-### 用一条消息代替 `429` {#cap-alternative-response}
+```json
+{ "error": { "message": "Claudinio: Your credit balance is empty. Buy a top-up pack or change plan at https://claudin.io/dashboard — the next month's credits arrive with your next invoice.", "type": "insufficient_credits", "code": "insufficient_credits" } }
+```
 
-在少数账户上，我们正在为同一种情况尝试另一种回应方式。请求不再返回错误，而是
-正常完成，回复内容本身会说明已达到上限以及何时重置。我们在衡量：相比一个被客户
-端智能体悄悄吞掉的错误，这种方式是否能更可靠地把信息传达给真人——以及在把话说
-清楚之后，他们是否更愿意换成合适的套餐。
+不会排队，也不会计费。一次[充值](plans.md#top-ups)或更换套餐即时生效；不做这些
+而重试无济于事。没有需要等待的时间窗口 — 积分套餐没有每小时上限。
 
-**如果你在做自动化，不要把 `2xx` 当作"任务已完成"。** 请把说明已达上限的回复
-视为确实已达上限，并等到窗口重置后再继续。上面的 `429` 仍然是默认行为，也是几
-乎所有账户会收到的响应。
+### 旧套餐：每小时上限 {#cap-alternative-response}
+
+在已付周期结束前仍处于以前固定月费套餐（Essential、Pro、Ultra）的账户，保留该套餐
+的每小时上限。在那里，用尽上限会返回 `429` 和一个 `Retry-After` 头，给出窗口重置前
+的秒数；按该头等待，而不是立即重试。其中少数账户的请求会改为以一条说明已达上限的
+响应完成 — **如果你在构建自动化，不要把 `2xx` 当作"工作完成"**；把那条响应当作
+已达上限来处理。
 
 ## 速率限制
 

@@ -35,7 +35,9 @@ Du solltest deinen Schlüssel zurückgesetzt sehen. Wenn er leer ist, öffne ein
 Jedes **Quick setup**-Skript im Abschnitt [Werkzeug verbinden](../clients/opencode.md) liest `$CLAUDINIO_API_KEY`, sobald es exportiert ist, kannst du jedes davon unverändert ausführen – es gibt kein `YOUR_API_KEY` zum Ersetzen. Werkzeuge, die Umgebungsvariablen direkt lesen (Codex' `env_key`, jede OpenAI-kompatible CLI), übernehmen ihn automatisch.
 
 !!! warning "Behandle deinen Schlüssel wie ein Passwort"
-    Jeder mit diesem Schlüssel kann das Budget deines Plans ausgeben. Übertrage deine `~/.zshrc` / `~/.bashrc` nicht in ein öffentliches Repository. Wenn der Schlüssel durchsickert, widerrufe ihn im Dashboard und exportiere einen neuen.
+    Jeder mit diesem Schlüssel kann deine Credits ausgeben. Committe deine
+    `~/.zshrc` / `~/.bashrc` nicht in ein öffentliches Repo. Wenn der Schlüssel
+    leakt, widerrufe ihn im Dashboard und exportiere einen neuen.
 
 ---
 

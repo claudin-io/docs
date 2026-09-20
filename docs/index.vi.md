@@ -6,11 +6,9 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Lập trình không lo hóa đơn. Giá tháng cố định, sử dụng không giới hạn.
+# Lập trình mà không lo hóa đơn. Tín dụng không bao giờ hết hạn, không giới hạn theo giờ.
 
-Claudin.io là một proxy API cho các tác nhân lập trình AI. Trả **phí đăng ký
-hàng tháng cố định** và sử dụng bao nhiêu tùy thích — không tính phí theo token, không
-đếm yêu cầu, không có tín dụng hết hạn.
+Claudin.io là một proxy API cho agent lập trình AI. Chọn một **gói hằng tháng**, nhận một ví tín dụng được nạp lại mỗi tháng, và tiêu khoảng một tín dụng mỗi yêu cầu — không tính phí theo token, không giới hạn theo giờ, và phần bạn không dùng vẫn là của bạn.
 
 </div>
 
@@ -19,53 +17,55 @@ hàng tháng cố định** và sử dụng bao nhiêu tùy thích — không t�
 
 ---
 
-## Tại sao chọn Claudin.io
+## Vì sao chọn Claudin.io
 
 <div class="grid cards" markdown>
 
--   :material-infinity:{ .lg .middle } __Sử dụng không giới hạn__
+-   :material-wallet:{ .lg .middle } __Tín dụng, không phải đồng hồ đo__
 
     ---
 
-    Không đếm yêu cầu, không đo lường token. Rào cản duy nhất là một giới hạn
-    **bảo vệ chi tiêu** theo kỳ để ngăn một tác nhân chạy mất kiểm soát — bạn hầu như
-    không bao giờ chạm tới nó trong công việc bình thường.
+    Một gói là một số tín dụng mỗi tháng; một yêu cầu thông thường tiêu khoảng
+    một tín dụng. Không giới hạn theo giờ, không giới hạn phiên — ví là giới
+    hạn duy nhất, và một lần nạp thêm làm đầy nó ngay.
 
--   :material-power-plug:{ .lg .middle } __Hoạt động với công cụ của bạn__
+-   :material-power-plug:{ .lg .middle } __Chạy với công cụ của bạn__
 
     ---
 
-    Các endpoint tương thích với OpenAI và Anthropic. Tích hợp vào OpenCode, Claude
-    Code, Kilo Code, Zed, Codex, Cursor hoặc bất kỳ client OpenAI nào trong vài phút.
+    Endpoint tương thích OpenAI và Anthropic. Cắm vào OpenCode, Claude Code,
+    Kilo Code, Zed, Codex, Cursor hoặc bất kỳ client OpenAI nào trong vài phút.
 
 -   :material-cash-multiple:{ .lg .middle } __Chi phí dự đoán được__
 
     ---
 
-    Một khoản đăng ký cố định. Không có hóa đơn bất ngờ vào cuối tháng, không
-    lo lắng "việc tái cấu trúc này sẽ tốn bao nhiêu?"
+    Một giá tháng cố định cho một số tín dụng đã biết. Không bất ngờ hóa đơn
+    cuối tháng, và tín dụng chưa dùng được chuyển tiếp — không bao giờ hết hạn.
 
--   :material-shield-check:{ .lg .middle } __Bảo vệ chi tiêu tích hợp sẵn__
+-   :material-format-list-bulleted:{ .lg .middle } __Một mô hình chúng tôi tinh chỉnh, một danh mục khi bạn muốn chọn__
 
     ---
 
-    Một giới hạn ngân sách theo kỳ phân tầng bảo vệ bạn khỏi các tác nhân vòng lặp vô hạn
-    đốt cháy gói của bạn. Minh bạch và hiển thị trực tiếp trong bảng điều khiển của bạn.
+    `claudinio` là mặc định và khuyến nghị của chúng tôi — mô hình mà tín dụng
+    của bạn đi xa nhất. Tám mô hình có tên chỉ cách một thiết lập, mỗi mô hình
+    là một bội số cố định của tín dụng `claudinio`.
 
 </div>
 
-## Bắt đầu chỉ với 4 bước
+## Bắt đầu trong 4 bước
 
-1. **[Tạo tài khoản](getting-started/account.md)** và sao chép khóa API của bạn.
-2. **[Đặt khóa API](getting-started/set-your-key.md)** một lần trong shell của bạn.
-3. **[Kết nối công cụ của bạn](clients/opencode.md)** — chọn trình soạn thảo hoặc tác nhân của bạn.
-4. **[Thực hiện cuộc gọi đầu tiên](getting-started/first-call.md)** và bắt đầu xây dựng.
+1. **[Tạo tài khoản](getting-started/account.md)** và sao chép khóa API.
+2. **[Đặt khóa API](getting-started/set-your-key.md)** — một lần trong shell.
+3. **[Kết nối công cụ](clients/opencode.md)** — chọn trình soạn thảo hoặc agent của bạn.
+4. **[Thực hiện lệnh gọi đầu tiên](getting-started/first-call.md)** và bắt đầu xây dựng.
 
-!!! tip "Tên model luôn là `claudinio`"
-    Dù bạn sử dụng client nào, ID model mà bạn trỏ tới luôn là **`claudinio`**.
-    URL gốc là **`https://api.claudin.io`**.
+!!! tip "Tên mô hình là `claudinio`"
+    Dù bạn dùng client nào, ID mô hình bạn trỏ tới là **`claudinio`** — hoặc
+    một [ID danh mục](plans.md#catalogue) khi bạn muốn một mô hình cụ thể. Base
+    URL là **`https://api.claudin.io`**.
 
 ---
 
-<small>Cần trợ giúp? Xem [FAQ](faq.md) hoặc liên hệ từ thẻ hỗ trợ trong
+<small>Cần trợ giúp? Xem [FAQ](faq.md) hoặc liên hệ qua thẻ hỗ trợ trong
 [bảng điều khiển](https://claudin.io/dashboard) của bạn.</small>

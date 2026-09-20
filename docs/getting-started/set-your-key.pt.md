@@ -35,7 +35,9 @@ Deverá ver a sua chave impressa. Se estiver vazia, abra um novo terminal ou exe
 Todos os scripts de **Configuração rápida** na secção [Ligar a sua ferramenta](../clients/opencode.md) leem `$CLAUDINIO_API_KEY`, pelo que, depois de exportada, pode executar qualquer um deles tal como está — não há `YOUR_API_KEY` para substituir. Ferramentas que leem variáveis de ambiente diretamente (o `env_key` do Codex, qualquer CLI compatível com OpenAI) também a reconhecem automaticamente.
 
 !!! warning "Trate a sua chave como uma palavra-passe"
-    Qualquer pessoa com esta chave pode gastar o saldo do seu plano. Não faça commit do seu `~/.zshrc` / `~/.bashrc` para um repositório público. Se a chave for comprometida, revogue-a no dashboard e exporte uma nova.
+    Qualquer pessoa com esta chave pode gastar os seus créditos. Não submeta o seu
+    `~/.zshrc` / `~/.bashrc` num repositório público. Se a chave for exposta,
+    revogue-a no painel e exporte uma nova.
 
 ---
 

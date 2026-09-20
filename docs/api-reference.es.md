@@ -108,31 +108,37 @@ Los errores siguen la forma de error de OpenAI:
 | --- | --- | --- |
 | `401` | Clave de API no válida o ausente | Comprueba la clave y la cabecera de autenticación |
 | `403` | Endpoint no permitido | Usa una de las rutas `/v1/*` admitidas |
-| `402` | Sin suscripción activa | [Suscríbete](https://claudin.io/dashboard) — reintentar no servirá de nada |
-| `429` | Límite de presupuesto alcanzado o limitación de velocidad | Espera al reinicio de la ventana (consulta la cabecera `Retry-After`) o [mejora tu plan](plans.md) |
+| `402` | Sin plan activo, o cartera vacía (`code: insufficient_credits`) | [Suscríbete, recarga o cambia de plan](https://claudin.io/dashboard) — reintentar no ayudará |
+| `429` | Rate-limited, o (solo planes antiguos) el límite por hora | Espera según la cabecera `Retry-After` |
 | `400` | Solicitud malformada | Comprueba tu JSON / parámetros — consulta [`max_tokens`](#max_tokens-and-reasoning) y [`n`](#multiple-completions-n) |
 | `5xx` | Incidente del proveedor upstream | Reintenta con retroceso (backoff) |
 
 !!! info "Los detalles del proveedor están ocultos a propósito"
     Los mensajes de error se depuran para que no revelen el proveedor del modelo subyacente. Siempre verás errores con la marca de Claudin.io y con la forma de los de OpenAI.
 
-### Cómo alcanzar el límite de presupuesto
+### Cartera vacía
 
-Cuando agotas la protección de gasto de la ventana actual, las solicitudes devuelven `429` con una cabecera `Retry-After` que indica los segundos que faltan para que la ventana se reinicie. Tu panel de control muestra la hora exacta de reinicio y el presupuesto restante. Respeta esa cabecera en lugar de reintentar de inmediato. Consulta [Planes y límites](plans.md) para saber cómo funcionan las ventanas.
+Cuando tu saldo de créditos llega a cero, las solicitudes devuelven `402` con
+`code: insufficient_credits`:
 
-### Un mensaje en lugar de un `429` {#cap-alternative-response}
+```json
+{ "error": { "message": "Claudinio: Your credit balance is empty. Buy a top-up pack or change plan at https://claudin.io/dashboard — the next month's credits arrive with your next invoice.", "type": "insufficient_credits", "code": "insufficient_credits" } }
+```
 
-En un pequeño número de cuentas estamos probando una respuesta distinta para la
-misma situación. En vez del error, la solicitud se completa y la propia
-respuesta explica que se alcanzó el límite y cuándo se reinicia. Estamos
-midiendo si así la información llega a las personas de forma más fiable que un
-error que su agente se traga en silencio — y si, dicho claramente, prefieren
-pasar a un plan que les quede bien.
+Nada se encola y nada se cobra. Una [recarga](plans.md#top-ups) o un cambio de
+plan surte efecto de inmediato; reintentar sin ello no ayudará. No hay ventana de
+tiempo que esperar — los planes de créditos no tienen límite por hora.
 
-**Si construyes automatización, no leas un `2xx` como "el trabajo se hizo".**
-Trata una respuesta que dice que se alcanzó el límite como el límite alcanzado,
-y retrocede hasta que la ventana se reinicie. El `429` de arriba sigue siendo
-el comportamiento por defecto y es lo que recibe casi cualquier cuenta.
+### Planes antiguos: el límite por hora {#cap-alternative-response}
+
+Las cuentas que siguen en un plan fijo anterior (Essential, Pro, Ultra), hasta
+que termine el periodo pagado, conservan el límite por hora de ese plan. Ahí,
+agotar el límite devuelve `429` con una cabecera `Retry-After` que indica los
+segundos hasta que la ventana se reinicia; espera según esa cabecera en lugar
+de reintentar de inmediato. En un pequeño número de esas cuentas la solicitud
+se completa, en cambio, con una respuesta que dice que se alcanzó el tope — **si
+construyes automatización, no leas un `2xx` como "trabajo hecho"**; trata esa
+respuesta como el límite alcanzado.
 
 ## Limitación de velocidad
 

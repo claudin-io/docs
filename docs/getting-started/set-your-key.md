@@ -44,7 +44,7 @@ variables directly (Codex's `env_key`, any OpenAI-compatible CLI) pick it up
 automatically too.
 
 !!! warning "Treat your key like a password"
-    Anyone with this key can spend your plan's budget. Don't commit your
+    Anyone with this key can spend your credits. Don't commit your
     `~/.zshrc` / `~/.bashrc` to a public repo. If the key leaks, revoke it in the
     dashboard and export a fresh one.
 

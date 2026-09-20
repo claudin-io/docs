@@ -19,7 +19,7 @@ Assim que estiver no [painel de controle](https://claudin.io/dashboard):
 3. Copie a chave — ela se parece com `sk-...`.
 
 !!! warning "Trate sua chave como uma senha"
-    Sua chave de API concede acesso ao orçamento do seu plano. Não a commit em um
+    Sua chave de API gasta os créditos do seu plano. Não a commite em um
     repositório, cole em um chat público ou compartilhe. Se uma chave vazar, revogue-a
     no painel de controle e gere uma nova.
 
@@ -40,8 +40,8 @@ funciona, ou vá direto para [conectar sua ferramenta](../clients/claude-code.md
 
 ## Escolhendo um plano
 
-Você pode permanecer no **Gratuito** para experimentar. Quando estiver pronto para mais
-capacidade, faça upgrade pelo painel de controle — veja [Planos e limites](../plans.md) para a
-análise completa.
+Você pode ficar no **Free** para experimentar. Quando estiver pronto, escolha um
+plano pelo painel — uma carteira de créditos que se enche todo mês, a partir de
+$19 — veja [Planos e créditos](../plans.md) para o detalhamento completo.
 
 Os upgrades são processados pelo Stripe e entram em vigor imediatamente.

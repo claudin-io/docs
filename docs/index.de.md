@@ -6,9 +6,9 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Code ohne Rechnungsangst. Fester monatlicher Preis, unbegrenzte Nutzung.
+# Coden ohne Rechnungsangst. Credits, die nie verfallen, kein Stundenlimit.
 
-Claudin.io ist ein API-Proxy für KI-Codierungsagenten. Zahle eine **feste monatliche Abonnementgebühr** und nutze es so viel du willst — keine Abrechnung pro Token, keine Request-Zähler, keine Credits, die verfallen.
+Claudin.io ist ein API-Proxy für KI-Coding-Agenten. Wähle einen **Monatsplan**, bekomme ein Wallet mit Credits, das sich jeden Monat füllt, und gib sie mit etwa einem Credit pro Anfrage aus — keine Rechnung pro Token, kein Stundenlimit, und was du nicht nutzt, bleibt deins.
 
 </div>
 
@@ -21,42 +21,52 @@ Claudin.io ist ein API-Proxy für KI-Codierungsagenten. Zahle eine **feste monat
 
 <div class="grid cards" markdown>
 
--   :material-infinity:{ .lg .middle } __Unbegrenzte Nutzung__
+-   :material-wallet:{ .lg .middle } __Credits, kein Zähler__
 
     ---
 
-    Keine Request-Zähler, keine Token-Messung. Die einzige Einschränkung ist eine periodische **Ausgabenschutz**-Grenze, die einen außer Kontrolle geratenen Agenten stoppt — im normalen Betrieb erreichst du sie fast nie.
+    Ein Plan ist eine Anzahl Credits pro Monat; eine typische Anfrage kostet
+    etwa einen. Kein Stundenlimit, kein Sitzungslimit — das Wallet ist das
+    einzige Limit, und ein Top-up füllt es sofort.
 
 -   :material-power-plug:{ .lg .middle } __Funktioniert mit deinen Tools__
 
     ---
 
-    OpenAI- und Anthropic-kompatible Endpunkte. Integriere es in Minuten in OpenCode, Claude Code, Kilo Code, Zed, Codex, Cursor oder jeden OpenAI-Client.
+    OpenAI- und Anthropic-kompatible Endpunkte. In Minuten in OpenCode, Claude
+    Code, Kilo Code, Zed, Codex, Cursor oder jeden OpenAI-Client einbauen.
 
--   :material-cash-multiple:{ .lg .middle } __Vorhersehbare Kosten__
-
-    ---
-
-    Ein festes Abonnement. Keine Überraschungsrechnungen am Ende des Monats, keine Angst vor „Was wird diese Refaktorisierung kosten?“
-
--   :material-shield-check:{ .lg .middle } __Integrierter Ausgabenschutz__
+-   :material-cash-multiple:{ .lg .middle } __Planbare Kosten__
 
     ---
 
-    Eine kaskadierende periodische Budgetobergrenze schützt dich vor Agenten in Endlosschleifen, die deinen Plan verbrauchen. Transparent und live in deinem Dashboard einsehbar.
+    Ein fester Monatspreis für eine bekannte Anzahl Credits. Keine Überraschung
+    auf der Rechnung am Monatsende, und ungenutzte Credits werden übertragen —
+    sie verfallen nie.
+
+-   :material-format-list-bulleted:{ .lg .middle } __Ein Modell, das wir tunen, ein Katalog, wenn du wählen willst__
+
+    ---
+
+    `claudinio` ist der Standard und unsere Empfehlung — das Modell, mit dem
+    deine Credits am weitesten kommen. Acht benannte Modelle sind eine
+    Einstellung entfernt, jedes ein festes Vielfaches eines `claudinio`-Credits.
 
 </div>
 
-## So geht's in 4 Schritten
+## In 4 Schritten loslegen
 
-1. **[Erstelle ein Konto](getting-started/account.md)** und kopiere deinen API-Schlüssel.
-2. **[Setze deinen API-Schlüssel](getting-started/set-your-key.md)** einmal in deiner Shell.
-3. **[Verbinde dein Tool](clients/opencode.md)** — wähle deinen Editor oder Agenten.
-4. **[Führe deinen ersten Aufruf durch](getting-started/first-call.md)** und beginne mit dem Bauen.
+1. **[Konto erstellen](getting-started/account.md)** und API-Schlüssel kopieren.
+2. **[API-Schlüssel setzen](getting-started/set-your-key.md)** — einmal in deiner Shell.
+3. **[Tool verbinden](clients/opencode.md)** — wähle deinen Editor oder Agenten.
+4. **[Ersten Aufruf machen](getting-started/first-call.md)** und losbauen.
 
-!!! tip "Der Modellname ist immer `claudinio`"
-    Egal welchen Client du verwendest, die Modell-ID, auf die du zeigst, ist **`claudinio`**. Die Basis-URL ist **`https://api.claudin.io`**.
+!!! tip "Der Modellname ist `claudinio`"
+    Egal welchen Client du nutzt, die Modell-ID, auf die du zeigst, ist
+    **`claudinio`** — oder eine [Katalog-ID](plans.md#der-katalog-ein-modell-nach-namen-wahlen),
+    wenn du ein bestimmtes Modell willst. Die Basis-URL ist **`https://api.claudin.io`**.
 
 ---
 
-<small>Brauchst du Hilfe? Siehe die [FAQ](faq.md) oder kontaktiere uns über die Support-Karte in deinem [Dashboard](https://claudin.io/dashboard).</small>
+<small>Brauchst du Hilfe? Sieh in die [FAQ](faq.md) oder melde dich über die
+Support-Karte in deinem [Dashboard](https://claudin.io/dashboard).</small>

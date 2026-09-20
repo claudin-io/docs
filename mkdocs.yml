@@ -1,6 +1,6 @@
 site_name: Claudin.io Docs
 site_url: https://docs.claudin.io
-site_description: How to use Claudin.io - the unlimited AI proxy with a fixed monthly subscription. Set up your favorite coding agent in minutes.
+site_description: How to use Claudin.io - the AI proxy for coding agents with credit plans that never expire and no hourly cap. Set up your favorite coding agent in minutes.
 site_author: Claudin.io
 copyright: Copyright &copy; Claudin.io
 
@@ -115,7 +115,7 @@ plugins:
             pi: pi
             Cursor: Cursor
             Any OpenAI client: Qualquer cliente OpenAI
-            Plans & limits: Planos e limites
+            Plans & credits: Planos e créditos
             Referrals: Indicações
             API reference: Referência da API
             FAQ: FAQ
@@ -139,7 +139,7 @@ plugins:
             pi: pi
             Cursor: Cursor
             Any OpenAI client: Qualquer cliente OpenAI
-            Plans & limits: Planos e limites
+            Plans & credits: Planos e créditos
             Referrals: Indicações
             API reference: Referência da API
             FAQ: FAQ
@@ -163,7 +163,7 @@ plugins:
             pi: pi
             Cursor: Cursor
             Any OpenAI client: Cualquier cliente de OpenAI
-            Plans & limits: Planes y límites
+            Plans & credits: Planes y créditos
             Referrals: Recomendaciones
             API reference: Referencia de API
             FAQ: Preguntas frecuentes
@@ -187,7 +187,7 @@ plugins:
             pi: pi
             Cursor: Cursor
             Any OpenAI client: Tout client OpenAI
-            Plans & limits: Plans et limites
+            Plans & credits: Plans et crédits
             Referrals: Parrainage
             API reference: Référence API
             FAQ: FAQ
@@ -211,7 +211,7 @@ plugins:
             pi: pi
             Cursor: Cursor
             Any OpenAI client: Jeder OpenAI-Client
-            Plans & limits: Pläne & Limits
+            Plans & credits: Pläne & Credits
             Referrals: Empfehlungen
             API reference: API-Referenz
             FAQ: FAQ
@@ -235,7 +235,7 @@ plugins:
             pi: pi
             Cursor: Cursor
             Any OpenAI client: Qualsiasi client OpenAI
-            Plans & limits: Piani e limiti
+            Plans & credits: Piani e crediti
             Referrals: Inviti
             API reference: Riferimento API
             FAQ: FAQ
@@ -259,7 +259,7 @@ plugins:
             pi: pi
             Cursor: Cursor
             Any OpenAI client: Любой клиент OpenAI
-            Plans & limits: Тарифы и лимиты
+            Plans & credits: Тарифы и кредиты
             Referrals: Рефералы
             API reference: Справочник API
             FAQ: Часто задаваемые вопросы
@@ -283,7 +283,7 @@ plugins:
             pi: pi
             Cursor: Cursor
             Any OpenAI client: Herhangi bir OpenAI istemcisi
-            Plans & limits: Planlar ve limitler
+            Plans & credits: Planlar ve krediler
             Referrals: Davetler
             API reference: API referansı
             FAQ: SSS
@@ -307,7 +307,7 @@ plugins:
             pi: pi
             Cursor: Cursor
             Any OpenAI client: Any OpenAI client
-            Plans & limits: الخطط والحدود
+            Plans & credits: الخطط والرصيد
             Referrals: الإحالات
             API reference: مرجع API
             FAQ: الأسئلة الشائعة
@@ -331,7 +331,7 @@ plugins:
             pi: pi
             Cursor: Cursor
             Any OpenAI client: Any OpenAI client
-            Plans & limits: योजनाएं और सीमाएं
+            Plans & credits: योजनाएं और क्रेडिट
             Referrals: रेफ़रल
             API reference: API संदर्भ
             FAQ: सामान्य प्रश्न
@@ -355,7 +355,7 @@ plugins:
             pi: pi
             Cursor: Cursor
             Any OpenAI client: Any OpenAI client
-            Plans & limits: পরিকল্পনা ও সীমা
+            Plans & credits: প্ল্যান ও ক্রেডিট
             Referrals: রেফারেল
             API reference: API রেফারেন্স
             FAQ: FAQ
@@ -379,7 +379,7 @@ plugins:
             pi: pi
             Cursor: Cursor
             Any OpenAI client: کوئی بھی OpenAI کلائنٹ
-            Plans & limits: منصوبے اور حدود
+            Plans & credits: منصوبے اور کریڈٹس
             Referrals: ریفرلز
             API reference: API حوالہ
             FAQ: عمومی سوالات
@@ -403,7 +403,7 @@ plugins:
             pi: pi
             Cursor: Cursor
             Any OpenAI client: 任何OpenAI客户端
-            Plans & limits: 套餐与限制
+            Plans & credits: 套餐与积分
             Referrals: 推荐
             API reference: API参考
             FAQ: 常见问题
@@ -427,7 +427,7 @@ plugins:
             pi: pi
             Cursor: カーソル
             Any OpenAI client: 任意のOpenAIクライアント
-            Plans & limits: プランと制限
+            Plans & credits: プランとクレジット
             Referrals: 紹介
             API reference: APIリファレンス
             FAQ: FAQ
@@ -451,7 +451,7 @@ plugins:
             pi: pi
             Cursor: Cursor
             Any OpenAI client: Any OpenAI client
-            Plans & limits: 요금제 및 제한
+            Plans & credits: 요금제 및 크레딧
             Referrals: 추천
             API reference: API 참조
             FAQ: FAQ
@@ -475,7 +475,7 @@ plugins:
             pi: pi
             Cursor: Cursor
             Any OpenAI client: Bất kỳ ứng dụng OpenAI nào
-            Plans & limits: Gói & giới hạn
+            Plans & credits: Gói & tín dụng
             Referrals: Giới thiệu
             API reference: Tài liệu tham khảo API
             FAQ: Câu hỏi thường gặp
@@ -499,7 +499,7 @@ plugins:
             pi: pi
             Cursor: Cursor
             Any OpenAI client: Klien OpenAI apa pun
-            Plans & limits: Paket & batasan
+            Plans & credits: Paket & kredit
             Referrals: Referral
             API reference: Referensi API
             FAQ: FAQ
@@ -529,7 +529,7 @@ nav:
       - Cursor: clients/cursor.md
       - Hermes Agent: clients/hermes.md
       - Any OpenAI client: clients/openai-compatible.md
-  - Plans & limits: plans.md
+  - Plans & credits: plans.md
   - Referrals: referrals.md
   - API reference: api-reference.md
   - FAQ: faq.md

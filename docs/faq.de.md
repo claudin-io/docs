@@ -1,75 +1,129 @@
 # FAQ
 
-## Was ist Claudin.io genau?
+## Was genau ist Claudin.io?
 
-Ein API-Proxy für KI-Coding-Agenten. Sie zahlen ein flaches monatliches Abonnement und erhalten einen OpenAI/Anthropic-kompatiblen API-Schlüssel, den Sie in Claude Code, Kilo, Zed, Codex, Cursor oder jeden OpenAI-Client einfügen können. Keine Abrechnung pro Token.
+Ein API-Proxy für KI-Coding-Agenten. Du zahlst einen Monatsplan, bekommst ein
+Wallet mit Credits, das sich jeden Monat füllt, und einen OpenAI/Anthropic-
+kompatiblen API-Schlüssel, den du in Claude Code, Kilo, Zed, Codex, Cursor oder
+jeden OpenAI-Client einsetzen kannst. Eine typische Coding-Anfrage kostet etwa
+einen Credit. Keine Rechnung pro Token, kein Stundenlimit.
 
-## Ist es wirklich unbegrenzt?
+## Gibt es ein Limit?
 
-Die Nutzung ist unbegrenzt – es gibt keinen Anforderungszähler oder Tokenzähler. Die einzige Grenze ist eine **Ausgabenschutzobergrenze** pro Zeitfenster, die einen außer Kontrolle geratenen Agenten daran hindert, Ihren Plan zu leeren. Bei normaler interaktiver Arbeit erreichen Sie sie selten. Siehe [Pläne und Grenzen](plans.md).
+Nur dein Wallet. Es gibt kein Stundenlimit, kein Sitzungslimit und kein
+Wochenkontingent — das Einzige, was deinen Agenten stoppt, ist ein leerer
+Kontostand, und ein Top-up behebt das sofort. Credits, die du nicht nutzt,
+bleiben im Wallet und verfallen nie. Siehe [Pläne & Credits](plans.md).
 
-## Kann ich es für Dinge außerhalb des Programmierens nutzen?
+## Warum Credits statt Festpreis?
 
-Die API ist OpenAI-kompatibel, technisch funktioniert also jede Anfrage. Aber
+Weil wir das Stundenlimit der Festpreis-Pläne an echtem Traffic gemessen haben
+und es 1 von 10 aktiven Stunden auf Pro abschnitt — Menschen mitten in einer
+Aufgabe, keine außer Kontrolle geratenen Schleifen. Ein Plan, der Kapazität
+verkauft, die du nicht nutzen kannst, wenn du sie brauchst, hat die falsche
+Form. Credits sind eine Zahl, die du siehst, eine schwere Stunde, die von den
+ruhigen bezahlt wird, und ein schwerer Monat, der ein Top-up entfernt ist statt
+einer Wartezeit.
+
+## Kann ich es für Dinge nutzen, die kein Coding sind?
+
+Die API ist OpenAI-kompatibel, also funktioniert technisch jede Anfrage. Aber
 der Dienst ist für **KI-Programmierung** gebaut: Routing, Prompts und Caching
-sind auf Coding-Agents abgestimmt. Aktivitäten ohne Programmierbezug —
-allgemeine Chatbots, Nicht-Coding-Automatisierung — können ein spezielles
-Routing erhalten und von einem anderen Modell oder einer anderen Stufe bedient
-werden als Programmier-Traffic.
+sind auf Coding-Agenten abgestimmt. Aktivität ohne Programmierbezug — allgemeine
+Chatbots, Automatisierung ohne Code — kann ein spezielles Routing bekommen und
+von einem anderen Modell oder einer anderen Stufe bedient werden als
+Coding-Traffic.
 
-## Welches Modell verwende ich?
+## Welches Modell nutze ich?
 
-Immer **`claudinio`** (oder `claudinio/claudinio` für Clients, die die `provider/model`-Form wünschen). Die Basis-URL ist `https://api.claudin.io`.
+Standardmäßig **`claudinio`** (oder `claudinio/claudinio` für Clients, die die
+Form `anbieter/modell` wollen). Die Basis-URL ist `https://api.claudin.io`. Es
+ist das Modell, das wir für Code tunen, messen und cachen, und das, mit dem
+deine Credits am weitesten kommen.
 
-## Authentifiziere ich mich mit `Authorization` oder `x-api-key`?
+## Kann ich ein anderes Modell wählen?
 
-Beides funktioniert. `Authorization: Bearer YOUR_API_KEY` oder `x-api-key: YOUR_API_KEY`.
+Ja, nach Namen. `claudius` ist unsere Premium-Option, mit bis zu 6× den
+Credits. Der [Katalog](plans.md#der-katalog-ein-modell-nach-namen-wahlen) fügt
+acht Drittanbieter-Modelle hinzu — Claude Sonnet 5 und Haiku 4.5, Gemini 3.1
+Pro, Kimi K3, GLM 5.3, MiniMax M3, Qwen3 Coder — jedes als festes Vielfaches
+der `claudinio`-Credits bepreist, von 3× bis 22×. Setze die ID in deinem
+Client, und nur diese Anfrage zahlt das Vielfache. Jedes Modell ist in jedem
+Plan; wir empfehlen weiterhin `claudinio`.
 
-## Kann ich es mit einem nicht aufgeführten Tool verwenden?
+## Authentifiziere ich mit `Authorization` oder `x-api-key`?
 
-Ja – jedes Tool, mit dem Sie eine benutzerdefinierte OpenAI-Basis-URL festlegen können, funktioniert. Verwenden Sie die [generische OpenAI-Einrichtung](clients/openai-compatible.md).
+Beides funktioniert. `Authorization: Bearer DEIN_API_KEY` oder
+`x-api-key: DEIN_API_KEY`.
 
-## Unterstützt es Tool- / Funktionsaufrufe?
+## Kann ich es mit einem Tool nutzen, das nicht aufgeführt ist?
 
-Ja. Deshalb funktioniert es in Agenteneditoren. Übergeben Sie `tools` und lesen Sie `tool_calls` wie bei der OpenAI-API.
+Ja — jedes Tool, das eine eigene OpenAI-Basis-URL zulässt, funktioniert. Nutze
+das [generische OpenAI-Setup](clients/openai-compatible.md).
+
+## Unterstützt es Tool-/Function-Calling?
+
+Ja. Deshalb funktioniert es in agentischen Editoren. Übergib `tools` und lies
+`tool_calls` wie bei der OpenAI-API.
 
 ## Kann es Bilder, Audio oder Video verarbeiten?
 
-Ja, transparent. Senden Sie standardmäßige OpenAI-Inhaltsblöcke; der Proxy konvertiert Bilder/Audio/Video in Textbeschreibungen oder Transkriptionen, bevor das Modell sie sieht. Nichts Besonderes zu konfigurieren.
+Ja, transparent. Sende Standard-OpenAI-Content-Blöcke; der Proxy wandelt
+Bilder/Audio/Video in Textbeschreibungen oder Transkriptionen um, bevor das
+Modell sie sieht. Nichts Besonderes zu konfigurieren.
 
 ## Wie groß ist das Kontextfenster?
 
-256K Token.
+256K Tokens.
 
-## Wie aktualisiere oder kündige ich?
+## Wie upgrade oder kündige ich?
 
-Von Ihrem [Dashboard](https://claudin.io/dashboard). Upgrades werden sofort wirksam (über Stripe). Wenn Sie kündigen, behalten Sie Ihren bezahlten Plan bis zum Ende des bereits bezahlten Zeitraums und fallen dann automatisch auf den kostenlosen Plan zurück.
+Über dein [Dashboard](https://claudin.io/dashboard). Upgrades gelten sofort
+(über Stripe). Wenn du kündigst, behältst du deinen bezahlten Plan bis zum Ende
+des bereits bezahlten Zeitraums. Credits, die schon im Wallet sind, bleiben
+deine und funktionieren auch nach Planende weiter.
 
-## Kann ich eine Erstattung bekommen?
+## Kann ich eine Rückerstattung bekommen?
 
-Innerhalb von **48 Stunden nach Ihrer ersten Zahlung**, ja — schreiben Sie von
-der E-Mail-Adresse Ihres Kontos an [support@claudin.io](mailto:support@claudin.io).
-Das Abonnement endet sofort, und Sie erhalten den gezahlten Betrag zurück,
-abzüglich einer Nutzungs- und Bearbeitungsgebühr, die die Kosten der
-Modellnutzung Ihres Kontos in dieser Zeit deckt (nie mehr als Sie gezahlt haben).
-Einen Tag ausprobiert und nicht das Richtige? Sie bekommen fast alles zurück.
-Zwei Tage an der Stundenobergrenze gefahren? Rechnen Sie mit wenig oder nichts.
-Nach 48 Stunden gibt es keine Erstattungen; eine Kündigung behält den Plan bis
-zum Ende des bezahlten Zeitraums. Vollständiger Wortlaut in den
+Innerhalb von **48 Stunden nach deiner ersten Zahlung**, ja — schreib an
+[support@claudin.io](mailto:support@claudin.io) von der E-Mail-Adresse deines
+Kontos. Das Abonnement endet sofort, und du bekommst zurück, was du bezahlt
+hast, abzüglich einer Nutzungs- und Bearbeitungsgebühr, die die Kosten der
+Modellnutzung deines Kontos in dieser Zeit deckt (nie mehr, als du bezahlt
+hast). Einen Tag probiert und es war nichts für dich? Du bekommst fast alles
+zurück. Die Credits des ganzen Monats in zwei Tagen ausgegeben? Erwarte wenig
+oder nichts. Nach 48 Stunden gibt es keine Rückerstattungen; Kündigen behält
+deinen Plan bis zum Ende des bezahlten Zeitraums. Vollständiger Wortlaut in den
 [Bedingungen](https://claudin.io/terms).
 
-## Ich habe einen Budgetfehler erhalten. Was nun?
+## Ich habe ein `402 insufficient_credits` bekommen. Was jetzt?
 
-Sie haben die Ausgabenschutzobergrenze des aktuellen Zeitfensters erreicht. Warten Sie entweder, bis das Fenster zurückgesetzt wird (Ihr Dashboard zeigt an, wann), oder [aktualisieren Sie](plans.md) für eine größere Obergrenze.
+Dein Wallet ist leer. Kauf ein [Top-up](plans.md#top-ups) oder wechsle im
+Dashboard zu einem größeren Plan — beides gilt sofort. Nichts wird eingereiht,
+und für die fehlgeschlagene Anfrage wurde nichts berechnet.
+
+## Was passiert mit meinem alten Essential-/Pro-/Ultra-Plan?
+
+Er läuft genau wie bisher weiter, mit seinem Stundenlimit, bis zum Ende des
+bereits bezahlten Zeitraums, und verlängert sich danach nicht. Monatliche
+Abonnenten haben Credits als Aufmerksamkeit erhalten, um das neue System
+auszuprobieren; jährliche Abonnenten behalten ihr ganzes Jahr und wechseln an
+dessen Ende zu Credits. Siehe
+[Alte Pläne](plans.md#alte-plane-essential-pro-ultra-mit-stundenlimit).
 
 ## Eine Anfrage ist mit 401 fehlgeschlagen.
 
-Ihr Schlüssel fehlt oder ist falsch. Kopieren Sie ihn erneut aus dem Dashboard und stellen Sie sicher, dass kein zusätzliches Leerzeichen vorhanden ist und dass der Authentifizierungsheader gesetzt ist.
+Dein Schlüssel fehlt oder ist falsch. Kopiere ihn erneut aus dem Dashboard und
+stelle sicher, dass keine zusätzlichen Leerzeichen enthalten sind und der
+Auth-Header gesetzt ist.
 
-## Mein Schlüssel ist durchgesickert. Was soll ich tun?
+## Mein Schlüssel ist geleakt. Was tun?
 
-Widerrufen Sie ihn im Dashboard und generieren Sie sofort einen neuen. Behandeln Sie Schlüssel wie Passwörter – machen Sie sie niemals öffentlich und committen Sie sie nicht.
+Widerrufe ihn im Dashboard und erzeuge sofort einen neuen. Behandle Schlüssel
+wie Passwörter — committe sie nie und teile sie nie öffentlich.
 
 ## Wo bekomme ich Hilfe?
 
-Eröffnen Sie ein Ticket über die **Support**-Karte in Ihrem [Dashboard](https://claudin.io/dashboard) oder senden Sie eine E-Mail an den Support. Wir werden uns bei Ihnen melden.
+Öffne ein Ticket über die **Support**-Karte in deinem
+[Dashboard](https://claudin.io/dashboard) oder schreib dem Support eine E-Mail.
+Wir melden uns.

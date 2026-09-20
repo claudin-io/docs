@@ -1,62 +1,139 @@
-# Planlar ve limitler
+# Planlar ve krediler
 
-Her Claudin.io planı, **harcama koruma limiti** ile birlikte **sınırsız kullanım** sunar.
-Token veya istek başına faturalandırılmazsınız — sabit bir aylık ücret öder ve
-özgürce kullanırsınız. Limit yalnızca kontrolden çıkmış bir ajanın (örneğin sonsuz araç döngüsü)
-planınızı tüketmesini önlemek için vardır.
+Her Claudin.io planı, her ay dolan bir **kredi cüzdanıdır**. Bir istek,
+kullandığı token kadar kredi harcar — `claudinio` üzerinde tipik bir kodlama
+isteği yaklaşık **bir kredi** — ve harcamadığınız cüzdanda kalır. **Krediler
+asla sona ermez ve saatlik bir sınır yoktur.**
 
 ## Planlar
 
-| Plan | Fiyat | Harcama koruması | En uygun |
+| Plan | Fiyat | Kredi / ay | Kimin için |
 | --- | --- | --- | --- |
-| **Essential** | $19 / ay veya $189 / yıl | $2.00 / saat | Günlük kullanım için kaliteli |
-| **Pro** ★ | $39 / ay veya $389 / yıl | $4.00 / saat | Yoğun ajan iş akışları |
-| **Ultra** | $99 / ay veya $989 / yıl | $10.00 / saat | Maksimum güç, ekipler ve üretim |
+| **Start** | $19 / ay | 3.000 | Denemek, hafif günlük kullanım |
+| **Solo** ★ | $39 / ay | 7.000 | Tek geliştirici, her gün |
+| **Pro** | $99 / ay | 18.000 | Yoğun ajan iş akışları |
+| **Studio** | $199 / ay | 36.000 | Birden fazla ajan, tüm gün |
+| **Max** | $399 / ay | 72.000 | Üretim, ekipler, botlar |
 
-!!! tip "Çoğu kişi asla limite ulaşmaz"
-    Saatlik limit, normal etkileşimli çalışma için cömerttir. Genellikle yalnızca
-    bir ajan sıkı bir döngüye girdiğinde buna yaklaşırsınız — ki bu tam da bir
-    fren istediğiniz andır.
+Her plan her modeli içerir: `claudinio`, `claudius` ve tüm
+[katalog](#catalogue). Planlar yalnızca her ay kaç kredi geldiğiyle ayrılır —
+ve plan büyüdükçe her kredi ucuzlar.
 
-## Hangi modeli seçmelisiniz? Claudinio vs Claudius
+!!! tip "Hangi plan ayınıza sığar"
+    `claudinio` üzerinde tipik bir istek yaklaşık bir kredidir; binlerce gerçek
+    istek üzerinde ölçüldü. Ajanınızın dolu bir günde gönderdiği istekleri
+    sayın, 22 iş günüyle çarpın ve onu içine alan basamağı seçin. İki basamak
+    arasındaysanız küçüğünü alın — ara sıra gelen yoğun ayı bir yükleme
+    karşılar.
 
-Kodlama ajanınız için iki ana model sunuyoruz:
+### Yüklemeler {#top-ups}
 
-| Model | Arka uç | Kullanım alanı | Önerilen |
+Bir sonraki ay gelmeden daha fazlasına mı ihtiyacınız var? Bir **yükleme**,
+aynı cüzdana anında kredi ekler, her planda:
+
+| Yükleme | Kredi |
+| --- | --- |
+| $10 | 1.200 |
+| $25 | 3.000 |
+| $50 | 6.000 |
+
+Yükleme kredileri ve plan kredileri aynı kredilerdir: toplanırlar, asla sona
+ermezler ve her model onları harcar.
+
+## Neden krediler (ve neden saatlik sınır yok)
+
+Planlarımız, **saatlik bir harcama tavanı** olan sabit bir fiyattı — döngüye
+takılmış bir ajana karşı bir fren, diyorduk. Bir şeyi değiştirmeden önce bunu
+üç günlük gerçek trafikte ölçtük: **Pro'daki her 10 aktif saatten 1'i**
+(%11,1) tavanın bir geliştiriciyi görevinin ortasında kesmesiyle bitiyordu ve
+Essential'da 13'te 1'i. Bunlar sonsuz döngüler değildi. Çalışan insanlardı.
+
+İhtiyacınız olduğunda kullanamayacağınız kapasiteyi satan bir plan yanlış
+biçimdedir. Bu yüzden tavan kalktı. Bir plan, aylık bir kredi sayısıdır; yoğun
+bir saati sakin saatler öder; yoğun bir ay, bir bekleme yerine bir yükleme
+uzağındadır. Ajanınızı durduran tek şey boş bir cüzdandır ve panel bakiyeyi
+her zaman gösterir.
+
+## Bir kredi ne alır
+
+Bir kredi her eksende aynı değerdedir. `claudinio` üzerinde:
+
+| | 1M token başına kredi |
+| --- | --- |
+| Girdi (önbellek ıskası) | 40 |
+| Girdi (önbellek isabeti) | 6 |
+| Çıktı | 80 |
+
+Bir ajanın tokenlarının neredeyse tamamı istem tokenlarıdır ve bir çalışma
+oturumunda neredeyse tamamı önbellekten gelir — bu yüzden tipik bir istek bir
+krediye yakın düşer ve bu yüzden uzun oturumlar istek başına kısalardan
+ucuzdur.
+
+## Hangi model? `claudinio`, `claudius` ve katalog
+
+| Model | Nedir | Kredi maliyeti | Dahil olduğu planlar |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Hızlı, dengeli, uygun maliyetli | Günlük kodlama, hobi projeleri, genel kod | **Tüm planlar** (Essential'dan Ultra'ya) |
-| **claudius** ★ | Premium, derin muhakeme | Karmaşık görevler, derin muhakeme, yoğun ajan iş akışları | **Pro ve Ultra** |
-!!! warning "`claudius`, Pro ve Ultra'ya dahildir"
-    **Essential**'da `claudius` adını taşıyan bir istek reddedilmez — `claudinio` tarafından karşılanır ve `claudinio` tarifesinden faturalandırılır. Ajanınız çalışmaya devam eder ve premium tarife, onu içermeyen bir planda size asla yansıtılmaz.
+| **claudinio** 🏆 | Kod için ayarladığımız, ölçtüğümüz ve önbelleğe aldığımız model | 1× — istek başına yaklaşık bir kredi | Her plan |
+| **claudius** ★ | Derin akıl yürütme için premium seçeneğimiz | claudinio kredilerinin 6x katına kadar (3× girdi, 4× çıktı, 6× önbellek okuma) | Her plan (Start, Solo, Pro, Studio, Max) |
 
-    **Pro** ve **Ultra**'da şunu unutmayın: limit **istek sayısıyla değil, dolarla** ölçülür; aynı iş `claudius` üzerinde yaklaşık altı katını harcar. Pro'da (4 $/saat) bu, saat dolmadan yaklaşık 70 premium istek demektir; Ultra'da (10 $/saat) yaklaşık 175. Varsayılanı `claudinio` bırakın ve gerçekten akıl yürütme gerektiğinde `claudius`'a geçin.
+**Önerimiz `claudinio`.** Her planın etrafında kurulduğu model: istemi onun
+için ayarlıyoruz, her değerlendirme onu puanladı ve bir kredi onunla en uzağa
+gider. Gördüğümüz en etkili yapılandırma, **`claudius` ile planlamak,
+`claudinio` ile uygulamak** — akıl yürütme, premium modelin katını hak ettiği
+yer; uygulama döngüsü ise hacmin olduğu yer.
 
-### Açık konuşma
+### Katalog: bir modeli adıyla seçin {#catalogue}
 
-İşte gerçek: `claudinio`, günlük kodlamada Claude Sonnet ile karşılaştırılabilir kaliteyi **iç maliyetin çok küçük bir kısmına** sunar. Essential planında onunla **saatte yüzlerce istek** yapabilirsiniz — her planın etrafında kurulduğu model bu yüzden odur.
+Üçüncü taraf bir modeli adıyla da isteyebilirsiniz. Bir katalog modeli
+**ham** sunulur — sağlayıcının modeli, kendi istemcinizin sistem istemi,
+Claudinio ayarı yok — ve her eksende `claudinio` kredilerinin sabit bir tam
+sayı katına mal olur, böylece fiyat tek bir sayı olarak okunur:
 
-| Metrik | claudinio | claudius |
-| --- | --- | --- |
-| Saatlik bütçeye etkisi | Düşük — çok daha uzun süre dayanır | Yüksek — istek başına 6x'e kadar |
-| Kullanım alanı | Günlük kodlama, kişisel projeler | Yoğun muhakeme, karmaşık ajanlar |
+| Model kimliği | Model | Sağlayıcı | `claudinio`'ya göre kredi |
+| --- | --- | --- | --- |
+| `qwen3-coder-flash` | Qwen3 Coder Flash | Qwen | 3× |
+| `minimax-m3` | MiniMax M3 | MiniMax | 5× |
+| `qwen3-coder-plus` | Qwen3 Coder Plus | Qwen | 10× |
+| `haiku-4.5` | Claude Haiku 4.5 | Anthropic | 11× |
+| `glm-5.3` | GLM 5.3 | Z.ai | 13× |
+| `kimi-k3` | Kimi K3 | Moonshot | 18× |
+| `sonnet-5` | Claude Sonnet 5 | Anthropic | 21× |
+| `gemini-3.1-pro` | Gemini 3.1 Pro | Google | 22× |
 
-**Altın kural:** Ajanınızı (Claude Code, Cursor, Continue, vb.) varsayılan model olarak `claudinio` ile yapılandırın. Yalnızca daha fazla muhakeme gücüne açıkça ihtiyacınız olduğunda  `claudius`'a geçin. Hobi projeleri için `claudinio` **ihtiyacınız olan her şey** ve muhtemelen **beklediğinizden fazlasıdır**.
+İstemcinizde `model=sonnet-5` (veya yukarıdaki herhangi bir kimlik) ayarlayın;
+yalnızca o istek katı öder — oturumun geri kalanı `claudinio` tarifesinden
+devam eder. Her katalog modeli her planda kullanılabilir.
 
-> 💡 İpucu: Her iki model de tüm büyük kodlama ajanlarıyla çalışır. Ajan yapılandırmanızda `model=claudinio` ayarlayın — Pro ya da Ultra'daysanız `model=claudius`. `claudinio` ayrıca `claude-sonnet-4`, `gpt-4o`, `o3-mini` gibi onlarca takma adı otomatik çözer — ajanınızın yapılandırmasını değiştirmenize gerek yok.
+!!! note "Neden hâlâ `claudinio` öneriyoruz"
+    Katalog, seçmek isteyen geliştirici için vardır; herhangi bir girdi kodda
+    daha iyi ölçüldüğü için değil. `claudinio`, değerlendirmelerimizin
+    karşılaştırma modeli, istem önbelleğinin etrafında kurulduğu model ve —
+    istek başına 3× ile 22× daha ucuz olarak — kredilerinizin en uzağa gittiği
+    modeldir. Bir katalog modeline bilinçli olarak, ona ihtiyaç duyan görev
+    için başvurun.
 
-## Harcama koruması nasıl çalışır
+> 💡 İpucu: `claudinio`, kodlama ajanlarının varsayılan olarak gönderdiği
+> takma adları da çözer — `claude-sonnet-4`, `gpt-4o`, `o3-mini` ve onlarcası —
+> bu yüzden onu kullanmak için ajanınızın yapılandırmasını değiştirmeniz
+> gerekmez.
 
-Her plan bir bütçe **penceresi** tanımlar — kayan bir dönem ve bu dönem içindeki maksimum harcama:
+## Cüzdan boşaldığında
 
-- **Essential**, **Pro** ve **Ultra** **1 saatlik** bir pencere kullanır.
+İstekler `402` ve `insufficient_credits` koduyla yanıt verir (bkz.
+[Hatalar](api-reference.md#errors)). Hiçbir şey kuyruğa alınmaz ve hiçbir şey
+ücretlendirilmez. İki seçeneğiniz var, ikisi de anında:
 
-Pencere içinde kullanımınız küçük bir iç maliyet biriktirir. Bu iç maliyet pencerenin limitine ulaştığında, pencere sıfırlanana kadar istekler duraklatılır.
+1. [Panelden](https://claudin.io/dashboard) **bir yükleme satın alın**.
+2. **Daha büyük bir plana geçin** — yeni ayın kredileri faturayla gelir.
 
-Proxy üzerinden yalnızca model çağrılarınız yapılır. Her istek, kullandığı tokenlara göre mevcut pencerenin devam eden toplamına eklenir. Pencere sıfırlandığında, toplam da onunla birlikte sıfırlanır.
+Panel bakiyenizi, günün harcamasını ve oraya varmadan önce düşük bakiye
+uyarısını gösterir; bakiye düştüğünde size bir kez e-posta göndeririz.
 
-Limite ulaşıp bir bütçe hatası alırsanız, iki seçeneğiniz vardır:
+## Eski planlar (saatlik sınırlı Essential, Pro, Ultra) {#legacy-plans}
 
-1. Pencerenin sıfırlanmasını bekleyin (panonuzda gösterilir).
-2. Daha büyük bir limit için daha yüksek bir plana yükseltin.
-
-Bütçe hatasının nasıl göründüğü için [Planlarla ilgili hatalar](api-reference.md#errors) bölümüne bakın.
+Önceki planlardan birindeyseniz, **ödenmiş dönemin sonuna kadar, saatlik
+sınırıyla birlikte tam olarak eskisi gibi** çalışmaya devam eder. Sonrasında
+yenilenmez. Aylık aboneler, bir plan seçmeden önce yeni sistemi denemeleri için
+kredi hediyesi aldı — eski planın liste değerinden iki ayı; yıllık aboneler
+tüm yıllarını korur ve yıl bittiğinde kredilere geçer. API anahtarınız
+değişmez.

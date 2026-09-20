@@ -144,8 +144,8 @@ Hatalar OpenAI hata biçimini izler:
 | --- | --- | --- |
 | `401` | Geçersiz veya eksik API anahtarı | Anahtarı ve kimlik doğrulama başlığını kontrol edin |
 | `403` | Uç noktaya izin verilmiyor | Desteklenen `/v1/*` yollarından birini kullanın |
-| `402` | Etkin abonelik yok | [Abone olun](https://claudin.io/dashboard) — yeniden denemek işe yaramaz |
-| `429` | Bütçe sınırına ulaşıldı veya hız sınırlaması uygulandı | Pencere sıfırlanmasını bekleyin (`Retry-After` başlığına bakın) veya [yükseltin](plans.md) |
+| `402` | Etkin plan yok veya cüzdan boş (`code: insufficient_credits`) | [Abone olun, yükleyin veya plan değiştirin](https://claudin.io/dashboard) — yeniden denemek işe yaramaz |
+| `429` | Hız sınırı veya (yalnızca eski planlar) saatlik sınır | `Retry-After` başlığına göre bekleyin |
 | `400` | Hatalı istek | JSON / parametrelerinizi kontrol edin — [`max_tokens`](#max_tokens-and-reasoning) ve [`n`](#multiple-completions-n) bölümlerine bakın |
 | `5xx` | Yukarı akış/sağlayıcı aksaması | Geri çekilme (backoff) ile yeniden deneyin |
 
@@ -153,26 +153,30 @@ Hatalar OpenAI hata biçimini izler:
     Hata mesajları, altta yatan model sağlayıcısını sızdırmamak için temizlenir.
     Her zaman Claudin.io markalı, OpenAI biçimli hatalar görürsünüz.
 
-### Bütçe sınırına ulaşma
+### Boş cüzdan
 
-Geçerli pencerenin harcama korumasını tükettiğinizde, istekler pencere
-sıfırlanana kadarki saniyeleri veren bir `Retry-After` başlığıyla `429`
-döndürür. Panonuz tam sıfırlanma zamanını ve kalan bütçeyi gösterir. Hemen
-yeniden denemek yerine bu başlığa göre bekleyin. Pencerelerin nasıl çalıştığı
-için [Planlar ve limitler](plans.md) bölümüne bakın.
+Kredi bakiyeniz sıfıra ulaştığında istekler `402` ve `code: insufficient_credits`
+döndürür:
 
-### `429` yerine bir mesaj {#cap-alternative-response}
+```json
+{ "error": { "message": "Claudinio: Your credit balance is empty. Buy a top-up pack or change plan at https://claudin.io/dashboard — the next month's credits arrive with your next invoice.", "type": "insufficient_credits", "code": "insufficient_credits" } }
+```
 
-Az sayıda hesapta aynı duruma farklı bir yanıt deniyoruz. Hata yerine istek
-tamamlanıyor ve yanıtın kendisi tavana ulaşıldığını ve ne zaman sıfırlanacağını
-açıklıyor. Bunun, ajanlarının sessizce yuttuğu bir hataya kıyasla bilgiyi
-insanlara daha güvenilir şekilde ulaştırıp ulaştırmadığını ölçüyoruz — ve açıkça
-söylendiğinde kendilerine uygun bir plana geçmeyi tercih edip etmediklerini.
+Hiçbir şey kuyruğa alınmaz ve hiçbir şey ücretlendirilmez. Bir
+[yükleme](plans.md#top-ups) veya plan değişikliği anında uygulanır; bunlar
+olmadan yeniden denemek işe yaramaz. Beklenecek bir zaman penceresi yoktur —
+kredi planlarının saatlik sınırı yoktur.
 
-**Otomasyon geliştiriyorsan bir `2xx`'i "iş yapıldı" diye okuma.** Tavana
-ulaşıldığını söyleyen bir yanıtı tavana ulaşılmış say ve pencere sıfırlanana
-kadar bekle. Yukarıdaki `429` varsayılan davranış olmayı sürdürüyor ve hemen
-hemen her hesabın aldığı yanıt bu.
+### Eski planlar: saatlik sınır {#cap-alternative-response}
+
+Ödenmiş dönemin sonuna kadar önceki sabit fiyatlı bir planda (Essential, Pro,
+Ultra) kalan hesaplar, o planın saatlik sınırını korur. Orada sınırın
+tükenmesi, pencerenin sıfırlanmasına kalan saniyeleri veren bir `Retry-After`
+başlığıyla `429` döndürür; hemen yeniden denemek yerine o başlığa göre
+bekleyin. Bu hesapların küçük bir kısmında istek, bunun yerine tavana
+ulaşıldığını söyleyen bir yanıtla tamamlanır — **otomasyon kuruyorsanız, bir
+`2xx`'i "iş bitti" olarak okumayın**; o yanıtı sınıra ulaşıldı olarak ele
+alın.
 
 ## Hız sınırlama
 

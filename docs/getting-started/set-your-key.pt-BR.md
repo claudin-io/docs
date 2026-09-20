@@ -44,7 +44,7 @@ diretamente (o `env_key` do Codex, qualquer CLI compatível com OpenAI) também 
 automaticamente.
 
 !!! warning "Trate sua chave como uma senha"
-    Qualquer pessoa com esta chave pode gastar o saldo do seu plano. Não envie seu
+    Qualquer pessoa com esta chave pode gastar seus créditos. Não envie seu
     `~/.zshrc` / `~/.bashrc` para um repositório público. Se a chave vazar, revogue-a no
     dashboard e exporte uma nova.
 

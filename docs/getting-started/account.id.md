@@ -18,7 +18,9 @@ Setelah Anda berada di [dasbor](https://claudin.io/dashboard):
 3. Salin kunci tersebut — bentuknya seperti `sk-...`.
 
 !!! warning "Perlakukan kunci Anda seperti kata sandi"
-    Kunci API Anda memberikan akses ke anggaran paket Anda. Jangan menyimpannya di repositori, menempelkannya di obrolan publik, atau membagikannya. Jika kunci bocor, cabut dari dasbor dan buat yang baru.
+    Kunci API Anda menghabiskan kredit paket Anda. Jangan commit ke repositori,
+    tempel di obrolan publik, atau membagikannya. Kalau sebuah kunci bocor, cabut
+    dari dasbor dan buat yang baru.
 
 ## 3. Catat dua nilai yang Anda perlukan
 
@@ -36,6 +38,8 @@ Itu saja. Selanjutnya, [lakukan panggilan API mentah](first-call.md) untuk memas
 
 ## Memilih paket
 
-Anda dapat tetap menggunakan paket **Gratis** untuk mencoba. Jika sudah siap untuk kapasitas lebih, tingkatkan dari dasbor — lihat [Paket & batasan](../plans.md) untuk rincian lengkap.
+Anda bisa tetap di **Free** untuk mencoba. Saat siap, pilih paket dari dasbor —
+dompet kredit yang terisi ulang setiap bulan, mulai $19 — lihat
+[Paket & kredit](../plans.md) untuk gambaran lengkapnya.
 
 Peningkatan ditangani melalui Stripe dan berlaku segera.

@@ -2,89 +2,118 @@
 
 ## Claudin.io chính xác là gì?
 
-Một proxy API cho các AI coding agent. Bạn trả một khoản phí đăng ký hàng tháng cố định và nhận
-một khóa API tương thích với OpenAI/Anthropic mà bạn có thể sử dụng trong Claude Code, Kilo, Zed,
-Codex, Cursor, hoặc bất kỳ OpenAI client nào. Không tính phí theo token.
+Một proxy API cho agent lập trình AI. Bạn trả một gói hằng tháng, nhận một ví
+tín dụng được nạp lại mỗi tháng và một khóa API tương thích OpenAI/Anthropic để
+dùng trong Claude Code, Kilo, Zed, Codex, Cursor hoặc bất kỳ client OpenAI nào.
+Một yêu cầu lập trình thông thường tiêu khoảng một tín dụng. Không tính phí
+theo token, không giới hạn theo giờ.
 
-## Có thực sự không giới hạn không?
+## Có giới hạn không?
 
-Việc sử dụng là không giới hạn — không có bộ đếm yêu cầu hay đồng hồ đo token. Giới hạn duy nhất
-là một **ngưỡng bảo vệ chi tiêu** trong mỗi khung thời gian nhằm ngăn một agent chạy không kiểm soát
-làm cạn kiệt gói của bạn. Trong công việc tương tác thông thường, bạn hiếm khi chạm tới giới hạn này. Xem
-[Gói & giới hạn](plans.md).
+Chỉ có ví của bạn. Không giới hạn theo giờ, giới hạn phiên hay hạn ngạch tuần —
+thứ duy nhất dừng agent của bạn là số dư trống, và một lần nạp thêm sửa nó
+ngay. Tín dụng bạn không dùng vẫn nằm trong ví và không bao giờ hết hạn. Xem
+[Gói & tín dụng](plans.md).
 
-## Tôi có thể dùng nó cho việc ngoài lập trình không?
+## Vì sao là tín dụng thay vì giá cố định?
 
-API tương thích OpenAI nên về mặt kỹ thuật mọi yêu cầu đều chạy. Nhưng dịch vụ
-được xây dựng cho **lập trình với AI**: định tuyến, prompt và bộ nhớ đệm đều
-được tinh chỉnh cho các agent viết mã. Hoạt động không liên quan đến lập trình
-— chatbot đa mục đích, tự động hóa không phải viết mã — có thể chịu định tuyến
-đặc biệt và được phục vụ bởi mô hình hoặc bậc khác với lưu lượng lập trình.
+Vì chúng tôi đã đo giới hạn theo giờ của các gói giá cố định trên lưu lượng
+thật và nó cắt 1 trong mỗi 10 giờ hoạt động trên Pro — những con người đang
+làm dở việc, không phải vòng lặp mất kiểm soát. Một gói bán năng lực mà không
+thể dùng khi cần thì sai hình dạng. Tín dụng là con số bạn nhìn thấy, một giờ
+nặng được trả bằng những giờ yên, và một tháng nặng chỉ cách một lần nạp thêm
+thay vì phải chờ.
 
-## Tôi sử dụng model nào?
+## Có thể dùng cho việc khác ngoài lập trình không?
 
-Luôn luôn là **`claudinio`** (hoặc `claudinio/claudinio` cho các client muốn
-định dạng `provider/model`). Base URL là `https://api.claudin.io`.
+API tương thích OpenAI nên về kỹ thuật mọi yêu cầu đều chạy. Nhưng dịch vụ
+được xây cho **lập trình bằng AI**: định tuyến, prompt và caching được tinh
+chỉnh cho agent lập trình. Hoạt động không phải lập trình — chatbot chung, tự
+động hóa không có code — có thể được định tuyến đặc biệt và phục vụ bởi mô hình
+hoặc tầng khác với lưu lượng lập trình.
 
-## Tôi xác thực bằng `Authorization` hay `x-api-key`?
+## Tôi dùng mô hình nào?
 
-Cả hai đều được. `Authorization: Bearer YOUR_API_KEY` hoặc `x-api-key: YOUR_API_KEY`.
+Mặc định là **`claudinio`** (hoặc `claudinio/claudinio` cho client đòi dạng
+`provider/model`). Base URL là `https://api.claudin.io`. Đó là mô hình chúng
+tôi tinh chỉnh, đo lường và cache cho code, và nơi tín dụng của bạn đi xa nhất.
 
-## Tôi có thể sử dụng nó với một công cụ không có trong danh sách không?
+## Tôi có thể chọn mô hình khác không?
 
-Có — bất kỳ công cụ nào cho phép bạn đặt base URL OpenAI tùy chỉnh đều hoạt động. Sử dụng
+Có, theo tên. `claudius` là lựa chọn cao cấp của chúng tôi, tối đa 6× tín dụng.
+[Danh mục](plans.md#catalogue) thêm tám mô hình bên thứ ba — Claude Sonnet 5 và
+Haiku 4.5, Gemini 3.1 Pro, Kimi K3, GLM 5.3, MiniMax M3, Qwen3 Coder — mỗi mô
+hình được định giá là một bội số cố định của tín dụng `claudinio`, từ 3× đến
+22×. Đặt ID trong client của bạn và chỉ yêu cầu đó trả hệ số. Mọi mô hình đều
+có trên mọi gói; chúng tôi vẫn khuyến nghị `claudinio`.
+
+## Xác thực bằng `Authorization` hay `x-api-key`?
+
+Cả hai đều được. `Authorization: Bearer YOUR_API_KEY` hoặc
+`x-api-key: YOUR_API_KEY`.
+
+## Có thể dùng với công cụ không có trong danh sách không?
+
+Có — bất kỳ công cụ nào cho phép đặt base URL OpenAI tùy chỉnh đều chạy. Dùng
 [thiết lập OpenAI chung](clients/openai-compatible.md).
 
-## Nó có hỗ trợ tool / function calling không?
+## Có hỗ trợ tool / function calling không?
 
-Có. Đó là lý do nó hoạt động bên trong các trình soạn thảo agentic. Truyền `tools` và đọc
+Có. Đó là lý do nó chạy trong các trình soạn thảo agent. Truyền `tools` và đọc
 `tool_calls` như với API OpenAI.
 
-## Nó có thể xử lý hình ảnh, âm thanh hoặc video không?
+## Có xử lý được hình ảnh, âm thanh hay video không?
 
-Có, một cách minh bạch. Gửi các content block tiêu chuẩn của OpenAI; proxy sẽ chuyển đổi
-hình ảnh/âm thanh/video thành mô tả văn bản hoặc bản ghi âm trước khi model nhìn thấy
-chúng. Không cần cấu hình gì đặc biệt.
+Có, một cách trong suốt. Gửi các khối nội dung OpenAI tiêu chuẩn; proxy chuyển
+hình ảnh/âm thanh/video thành mô tả văn bản hoặc bản chép trước khi mô hình
+thấy chúng. Không cần cấu hình gì đặc biệt.
 
 ## Cửa sổ ngữ cảnh là bao nhiêu?
 
 256K token.
 
-## Làm thế nào để tôi nâng cấp hoặc hủy?
+## Nâng cấp hoặc hủy như thế nào?
 
-Từ [dashboard](https://claudin.io/dashboard) của bạn. Việc nâng cấp có hiệu lực ngay lập tức
-(qua Stripe). Nếu bạn hủy, bạn vẫn giữ gói đã trả tiền cho đến cuối kỳ
-mà bạn đã thanh toán, sau đó tự động chuyển xuống Free.
+Từ [bảng điều khiển](https://claudin.io/dashboard) của bạn. Nâng cấp có hiệu
+lực ngay (qua Stripe). Nếu hủy, bạn giữ gói đã trả đến hết kỳ đã thanh toán.
+Tín dụng đã có trong ví vẫn là của bạn và tiếp tục dùng được sau khi gói kết
+thúc.
 
 ## Tôi có thể được hoàn tiền không?
 
-Trong vòng **48 giờ kể từ khoản thanh toán đầu tiên**, có — hãy gửi email đến
-[support@claudin.io](mailto:support@claudin.io) từ địa chỉ email của tài khoản.
-Gói đăng ký kết thúc ngay lập tức và bạn nhận lại số tiền đã trả trừ đi khoản phí
-sử dụng và xử lý bằng chi phí sử dụng mô hình mà tài khoản của bạn đã dùng trong
-thời gian đó (không bao giờ nhiều hơn số bạn đã trả). Dùng thử một ngày và không
-hợp? Bạn nhận lại gần như toàn bộ. Chạy ở mức trần theo giờ suốt hai ngày? Hãy
-chuẩn bị nhận lại rất ít hoặc không có. Sau 48 giờ không hoàn tiền; hủy đăng ký
-giữ gói đến hết kỳ đã thanh toán. Toàn văn tại [Điều khoản](https://claudin.io/terms).
+**Trong vòng 48 giờ kể từ lần thanh toán đầu tiên**, có — viết đến
+[support@claudin.io](mailto:support@claudin.io) từ email tài khoản của bạn. Gói
+kết thúc ngay và bạn nhận lại số tiền đã trả, trừ một khoản phí sử dụng và xử
+lý bù cho chi phí dùng mô hình của tài khoản bạn trong kỳ đó (không bao giờ
+nhiều hơn số bạn đã trả). Thử một ngày và thấy không hợp? Bạn nhận lại gần như
+toàn bộ. Tiêu hết tín dụng cả tháng trong hai ngày? Hãy chuẩn bị nhận rất ít
+hoặc không có gì. Sau 48 giờ không hoàn tiền; hủy sẽ giữ gói của bạn đến hết
+kỳ đã thanh toán. Toàn văn trong [Điều khoản](https://claudin.io/terms).
 
-## Tôi gặp lỗi ngân sách. Làm sao đây?
+## Tôi nhận được `402 insufficient_credits`. Giờ sao?
 
-Bạn đã đạt đến ngưỡng bảo vệ chi tiêu của khung thời gian hiện tại. Hoặc đợi cho đến khi
-khung thời gian được đặt lại (dashboard của bạn hiển thị thời gian) hoặc [nâng cấp](plans.md) để có
-ngưỡng cao hơn.
+Ví của bạn trống. Mua một gói [nạp thêm](plans.md#top-ups) từ bảng điều khiển
+hoặc lên gói lớn hơn — cả hai có hiệu lực ngay. Không có gì xếp hàng, và không
+có gì bị tính phí cho yêu cầu thất bại.
 
-## Một yêu cầu thất bại với mã 401.
+## Gói Essential / Pro / Ultra cũ của tôi thì sao?
 
-Khóa của bạn bị thiếu hoặc sai. Sao chép lại từ dashboard và đảm bảo
-không có khoảng trắng thừa, và header xác thực đã được thiết lập.
+Nó tiếp tục chạy đúng như cũ, với giới hạn theo giờ của nó, đến hết kỳ đã
+thanh toán, và sau đó không gia hạn. Khách hàng theo tháng nhận tín dụng thiện
+chí để thử hệ thống mới; khách hàng theo năm giữ trọn năm và chuyển sang tín
+dụng khi kết thúc. Xem [Gói cũ](plans.md#legacy-plans).
 
-## Khóa của tôi bị rò rỉ. Tôi phải làm gì?
+## Một yêu cầu thất bại với 401.
 
-Thu hồi nó từ dashboard và tạo một khóa mới ngay lập tức. Hãy coi các khóa như
-mật khẩu — không bao giờ commit chúng hoặc chia sẻ chúng công khai.
+Khóa của bạn bị thiếu hoặc sai. Sao chép lại từ bảng điều khiển và đảm bảo
+không có khoảng trắng thừa và header xác thực đã được đặt.
 
-## Tôi nhận trợ giúp ở đâu?
+## Khóa của tôi bị lộ. Phải làm gì?
 
-Mở một ticket từ thẻ **Hỗ trợ** trong
-[dashboard](https://claudin.io/dashboard) của bạn, hoặc gửi email đến bộ phận hỗ trợ. Chúng tôi sẽ phản hồi
-bạn.
+Thu hồi nó từ bảng điều khiển và tạo khóa mới ngay. Hãy coi khóa như mật khẩu —
+không bao giờ commit hay chia sẻ công khai.
+
+## Tôi tìm trợ giúp ở đâu?
+
+Mở phiếu từ thẻ **Hỗ trợ** trong [bảng điều khiển](https://claudin.io/dashboard)
+của bạn, hoặc gửi email cho bộ phận hỗ trợ. Chúng tôi sẽ phản hồi.

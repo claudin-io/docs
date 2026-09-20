@@ -1,73 +1,124 @@
-# FAQ
+# Pertanyaan yang sering diajukan
 
-## Apa itu Claudin.io, sebenarnya?
+## Apa sebenarnya Claudin.io?
 
-Proksi API untuk agen coding AI. Anda membayar langganan bulanan tetap dan mendapatkan kunci API yang kompatibel dengan OpenAI/Anthropic yang dapat Anda gunakan di Claude Code, Kilo, Zed, Codex, Cursor, atau klien OpenAI mana pun. Tanpa tagihan per-token.
+Proxy API untuk agen coding AI. Anda membayar paket bulanan, mendapat dompet
+kredit yang terisi ulang setiap bulan dan kunci API yang kompatibel dengan
+OpenAI/Anthropic untuk dipakai di Claude Code, Kilo, Zed, Codex, Cursor atau
+klien OpenAI mana pun. Permintaan coding biasa menghabiskan sekitar satu
+kredit. Tidak ada tagihan per token, tidak ada batas per jam.
 
-## Apakah benar-benar tidak terbatas?
+## Apakah ada batasnya?
 
-Penggunaan tidak terbatas — tidak ada penghitung permintaan atau meter token. Satu-satunya batasan adalah **batas perlindungan pengeluaran** per periode waktu yang menghentikan agen yang lepas kendali agar tidak menghabiskan paket Anda. Dalam pekerjaan interaktif normal, Anda jarang mencapainya. Lihat [Paket & batasan](plans.md).
+Hanya dompet Anda. Tidak ada batas per jam, batas sesi, atau kuota mingguan —
+satu-satunya yang menghentikan agen Anda adalah saldo kosong, dan satu top-up
+langsung memperbaikinya. Kredit yang tidak Anda pakai tetap di dompet dan tidak
+pernah kedaluwarsa. Lihat [Paket & kredit](plans.md).
 
-## Bisakah saya memakainya untuk hal di luar koding?
+## Mengapa kredit, bukan harga tetap?
 
-API ini kompatibel dengan OpenAI, jadi secara teknis semua permintaan berjalan.
-Namun layanan ini dibangun untuk **pemrograman dengan AI**: perutean, prompt,
-dan cache disetel untuk agen koding. Aktivitas yang tidak terkait pemrograman —
-bot obrolan umum, otomasi non-koding — dapat menerima perutean khusus dan
-dilayani oleh model atau tingkatan yang berbeda dari lalu lintas koding.
+Karena kami mengukur batas per jam dari paket harga tetap pada lalu lintas nyata
+dan batas itu memutus 1 dari setiap 10 jam aktif di Pro — orang-orang di tengah
+pekerjaan, bukan loop yang lepas kendali. Paket yang menjual kapasitas yang
+tidak bisa dipakai saat dibutuhkan salah bentuknya. Kredit adalah angka yang
+Anda lihat, jam berat yang dibayar oleh jam-jam tenang, dan bulan berat yang
+tinggal satu top-up, bukan menunggu.
 
-## Model apa yang saya gunakan?
+## Bisakah dipakai untuk selain coding?
 
-Selalu **`claudinio`** (atau `claudinio/claudinio` untuk klien yang menginginkan format `provider/model`). URL dasarnya adalah `https://api.claudin.io`.
+API-nya kompatibel dengan OpenAI, jadi secara teknis permintaan apa pun bekerja.
+Namun layanan ini dibangun untuk **pemrograman AI**: routing, prompt, dan
+caching ditala untuk agen coding. Aktivitas non-pemrograman — chatbot umum,
+otomasi tanpa kode — bisa mendapat routing khusus dan dilayani oleh model atau
+tier yang berbeda dari lalu lintas coding.
 
-## Apakah saya melakukan autentikasi dengan `Authorization` atau `x-api-key`?
+## Model apa yang saya pakai?
 
-Keduanya berfungsi. `Authorization: Bearer YOUR_API_KEY` atau `x-api-key: YOUR_API_KEY`.
+Secara default **`claudinio`** (atau `claudinio/claudinio` untuk klien yang
+menuntut bentuk `provider/model`). Base URL-nya `https://api.claudin.io`. Itu
+model yang kami tala, ukur, dan cache untuk kode, dan tempat kredit Anda
+berjalan paling jauh.
 
-## Bisakah saya menggunakannya dengan alat yang tidak tercantum?
+## Bisakah saya memilih model lain?
 
-Ya — alat apa pun yang memungkinkan Anda mengatur URL dasar OpenAI kustom akan berfungsi. Gunakan [pengaturan OpenAI generik](clients/openai-compatible.md).
+Ya, berdasarkan nama. `claudius` adalah opsi premium kami, hingga 6× kredit.
+[Katalog](plans.md#catalogue) menambahkan delapan model pihak ketiga — Claude
+Sonnet 5 dan Haiku 4.5, Gemini 3.1 Pro, Kimi K3, GLM 5.3, MiniMax M3, Qwen3
+Coder — masing-masing dihargai sebagai kelipatan tetap dari kredit `claudinio`,
+dari 3× hingga 22×. Setel ID-nya di klien Anda dan hanya permintaan itu yang
+membayar pengalinya. Setiap model ada di setiap paket; kami tetap
+merekomendasikan `claudinio`.
 
-## Apakah mendukung pemanggilan alat / fungsi?
+## Autentikasi dengan `Authorization` atau `x-api-key`?
 
-Ya. Itulah mengapa ia berfungsi di dalam editor agentik. Berikan `tools` dan baca `tool_calls` seperti pada OpenAI API.
+Keduanya bekerja. `Authorization: Bearer YOUR_API_KEY` atau
+`x-api-key: YOUR_API_KEY`.
+
+## Bisakah dipakai dengan alat yang tidak ada di daftar?
+
+Ya — alat apa pun yang mengizinkan base URL OpenAI kustom akan bekerja. Gunakan
+[pengaturan OpenAI generik](clients/openai-compatible.md).
+
+## Apakah mendukung tool / function calling?
+
+Ya. Itulah sebabnya ia bekerja di editor agentik. Kirim `tools` dan baca
+`tool_calls` seperti di API OpenAI.
 
 ## Bisakah menangani gambar, audio, atau video?
 
-Ya, secara transparan. Kirim blok konten OpenAI standar; proksi mengonversi gambar/audio/video menjadi deskripsi teks atau transkripsi sebelum model melihatnya. Tidak perlu mengonfigurasi apa pun.
+Ya, secara transparan. Kirim blok konten OpenAI standar; proxy mengubah
+gambar/audio/video menjadi deskripsi teks atau transkripsi sebelum model
+melihatnya. Tidak ada yang perlu dikonfigurasi khusus.
 
-## Berapa ukuran jendela konteks?
+## Berapa jendela konteksnya?
 
 256K token.
 
-## Bagaimana cara meningkatkan atau membatalkan?
+## Bagaimana cara upgrade atau membatalkan?
 
-Dari [dasbor](https://claudin.io/dashboard) Anda. Peningkatan berlaku segera (melalui Stripe). Jika Anda membatalkan, Anda tetap mendapatkan paket berbayar hingga akhir periode yang sudah Anda bayar, kemudian turun ke Gratis secara otomatis.
+Dari [dasbor](https://claudin.io/dashboard) Anda. Upgrade berlaku seketika
+(melalui Stripe). Jika membatalkan, paket berbayar Anda tetap berlaku sampai
+akhir periode yang sudah dibayar. Kredit yang sudah ada di dompet tetap milik
+Anda dan terus bekerja setelah paket berakhir.
 
-## Bisakah saya mendapatkan pengembalian dana?
+## Bisakah saya mendapat pengembalian dana?
 
-Dalam **48 jam setelah pembayaran pertama Anda**, bisa — tulis ke
-[support@claudin.io](mailto:support@claudin.io) dari email akun Anda. Langganan
-berakhir segera dan Anda menerima kembali yang Anda bayar dikurangi biaya
-penggunaan dan penanganan yang menutup biaya penggunaan model oleh akun Anda
-selama waktu itu (tidak pernah lebih dari yang Anda bayar). Mencoba sehari dan
-tidak cocok? Hampir semuanya kembali. Menjalankannya di batas per jam selama dua
-hari? Harapkan sedikit atau tidak sama sekali. Setelah 48 jam tidak ada
-pengembalian dana; membatalkan tetap mempertahankan paket hingga akhir periode
-yang dibayar. Teks lengkap di [Ketentuan](https://claudin.io/terms).
+**Dalam 48 jam sejak pembayaran pertama**, ya — tulis ke
+[support@claudin.io](mailto:support@claudin.io) dari email akun Anda.
+Langganan berakhir seketika dan Anda menerima kembali apa yang dibayar,
+dikurangi biaya pemakaian dan pemrosesan yang menutup biaya pemakaian model
+akun Anda dalam periode itu (tidak pernah lebih dari yang Anda bayar). Mencoba
+sehari dan bukan untuk Anda? Anda mendapat hampir semuanya kembali.
+Menghabiskan kredit sebulan penuh dalam dua hari? Bersiaplah menerima sedikit
+atau tidak sama sekali. Setelah 48 jam tidak ada pengembalian; pembatalan
+mempertahankan paket Anda sampai akhir periode yang dibayar. Teks lengkapnya
+ada di [Ketentuan](https://claudin.io/terms).
 
-## Saya mendapatkan error anggaran. Apa yang harus dilakukan?
+## Saya mendapat `402 insufficient_credits`. Sekarang apa?
 
-Anda telah mencapai batas perlindungan pengeluaran untuk periode saat ini. Tunggu hingga periode direset (dasbor Anda menunjukkan kapan) atau [tingkatkan](plans.md) untuk batas yang lebih besar.
+Dompet Anda kosong. Beli [top-up](plans.md#top-ups) dari dasbor atau naik ke
+paket lebih besar — keduanya berlaku seketika. Tidak ada yang mengantre, dan
+tidak ada yang ditagih untuk permintaan yang gagal.
 
-## Permintaan gagal dengan 401.
+## Apa yang terjadi dengan paket Essential / Pro / Ultra lama saya?
 
-Kunci Anda hilang atau salah. Salin ulang dari dasbor dan pastikan tidak ada spasi tambahan, serta header auth sudah diatur.
+Terus berjalan persis seperti sebelumnya, dengan batas per jamnya, sampai akhir
+periode yang sudah dibayar, dan setelah itu tidak diperpanjang. Pelanggan
+bulanan menerima kredit kehormatan untuk mencoba sistem baru; pelanggan
+tahunan menyimpan seluruh tahunnya dan berpindah ke kredit saat itu berakhir.
+Lihat [Paket lama](plans.md#legacy-plans).
 
-## Kunci saya bocor. Apa yang harus saya lakukan?
+## Sebuah permintaan gagal dengan 401.
 
-Cabut dari dasbor dan buat yang baru segera. Perlakukan kunci seperti kata sandi — jangan pernah melakukan commit atau membagikannya secara publik.
+Kunci Anda hilang atau salah. Salin lagi dari dasbor dan pastikan tidak ada
+spasi tambahan dan header auth sudah disetel.
 
-## Di mana saya bisa mendapatkan bantuan?
+## Kunci saya bocor. Apa yang harus dilakukan?
 
-Buka tiket dari kartu **Dukungan** di [dasbor](https://claudin.io/dashboard) Anda, atau email dukungan. Kami akan menghubungi Anda kembali.
+Cabut dari dasbor dan buat yang baru seketika. Perlakukan kunci seperti kata
+sandi — jangan pernah commit atau membagikannya secara publik.
+
+## Di mana saya bisa mendapat bantuan?
+
+Buka tiket dari kartu **Dukungan** di [dasbor](https://claudin.io/dashboard)
+Anda, atau kirim email ke dukungan. Kami akan menghubungi Anda.

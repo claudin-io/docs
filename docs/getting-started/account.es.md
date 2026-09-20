@@ -19,9 +19,9 @@ Una vez que estés en el [dashboard](https://claudin.io/dashboard):
 3. Copia la clave — tiene el formato `sk-...`.
 
 !!! warning "Trata tu clave como una contraseña"
-    Tu clave API otorga acceso al presupuesto de tu plan. No la subas a un
-    repositorio, la pegues en un chat público ni la compartas. Si una clave se filtra,
-    revócala desde el dashboard y genera una nueva.
+    Tu clave API gasta los créditos de tu plan. No la subas a un repositorio, no la
+    pegues en un chat público ni la compartas. Si una clave se filtra, revócala
+    desde el panel y genera una nueva.
 
 ## 3. Anota los dos valores que necesitarás
 
@@ -40,8 +40,8 @@ que funciona, o salta directamente a [conectar tu herramienta](../clients/claude
 
 ## Elegir un plan
 
-Puedes quedarte en **Free** para probar. Cuando estés listo para más capacidad,
-actualiza desde el dashboard — consulta [Planes y límites](../plans.md) para el desglose
-completo.
+Puedes quedarte en **Free** para probar. Cuando estés listo, elige un plan desde
+el panel — una cartera de créditos que se llena cada mes, desde $19 — consulta
+[Planes y créditos](../plans.md) para el desglose completo.
 
 Las actualizaciones se gestionan a través de Stripe y entran en vigor de inmediato.

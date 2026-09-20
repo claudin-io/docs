@@ -35,7 +35,9 @@ Anahtarınızı geri yazdırıldığını görmelisiniz. Boşsa, yeni bir termin
 [Aracınızı bağlama](../clients/opencode.md) bölümündeki her **Hızlı kurulum** komut dosyası `$CLAUDINIO_API_KEY` değerini okur, böylece dışa aktarıldıktan sonra herhangi birini olduğu gibi çalıştırabilirsiniz — değiştirmeniz gereken `YOUR_API_KEY` yoktur. Ortam değişkenlerini doğrudan okuyan araçlar (Codex'in `env_key`'i, OpenAI uyumlu herhangi bir CLI) da onu otomatik olarak alır.
 
 !!! warning "Anahtarınızı şifre gibi koruyun"
-    Bu anahtara sahip olan herkes planınızın bütçesini harcayabilir. `~/.zshrc` / `~/.bashrc` dosyanızı herkese açık bir depoya göndermeyin. Anahtar sızarsa, panoda iptal edin ve yeni bir tane dışa aktarın.
+    Bu anahtara sahip herkes kredilerinizi harcayabilir. `~/.zshrc` / `~/.bashrc`
+    dosyanızı herkese açık bir depoya commit etmeyin. Anahtar sızarsa panelden
+    iptal edin ve yenisini dışa aktarın.
 
 ---
 

@@ -1,65 +1,141 @@
-# Rencana & batasan
+# Paket & kredit
 
-Setiap paket Claudin.io adalah **penggunaan tanpa batas** dengan **batas perlindungan pengeluaran**.
-Anda tidak ditagih per token atau per permintaan — Anda membayar harga bulanan tetap dan
-menggunakannya secara bebas. Batas tersebut hanya ada untuk menghentikan agen yang lepas kendali (misalnya, perulangan alat tak terbatas) agar tidak menguras paket Anda.
+Setiap paket Claudin.io adalah **dompet kredit** yang terisi ulang setiap bulan.
+Sebuah permintaan menghabiskan kredit sebanyak token yang dipakainya — sekitar
+**satu kredit** untuk permintaan coding biasa di `claudinio` — dan yang tidak
+Anda pakai tetap ada di dompet. **Kredit tidak pernah kedaluwarsa, dan tidak ada
+batas per jam.**
 
-## Paket yang tersedia
+## Paket
 
-| Paket | Harga | Perlindungan pengeluaran | Terbaik untuk |
+| Paket | Harga | Kredit / bulan | Untuk siapa |
 | --- | --- | --- | --- |
-| **Essential** | $19 / bln atau $189 / thn | $2,00 / jam | Kualitas untuk penggunaan sehari-hari |
-| **Pro** ★ | $39 / bln atau $389 / thn | $4,00 / jam | Alur kerja agentic berat |
-| **Ultra** | $99 / bln atau $989 / thn | $10,00 / jam | Kekuatan maksimal, tim & produksi |
+| **Start** | $19 / bulan | 3,000 | Mencoba, pemakaian harian ringan |
+| **Solo** ★ | $39 / bulan | 7,000 | Satu developer, setiap hari |
+| **Pro** | $99 / bulan | 18,000 | Alur kerja agentik berat |
+| **Studio** | $199 / bulan | 36,000 | Beberapa agen, sepanjang hari |
+| **Max** | $399 / bulan | 72,000 | Produksi, tim, bot |
 
-!!! tip "Kebanyakan orang tidak pernah mencapai batas"
-    Batas per jam cukup longgar untuk pekerjaan interaktif normal. Anda biasanya hanya
-    mendekati batas jika agen masuk ke dalam perulangan ketat — yang justru saat Anda
-    *ingin* rem.
+Setiap paket menyertakan setiap model: `claudinio`, `claudius` dan seluruh
+[katalog](#catalogue). Paket hanya berbeda pada jumlah kredit yang datang tiap
+bulan — dan makin besar paketnya, makin murah tiap kreditnya.
 
-## Model mana yang harus Anda pilih? Claudinio vs Claudius
+!!! tip "Paket mana yang cukup untuk bulan Anda"
+    Permintaan biasa di `claudinio` menghabiskan sekitar satu kredit, diukur
+    dari ribuan permintaan nyata. Hitung permintaan agen Anda dalam satu hari
+    penuh, kalikan 22 hari kerja, dan pilih anak tangga yang menampungnya.
+    Kalau berada di antara dua paket, ambil yang lebih kecil — bulan berat
+    sesekali cukup ditutup dengan satu top-up.
 
-Kami menawarkan dua model utama untuk agen coding Anda:
+### Top-up {#top-ups}
 
-| Model | Backend | Kasus penggunaan | Direkomendasikan untuk |
+Butuh lebih sebelum bulan berikutnya tiba? Sebuah **top-up** menambahkan kredit
+ke dompet yang sama seketika, di paket mana pun:
+
+| Top-up | Kredit |
+| --- | --- |
+| $10 | 1,200 |
+| $25 | 3,000 |
+| $50 | 6,000 |
+
+Kredit top-up dan kredit paket adalah kredit yang sama: keduanya bertambah,
+tidak pernah kedaluwarsa, dan dipakai oleh setiap model.
+
+## Mengapa kredit (dan tidak ada lagi batas per jam)
+
+Paket kami dulunya harga tetap dengan **batas pengeluaran per jam** — rem
+terhadap agen yang terjebak dalam loop, kata kami. Sebelum mengubah apa pun,
+kami mengukurnya pada tiga hari lalu lintas nyata: **1 dari setiap 10 jam
+aktif di Pro** (11.1%) berakhir dengan batas memutus seorang developer di
+tengah pekerjaan, dan 1 dari 13 di Essential. Itu bukan loop tak berujung.
+Itu orang-orang yang sedang bekerja.
+
+Paket yang menjual kapasitas yang tidak bisa dipakai saat dibutuhkan salah
+bentuknya. Maka batas itu dihapus. Sebuah paket adalah sejumlah kredit per
+bulan; jam yang berat dibayar oleh jam-jam yang tenang; bulan yang berat
+tinggal satu top-up, bukan menunggu. Satu-satunya yang menghentikan agen Anda
+adalah dompet kosong, dan dasbor selalu menampilkan saldonya.
+
+## Apa yang didapat dari satu kredit
+
+Satu kredit bernilai sama di setiap sumbu. Di `claudinio`:
+
+| | Kredit per 1M token |
+| --- | --- |
+| Input (cache miss) | 40 |
+| Input (cache hit) | 6 |
+| Output | 80 |
+
+Hampir semua token agen adalah token prompt, dan dalam sesi kerja hampir
+semuanya datang dari cache — karena itu permintaan biasa berada di sekitar
+satu kredit, dan karena itu sesi panjang lebih murah per permintaan daripada
+sesi pendek.
+
+## Model mana? `claudinio`, `claudius` dan katalog
+
+| Model | Apa itu | Biaya kredit | Termasuk di |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Cepat, seimbang, hemat biaya | Coding sehari-hari, proyek hobi, kode umum | **Semua paket** (Essential hingga Ultra) |
-| **claudius** ★ | Premium, penalaran mendalam | Tugas kompleks, penalaran mendalam, alur kerja agentic berat | **Pro dan Ultra** |
-!!! warning "`claudius` termasuk dalam Pro dan Ultra"
-    Di **Essential**, permintaan yang menyebut `claudius` tidak ditolak — permintaan itu dilayani oleh `claudinio` dan ditagih dengan tarif `claudinio`. Agen Anda tetap berjalan, dan tarif premium tidak pernah dikenakan pada paket yang tidak memuatnya.
+| **claudinio** 🏆 | Model yang kami tala, ukur, dan cache untuk kode | 1× — sekitar satu kredit per permintaan | Setiap paket |
+| **claudius** ★ | Opsi premium kami untuk penalaran mendalam | hingga 6x kredit claudinio (3× input, 4× output, 6× pembacaan cache) | Setiap paket (Start, Solo, Pro, Studio, Max) |
 
-    Di **Pro** dan **Ultra**, ingat bahwa batasnya dihitung **dalam dolar, bukan jumlah permintaan**: pekerjaan yang sama di `claudius` memakai sekitar enam kali lipat. Di Pro ($4/jam) itu sekitar 70 permintaan premium sebelum jamnya habis; di Ultra ($10/jam), sekitar 175. Biarkan `claudinio` sebagai default dan pakai `claudius` saat Anda memang butuh penalarannya.
+**Rekomendasi kami adalah `claudinio`.** Itulah model yang menjadi dasar setiap
+paket: yang kami tala prompt-nya, yang dinilai setiap evaluasi, dan tempat satu
+kredit berjalan paling jauh. Pengaturan paling efektif yang kami lihat adalah
+**merencanakan dengan `claudius`, mengeksekusi dengan `claudinio`** — penalaran
+adalah tempat model premium membayar pengalinya, dan loop eksekusi adalah
+tempat volumenya.
 
-### Bicara terus terang
+### Katalog: pilih model berdasarkan nama {#catalogue}
 
-Inilah kenyataannya: `claudinio` memberikan kualitas yang sebanding dengan Claude Sonnet untuk coding sehari-hari dengan **sebagian kecil dari biaya internal**. Pada paket Essential, Anda bisa mendapatkan **ratusan permintaan per jam** dengannya — itulah sebabnya setiap paket dibangun di sekitar model ini.
+Anda juga bisa meminta model pihak ketiga berdasarkan nama. Model katalog
+disajikan **mentah** — model penyedia, system prompt dari klien Anda sendiri,
+tanpa penalaan Claudinio — dan menghabiskan kelipatan bulat tetap dari kredit
+`claudinio` di setiap sumbu, sehingga harganya terbaca sebagai satu angka:
 
-| Metrik | claudinio | claudius |
-| --- | --- | --- |
-| Dampak pada anggaran per jam | Rendah — bertahan lebih lama | Tinggi — hingga 6x per permintaan |
-| Kasus penggunaan | Coding harian, proyek pribadi | Penalaran berat, agen kompleks |
+| ID model | Model | Penyedia | Kredit vs `claudinio` |
+| --- | --- | --- | --- |
+| `qwen3-coder-flash` | Qwen3 Coder Flash | Qwen | 3× |
+| `minimax-m3` | MiniMax M3 | MiniMax | 5× |
+| `qwen3-coder-plus` | Qwen3 Coder Plus | Qwen | 10× |
+| `haiku-4.5` | Claude Haiku 4.5 | Anthropic | 11× |
+| `glm-5.3` | GLM 5.3 | Z.ai | 13× |
+| `kimi-k3` | Kimi K3 | Moonshot | 18× |
+| `sonnet-5` | Claude Sonnet 5 | Anthropic | 21× |
+| `gemini-3.1-pro` | Gemini 3.1 Pro | Google | 22× |
 
-**Aturan emas:** Konfigurasikan agen Anda (Claude Code, Cursor, Continue, dll.) dengan `claudinio` sebagai model default. Hanya beralih ke `claudius` saat Anda benar-benar membutuhkan lebih banyak daya penalaran. Untuk proyek hobi, `claudinio` **adalah semua yang Anda butuhkan** dan kemungkinan **lebih dari yang Anda harapkan**.
+Setel `model=sonnet-5` (atau ID mana pun di atas) di klien Anda, dan hanya
+permintaan itu yang membayar pengalinya — sisa sesi Anda tetap berjalan dengan
+tarif `claudinio`. Setiap model katalog tersedia di setiap paket.
 
-> 💡 Tips: Kedua model bekerja dengan semua agen coding utama. Setel `model=claudinio` di konfigurasi agen Anda — atau `model=claudius` jika Anda di Pro atau Ultra. `claudinio` juga otomatis menyelesaikan alias seperti `claude-sonnet-4`, `gpt-4o`, `o3-mini` dan puluhan lainnya — tidak perlu mengubah konfigurasi agen Anda.
+!!! note "Mengapa kami tetap merekomendasikan `claudinio`"
+    Katalog ada untuk developer yang ingin memilih, bukan karena ada entri yang
+    terukur lebih baik untuk kode. `claudinio` adalah model yang kami evaluasi,
+    yang menjadi dasar cache prompt, dan — dengan 3× hingga 22× lebih murah per
+    permintaan — tempat kredit Anda berjalan paling jauh. Gunakan model katalog
+    dengan sengaja, untuk tugas yang memang membutuhkannya.
 
-## Cara kerja perlindungan pengeluaran
+> 💡 Tips: `claudinio` juga menyelesaikan alias yang dikirim agen coding secara
+> default — `claude-sonnet-4`, `gpt-4o`, `o3-mini` dan puluhan lainnya — jadi
+> Anda tidak perlu mengubah konfigurasi agen untuk memakainya.
 
-Setiap paket menentukan **jendela** anggaran — periode bergulir dan pengeluaran maksimum
-di dalamnya:
+## Saat dompet kosong
 
-- **Essential**, **Pro**, dan **Ultra** menggunakan jendela **1 jam**.
+Permintaan dijawab dengan `402` dan kode `insufficient_credits` (lihat
+[Error](api-reference.md#errors)). Tidak ada yang mengantre, tidak ada yang
+ditagih. Anda punya dua jalan, keduanya seketika:
 
-Dalam jendela tersebut, penggunaan Anda mengakumulasi biaya internal yang sangat kecil. Ketika
-biaya internal itu mencapai batas jendela, permintaan berhenti hingga jendela direset.
+1. **Beli top-up** dari [dasbor](https://claudin.io/dashboard).
+2. **Naik ke paket lebih besar** — kredit bulan baru datang bersama faktur.
 
-Hanya panggilan model Anda melalui proxy. Setiap permintaan menambah total berjalan
-jendela saat ini berdasarkan token yang digunakan. Saat jendela direset,
-totalnya juga ikut direset.
+Dasbor menampilkan saldo Anda, pengeluaran hari ini, dan peringatan saldo
+rendah sebelum Anda sampai di sana, dan kami mengirim satu email saat saldo
+menipis.
 
-Jika Anda mencapai batas dan mendapatkan kesalahan anggaran, Anda memiliki dua opsi:
+## Paket lama (Essential, Pro, Ultra dengan batas per jam) {#legacy-plans}
 
-1. Tunggu hingga jendela direset (ditampilkan di dasbor Anda).
-2. Tingkatkan ke paket yang lebih tinggi untuk batas yang lebih besar.
-
-Lihat [Kesalahan terkait rencana](api-reference.md#errors) untuk seperti apa tampilan kesalahan anggaran.
+Kalau Anda berada di salah satu paket sebelumnya, paket itu **terus berjalan
+persis seperti sebelumnya, dengan batas per jamnya, sampai akhir periode yang
+sudah dibayar**. Setelah itu tidak diperpanjang. Pelanggan bulanan menerima
+kredit kehormatan untuk mencoba sistem baru sebelum memilih paket — dua bulan
+pada harga paket lama; pelanggan tahunan menyimpan seluruh tahunnya dan
+berpindah ke kredit saat itu berakhir. Kunci API Anda tidak berubah.

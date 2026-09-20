@@ -17,8 +17,10 @@ Claudin.io, giriş için GitHub'ı kullanır — ayrı bir parola yönetmeniz ge
 2. **Anahtar oluştur** (veya **Yeni anahtar oluştur**) seçeneğine tıklayın.
 3. Anahtarı kopyalayın — `sk-...` şeklinde görünür.
 
-!!! uyarı "Anahtarınıza bir parola gibi davranın"
-    API anahtarınız, planınızın bütçesine erişim sağlar. Bunu bir depoya eklemeyin, herkese açık bir sohbette yapıştırmayın veya paylaşmayın. Bir anahtar sızarsa, kontrol panelinden iptal edin ve yeni bir tane oluşturun.
+!!! warning "Anahtarınıza bir parola gibi davranın"
+    API anahtarınız planınızın kredilerini harcar. Bir depoya commit etmeyin,
+    herkese açık bir sohbete yapıştırmayın ve paylaşmayın. Bir anahtar sızarsa
+    panelden iptal edin ve yenisini oluşturun.
 
 ## 3. İhtiyacınız olacak iki değeri not edin
 
@@ -36,6 +38,8 @@ Bu kadar. Şimdi, çalıştığını doğrulamak için [ham bir API çağrısı 
 
 ## Bir plan seçme
 
-Denemek için **Ücretsiz** planda kalabilirsiniz. Daha fazla alana hazır olduğunuzda, kontrol panelinden yükseltme yapın — tam döküm için [Planlar ve limitler](../plans.md) bölümüne bakın.
+Denemek için **Free**'de kalabilirsiniz. Hazır olduğunuzda panelden bir plan
+seçin — her ay dolan bir kredi cüzdanı, $19'dan başlayan — tam resim için bkz.
+[Planlar ve krediler](../plans.md).
 
 Yükseltmeler Stripe üzerinden yapılır ve hemen etkili olur.

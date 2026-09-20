@@ -19,7 +19,7 @@ Once you're in the [dashboard](https://claudin.io/dashboard):
 3. Copy the key — it looks like `sk-...`.
 
 !!! warning "Treat your key like a password"
-    Your API key grants access to your plan's budget. Don't commit it to a
+    Your API key spends your plan's credits. Don't commit it to a
     repo, paste it in a public chat, or share it. If a key leaks, revoke it
     from the dashboard and generate a new one.
 
@@ -40,8 +40,8 @@ works, or jump straight to [connecting your tool](../clients/claude-code.md).
 
 ## Choosing a plan
 
-You can stay on **Free** to try things out. When you're ready for more
-headroom, upgrade from the dashboard — see [Plans & limits](../plans.md) for the
-full breakdown.
+You can stay on **Free** to try things out. When you're ready, pick a plan
+from the dashboard — a wallet of credits that fills every month, from $19 —
+see [Plans & credits](../plans.md) for the full breakdown.
 
 Upgrades are handled through Stripe and take effect immediately.

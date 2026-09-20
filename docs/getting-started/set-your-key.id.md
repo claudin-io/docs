@@ -35,7 +35,9 @@ Anda akan melihat kunci Anda tercetak kembali. Jika kosong, buka terminal baru a
 Setiap skrip **Pengaturan cepat** di bagian [Hubungkan alat Anda](../clients/opencode.md) membaca `$CLAUDINIO_API_KEY`, jadi setelah diekspor Anda dapat menjalankan salah satunya apa adanya — tidak ada `YOUR_API_KEY` yang perlu diganti. Alat yang membaca variabel lingkungan secara langsung (`env_key` milik Codex, CLI yang kompatibel dengan OpenAI) juga akan mengambilnya secara otomatis.
 
 !!! warning "Perlakukan kunci Anda seperti kata sandi"
-    Siapa pun yang memiliki kunci ini dapat menghabiskan anggaran paket Anda. Jangan commit `~/.zshrc` / `~/.bashrc` Anda ke repositori publik. Jika kunci bocor, cabut di dasbor dan ekspor yang baru.
+    Siapa pun yang memegang kunci ini bisa menghabiskan kredit Anda. Jangan commit
+    `~/.zshrc` / `~/.bashrc` Anda ke repositori publik. Kalau kunci bocor, cabut di
+    dasbor dan ekspor yang baru.
 
 ---
 

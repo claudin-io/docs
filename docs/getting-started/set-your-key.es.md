@@ -35,7 +35,9 @@ Deberías ver tu clave impresa. Si está vacía, abre una nueva terminal o vuelv
 Cada script de **Configuración rápida** en la sección [Conecta tu herramienta](../clients/opencode.md) lee `$CLAUDINIO_API_KEY`, por lo que una vez exportada puedes ejecutar cualquiera de ellos tal cual — no hay `YOUR_API_KEY` que reemplazar. Las herramientas que leen variables de entorno directamente (el `env_key` de Codex, cualquier CLI compatible con OpenAI) también lo toman automáticamente.
 
 !!! warning "Trata tu clave como una contraseña"
-    Cualquier persona con esta clave puede gastar el presupuesto de tu plan. No comprometas tu `~/.zshrc` / `~/.bashrc` en un repositorio público. Si la clave se filtra, revócala en el panel de control y exporta una nueva.
+    Cualquiera con esta clave puede gastar tus créditos. No subas tu
+    `~/.zshrc` / `~/.bashrc` a un repositorio público. Si la clave se filtra,
+    revócala en el panel y exporta una nueva.
 
 ---
 

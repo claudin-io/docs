@@ -142,8 +142,8 @@ Gli errori seguono la forma degli errori OpenAI:
 | --- | --- | --- |
 | `401` | Chiave API non valida o mancante | Controlla la chiave e l'header di autenticazione |
 | `403` | Endpoint non consentito | Usa uno dei percorsi `/v1/*` supportati |
-| `402` | Nessuna sottoscrizione attiva | [Abbonati](https://claudin.io/dashboard) — riprovare non servirà |
-| `429` | Tetto di budget raggiunto o rate limiting | Attendi il reset della finestra (vedi l'header `Retry-After`) o [passa a un piano superiore](plans.md) |
+| `402` | Nessun piano attivo, o portafoglio vuoto (`code: insufficient_credits`) | [Abbonati, ricarica o cambia piano](https://claudin.io/dashboard) — riprovare non aiuta |
+| `429` | Rate-limited, o (solo piani precedenti) il limite orario | Attendi secondo l'header `Retry-After` |
 | `400` | Richiesta malformata | Controlla il JSON / i parametri — vedi [`max_tokens`](#max_tokens-and-reasoning) e [`n`](#multiple-completions-n) |
 | `5xx` | Inconveniente dell'upstream/provider | Riprova con backoff |
 
@@ -152,28 +152,30 @@ Gli errori seguono la forma degli errori OpenAI:
     del modello sottostante. Vedrai sempre errori con il marchio di Claudin.io
     e la forma di OpenAI.
 
-### Raggiunto il tetto del budget
+### Portafoglio vuoto
 
-Quando esaurisci la protezione di spesa della finestra corrente, le richieste
-restituiscono `429` con un header `Retry-After` che indica quanti secondi
-mancano al reset della finestra. La tua dashboard mostra l'ora esatta del reset
-e il budget rimanente. Rispetta il tempo indicato da quell'header invece di
-riprovare subito. Vedi [Piani e limiti](plans.md) per come funzionano le
-finestre.
+Quando il tuo saldo crediti arriva a zero, le richieste restituiscono `402` con
+`code: insufficient_credits`:
 
-### Un messaggio invece di un `429` {#cap-alternative-response}
+```json
+{ "error": { "message": "Claudinio: Your credit balance is empty. Buy a top-up pack or change plan at https://claudin.io/dashboard — the next month's credits arrive with your next invoice.", "type": "insufficient_credits", "code": "insufficient_credits" } }
+```
 
-Su un piccolo numero di account stiamo provando una risposta diversa alla stessa
-situazione. Invece dell'errore, la richiesta va a buon fine e la risposta stessa
-spiega che il limite è stato raggiunto e quando si azzera. Stiamo misurando se
-così l'informazione arriva alle persone in modo più affidabile di un errore che
-il loro agente si beve in silenzio — e se, detto chiaramente, preferiscono
-passare a un piano della misura giusta.
+Nulla viene messo in coda e nulla viene addebitato. Una
+[ricarica](plans.md#top-ups) o un cambio di piano ha effetto immediato;
+riprovare senza non aiuta. Non c'è alcuna finestra di tempo da attendere — i
+piani a crediti non hanno limite orario.
 
-**Se costruisci automazioni, non leggere un `2xx` come "il lavoro è stato
-fatto".** Tratta una risposta che dice che il limite è stato raggiunto come il
-limite raggiunto, e attendi l'azzeramento della finestra. Il `429` qui sopra
-resta il comportamento predefinito ed è ciò che riceve quasi ogni account.
+### Piani precedenti: il limite orario {#cap-alternative-response}
+
+Gli account ancora su un precedente piano fisso (Essential, Pro, Ultra), fino
+alla fine del periodo pagato, mantengono il limite orario di quel piano. Lì,
+esaurire il limite restituisce `429` con un header `Retry-After` che indica i
+secondi fino al reset della finestra; attendi secondo quell'header invece di
+riprovare subito. Su un piccolo numero di quegli account la richiesta si
+completa invece con una risposta che dice che il tetto è stato raggiunto — **se
+costruisci automazioni, non leggere un `2xx` come "lavoro fatto"**; tratta
+quella risposta come limite raggiunto.
 
 ## Limitazione della frequenza
 

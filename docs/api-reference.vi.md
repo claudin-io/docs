@@ -139,8 +139,8 @@ Các lỗi tuân theo cấu trúc lỗi của OpenAI:
 | --- | --- | --- |
 | `401` | API key không hợp lệ hoặc bị thiếu | Kiểm tra key và header xác thực |
 | `403` | Endpoint không được phép | Dùng một trong các đường dẫn `/v1/*` được hỗ trợ |
-| `402` | Không có gói đăng ký đang hoạt động | [Đăng ký](https://claudin.io/dashboard) — thử lại sẽ không giúp ích gì |
-| `429` | Đã chạm giới hạn ngân sách hoặc bị giới hạn tốc độ | Chờ cửa sổ được đặt lại (xem header `Retry-After`) hoặc [nâng cấp](plans.md) |
+| `402` | Không có gói đang hoạt động, hoặc ví trống (`code: insufficient_credits`) | [Đăng ký, nạp thêm hoặc đổi gói](https://claudin.io/dashboard) — thử lại sẽ không giúp gì |
+| `429` | Bị giới hạn tốc độ, hoặc (chỉ gói cũ) giới hạn theo giờ | Chờ theo header `Retry-After` |
 | `400` | Yêu cầu sai định dạng | Kiểm tra JSON / tham số của bạn — xem [`max_tokens`](#max_tokens-and-reasoning) và [`n`](#multiple-completions-n) |
 | `5xx` | Sự cố thoáng qua từ upstream/nhà cung cấp | Thử lại với backoff |
 
@@ -148,27 +148,29 @@ Các lỗi tuân theo cấu trúc lỗi của OpenAI:
     Các thông báo lỗi được làm sạch để không làm lộ nhà cung cấp model bên dưới.
     Bạn sẽ luôn thấy các lỗi mang thương hiệu Claudin.io và có cấu trúc kiểu OpenAI.
 
-### Chạm giới hạn ngân sách
+### Ví trống
 
-Khi bạn dùng hết hạn mức bảo vệ chi tiêu của cửa sổ hiện tại, các yêu cầu sẽ trả về
-`429` kèm header `Retry-After` cho biết số giây còn lại cho đến khi cửa sổ được đặt
-lại. Dashboard của bạn hiển thị thời điểm đặt lại chính xác và ngân sách còn lại.
-Hãy giãn nhịp theo header đó thay vì thử lại ngay lập tức. Xem [Gói & giới hạn](plans.md)
-để biết cách hoạt động của các cửa sổ.
+Khi số dư tín dụng của bạn về không, yêu cầu trả về `402` và
+`code: insufficient_credits`:
 
-### Một tin nhắn thay cho `429` {#cap-alternative-response}
+```json
+{ "error": { "message": "Claudinio: Your credit balance is empty. Buy a top-up pack or change plan at https://claudin.io/dashboard — the next month's credits arrive with your next invoice.", "type": "insufficient_credits", "code": "insufficient_credits" } }
+```
 
-Trên một số ít tài khoản, chúng tôi đang thử một câu trả lời khác cho cùng tình
-huống. Thay vì lỗi, yêu cầu vẫn hoàn tất và chính nội dung trả lời sẽ giải thích
-rằng đã chạm trần và khi nào trần được đặt lại. Chúng tôi đang đo xem cách này
-có đưa thông tin đến người dùng đáng tin cậy hơn một lỗi bị tác nhân của họ nuốt
-đi lặng lẽ hay không — và liệu khi được nói rõ, họ có muốn chuyển sang gói vừa
-tầm hay không.
+Không có gì xếp hàng, không có gì bị tính phí. Một gói
+[nạp thêm](plans.md#top-ups) hoặc đổi gói có hiệu lực ngay; nếu không, thử lại
+sẽ không giúp gì. Không có cửa sổ thời gian nào để chờ — gói tín dụng không có
+giới hạn theo giờ.
 
-**Nếu bạn xây dựng tự động hoá, đừng đọc `2xx` là "đã làm xong việc".** Hãy xem
-một phản hồi nói rằng đã chạm trần đúng là đã chạm trần, và chờ đến khi cửa sổ
-được đặt lại. `429` ở trên vẫn là hành vi mặc định và là thứ gần như mọi tài
-khoản nhận được.
+### Gói cũ: giới hạn theo giờ {#cap-alternative-response}
+
+Các tài khoản vẫn ở gói giá cố định trước đây (Essential, Pro, Ultra) đến hết
+kỳ đã thanh toán giữ giới hạn theo giờ của gói đó. Ở đó, giới hạn cạn sẽ trả
+về `429` với header `Retry-After` cho biết số giây đến khi cửa sổ đặt lại; hãy
+chờ theo header đó thay vì thử lại ngay. Trên một số ít tài khoản này, yêu cầu
+thay vào đó hoàn tất với một phản hồi nói rằng đã chạm giới hạn — **nếu bạn xây
+tự động hóa, đừng đọc `2xx` là "việc đã xong"**; hãy coi phản hồi đó là đã chạm
+giới hạn.
 
 ## Giới hạn tốc độ
 

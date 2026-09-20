@@ -19,9 +19,9 @@ Khi bạn đã vào [bảng điều khiển](https://claudin.io/dashboard):
 3. Sao chép key — nó có dạng `sk-...`.
 
 !!! warning "Hãy coi key của bạn như mật khẩu"
-    API key của bạn cấp quyền truy cập vào hạn mức gói của bạn. Đừng commit nó vào
-    kho lưu trữ, dán nó vào chat công cộng, hoặc chia sẻ nó. Nếu key bị lộ, hãy thu hồi nó
-    từ bảng điều khiển và tạo một key mới.
+    Khóa API của bạn tiêu tín dụng của gói. Đừng commit nó vào repo, dán vào chat
+    công khai hay chia sẻ. Nếu một khóa bị lộ, thu hồi nó từ bảng điều khiển và tạo
+    khóa mới.
 
 ## 3. Ghi chú hai giá trị bạn sẽ cần
 
@@ -40,8 +40,8 @@ nó hoạt động, hoặc nhảy thẳng đến [kết nối công cụ của b
 
 ## Chọn gói
 
-Bạn có thể ở lại gói **Free** để dùng thử. Khi bạn sẵn sàng có thêm không gian,
-hãy nâng cấp từ bảng điều khiển — xem [Gói & giới hạn](../plans.md) để biết
-chi tiết đầy đủ.
+Bạn có thể ở lại **Free** để dùng thử. Khi sẵn sàng, chọn một gói từ bảng điều
+khiển — một ví tín dụng được nạp lại mỗi tháng, từ $19 — xem
+[Gói & tín dụng](../plans.md) để có bức tranh đầy đủ.
 
 Việc nâng cấp được xử lý qua Stripe và có hiệu lực ngay lập tức.

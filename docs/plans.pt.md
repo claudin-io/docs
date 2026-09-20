@@ -1,61 +1,139 @@
-# Planos e limites
+# Planos e créditos
 
-Cada plano Claudin.io é de **uso ilimitado** com um **limite de proteção de gastos**.
-Não é cobrado por token ou por pedido — paga um preço mensal fixo e
-usa livremente. O limite existe apenas para impedir que um agente descontrolado (um loop infinito de ferramentas, por exemplo) esgote o seu plano.
+Todos os planos Claudin.io são uma **carteira de créditos** que se enche todos os
+meses. Um pedido custa créditos pelos tokens que usou — cerca de **um crédito**
+para um pedido típico de código no `claudinio` — e o que não gasta fica na
+carteira. **Os créditos nunca expiram, e não há limite por hora.**
 
 ## Os planos
 
-| Plano | Preço | Proteção de gastos | Melhor para |
+| Plano | Preço | Créditos / mês | Ideal para |
 | --- | --- | --- | --- |
-| **Essential** | $19 / mês ou $189 / ano | $2,00 / hora | Qualidade para uso diário |
-| **Pro** ★ | $39 / mês ou $389 / ano | $4,00 / hora | Fluxos de trabalho agentivos intensos |
-| **Ultra** | $99 / mês ou $989 / ano | $10,00 / hora | Máxima potência, equipas e produção |
+| **Start** | $19 / mês | 3 000 | Experimentar, utilização diária ligeira |
+| **Solo** ★ | $39 / mês | 7 000 | Um programador, todos os dias |
+| **Pro** | $99 / mês | 18 000 | Fluxos pesados com agentes |
+| **Studio** | $199 / mês | 36 000 | Vários agentes, o dia inteiro |
+| **Max** | $399 / mês | 72 000 | Produção, equipas, bots |
 
-!!! tip "A maioria das pessoas nunca atinge o limite"
-    O limite horário é generoso para trabalho interativo normal. Normalmente só
-    o roça se um agente entrar num ciclo apertado — que é exatamente quando
-    *quer* um travão.
+Todos os planos incluem todos os modelos: `claudinio`, `claudius` e o
+[catálogo](#o-catalogo-escolha-um-modelo-pelo-nome) inteiro. Os planos diferem
+apenas em quantos créditos chegam por mês — e quanto maior o plano, menos custa
+cada crédito.
 
-## Que modelo deve escolher? Claudinio vs Claudius
+!!! tip "Que plano cabe no seu mês"
+    Um pedido típico no `claudinio` custa cerca de um crédito, medido em milhares
+    de pedidos reais. Conte os pedidos do seu agente num dia cheio, multiplique
+    por 22 dias úteis e escolha o degrau que os comporta. Se ficar entre dois,
+    escolha o mais pequeno — um carregamento cobre o mês pesado ocasional.
 
-Oferecemos dois modelos principais para o seu agente de programação:
+### Carregamentos {#top-ups}
 
-| Modelo | Backend | Caso de uso | Recomendado para |
+Precisa de mais antes de o próximo mês chegar? Um **carregamento** adiciona
+créditos à mesma carteira, de imediato, em qualquer plano:
+
+| Carregamento | Créditos |
+| --- | --- |
+| $10 | 1 200 |
+| $25 | 3 000 |
+| $50 | 6 000 |
+
+Créditos de carregamento e créditos do plano são os mesmos créditos: acumulam,
+nunca expiram e todos os modelos os gastam.
+
+## Porquê créditos (e sem limite por hora)
+
+Os nossos planos eram um preço fixo com um **teto de gasto por hora** — um travão
+contra um agente preso num ciclo, dizíamos. Antes de mudar o que quer que fosse,
+medimo-lo em três dias de tráfego real: **1 em cada 10 horas activas no Pro**
+(11,1%) terminava com o teto a cortar um programador a meio de uma tarefa, e 1
+em 13 no Essential. Não eram ciclos infinitos. Eram pessoas a trabalhar.
+
+Um plano que vende capacidade que não pode usar quando precisa tem a forma
+errada. Por isso o teto acabou. Um plano é um número de créditos por mês; uma
+hora pesada é paga pelas horas tranquilas; um mês pesado está a um carregamento
+de distância em vez de uma espera. A única coisa que pára o seu agente é uma
+carteira vazia, e o painel mostra o saldo a todo o momento.
+
+## O que um crédito compra
+
+Um crédito vale o mesmo em todos os eixos. No `claudinio`:
+
+| | Créditos por 1M de tokens |
+| --- | --- |
+| Entrada (sem cache) | 40 |
+| Entrada (com cache) | 6 |
+| Saída | 80 |
+
+Quase todos os tokens de um agente são tokens de prompt, e quase todos eles vêm
+da cache numa sessão de trabalho — é por isso que um pedido típico fica perto de
+um crédito, e que sessões longas ficam mais baratas por pedido do que as curtas.
+
+## Que modelo? `claudinio`, `claudius` e o catálogo
+
+| Modelo | O que é | Custo em créditos | Incluído em |
 | --- | --- | --- | --- |
-| **claudinio** 🏆 | Rápido, equilibrado, económico | Programação diária, projetos de hobby, código geral | **Todos os planos** (Essential a Ultra) |
-| **claudius** ★ | Premium, raciocínio profundo | Tarefas complexas, raciocínio profundo, fluxos de trabalho agentivos intensos | **Pro e Ultra** |
-!!! warning "O `claudius` está incluído no Pro e no Ultra"
-    No **Essential**, um pedido que nomeie `claudius` não é recusado — é servido pelo `claudinio` e faturado às tarifas do `claudinio`. O seu agente continua a funcionar e nunca lhe é cobrada a tarifa premium num plano que não a inclui.
+| **claudinio** 🏆 | O modelo que afinamos, medimos e guardamos em cache para código | 1× — cerca de um crédito por pedido | Todos os planos |
+| **claudius** ★ | A nossa opção premium, para raciocínio profundo | até 6x os créditos do claudinio (3× entrada, 4× saída, 6× leituras de cache) | Todos os planos (Start, Solo, Pro, Studio, Max) |
 
-    No **Pro** e no **Ultra**, lembre-se de que o teto é medido **em dólares, não em pedidos**: o mesmo trabalho no `claudius` gasta cerca de seis vezes mais. No Pro ($4/hora) são cerca de 70 pedidos premium até a hora acabar; no Ultra ($10/hora), cerca de 175. Mantenha o `claudinio` como predefinição do seu agente e use o `claudius` quando precisar mesmo do raciocínio.
+**A nossa recomendação é o `claudinio`.** É o modelo em torno do qual todos os
+planos são construídos: aquele para o qual afinamos o prompt, aquele que todas
+as avaliações pontuaram e aquele em que um crédito rende mais. A configuração
+mais eficaz que vemos é **planear com `claudius`, implementar com `claudinio`**
+— o raciocínio é onde o modelo premium justifica o seu múltiplo, e o ciclo de
+implementação é onde está o volume.
 
-### Conversa direta
+### O catálogo: escolha um modelo pelo nome
 
-A realidade: `claudinio` oferece qualidade comparável ao Claude Sonnet para programação diária a uma **fração do custo interno**. No plano Essential, pode obter **centenas de pedidos por hora** com ele — e é por isso que é o modelo à volta do qual todos os planos são construídos.
+Também pode pedir um modelo de terceiros pelo nome. Um modelo do catálogo é
+servido **em bruto** — o modelo do fornecedor, o system prompt do seu próprio
+cliente, sem afinação do Claudinio — e custa um múltiplo inteiro fixo dos
+créditos do `claudinio` em todos os eixos, pelo que o preço se lê como um único
+número:
 
-| Métrica | claudinio | claudius |
-| --- | --- | --- |
-| Impacto no orçamento horário | Baixo — rende muito mais | Alto — até 6x por pedido |
-| Caso de uso | Programação diária, projetos pessoais | Raciocínio intenso, agentes complexos |
+| Id do modelo | Modelo | Fornecedor | Créditos vs `claudinio` |
+| --- | --- | --- | --- |
+| `qwen3-coder-flash` | Qwen3 Coder Flash | Qwen | 3× |
+| `minimax-m3` | MiniMax M3 | MiniMax | 5× |
+| `qwen3-coder-plus` | Qwen3 Coder Plus | Qwen | 10× |
+| `haiku-4.5` | Claude Haiku 4.5 | Anthropic | 11× |
+| `glm-5.3` | GLM 5.3 | Z.ai | 13× |
+| `kimi-k3` | Kimi K3 | Moonshot | 18× |
+| `sonnet-5` | Claude Sonnet 5 | Anthropic | 21× |
+| `gemini-3.1-pro` | Gemini 3.1 Pro | Google | 22× |
 
-**Regra de ouro:** Configure o seu agente (Claude Code, Cursor, Continue, etc.) com `claudinio` como modelo predefinido. Mude para `claudius` apenas quando precisar explicitamente de mais capacidade de raciocínio. Para projetos de hobby, `claudinio` é **tudo o que precisa** e provavelmente **mais do que espera**.
+Defina `model=sonnet-5` (ou qualquer id acima) no seu cliente e só esse pedido
+paga o múltiplo — o resto da sessão continua a custar as tarifas do `claudinio`.
+Todos os modelos do catálogo estão disponíveis em todos os planos.
 
-> 💡 Dica: Ambos os modelos funcionam com todos os principais agentes de programação. Defina `model=claudinio` na configuração do seu agente — ou `model=claudius` se estiver no Pro ou no Ultra. `claudinio` também resolve automaticamente aliases como `claude-sonnet-4`, `gpt-4o`, `o3-mini` e dezenas de outros — não precisa de alterar a configuração do seu agente.
+!!! note "Porque continuamos a recomendar o `claudinio`"
+    O catálogo existe para o programador que quer escolher, não porque alguma
+    entrada tenha medido melhor para código. O `claudinio` é o modelo contra o
+    qual avaliamos, aquele em torno do qual a cache de prompt é construída e — a
+    3× a 22× menos por pedido — aquele em que os seus créditos rendem mais.
+    Recorra a um modelo do catálogo deliberadamente, para a tarefa que precisa
+    dele.
 
-## Como funciona a proteção de gastos
+> 💡 Dica: o `claudinio` também resolve os aliases que os agentes de código
+> enviam por omissão — `claude-sonnet-4`, `gpt-4o`, `o3-mini` e dezenas de
+> outros — por isso não precisa de mudar a configuração do seu agente para o usar.
 
-Cada plano define uma **janela** de orçamento — um período contínuo e um gasto máximo dentro dela:
+## Quando a carteira está vazia
 
-- **Essential**, **Pro** e **Ultra** usam uma janela de **1 hora**.
+Os pedidos respondem `402` com o código `insufficient_credits` (veja
+[Erros](api-reference.md#errors)). Nada fica em fila e nada é cobrado. Tem duas
+opções, ambas imediatas:
 
-Dentro da janela, o seu uso acumula um pequeno custo interno. Quando esse custo interno atinge o limite da janela, os pedidos param até a janela ser reiniciada.
+1. **Comprar um carregamento** no [painel](https://claudin.io/dashboard).
+2. **Mudar para um plano maior** — os créditos do novo mês chegam com a fatura.
 
-Apenas as chamadas do seu modelo passam pelo proxy. Cada pedido adiciona ao total acumulado da janela atual com base nos tokens que usou. Quando a janela é reiniciada, o total também é reiniciado.
+O painel mostra o seu saldo, o gasto do dia e um aviso de saldo baixo antes de lá
+chegar, e enviamos um e-mail uma vez quando o saldo fica baixo.
 
-Se atingir o limite e receber um erro de orçamento, tem duas opções:
+## Planos antigos (Essential, Pro, Ultra com limite por hora)
 
-1. Esperar que a janela reinicie (indicado no seu painel de controlo).
-2. Atualizar para um plano superior para um limite maior.
-
-Consulte [Erros relacionados com planos](api-reference.md#errors) para ver como o erro de orçamento se apresenta.
+Se estava num dos planos anteriores, ele continua a funcionar **exactamente como
+antes, com o seu limite por hora, até ao fim do período que já pagou**. Não
+renova depois disso. Quem tinha plano mensal recebeu uma cortesia de créditos —
+o dobro de um mês do plano antigo ao valor de tabela — para experimentar o novo
+sistema antes de escolher um plano; quem tinha plano anual mantém o ano inteiro
+e passa para créditos quando ele terminar. A sua chave de API não muda.

@@ -6,11 +6,9 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Fatura endişesi olmadan kodlama. Sabit aylık ücret, sınırsız kullanım.
+# Fatura kaygısı olmadan kodlayın. Asla sona ermeyen krediler, saatlik sınır yok.
 
-Claudin.io, yapay zeka kodlama ajanları için bir API proxy'sidir. **Sabit aylık
-abonelik** ödeyin ve istediğiniz kadar kullanın — token başına ücretlendirme, istek
-sayaçları veya süresi dolan kredi yok.
+Claudin.io, yapay zekâ kodlama ajanları için bir API proxy'sidir. Bir **aylık plan** seçin, her ay dolan bir kredi cüzdanı alın ve istek başına yaklaşık bir krediyle harcayın — token başına fatura yok, saatlik sınır yok ve kullanmadığınız sizindir.
 
 </div>
 
@@ -23,51 +21,52 @@ sayaçları veya süresi dolan kredi yok.
 
 <div class="grid cards" markdown>
 
--   :material-infinity:{ .lg .middle } __Sınırsız kullanım__
+-   :material-wallet:{ .lg .middle } __Sayaç değil, kredi__
 
     ---
 
-    İstek sayacı yok, token ölçümü yok. Tek sınır, kontrolden çıkmış bir
-    ajana karşı koruma sağlayan, dönem başına **harcama koruması** limitidir —
-    normal çalışmada neredeyse hiç ulaşmazsınız.
+    Bir plan, aylık bir kredi sayısıdır; tipik bir istek yaklaşık bir kredi
+    harcar. Saatlik sınır yok, oturum sınırı yok — tek sınır cüzdandır ve bir
+    yükleme onu anında doldurur.
 
 -   :material-power-plug:{ .lg .middle } __Araçlarınızla çalışır__
 
     ---
 
-    OpenAI ve Anthropic uyumlu uç noktalar. Dakikalar içinde OpenCode, Claude
-    Code, Kilo Code, Zed, Codex, Cursor veya herhangi bir OpenAI istemcisine
-    entegre edin.
+    OpenAI ve Anthropic uyumlu uç noktalar. OpenCode, Claude Code, Kilo Code,
+    Zed, Codex, Cursor veya herhangi bir OpenAI istemcisine dakikalar içinde
+    bağlayın.
 
 -   :material-cash-multiple:{ .lg .middle } __Öngörülebilir maliyet__
 
     ---
 
-    Sabit bir abonelik. Ay sonunda sürpriz faturalar yok, "bu yeniden
-    düzenleme ne kadara mal olacak?" endişesi yok.
+    Bilinen sayıda kredi için sabit bir aylık fiyat. Ay sonunda faturada
+    sürpriz yok ve kullanılmayan krediler devreder — asla sona ermez.
 
--   :material-shield-check:{ .lg .middle } __Dahili harcama koruması__
+-   :material-format-list-bulleted:{ .lg .middle } __Ayarladığımız bir model, seçmek istediğinizde bir katalog__
 
     ---
 
-    Dönem başına kademeli bir bütçe limiti, sonsuz döngüye giren ajanların
-    planınızı tüketmesini önler. Şeffaftır ve kontrol panelinizde canlı olarak
-    gösterilir.
+    `claudinio` varsayılan ve önerimizdir — kredilerinizin en uzağa gittiği
+    model. Sekiz adlandırılmış model bir ayar uzağınızda, her biri bir
+    `claudinio` kredisinin sabit katı.
 
 </div>
 
 ## 4 adımda başlayın
 
-1. **[Bir hesap oluşturun](getting-started/account.md)** ve API anahtarınızı kopyalayın.
-2. **[API anahtarınızı ayarlayın](getting-started/set-your-key.md)** — shell'inizde bir kez yapmanız yeterli.
-3. **[Aracınızı bağlayın](clients/opencode.md)** — düzenleyicinizi veya ajanınızı seçin.
-4. **[İlk çağrınızı yapın](getting-started/first-call.md)** ve oluşturmaya başlayın.
+1. **[Hesap oluşturun](getting-started/account.md)** ve API anahtarınızı kopyalayın.
+2. **[API anahtarınızı ayarlayın](getting-started/set-your-key.md)** — kabuğunuzda bir kez.
+3. **[Aracınızı bağlayın](clients/opencode.md)** — editörünüzü veya ajanınızı seçin.
+4. **[İlk çağrınızı yapın](getting-started/first-call.md)** ve geliştirmeye başlayın.
 
-!!! tip "Model adı her zaman `claudinio`'dur"
-    Hangi istemciyi kullanırsanız kullanın, yönlendirdiğiniz model kimliği
-    **`claudinio`**'dur. Temel URL ise **`https://api.claudin.io`**'dir.
+!!! tip "Model adı `claudinio`"
+    Hangi istemciyi kullanırsanız kullanın, işaret ettiğiniz model kimliği
+    **`claudinio`** — belirli bir model istediğinizde ise bir
+    [katalog kimliği](plans.md#catalogue). Temel URL **`https://api.claudin.io`**.
 
 ---
 
-<small>Yardıma mı ihtiyacınız var? [SSS](faq.md)'ye göz atın veya kontrol panelinizdeki destek
-kartından [dashboard](https://claudin.io/dashboard) bize ulaşın.</small>
+<small>Yardım mı lazım? [SSS](faq.md)'ye bakın veya
+[panelinizdeki](https://claudin.io/dashboard) destek kartından ulaşın.</small>

@@ -148,8 +148,8 @@ Les erreurs suivent la structure d'erreur OpenAI :
 | --- | --- | --- |
 | `401` | Clé API invalide ou manquante | Vérifiez la clé et l'en-tête d'authentification |
 | `403` | Endpoint non autorisé | Utilisez l'un des chemins `/v1/*` pris en charge |
-| `402` | Aucun abonnement actif | [Abonnez-vous](https://claudin.io/dashboard) — réessayer ne servira à rien |
-| `429` | Plafond de budget atteint ou limitation de débit | Attendez la réinitialisation de la fenêtre (voir l'en-tête `Retry-After`) ou [passez à un plan supérieur](plans.md) |
+| `402` | Pas de plan actif, ou portefeuille vide (`code: insufficient_credits`) | [Abonnez-vous, rechargez ou changez de plan](https://claudin.io/dashboard) — réessayer n'aidera pas |
+| `429` | Limitation de débit, ou (anciens plans seulement) la limite horaire | Attendez selon l'en-tête `Retry-After` |
 | `400` | Requête malformée | Vérifiez votre JSON / vos paramètres — voir [`max_tokens`](#max_tokens-and-reasoning) et [`n`](#multiple-completions-n) |
 | `5xx` | Incident passager du fournisseur en amont | Réessayez avec un backoff |
 
@@ -158,29 +158,30 @@ Les erreurs suivent la structure d'erreur OpenAI :
     de modèle sous-jacent. Vous verrez toujours des erreurs à la marque
     Claudin.io, au format OpenAI.
 
-### Atteinte du plafond de budget
+### Portefeuille vide
 
-Lorsque vous épuisez la protection de dépenses de la fenêtre en cours, les
-requêtes renvoient `429` avec un en-tête `Retry-After` indiquant le nombre de
-secondes avant la réinitialisation de la fenêtre. Votre tableau de bord affiche
-l'heure exacte de réinitialisation et le budget restant. Respectez cet en-tête
-plutôt que de réessayer immédiatement. Voir [Plans et limites](plans.md) pour
-comprendre le fonctionnement des fenêtres.
+Quand votre solde de crédits atteint zéro, les requêtes renvoient `402` avec
+`code: insufficient_credits` :
 
-### Un message au lieu d'un `429` {#cap-alternative-response}
+```json
+{ "error": { "message": "Claudinio: Your credit balance is empty. Buy a top-up pack or change plan at https://claudin.io/dashboard — the next month's credits arrive with your next invoice.", "type": "insufficient_credits", "code": "insufficient_credits" } }
+```
 
-Sur un petit nombre de comptes, nous testons une réponse différente à la même
-situation. Au lieu de l'erreur, la requête aboutit et la réponse elle-même
-explique que le plafond est atteint et quand il se réinitialise. Nous mesurons
-si l'information atteint ainsi les personnes plus sûrement qu'une erreur que
-leur agent avale en silence — et si, dit clairement, elles préfèrent passer à
-une offre à leur taille.
+Rien n'est mis en file et rien n'est facturé. Une [recharge](plans.md#top-ups)
+ou un changement de plan prend effet immédiatement ; réessayer sans cela
+n'aidera pas. Il n'y a pas de fenêtre de temps à attendre — les plans à crédits
+n'ont pas de limite horaire.
 
-**Si vous construisez de l'automatisation, ne lisez pas un `2xx` comme « le
-travail a été fait ».** Traitez une réponse qui dit que le plafond est atteint
-comme le plafond atteint, et attendez la réinitialisation de la fenêtre. Le
-`429` ci-dessus reste le comportement par défaut et c'est ce que reçoit presque
-tous les comptes.
+### Anciens plans : la limite horaire {#cap-alternative-response}
+
+Les comptes encore sur un ancien plan fixe (Essential, Pro, Ultra), jusqu'à la
+fin de la période payée, conservent la limite horaire de ce plan. Là, épuiser
+la limite renvoie `429` avec un en-tête `Retry-After` donnant les secondes
+avant la réinitialisation de la fenêtre ; attendez selon cet en-tête plutôt que
+de réessayer immédiatement. Sur un petit nombre de ces comptes, la requête se
+termine à la place par une réponse disant que le plafond est atteint — **si
+vous construisez de l'automatisation, ne lisez pas un `2xx` comme « travail
+fait »** ; traitez cette réponse comme la limite atteinte.
 
 ## Limitation de débit
 

@@ -139,8 +139,8 @@ Os erros seguem a estrutura de erro da OpenAI:
 | --- | --- | --- |
 | `401` | Chave de API inválida ou em falta | Verifique a chave e o cabeçalho de autenticação |
 | `403` | Endpoint não permitido | Utilize um dos caminhos `/v1/*` suportados |
-| `402` | Sem subscrição ativa | [Subscreva](https://claudin.io/dashboard) — voltar a tentar não vai ajudar |
-| `429` | Limite de orçamento atingido ou rate limit | Aguarde o reinício da janela (consulte o cabeçalho `Retry-After`) ou [faça upgrade](plans.md) |
+| `402` | Sem plano activo, ou carteira vazia (`code: insufficient_credits`) | [Subscreva, carregue ou mude de plano](https://claudin.io/dashboard) — tentar de novo não ajuda |
+| `429` | Rate-limited, ou (só planos antigos) o limite por hora | Recue conforme o cabeçalho `Retry-After` |
 | `400` | Pedido malformado | Verifique o seu JSON / parâmetros — consulte [`max_tokens`](#max_tokens-and-reasoning) e [`n`](#multiple-completions-n) |
 | `5xx` | Falha do upstream/fornecedor | Repita com backoff |
 
@@ -148,27 +148,29 @@ Os erros seguem a estrutura de erro da OpenAI:
     As mensagens de erro são sanitizadas para não revelarem o fornecedor do modelo
     subjacente. Verá sempre erros com a marca Claudin.io, no formato da OpenAI.
 
-### Atingir o limite de orçamento
+### Carteira vazia
 
-Quando esgota a proteção de gastos da janela atual, os pedidos devolvem
-`429` com um cabeçalho `Retry-After` que indica os segundos até a janela reiniciar.
-O seu painel de controlo mostra o momento exato do reinício e o orçamento restante. Respeite
-o intervalo indicado nesse cabeçalho em vez de voltar a tentar imediatamente. Consulte
-[Planos e limites](plans.md) para saber como funcionam as janelas.
+Quando o seu saldo de créditos chega a zero, os pedidos devolvem `402` com
+`code: insufficient_credits`:
 
-### Uma mensagem em vez de um `429` {#cap-alternative-response}
+```json
+{ "error": { "message": "Claudinio: Your credit balance is empty. Buy a top-up pack or change plan at https://claudin.io/dashboard — the next month's credits arrive with your next invoice.", "type": "insufficient_credits", "code": "insufficient_credits" } }
+```
 
-Num pequeno número de contas estamos a experimentar uma resposta diferente para
-a mesma situação. Em vez do erro, o pedido é concluído e a própria resposta
-explica que o teto foi atingido e quando reinicia. Estamos a medir se assim a
-informação chega às pessoas de forma mais fiável do que um erro que o agente
-delas engole em silêncio — e se, dito com clareza, preferem mudar para um plano
-à medida.
+Nada fica em fila e nada é cobrado. Um [carregamento](plans.md#top-ups) ou
+uma mudança de plano tem efeito imediato; tentar de novo sem isso não ajuda. Não
+há janela de tempo pela qual esperar — os planos de créditos não têm limite por
+hora.
 
-**Se está a construir automação, não leia um `2xx` como "o trabalho foi
-feito".** Trate uma resposta que diz que o teto foi atingido como o teto tendo
-sido atingido, e recue até a janela reiniciar. O `429` acima continua a ser o
-comportamento por omissão e é o que quase todas as contas recebem.
+### Planos antigos: o limite por hora {#cap-alternative-response}
+
+As contas ainda num plano fixo anterior (Essential, Pro, Ultra), até ao fim do
+período pago, mantêm o limite por hora desse plano. Aí, esgotar o limite devolve
+`429` com um cabeçalho `Retry-After` a indicar os segundos até a janela
+reiniciar; recue conforme esse cabeçalho em vez de tentar de novo de imediato.
+Num pequeno número dessas contas o pedido completa-se, em vez disso, com uma
+resposta que diz que o teto foi atingido — **se constrói automação, não leia um
+`2xx` como "trabalho feito"**; trate essa resposta como o limite atingido.
 
 ## Rate limiting
 

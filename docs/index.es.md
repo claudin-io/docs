@@ -6,11 +6,12 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Codifica sin ansiedad por la factura. Precio mensual fijo, uso ilimitado.
+# Codifica sin ansiedad por la factura. Créditos que nunca caducan, sin límite por hora.
 
-Claudin.io es un proxy de API para agentes de codificación de IA. Paga una
-**suscripción mensual fija** y úsala todo lo que quieras — sin facturación por token, sin
-contadores de solicitudes, sin créditos que caduquen.
+Claudin.io es un proxy de API para agentes de codificación de IA. Elige un
+**plan mensual**, recibe una cartera de créditos que se llena cada mes y gástalos a
+alrededor de un crédito por solicitud — sin factura por token, sin límite por hora,
+y lo que no usas sigue siendo tuyo.
 
 </div>
 
@@ -23,49 +24,52 @@ contadores de solicitudes, sin créditos que caduquen.
 
 <div class="grid cards" markdown>
 
--   :material-infinity:{ .lg .middle } __Uso ilimitado__
+-   :material-wallet:{ .lg .middle } __Créditos, no un contador__
 
     ---
 
-    Sin contadores de solicitudes, sin medición de tokens. La única barrera es un
-    tope de **protección de gasto** por período que detiene a un agente descontrolado —
-    casi nunca lo alcanzas en trabajo normal.
+    Un plan es un número de créditos al mes; una solicitud típica cuesta
+    alrededor de uno. Sin límite por hora, sin límite de sesión — la cartera es
+    el único límite, y una recarga la llena al instante.
 
 -   :material-power-plug:{ .lg .middle } __Funciona con tus herramientas__
 
     ---
 
-    Endpoints compatibles con OpenAI y Anthropic. Intégralo en OpenCode, Claude
+    Endpoints compatibles con OpenAI y Anthropic. Úsalo en OpenCode, Claude
     Code, Kilo Code, Zed, Codex, Cursor o cualquier cliente OpenAI en minutos.
 
--   :material-cash-multiple:{ .lg .middle } __Costo predecible__
+-   :material-cash-multiple:{ .lg .middle } __Coste predecible__
 
     ---
 
-    Una suscripción fija. Sin facturas sorpresa a fin de mes, sin
-    ansiedad de "¿cuánto costará esta refactorización?".
+    Un precio mensual fijo por un número conocido de créditos. Sin sorpresas en
+    la factura a fin de mes, y los créditos no usados se acumulan — nunca
+    caducan.
 
--   :material-shield-check:{ .lg .middle } __Protección de gasto integrada__
+-   :material-format-list-bulleted:{ .lg .middle } __Un modelo que afinamos, un catálogo si quieres elegir__
 
     ---
 
-    Un límite de presupuesto por período en cascada te protege de agentes en
-    bucle infinito que consuman tu plan. Transparente y visible en vivo en tu panel.
+    `claudinio` es el predeterminado y nuestra recomendación — el modelo en el
+    que tus créditos rinden más. Ocho modelos con nombre están a un ajuste de
+    distancia, cada uno un múltiplo fijo de un crédito de `claudinio`.
 
 </div>
 
-## Comienza en 4 pasos
+## Empieza en 4 pasos
 
-1. **[Crea una cuenta](getting-started/account.md)** y copia tu clave de API.
-2. **[Configura tu clave de API](getting-started/set-your-key.md)** una vez en tu terminal.
+1. **[Crea una cuenta](getting-started/account.md)** y copia tu clave API.
+2. **[Configura tu clave API](getting-started/set-your-key.md)** una vez en tu shell.
 3. **[Conecta tu herramienta](clients/opencode.md)** — elige tu editor o agente.
 4. **[Haz tu primera llamada](getting-started/first-call.md)** y empieza a construir.
 
-!!! tip "El nombre del modelo es siempre `claudinio`"
-    Sea cual sea el cliente que uses, el identificador del modelo al que apuntas es **`claudinio`**.
-    La URL base es **`https://api.claudin.io`**.
+!!! tip "El nombre del modelo es `claudinio`"
+    Sea cual sea el cliente, el id de modelo al que apuntas es **`claudinio`**
+    — o un [id del catálogo](plans.md#el-catalogo-elige-un-modelo-por-nombre)
+    cuando quieras un modelo concreto. La URL base es **`https://api.claudin.io`**.
 
 ---
 
-<small>¿Necesitas ayuda? Consulta las [FAQ](faq.md) o escríbenos desde la tarjeta de soporte en
-tu [panel](https://claudin.io/dashboard).</small>
+<small>¿Necesitas ayuda? Consulta el [FAQ](faq.md) o contáctanos desde la tarjeta
+de soporte de tu [panel](https://claudin.io/dashboard).</small>

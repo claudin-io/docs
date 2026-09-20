@@ -18,7 +18,9 @@ Sobald Sie im [Dashboard](https://claudin.io/dashboard) sind:
 3. Kopieren Sie den Key – er sieht so aus: `sk-...`.
 
 !!! warning "Behandeln Sie Ihren Key wie ein Passwort"
-    Ihr API-Key gewährt Zugriff auf das Budget Ihres Tarifs. Committen Sie ihn nicht in ein Repository, fügen Sie ihn nicht in einen öffentlichen Chat ein und teilen Sie ihn nicht. Wenn ein Key durchsickert, widerrufen Sie ihn über das Dashboard und generieren Sie einen neuen.
+    Dein API-Schlüssel gibt die Credits deines Plans aus. Committe ihn nicht in ein
+    Repo, füge ihn nicht in einen öffentlichen Chat ein und teile ihn nicht. Wenn
+    ein Schlüssel leakt, widerrufe ihn im Dashboard und erzeuge einen neuen.
 
 ## 3. Notieren Sie sich die beiden Werte, die Sie benötigen
 
@@ -36,6 +38,8 @@ Das war's. Als Nächstes können Sie entweder einen [rohen API-Aufruf](first-cal
 
 ## Einen Tarif auswählen
 
-Sie können beim **Free**-Tarif bleiben, um Dinge auszuprobieren. Wenn Sie bereit für mehr Spielraum sind, führen Sie ein Upgrade über das Dashboard durch – siehe [Tarife & Limits](../plans.md) für die vollständige Aufschlüsselung.
+Du kannst zum Ausprobieren auf **Free** bleiben. Wenn du bereit bist, wähle im
+Dashboard einen Plan — ein Wallet mit Credits, das sich jeden Monat füllt, ab
+$19 — siehe [Pläne & Credits](../plans.md) für die vollständige Übersicht.
 
 Upgrades werden über Stripe abgewickelt und treten sofort in Kraft.

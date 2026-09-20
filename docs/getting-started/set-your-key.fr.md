@@ -35,7 +35,9 @@ Vous devriez voir votre clé s'afficher. Si elle est vide, ouvrez un nouveau ter
 Chaque script **Configuration rapide** dans la section [Connecter votre outil](../clients/opencode.md) lit `$CLAUDINIO_API_KEY`, donc une fois qu'elle est exportée, vous pouvez exécuter n'importe lequel tel quel — il n'y a pas de `YOUR_API_KEY` à remplacer. Les outils qui lisent directement les variables d'environnement (Codex's `env_key`, toute CLI compatible OpenAI) les récupèrent aussi automatiquement.
 
 !!! warning "Traitez votre clé comme un mot de passe"
-    Toute personne possédant cette clé peut dépenser le budget de votre forfait. Ne commitez pas vos fichiers `~/.zshrc` / `~/.bashrc` dans un dépôt public. Si la clé fuit, révoquez-la dans le tableau de bord et exportez-en une nouvelle.
+    Toute personne disposant de cette clé peut dépenser vos crédits. Ne committez
+    pas votre `~/.zshrc` / `~/.bashrc` dans un dépôt public. Si la clé fuit,
+    révoquez-la dans le tableau de bord et exportez-en une nouvelle.
 
 ---
 

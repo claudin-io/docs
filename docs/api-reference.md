@@ -139,8 +139,8 @@ Errors follow the OpenAI error shape:
 | --- | --- | --- |
 | `401` | Invalid or missing API key | Check the key and the auth header |
 | `403` | Endpoint not allowed | Use one of the supported `/v1/*` paths |
-| `402` | No active subscription | [Subscribe](https://claudin.io/dashboard) — retrying will not help |
-| `429` | Budget cap reached or rate-limited | Wait for the window reset (see the `Retry-After` header) or [upgrade](plans.md) |
+| `402` | No active plan, or the wallet is empty (`code: insufficient_credits`) | [Subscribe, top up or change plan](https://claudin.io/dashboard) — retrying will not help |
+| `429` | Rate-limited, or (legacy plans only) the hourly cap | Back off on the `Retry-After` header |
 | `400` | Malformed request | Check your JSON / parameters — see [`max_tokens`](#max_tokens-and-reasoning) and [`n`](#multiple-completions-n) |
 | `5xx` | Upstream/provider hiccup | Retry with backoff |
 
@@ -148,27 +148,28 @@ Errors follow the OpenAI error shape:
     Error messages are sanitized so they don't leak the underlying model
     provider. You'll always see Claudin.io-branded, OpenAI-shaped errors.
 
-### Hitting the budget cap
+### An empty wallet
 
-When you exhaust the current window's spend protection, requests return
-`429` with a `Retry-After` header giving the seconds until the window resets.
-Your dashboard shows the exact reset time and remaining budget. Back off on
-that header rather than retrying immediately. See [Plans & limits](plans.md)
-for how the windows work.
+When your credit balance reaches zero, requests return `402` with
+`code: insufficient_credits`:
 
-### A message instead of a `429` {#cap-alternative-response}
+```json
+{ "error": { "message": "Claudinio: Your credit balance is empty. Buy a top-up pack or change plan at https://claudin.io/dashboard — the next month's credits arrive with your next invoice.", "type": "insufficient_credits", "code": "insufficient_credits" } }
+```
 
-On a small number of accounts we are trialling a different answer to the same
-situation. Instead of the error, the request completes and the reply itself
-explains that the ceiling is reached and when it resets. We are measuring
-whether that reaches people more reliably than an error their agent quietly
-swallows — and whether, told plainly, they would rather move to a plan that
-fits.
+Nothing is queued and nothing is charged. A [top-up](plans.md#top-ups) or a
+plan change takes effect immediately; retrying without one will not help.
+There is no time window to wait for — credit plans have no hourly cap.
 
-**If you build automation, do not read a `2xx` as "work was done".** Treat a
-reply that says the ceiling is reached as the ceiling being reached, and back
-off until the window resets. The `429` above remains the default and is what
-almost every account receives.
+### Legacy plans: the hourly cap {#cap-alternative-response}
+
+Accounts still on an earlier flat plan (Essential, Pro, Ultra), until the
+period they paid for ends, keep that plan's hourly cap. There, exhausting the
+cap returns `429` with a `Retry-After` header giving the seconds until the
+window resets; back off on that header rather than retrying immediately. On
+a small number of those accounts the request instead completes with a reply
+that says the ceiling is reached — **if you build automation, do not read a
+`2xx` as "work was done"**; treat that reply as the cap being reached.
 
 ## Rate limiting
 

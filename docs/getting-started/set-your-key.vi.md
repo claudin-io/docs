@@ -42,9 +42,9 @@ nguyên trạng — không cần thay `YOUR_API_KEY`. Các công cụ đọc tr�
 (Codex `env_key`, bất kỳ CLI tương thích OpenAI nào) cũng tự động nhận nó.
 
 !!! warning "Xem khóa của bạn như mật khẩu"
-    Bất kỳ ai có khóa này đều có thể tiêu ngân sách gói của bạn. Đừng commit
-    `~/.zshrc` / `~/.bashrc` của bạn vào một repo công khai. Nếu khóa bị rò rỉ, hãy thu hồi nó trong
-    bảng điều khiển và xuất khóa mới.
+    Bất kỳ ai có khóa này đều có thể tiêu tín dụng của bạn. Đừng commit `~/.zshrc`
+    / `~/.bashrc` của bạn vào repo công khai. Nếu khóa bị lộ, thu hồi nó trong bảng
+    điều khiển và export khóa mới.
 
 ---
 

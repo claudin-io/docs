@@ -6,57 +6,66 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# 請求書の不安がないコーディング。月額固定料金、無制限の使用。
+# 請求書の不安がないコーディング。失効しないクレジット、時間あたりの上限なし。
 
-Claudin.io は AI コーディングエージェント向けの API プロキシです。**月額固定料金**を支払うだけで、好きなだけ使えます — トークンごとの課金も、リクエストカウンターも、期限切れのクレジットもありません。
+Claudin.ioはAIコーディングエージェント向けのAPIプロキシです。**月額プラン**を選ぶと、毎月補充されるクレジットのウォレットが手に入り、リクエストあたり約1クレジットで使えます — トークン単位の請求なし、時間あたりの上限なし、使わなかった分はあなたのものです。
 
 </div>
 
-[はじめよう :material-arrow-right:](getting-started/account.md){ .md-button .md-button--primary }
+[はじめる :material-arrow-right:](getting-started/account.md){ .md-button .md-button--primary }
 [プランを見る](plans.md){ .md-button }
 
 ---
 
-## Claudin.io の特長
+## Claudin.ioを選ぶ理由
 
 <div class="grid cards" markdown>
 
--   :material-infinity:{ .lg .middle } __無制限の使用__
+-   :material-wallet:{ .lg .middle } __メーターではなくクレジット__
 
     ---
 
-    リクエスト数もトークン計測もありません。唯一のガードレールは、暴走エージェントを止める期間ごとの**支出保護**上限です — 通常の作業ではほとんど気になりません。
+    プランは月あたりのクレジット数で、典型的なリクエストは約1クレジット。
+    時間あたりの上限もセッションの上限もありません — 唯一の上限はウォレットで、
+    トップアップで即座に補充できます。
 
--   :material-power-plug:{ .lg .middle } __お使いのツールと連携__
-
-    ---
-
-    OpenAI および Anthropic 互換のエンドポイント。OpenCode、Claude Code、Kilo Code、Zed、Codex、Cursor、またはあらゆる OpenAI クライアントに数分で導入できます。
-
--   :material-cash-multiple:{ .lg .middle } __予測可能なコスト__
+-   :material-power-plug:{ .lg .middle } __お使いのツールで動く__
 
     ---
 
-    固定のサブスクリプション。月末に驚くような請求書もなく、「このリファクタリングにいくらかかる？」という不安もありません。
+    OpenAIおよびAnthropic互換のエンドポイント。OpenCode、Claude Code、Kilo Code、
+    Zed、Codex、Cursor、または任意のOpenAIクライアントに数分で組み込めます。
 
--   :material-shield-check:{ .lg .middle } __支出保護機能内蔵__
+-   :material-cash-multiple:{ .lg .middle } __予測できるコスト__
 
     ---
 
-    期間ごとのカスケード型予算上限が、無限ループエージェントによるプラン消費を防ぎます。透明性があり、ダッシュボードでライブ表示されます。
+    決まった数のクレジットに対する固定の月額料金。月末の請求書に驚きはなく、
+    未使用のクレジットは繰り越されます — 決して失効しません。
+
+-   :material-format-list-bulleted:{ .lg .middle } __チューニング済みのモデル、選びたいときのカタログ__
+
+    ---
+
+    `claudinio` がデフォルトであり私たちのおすすめです — クレジットが最も
+    遠くまで行くモデル。名前付きの8モデルは設定1つで使え、それぞれ `claudinio`
+    クレジットの固定倍率です。
 
 </div>
 
-## 4つのステップで始める
+## 4ステップではじめる
 
-1. **[アカウントを作成](getting-started/account.md)** し、API キーをコピーします。
-2. **[API キーを設定](getting-started/set-your-key.md)** します（シェルで一度だけ）。
-3. **[ツールを接続](clients/opencode.md)** — エディターまたはエージェントを選択します。
-4. **[最初の呼び出しを行い](getting-started/first-call.md)**、構築を始めます。
+1. **[アカウントを作成](getting-started/account.md)**し、APIキーをコピーします。
+2. **[APIキーを設定](getting-started/set-your-key.md)** — シェルで一度だけ。
+3. **[ツールを接続](clients/opencode.md)** — エディタまたはエージェントを選びます。
+4. **[最初の呼び出し](getting-started/first-call.md)**をして、開発を始めましょう。
 
-!!! tip "モデル名は常に `claudinio` です"
-    どのクライアントを使っても、指定するモデル ID は **`claudinio`** です。ベース URL は **`https://api.claudin.io`** です。
+!!! tip "モデル名は `claudinio` です"
+    どのクライアントを使っても、指定するモデルIDは **`claudinio`** です — 特定の
+    モデルが欲しいときは[カタログID](plans.md#catalogue)を。ベースURLは
+    **`https://api.claudin.io`** です。
 
 ---
 
-<small>ヘルプが必要ですか？ [FAQ](faq.md) を参照するか、[ダッシュボード](https://claudin.io/dashboard)のサポートカードからお問い合わせください。</small>
+<small>お困りですか？ [FAQ](faq.md)を確認するか、[ダッシュボード](https://claudin.io/dashboard)の
+サポートカードからご連絡ください。</small>

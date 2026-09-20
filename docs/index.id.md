@@ -6,9 +6,9 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Kode tanpa kecemasan tagihan. Harga bulanan tetap, penggunaan tidak terbatas.
+# Coding tanpa cemas soal tagihan. Kredit yang tidak pernah kedaluwarsa, tanpa batas per jam.
 
-Claudin.io adalah proksi API untuk agen kode AI. Bayar **langganan bulanan tetap** dan gunakan sebanyak yang Anda mau — tanpa tagihan per token, tanpa penghitung permintaan, tanpa kredit yang kedaluwarsa.
+Claudin.io adalah proxy API untuk agen coding AI. Pilih **paket bulanan**, dapatkan dompet kredit yang terisi ulang setiap bulan, dan pakai sekitar satu kredit per permintaan — tanpa tagihan per token, tanpa batas per jam, dan yang tidak Anda pakai tetap milik Anda.
 
 </div>
 
@@ -21,43 +21,53 @@ Claudin.io adalah proksi API untuk agen kode AI. Bayar **langganan bulanan tetap
 
 <div class="grid cards" markdown>
 
--   :material-infinity:{ .lg .middle } __Penggunaan tidak terbatas__
+-   :material-wallet:{ .lg .middle } __Kredit, bukan meteran__
 
     ---
 
-    Tidak ada penghitungan permintaan, tidak ada pengukuran token. Satu-satunya pagar pengaman adalah batas **perlindungan pengeluaran** per periode yang menghentikan agen yang lepas kendali — Anda hampir tidak pernah mencapainya dalam pekerjaan normal.
+    Sebuah paket adalah sejumlah kredit per bulan; permintaan biasa
+    menghabiskan sekitar satu kredit. Tanpa batas per jam, tanpa batas sesi —
+    dompet adalah satu-satunya batas, dan satu top-up langsung mengisinya.
 
 -   :material-power-plug:{ .lg .middle } __Bekerja dengan alat Anda__
 
     ---
 
-    Endpoint yang kompatibel dengan OpenAI dan Anthropic. Pasangkan ke OpenCode, Claude Code, Kilo Code, Zed, Codex, Cursor, atau klien OpenAI mana pun dalam hitungan menit.
+    Endpoint yang kompatibel dengan OpenAI dan Anthropic. Sambungkan ke
+    OpenCode, Claude Code, Kilo Code, Zed, Codex, Cursor atau klien OpenAI mana
+    pun dalam hitungan menit.
 
 -   :material-cash-multiple:{ .lg .middle } __Biaya yang dapat diprediksi__
 
     ---
 
-    Langganan tetap. Tidak ada tagihan kejutan di akhir bulan, tidak ada kecemasan 'berapa biaya refaktor ini?'
+    Satu harga bulanan tetap untuk sejumlah kredit yang diketahui. Tanpa
+    kejutan tagihan di akhir bulan, dan kredit yang tidak dipakai terbawa —
+    tidak pernah kedaluwarsa.
 
--   :material-shield-check:{ .lg .middle } __Perlindungan pengeluaran bawaan__
+-   :material-format-list-bulleted:{ .lg .middle } __Satu model yang kami tala, satu katalog saat Anda ingin memilih__
 
     ---
 
-    Batas anggaran per periode yang berjenjang melindungi Anda dari agen loop tak terbatas yang menghabiskan paket Anda. Transparan dan ditampilkan secara langsung di dasbor Anda.
+    `claudinio` adalah default dan rekomendasi kami — model tempat kredit Anda
+    berjalan paling jauh. Delapan model bernama tinggal satu setelan, masing-
+    masing kelipatan tetap dari kredit `claudinio`.
 
 </div>
 
 ## Mulai dalam 4 langkah
 
 1. **[Buat akun](getting-started/account.md)** dan salin kunci API Anda.
-2. **[Atur kunci API Anda](getting-started/set-your-key.md)** sekali di shell Anda.
-3. **[Hubungkan alat Anda](clients/opencode.md)** — pilih editor atau agen Anda.
-4. **[Lakukan panggilan pertama Anda](getting-started/first-call.md)** dan mulai membangun.
+2. **[Setel kunci API](getting-started/set-your-key.md)** — sekali di shell Anda.
+3. **[Sambungkan alat Anda](clients/opencode.md)** — pilih editor atau agen Anda.
+4. **[Lakukan panggilan pertama](getting-started/first-call.md)** dan mulai membangun.
 
-!!! tip "Nama model selalu `claudinio`"
-    Klien apa pun yang Anda gunakan, id model yang Anda tuju adalah **`claudinio`**.
-    URL dasarnya adalah **`https://api.claudin.io`**.
+!!! tip "Nama modelnya `claudinio`"
+    Klien apa pun yang Anda pakai, ID model yang Anda tuju adalah
+    **`claudinio`** — atau [ID katalog](plans.md#catalogue) saat Anda
+    menginginkan model tertentu. Base URL-nya **`https://api.claudin.io`**.
 
 ---
 
-<small>Butuh bantuan? Lihat [FAQ](faq.md) atau hubungi dari kartu dukungan di [dasbor](https://claudin.io/dashboard) Anda.</small>
+<small>Butuh bantuan? Lihat [FAQ](faq.md) atau hubungi kami lewat kartu
+dukungan di [dasbor](https://claudin.io/dashboard) Anda.</small>

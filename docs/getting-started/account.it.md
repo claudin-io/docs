@@ -19,9 +19,9 @@ Una volta nella [dashboard](https://claudin.io/dashboard):
 3. Copia la chiave — ha un aspetto simile a `sk-...`.
 
 !!! warning "Tratta la tua chiave come una password"
-    La tua chiave API concede accesso al budget del tuo piano. Non commetterla
-    in un repository, non incollarla in una chat pubblica e non condividerla.
-    Se una chiave viene esposta, revocala dalla dashboard e generane una nuova.
+    La tua chiave API spende i crediti del tuo piano. Non committarla in un repo,
+    non incollarla in una chat pubblica e non condividerla. Se una chiave trapela,
+    revocala dalla dashboard e generane una nuova.
 
 ## 3. Annota i due valori che ti serviranno
 
@@ -41,8 +41,8 @@ per confermare che funziona, oppure salta direttamente a
 
 ## Scelta del piano
 
-Puoi rimanere su **Free** per provare. Quando sei pronto per più spazio,
-effettua l'upgrade dalla dashboard — consulta [Piani e limiti](../plans.md)
-per la suddivisione completa.
+Puoi restare su **Free** per provare. Quando sei pronto, scegli un piano dalla
+dashboard — un portafoglio di crediti che si riempie ogni mese, da $19 — vedi
+[Piani e crediti](../plans.md) per il quadro completo.
 
 Gli upgrade sono gestiti tramite Stripe e diventano effettivi immediatamente.

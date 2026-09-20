@@ -18,7 +18,9 @@ Une fois dans le [tableau de bord](https://claudin.io/dashboard) :
 3. Copiez la clé — elle ressemble à `sk-...`.
 
 !!! warning "Traitez votre clé comme un mot de passe"
-    Votre clé API donne accès au budget de votre forfait. Ne la commitez pas dans un dépôt, ne la collez pas dans un chat public et ne la partagez pas. Si une clé fuit, révoquez-la depuis le tableau de bord et générez-en une nouvelle.
+    Votre clé API dépense les crédits de votre plan. Ne la committez pas dans un
+    dépôt, ne la collez pas dans un chat public et ne la partagez pas. Si une clé
+    fuit, révoquez-la depuis le tableau de bord et générez-en une nouvelle.
 
 ## 3. Notez les deux valeurs dont vous aurez besoin
 
@@ -36,6 +38,9 @@ Voilà. Ensuite, soit [effectuez un appel API brut](first-call.md) pour confirme
 
 ## Choisir un forfait
 
-Vous pouvez rester sur **Gratuit** pour essayer les choses. Lorsque vous êtes prêt pour plus de marge, effectuez une mise à niveau depuis le tableau de bord — consultez [Forfaits et limites](../plans.md) pour le détail complet.
+Vous pouvez rester sur **Free** pour essayer. Quand vous êtes prêt, choisissez
+un plan depuis le tableau de bord — un portefeuille de crédits qui se remplit
+chaque mois, à partir de $19 — voir [Plans et crédits](../plans.md) pour le
+détail complet.
 
 Les mises à niveau sont gérées via Stripe et prennent effet immédiatement.
