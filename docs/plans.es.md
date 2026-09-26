@@ -15,10 +15,11 @@ en la cartera. **Los créditos nunca caducan y no hay límite por hora.**
 | **Studio** | $199 / mes | 36.000 | Varios agentes, todo el día |
 | **Max** | $399 / mes | 72.000 | Producción, equipos, bots |
 
-Todos los planes incluyen todos los modelos: `claudinio`, `claudius` y el
+Todos los planes de créditos incluyen todos los modelos: `claudinio`, `claudius` y el
 [catálogo](#el-catalogo-elige-un-modelo-por-nombre) completo. Los planes solo se
 diferencian en cuántos créditos llegan cada mes — y cuanto mayor es el plan,
-menos cuesta cada crédito.
+menos cuesta cada crédito. Los planes antiguos por hora usan `claudinio` — ver
+[Planes antiguos](#planes-antiguos-essential-pro-ultra-con-limite-por-hora).
 
 !!! tip "Qué plan cabe en tu mes"
     Una solicitud típica en `claudinio` cuesta alrededor de un crédito, medido
@@ -75,7 +76,7 @@ que las cortas.
 | Modelo | Qué es | Coste en créditos | Incluido en |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | El modelo que afinamos, medimos y cacheamos para código | 1× — alrededor de un crédito por solicitud | Todos los planes |
-| **claudius** ★ | Nuestra opción premium, para razonamiento profundo | hasta 6x los créditos de claudinio (3× entrada, 4× salida, 6× lecturas de caché) | Todos los planes (Start, Solo, Pro, Studio, Max) |
+| **claudius** ★ | Nuestra opción premium, para razonamiento profundo | hasta 6x los créditos de claudinio (3× entrada, 4× salida, 6× lecturas de caché) | Todos los planes de créditos (Start, Solo, Pro, Studio, Max) |
 
 **Nuestra recomendación es `claudinio`.** Es el modelo alrededor del cual se
 construye cada plan: aquel para el que afinamos el prompt, el que puntuó cada
@@ -134,10 +135,15 @@ que llegues ahí, y te enviamos un correo una vez cuando el saldo baja.
 
 ## Planes antiguos (Essential, Pro, Ultra con límite por hora)
 
-Si estabas en uno de los planes anteriores, sigue funcionando **exactamente
-igual que antes, con su límite por hora, hasta el final del periodo que ya
-pagaste**. No se renueva después. Quienes tenían plan mensual recibieron una
-cortesía de créditos — el doble de un mes del plan antiguo a valor de tarifa —
-para probar el nuevo sistema antes de elegir un plan; quienes tenían plan anual
-conservan el año completo y pasan a créditos cuando termine. Tu clave API no
-cambia.
+Los planes de créditos de arriba son los que contratan las cuentas nuevas. Si
+ya estabas suscrito a uno de los planes anteriores (Essential, Pro, Ultra), lo conservas **exactamente igual que antes: mismo
+precio, mismo límite por hora, y se sigue renovando con normalidad**. Puedes
+seguir cambiando entre Essential, Pro y Ultra desde el
+[panel](https://claudin.io/dashboard), tu clave API no cambia y las
+[recargas](#top-ups) siguen pagando el uso más allá del límite por hora, como
+siempre.
+
+Los planes antiguos por hora usan `claudinio`. `claudius` y el
+[catálogo](#el-catalogo-elige-un-modelo-por-nombre) vienen con los planes de
+créditos: en un plan por hora, una solicitud que nombra a uno de ellos la
+atiende `claudinio` — no se rechaza ni devuelve error.

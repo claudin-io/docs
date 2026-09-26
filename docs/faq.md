@@ -99,10 +99,11 @@ nothing was charged for the failed request.
 
 ## What happens to my old Essential / Pro / Ultra plan?
 
-It keeps working exactly as before, with its hourly cap, until the end of the
-period you already paid for, and does not renew after that. Monthly holders
-received a courtesy of credits to try the new system; yearly holders keep
-their whole year and move to credits when it ends. See
+It keeps working exactly as before: same price, same hourly cap, and it keeps
+renewing normally. You can still switch between Essential, Pro and Ultra from
+the dashboard, and your API key does not change. The hourly plans use
+`claudinio`; `claudius` and the model catalogue come with the credit plans, so
+on an hourly plan a request that names them is served by `claudinio`. See
 [Legacy plans](plans.md#legacy-plans-essential-pro-ultra-with-an-hourly-cap).
 
 ## A request failed with 401.

@@ -16,9 +16,10 @@ batas per jam.**
 | **Studio** | $199 / bulan | 36,000 | Beberapa agen, sepanjang hari |
 | **Max** | $399 / bulan | 72,000 | Produksi, tim, bot |
 
-Setiap paket menyertakan setiap model: `claudinio`, `claudius` dan seluruh
+Setiap paket kredit menyertakan setiap model: `claudinio`, `claudius` dan seluruh
 [katalog](#catalogue). Paket hanya berbeda pada jumlah kredit yang datang tiap
-bulan — dan makin besar paketnya, makin murah tiap kreditnya.
+bulan — dan makin besar paketnya, makin murah tiap kreditnya. Paket lama dengan
+batas per jam memakai `claudinio` — lihat [Paket lama](#legacy-plans).
 
 !!! tip "Paket mana yang cukup untuk bulan Anda"
     Permintaan biasa di `claudinio` menghabiskan sekitar satu kredit, diukur
@@ -76,7 +77,7 @@ sesi pendek.
 | Model | Apa itu | Biaya kredit | Termasuk di |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Model yang kami tala, ukur, dan cache untuk kode | 1× — sekitar satu kredit per permintaan | Setiap paket |
-| **claudius** ★ | Opsi premium kami untuk penalaran mendalam | hingga 6x kredit claudinio (3× input, 4× output, 6× pembacaan cache) | Setiap paket (Start, Solo, Pro, Studio, Max) |
+| **claudius** ★ | Opsi premium kami untuk penalaran mendalam | hingga 6x kredit claudinio (3× input, 4× output, 6× pembacaan cache) | Setiap paket kredit (Start, Solo, Pro, Studio, Max) |
 
 **Rekomendasi kami adalah `claudinio`.** Itulah model yang menjadi dasar setiap
 paket: yang kami tala prompt-nya, yang dinilai setiap evaluasi, dan tempat satu
@@ -133,9 +134,15 @@ menipis.
 
 ## Paket lama (Essential, Pro, Ultra dengan batas per jam) {#legacy-plans}
 
-Kalau Anda berada di salah satu paket sebelumnya, paket itu **terus berjalan
-persis seperti sebelumnya, dengan batas per jamnya, sampai akhir periode yang
-sudah dibayar**. Setelah itu tidak diperpanjang. Pelanggan bulanan menerima
-kredit kehormatan untuk mencoba sistem baru sebelum memilih paket — dua bulan
-pada harga paket lama; pelanggan tahunan menyimpan seluruh tahunnya dan
-berpindah ke kredit saat itu berakhir. Kunci API Anda tidak berubah.
+Paket kredit di atas adalah yang diambil akun baru. Kalau Anda sudah
+berlangganan salah satu paket sebelumnya (Essential, Pro, Ultra), paket itu tetap milik Anda **persis seperti sebelumnya: harga yang
+sama, batas per jam yang sama, dan terus diperpanjang seperti biasa**. Anda
+masih bisa berpindah antara Essential, Pro dan Ultra dari
+[dasbor](https://claudin.io/dashboard), kunci API Anda tidak berubah, dan
+[top-up](#top-ups) tetap membayar pemakaian di atas batas per jam seperti
+biasanya.
+
+Paket lama dengan batas per jam memakai `claudinio`. `claudius` dan
+[katalog](#catalogue) disertakan dalam paket kredit: pada paket dengan batas per
+jam, permintaan yang menyebut salah satunya dilayani oleh `claudinio` — tidak
+ditolak dan tidak mengembalikan error.

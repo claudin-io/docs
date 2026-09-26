@@ -134,14 +134,13 @@ paket kredit tidak punya batas per jam.
 
 ### Paket lama: batas per jam {#cap-alternative-response}
 
-Akun yang masih berada di paket harga tetap sebelumnya (Essential, Pro, Ultra)
-sampai akhir periode yang dibayar mempertahankan batas per jam paket itu. Di
-sana, batas yang habis mengembalikan `429` dengan header `Retry-After` yang
-menyebutkan detik sampai jendela disetel ulang; tunggu sesuai header itu
-daripada langsung mencoba lagi. Pada sebagian kecil akun tersebut, permintaan
-justru selesai dengan respons yang menyatakan batas telah tercapai — **jika
-Anda membangun otomasi, jangan membaca `2xx` sebagai "pekerjaan selesai"**;
-perlakukan respons itu sebagai batas tercapai.
+Akun yang berada di paket harga tetap sebelumnya (Essential, Pro, Ultra)
+mempertahankan batas per jam paket itu. Di sana, batas yang habis mengembalikan
+`429` dengan header `Retry-After` yang menyebutkan detik sampai jendela disetel
+ulang; tunggu sesuai header itu daripada langsung mencoba lagi. Pada sebagian
+kecil akun tersebut, permintaan justru selesai dengan respons yang menyatakan
+batas telah tercapai — **jika Anda membangun otomasi, jangan membaca `2xx`
+sebagai "pekerjaan selesai"**; perlakukan respons itu sebagai batas tercapai.
 
 ## Rate limiting
 

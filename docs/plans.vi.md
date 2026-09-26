@@ -16,9 +16,10 @@ giờ.**
 | **Studio** | $199 / tháng | 36,000 | Nhiều agent, cả ngày |
 | **Max** | $399 / tháng | 72,000 | Sản xuất, đội nhóm, bot |
 
-Mọi gói đều bao gồm mọi mô hình: `claudinio`, `claudius` và toàn bộ
+Mọi gói tín dụng đều bao gồm mọi mô hình: `claudinio`, `claudius` và toàn bộ
 [danh mục](#catalogue). Các gói chỉ khác nhau ở số tín dụng nhận được mỗi
-tháng — và gói càng lớn, mỗi tín dụng càng rẻ.
+tháng — và gói càng lớn, mỗi tín dụng càng rẻ. Các gói cũ có giới hạn theo giờ
+dùng `claudinio` — xem [Gói cũ](#legacy-plans).
 
 !!! tip "Gói nào đủ cho tháng của bạn"
     Một yêu cầu thông thường trên `claudinio` tiêu khoảng một tín dụng, đo trên
@@ -76,7 +77,7 @@ cầu.
 | Mô hình | Nó là gì | Chi phí tín dụng | Có trong |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Mô hình chúng tôi tinh chỉnh, đo lường và cache cho code | 1× — khoảng một tín dụng mỗi yêu cầu | Mọi gói |
-| **claudius** ★ | Lựa chọn cao cấp của chúng tôi cho suy luận sâu | tối đa 6x tín dụng claudinio (3× đầu vào, 4× đầu ra, 6× đọc cache) | Mọi gói (Start, Solo, Pro, Studio, Max) |
+| **claudius** ★ | Lựa chọn cao cấp của chúng tôi cho suy luận sâu | tối đa 6x tín dụng claudinio (3× đầu vào, 4× đầu ra, 6× đọc cache) | Mọi gói tín dụng (Start, Solo, Pro, Studio, Max) |
 
 **Khuyến nghị của chúng tôi là `claudinio`.** Đó là mô hình mà mọi gói được xây
 quanh: mô hình chúng tôi tinh chỉnh prompt, mô hình mọi bài đánh giá đã chấm
@@ -132,9 +133,14 @@ trước khi bạn chạm đến đó, và chúng tôi gửi một email khi s�
 
 ## Gói cũ (Essential, Pro, Ultra có giới hạn theo giờ) {#legacy-plans}
 
-Nếu bạn đang ở một trong các gói trước đây, gói đó **tiếp tục chạy đúng như
-cũ, với giới hạn theo giờ của nó, đến hết kỳ đã thanh toán**. Sau đó nó không
-gia hạn. Khách hàng theo tháng nhận tín dụng thiện chí để thử hệ thống mới
-trước khi chọn gói — hai tháng theo giá niêm yết của gói cũ; khách hàng theo
-năm giữ trọn năm và chuyển sang tín dụng khi kết thúc. Khóa API của bạn không
-đổi.
+Các gói tín dụng ở trên là gói dành cho tài khoản mới. Nếu bạn đã đăng ký một
+trong các gói trước đây (Essential, Pro, Ultra), bạn
+giữ nguyên gói đó **đúng như cũ: cùng giá, cùng giới hạn theo giờ, và nó vẫn gia
+hạn bình thường**. Bạn vẫn có thể chuyển giữa Essential, Pro và Ultra từ
+[bảng điều khiển](https://claudin.io/dashboard), khóa API của bạn không đổi, và
+[nạp thêm](#top-ups) vẫn trả cho phần sử dụng vượt giới hạn theo giờ như trước.
+
+Các gói cũ có giới hạn theo giờ dùng `claudinio`. `claudius` và
+[danh mục](#catalogue) đi kèm các gói tín dụng: trên gói có giới hạn theo giờ,
+yêu cầu nêu tên một trong số đó sẽ được `claudinio` phục vụ — không bị từ chối và
+không trả về lỗi.

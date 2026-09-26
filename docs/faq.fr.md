@@ -107,11 +107,13 @@ immédiatement. Rien n'est mis en file et rien n'a été facturé pour la requê
 
 ## Qu'advient-il de mon ancien plan Essential / Pro / Ultra ?
 
-Il continue de fonctionner exactement comme avant, avec sa limite horaire,
-jusqu'à la fin de la période déjà payée, et ne se renouvelle pas ensuite. Les
-abonnés mensuels ont reçu des crédits offerts pour essayer le nouveau système ;
-les abonnés annuels conservent leur année entière et passent aux crédits à sa
-fin. Voir [Anciens plans](plans.md#anciens-plans-essential-pro-ultra-avec-limite-horaire).
+Il fonctionne exactement comme avant : même prix, même limite horaire, et il se
+renouvelle normalement. Vous pouvez toujours basculer entre Essential, Pro et
+Ultra depuis le tableau de bord, et votre clé API ne change pas. Les plans
+horaires utilisent `claudinio` ; `claudius` et le catalogue de modèles viennent
+avec les plans à crédits, donc sur un plan horaire une requête qui les nomme est
+servie par `claudinio`. Voir
+[Anciens plans](plans.md#anciens-plans-essential-pro-ultra-avec-limite-horaire).
 
 ## Une requête a échoué avec 401.
 

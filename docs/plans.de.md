@@ -15,10 +15,11 @@ bleibt im Wallet. **Credits verfallen nie, und es gibt kein Stundenlimit.**
 | **Studio** | $199 / Monat | 36.000 | Mehrere Agenten, den ganzen Tag |
 | **Max** | $399 / Monat | 72.000 | Produktion, Teams, Bots |
 
-Jeder Plan enthält jedes Modell: `claudinio`, `claudius` und den ganzen
+Jeder Credit-Plan enthält jedes Modell: `claudinio`, `claudius` und den ganzen
 [Katalog](#der-katalog-ein-modell-nach-namen-wahlen). Die Pläne unterscheiden
 sich nur darin, wie viele Credits jeden Monat ankommen — und je größer der Plan,
-desto weniger kostet jeder Credit.
+desto weniger kostet jeder Credit. Die alten Pläne mit Stundenlimit laufen auf
+`claudinio` — siehe [Alte Pläne](#alte-plane-essential-pro-ultra-mit-stundenlimit).
 
 !!! tip "Welcher Plan zu deinem Monat passt"
     Eine typische Anfrage auf `claudinio` kostet etwa einen Credit, gemessen an
@@ -77,7 +78,7 @@ kurze.
 | Modell | Was es ist | Kosten in Credits | Enthalten in |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Das Modell, das wir für Code tunen, messen und cachen | 1× — etwa ein Credit pro Anfrage | Jedem Plan |
-| **claudius** ★ | Unsere Premium-Option für tiefes Reasoning | bis zu 6x die claudinio-Credits (3× Eingabe, 4× Ausgabe, 6× Cache-Lesevorgänge) | Jedem Plan (Start, Solo, Pro, Studio, Max) |
+| **claudius** ★ | Unsere Premium-Option für tiefes Reasoning | bis zu 6x die claudinio-Credits (3× Eingabe, 4× Ausgabe, 6× Cache-Lesevorgänge) | Jedem Credit-Plan (Start, Solo, Pro, Studio, Max) |
 
 **Unsere Empfehlung ist `claudinio`.** Es ist das Modell, um das jeder Plan
 gebaut ist: das, für das wir den Prompt tunen, das jede Evaluation bewertet hat
@@ -137,10 +138,15 @@ Stand niedrig wird.
 
 ## Alte Pläne (Essential, Pro, Ultra mit Stundenlimit)
 
-Wenn du auf einem der früheren Pläne warst, läuft er **genau wie bisher weiter,
-mit seinem Stundenlimit, bis zum Ende des bereits bezahlten Zeitraums**. Danach
-verlängert er sich nicht. Monatliche Abonnenten haben Credits als
-Aufmerksamkeit erhalten — zwei Monate des alten Plans zum Listenwert — um das
-neue System vor der Planwahl auszuprobieren; jährliche Abonnenten behalten ihr
-ganzes Jahr und wechseln an dessen Ende zu Credits. Dein API-Schlüssel ändert
-sich nicht.
+Die Credit-Pläne oben sind das, was neue Konten abschließen. Wenn du bereits
+einen der früheren Pläne abonniert hast (Essential, Pro, Ultra), behältst du ihn **genau wie bisher: gleicher Preis, gleiches
+Stundenlimit, und er verlängert sich weiterhin ganz normal**. Du kannst im
+[Dashboard](https://claudin.io/dashboard) weiterhin zwischen Essential, Pro und
+Ultra wechseln, dein API-Schlüssel ändert sich nicht, und [Top-ups](#top-ups)
+bezahlen wie bisher die Nutzung über das Stundenlimit hinaus.
+
+Die alten Pläne mit Stundenlimit nutzen `claudinio`. `claudius` und der
+[Katalog](#der-katalog-ein-modell-nach-namen-wahlen) gehören zu den
+Credit-Plänen: Auf einem Plan mit Stundenlimit wird eine Anfrage, die eines
+davon nennt, von `claudinio` bedient — sie wird nicht abgelehnt und liefert
+keinen Fehler.

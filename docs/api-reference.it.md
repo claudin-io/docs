@@ -168,14 +168,13 @@ piani a crediti non hanno limite orario.
 
 ### Piani precedenti: il limite orario {#cap-alternative-response}
 
-Gli account ancora su un precedente piano fisso (Essential, Pro, Ultra), fino
-alla fine del periodo pagato, mantengono il limite orario di quel piano. Lì,
-esaurire il limite restituisce `429` con un header `Retry-After` che indica i
-secondi fino al reset della finestra; attendi secondo quell'header invece di
-riprovare subito. Su un piccolo numero di quegli account la richiesta si
-completa invece con una risposta che dice che il tetto è stato raggiunto — **se
-costruisci automazioni, non leggere un `2xx` come "lavoro fatto"**; tratta
-quella risposta come limite raggiunto.
+Gli account su un precedente piano fisso (Essential, Pro, Ultra) mantengono il
+limite orario di quel piano. Lì, esaurire il limite restituisce `429` con un
+header `Retry-After` che indica i secondi fino al reset della finestra; attendi
+secondo quell'header invece di riprovare subito. Su un piccolo numero di quegli
+account la richiesta si completa invece con una risposta che dice che il tetto è
+stato raggiunto — **se costruisci automazioni, non leggere un `2xx` come "lavoro
+fatto"**; tratta quella risposta come limite raggiunto.
 
 ## Limitazione della frequenza
 

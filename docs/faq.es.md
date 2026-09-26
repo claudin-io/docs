@@ -103,11 +103,12 @@ se cobró por la solicitud fallida.
 
 ## ¿Qué pasa con mi plan antiguo Essential / Pro / Ultra?
 
-Sigue funcionando exactamente igual que antes, con su límite por hora, hasta el
-final del periodo que ya pagaste, y no se renueva después. Quienes tenían plan
-mensual recibieron una cortesía de créditos para probar el nuevo sistema; quienes
-tenían plan anual conservan el año completo y pasan a créditos cuando termine.
-Ver [Planes antiguos](plans.md#planes-antiguos-essential-pro-ultra-con-limite-por-hora).
+Sigue funcionando exactamente igual que antes: mismo precio, mismo límite por
+hora, y se sigue renovando con normalidad. Puedes seguir cambiando entre
+Essential, Pro y Ultra desde el panel, y tu clave API no cambia. Los planes por
+hora usan `claudinio`; `claudius` y el catálogo de modelos vienen con los planes
+de créditos, así que en un plan por hora una solicitud que los nombra la atiende
+`claudinio`. Ver [Planes antiguos](plans.md#planes-antiguos-essential-pro-ultra-con-limite-por-hora).
 
 ## Una solicitud falló con 401.
 

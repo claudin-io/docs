@@ -100,11 +100,12 @@ ve başarısız istek için hiçbir şey ücretlendirilmedi.
 
 ## Eski Essential / Pro / Ultra planıma ne olur?
 
-Ödenmiş dönemin sonuna kadar, saatlik sınırıyla birlikte tam olarak eskisi
-gibi çalışmaya devam eder ve sonrasında yenilenmez. Aylık aboneler yeni
-sistemi denemek için kredi hediyesi aldı; yıllık aboneler tüm yıllarını korur
-ve yıl bittiğinde kredilere geçer. Bkz.
-[Eski planlar](plans.md#legacy-plans).
+Tam olarak eskisi gibi çalışmaya devam eder: aynı fiyat, aynı saatlik sınır ve
+normal şekilde yenilenir. Panelden Essential, Pro ve Ultra arasında hâlâ geçiş
+yapabilirsiniz ve API anahtarınız değişmez. Saatlik sınırlı planlar `claudinio`
+kullanır; `claudius` ve model kataloğu kredi planlarıyla gelir, bu yüzden
+saatlik sınırlı bir planda bunları adlandıran bir istek `claudinio` tarafından
+karşılanır. Bkz. [Eski planlar](plans.md#legacy-plans).
 
 ## Bir istek 401 ile başarısız oldu.
 

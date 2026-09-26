@@ -103,10 +103,12 @@ viene messo in coda e nulla è stato addebitato per la richiesta fallita.
 
 ## Cosa succede al mio vecchio piano Essential / Pro / Ultra?
 
-Continua a funzionare esattamente come prima, con il suo limite orario, fino
-alla fine del periodo già pagato, e non si rinnova dopo. Chi aveva un piano
-mensile ha ricevuto crediti in omaggio per provare il nuovo sistema; chi aveva
-un piano annuale conserva l'intero anno e passa ai crediti quando finisce. Vedi
+Continua a funzionare esattamente come prima: stesso prezzo, stesso limite
+orario, e continua a rinnovarsi normalmente. Puoi ancora passare tra Essential,
+Pro e Ultra dalla dashboard, e la tua chiave API non cambia. I piani con limite
+orario usano `claudinio`; `claudius` e il catalogo dei modelli fanno parte dei
+piani a crediti, quindi su un piano con limite orario una richiesta che li
+nomina viene servita da `claudinio`. Vedi
 [Piani precedenti](plans.md#piani-precedenti-essential-pro-ultra-con-limite-orario).
 
 ## Una richiesta è fallita con 401.

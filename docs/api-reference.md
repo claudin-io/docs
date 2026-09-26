@@ -163,13 +163,13 @@ There is no time window to wait for — credit plans have no hourly cap.
 
 ### Legacy plans: the hourly cap {#cap-alternative-response}
 
-Accounts still on an earlier flat plan (Essential, Pro, Ultra), until the
-period they paid for ends, keep that plan's hourly cap. There, exhausting the
-cap returns `429` with a `Retry-After` header giving the seconds until the
-window resets; back off on that header rather than retrying immediately. On
-a small number of those accounts the request instead completes with a reply
-that says the ceiling is reached — **if you build automation, do not read a
-`2xx` as "work was done"**; treat that reply as the cap being reached.
+Accounts on an earlier flat plan (Essential, Pro, Ultra) keep that plan's hourly
+cap. There, exhausting the cap returns `429` with a `Retry-After` header giving
+the seconds until the window resets; back off on that header rather than
+retrying immediately. On a small number of those accounts the request instead
+completes with a reply that says the ceiling is reached — **if you build
+automation, do not read a `2xx` as "work was done"**; treat that reply as the
+cap being reached.
 
 ## Rate limiting
 

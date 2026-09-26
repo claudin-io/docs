@@ -101,11 +101,12 @@ fica em fila e nada foi cobrado pelo pedido que falhou.
 
 ## O que acontece ao meu plano antigo Essential / Pro / Ultra?
 
-Continua a funcionar exactamente como antes, com o seu limite por hora, até ao
-fim do período que já pagou, e não renova depois disso. Quem tinha plano mensal
-recebeu uma cortesia de créditos para experimentar o novo sistema; quem tinha
-plano anual mantém o ano inteiro e passa para créditos quando ele terminar. Veja
-[Planos antigos](plans.md#planos-antigos-essential-pro-ultra-com-limite-por-hora).
+Continua a funcionar exactamente como antes: mesmo preço, mesmo limite por
+hora, e continua a renovar normalmente. Pode continuar a mudar entre Essential,
+Pro e Ultra no painel, e a sua chave de API não muda. Os planos por hora usam o
+`claudinio`; o `claudius` e o catálogo de modelos vêm com os planos de créditos,
+por isso num plano por hora um pedido que os indique é servido pelo `claudinio`.
+Veja [Planos antigos](plans.md#planos-antigos-essential-pro-ultra-com-limite-por-hora).
 
 ## Um pedido falhou com 401.
 

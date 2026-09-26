@@ -174,14 +174,14 @@ n'ont pas de limite horaire.
 
 ### Anciens plans : la limite horaire {#cap-alternative-response}
 
-Les comptes encore sur un ancien plan fixe (Essential, Pro, Ultra), jusqu'à la
-fin de la période payée, conservent la limite horaire de ce plan. Là, épuiser
-la limite renvoie `429` avec un en-tête `Retry-After` donnant les secondes
-avant la réinitialisation de la fenêtre ; attendez selon cet en-tête plutôt que
-de réessayer immédiatement. Sur un petit nombre de ces comptes, la requête se
-termine à la place par une réponse disant que le plafond est atteint — **si
-vous construisez de l'automatisation, ne lisez pas un `2xx` comme « travail
-fait »** ; traitez cette réponse comme la limite atteinte.
+Les comptes sur un ancien plan fixe (Essential, Pro, Ultra) conservent la limite
+horaire de ce plan. Là, épuiser la limite renvoie `429` avec un en-tête
+`Retry-After` donnant les secondes avant la réinitialisation de la fenêtre ;
+attendez selon cet en-tête plutôt que de réessayer immédiatement. Sur un petit
+nombre de ces comptes, la requête se termine à la place par une réponse disant
+que le plafond est atteint — **si vous construisez de l'automatisation, ne lisez
+pas un `2xx` comme « travail fait »** ; traitez cette réponse comme la limite
+atteinte.
 
 ## Limitation de débit
 

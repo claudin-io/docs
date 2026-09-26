@@ -102,11 +102,12 @@ tidak ada yang ditagih untuk permintaan yang gagal.
 
 ## Apa yang terjadi dengan paket Essential / Pro / Ultra lama saya?
 
-Terus berjalan persis seperti sebelumnya, dengan batas per jamnya, sampai akhir
-periode yang sudah dibayar, dan setelah itu tidak diperpanjang. Pelanggan
-bulanan menerima kredit kehormatan untuk mencoba sistem baru; pelanggan
-tahunan menyimpan seluruh tahunnya dan berpindah ke kredit saat itu berakhir.
-Lihat [Paket lama](plans.md#legacy-plans).
+Terus berjalan persis seperti sebelumnya: harga yang sama, batas per jam yang
+sama, dan terus diperpanjang seperti biasa. Anda masih bisa berpindah antara
+Essential, Pro dan Ultra dari dasbor, dan kunci API Anda tidak berubah. Paket
+dengan batas per jam memakai `claudinio`; `claudius` dan katalog model
+disertakan dalam paket kredit, jadi pada paket dengan batas per jam permintaan
+yang menyebutnya dilayani oleh `claudinio`. Lihat [Paket lama](plans.md#legacy-plans).
 
 ## Sebuah permintaan gagal dengan 401.
 

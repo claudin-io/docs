@@ -83,9 +83,10 @@ Gemini 3.1 Pro、Kimi K3、GLM 5.3、MiniMax M3、Qwen3 Coder — 每个都按 `
 
 ## 我的旧 Essential / Pro / Ultra 套餐会怎样？
 
-它会和以前完全一样，带着每小时上限，一直运行到已付周期结束，之后不再续订。月付
-订阅者已收到用于试用新系统的礼遇积分；年付订阅者保留整年，到期后转入积分。见
-[旧套餐](plans.md#legacy-plans)。
+它会和以前完全一样继续运行：同样的价格、同样的每小时上限，并照常续订。你仍然
+可以在仪表盘中在 Essential、Pro 和 Ultra 之间切换，API 密钥不变。旧套餐使用
+`claudinio`；`claudius` 和模型目录属于积分套餐，因此在旧套餐上指定它们的请求由
+`claudinio` 处理。见[旧套餐](plans.md#legacy-plans)。
 
 ## 请求以 401 失败。
 

@@ -131,14 +131,13 @@ tiempo que esperar — los planes de créditos no tienen límite por hora.
 
 ### Planes antiguos: el límite por hora {#cap-alternative-response}
 
-Las cuentas que siguen en un plan fijo anterior (Essential, Pro, Ultra), hasta
-que termine el periodo pagado, conservan el límite por hora de ese plan. Ahí,
-agotar el límite devuelve `429` con una cabecera `Retry-After` que indica los
-segundos hasta que la ventana se reinicia; espera según esa cabecera en lugar
-de reintentar de inmediato. En un pequeño número de esas cuentas la solicitud
-se completa, en cambio, con una respuesta que dice que se alcanzó el tope — **si
-construyes automatización, no leas un `2xx` como "trabajo hecho"**; trata esa
-respuesta como el límite alcanzado.
+Las cuentas en un plan fijo anterior (Essential, Pro, Ultra) conservan el límite
+por hora de ese plan. Ahí, agotar el límite devuelve `429` con una cabecera
+`Retry-After` que indica los segundos hasta que la ventana se reinicia; espera
+según esa cabecera en lugar de reintentar de inmediato. En un pequeño número de
+esas cuentas la solicitud se completa, en cambio, con una respuesta que dice que
+se alcanzó el tope — **si construyes automatización, no leas un `2xx` como
+"trabajo hecho"**; trata esa respuesta como el límite alcanzado.
 
 ## Limitación de velocidad
 

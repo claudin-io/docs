@@ -163,13 +163,13 @@ há janela de tempo para esperar — planos de créditos não têm limite por ho
 
 ### Planos antigos: o limite por hora {#cap-alternative-response}
 
-Contas ainda em um plano fixo anterior (Essential, Pro, Ultra), até o fim do
-período pago, mantêm o limite por hora daquele plano. Ali, esgotar o limite
-retorna `429` com um header `Retry-After` indicando os segundos até a janela
-reiniciar; recue conforme esse header em vez de tentar de novo imediatamente. Em
-um pequeno número dessas contas a requisição em vez disso completa com uma
-resposta dizendo que o teto foi atingido — **se você constrói automação, não
-leia um `2xx` como "trabalho feito"**; trate essa resposta como o limite atingido.
+Contas em um plano fixo anterior (Essential, Pro, Ultra) mantêm o limite por
+hora daquele plano. Ali, esgotar o limite retorna `429` com um header
+`Retry-After` indicando os segundos até a janela reiniciar; recue conforme esse
+header em vez de tentar de novo imediatamente. Em um pequeno número dessas
+contas a requisição em vez disso completa com uma resposta dizendo que o teto
+foi atingido — **se você constrói automação, não leia um `2xx` como "trabalho
+feito"**; trate essa resposta como o limite atingido.
 
 ## Limitação de taxa
 

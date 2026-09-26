@@ -15,10 +15,11 @@ wallet. **Credits never expire, and there is no hourly cap.**
 | **Studio** | $199 / mo | 36,000 | Several agents, all day |
 | **Max** | $399 / mo | 72,000 | Production, teams, bots |
 
-Every plan includes every model: `claudinio`, `claudius` and the whole
+Every credit plan includes every model: `claudinio`, `claudius` and the whole
 [catalogue](#the-catalogue-pick-a-model-by-name). The plans differ only in how
 many credits arrive each month — and the larger the plan, the less each credit
-costs.
+costs. The earlier hourly plans run on `claudinio` — see
+[Legacy plans](#legacy-plans-essential-pro-ultra-with-an-hourly-cap).
 
 !!! tip "Which plan fits a month"
     A typical request on `claudinio` costs about one credit, measured on
@@ -74,7 +75,7 @@ short ones.
 | Model | What it is | Cost in credits | Included in |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | The model we tune, measure and cache for coding | 1× — about one credit a request | Every plan |
-| **claudius** ★ | Our premium option, for deep reasoning | up to 6x the claudinio credits (3× input, 4× output, 6× cache reads) | Every plan (Start, Solo, Pro, Studio, Max) |
+| **claudius** ★ | Our premium option, for deep reasoning | up to 6x the claudinio credits (3× input, 4× output, 6× cache reads) | Every credit plan (Start, Solo, Pro, Studio, Max) |
 
 **Our recommendation is `claudinio`.** It is the model every plan is built
 around: the one we tune the prompt for, the one every evaluation scored, and
@@ -130,9 +131,14 @@ before you get there, and we email you once when the balance runs low.
 
 ## Legacy plans (Essential, Pro, Ultra with an hourly cap)
 
-If you were on one of the earlier plans, it keeps working **exactly as before,
-with its hourly cap, until the end of the period you already paid for**. It
-does not renew after that. Monthly holders received a courtesy of credits —
-twice a month of the old plan at card value — to try the new system before
-choosing a plan; yearly holders keep their whole year and move to credits when
-it ends. Your API key does not change.
+The credit plans above are what new accounts sign up for. If you already
+subscribed to one of the earlier plans (Essential, Pro, Ultra), you keep it **exactly as before: same price, same hourly cap, and
+it keeps renewing normally**. You can still switch between Essential, Pro and
+Ultra from the [dashboard](https://claudin.io/dashboard), your API key does not
+change, and [top-ups](#top-ups) keep paying for use beyond the hourly cap, as
+they always did.
+
+The earlier hourly plans use `claudinio`. `claudius` and the
+[catalogue](#the-catalogue-pick-a-model-by-name) come with the credit plans: on
+an hourly plan, a request that names one of them is served by `claudinio` — it
+is not refused and returns no error.

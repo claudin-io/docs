@@ -98,10 +98,12 @@ có gì bị tính phí cho yêu cầu thất bại.
 
 ## Gói Essential / Pro / Ultra cũ của tôi thì sao?
 
-Nó tiếp tục chạy đúng như cũ, với giới hạn theo giờ của nó, đến hết kỳ đã
-thanh toán, và sau đó không gia hạn. Khách hàng theo tháng nhận tín dụng thiện
-chí để thử hệ thống mới; khách hàng theo năm giữ trọn năm và chuyển sang tín
-dụng khi kết thúc. Xem [Gói cũ](plans.md#legacy-plans).
+Nó tiếp tục chạy đúng như cũ: cùng giá, cùng giới hạn theo giờ, và vẫn gia hạn
+bình thường. Bạn vẫn có thể chuyển giữa Essential, Pro và Ultra từ bảng điều
+khiển, và khóa API của bạn không đổi. Các gói có giới hạn theo giờ dùng
+`claudinio`; `claudius` và danh mục mô hình đi kèm các gói tín dụng, nên trên gói
+có giới hạn theo giờ, yêu cầu nêu tên chúng sẽ được `claudinio` phục vụ. Xem
+[Gói cũ](plans.md#legacy-plans).
 
 ## Một yêu cầu thất bại với 401.
 

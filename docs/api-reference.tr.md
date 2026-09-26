@@ -169,14 +169,13 @@ kredi planlarının saatlik sınırı yoktur.
 
 ### Eski planlar: saatlik sınır {#cap-alternative-response}
 
-Ödenmiş dönemin sonuna kadar önceki sabit fiyatlı bir planda (Essential, Pro,
-Ultra) kalan hesaplar, o planın saatlik sınırını korur. Orada sınırın
-tükenmesi, pencerenin sıfırlanmasına kalan saniyeleri veren bir `Retry-After`
-başlığıyla `429` döndürür; hemen yeniden denemek yerine o başlığa göre
-bekleyin. Bu hesapların küçük bir kısmında istek, bunun yerine tavana
-ulaşıldığını söyleyen bir yanıtla tamamlanır — **otomasyon kuruyorsanız, bir
-`2xx`'i "iş bitti" olarak okumayın**; o yanıtı sınıra ulaşıldı olarak ele
-alın.
+Önceki sabit fiyatlı bir planda (Essential, Pro, Ultra) olan hesaplar, o planın
+saatlik sınırını korur. Orada sınırın tükenmesi, pencerenin sıfırlanmasına kalan
+saniyeleri veren bir `Retry-After` başlığıyla `429` döndürür; hemen yeniden
+denemek yerine o başlığa göre bekleyin. Bu hesapların küçük bir kısmında istek,
+bunun yerine tavana ulaşıldığını söyleyen bir yanıtla tamamlanır — **otomasyon
+kuruyorsanız, bir `2xx`'i "iş bitti" olarak okumayın**; o yanıtı sınıra ulaşıldı
+olarak ele alın.
 
 ## Hız sınırlama
 

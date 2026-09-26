@@ -132,15 +132,14 @@ Stundenlimit.
 
 ### Alte Pläne: das Stundenlimit {#cap-alternative-response}
 
-Konten, die bis zum Ende des bezahlten Zeitraums noch auf einem früheren
-Festpreis-Plan sind (Essential, Pro, Ultra), behalten das Stundenlimit dieses
-Plans. Dort gibt das Erschöpfen des Limits `429` mit einem `Retry-After`-Header
-zurück, der die Sekunden bis zum Zurücksetzen des Fensters angibt; warte gemäß
-diesem Header, statt sofort erneut zu versuchen. Bei einer kleinen Zahl dieser
-Konten wird die Anfrage stattdessen mit einer Antwort abgeschlossen, die sagt,
-dass die Obergrenze erreicht ist — **wenn du Automatisierung baust, lies ein
-`2xx` nicht als „Arbeit erledigt“**; behandle diese Antwort als erreichtes
-Limit.
+Konten auf einem früheren Festpreis-Plan (Essential, Pro, Ultra) behalten das
+Stundenlimit dieses Plans. Dort gibt das Erschöpfen des Limits `429` mit einem
+`Retry-After`-Header zurück, der die Sekunden bis zum Zurücksetzen des Fensters
+angibt; warte gemäß diesem Header, statt sofort erneut zu versuchen. Bei einer
+kleinen Zahl dieser Konten wird die Anfrage stattdessen mit einer Antwort
+abgeschlossen, die sagt, dass die Obergrenze erreicht ist — **wenn du
+Automatisierung baust, lies ein `2xx` nicht als „Arbeit erledigt“**; behandle
+diese Antwort als erreichtes Limit.
 
 ## Rate-Limiting
 

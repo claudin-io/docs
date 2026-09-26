@@ -15,9 +15,10 @@ asla sona ermez ve saatlik bir sınır yoktur.**
 | **Studio** | $199 / ay | 36.000 | Birden fazla ajan, tüm gün |
 | **Max** | $399 / ay | 72.000 | Üretim, ekipler, botlar |
 
-Her plan her modeli içerir: `claudinio`, `claudius` ve tüm
+Her kredi planı her modeli içerir: `claudinio`, `claudius` ve tüm
 [katalog](#catalogue). Planlar yalnızca her ay kaç kredi geldiğiyle ayrılır —
-ve plan büyüdükçe her kredi ucuzlar.
+ve plan büyüdükçe her kredi ucuzlar. Saatlik sınırlı eski planlar `claudinio`
+kullanır — bkz. [Eski planlar](#legacy-plans).
 
 !!! tip "Hangi plan ayınıza sığar"
     `claudinio` üzerinde tipik bir istek yaklaşık bir kredidir; binlerce gerçek
@@ -74,7 +75,7 @@ ucuzdur.
 | Model | Nedir | Kredi maliyeti | Dahil olduğu planlar |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Kod için ayarladığımız, ölçtüğümüz ve önbelleğe aldığımız model | 1× — istek başına yaklaşık bir kredi | Her plan |
-| **claudius** ★ | Derin akıl yürütme için premium seçeneğimiz | claudinio kredilerinin 6x katına kadar (3× girdi, 4× çıktı, 6× önbellek okuma) | Her plan (Start, Solo, Pro, Studio, Max) |
+| **claudius** ★ | Derin akıl yürütme için premium seçeneğimiz | claudinio kredilerinin 6x katına kadar (3× girdi, 4× çıktı, 6× önbellek okuma) | Her kredi planı (Start, Solo, Pro, Studio, Max) |
 
 **Önerimiz `claudinio`.** Her planın etrafında kurulduğu model: istemi onun
 için ayarlıyoruz, her değerlendirme onu puanladı ve bir kredi onunla en uzağa
@@ -131,9 +132,15 @@ uyarısını gösterir; bakiye düştüğünde size bir kez e-posta göndeririz.
 
 ## Eski planlar (saatlik sınırlı Essential, Pro, Ultra) {#legacy-plans}
 
-Önceki planlardan birindeyseniz, **ödenmiş dönemin sonuna kadar, saatlik
-sınırıyla birlikte tam olarak eskisi gibi** çalışmaya devam eder. Sonrasında
-yenilenmez. Aylık aboneler, bir plan seçmeden önce yeni sistemi denemeleri için
-kredi hediyesi aldı — eski planın liste değerinden iki ayı; yıllık aboneler
-tüm yıllarını korur ve yıl bittiğinde kredilere geçer. API anahtarınız
-değişmez.
+Yukarıdaki kredi planları yeni hesapların abone olduğu planlardır. Önceki
+planlardan birine (Essential, Pro, Ultra) zaten
+aboneyseniz, planınız **tam olarak eskisi gibi kalır: aynı fiyat, aynı saatlik
+sınır ve normal şekilde yenilenmeye devam eder**.
+[Panelden](https://claudin.io/dashboard) Essential, Pro ve Ultra arasında hâlâ
+geçiş yapabilirsiniz, API anahtarınız değişmez ve [yüklemeler](#top-ups) her
+zamanki gibi saatlik sınırın ötesindeki kullanımı karşılar.
+
+Saatlik sınırlı eski planlar `claudinio` kullanır. `claudius` ve
+[katalog](#catalogue) kredi planlarıyla gelir: saatlik sınırlı bir planda,
+bunlardan birini adlandıran bir istek `claudinio` tarafından karşılanır —
+reddedilmez ve hata döndürmez.

@@ -164,13 +164,13 @@ hora.
 
 ### Planos antigos: o limite por hora {#cap-alternative-response}
 
-As contas ainda num plano fixo anterior (Essential, Pro, Ultra), até ao fim do
-período pago, mantêm o limite por hora desse plano. Aí, esgotar o limite devolve
-`429` com um cabeçalho `Retry-After` a indicar os segundos até a janela
-reiniciar; recue conforme esse cabeçalho em vez de tentar de novo de imediato.
-Num pequeno número dessas contas o pedido completa-se, em vez disso, com uma
-resposta que diz que o teto foi atingido — **se constrói automação, não leia um
-`2xx` como "trabalho feito"**; trate essa resposta como o limite atingido.
+As contas num plano fixo anterior (Essential, Pro, Ultra) mantêm o limite por
+hora desse plano. Aí, esgotar o limite devolve `429` com um cabeçalho
+`Retry-After` a indicar os segundos até a janela reiniciar; recue conforme esse
+cabeçalho em vez de tentar de novo de imediato. Num pequeno número dessas contas
+o pedido completa-se, em vez disso, com uma resposta que diz que o teto foi
+atingido — **se constrói automação, não leia um `2xx` como "trabalho feito"**;
+trate essa resposta como o limite atingido.
 
 ## Rate limiting
 

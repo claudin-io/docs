@@ -15,10 +15,11 @@ portafoglio. **I crediti non scadono mai, e non c'è alcun limite orario.**
 | **Studio** | $199 / mese | 36.000 | Più agenti, tutto il giorno |
 | **Max** | $399 / mese | 72.000 | Produzione, team, bot |
 
-Ogni piano include ogni modello: `claudinio`, `claudius` e l'intero
+Ogni piano a crediti include ogni modello: `claudinio`, `claudius` e l'intero
 [catalogo](#il-catalogo-scegli-un-modello-per-nome). I piani differiscono solo
 per quanti crediti arrivano ogni mese — e più grande è il piano, meno costa ogni
-credito.
+credito. I piani precedenti con limite orario usano `claudinio` — vedi
+[Piani precedenti](#piani-precedenti-essential-pro-ultra-con-limite-orario).
 
 !!! tip "Quale piano contiene il tuo mese"
     Una richiesta tipica su `claudinio` costa circa un credito, misurato su
@@ -76,7 +77,7 @@ richiesta di quelle brevi.
 | Modello | Cos'è | Costo in crediti | Incluso in |
 | --- | --- | --- | --- |
 | **claudinio** 🏆 | Il modello che ottimizziamo, misuriamo e mettiamo in cache per il codice | 1× — circa un credito a richiesta | Ogni piano |
-| **claudius** ★ | La nostra opzione premium, per il ragionamento profondo | fino a 6x i crediti di claudinio (3× input, 4× output, 6× letture cache) | Ogni piano (Start, Solo, Pro, Studio, Max) |
+| **claudius** ★ | La nostra opzione premium, per il ragionamento profondo | fino a 6x i crediti di claudinio (3× input, 4× output, 6× letture cache) | Ogni piano a crediti (Start, Solo, Pro, Studio, Max) |
 
 **La nostra raccomandazione è `claudinio`.** È il modello attorno a cui è
 costruito ogni piano: quello per cui ottimizziamo il prompt, quello che ogni
@@ -133,9 +134,14 @@ prima che tu ci arrivi, e ti inviamo un'email una volta quando il saldo scende.
 
 ## Piani precedenti (Essential, Pro, Ultra con limite orario)
 
-Se eri su uno dei piani precedenti, continua a funzionare **esattamente come
-prima, con il suo limite orario, fino alla fine del periodo già pagato**. Non
-si rinnova dopo. Chi aveva un piano mensile ha ricevuto crediti in omaggio — due
-mesi del vecchio piano al valore di listino — per provare il nuovo sistema prima
-di scegliere un piano; chi aveva un piano annuale conserva l'intero anno e passa
-ai crediti quando finisce. La tua chiave API non cambia.
+I piani a crediti qui sopra sono quelli che sottoscrivono i nuovi account. Se
+eri già abbonato a uno dei piani precedenti (Essential, Pro, Ultra), lo mantieni **esattamente come prima: stesso prezzo, stesso limite
+orario, e continua a rinnovarsi normalmente**. Puoi ancora passare tra
+Essential, Pro e Ultra dalla [dashboard](https://claudin.io/dashboard), la tua
+chiave API non cambia e le [ricariche](#top-ups) continuano a pagare l'uso oltre
+il limite orario, come sempre.
+
+I piani precedenti con limite orario usano `claudinio`. `claudius` e il
+[catalogo](#il-catalogo-scegli-un-modello-per-nome) fanno parte dei piani a
+crediti: su un piano con limite orario, una richiesta che ne nomina uno viene
+servita da `claudinio` — non viene rifiutata e non restituisce errori.

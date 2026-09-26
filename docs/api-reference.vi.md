@@ -164,13 +164,12 @@ giới hạn theo giờ.
 
 ### Gói cũ: giới hạn theo giờ {#cap-alternative-response}
 
-Các tài khoản vẫn ở gói giá cố định trước đây (Essential, Pro, Ultra) đến hết
-kỳ đã thanh toán giữ giới hạn theo giờ của gói đó. Ở đó, giới hạn cạn sẽ trả
-về `429` với header `Retry-After` cho biết số giây đến khi cửa sổ đặt lại; hãy
-chờ theo header đó thay vì thử lại ngay. Trên một số ít tài khoản này, yêu cầu
-thay vào đó hoàn tất với một phản hồi nói rằng đã chạm giới hạn — **nếu bạn xây
-tự động hóa, đừng đọc `2xx` là "việc đã xong"**; hãy coi phản hồi đó là đã chạm
-giới hạn.
+Các tài khoản ở gói giá cố định trước đây (Essential, Pro, Ultra) giữ giới hạn
+theo giờ của gói đó. Ở đó, giới hạn cạn sẽ trả về `429` với header `Retry-After`
+cho biết số giây đến khi cửa sổ đặt lại; hãy chờ theo header đó thay vì thử lại
+ngay. Trên một số ít tài khoản này, yêu cầu thay vào đó hoàn tất với một phản
+hồi nói rằng đã chạm giới hạn — **nếu bạn xây tự động hóa, đừng đọc `2xx` là
+"việc đã xong"**; hãy coi phản hồi đó là đã chạm giới hạn.
 
 ## Giới hạn tốc độ
 

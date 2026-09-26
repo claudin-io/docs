@@ -104,11 +104,12 @@ und für die fehlgeschlagene Anfrage wurde nichts berechnet.
 
 ## Was passiert mit meinem alten Essential-/Pro-/Ultra-Plan?
 
-Er läuft genau wie bisher weiter, mit seinem Stundenlimit, bis zum Ende des
-bereits bezahlten Zeitraums, und verlängert sich danach nicht. Monatliche
-Abonnenten haben Credits als Aufmerksamkeit erhalten, um das neue System
-auszuprobieren; jährliche Abonnenten behalten ihr ganzes Jahr und wechseln an
-dessen Ende zu Credits. Siehe
+Er läuft genau wie bisher weiter: gleicher Preis, gleiches Stundenlimit, und er
+verlängert sich weiterhin ganz normal. Du kannst im Dashboard weiterhin zwischen
+Essential, Pro und Ultra wechseln, und dein API-Schlüssel ändert sich nicht. Die
+Pläne mit Stundenlimit nutzen `claudinio`; `claudius` und der Modellkatalog
+gehören zu den Credit-Plänen, daher wird auf einem Plan mit Stundenlimit eine
+Anfrage, die sie nennt, von `claudinio` bedient. Siehe
 [Alte Pläne](plans.md#alte-plane-essential-pro-ultra-mit-stundenlimit).
 
 ## Eine Anfrage ist mit 401 fehlgeschlagen.
