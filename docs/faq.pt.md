@@ -12,8 +12,9 @@ crédito. Sem factura por token, sem limite por hora.
 
 Só a sua carteira. Não há limite por hora, limite de sessão nem quota semanal —
 a única coisa que pára o seu agente é um saldo vazio, e um carregamento resolve
-isso de imediato. Os créditos que não usa ficam na carteira e nunca expiram.
-Veja [Planos e créditos](plans.md).
+isso de imediato. Os créditos do seu plano renovam-se todos os meses e não se
+acumulam; os créditos que compra em carregamentos nunca expiram. Veja
+[Planos e créditos](plans.md).
 
 ## Porquê créditos em vez de um preço fixo?
 
@@ -79,8 +80,9 @@ modelo os ver. Nada de especial a configurar.
 
 A partir do seu [painel](https://claudin.io/dashboard). Os upgrades aplicam-se
 imediatamente (via Stripe). Se cancelar, mantém o plano pago até ao fim do
-período que já pagou. Os créditos que já estão na carteira continuam seus e
-continuam a funcionar depois de o plano terminar.
+período que já pagou. Os créditos do plano terminam com esse período; os
+créditos que comprou em carregamentos ficam na carteira e continuam a funcionar
+depois de o plano terminar.
 
 ## Posso pedir um reembolso?
 

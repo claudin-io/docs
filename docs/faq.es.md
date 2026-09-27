@@ -12,7 +12,8 @@ cuesta alrededor de un crédito. Sin factura por token, sin límite por hora.
 
 Solo tu cartera. No hay límite por hora, ni límite de sesión, ni cuota semanal —
 lo único que detiene a tu agente es un saldo vacío, y una recarga lo arregla al
-instante. Los créditos que no usas se quedan en la cartera y nunca caducan. Ver
+instante. Los créditos de tu plan se renuevan cada mes y no se acumulan; los
+créditos que compras como recarga nunca caducan. Ver
 [Planes y créditos](plans.md).
 
 ## ¿Por qué créditos en lugar de un precio fijo?
@@ -80,8 +81,9 @@ transcripciones antes de que el modelo los vea. Nada especial que configurar.
 
 Desde tu [panel](https://claudin.io/dashboard). Las mejoras se aplican de
 inmediato (vía Stripe). Si cancelas, conservas tu plan pagado hasta el final del
-periodo que ya pagaste. Los créditos que ya están en la cartera siguen siendo
-tuyos y siguen funcionando cuando el plan termina.
+periodo que ya pagaste. Los créditos del plan terminan con ese periodo; los
+créditos que compraste como recarga se quedan en la cartera y siguen
+funcionando cuando el plan termina.
 
 ## ¿Puedo pedir un reembolso?
 

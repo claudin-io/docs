@@ -2,8 +2,9 @@
 
 Every Claudin.io plan is a **wallet of credits** that fills every month. A
 request costs credits for the tokens it used — about **one credit** for a
-typical coding request on `claudinio` — and what you don't spend stays in the
-wallet. **Credits never expire, and there is no hourly cap.**
+typical coding request on `claudinio`. **Your plan's credits renew every month
+— they are that month's allowance and do not accumulate. Credits you buy as
+top-ups never expire. There is no hourly cap.**
 
 ## The plans
 
@@ -38,8 +39,9 @@ wallet, instantly, on any plan:
 | $25 | 3,000 |
 | $50 | 6,000 |
 
-Top-up credits and plan credits are the same credits: they stack, they never
-expire, and every model spends them.
+Top-up credits land in the same wallet as your plan credits, and every model
+spends them. Requests spend the month's plan credits first; the top-up credits
+you bought are kept, and they never expire.
 
 ## Why credits (and no hourly cap)
 

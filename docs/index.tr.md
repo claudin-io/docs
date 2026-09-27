@@ -6,9 +6,9 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Fatura kaygısı olmadan kodlayın. Asla sona ermeyen krediler, saatlik sınır yok.
+# Fatura kaygısı olmadan kodlayın. Sınır değil, kredi.
 
-Claudin.io, yapay zekâ kodlama ajanları için bir API proxy'sidir. Bir **aylık plan** seçin, her ay dolan bir kredi cüzdanı alın ve istek başına yaklaşık bir krediyle harcayın — token başına fatura yok, saatlik sınır yok ve kullanmadığınız sizindir.
+Claudin.io, yapay zekâ kodlama ajanları için bir API proxy'sidir. Bir **aylık plan** seçin, her ay dolan bir kredi cüzdanı alın ve istek başına yaklaşık bir krediyle harcayın — token başına fatura yok, saatlik sınır yok. Planınızın kredileri her ay yenilenir — o ayın hakkıdır ve birikmez. Yükleme olarak satın aldığınız krediler asla sona ermez.
 
 </div>
 
@@ -42,7 +42,8 @@ Claudin.io, yapay zekâ kodlama ajanları için bir API proxy'sidir. Bir **aylı
     ---
 
     Bilinen sayıda kredi için sabit bir aylık fiyat. Ay sonunda faturada
-    sürpriz yok ve kullanılmayan krediler devreder — asla sona ermez.
+    sürpriz yok. Plan kredileri her faturayla yenilenir ve birikmez; yükleme
+    olarak satın aldığınız krediler asla sona ermez.
 
 -   :material-format-list-bulleted:{ .lg .middle } __Ayarladığımız bir model, seçmek istediğinizde bir katalog__
 

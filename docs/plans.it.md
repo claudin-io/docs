@@ -2,8 +2,10 @@
 
 Ogni piano Claudin.io è un **portafoglio di crediti** che si riempie ogni mese.
 Una richiesta costa crediti per i token che ha usato — circa **un credito** per
-una richiesta di codice tipica su `claudinio` — e ciò che non spendi resta nel
-portafoglio. **I crediti non scadono mai, e non c'è alcun limite orario.**
+una richiesta di codice tipica su `claudinio`. **I crediti del tuo piano si
+rinnovano ogni mese — sono la dotazione di quel mese e non si accumulano. I
+crediti che acquisti come ricarica non scadono mai. Non c'è alcun limite
+orario.**
 
 ## I piani
 
@@ -39,8 +41,9 @@ crediti allo stesso portafoglio, all'istante, su qualsiasi piano:
 | $25 | 3.000 |
 | $50 | 6.000 |
 
-I crediti di ricarica e quelli del piano sono gli stessi crediti: si sommano,
-non scadono mai e ogni modello li spende.
+I crediti di ricarica finiscono nello stesso portafoglio di quelli del piano, e
+ogni modello li spende. Le richieste consumano prima i crediti del piano del
+mese; i crediti di ricarica che hai acquistato restano e non scadono mai.
 
 ## Perché i crediti (e nessun limite orario)
 

@@ -2,8 +2,9 @@
 
 Her Claudin.io planı, her ay dolan bir **kredi cüzdanıdır**. Bir istek,
 kullandığı token kadar kredi harcar — `claudinio` üzerinde tipik bir kodlama
-isteği yaklaşık **bir kredi** — ve harcamadığınız cüzdanda kalır. **Krediler
-asla sona ermez ve saatlik bir sınır yoktur.**
+isteği yaklaşık **bir kredi**. **Planınızın kredileri her ay yenilenir — o
+ayın hakkıdır ve birikmez. Yükleme olarak satın aldığınız krediler asla sona
+ermez. Saatlik bir sınır yoktur.**
 
 ## Planlar
 
@@ -38,8 +39,9 @@ aynı cüzdana anında kredi ekler, her planda:
 | $25 | 3.000 |
 | $50 | 6.000 |
 
-Yükleme kredileri ve plan kredileri aynı kredilerdir: toplanırlar, asla sona
-ermezler ve her model onları harcar.
+Yükleme kredileri plan kredilerinizle aynı cüzdana girer ve her model onları
+harcar. İstekler önce o ayın plan kredilerini harcar; satın aldığınız yükleme
+kredileri korunur ve asla sona ermez.
 
 ## Neden krediler (ve neden saatlik sınır yok)
 

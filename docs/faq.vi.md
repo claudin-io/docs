@@ -12,7 +12,8 @@ theo token, không giới hạn theo giờ.
 
 Chỉ có ví của bạn. Không giới hạn theo giờ, giới hạn phiên hay hạn ngạch tuần —
 thứ duy nhất dừng agent của bạn là số dư trống, và một lần nạp thêm sửa nó
-ngay. Tín dụng bạn không dùng vẫn nằm trong ví và không bao giờ hết hạn. Xem
+ngay. Tín dụng của gói được làm mới mỗi tháng và không cộng dồn; tín dụng bạn
+mua qua nạp thêm không bao giờ hết hạn. Xem
 [Gói & tín dụng](plans.md).
 
 ## Vì sao là tín dụng thay vì giá cố định?
@@ -76,8 +77,8 @@ thấy chúng. Không cần cấu hình gì đặc biệt.
 
 Từ [bảng điều khiển](https://claudin.io/dashboard) của bạn. Nâng cấp có hiệu
 lực ngay (qua Stripe). Nếu hủy, bạn giữ gói đã trả đến hết kỳ đã thanh toán.
-Tín dụng đã có trong ví vẫn là của bạn và tiếp tục dùng được sau khi gói kết
-thúc.
+Tín dụng của gói kết thúc cùng kỳ đó; tín dụng bạn mua qua nạp thêm vẫn nằm
+trong ví và tiếp tục dùng được sau khi gói kết thúc.
 
 ## Tôi có thể được hoàn tiền không?
 

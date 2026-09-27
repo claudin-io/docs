@@ -2,8 +2,9 @@
 
 Todo plano Claudin.io é uma **carteira de créditos** que se enche todo mês. Uma
 requisição custa créditos pelos tokens que usou — cerca de **um crédito** para uma
-requisição típica de código no `claudinio` — e o que você não gasta fica na
-carteira. **Créditos nunca expiram, e não há limite por hora.**
+requisição típica de código no `claudinio`. **Os créditos do seu plano se
+renovam todo mês — são a cota daquele mês e não acumulam. Créditos que você
+compra como recarga nunca expiram. Não há limite por hora.**
 
 ## Os planos
 
@@ -38,8 +39,9 @@ mesma carteira, na hora, em qualquer plano:
 | $25 | 3.000 |
 | $50 | 6.000 |
 
-Créditos de recarga e créditos do plano são os mesmos créditos: acumulam, nunca
-expiram e todo modelo os gasta.
+Créditos de recarga caem na mesma carteira que os créditos do plano, e todo
+modelo os gasta. As requisições gastam primeiro os créditos do plano do mês; os
+créditos de recarga que você comprou ficam guardados e nunca expiram.
 
 ## Por que créditos (e sem limite por hora)
 

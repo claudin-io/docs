@@ -2,9 +2,10 @@
 
 Setiap paket Claudin.io adalah **dompet kredit** yang terisi ulang setiap bulan.
 Sebuah permintaan menghabiskan kredit sebanyak token yang dipakainya — sekitar
-**satu kredit** untuk permintaan coding biasa di `claudinio` — dan yang tidak
-Anda pakai tetap ada di dompet. **Kredit tidak pernah kedaluwarsa, dan tidak ada
-batas per jam.**
+**satu kredit** untuk permintaan coding biasa di `claudinio`. **Kredit paket
+Anda diperbarui setiap bulan — itu jatah bulan tersebut dan tidak menumpuk.
+Kredit yang Anda beli lewat top-up tidak pernah kedaluwarsa. Tidak ada batas per
+jam.**
 
 ## Paket
 
@@ -39,8 +40,9 @@ ke dompet yang sama seketika, di paket mana pun:
 | $25 | 3,000 |
 | $50 | 6,000 |
 
-Kredit top-up dan kredit paket adalah kredit yang sama: keduanya bertambah,
-tidak pernah kedaluwarsa, dan dipakai oleh setiap model.
+Kredit top-up masuk ke dompet yang sama dengan kredit paket Anda, dan dipakai
+oleh setiap model. Permintaan memakai kredit paket bulan itu lebih dulu; kredit
+top-up yang Anda beli tetap tersimpan dan tidak pernah kedaluwarsa.
 
 ## Mengapa kredit (dan tidak ada lagi batas per jam)
 

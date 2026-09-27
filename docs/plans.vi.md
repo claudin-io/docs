@@ -2,9 +2,9 @@
 
 Mỗi gói Claudin.io là một **ví tín dụng** được nạp lại hằng tháng. Một yêu cầu
 tiêu số tín dụng tương ứng với số token nó dùng — khoảng **một tín dụng** cho
-một yêu cầu lập trình thông thường trên `claudinio` — và phần bạn không dùng
-vẫn nằm trong ví. **Tín dụng không bao giờ hết hạn, và không có giới hạn theo
-giờ.**
+một yêu cầu lập trình thông thường trên `claudinio`. **Tín dụng của gói được
+làm mới mỗi tháng — đó là hạn mức của tháng đó và không cộng dồn. Tín dụng bạn
+mua qua nạp thêm không bao giờ hết hạn. Không có giới hạn theo giờ.**
 
 ## Các gói
 
@@ -39,8 +39,9 @@ một ví ngay lập tức, trên mọi gói:
 | $25 | 3,000 |
 | $50 | 6,000 |
 
-Tín dụng nạp thêm và tín dụng của gói là cùng một loại tín dụng: chúng cộng
-dồn, không bao giờ hết hạn, và mọi mô hình đều tiêu chúng.
+Tín dụng nạp thêm vào cùng một ví với tín dụng của gói, và mọi mô hình đều
+tiêu chúng. Yêu cầu tiêu tín dụng của gói trong tháng trước; tín dụng nạp thêm
+bạn đã mua được giữ lại và không bao giờ hết hạn.
 
 ## Vì sao là tín dụng (và không còn giới hạn theo giờ)
 

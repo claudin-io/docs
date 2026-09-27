@@ -6,9 +6,9 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Lập trình mà không lo hóa đơn. Tín dụng không bao giờ hết hạn, không giới hạn theo giờ.
+# Lập trình mà không lo hóa đơn. Tín dụng, không phải giới hạn.
 
-Claudin.io là một proxy API cho agent lập trình AI. Chọn một **gói hằng tháng**, nhận một ví tín dụng được nạp lại mỗi tháng, và tiêu khoảng một tín dụng mỗi yêu cầu — không tính phí theo token, không giới hạn theo giờ, và phần bạn không dùng vẫn là của bạn.
+Claudin.io là một proxy API cho agent lập trình AI. Chọn một **gói hằng tháng**, nhận một ví tín dụng được nạp lại mỗi tháng, và tiêu khoảng một tín dụng mỗi yêu cầu — không tính phí theo token, không giới hạn theo giờ. Tín dụng của gói được làm mới mỗi tháng — đó là hạn mức của tháng đó và không cộng dồn. Tín dụng bạn mua qua nạp thêm không bao giờ hết hạn.
 
 </div>
 
@@ -41,7 +41,8 @@ Claudin.io là một proxy API cho agent lập trình AI. Chọn một **gói h�
     ---
 
     Một giá tháng cố định cho một số tín dụng đã biết. Không bất ngờ hóa đơn
-    cuối tháng, và tín dụng chưa dùng được chuyển tiếp — không bao giờ hết hạn.
+    cuối tháng. Tín dụng của gói được làm mới theo mỗi hóa đơn và không cộng
+    dồn; tín dụng bạn mua qua nạp thêm không bao giờ hết hạn.
 
 -   :material-format-list-bulleted:{ .lg .middle } __Một mô hình chúng tôi tinh chỉnh, một danh mục khi bạn muốn chọn__
 

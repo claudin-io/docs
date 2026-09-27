@@ -12,8 +12,9 @@ einen Credit. Keine Rechnung pro Token, kein Stundenlimit.
 
 Nur dein Wallet. Es gibt kein Stundenlimit, kein Sitzungslimit und kein
 Wochenkontingent — das Einzige, was deinen Agenten stoppt, ist ein leerer
-Kontostand, und ein Top-up behebt das sofort. Credits, die du nicht nutzt,
-bleiben im Wallet und verfallen nie. Siehe [Pläne & Credits](plans.md).
+Kontostand, und ein Top-up behebt das sofort. Die Credits deines Plans
+erneuern sich jeden Monat und sammeln sich nicht an; Credits, die du als Top-up
+kaufst, verfallen nie. Siehe [Pläne & Credits](plans.md).
 
 ## Warum Credits statt Festpreis?
 
@@ -80,8 +81,9 @@ Modell sie sieht. Nichts Besonderes zu konfigurieren.
 
 Über dein [Dashboard](https://claudin.io/dashboard). Upgrades gelten sofort
 (über Stripe). Wenn du kündigst, behältst du deinen bezahlten Plan bis zum Ende
-des bereits bezahlten Zeitraums. Credits, die schon im Wallet sind, bleiben
-deine und funktionieren auch nach Planende weiter.
+des bereits bezahlten Zeitraums. Die Credits deines Plans enden mit diesem
+Zeitraum; Credits, die du als Top-up gekauft hast, bleiben im Wallet und
+funktionieren auch nach Planende weiter.
 
 ## Kann ich eine Rückerstattung bekommen?
 

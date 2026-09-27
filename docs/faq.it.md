@@ -12,8 +12,9 @@ fattura per token, nessun limite orario.
 
 Solo il tuo portafoglio. Non c'è limite orario, limite di sessione né quota
 settimanale — l'unica cosa che ferma il tuo agente è un saldo vuoto, e una
-ricarica lo risolve all'istante. I crediti che non usi restano nel portafoglio
-e non scadono mai. Vedi [Piani e crediti](plans.md).
+ricarica lo risolve all'istante. I crediti del tuo piano si rinnovano ogni mese
+e non si accumulano; i crediti che acquisti come ricarica non scadono mai. Vedi
+[Piani e crediti](plans.md).
 
 ## Perché crediti invece di un prezzo fisso?
 
@@ -80,8 +81,9 @@ il modello li veda. Niente di speciale da configurare.
 
 Dalla tua [dashboard](https://claudin.io/dashboard). Gli upgrade si applicano
 immediatamente (tramite Stripe). Se annulli, mantieni il piano pagato fino alla
-fine del periodo già pagato. I crediti già nel portafoglio restano tuoi e
-continuano a funzionare dopo la fine del piano.
+fine del periodo già pagato. I crediti del piano finiscono con quel periodo; i
+crediti acquistati come ricarica restano nel portafoglio e continuano a
+funzionare dopo la fine del piano.
 
 ## Posso ottenere un rimborso?
 

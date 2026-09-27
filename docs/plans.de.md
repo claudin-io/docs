@@ -2,8 +2,10 @@
 
 Jeder Claudin.io-Plan ist ein **Wallet mit Credits**, das sich jeden Monat füllt.
 Eine Anfrage kostet Credits für die verbrauchten Tokens — etwa **ein Credit**
-für eine typische Coding-Anfrage auf `claudinio` — und was du nicht ausgibst,
-bleibt im Wallet. **Credits verfallen nie, und es gibt kein Stundenlimit.**
+für eine typische Coding-Anfrage auf `claudinio`. **Die Credits deines Plans
+erneuern sich jeden Monat — sie sind das Kontingent dieses Monats und sammeln
+sich nicht an. Credits, die du als Top-up kaufst, verfallen nie. Es gibt kein
+Stundenlimit.**
 
 ## Die Pläne
 
@@ -39,8 +41,9 @@ Wallet sofort Credits hinzu, in jedem Plan:
 | $25 | 3.000 |
 | $50 | 6.000 |
 
-Top-up-Credits und Plan-Credits sind dieselben Credits: sie summieren sich,
-verfallen nie, und jedes Modell verbraucht sie.
+Top-up-Credits landen im selben Wallet wie deine Plan-Credits, und jedes
+Modell verbraucht sie. Anfragen verbrauchen zuerst die Plan-Credits des Monats;
+die gekauften Top-up-Credits bleiben erhalten und verfallen nie.
 
 ## Warum Credits (und kein Stundenlimit)
 

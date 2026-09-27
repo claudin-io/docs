@@ -6,9 +6,9 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Coden ohne Rechnungsangst. Credits, die nie verfallen, kein Stundenlimit.
+# Coden ohne Rechnungsangst. Credits statt Limits.
 
-Claudin.io ist ein API-Proxy für KI-Coding-Agenten. Wähle einen **Monatsplan**, bekomme ein Wallet mit Credits, das sich jeden Monat füllt, und gib sie mit etwa einem Credit pro Anfrage aus — keine Rechnung pro Token, kein Stundenlimit, und was du nicht nutzt, bleibt deins.
+Claudin.io ist ein API-Proxy für KI-Coding-Agenten. Wähle einen **Monatsplan**, bekomme ein Wallet mit Credits, das sich jeden Monat füllt, und gib sie mit etwa einem Credit pro Anfrage aus — keine Rechnung pro Token, kein Stundenlimit. Die Credits deines Plans erneuern sich jeden Monat — sie sind das Kontingent dieses Monats und sammeln sich nicht an. Credits, die du als Top-up kaufst, verfallen nie.
 
 </div>
 
@@ -41,8 +41,9 @@ Claudin.io ist ein API-Proxy für KI-Coding-Agenten. Wähle einen **Monatsplan**
     ---
 
     Ein fester Monatspreis für eine bekannte Anzahl Credits. Keine Überraschung
-    auf der Rechnung am Monatsende, und ungenutzte Credits werden übertragen —
-    sie verfallen nie.
+    auf der Rechnung am Monatsende. Plan-Credits erneuern sich mit jeder
+    Rechnung und sammeln sich nicht an; Credits, die du als Top-up kaufst,
+    verfallen nie.
 
 -   :material-format-list-bulleted:{ .lg .middle } __Ein Modell, das wir tunen, ein Katalog, wenn du wählen willst__
 

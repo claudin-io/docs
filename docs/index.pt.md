@@ -6,9 +6,9 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Programe sem ansiedade com a fatura. Créditos que nunca expiram, sem limite por hora.
+# Programe sem ansiedade com a fatura. Créditos, não limites.
 
-O Claudin.io é um proxy de API para agentes de programação com IA. Escolha um **plano mensal**, receba uma carteira de créditos que se enche todos os meses e gaste-os a cerca de um crédito por pedido — sem faturação por token, sem limite por hora, e o que não usa continua seu.
+O Claudin.io é um proxy de API para agentes de programação com IA. Escolha um **plano mensal**, receba uma carteira de créditos que se enche todos os meses e gaste-os a cerca de um crédito por pedido — sem faturação por token, sem limite por hora. Os créditos do seu plano renovam-se todos os meses — são a quota desse mês e não se acumulam. Os créditos que compra em carregamentos nunca expiram.
 
 </div>
 
@@ -41,7 +41,8 @@ O Claudin.io é um proxy de API para agentes de programação com IA. Escolha um
     ---
 
     Um preço mensal fixo por um número conhecido de créditos. Sem surpresas na
-    fatura ao fim do mês, e os créditos não usados transitam — nunca expiram.
+    fatura ao fim do mês. Os créditos do plano renovam-se a cada fatura e não
+    se acumulam; os créditos que compra em carregamentos nunca expiram.
 
 -   :material-format-list-bulleted:{ .lg .middle } __Um modelo que afinamos, um catálogo se quiser escolher__
 

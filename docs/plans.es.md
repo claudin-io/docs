@@ -2,8 +2,9 @@
 
 Cada plan de Claudin.io es una **cartera de créditos** que se llena cada mes. Una
 solicitud cuesta créditos por los tokens que usó — alrededor de **un crédito**
-para una solicitud típica de código en `claudinio` — y lo que no gastas se queda
-en la cartera. **Los créditos nunca caducan y no hay límite por hora.**
+para una solicitud típica de código en `claudinio`. **Los créditos de tu plan
+se renuevan cada mes — son la asignación de ese mes y no se acumulan. Los
+créditos que compras como recarga nunca caducan. No hay límite por hora.**
 
 ## Los planes
 
@@ -39,8 +40,9 @@ créditos a la misma cartera, al instante, en cualquier plan:
 | $25 | 3.000 |
 | $50 | 6.000 |
 
-Los créditos de recarga y los del plan son los mismos créditos: se acumulan,
-nunca caducan y todos los modelos los gastan.
+Los créditos de recarga entran en la misma cartera que los del plan, y todos los
+modelos los gastan. Las solicitudes gastan primero los créditos del plan del
+mes; los créditos de recarga que compraste se conservan y nunca caducan.
 
 ## Por qué créditos (y sin límite por hora)
 

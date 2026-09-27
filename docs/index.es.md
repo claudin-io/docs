@@ -6,12 +6,13 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Codifica sin ansiedad por la factura. Créditos que nunca caducan, sin límite por hora.
+# Codifica sin ansiedad por la factura. Créditos, no topes.
 
 Claudin.io es un proxy de API para agentes de codificación de IA. Elige un
 **plan mensual**, recibe una cartera de créditos que se llena cada mes y gástalos a
-alrededor de un crédito por solicitud — sin factura por token, sin límite por hora,
-y lo que no usas sigue siendo tuyo.
+alrededor de un crédito por solicitud — sin factura por token, sin límite por hora.
+Los créditos de tu plan se renuevan cada mes — son la asignación de ese mes y no
+se acumulan. Los créditos que compras como recarga nunca caducan.
 
 </div>
 
@@ -44,8 +45,8 @@ y lo que no usas sigue siendo tuyo.
     ---
 
     Un precio mensual fijo por un número conocido de créditos. Sin sorpresas en
-    la factura a fin de mes, y los créditos no usados se acumulan — nunca
-    caducan.
+    la factura a fin de mes. Los créditos del plan se renuevan con cada factura
+    y no se acumulan; los créditos que compras como recarga nunca caducan.
 
 -   :material-format-list-bulleted:{ .lg .middle } __Un modelo que afinamos, un catálogo si quieres elegir__
 

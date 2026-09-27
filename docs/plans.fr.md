@@ -2,9 +2,10 @@
 
 Chaque plan Claudin.io est un **portefeuille de crédits** qui se remplit chaque
 mois. Une requête coûte des crédits pour les tokens qu'elle a utilisés — environ
-**un crédit** pour une requête de code typique sur `claudinio` — et ce que vous
-ne dépensez pas reste dans le portefeuille. **Les crédits n'expirent jamais, et il
-n'y a pas de limite horaire.**
+**un crédit** pour une requête de code typique sur `claudinio`. **Les crédits de
+votre plan se renouvellent chaque mois — c'est l'enveloppe de ce mois-là, et ils
+ne s'accumulent pas. Les crédits que vous achetez en recharge n'expirent jamais.
+Il n'y a pas de limite horaire.**
 
 ## Les plans
 
@@ -41,8 +42,10 @@ même portefeuille, instantanément, sur n'importe quel plan :
 | $25 | 3 000 |
 | $50 | 6 000 |
 
-Les crédits de recharge et les crédits du plan sont les mêmes crédits : ils
-s'additionnent, n'expirent jamais et tous les modèles les dépensent.
+Les crédits de recharge arrivent dans le même portefeuille que les crédits du
+plan, et tous les modèles les dépensent. Les requêtes consomment d'abord les
+crédits du plan du mois ; les crédits de recharge que vous avez achetés sont
+conservés et n'expirent jamais.
 
 ## Pourquoi des crédits (et pas de limite horaire)
 

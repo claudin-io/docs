@@ -6,12 +6,13 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Code without bill anxiety. Credits that never expire, no hourly cap.
+# Code without bill anxiety. Credits, not caps.
 
 Claudin.io is an API proxy for AI coding agents. Pick a **monthly plan**, get
 a wallet of credits that fills every month, and spend them at about one credit
-per request — no per-token invoice, no hourly cap, and what you don't use stays
-yours.
+per request — no per-token invoice, no hourly cap. Your plan's credits renew
+every month — they are that month's allowance and do not accumulate. Credits
+you buy as top-ups never expire.
 
 </div>
 
@@ -44,7 +45,8 @@ yours.
     ---
 
     A fixed monthly price for a known number of credits. No surprise bills
-    at the end of the month, and unused credits roll over — they never expire.
+    at the end of the month. Plan credits renew with every invoice and do not
+    accumulate; credits you buy as top-ups never expire.
 
 -   :material-format-list-bulleted:{ .lg .middle } __One model we tune, a catalogue if you want to choose__
 

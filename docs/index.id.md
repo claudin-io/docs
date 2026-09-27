@@ -6,9 +6,9 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Coding tanpa cemas soal tagihan. Kredit yang tidak pernah kedaluwarsa, tanpa batas per jam.
+# Coding tanpa cemas soal tagihan. Kredit, bukan batas.
 
-Claudin.io adalah proxy API untuk agen coding AI. Pilih **paket bulanan**, dapatkan dompet kredit yang terisi ulang setiap bulan, dan pakai sekitar satu kredit per permintaan — tanpa tagihan per token, tanpa batas per jam, dan yang tidak Anda pakai tetap milik Anda.
+Claudin.io adalah proxy API untuk agen coding AI. Pilih **paket bulanan**, dapatkan dompet kredit yang terisi ulang setiap bulan, dan pakai sekitar satu kredit per permintaan — tanpa tagihan per token, tanpa batas per jam. Kredit paket Anda diperbarui setiap bulan — itu jatah bulan tersebut dan tidak menumpuk. Kredit yang Anda beli lewat top-up tidak pernah kedaluwarsa.
 
 </div>
 
@@ -42,8 +42,9 @@ Claudin.io adalah proxy API untuk agen coding AI. Pilih **paket bulanan**, dapat
     ---
 
     Satu harga bulanan tetap untuk sejumlah kredit yang diketahui. Tanpa
-    kejutan tagihan di akhir bulan, dan kredit yang tidak dipakai terbawa —
-    tidak pernah kedaluwarsa.
+    kejutan tagihan di akhir bulan. Kredit paket diperbarui di setiap tagihan
+    dan tidak menumpuk; kredit yang Anda beli lewat top-up tidak pernah
+    kedaluwarsa.
 
 -   :material-format-list-bulleted:{ .lg .middle } __Satu model yang kami tala, satu katalog saat Anda ingin memilih__
 

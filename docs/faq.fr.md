@@ -12,8 +12,9 @@ crédit. Pas de facture par token, pas de limite horaire.
 
 Seulement votre portefeuille. Il n'y a pas de limite horaire, pas de limite de
 session et pas de quota hebdomadaire — la seule chose qui arrête votre agent est
-un solde vide, et une recharge règle cela instantanément. Les crédits que vous
-n'utilisez pas restent dans le portefeuille et n'expirent jamais. Voir
+un solde vide, et une recharge règle cela instantanément. Les crédits de votre
+plan se renouvellent chaque mois et ne s'accumulent pas ; les crédits que vous
+achetez en recharge n'expirent jamais. Voir
 [Plans et crédits](plans.md).
 
 ## Pourquoi des crédits plutôt qu'un prix fixe ?
@@ -81,9 +82,9 @@ transcriptions avant que le modèle ne les voie. Rien de spécial à configurer.
 
 Depuis votre [tableau de bord](https://claudin.io/dashboard). Les mises à
 niveau s'appliquent immédiatement (via Stripe). Si vous annulez, vous gardez
-votre plan payé jusqu'à la fin de la période déjà payée. Les crédits déjà dans
-le portefeuille restent à vous et continuent de fonctionner après la fin du
-plan.
+votre plan payé jusqu'à la fin de la période déjà payée. Les crédits du plan
+prennent fin avec cette période ; les crédits achetés en recharge restent dans
+le portefeuille et continuent de fonctionner après la fin du plan.
 
 ## Puis-je obtenir un remboursement ?
 

@@ -12,7 +12,8 @@ Token başına fatura yok, saatlik sınır yok.
 
 Yalnızca cüzdanınız. Saatlik sınır, oturum sınırı veya haftalık kota yok —
 ajanınızı durduran tek şey boş bir bakiyedir ve bir yükleme bunu anında çözer.
-Kullanmadığınız krediler cüzdanda kalır ve asla sona ermez. Bkz.
+Planınızın kredileri her ay yenilenir ve birikmez; yükleme olarak satın
+aldığınız krediler asla sona ermez. Bkz.
 [Planlar ve krediler](plans.md).
 
 ## Neden sabit fiyat yerine krediler?
@@ -77,8 +78,9 @@ transkripsiyonlara dönüştürür. Yapılandırılacak özel bir şey yok.
 
 [Panelinizden](https://claudin.io/dashboard). Yükseltmeler anında uygulanır
 (Stripe üzerinden). İptal ederseniz ödenmiş planınızı ödenmiş dönemin sonuna
-kadar korursunuz. Cüzdanda zaten olan krediler sizindir ve plan bittikten
-sonra da çalışmaya devam eder.
+kadar korursunuz. Planınızın kredileri bu dönemle birlikte sona erer; yükleme
+olarak satın aldığınız krediler cüzdanda kalır ve plan bittikten sonra da
+çalışmaya devam eder.
 
 ## Geri ödeme alabilir miyim?
 

@@ -12,7 +12,7 @@ um crédito. Sem fatura por token, sem limite por hora.
 
 Só a sua carteira. Não há limite por hora, limite de sessão nem cota semanal — a
 única coisa que para o seu agente é um saldo vazio, e uma recarga resolve isso na
-hora. Créditos que você não usa ficam na carteira e nunca expiram. Veja
+hora. Os créditos do seu plano se renovam todo mês e não acumulam; créditos que você compra como recarga nunca expiram. Veja
 [Planos e créditos](plans.md).
 
 ## Por que créditos em vez de um preço fixo?
@@ -78,8 +78,9 @@ modelo vê-los. Nada especial para configurar.
 
 Pelo seu [painel de controle](https://claudin.io/dashboard). Upgrades são
 aplicados imediatamente (através do Stripe). Se você cancelar, mantém seu plano
-pago até o final do período que já pagou. Créditos que já estão na carteira
-continuam seus e continuam funcionando depois que o plano termina.
+pago até o final do período que já pagou. Os créditos do plano terminam com esse
+período; créditos que você comprou como recarga ficam na carteira e continuam
+funcionando depois que o plano termina.
 
 ## Posso pedir reembolso?
 

@@ -6,9 +6,9 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Codez sans angoisse de facturation. Des crédits qui n'expirent jamais, pas de limite horaire.
+# Codez sans angoisse de facturation. Des crédits, pas des plafonds.
 
-Claudin.io est un proxy API pour les agents de codage IA. Choisissez un **plan mensuel**, recevez un portefeuille de crédits qui se remplit chaque mois et dépensez-les à environ un crédit par requête — pas de facture par token, pas de limite horaire, et ce que vous n'utilisez pas reste à vous.
+Claudin.io est un proxy API pour les agents de codage IA. Choisissez un **plan mensuel**, recevez un portefeuille de crédits qui se remplit chaque mois et dépensez-les à environ un crédit par requête — pas de facture par token, pas de limite horaire. Les crédits de votre plan se renouvellent chaque mois — c'est l'enveloppe de ce mois-là, et ils ne s'accumulent pas. Les crédits que vous achetez en recharge n'expirent jamais.
 
 </div>
 
@@ -42,7 +42,8 @@ Claudin.io est un proxy API pour les agents de codage IA. Choisissez un **plan m
     ---
 
     Un prix mensuel fixe pour un nombre connu de crédits. Pas de surprise sur la
-    facture en fin de mois, et les crédits inutilisés sont reportés — ils
+    facture en fin de mois. Les crédits du plan se renouvellent à chaque facture
+    et ne s'accumulent pas ; les crédits que vous achetez en recharge
     n'expirent jamais.
 
 -   :material-format-list-bulleted:{ .lg .middle } __Un modèle que nous réglons, un catalogue si vous voulez choisir__

@@ -12,8 +12,9 @@ cap.
 
 Only your wallet. There is no hourly cap, no session limit and no weekly
 quota — the only thing that stops your agent is an empty balance, and a top-up
-fixes that instantly. Credits you don't use stay in the wallet and never
-expire. See [Plans & credits](plans.md).
+fixes that instantly. Your plan's credits renew every month and do not
+accumulate; credits you buy as top-ups never expire. See
+[Plans & credits](plans.md).
 
 ## Why credits instead of a flat price?
 
@@ -76,8 +77,8 @@ them. Nothing special to configure.
 
 From your [dashboard](https://claudin.io/dashboard). Upgrades apply immediately
 (via Stripe). If you cancel, you keep your paid plan until the end of the period
-you already paid for. Credits already in the wallet stay yours and keep
-working after the plan ends.
+you already paid for. Your plan's credits end with that period; credits you
+bought as top-ups stay in the wallet and keep working after the plan ends.
 
 ## Can I get a refund?
 

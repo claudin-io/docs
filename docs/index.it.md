@@ -6,9 +6,9 @@ hide:
 
 <div class="cl-hero" markdown>
 
-# Programma senza ansia da bolletta. Crediti che non scadono mai, nessun limite orario.
+# Programma senza ansia da bolletta. Crediti, non limiti.
 
-Claudin.io è un proxy API per agenti di codifica AI. Scegli un **piano mensile**, ricevi un portafoglio di crediti che si riempie ogni mese e spendili a circa un credito per richiesta — nessuna fattura per token, nessun limite orario, e ciò che non usi resta tuo.
+Claudin.io è un proxy API per agenti di codifica AI. Scegli un **piano mensile**, ricevi un portafoglio di crediti che si riempie ogni mese e spendili a circa un credito per richiesta — nessuna fattura per token, nessun limite orario. I crediti del tuo piano si rinnovano ogni mese — sono la dotazione di quel mese e non si accumulano. I crediti che acquisti come ricarica non scadono mai.
 
 </div>
 
@@ -41,7 +41,8 @@ Claudin.io è un proxy API per agenti di codifica AI. Scegli un **piano mensile*
     ---
 
     Un prezzo mensile fisso per un numero noto di crediti. Nessuna sorpresa in
-    bolletta a fine mese, e i crediti non usati si accumulano — non scadono mai.
+    bolletta a fine mese. I crediti del piano si rinnovano a ogni fattura e non
+    si accumulano; i crediti che acquisti come ricarica non scadono mai.
 
 -   :material-format-list-bulleted:{ .lg .middle } __Un modello che ottimizziamo, un catalogo se vuoi scegliere__
 

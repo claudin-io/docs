@@ -12,8 +12,8 @@ kredit. Tidak ada tagihan per token, tidak ada batas per jam.
 
 Hanya dompet Anda. Tidak ada batas per jam, batas sesi, atau kuota mingguan —
 satu-satunya yang menghentikan agen Anda adalah saldo kosong, dan satu top-up
-langsung memperbaikinya. Kredit yang tidak Anda pakai tetap di dompet dan tidak
-pernah kedaluwarsa. Lihat [Paket & kredit](plans.md).
+langsung memperbaikinya. Kredit paket Anda diperbarui setiap bulan dan tidak
+menumpuk; kredit yang Anda beli lewat top-up tidak pernah kedaluwarsa. Lihat [Paket & kredit](plans.md).
 
 ## Mengapa kredit, bukan harga tetap?
 
@@ -78,8 +78,9 @@ melihatnya. Tidak ada yang perlu dikonfigurasi khusus.
 
 Dari [dasbor](https://claudin.io/dashboard) Anda. Upgrade berlaku seketika
 (melalui Stripe). Jika membatalkan, paket berbayar Anda tetap berlaku sampai
-akhir periode yang sudah dibayar. Kredit yang sudah ada di dompet tetap milik
-Anda dan terus bekerja setelah paket berakhir.
+akhir periode yang sudah dibayar. Kredit paket Anda berakhir bersama periode
+itu; kredit yang Anda beli lewat top-up tetap di dompet dan terus bekerja
+setelah paket berakhir.
 
 ## Bisakah saya mendapat pengembalian dana?
 
