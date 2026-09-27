@@ -94,24 +94,27 @@ do `claudinio` em todos os eixos, então o preço se lê como um único número:
 
 | Id do modelo | Modelo | Fornecedor | Créditos vs `claudinio` |
 | --- | --- | --- | --- |
-| `qwen3-coder-flash` | Qwen3 Coder Flash | Qwen | 3× |
+| `deepseek-v4.1-flash` | DeepSeek V4.1 Flash | DeepSeek | 2× |
+| `mimo-v2.6-pro` | MiMo V2.6 Pro | Xiaomi | 2× |
+| `gpt-6-luna` | GPT-6 Luna | OpenAI | 2× |
+| `glm-5.3-flash` | GLM 5.3 Flash | Z.ai | 3× |
 | `minimax-m3` | MiniMax M3 | MiniMax | 5× |
-| `qwen3-coder-plus` | Qwen3 Coder Plus | Qwen | 10× |
-| `haiku-4.5` | Claude Haiku 4.5 | Anthropic | 11× |
-| `glm-5.3` | GLM 5.3 | Z.ai | 13× |
-| `kimi-k3` | Kimi K3 | Moonshot | 18× |
-| `sonnet-5` | Claude Sonnet 5 | Anthropic | 21× |
-| `gemini-3.1-pro` | Gemini 3.1 Pro | Google | 22× |
+| `gemini-3.8-flash` | Gemini 3.8 Flash | Google | 9× |
+| `glm-5.3` | GLM 5.3 | Z.ai | 20× |
+| `gpt-6-sol` | GPT-6 Sol | OpenAI | 23× |
+| `grok-4.7` | Grok 4.7 | xAI | 29× |
+| `kimi-k3` | Kimi K3 | Moonshot | 33× |
+| `opus-5.5` | Claude Opus 5.5 | Anthropic | 36× |
 
-Defina `model=sonnet-5` (ou qualquer id acima) no seu cliente e só aquela
+Defina `model=kimi-k3` (ou qualquer id acima) no seu cliente e só aquela
 requisição paga o múltiplo — o resto da sessão continua custando as taxas do
 `claudinio`. Todo modelo do catálogo está disponível em todo plano.
 
 !!! note "Por que ainda recomendamos o `claudinio`"
     O catálogo existe para o desenvolvedor que quer escolher, não porque alguma
     entrada mediu melhor para código. O `claudinio` é o modelo contra o qual
-    avaliamos, aquele em torno do qual o cache de prompt é construído e — a 3× a
-    22× menos por requisição — aquele em que seus créditos rendem mais. Recorra a
+    avaliamos, aquele em torno do qual o cache de prompt é construído e — a 2× a
+    36× menos por requisição — aquele em que seus créditos rendem mais. Recorra a
     um modelo do catálogo de forma deliberada, para a tarefa que precisa dele.
 
 > 💡 Dica: o `claudinio` também resolve os aliases que os agentes de código

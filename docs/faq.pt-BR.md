@@ -42,12 +42,12 @@ mais.
 ## Posso escolher outro modelo?
 
 Sim, pelo nome. O `claudius` é nossa opção premium, a até 6× os créditos. O
-[catálogo](plans.md#o-catalogo-escolha-um-modelo-pelo-nome) adiciona oito modelos
-de terceiros — Claude Sonnet 5 e Haiku 4.5, Gemini 3.1 Pro, Kimi K3, GLM 5.3,
-MiniMax M3, Qwen3 Coder — cada um com preço de múltiplo fixo dos créditos do
-`claudinio`, de 3× a 22×. Defina o id no seu cliente e só aquela requisição paga
-o múltiplo. Todo modelo está em todo plano; continuamos recomendando o
-`claudinio`.
+[catálogo](plans.md#o-catalogo-escolha-um-modelo-pelo-nome) adiciona onze
+modelos de terceiros — DeepSeek V4.1 Flash, MiMo V2.6 Pro, GPT-6 Luna e Sol, GLM
+5.3 e 5.3 Flash, MiniMax M3, Gemini 3.8 Flash, Grok 4.7, Kimi K3, Claude Opus
+5.5 — cada um com preço de múltiplo fixo dos créditos do `claudinio`, de 2× a
+36×. Defina o id no seu cliente e só aquela requisição paga o múltiplo. Todo
+modelo está em todo plano; continuamos recomendando o `claudinio`.
 
 ## Eu autentico com `Authorization` ou `x-api-key`?
 

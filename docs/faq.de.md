@@ -46,11 +46,11 @@ deine Credits am weitesten kommen.
 
 Ja, nach Namen. `claudius` ist unsere Premium-Option, mit bis zu 6× den
 Credits. Der [Katalog](plans.md#der-katalog-ein-modell-nach-namen-wahlen) fügt
-acht Drittanbieter-Modelle hinzu — Claude Sonnet 5 und Haiku 4.5, Gemini 3.1
-Pro, Kimi K3, GLM 5.3, MiniMax M3, Qwen3 Coder — jedes als festes Vielfaches
-der `claudinio`-Credits bepreist, von 3× bis 22×. Setze die ID in deinem
-Client, und nur diese Anfrage zahlt das Vielfache. Jedes Modell ist in jedem
-Plan; wir empfehlen weiterhin `claudinio`.
+elf Drittanbieter-Modelle hinzu — DeepSeek V4.1 Flash, MiMo V2.6 Pro, GPT-6 Luna
+und Sol, GLM 5.3 und 5.3 Flash, MiniMax M3, Gemini 3.8 Flash, Grok 4.7, Kimi K3,
+Claude Opus 5.5 — jedes als festes Vielfaches der `claudinio`-Credits bepreist,
+von 2× bis 36×. Setze die ID in deinem Client, und nur diese Anfrage zahlt das
+Vielfache. Jedes Modell ist in jedem Plan; wir empfehlen weiterhin `claudinio`.
 
 ## Authentifiziere ich mit `Authorization` oder `x-api-key`?
 

@@ -96,16 +96,19 @@ número:
 
 | Id do modelo | Modelo | Fornecedor | Créditos vs `claudinio` |
 | --- | --- | --- | --- |
-| `qwen3-coder-flash` | Qwen3 Coder Flash | Qwen | 3× |
+| `deepseek-v4.1-flash` | DeepSeek V4.1 Flash | DeepSeek | 2× |
+| `mimo-v2.6-pro` | MiMo V2.6 Pro | Xiaomi | 2× |
+| `gpt-6-luna` | GPT-6 Luna | OpenAI | 2× |
+| `glm-5.3-flash` | GLM 5.3 Flash | Z.ai | 3× |
 | `minimax-m3` | MiniMax M3 | MiniMax | 5× |
-| `qwen3-coder-plus` | Qwen3 Coder Plus | Qwen | 10× |
-| `haiku-4.5` | Claude Haiku 4.5 | Anthropic | 11× |
-| `glm-5.3` | GLM 5.3 | Z.ai | 13× |
-| `kimi-k3` | Kimi K3 | Moonshot | 18× |
-| `sonnet-5` | Claude Sonnet 5 | Anthropic | 21× |
-| `gemini-3.1-pro` | Gemini 3.1 Pro | Google | 22× |
+| `gemini-3.8-flash` | Gemini 3.8 Flash | Google | 9× |
+| `glm-5.3` | GLM 5.3 | Z.ai | 20× |
+| `gpt-6-sol` | GPT-6 Sol | OpenAI | 23× |
+| `grok-4.7` | Grok 4.7 | xAI | 29× |
+| `kimi-k3` | Kimi K3 | Moonshot | 33× |
+| `opus-5.5` | Claude Opus 5.5 | Anthropic | 36× |
 
-Defina `model=sonnet-5` (ou qualquer id acima) no seu cliente e só esse pedido
+Defina `model=kimi-k3` (ou qualquer id acima) no seu cliente e só esse pedido
 paga o múltiplo — o resto da sessão continua a custar as tarifas do `claudinio`.
 Todos os modelos do catálogo estão disponíveis em todos os planos.
 
@@ -113,7 +116,7 @@ Todos os modelos do catálogo estão disponíveis em todos os planos.
     O catálogo existe para o programador que quer escolher, não porque alguma
     entrada tenha medido melhor para código. O `claudinio` é o modelo contra o
     qual avaliamos, aquele em torno do qual a cache de prompt é construída e — a
-    3× a 22× menos por pedido — aquele em que os seus créditos rendem mais.
+    2× a 36× menos por pedido — aquele em que os seus créditos rendem mais.
     Recorra a um modelo do catálogo deliberadamente, para a tarefa que precisa
     dele.
 

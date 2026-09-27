@@ -96,24 +96,27 @@ không có tinh chỉnh Claudinio — và tiêu một bội số nguyên cố đ
 
 | ID mô hình | Mô hình | Nhà cung cấp | Tín dụng so với `claudinio` |
 | --- | --- | --- | --- |
-| `qwen3-coder-flash` | Qwen3 Coder Flash | Qwen | 3× |
+| `deepseek-v4.1-flash` | DeepSeek V4.1 Flash | DeepSeek | 2× |
+| `mimo-v2.6-pro` | MiMo V2.6 Pro | Xiaomi | 2× |
+| `gpt-6-luna` | GPT-6 Luna | OpenAI | 2× |
+| `glm-5.3-flash` | GLM 5.3 Flash | Z.ai | 3× |
 | `minimax-m3` | MiniMax M3 | MiniMax | 5× |
-| `qwen3-coder-plus` | Qwen3 Coder Plus | Qwen | 10× |
-| `haiku-4.5` | Claude Haiku 4.5 | Anthropic | 11× |
-| `glm-5.3` | GLM 5.3 | Z.ai | 13× |
-| `kimi-k3` | Kimi K3 | Moonshot | 18× |
-| `sonnet-5` | Claude Sonnet 5 | Anthropic | 21× |
-| `gemini-3.1-pro` | Gemini 3.1 Pro | Google | 22× |
+| `gemini-3.8-flash` | Gemini 3.8 Flash | Google | 9× |
+| `glm-5.3` | GLM 5.3 | Z.ai | 20× |
+| `gpt-6-sol` | GPT-6 Sol | OpenAI | 23× |
+| `grok-4.7` | Grok 4.7 | xAI | 29× |
+| `kimi-k3` | Kimi K3 | Moonshot | 33× |
+| `opus-5.5` | Claude Opus 5.5 | Anthropic | 36× |
 
-Đặt `model=sonnet-5` (hoặc bất kỳ ID nào ở trên) trong client của bạn, và chỉ
+Đặt `model=kimi-k3` (hoặc bất kỳ ID nào ở trên) trong client của bạn, và chỉ
 yêu cầu đó trả hệ số — phần còn lại của phiên vẫn chạy theo giá `claudinio`.
 Mọi mô hình danh mục đều có trên mọi gói.
 
 !!! note "Vì sao chúng tôi vẫn khuyến nghị `claudinio`"
     Danh mục tồn tại cho lập trình viên muốn tự chọn, không phải vì có mục nào
     đo được tốt hơn cho code. `claudinio` là mô hình chúng tôi đánh giá đối
-    chiếu, là nền của cache prompt, và — với chi phí mỗi yêu cầu thấp hơn 3×
-    đến 22× — là nơi tín dụng của bạn đi xa nhất. Hãy dùng mô hình danh mục
+    chiếu, là nền của cache prompt, và — với chi phí mỗi yêu cầu thấp hơn 2×
+    đến 36× — là nơi tín dụng của bạn đi xa nhất. Hãy dùng mô hình danh mục
     một cách có chủ đích, cho tác vụ thật sự cần nó.
 
 > 💡 Mẹo: `claudinio` cũng phân giải các bí danh mà agent lập trình gửi mặc

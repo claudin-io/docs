@@ -80,21 +80,24 @@
 
 | 模型 ID | 模型 | 供应商 | 相对 `claudinio` 的积分 |
 | --- | --- | --- | --- |
-| `qwen3-coder-flash` | Qwen3 Coder Flash | Qwen | 3× |
+| `deepseek-v4.1-flash` | DeepSeek V4.1 Flash | DeepSeek | 2× |
+| `mimo-v2.6-pro` | MiMo V2.6 Pro | Xiaomi | 2× |
+| `gpt-6-luna` | GPT-6 Luna | OpenAI | 2× |
+| `glm-5.3-flash` | GLM 5.3 Flash | Z.ai | 3× |
 | `minimax-m3` | MiniMax M3 | MiniMax | 5× |
-| `qwen3-coder-plus` | Qwen3 Coder Plus | Qwen | 10× |
-| `haiku-4.5` | Claude Haiku 4.5 | Anthropic | 11× |
-| `glm-5.3` | GLM 5.3 | Z.ai | 13× |
-| `kimi-k3` | Kimi K3 | Moonshot | 18× |
-| `sonnet-5` | Claude Sonnet 5 | Anthropic | 21× |
-| `gemini-3.1-pro` | Gemini 3.1 Pro | Google | 22× |
+| `gemini-3.8-flash` | Gemini 3.8 Flash | Google | 9× |
+| `glm-5.3` | GLM 5.3 | Z.ai | 20× |
+| `gpt-6-sol` | GPT-6 Sol | OpenAI | 23× |
+| `grok-4.7` | Grok 4.7 | xAI | 29× |
+| `kimi-k3` | Kimi K3 | Moonshot | 33× |
+| `opus-5.5` | Claude Opus 5.5 | Anthropic | 36× |
 
-在客户端中设置 `model=sonnet-5`（或上面任意 ID），只有那一次请求按倍数付费 — 会话的
+在客户端中设置 `model=kimi-k3`（或上面任意 ID），只有那一次请求按倍数付费 — 会话的
 其余部分仍按 `claudinio` 费率计费。每个目录模型在每个套餐上都可用。
 
 !!! note "为什么我们仍然推荐 `claudinio`"
     目录是为想要选择的开发者准备的，并不是因为哪个条目在代码上测得更好。`claudinio`
-    是我们评测的基准模型、提示缓存围绕它构建的模型，而且 — 每次请求便宜 3× 到 22× —
+    是我们评测的基准模型、提示缓存围绕它构建的模型，而且 — 每次请求便宜 2× 到 36× —
     是你的积分走得最远的模型。有意识地、为需要它的任务选用目录模型。
 
 > 💡 提示：`claudinio` 还会解析编程代理默认发送的别名 — `claude-sonnet-4`、

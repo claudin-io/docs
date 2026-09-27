@@ -91,23 +91,26 @@
 
 | 모델 ID | 모델 | 공급자 | `claudinio` 대비 크레딧 |
 | --- | --- | --- | --- |
-| `qwen3-coder-flash` | Qwen3 Coder Flash | Qwen | 3× |
+| `deepseek-v4.1-flash` | DeepSeek V4.1 Flash | DeepSeek | 2× |
+| `mimo-v2.6-pro` | MiMo V2.6 Pro | Xiaomi | 2× |
+| `gpt-6-luna` | GPT-6 Luna | OpenAI | 2× |
+| `glm-5.3-flash` | GLM 5.3 Flash | Z.ai | 3× |
 | `minimax-m3` | MiniMax M3 | MiniMax | 5× |
-| `qwen3-coder-plus` | Qwen3 Coder Plus | Qwen | 10× |
-| `haiku-4.5` | Claude Haiku 4.5 | Anthropic | 11× |
-| `glm-5.3` | GLM 5.3 | Z.ai | 13× |
-| `kimi-k3` | Kimi K3 | Moonshot | 18× |
-| `sonnet-5` | Claude Sonnet 5 | Anthropic | 21× |
-| `gemini-3.1-pro` | Gemini 3.1 Pro | Google | 22× |
+| `gemini-3.8-flash` | Gemini 3.8 Flash | Google | 9× |
+| `glm-5.3` | GLM 5.3 | Z.ai | 20× |
+| `gpt-6-sol` | GPT-6 Sol | OpenAI | 23× |
+| `grok-4.7` | Grok 4.7 | xAI | 29× |
+| `kimi-k3` | Kimi K3 | Moonshot | 33× |
+| `opus-5.5` | Claude Opus 5.5 | Anthropic | 36× |
 
-클라이언트에서 `model=sonnet-5`(또는 위의 아무 ID)를 설정하면 그 요청만 배수를
+클라이언트에서 `model=kimi-k3`(또는 위의 아무 ID)를 설정하면 그 요청만 배수를
 지불합니다 — 세션의 나머지는 계속 `claudinio` 요율입니다. 모든 카탈로그 모델은
 모든 요금제에서 사용할 수 있습니다.
 
 !!! note "그래도 `claudinio`를 추천하는 이유"
     카탈로그는 선택하고 싶은 개발자를 위해 존재하는 것이지, 어떤 항목이 코드에서 더
     좋게 측정되어서가 아닙니다. `claudinio`는 저희가 평가 기준으로 삼는 모델이고,
-    프롬프트 캐시가 그 주위에 만들어진 모델이며, 요청당 3×에서 22× 저렴하므로
+    프롬프트 캐시가 그 주위에 만들어진 모델이며, 요청당 2×에서 36× 저렴하므로
     크레딧이 가장 멀리 가는 모델입니다. 카탈로그 모델은 그것이 필요한 작업을 위해
     의도적으로 선택하세요.
 

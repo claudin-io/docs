@@ -92,23 +92,26 @@ Claudinio ट्यूनिंग नहीं — और हर अक्ष �
 
 | मॉडल आईडी | मॉडल | प्रदाता | `claudinio` की तुलना में क्रेडिट |
 | --- | --- | --- | --- |
-| `qwen3-coder-flash` | Qwen3 Coder Flash | Qwen | 3× |
+| `deepseek-v4.1-flash` | DeepSeek V4.1 Flash | DeepSeek | 2× |
+| `mimo-v2.6-pro` | MiMo V2.6 Pro | Xiaomi | 2× |
+| `gpt-6-luna` | GPT-6 Luna | OpenAI | 2× |
+| `glm-5.3-flash` | GLM 5.3 Flash | Z.ai | 3× |
 | `minimax-m3` | MiniMax M3 | MiniMax | 5× |
-| `qwen3-coder-plus` | Qwen3 Coder Plus | Qwen | 10× |
-| `haiku-4.5` | Claude Haiku 4.5 | Anthropic | 11× |
-| `glm-5.3` | GLM 5.3 | Z.ai | 13× |
-| `kimi-k3` | Kimi K3 | Moonshot | 18× |
-| `sonnet-5` | Claude Sonnet 5 | Anthropic | 21× |
-| `gemini-3.1-pro` | Gemini 3.1 Pro | Google | 22× |
+| `gemini-3.8-flash` | Gemini 3.8 Flash | Google | 9× |
+| `glm-5.3` | GLM 5.3 | Z.ai | 20× |
+| `gpt-6-sol` | GPT-6 Sol | OpenAI | 23× |
+| `grok-4.7` | Grok 4.7 | xAI | 29× |
+| `kimi-k3` | Kimi K3 | Moonshot | 33× |
+| `opus-5.5` | Claude Opus 5.5 | Anthropic | 36× |
 
-अपने क्लाइंट में `model=sonnet-5` (या ऊपर की कोई भी आईडी) सेट करें, और केवल वही
+अपने क्लाइंट में `model=kimi-k3` (या ऊपर की कोई भी आईडी) सेट करें, और केवल वही
 अनुरोध गुणक चुकाता है — आपके सत्र का बाकी हिस्सा `claudinio` दरों पर ही चलता
 है। हर कैटलॉग मॉडल हर योजना पर उपलब्ध है।
 
 !!! note "हम अब भी `claudinio` की सिफ़ारिश क्यों करते हैं"
     कैटलॉग उस डेवलपर के लिए है जो चुनना चाहता है, इसलिए नहीं कि कोई प्रविष्टि
     कोड पर बेहतर मापी गई। `claudinio` वह मॉडल है जिसके विरुद्ध हम मूल्यांकन करते
-    हैं, जिसके चारों ओर प्रॉम्प्ट कैश बना है, और — प्रति अनुरोध 3× से 22× कम पर
+    हैं, जिसके चारों ओर प्रॉम्प्ट कैश बना है, और — प्रति अनुरोध 2× से 36× कम पर
     — वह जिस पर आपके क्रेडिट सबसे दूर जाते हैं। कैटलॉग मॉडल तक जान-बूझकर पहुंचें,
     उस काम के लिए जिसे उसकी ज़रूरत है।
 

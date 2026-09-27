@@ -35,9 +35,10 @@ API 兼容 OpenAI，所以技术上任何请求都能用。但这个服务是为
 ## 可以选择别的模型吗？
 
 可以，按名称选。`claudius` 是我们的高级选项，最多 6× 积分。
-[目录](plans.md#catalogue)增加了八个第三方模型 — Claude Sonnet 5 和 Haiku 4.5、
-Gemini 3.1 Pro、Kimi K3、GLM 5.3、MiniMax M3、Qwen3 Coder — 每个都按 `claudinio`
-积分的固定倍数计价，从 3× 到 22×。在客户端设置 ID，只有那一次请求按倍数付费。
+[目录](plans.md#catalogue)增加了十一个第三方模型 — DeepSeek V4.1 Flash、
+MiMo V2.6 Pro、GPT-6 Luna 和 Sol、GLM 5.3 和 5.3 Flash、MiniMax M3、
+Gemini 3.8 Flash、Grok 4.7、Kimi K3、Claude Opus 5.5 — 每个都按 `claudinio`
+积分的固定倍数计价，从 2× 到 36×。在客户端设置 ID，只有那一次请求按倍数付费。
 每个模型在每个套餐上都有；我们仍然推荐 `claudinio`。
 
 ## 用 `Authorization` 还是 `x-api-key` 认证？

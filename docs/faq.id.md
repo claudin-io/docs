@@ -42,12 +42,12 @@ berjalan paling jauh.
 ## Bisakah saya memilih model lain?
 
 Ya, berdasarkan nama. `claudius` adalah opsi premium kami, hingga 6× kredit.
-[Katalog](plans.md#catalogue) menambahkan delapan model pihak ketiga — Claude
-Sonnet 5 dan Haiku 4.5, Gemini 3.1 Pro, Kimi K3, GLM 5.3, MiniMax M3, Qwen3
-Coder — masing-masing dihargai sebagai kelipatan tetap dari kredit `claudinio`,
-dari 3× hingga 22×. Setel ID-nya di klien Anda dan hanya permintaan itu yang
-membayar pengalinya. Setiap model ada di setiap paket; kami tetap
-merekomendasikan `claudinio`.
+[Katalog](plans.md#catalogue) menambahkan sebelas model pihak ketiga — DeepSeek
+V4.1 Flash, MiMo V2.6 Pro, GPT-6 Luna dan Sol, GLM 5.3 dan 5.3 Flash, MiniMax
+M3, Gemini 3.8 Flash, Grok 4.7, Kimi K3, Claude Opus 5.5 — masing-masing
+dihargai sebagai kelipatan tetap dari kredit `claudinio`, dari 2× hingga 36×.
+Setel ID-nya di klien Anda dan hanya permintaan itu yang membayar pengalinya.
+Setiap model ada di setiap paket; kami tetap merekomendasikan `claudinio`.
 
 ## Autentikasi dengan `Authorization` atau `x-api-key`?
 

@@ -93,23 +93,26 @@ Claudinio ٹیوننگ نہیں — اور ہر محور پر `claudinio` کری
 
 | ماڈل آئی ڈی | ماڈل | فراہم کنندہ | `claudinio` کے مقابلے میں کریڈٹس |
 | --- | --- | --- | --- |
-| `qwen3-coder-flash` | Qwen3 Coder Flash | Qwen | 3× |
+| `deepseek-v4.1-flash` | DeepSeek V4.1 Flash | DeepSeek | 2× |
+| `mimo-v2.6-pro` | MiMo V2.6 Pro | Xiaomi | 2× |
+| `gpt-6-luna` | GPT-6 Luna | OpenAI | 2× |
+| `glm-5.3-flash` | GLM 5.3 Flash | Z.ai | 3× |
 | `minimax-m3` | MiniMax M3 | MiniMax | 5× |
-| `qwen3-coder-plus` | Qwen3 Coder Plus | Qwen | 10× |
-| `haiku-4.5` | Claude Haiku 4.5 | Anthropic | 11× |
-| `glm-5.3` | GLM 5.3 | Z.ai | 13× |
-| `kimi-k3` | Kimi K3 | Moonshot | 18× |
-| `sonnet-5` | Claude Sonnet 5 | Anthropic | 21× |
-| `gemini-3.1-pro` | Gemini 3.1 Pro | Google | 22× |
+| `gemini-3.8-flash` | Gemini 3.8 Flash | Google | 9× |
+| `glm-5.3` | GLM 5.3 | Z.ai | 20× |
+| `gpt-6-sol` | GPT-6 Sol | OpenAI | 23× |
+| `grok-4.7` | Grok 4.7 | xAI | 29× |
+| `kimi-k3` | Kimi K3 | Moonshot | 33× |
+| `opus-5.5` | Claude Opus 5.5 | Anthropic | 36× |
 
-اپنے کلائنٹ میں `model=sonnet-5` (یا اوپر کی کوئی بھی آئی ڈی) سیٹ کریں، اور صرف
+اپنے کلائنٹ میں `model=kimi-k3` (یا اوپر کی کوئی بھی آئی ڈی) سیٹ کریں، اور صرف
 وہی درخواست ضرب ادا کرتی ہے — آپ کے سیشن کا باقی حصہ `claudinio` نرخوں پر ہی
 چلتا ہے۔ ہر کیٹلاگ ماڈل ہر منصوبے پر دستیاب ہے۔
 
 !!! note "ہم اب بھی `claudinio` کی سفارش کیوں کرتے ہیں"
     کیٹلاگ اس ڈویلپر کے لیے ہے جو چننا چاہتا ہے، اس لیے نہیں کہ کوئی اندراج کوڈ
     پر بہتر ناپا گیا۔ `claudinio` وہ ماڈل ہے جس کے خلاف ہم جانچ کرتے ہیں، جس کے
-    گرد پرامپٹ کیش بنا ہے، اور — فی درخواست 3× سے 22× کم پر — وہ جس پر آپ کے
+    گرد پرامپٹ کیش بنا ہے، اور — فی درخواست 2× سے 36× کم پر — وہ جس پر آپ کے
     کریڈٹس سب سے دور جاتے ہیں۔ کیٹلاگ ماڈل تک جان بوجھ کر پہنچیں، اس کام کے لیے
     جسے اس کی ضرورت ہے۔
 

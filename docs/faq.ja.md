@@ -42,9 +42,10 @@ APIはOpenAI互換なので、技術的にはどんなリクエストでも動�
 ## 別のモデルを選べますか？
 
 はい、名前で指定できます。`claudius` はプレミアムオプションで、最大6×の
-クレジットです。[カタログ](plans.md#catalogue)にはサードパーティのモデルが8つ
-あります — Claude Sonnet 5とHaiku 4.5、Gemini 3.1 Pro、Kimi K3、GLM 5.3、
-MiniMax M3、Qwen3 Coder — それぞれ `claudinio` クレジットの固定倍率（3×〜22×）で
+クレジットです。[カタログ](plans.md#catalogue)にはサードパーティのモデルが11種類
+あります — DeepSeek V4.1 Flash、MiMo V2.6 Pro、GPT-6 LunaとSol、GLM 5.3と
+5.3 Flash、MiniMax M3、Gemini 3.8 Flash、Grok 4.7、Kimi K3、Claude Opus 5.5
+— それぞれ `claudinio` クレジットの固定倍率（2×〜36×）で
 価格設定されています。クライアントでIDを設定すると、そのリクエストだけが倍率を
 支払います。すべてのモデルはすべてのプランにあります。それでもおすすめは
 `claudinio` です。

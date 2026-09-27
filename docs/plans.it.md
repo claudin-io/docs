@@ -98,16 +98,19 @@ crediti `claudinio` su ogni asse, così il prezzo si legge come un solo numero:
 
 | Id modello | Modello | Fornitore | Crediti vs `claudinio` |
 | --- | --- | --- | --- |
-| `qwen3-coder-flash` | Qwen3 Coder Flash | Qwen | 3× |
+| `deepseek-v4.1-flash` | DeepSeek V4.1 Flash | DeepSeek | 2× |
+| `mimo-v2.6-pro` | MiMo V2.6 Pro | Xiaomi | 2× |
+| `gpt-6-luna` | GPT-6 Luna | OpenAI | 2× |
+| `glm-5.3-flash` | GLM 5.3 Flash | Z.ai | 3× |
 | `minimax-m3` | MiniMax M3 | MiniMax | 5× |
-| `qwen3-coder-plus` | Qwen3 Coder Plus | Qwen | 10× |
-| `haiku-4.5` | Claude Haiku 4.5 | Anthropic | 11× |
-| `glm-5.3` | GLM 5.3 | Z.ai | 13× |
-| `kimi-k3` | Kimi K3 | Moonshot | 18× |
-| `sonnet-5` | Claude Sonnet 5 | Anthropic | 21× |
-| `gemini-3.1-pro` | Gemini 3.1 Pro | Google | 22× |
+| `gemini-3.8-flash` | Gemini 3.8 Flash | Google | 9× |
+| `glm-5.3` | GLM 5.3 | Z.ai | 20× |
+| `gpt-6-sol` | GPT-6 Sol | OpenAI | 23× |
+| `grok-4.7` | Grok 4.7 | xAI | 29× |
+| `kimi-k3` | Kimi K3 | Moonshot | 33× |
+| `opus-5.5` | Claude Opus 5.5 | Anthropic | 36× |
 
-Imposta `model=sonnet-5` (o qualsiasi id sopra) nel tuo client e solo quella
+Imposta `model=kimi-k3` (o qualsiasi id sopra) nel tuo client e solo quella
 richiesta paga il multiplo — il resto della sessione continua a costare le
 tariffe `claudinio`. Ogni modello del catalogo è disponibile su ogni piano.
 
@@ -115,7 +118,7 @@ tariffe `claudinio`. Ogni modello del catalogo è disponibile su ogni piano.
     Il catalogo esiste per lo sviluppatore che vuole scegliere, non perché una
     voce abbia misurato meglio per il codice. `claudinio` è il modello contro
     cui valutiamo, quello attorno a cui è costruita la cache dei prompt e — a
-    3× fino a 22× in meno per richiesta — quello con cui i tuoi crediti vanno
+    2× fino a 36× in meno per richiesta — quello con cui i tuoi crediti vanno
     più lontano. Ricorri a un modello del catalogo in modo deliberato, per
     l'attività che ne ha bisogno.
 

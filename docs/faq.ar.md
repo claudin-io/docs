@@ -36,11 +36,11 @@
 ## هل يمكنني اختيار نموذج آخر؟
 
 نعم، بالاسم. `claudius` هو خيارنا المتميّز، حتى 6× الرصيد.
-[الكتالوج](plans.md#catalogue) يضيف ثمانية نماذج من أطراف ثالثة — Claude Sonnet
-5 وHaiku 4.5 وGemini 3.1 Pro وKimi K3 وGLM 5.3 وMiniMax M3 وQwen3 Coder — كلٌّ
-مسعّر كمضاعف ثابت من رصيد `claudinio`، من 3× إلى 22×. اضبط المعرّف في عميلك
-وذلك الطلب وحده يدفع المضاعف. كل نموذج في كل خطة؛ وما زلنا نوصي بـ
-`claudinio`.
+[الكتالوج](plans.md#catalogue) يضيف أحد عشر نموذجًا من أطراف ثالثة — DeepSeek
+V4.1 Flash وMiMo V2.6 Pro وGPT-6 Luna وSol وGLM 5.3 و5.3 Flash وMiniMax M3
+وGemini 3.8 Flash وGrok 4.7 وKimi K3 وClaude Opus 5.5 — كلٌّ مسعّر كمضاعف ثابت
+من رصيد `claudinio`، من 2× إلى 36×. اضبط المعرّف في عميلك وذلك الطلب وحده يدفع
+المضاعف. كل نموذج في كل خطة؛ وما زلنا نوصي بـ `claudinio`.
 
 ## هل أُصادق عبر `Authorization` أم `x-api-key`؟
 

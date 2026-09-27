@@ -91,23 +91,26 @@ Claudinio টিউনিং নেই — আর প্রতিটি অক�
 
 | মডেল আইডি | মডেল | প্রোভাইডার | `claudinio`-র তুলনায় ক্রেডিট |
 | --- | --- | --- | --- |
-| `qwen3-coder-flash` | Qwen3 Coder Flash | Qwen | 3× |
+| `deepseek-v4.1-flash` | DeepSeek V4.1 Flash | DeepSeek | 2× |
+| `mimo-v2.6-pro` | MiMo V2.6 Pro | Xiaomi | 2× |
+| `gpt-6-luna` | GPT-6 Luna | OpenAI | 2× |
+| `glm-5.3-flash` | GLM 5.3 Flash | Z.ai | 3× |
 | `minimax-m3` | MiniMax M3 | MiniMax | 5× |
-| `qwen3-coder-plus` | Qwen3 Coder Plus | Qwen | 10× |
-| `haiku-4.5` | Claude Haiku 4.5 | Anthropic | 11× |
-| `glm-5.3` | GLM 5.3 | Z.ai | 13× |
-| `kimi-k3` | Kimi K3 | Moonshot | 18× |
-| `sonnet-5` | Claude Sonnet 5 | Anthropic | 21× |
-| `gemini-3.1-pro` | Gemini 3.1 Pro | Google | 22× |
+| `gemini-3.8-flash` | Gemini 3.8 Flash | Google | 9× |
+| `glm-5.3` | GLM 5.3 | Z.ai | 20× |
+| `gpt-6-sol` | GPT-6 Sol | OpenAI | 23× |
+| `grok-4.7` | Grok 4.7 | xAI | 29× |
+| `kimi-k3` | Kimi K3 | Moonshot | 33× |
+| `opus-5.5` | Claude Opus 5.5 | Anthropic | 36× |
 
-আপনার ক্লায়েন্টে `model=sonnet-5` (বা উপরের যেকোনো আইডি) সেট করুন, আর শুধু সেই
+আপনার ক্লায়েন্টে `model=kimi-k3` (বা উপরের যেকোনো আইডি) সেট করুন, আর শুধু সেই
 অনুরোধটিই গুণিতক দেয় — সেশনের বাকিটা `claudinio` হারেই চলে। ক্যাটালগের প্রতিটি
 মডেল প্রতিটি প্ল্যানে পাওয়া যায়।
 
 !!! note "কেন আমরা এখনও `claudinio` সুপারিশ করি"
     ক্যাটালগ আছে সেই ডেভেলপারের জন্য যিনি বেছে নিতে চান, এজন্য নয় যে কোনও
     এন্ট্রি কোডে ভালো মেপেছে। `claudinio` সেই মডেল যার বিপরীতে আমরা মূল্যায়ন
-    করি, যাকে ঘিরে প্রম্পট ক্যাশ গড়া, আর — প্রতি অনুরোধে 3× থেকে 22× কম খরচে —
+    করি, যাকে ঘিরে প্রম্পট ক্যাশ গড়া, আর — প্রতি অনুরোধে 2× থেকে 36× কম খরচে —
     যেখানে আপনার ক্রেডিট সবচেয়ে দূর যায়। ক্যাটালগের মডেল সচেতনভাবে নিন, যে কাজে
     তা দরকার তার জন্য।
 
