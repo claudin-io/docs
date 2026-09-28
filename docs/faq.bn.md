@@ -40,12 +40,12 @@ API OpenAI-সামঞ্জস্যপূর্ণ, তাই প্রযু
 ## অন্য মডেল বেছে নিতে পারি?
 
 হ্যাঁ, নাম ধরে। `claudius` আমাদের প্রিমিয়াম বিকল্প, সর্বোচ্চ 6× ক্রেডিটে।
-[ক্যাটালগ](plans.md#catalogue) এগারোটি তৃতীয় পক্ষের মডেল যোগ করে — DeepSeek
-V4.1 Flash, MiMo V2.6 Pro, GPT-6 Luna ও Sol, GLM 5.3 ও 5.3 Flash, MiniMax M3,
-Gemini 3.8 Flash, Grok 4.7, Kimi K3, Claude Opus 5.5 — প্রতিটির দাম `claudinio`
-ক্রেডিটের নির্দিষ্ট গুণিতক, 2× থেকে 36×। ক্লায়েন্টে আইডি সেট করুন আর শুধু সেই
-অনুরোধটিই গুণিতক দেয়। প্রতিটি মডেল প্রতিটি প্ল্যানে আছে; আমরা এখনও `claudinio`
-সুপারিশ করি।
+[ক্যাটালগ](plans.md#catalogue) বারোটি তৃতীয় পক্ষের মডেল যোগ করে — DeepSeek V4.1
+Flash, MiMo V2.6 Pro, GPT-6 Luna ও Sol, GLM 5.3 ও 5.3 Flash, MiniMax M3, Gemini
+3.8 Flash, Grok 4.7, Kimi K3, Claude Sonnet 5.5, Claude Opus 5.5 — প্রতিটির দাম
+`claudinio` ক্রেডিটের নির্দিষ্ট গুণিতক, 2× থেকে 36×। ক্লায়েন্টে আইডি সেট করুন
+আর শুধু সেই অনুরোধটিই গুণিতক দেয়। প্রতিটি মডেল প্রতিটি প্ল্যানে আছে; আমরা এখনও
+`claudinio` সুপারিশ করি।
 
 ## `Authorization` নাকি `x-api-key` দিয়ে প্রমাণীকরণ করব?
 

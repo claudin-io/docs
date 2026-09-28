@@ -42,12 +42,12 @@ tôi tinh chỉnh, đo lường và cache cho code, và nơi tín dụng của b
 ## Tôi có thể chọn mô hình khác không?
 
 Có, theo tên. `claudius` là lựa chọn cao cấp của chúng tôi, tối đa 6× tín dụng.
-[Danh mục](plans.md#catalogue) thêm mười một mô hình bên thứ ba — DeepSeek V4.1
+[Danh mục](plans.md#catalogue) thêm mười hai mô hình bên thứ ba — DeepSeek V4.1
 Flash, MiMo V2.6 Pro, GPT-6 Luna và Sol, GLM 5.3 và 5.3 Flash, MiniMax M3,
-Gemini 3.8 Flash, Grok 4.7, Kimi K3, Claude Opus 5.5 — mỗi mô hình được định giá
-là một bội số cố định của tín dụng `claudinio`, từ 2× đến 36×. Đặt ID trong
-client của bạn và chỉ yêu cầu đó trả hệ số. Mọi mô hình đều có trên mọi gói;
-chúng tôi vẫn khuyến nghị `claudinio`.
+Gemini 3.8 Flash, Grok 4.7, Kimi K3, Claude Sonnet 5.5, Claude Opus 5.5 — mỗi mô
+hình được định giá là một bội số cố định của tín dụng `claudinio`, từ 2× đến
+36×. Đặt ID trong client của bạn và chỉ yêu cầu đó trả hệ số. Mọi mô hình đều có
+trên mọi gói; chúng tôi vẫn khuyến nghị `claudinio`.
 
 ## Xác thực bằng `Authorization` hay `x-api-key`?
 

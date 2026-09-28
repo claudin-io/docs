@@ -38,12 +38,12 @@ API는 OpenAI 호환이므로 기술적으로 모든 요청이 작동합니다. 
 ## 다른 모델을 선택할 수 있나요?
 
 네, 이름으로요. `claudius`는 프리미엄 옵션으로 최대 6× 크레딧입니다.
-[카탈로그](plans.md#catalogue)에는 서드파티 모델 11개가 있습니다 — DeepSeek V4.1
+[카탈로그](plans.md#catalogue)에는 서드파티 모델 12개가 있습니다 — DeepSeek V4.1
 Flash, MiMo V2.6 Pro, GPT-6 Luna와 Sol, GLM 5.3과 5.3 Flash, MiniMax M3, Gemini
-3.8 Flash, Grok 4.7, Kimi K3, Claude Opus 5.5 — 각각 `claudinio` 크레딧의 고정
-배수(2×에서 36×)로 가격이 매겨집니다. 클라이언트에서 ID를 설정하면 그 요청만
-배수를 지불합니다. 모든 모델은 모든 요금제에 있으며, 저희는 여전히 `claudinio`를
-추천합니다.
+3.8 Flash, Grok 4.7, Kimi K3, Claude Sonnet 5.5, Claude Opus 5.5 — 각각
+`claudinio` 크레딧의 고정 배수(2×에서 36×)로 가격이 매겨집니다. 클라이언트에서
+ID를 설정하면 그 요청만 배수를 지불합니다. 모든 모델은 모든 요금제에 있으며,
+저희는 여전히 `claudinio`를 추천합니다.
 
 ## `Authorization`과 `x-api-key` 중 무엇으로 인증하나요?
 

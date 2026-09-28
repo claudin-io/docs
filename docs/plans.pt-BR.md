@@ -102,6 +102,7 @@ do `claudinio` em todos os eixos, então o preço se lê como um único número:
 | `gemini-3.8-flash` | Gemini 3.8 Flash | Google | 9× |
 | `glm-5.3` | GLM 5.3 | Z.ai | 20× |
 | `gpt-6-sol` | GPT-6 Sol | OpenAI | 23× |
+| `sonnet-5.5` | Claude Sonnet 5.5 | Anthropic | 23× |
 | `grok-4.7` | Grok 4.7 | xAI | 29× |
 | `kimi-k3` | Kimi K3 | Moonshot | 33× |
 | `opus-5.5` | Claude Opus 5.5 | Anthropic | 36× |

@@ -43,12 +43,12 @@ kredilerinizin en uzağa gittiği modeldir.
 ## Başka bir model seçebilir miyim?
 
 Evet, adıyla. `claudius` premium seçeneğimizdir, 6× krediye kadar.
-[Katalog](plans.md#catalogue) on bir üçüncü taraf model ekler — DeepSeek V4.1
+[Katalog](plans.md#catalogue) on iki üçüncü taraf model ekler — DeepSeek V4.1
 Flash, MiMo V2.6 Pro, GPT-6 Luna ve Sol, GLM 5.3 ve 5.3 Flash, MiniMax M3,
-Gemini 3.8 Flash, Grok 4.7, Kimi K3, Claude Opus 5.5 — her biri `claudinio`
-kredilerinin sabit bir katı olarak fiyatlanır, 2× ile 36× arası. Kimliği
-istemcinizde ayarlayın; yalnızca o istek katı öder. Her model her plandadır;
-hâlâ `claudinio` öneriyoruz.
+Gemini 3.8 Flash, Grok 4.7, Kimi K3, Claude Sonnet 5.5, Claude Opus 5.5 — her
+biri `claudinio` kredilerinin sabit bir katı olarak fiyatlanır, 2× ile 36×
+arası. Kimliği istemcinizde ayarlayın; yalnızca o istek katı öder. Her model her
+plandadır; hâlâ `claudinio` öneriyoruz.
 
 ## `Authorization` ile mi yoksa `x-api-key` ile mi kimlik doğrularım?
 
